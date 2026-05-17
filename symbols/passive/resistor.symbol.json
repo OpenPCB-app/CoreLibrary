@@ -1,0 +1,197 @@
+{
+  "id": "openpcb.core.symbol.passive.resistor",
+  "uuid": "00c3af22-78fc-5253-8aa4-d5e314b3c262",
+  "version": "1.0.0",
+  "name": "Resistor",
+  "referencePrefix": "R",
+  "description": "Generic non-polarized resistor (IEEE/ANSI zigzag)",
+  "provenance": {
+    "sourceKind": "builtin",
+    "sourceFormat": "openpcb-builtin",
+    "fileName": null,
+    "importedAt": "2026-01-01T00:00:00.000Z",
+    "sourceHash": "builtin:resistor:v8"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {},
+    "units": 1
+  },
+  "normalized": {
+    "id": "builtin:sym:resistor",
+    "name": "Resistor",
+    "referencePrefix": "R",
+    "description": "Generic non-polarized resistor (IEEE/ANSI zigzag)",
+    "pins": [
+      {
+        "originPinKey": "pin-1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": -5.08,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "pin-2",
+        "number": "2",
+        "name": "",
+        "localPosition": {
+          "x": 5.08,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "sourceHash": "builtin:resistor:v8",
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "R",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 0
+            },
+            {
+              "x": -1.95,
+              "y": 0
+            },
+            {
+              "x": -1.625,
+              "y": -1.016
+            },
+            {
+              "x": -0.975,
+              "y": 1.016
+            },
+            {
+              "x": -0.325,
+              "y": -1.016
+            },
+            {
+              "x": 0.325,
+              "y": 1.016
+            },
+            {
+              "x": 0.975,
+              "y": -1.016
+            },
+            {
+              "x": 1.625,
+              "y": 1.016
+            },
+            {
+              "x": 1.95,
+              "y": 0
+            },
+            {
+              "x": 2.54,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.1
+        }
+      ],
+      "pins": [
+        {
+          "id": "pin-1",
+          "name": "",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "pin-2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "pin-1:number",
+          "text": "1",
+          "at": {
+            "x": -5.588,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "pin-2:number",
+          "text": "2",
+          "at": {
+            "x": 5.588,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "R",
+          "at": {
+            "x": 0,
+            "y": 2.3360000000000003
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        }
+      ],
+      "bounds": {
+        "minX": -6.3754,
+        "minY": -1.0660000000000003,
+        "maxX": 6.3754,
+        "maxY": 3.6060000000000003
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "kind": "openpcb-builtin",
+    "name": "Resistor"
+  },
+  "aliases": [
+    "builtin:sym:resistor"
+  ]
+}

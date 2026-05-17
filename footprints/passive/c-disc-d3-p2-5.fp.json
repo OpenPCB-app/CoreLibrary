@@ -1,0 +1,221 @@
+{
+  "id": "openpcb.core.footprint.passive.c-disc-d3-p2-5",
+  "uuid": "d09fd503-ca70-54d1-8606-00c6ebe98035",
+  "version": "1.0.0",
+  "name": "C_Disc_D3.0mm_W2.0mm_P2.50mm",
+  "mountType": "through_hole",
+  "provenance": {
+    "sourceKind": "system",
+    "sourceFormat": "kicad-mod",
+    "fileName": "C_Disc_D3.0mm_W2.0mm_P2.50mm.kicad_mod",
+    "importedAt": "2026-01-01T00:00:00.000Z",
+    "sourceHash": "kicad:C_Disc_D3.0mm_W2.0mm_P2.50mm.kicad_mod:80cb36f2474aba98ebd2e7151912389b33768f34:v1"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "builtin:fp:c-disc-d3-p2.5",
+    "fileName": "C_Disc_D3.0mm_W2.0mm_P2.50mm.kicad_mod",
+    "name": "C_Disc_D3.0mm_W2.0mm_P2.50mm",
+    "description": "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=3*2mm^2, Capacitor",
+    "mountType": "through_hole",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": "Disc-D3.0mm"
+    },
+    "tags": [
+      "builtin",
+      "passive",
+      "through_hole",
+      "Disc-D3.0mm"
+    ],
+    "sourceHash": "kicad:C_Disc_D3.0mm_W2.0mm_P2.50mm.kicad_mod:80cb36f2474aba98ebd2e7151912389b33768f34:v1",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "C_Disc_D3.0mm_W2.0mm_P2.50mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 2.5,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.37,
+            "y": -1.12
+          },
+          "b": {
+            "x": 2.87,
+            "y": -1.12
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.37,
+            "y": -0.972
+          },
+          "b": {
+            "x": -0.37,
+            "y": -1.12
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.37,
+            "y": 1.12
+          },
+          "b": {
+            "x": -0.37,
+            "y": 0.972
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.87,
+            "y": -1.12
+          },
+          "b": {
+            "x": 2.87,
+            "y": -0.972
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.87,
+            "y": 0.972
+          },
+          "b": {
+            "x": 2.87,
+            "y": 1.12
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.87,
+            "y": 1.12
+          },
+          "b": {
+            "x": -0.37,
+            "y": 1.12
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -0.25,
+          "y": -1,
+          "width": 3,
+          "height": 2,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:1.25:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 1.25,
+            "y": 0
+          },
+          "fontSizeMm": 0.6,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:1.25:-2.25:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 1.25,
+            "y": -2.25
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:1.25:2.25:C_Disc_D3.0mm_W2.0mm_P2.50mm",
+          "text": "C_Disc_D3.0mm_W2.0mm_P2.50mm",
+          "at": {
+            "x": 1.25,
+            "y": 2.25
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -0.7999999999999998,
+        "minY": -1.5400000000000005,
+        "maxX": 3.3,
+        "maxY": 1.4200000000000004
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "kind": "kicad-footprint",
+    "name": "C_Disc_D3.0mm_W2.0mm_P2.50mm"
+  },
+  "aliases": [
+    "builtin:fp:c-disc-d3-p2.5"
+  ],
+  "sourceFileName": "C_Disc_D3.0mm_W2.0mm_P2.50mm.kicad_mod"
+}

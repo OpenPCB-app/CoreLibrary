@@ -1,0 +1,170 @@
+{
+  "id": "openpcb.core.footprint.passive.c-0805",
+  "uuid": "bbee9eae-3725-56df-8c31-232106087dba",
+  "version": "1.0.0",
+  "name": "C_0805_2012Metric",
+  "mountType": "smd",
+  "provenance": {
+    "sourceKind": "system",
+    "sourceFormat": "kicad-mod",
+    "fileName": "C_0805_2012Metric.kicad_mod",
+    "importedAt": "2026-01-01T00:00:00.000Z",
+    "sourceHash": "kicad:C_0805_2012Metric.kicad_mod:a38497ea3d49325f269a565b215de4cad3ae81c9:v1"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "builtin:fp:c-0805-2012m",
+    "fileName": "C_0805_2012Metric.kicad_mod",
+    "name": "C_0805_2012Metric",
+    "description": "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing)",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": "0805",
+      "metric": "2012"
+    },
+    "tags": [
+      "builtin",
+      "passive",
+      "smd",
+      "0805",
+      "2012"
+    ],
+    "sourceHash": "kicad:C_0805_2012Metric.kicad_mod:a38497ea3d49325f269a565b215de4cad3ae81c9:v1",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "C_0805_2012Metric",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -0.95,
+            "y": 0
+          },
+          "widthMm": 1,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0.95,
+            "y": 0
+          },
+          "widthMm": 1,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.261252,
+            "y": -0.735
+          },
+          "b": {
+            "x": 0.261252,
+            "y": -0.735
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.261252,
+            "y": 0.735
+          },
+          "b": {
+            "x": 0.261252,
+            "y": 0.735
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -1,
+          "y": -0.625,
+          "width": 2,
+          "height": 1.25,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.5,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-1.68:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -1.68
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:1.68:C_0805_2012Metric",
+          "text": "C_0805_2012Metric",
+          "at": {
+            "x": 0,
+            "y": 1.68
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.45,
+        "minY": -1.03,
+        "maxX": 1.45,
+        "maxY": 0.97
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "kind": "kicad-footprint",
+    "name": "C_0805_2012Metric"
+  },
+  "aliases": [
+    "builtin:fp:c-0805-2012m"
+  ],
+  "sourceFileName": "C_0805_2012Metric.kicad_mod"
+}

@@ -1,0 +1,195 @@
+{
+  "id": "openpcb.core.footprint.passive.c-disc-d7-5-p5",
+  "uuid": "a501d59a-b244-5143-86b8-12caf73029ab",
+  "version": "1.0.0",
+  "name": "C_Disc_D7.5mm_W5.0mm_P5.00mm",
+  "mountType": "through_hole",
+  "provenance": {
+    "sourceKind": "system",
+    "sourceFormat": "kicad-mod",
+    "fileName": "C_Disc_D7.5mm_W5.0mm_P5.00mm.kicad_mod",
+    "importedAt": "2026-01-01T00:00:00.000Z",
+    "sourceHash": "kicad:C_Disc_D7.5mm_W5.0mm_P5.00mm.kicad_mod:0fcfebf330d3082f243b3403500f0531ab83d2cb:v1"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "builtin:fp:c-disc-d7.5-p5",
+    "fileName": "C_Disc_D7.5mm_W5.0mm_P5.00mm.kicad_mod",
+    "name": "C_Disc_D7.5mm_W5.0mm_P5.00mm",
+    "description": "C, Disc series, Radial, pin pitch=5.00mm, diameter*width=7.5*5.0mm^2, Capacitor, http://www.vishay.com/docs/28535/vy2series.pdf",
+    "mountType": "through_hole",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": "Disc-D7.5mm"
+    },
+    "tags": [
+      "builtin",
+      "passive",
+      "through_hole",
+      "Disc-D7.5mm"
+    ],
+    "sourceHash": "kicad:C_Disc_D7.5mm_W5.0mm_P5.00mm.kicad_mod:0fcfebf330d3082f243b3403500f0531ab83d2cb:v1",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "C_Disc_D7.5mm_W5.0mm_P5.00mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 5,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.37,
+            "y": -2.62
+          },
+          "b": {
+            "x": 6.37,
+            "y": -2.62
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.37,
+            "y": 2.62
+          },
+          "b": {
+            "x": -1.37,
+            "y": -2.62
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.37,
+            "y": -2.62
+          },
+          "b": {
+            "x": 6.37,
+            "y": 2.62
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.37,
+            "y": 2.62
+          },
+          "b": {
+            "x": -1.37,
+            "y": 2.62
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -1.25,
+          "y": -2.5,
+          "width": 7.5,
+          "height": 5,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:2.5:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 2.5,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:2.5:-3.75:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 2.5,
+            "y": -3.75
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:2.5:3.75:C_Disc_D7.5mm_W5.0mm_P5.00mm",
+          "text": "C_Disc_D7.5mm_W5.0mm_P5.00mm",
+          "at": {
+            "x": 2.5,
+            "y": 3.75
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.67,
+        "minY": -2.920000000000001,
+        "maxX": 6.669999999999998,
+        "maxY": 2.8600000000000003
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "kind": "kicad-footprint",
+    "name": "C_Disc_D7.5mm_W5.0mm_P5.00mm"
+  },
+  "aliases": [
+    "builtin:fp:c-disc-d7.5-p5"
+  ],
+  "sourceFileName": "C_Disc_D7.5mm_W5.0mm_P5.00mm.kicad_mod"
+}

@@ -1,0 +1,205 @@
+{
+  "id": "openpcb.core.footprint.passive.r-axial-din0207-p10-16",
+  "uuid": "5e784ca2-f033-5b43-8157-ba8c0111c228",
+  "version": "1.0.0",
+  "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+  "mountType": "through_hole",
+  "provenance": {
+    "sourceKind": "system",
+    "sourceFormat": "kicad-mod",
+    "fileName": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod",
+    "importedAt": "2026-01-01T00:00:00.000Z",
+    "sourceHash": "kicad:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod:ee289dc7fd5b25f1ac12855e28469afaa3fc560c:v1"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "builtin:fp:r-axial-din0207-p10.16",
+    "fileName": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod",
+    "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+    "description": "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf",
+    "mountType": "through_hole",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": "DIN0207"
+    },
+    "tags": [
+      "builtin",
+      "passive",
+      "through_hole",
+      "DIN0207"
+    ],
+    "sourceHash": "kicad:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod:ee289dc7fd5b25f1ac12855e28469afaa3fc560c:v1",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 10.16,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.04,
+            "y": 0
+          },
+          "b": {
+            "x": 1.81,
+            "y": 0
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 9.12,
+            "y": 0
+          },
+          "b": {
+            "x": 8.35,
+            "y": 0
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": 0
+          },
+          "b": {
+            "x": 1.93,
+            "y": 0
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.16,
+            "y": 0
+          },
+          "b": {
+            "x": 8.23,
+            "y": 0
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "rect",
+          "x": 1.81,
+          "y": -1.37,
+          "width": 6.539999999999999,
+          "height": 2.74,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": 1.93,
+          "y": -1.25,
+          "width": 6.300000000000001,
+          "height": 2.5,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:5.08:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 5.08,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:5.08:-2.37:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 5.08,
+            "y": -2.37
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:5.08:2.37:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+          "text": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal",
+          "at": {
+            "x": 5.08,
+            "y": 2.37
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -0.8000000000000007,
+        "minY": -1.4900000000000002,
+        "maxX": 10.96,
+        "maxY": 1.4900000000000002
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "kind": "kicad-footprint",
+    "name": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal"
+  },
+  "aliases": [
+    "builtin:fp:r-axial-din0207-p10.16"
+  ],
+  "sourceFileName": "R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal.kicad_mod"
+}

@@ -1,0 +1,156 @@
+{
+  "id": "openpcb.core.passive.capacitor",
+  "uuid": "63e6ed86-fa41-5748-856f-165688c3edbe",
+  "version": "1.0.0",
+  "name": "Capacitor",
+  "description": "Generic non-polarized capacitor — defaults to 0603 (1608 metric) chip; pick another variant per instance.",
+  "category": "passive",
+  "tags": [
+    "passive",
+    "builtin",
+    "system"
+  ],
+  "aliases": [
+    "builtin:capacitor"
+  ],
+  "symbol": "openpcb.core.symbol.passive.capacitor",
+  "defaultFootprint": "openpcb.core.footprint.passive.c-0603",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.c-0402",
+      "label": "0402 (1005 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.c-0603",
+      "label": "0603 (1608 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.c-0805",
+      "label": "0805 (2012 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.c-1206",
+      "label": "1206 (3216 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.c-1210",
+      "label": "1210 (3225 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.c-disc-d3-p2-5",
+      "label": "Ceramic disc D3mm, 2.5mm pitch (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.c-disc-d5-p5",
+      "label": "Ceramic disc D5mm, 5mm pitch (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.c-disc-d7-5-p5",
+      "label": "Ceramic disc D7.5mm, 5mm pitch (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "openpcb-original",
+    "license": "CC-BY-SA-4.0+OpenPCB-Library-Exception",
+    "attribution": []
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

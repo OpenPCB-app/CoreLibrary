@@ -1,0 +1,172 @@
+{
+  "id": "openpcb.core.passive.resistor",
+  "uuid": "43fccac0-de40-597c-8ee1-7e54c286dcfd",
+  "version": "1.0.0",
+  "name": "Resistor",
+  "description": "Generic non-polarized resistor — defaults to 0603 (1608 metric) chip; pick another variant per instance.",
+  "category": "passive",
+  "tags": [
+    "passive",
+    "builtin",
+    "system"
+  ],
+  "aliases": [
+    "builtin:resistor"
+  ],
+  "symbol": "openpcb.core.symbol.passive.resistor",
+  "defaultFootprint": "openpcb.core.footprint.passive.r-0603",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.r-0402",
+      "label": "0402 (1005 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-0603",
+      "label": "0603 (1608 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-0805",
+      "label": "0805 (2012 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-1206",
+      "label": "1206 (3216 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-1210",
+      "label": "1210 (3225 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-2512",
+      "label": "2512 (6332 metric) SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-axial-din0207-p7-62",
+      "label": "1/4W axial DIN0207, 7.62mm pitch (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-axial-din0207-p10-16",
+      "label": "1/4W axial DIN0207, 10.16mm pitch (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.r-axial-din0309-p12-70",
+      "label": "1/2W axial DIN0309, 12.70mm pitch (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "openpcb-original",
+    "license": "CC-BY-SA-4.0+OpenPCB-Library-Exception",
+    "attribution": []
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "id": "openpcb.core.footprint.passive.c-0603",
+  "uuid": "935e295b-8e21-5dad-8358-54ed228bdf64",
+  "version": "1.0.0",
+  "name": "C_0603_1608Metric",
+  "mountType": "smd",
+  "provenance": {
+    "sourceKind": "system",
+    "sourceFormat": "kicad-mod",
+    "fileName": "C_0603_1608Metric.kicad_mod",
+    "importedAt": "2026-01-01T00:00:00.000Z",
+    "sourceHash": "kicad:C_0603_1608Metric.kicad_mod:3ebe4f2224dd7839b5583226011b0b32603ec981:v1"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "builtin:fp:c-0603-1608m",
+    "fileName": "C_0603_1608Metric.kicad_mod",
+    "name": "C_0603_1608Metric",
+    "description": "Capacitor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": "0603",
+      "metric": "1608"
+    },
+    "tags": [
+      "builtin",
+      "passive",
+      "smd",
+      "0603",
+      "1608"
+    ],
+    "sourceHash": "kicad:C_0603_1608Metric.kicad_mod:3ebe4f2224dd7839b5583226011b0b32603ec981:v1",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "C_0603_1608Metric",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -0.775,
+            "y": 0
+          },
+          "widthMm": 0.9,
+          "heightMm": 0.95,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0.775,
+            "y": 0
+          },
+          "widthMm": 0.9,
+          "heightMm": 0.95,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.14058,
+            "y": -0.51
+          },
+          "b": {
+            "x": 0.14058,
+            "y": -0.51
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.14058,
+            "y": 0.51
+          },
+          "b": {
+            "x": 0.14058,
+            "y": 0.51
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -0.8,
+          "y": -0.4,
+          "width": 1.6,
+          "height": 0.8,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.4,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-1.43:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -1.43
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:1.43:C_0603_1608Metric",
+          "text": "C_0603_1608Metric",
+          "at": {
+            "x": 0,
+            "y": 1.43
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.225,
+        "minY": -1.03,
+        "maxX": 1.225,
+        "maxY": 0.97
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "kind": "kicad-footprint",
+    "name": "C_0603_1608Metric"
+  },
+  "aliases": [
+    "builtin:fp:c-0603-1608m"
+  ],
+  "sourceFileName": "C_0603_1608Metric.kicad_mod"
+}

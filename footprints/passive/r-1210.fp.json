@@ -1,0 +1,170 @@
+{
+  "id": "openpcb.core.footprint.passive.r-1210",
+  "uuid": "643ed689-98cb-501a-8532-fe4d2cf6e71d",
+  "version": "1.0.0",
+  "name": "R_1210_3225Metric",
+  "mountType": "smd",
+  "provenance": {
+    "sourceKind": "system",
+    "sourceFormat": "kicad-mod",
+    "fileName": "R_1210_3225Metric.kicad_mod",
+    "importedAt": "2026-01-01T00:00:00.000Z",
+    "sourceHash": "kicad:R_1210_3225Metric.kicad_mod:dc1e5ad821dbe670f44c65311f0716b1350d8a90:v1"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "builtin:fp:r-1210-3225m",
+    "fileName": "R_1210_3225Metric.kicad_mod",
+    "name": "R_1210_3225Metric",
+    "description": "Resistor SMD 1210 (3225 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": "1210",
+      "metric": "3225"
+    },
+    "tags": [
+      "builtin",
+      "passive",
+      "smd",
+      "1210",
+      "3225"
+    ],
+    "sourceHash": "kicad:R_1210_3225Metric.kicad_mod:dc1e5ad821dbe670f44c65311f0716b1350d8a90:v1",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "R_1210_3225Metric",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.4625,
+            "y": 0
+          },
+          "widthMm": 1.125,
+          "heightMm": 2.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.222222,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.4625,
+            "y": 0
+          },
+          "widthMm": 1.125,
+          "heightMm": 2.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.222222,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.723737,
+            "y": -1.355
+          },
+          "b": {
+            "x": 0.723737,
+            "y": -1.355
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.723737,
+            "y": 1.355
+          },
+          "b": {
+            "x": 0.723737,
+            "y": 1.355
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -1.6,
+          "y": -1.245,
+          "width": 3.2,
+          "height": 2.49,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2.28:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.28
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:2.28:R_1210_3225Metric",
+          "text": "R_1210_3225Metric",
+          "at": {
+            "x": 0,
+            "y": 2.28
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -2.025,
+        "minY": -1.5350000000000001,
+        "maxX": 2.025,
+        "maxY": 1.475
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "kind": "kicad-footprint",
+    "name": "R_1210_3225Metric"
+  },
+  "aliases": [
+    "builtin:fp:r-1210-3225m"
+  ],
+  "sourceFileName": "R_1210_3225Metric.kicad_mod"
+}
