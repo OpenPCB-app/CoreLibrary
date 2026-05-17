@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpcb.app/schemas/footprint.schema.json",
+  "title": "OpenPCB Library Footprint (source file)",
+  "description": "Source file for a single library footprint. Top-level identity fields are mandatory; provenance/normalized/preview/raw are preserved verbatim and become dataJson on import.",
+  "type": "object",
+  "required": ["id", "uuid", "version", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string" },
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "version": { "type": "string" },
+    "name": { "type": "string" },
+    "mountType": {
+      "type": "string",
+      "enum": ["smd", "tht", "through_hole", "press_fit", "mixed"]
+    },
+    "package": { "type": "object" },
+    "models3d": { "type": "array", "items": { "type": "string" } },
+    "provenance": { "type": "object" },
+    "parser": { "type": "object" },
+    "normalized": { "type": "object" },
+    "raw": { "type": "object" }
+  }
+}

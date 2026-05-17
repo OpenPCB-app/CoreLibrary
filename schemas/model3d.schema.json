@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpcb.app/schemas/model3d.schema.json",
+  "title": "OpenPCB Library 3D Model",
+  "description": "3D model metadata sidecar. The binary asset(s) live next to the .glb/.step file referenced by `formats`.",
+  "type": "object",
+  "required": ["id", "uuid", "version", "name", "formats"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string" },
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "version": { "type": "string" },
+    "name": { "type": "string" },
+    "formats": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": false,
+      "properties": {
+        "glb": { "$ref": "#/$defs/format" },
+        "step": { "$ref": "#/$defs/format" }
+      }
+    },
+    "boundsMm": {
+      "type": "object",
+      "required": ["x", "y", "z"],
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "z": { "type": "number" }
+      }
+    },
+    "offsetMm": {
+      "type": "object",
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "z": { "type": "number" }
+      }
+    },
+    "rotationDeg": {
+      "type": "object",
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "z": { "type": "number" }
+      }
+    }
+  },
+  "$defs": {
+    "format": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": { "type": "string" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    }
+  }
+}

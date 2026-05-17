@@ -1,0 +1,289 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpcb.app/schemas/library.schema.json",
+  "title": "OpenPCB Library Manifest",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "library",
+    "symbols",
+    "footprints",
+    "components",
+    "integrity"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "string", "const": "1.0.0" },
+    "library": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "channel",
+        "version",
+        "license",
+        "generatedAt"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9]*(\\.[a-z][a-z0-9-]*)+$"
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "kind": {
+          "type": "string",
+          "enum": ["core", "user", "team"],
+          "default": "core"
+        },
+        "channel": { "type": "string", "enum": ["stable", "beta", "nightly"] },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+        },
+        "license": { "type": "string", "minLength": 1 },
+        "homepage": { "type": "string", "format": "uri" },
+        "minOpenPcbVersion": { "type": "string" },
+        "generatedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "symbols": { "type": "array", "items": { "$ref": "#/$defs/symbolEntry" } },
+    "footprints": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/footprintEntry" }
+    },
+    "models3d": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/model3dEntry" },
+      "default": []
+    },
+    "components": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/componentEntry" }
+    },
+    "templates": { "type": "array", "default": [] },
+    "deprecated": { "type": "array", "default": [] },
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "packageSha256"],
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": { "const": "sha256" },
+        "packageSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "required": ["algorithm", "keyId", "signature"],
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": { "const": "ed25519" },
+        "keyId": { "type": "string" },
+        "signature": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9]*(\\.[a-z0-9][a-z0-9-]*)+$"
+    },
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "semver": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(?:-[0-9A-Za-z.-]+)?$"
+    },
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "symbolEntry": {
+      "type": "object",
+      "required": ["id", "uuid", "version", "name", "path", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "version": { "$ref": "#/$defs/semver" },
+        "name": { "type": "string" },
+        "path": { "type": "string" },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "license": { "type": "string" }
+      }
+    },
+    "footprintEntry": {
+      "type": "object",
+      "required": ["id", "uuid", "version", "name", "path", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "version": { "$ref": "#/$defs/semver" },
+        "name": { "type": "string" },
+        "path": { "type": "string" },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "license": { "type": "string" },
+        "package": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "code": { "type": "string" },
+            "mountType": {
+              "type": "string",
+              "enum": ["smd", "tht", "through_hole", "press_fit", "mixed"]
+            },
+            "standard": { "type": "string" }
+          }
+        },
+        "models3d": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/id" },
+          "default": []
+        }
+      }
+    },
+    "model3dEntry": {
+      "type": "object",
+      "required": ["id", "uuid", "version", "name", "formats"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "version": { "$ref": "#/$defs/semver" },
+        "name": { "type": "string" },
+        "formats": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": false,
+          "properties": {
+            "glb": { "$ref": "#/$defs/modelFormat" },
+            "step": { "$ref": "#/$defs/modelFormat" }
+          }
+        },
+        "boundsMm": {
+          "type": "object",
+          "required": ["x", "y", "z"],
+          "additionalProperties": false,
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" },
+            "z": { "type": "number" }
+          }
+        }
+      }
+    },
+    "modelFormat": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "path": { "type": "string" },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    },
+    "componentEntry": {
+      "type": "object",
+      "required": [
+        "id",
+        "uuid",
+        "version",
+        "name",
+        "category",
+        "symbol",
+        "defaultFootprint",
+        "footprints",
+        "provenance"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "version": { "$ref": "#/$defs/semver" },
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "category": { "type": "string" },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "symbol": { "$ref": "#/$defs/id" },
+        "defaultFootprint": { "$ref": "#/$defs/id" },
+        "footprints": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["footprint", "label"],
+            "additionalProperties": false,
+            "properties": {
+              "footprint": { "$ref": "#/$defs/id" },
+              "label": { "type": "string" },
+              "pinMap": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["pinNumber", "padNumber"],
+                  "additionalProperties": false,
+                  "properties": {
+                    "pinNumber": { "type": "string" },
+                    "padNumber": { "type": "string" },
+                    "pinName": { "type": "string" }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "parameters": { "type": "object" },
+        "manufacturerParts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["manufacturer", "mpn"],
+            "additionalProperties": false,
+            "properties": {
+              "manufacturer": { "type": "string" },
+              "mpn": { "type": "string" }
+            }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "required": ["source", "license"],
+          "additionalProperties": false,
+          "properties": {
+            "source": {
+              "type": "string",
+              "enum": [
+                "openpcb-original",
+                "kicad-derived",
+                "datasheet-derived",
+                "community"
+              ]
+            },
+            "license": { "type": "string" },
+            "attribution": {
+              "type": "array",
+              "items": { "type": "string" },
+              "default": []
+            },
+            "notes": { "type": "string" }
+          }
+        },
+        "compatibility": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "minOpenPcbVersion": { "type": "string" }
+          }
+        }
+      }
+    }
+  }
+}

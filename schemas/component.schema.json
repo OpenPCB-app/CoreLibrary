@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpcb.app/schemas/component.schema.json",
+  "title": "OpenPCB Library Component",
+  "type": "object",
+  "required": [
+    "id",
+    "uuid",
+    "version",
+    "name",
+    "symbol",
+    "defaultFootprint",
+    "footprints",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string" },
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "version": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "category": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" }, "default": [] },
+    "aliases": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "symbol": { "type": "string" },
+    "defaultFootprint": { "type": "string" },
+    "footprints": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["footprint", "label"],
+        "additionalProperties": false,
+        "properties": {
+          "footprint": { "type": "string" },
+          "label": { "type": "string" },
+          "pinMap": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["pinNumber", "padNumber"],
+              "properties": {
+                "pinNumber": { "type": "string" },
+                "padNumber": { "type": "string" },
+                "pinName": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "parameters": { "type": "object" },
+    "manufacturerParts": { "type": "array" },
+    "provenance": {
+      "type": "object",
+      "required": ["source", "license"],
+      "properties": {
+        "source": { "type": "string" },
+        "license": { "type": "string" },
+        "attribution": { "type": "array", "items": { "type": "string" } },
+        "notes": { "type": "string" }
+      }
+    },
+    "compatibility": {
+      "type": "object",
+      "properties": {
+        "minOpenPcbVersion": { "type": "string" }
+      }
+    }
+  }
+}

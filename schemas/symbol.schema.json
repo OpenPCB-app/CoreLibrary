@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openpcb.app/schemas/symbol.schema.json",
+  "title": "OpenPCB Library Symbol (source file)",
+  "description": "Source file for a single library symbol. Top-level identity fields are mandatory; the rest of the document (provenance, normalized, preview, raw) is preserved verbatim and stored as dataJson on import.",
+  "type": "object",
+  "required": ["id", "uuid", "version", "name"],
+  "additionalProperties": true,
+  "properties": {
+    "id": { "type": "string" },
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$"
+    },
+    "version": { "type": "string" },
+    "name": { "type": "string" },
+    "referencePrefix": { "type": "string" },
+    "description": { "type": "string" },
+    "provenance": { "type": "object" },
+    "parser": { "type": "object" },
+    "normalized": { "type": "object" },
+    "raw": { "type": "object" }
+  }
+}
