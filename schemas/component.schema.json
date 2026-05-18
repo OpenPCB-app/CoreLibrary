@@ -59,20 +59,44 @@
     },
     "parameters": { "type": "object" },
     "manufacturerParts": { "type": "array" },
-    "provenance": {
-      "type": "object",
-      "required": ["source", "license"],
-      "properties": {
-        "source": { "type": "string" },
-        "license": { "type": "string" },
-        "attribution": { "type": "array", "items": { "type": "string" } },
-        "notes": { "type": "string" }
-      }
-    },
+    "provenance": { "$ref": "#/$defs/provenance" },
     "compatibility": {
       "type": "object",
       "properties": {
         "minOpenPcbVersion": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source",
+        "license",
+        "attribution",
+        "sourceFormat",
+        "sourceFileName",
+        "sourceLibrary",
+        "sourceItemName",
+        "sourceHash",
+        "upstreamUrl",
+        "convertedAt",
+        "conversionTool"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string" },
+        "license": { "type": "string" },
+        "attribution": { "type": "array", "items": { "type": "string" } },
+        "sourceFormat": { "type": "string" },
+        "sourceFileName": { "type": "string" },
+        "sourceLibrary": { "type": "string" },
+        "sourceItemName": { "type": "string" },
+        "sourceHash": { "type": "string" },
+        "upstreamUrl": { "type": "string" },
+        "upstreamCommit": { "type": "string" },
+        "convertedAt": { "type": "string", "format": "date-time" },
+        "conversionTool": { "type": "string" }
       }
     }
   }

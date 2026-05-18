@@ -4,7 +4,7 @@
   "title": "OpenPCB Library 3D Model",
   "description": "3D model metadata sidecar. The binary asset(s) live next to the .glb/.step file referenced by `formats`.",
   "type": "object",
-  "required": ["id", "uuid", "version", "name", "formats"],
+  "required": ["id", "uuid", "version", "name", "formats", "provenance"],
   "additionalProperties": false,
   "properties": {
     "id": { "type": "string" },
@@ -23,6 +23,7 @@
         "step": { "$ref": "#/$defs/format" }
       }
     },
+    "provenance": { "$ref": "#/$defs/provenance" },
     "boundsMm": {
       "type": "object",
       "required": ["x", "y", "z"],
@@ -50,6 +51,37 @@
     }
   },
   "$defs": {
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source",
+        "license",
+        "attribution",
+        "sourceFormat",
+        "sourceFileName",
+        "sourceLibrary",
+        "sourceItemName",
+        "sourceHash",
+        "upstreamUrl",
+        "convertedAt",
+        "conversionTool"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string" },
+        "license": { "type": "string" },
+        "attribution": { "type": "array", "items": { "type": "string" } },
+        "sourceFormat": { "type": "string" },
+        "sourceFileName": { "type": "string" },
+        "sourceLibrary": { "type": "string" },
+        "sourceItemName": { "type": "string" },
+        "sourceHash": { "type": "string" },
+        "upstreamUrl": { "type": "string" },
+        "upstreamCommit": { "type": "string" },
+        "convertedAt": { "type": "string", "format": "date-time" },
+        "conversionTool": { "type": "string" }
+      }
+    },
     "format": {
       "type": "object",
       "required": ["path", "sha256"],

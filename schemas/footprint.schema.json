@@ -4,7 +4,7 @@
   "title": "OpenPCB Library Footprint (source file)",
   "description": "Source file for a single library footprint. Top-level identity fields are mandatory; provenance/normalized/preview/raw are preserved verbatim and become dataJson on import.",
   "type": "object",
-  "required": ["id", "uuid", "version", "name"],
+  "required": ["id", "uuid", "version", "name", "provenance"],
   "additionalProperties": true,
   "properties": {
     "id": { "type": "string" },
@@ -20,9 +20,42 @@
     },
     "package": { "type": "object" },
     "models3d": { "type": "array", "items": { "type": "string" } },
-    "provenance": { "type": "object" },
+    "provenance": { "$ref": "#/$defs/provenance" },
     "parser": { "type": "object" },
     "normalized": { "type": "object" },
     "raw": { "type": "object" }
+  },
+  "$defs": {
+    "provenance": {
+      "type": "object",
+      "required": [
+        "source",
+        "license",
+        "attribution",
+        "sourceFormat",
+        "sourceFileName",
+        "sourceLibrary",
+        "sourceItemName",
+        "sourceHash",
+        "upstreamUrl",
+        "convertedAt",
+        "conversionTool"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "source": { "type": "string" },
+        "license": { "type": "string" },
+        "attribution": { "type": "array", "items": { "type": "string" } },
+        "sourceFormat": { "type": "string" },
+        "sourceFileName": { "type": "string" },
+        "sourceLibrary": { "type": "string" },
+        "sourceItemName": { "type": "string" },
+        "sourceHash": { "type": "string" },
+        "upstreamUrl": { "type": "string" },
+        "upstreamCommit": { "type": "string" },
+        "convertedAt": { "type": "string", "format": "date-time" },
+        "conversionTool": { "type": "string" }
+      }
+    }
   }
 }

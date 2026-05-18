@@ -26,6 +26,9 @@ jobs:
       - name: Typecheck tools/
         run: bun run typecheck
 
+      - name: Run tests
+        run: bun test
+
       - name: Validate library source
         run: bun tools/validate.ts
 

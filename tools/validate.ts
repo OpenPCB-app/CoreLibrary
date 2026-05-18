@@ -17,10 +17,72 @@ interface Issue {
   message: string;
 }
 
+interface Provenance {
+  source?: string;
+  license?: string;
+  attribution?: string[];
+  sourceFormat?: string;
+  sourceFileName?: string;
+  sourceLibrary?: string;
+  sourceItemName?: string;
+  sourceHash?: string;
+  upstreamUrl?: string;
+  upstreamCommit?: string;
+  convertedAt?: string;
+  conversionTool?: string;
+}
+
 const issues: Issue[] = [];
+const warnings: Issue[] = [];
+
+const REQUIRED_KICAD_PROVENANCE_FIELDS = [
+  "source",
+  "license",
+  "attribution",
+  "sourceFormat",
+  "sourceFileName",
+  "sourceLibrary",
+  "sourceItemName",
+  "sourceHash",
+  "upstreamUrl",
+  "convertedAt",
+  "conversionTool",
+] as const;
+
+const KICAD_LICENSE = "CC-BY-SA-4.0+KiCad-Libraries-Exception";
+const INCOMPATIBLE_KICAD_LICENSES = new Set(["CC-BY-4.0", "CC0-1.0"]);
 
 function fail(file: string, message: string) {
   issues.push({ file: relPath(file), message });
+}
+
+function warn(file: string, message: string) {
+  warnings.push({ file: relPath(file), message });
+}
+
+function hasValue(value: unknown): boolean {
+  if (typeof value === "string") return value.trim().length > 0;
+  if (Array.isArray(value)) return true;
+  return value !== undefined && value !== null;
+}
+
+function checkProvenance(file: string, provenance: Provenance) {
+  if (provenance.source !== "kicad-derived") return;
+
+  for (const field of REQUIRED_KICAD_PROVENANCE_FIELDS) {
+    if (!hasValue(provenance[field])) fail(file, `missing KiCad provenance field: ${field}`);
+  }
+
+  if (provenance.license !== KICAD_LICENSE) {
+    const reason = INCOMPATIBLE_KICAD_LICENSES.has(provenance.license ?? "")
+      ? "weak conflicting license"
+      : "non-CC-BY-SA compatible license";
+    fail(file, `KiCad-derived asset uses ${reason}: ${provenance.license ?? "<missing>"}`);
+  }
+
+  if (Array.isArray(provenance.attribution) && provenance.attribution.length === 0) {
+    warn(file, "KiCad-derived asset has empty attribution");
+  }
 }
 
 const ajv = makeAjv();
@@ -50,12 +112,13 @@ function checkUniqueness(file: string, id: string, uuid: string) {
 // --- symbols ---
 const symbolIds = new Set<string>();
 for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
-  const data = loadJson<{ id: string; uuid: string }>(file);
+  const data = loadJson<{ id: string; uuid: string; provenance: Provenance }>(file);
   if (!validateSymbol(data)) {
     for (const err of validateSymbol.errors ?? [])
       fail(file, `${err.instancePath} ${err.message}`);
     continue;
   }
+  checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
   symbolIds.add(data.id);
 }
@@ -63,12 +126,13 @@ for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
 // --- footprints ---
 const footprintIds = new Set<string>();
 for (const file of walkFiles(footprintsRoot, ".fp.json")) {
-  const data = loadJson<{ id: string; uuid: string; pads: unknown[] }>(file);
+  const data = loadJson<{ id: string; uuid: string; pads: unknown[]; provenance: Provenance }>(file);
   if (!validateFootprint(data)) {
     for (const err of validateFootprint.errors ?? [])
       fail(file, `${err.instancePath} ${err.message}`);
     continue;
   }
+  checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
   footprintIds.add(data.id);
 }
@@ -79,6 +143,7 @@ for (const file of walkFiles(modelsRoot, ".model.json")) {
   const data = loadJson<{
     id: string;
     uuid: string;
+    provenance: Provenance;
     formats: Record<string, { path: string; sha256: string }>;
   }>(file);
   if (!validateModel3d(data)) {
@@ -86,6 +151,7 @@ for (const file of walkFiles(modelsRoot, ".model.json")) {
       fail(file, `${err.instancePath} ${err.message}`);
     continue;
   }
+  checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
   modelIds.add(data.id);
   for (const [fmt, info] of Object.entries(data.formats)) {
@@ -105,6 +171,7 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
     uuid: string;
     symbol: string;
     defaultFootprint: string;
+    provenance: Provenance;
     footprints: Array<{
       footprint: string;
       pinMap?: Array<{ pinNumber: string }>;
@@ -115,6 +182,7 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
       fail(file, `${err.instancePath} ${err.message}`);
     continue;
   }
+  checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
   if (!symbolIds.has(data.symbol))
     fail(file, `unknown symbol ref: ${data.symbol}`);
@@ -128,6 +196,7 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
 }
 
 if (issues.length === 0) {
+  for (const warning of warnings) console.warn(`  ${warning.file}: ${warning.message}`);
   console.log(
     `[validate] OK — ${symbolIds.size} symbols, ${footprintIds.size} footprints, ${modelIds.size} 3d models, ${idIndex.size - symbolIds.size - footprintIds.size - modelIds.size} components`,
   );

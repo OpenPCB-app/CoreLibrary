@@ -70,8 +70,16 @@ export interface ComponentEntry {
       | "datasheet-derived"
       | "community";
     license: string;
-    attribution?: string[];
-    notes?: string;
+    attribution: string[];
+    sourceFormat: string;
+    sourceFileName: string;
+    sourceLibrary: string;
+    sourceItemName: string;
+    sourceHash: string;
+    upstreamUrl: string;
+    upstreamCommit?: string;
+    convertedAt: string;
+    conversionTool: string;
   };
   compatibility?: { minOpenPcbVersion?: string };
 }
