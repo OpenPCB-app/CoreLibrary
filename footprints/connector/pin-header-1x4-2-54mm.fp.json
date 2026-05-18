@@ -1,0 +1,234 @@
+{
+  "id": "openpcb.core.connector.footprint.pin-header-1x4-2-54mm",
+  "uuid": "555bc00b-9917-4f79-8e8e-a6fb0d724cb1",
+  "version": "1.0.0",
+  "name": "Pin Header 01x04 2.54mm THT vertical",
+  "mountType": "tht",
+  "models3d": [],
+  "package": {
+    "code": "PIN_HEADER_01x04_2_54mm",
+    "mountType": "tht",
+    "standard": "ipc-7351b"
+  },
+  "provenance": {
+    "sourceKind": "generated",
+    "template": "pin-header",
+    "generatorVersion": 1,
+    "paramsHash": "mount=\"tht\"|orientation=\"vertical\"|pinsPerRow=4|pitchMm=2.54|rows=1",
+    "generatedAt": "2026-05-17T21:30:33.401Z",
+    "license": "CC0-1.0"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "source": {
+      "name": "Pin Header 01x04 2.54mm THT vertical",
+      "pads": [
+        {
+          "id": "pad-1",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": -3.81,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "pad-2",
+          "number": "2",
+          "shape": "oval",
+          "centerMm": {
+            "x": -1.27,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "pad-3",
+          "number": "3",
+          "shape": "oval",
+          "centerMm": {
+            "x": 1.27,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "pad-4",
+          "number": "4",
+          "shape": "oval",
+          "centerMm": {
+            "x": 3.81,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "rect",
+          "layer": "F.SilkS",
+          "strokeWidthMm": 0.12,
+          "x": -4.8260000000000005,
+          "y": -1.016,
+          "width": 9.652000000000001,
+          "height": 2.032,
+          "fill": "none"
+        }
+      ],
+      "labels": [
+        {
+          "id": "ref",
+          "layer": "F.SilkS",
+          "text": "${REFERENCE}",
+          "at": {
+            "x": 0,
+            "y": -1.616
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        }
+      ],
+      "warnings": []
+    },
+    "name": "Pin Header 01x04 2.54mm THT vertical",
+    "mountType": "through_hole",
+    "packageCode": "PIN_HEADER_01x04_2_54mm",
+    "tags": [
+      "connector",
+      "pinheader",
+      "2.54mm",
+      "01x04",
+      "tht",
+      "vert"
+    ],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Pin Header 01x04 2.54mm THT vertical",
+      "pads": [
+        {
+          "id": "pad-1",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": -3.81,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "pad-2",
+          "number": "2",
+          "shape": "oval",
+          "centerMm": {
+            "x": -1.27,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "pad-3",
+          "number": "3",
+          "shape": "oval",
+          "centerMm": {
+            "x": 1.27,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "pad-4",
+          "number": "4",
+          "shape": "oval",
+          "centerMm": {
+            "x": 3.81,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.02,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "rect",
+          "layer": "F.SilkS",
+          "strokeWidthMm": 0.12,
+          "x": -4.8260000000000005,
+          "y": -1.016,
+          "width": 9.652000000000001,
+          "height": 2.032,
+          "fill": "none"
+        }
+      ],
+      "labels": [
+        {
+          "id": "ref",
+          "layer": "F.SilkS",
+          "text": "${REFERENCE}",
+          "at": {
+            "x": 0,
+            "y": -1.616
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        }
+      ],
+      "bounds": {
+        "minX": -4.886,
+        "minY": -1.076,
+        "maxX": 4.886,
+        "maxY": 1.076
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "values": {
+      "rows": 1,
+      "pinsPerRow": 4,
+      "pitchMm": 2.54,
+      "mount": "tht",
+      "orientation": "vertical"
+    }
+  }
+}

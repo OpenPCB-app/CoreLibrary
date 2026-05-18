@@ -193,7 +193,181 @@ export const api = {
     call<{ dirty: number; files: Array<{ status: string; path: string }> }>(
       "/api/git/status",
     ),
+
+  inspectKicad: async (files: File[]) => {
+    const form = new FormData();
+    files.forEach((f, i) => form.append(`f${i}`, f));
+    const res = await fetch("/api/imports/kicad/inspect", {
+      method: "POST",
+      body: form,
+    });
+    const json = (await res.json()) as
+      | { ok: true; data: InspectResp }
+      | { detail: string; type: string };
+    if (!res.ok || !("ok" in json) || !json.ok) {
+      throw new Error(
+        ("detail" in json && json.detail) || `inspect ${res.status}`,
+      );
+    }
+    return json.data;
+  },
+
+  listTemplates: () => call<{ items: TemplateInfo[] }>("/api/templates"),
+
+  materializeTemplate: async (
+    id: string,
+    body: {
+      values: Record<string, unknown>;
+      category: string;
+      license: string;
+      slug?: string;
+      conflictPolicy?: "refuse" | "overwrite";
+    },
+  ) => {
+    const res = await fetch(
+      `/api/templates/${encodeURIComponent(id)}/materialize`,
+      {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify(body),
+      },
+    );
+    const json = (await res.json()) as
+      | {
+          ok: true;
+          data: { footprintId: string; path: string; tags: string[] };
+        }
+      | { detail: string; type: string };
+    if (!res.ok || !("ok" in json) || !json.ok) {
+      const err = new Error(
+        ("detail" in json && json.detail) || `materialize ${res.status}`,
+      );
+      (err as Error & { status?: number }).status = res.status;
+      throw err;
+    }
+    return json.data;
+  },
+
+  commitKicad: async (body: CommitBody) => {
+    const res = await fetch("/api/imports/kicad", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(body),
+    });
+    const json = (await res.json()) as
+      | { ok: true; data: CommitResp }
+      | { detail: string; type: string; status: number };
+    if (!res.ok || !("ok" in json) || !json.ok) {
+      const err = new Error(
+        ("detail" in json && json.detail) || `commit ${res.status}`,
+      );
+      (err as Error & { status?: number }).status = res.status;
+      throw err;
+    }
+    return json.data;
+  },
 };
+
+export interface TemplateInfo {
+  id: string;
+  label: string;
+  description: string;
+  schema: { fields: TemplateField[] };
+  defaults: Record<string, unknown>;
+  generatorVersion: number;
+}
+
+export type TemplateField =
+  | {
+      kind: "int" | "float";
+      key: string;
+      label: string;
+      description?: string;
+      unit?: string;
+      min: number;
+      max: number;
+      default: number;
+      step?: number;
+    }
+  | {
+      kind: "enum";
+      key: string;
+      label: string;
+      description?: string;
+      options: { value: string; label: string }[];
+      default: string;
+    }
+  | {
+      kind: "bool";
+      key: string;
+      label: string;
+      description?: string;
+      default: boolean;
+    };
+
+export interface InspectFootprint {
+  id: string;
+  fileName: string;
+  name: string;
+  mountType: string;
+  padCount: number;
+  packageCode: { imperial: string | null; metric: string | null };
+  warningCount: number;
+  preview: FootprintPreview;
+}
+
+export interface InspectSymbol {
+  id: string;
+  name: string;
+  referencePrefix: string;
+  pinCount: number;
+  description: string | null;
+  warningCount: number;
+  preview: SymbolPreview;
+}
+
+export interface InspectResp {
+  symbols: InspectSymbol[];
+  footprints: InspectFootprint[];
+  warnings: Array<{
+    scope: string;
+    itemId: string;
+    itemName: string;
+    code: string;
+    message: string;
+  }>;
+  _inputs: {
+    symbolLibrary: { fileName: string; content: string };
+    footprints: Array<{ fileName: string; content: string }>;
+    model3dFiles: Array<{ fileName: string }>;
+  };
+}
+
+export interface CommitBody {
+  inputs: InspectResp["_inputs"];
+  selection: { symbolId: string; footprintId: string };
+  component: {
+    name: string;
+    description?: string;
+    category: string;
+    license: string;
+    tags?: string[];
+    attribution?: string[];
+    slug?: string;
+  };
+  conflictPolicy?: "refuse" | "overwrite";
+}
+
+export interface CommitResp {
+  componentId: string;
+  symbolId: string;
+  footprintId: string | null;
+  paths: {
+    symbol: string;
+    footprint: string | null;
+    component: string;
+  };
+}
 
 export function modelUrl(category: string, slug: string): string {
   return `/api/models/${encodeURIComponent(category)}/${encodeURIComponent(slug)}.glb`;

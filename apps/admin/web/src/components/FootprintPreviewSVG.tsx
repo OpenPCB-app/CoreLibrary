@@ -56,7 +56,7 @@ export function FootprintPreviewSVG({
         return (
           <g
             key={i}
-            transform={`translate(${p.centerMm.x} ${p.centerMm.y}) rotate(${p.rotation ?? 0})`}
+            transform={`translate(${p.centerMm.x} ${p.centerMm.y}) rotate(${(p as { rotationDeg?: number; rotation?: number }).rotationDeg ?? p.rotation ?? 0})`}
           >
             {p.shape === "circle" ? (
               <circle r={Math.max(p.widthMm, p.heightMm) / 2} fill={color} />

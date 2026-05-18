@@ -18,8 +18,13 @@
       "name": "@openpcb-corelib/admin",
       "version": "0.1.0",
       "dependencies": {
+        "@openpcb/core-import": "workspace:*",
+        "@openpcb/kicad-parsers": "workspace:*",
         "@react-three/drei": "^10.0.0",
         "@react-three/fiber": "^9.0.0",
+        "ajv": "^8.17.1",
+        "ajv-formats": "^3.0.1",
+        "occt-import-js": "^0.0.22",
         "react": "^19.0.0",
         "react-dom": "^19.0.0",
         "three": "^0.170.0",
@@ -34,6 +39,14 @@
         "tailwindcss": "^4.0.0",
         "typescript": "~5.8.3",
         "vite": "^7.0.0",
+      },
+    },
+    "packages/core-import": {
+      "name": "@openpcb/core-import",
+      "version": "0.1.0",
+      "dependencies": {
+        "@openpcb/kicad-parsers": "workspace:*",
+        "fflate": "^0.8.2",
       },
     },
     "packages/kicad-parsers": {
@@ -149,6 +162,8 @@
     "@monogrid/gainmap-js": ["@monogrid/gainmap-js@3.4.0", "", { "dependencies": { "promise-worker-transferable": "^1.0.4" }, "peerDependencies": { "three": ">= 0.159.0" } }, "sha512-2Z0FATFHaoYJ8b+Y4y4Hgfn3FRFwuU5zRrk+9dFWp4uGAdHGqVEdP7HP+gLA3X469KXHmfupJaUbKo1b/aDKIg=="],
 
     "@openpcb-corelib/admin": ["@openpcb-corelib/admin@workspace:apps/admin"],
+
+    "@openpcb/core-import": ["@openpcb/core-import@workspace:packages/core-import"],
 
     "@openpcb/kicad-parsers": ["@openpcb/kicad-parsers@workspace:packages/kicad-parsers"],
 
@@ -423,6 +438,8 @@
     "nanoid": ["nanoid@3.3.12", "", { "bin": { "nanoid": "bin/nanoid.cjs" } }, "sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ=="],
 
     "node-releases": ["node-releases@2.0.44", "", {}, "sha512-5WUyunoPMsvvEhS8AxHtRzP+oA8UCkJ7YRxatWKjngndhDGLiqEVAQKWjFAiAiuL8zMRGzGSJxFnLetoa43qGQ=="],
+
+    "occt-import-js": ["occt-import-js@0.0.22", "", {}, "sha512-pqvP0hJGMgAoFKji+nL+2zIHJ2NJeFTpI2oEEJrVQtvLErDApd2TeAJNhPO9oU+aWUKIUSWoxSfIrF0KisrPtw=="],
 
     "path-key": ["path-key@3.1.1", "", {}, "sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q=="],
 

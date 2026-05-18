@@ -26,6 +26,8 @@ import {
   runPack,
   runValidate,
 } from "./routes/tools";
+import { commitKicad, inspectKicad } from "./routes/import-kicad";
+import { listTemplates, materializeTemplate } from "./routes/templates";
 
 const router = new Router();
 
@@ -43,6 +45,10 @@ router.get("/api/models", listModels);
 router.get("/api/models/:category/:slug.glb", getModelGlb);
 router.post("/api/models/:category/:slug", uploadModel);
 router.del("/api/models/:category/:slug", deleteModel);
+router.post("/api/imports/kicad/inspect", inspectKicad);
+router.post("/api/imports/kicad", commitKicad);
+router.get("/api/templates", listTemplates);
+router.post("/api/templates/:id/materialize", materializeTemplate);
 router.post("/api/validate", runValidate);
 router.post("/api/pack", runPack);
 router.get("/api/dist/:name", downloadOpclib);

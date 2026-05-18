@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { api, modelUrl, type ComponentDetailResp } from "../api";
 import { navigate } from "../router";
 import { SymbolPreviewSVG } from "../components/SymbolPreviewSVG";
@@ -10,6 +11,8 @@ export function DetailPage({ id }: { id: string }) {
   const [error, setError] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
   const [editing, setEditing] = useState(false);
+  const [stepBusy, setStepBusy] = useState(false);
+  const [stepStatus, setStepStatus] = useState<string | null>(null);
   const [draft, setDraft] = useState<{
     name: string;
     description: string;
@@ -73,6 +76,41 @@ export function DetailPage({ id }: { id: string }) {
     const category = data!.component._category;
     await api.uploadModel(category, slug, file);
     reload();
+  }
+
+  async function onUploadStep(file: File) {
+    if (!variant?.footprint) return;
+    const slug = variant.footprintId.split(".").pop() ?? variant.footprintId;
+    const category = data!.component._category;
+    setStepBusy(true);
+    setStepStatus(`Converting ${file.name}…`);
+    try {
+      const { convertStepToGlb } = await import("../three-d/step-to-glb");
+      const bytes = await file.arrayBuffer();
+      const result = await convertStepToGlb(bytes, {
+        linearUnit: "millimeter",
+        linearDeflectionType: "absolute_value",
+        linearDeflection: 0.05,
+        angularDeflection: 0.5,
+      });
+      if (result.status === "error") {
+        setStepStatus(`Conversion failed: ${result.code} — ${result.message}`);
+        return;
+      }
+      setStepStatus(
+        `Uploading ${(result.glbBytes.byteLength / 1024).toFixed(1)} KB…`,
+      );
+      const glbFile = new File([result.glbBytes], `${slug}.glb`, {
+        type: "model/gltf-binary",
+      });
+      await api.uploadModel(category, slug, glbFile, file);
+      setStepStatus(`✓ Converted + uploaded`);
+      reload();
+    } catch (err) {
+      setStepStatus(`Error: ${(err as Error).message}`);
+    } finally {
+      setStepBusy(false);
+    }
   }
 
   const symbolPreview = data.symbol?.normalized?.preview;
@@ -271,6 +309,7 @@ export function DetailPage({ id }: { id: string }) {
                 <input
                   type="file"
                   accept=".glb,model/gltf-binary"
+                  data-testid="upload-glb"
                   onChange={(e) => {
                     const f = e.target.files?.[0];
                     if (f) onUploadModel(f);
@@ -278,6 +317,25 @@ export function DetailPage({ id }: { id: string }) {
                   className="block mt-1 text-xs"
                 />
               </label>
+              <label className="mt-2 block text-xs text-zinc-400">
+                or upload .step (auto-convert):
+                <input
+                  type="file"
+                  accept=".step,.stp"
+                  disabled={stepBusy}
+                  data-testid="upload-step"
+                  onChange={(e) => {
+                    const f = e.target.files?.[0];
+                    if (f) onUploadStep(f);
+                  }}
+                  className="block mt-1 text-xs disabled:opacity-50"
+                />
+              </label>
+              {stepStatus && (
+                <div className="mt-1 text-[11px] text-zinc-400">
+                  {stepStatus}
+                </div>
+              )}
             </div>
             <div className="bg-zinc-950 border border-zinc-800 rounded p-3">
               <div className="text-xs text-zinc-500 mb-2">Pin map</div>

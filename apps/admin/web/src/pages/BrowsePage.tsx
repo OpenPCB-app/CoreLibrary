@@ -36,6 +36,7 @@ export function BrowsePage() {
           placeholder="Search components..."
           value={q}
           onChange={(e) => setQ(e.target.value)}
+          data-testid="browse-search"
           className="flex-1 px-3 py-2 rounded bg-zinc-900 border border-zinc-800 focus:outline-none focus:border-zinc-600"
         />
         <span className="text-sm text-zinc-400">{items.length} components</span>
@@ -80,6 +81,7 @@ export function BrowsePage() {
             <button
               key={c.id}
               onClick={() => navigate("detail", c.id)}
+              data-testid={`browse-card-${c.id}`}
               className="text-left bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-600 rounded-lg p-4 transition"
             >
               <div className="flex justify-between items-baseline">
