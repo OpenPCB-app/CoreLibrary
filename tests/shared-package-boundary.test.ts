@@ -37,7 +37,7 @@ describe("shared package boundary", () => {
       "github:OpenPCB-app/shared#kicad-import-v0.1.0",
     );
     expect(pkg.dependencies?.["@openpcb/rendering-core"]).toBe(
-      "github:OpenPCB-app/shared#rendering-core-v0.1.1",
+      "github:OpenPCB-app/shared#rendering-core-v0.1.2",
     );
     expect(pkg.dependencies?.["@openpcb/opclib-pack"]).toBe(
       "github:OpenPCB-app/shared#opclib-pack-v0.1.0",

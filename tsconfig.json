@@ -18,8 +18,9 @@
     "paths": {
       "@openpcb/kicad-import": ["../shared/packages/kicad-import/src/index.ts"],
       "@openpcb/kicad-parsers": ["../shared/packages/kicad-parsers/src/index.ts"],
+      "@openpcb/opclib-pack": ["../shared/packages/opclib-pack/src/index.ts"],
       "@openpcb/rendering-core": ["../shared/packages/rendering-core/src/index.ts"]
     }
   },
-  "include": ["tools/**/*.ts"]
+  "include": ["tools/**/*.ts", "tests/**/*.ts"]
 }

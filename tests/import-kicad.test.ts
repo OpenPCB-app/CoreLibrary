@@ -107,13 +107,13 @@ function containsKiCadSource(dir: string): boolean {
 }
 
 async function runValidate(root: string): Promise<string> {
-  symlinkSync(path.join(repoRoot, "schemas"), path.join(root, "schemas"), "dir");
-  mkdirSync(path.join(root, "tools"));
-  copyFileSync(path.join(repoRoot, "tools", "validate.ts"), path.join(root, "tools", "validate.ts"));
-  copyFileSync(path.join(repoRoot, "tools", "lib.ts"), path.join(root, "tools", "lib.ts"));
-  symlinkSync(path.join(repoRoot, "node_modules"), path.join(root, "node_modules"), "dir");
-  writeFileSync(path.join(root, "package.json"), JSON.stringify({ type: "module", scripts: { validate: "bun tools/validate.ts" } }));
-  const proc = Bun.spawn({ cmd: ["bun", "run", "validate"], cwd: root, stdout: "pipe", stderr: "pipe" });
+  const proc = Bun.spawn({
+    cmd: ["bun", "tools/validate.ts"],
+    cwd: repoRoot,
+    env: { ...process.env, CORELIB_ROOT: root },
+    stdout: "pipe",
+    stderr: "pipe",
+  });
   const [stdout, stderr, exitCode] = await Promise.all([
     new Response(proc.stdout).text(),
     new Response(proc.stderr).text(),

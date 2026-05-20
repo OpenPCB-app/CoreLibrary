@@ -66,6 +66,7 @@ describe("CoreLibrary pack shared compatibility", () => {
     const entries = unzipSync(readFileSync(artifactPath));
     const tamperedBytes = entries[symbolPath as string];
     expect(tamperedBytes).toBeInstanceOf(Uint8Array);
+    if (!tamperedBytes) throw new Error(`missing packed symbol ${symbolPath}`);
     tamperedBytes[0] = (tamperedBytes[0] ?? 0) ^ 0xff;
 
     const tamperedPath = path.join(dir, "tampered.opclib");

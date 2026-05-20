@@ -13,13 +13,16 @@
     "pack": "bun tools/pack.ts",
     "typecheck": "bun --bun tsc --noEmit --project tsconfig.json",
     "test": "bun test",
-    "import:kicad": "bun tools/import-kicad.ts"
+    "import:kicad": "bun tools/import-kicad.ts",
+    "shared:link": "bash scripts/shared-link.sh",
+    "shared:unlink": "bash scripts/shared-unlink.sh",
+    "shared:status": "bash scripts/shared-status.sh"
   },
   "dependencies": {
     "@openpcb/kicad-import": "github:OpenPCB-app/shared#kicad-import-v0.1.0",
     "@openpcb/kicad-parsers": "github:OpenPCB-app/shared#kicad-parsers-v0.1.2",
     "@openpcb/opclib-pack": "github:OpenPCB-app/shared#opclib-pack-v0.1.0",
-    "@openpcb/rendering-core": "github:OpenPCB-app/shared#rendering-core-v0.1.1",
+    "@openpcb/rendering-core": "github:OpenPCB-app/shared#rendering-core-v0.1.2",
     "ajv": "^8.17.1",
     "ajv-formats": "^3.0.1",
     "fflate": "^0.8.2"
