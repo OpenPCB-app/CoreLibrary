@@ -1,0 +1,966 @@
+{
+  "id": "openpcb.core.footprint.diode.d-sma",
+  "uuid": "8a14d55a-65ae-52e7-8378-d0faf4da7bc3",
+  "version": "1.0.0",
+  "name": "D_SMA",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.diode.d-sma"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "D_SMA.kicad_mod",
+    "sourceLibrary": "Diode_SMD",
+    "sourceItemName": "D_SMA",
+    "sourceHash": "f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_faa817a6953ba067",
+    "fileName": "D_SMA.kicad_mod",
+    "name": "D_SMA",
+    "description": "Diode SMA (DO-214AC)",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "diode",
+      "sma",
+      "(do-214ac)",
+      "smd"
+    ],
+    "sourceHash": "f7cba3b52ed8b34dce89170722de58324eac04e9e61a095e0eab37b9ca93cb7f",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "D_SMA",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -2,
+            "y": 0
+          },
+          "widthMm": 2.5,
+          "heightMm": 1.8,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1388888889,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 2,
+            "y": 0
+          },
+          "widthMm": 2.5,
+          "heightMm": 1.8,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1388888889,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.51,
+            "y": -1.65
+          },
+          "b": {
+            "x": -3.51,
+            "y": 1.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.51,
+            "y": -1.65
+          },
+          "b": {
+            "x": 2,
+            "y": -1.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.51,
+            "y": 1.65
+          },
+          "b": {
+            "x": 2,
+            "y": 1.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.3,
+            "y": 1.5
+          },
+          "b": {
+            "x": -2.3,
+            "y": -1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.64944,
+            "y": -0.79908
+          },
+          "b": {
+            "x": -0.64944,
+            "y": 0.80112
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.64944,
+            "y": 0.00102
+          },
+          "b": {
+            "x": -1.55114,
+            "y": 0.00102
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.64944,
+            "y": 0.00102
+          },
+          "b": {
+            "x": 0.50118,
+            "y": -0.79908
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.64944,
+            "y": 0.00102
+          },
+          "b": {
+            "x": 0.50118,
+            "y": 0.75032
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.50118,
+            "y": 0.00102
+          },
+          "b": {
+            "x": 1.4994,
+            "y": 0.00102
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.50118,
+            "y": 0.75032
+          },
+          "b": {
+            "x": 0.50118,
+            "y": -0.79908
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.3,
+            "y": -1.5
+          },
+          "b": {
+            "x": -2.3,
+            "y": -1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.3,
+            "y": -1.5
+          },
+          "b": {
+            "x": 2.3,
+            "y": 1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.3,
+            "y": 1.5
+          },
+          "b": {
+            "x": -2.3,
+            "y": 1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:-2.5:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2.5:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:2.6:D_SMA",
+          "text": "D_SMA",
+          "at": {
+            "x": 0,
+            "y": 2.6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.5700000000000003,
+        "minY": -1.71,
+        "maxX": 3.25,
+        "maxY": 1.71
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "D_SMA",
+    "description": "Diode SMA (DO-214AC)",
+    "tags": [
+      "Diode",
+      "SMA",
+      "(DO-214AC)"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -2,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.5,
+          "height": 1.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1388888889
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 2,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.5,
+          "height": 1.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1388888889
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.51,
+            -1.65
+          ],
+          "end": [
+            -3.51,
+            1.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "da16a37e-07f2-4567-a6c8-ff0f60acb412"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.51,
+            -1.65
+          ],
+          "end": [
+            2,
+            -1.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "53fd5ede-59c7-4c1a-a238-96e9dddba307"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.51,
+            1.65
+          ],
+          "end": [
+            2,
+            1.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "dff34e10-67ca-4b77-95c8-838244782165"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.5,
+            -1.75
+          ],
+          "end": [
+            3.5,
+            -1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "dbd4b25f-4fcb-4744-84be-c5e4a4e42837"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.5,
+            1.75
+          ],
+          "end": [
+            -3.5,
+            -1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "2dd2626e-6f74-400d-9266-48b047137055"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.5,
+            -1.75
+          ],
+          "end": [
+            3.5,
+            1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "4ca79e24-2e7b-47bd-871d-fec997d695df"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.5,
+            1.75
+          ],
+          "end": [
+            -3.5,
+            1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "d08df98a-2ea9-4491-a654-062a8028f290"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.3,
+            1.5
+          ],
+          "end": [
+            -2.3,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "1431ae02-b3a1-4485-9ca0-26bc320a78c5"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.64944,
+            -0.79908
+          ],
+          "end": [
+            -0.64944,
+            0.80112
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "0f99da12-e271-4d4a-8797-6ea6343d195d"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.64944,
+            0.00102
+          ],
+          "end": [
+            -1.55114,
+            0.00102
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "f7a8c838-49b4-4488-a08e-d89eb3dc4361"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.64944,
+            0.00102
+          ],
+          "end": [
+            0.50118,
+            -0.79908
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "d558df36-f3a4-4fcf-8ea7-9ca3c5a228aa"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.64944,
+            0.00102
+          ],
+          "end": [
+            0.50118,
+            0.75032
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "d55225e2-3236-4507-bfd9-80a48f293c40"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0.50118,
+            0.00102
+          ],
+          "end": [
+            1.4994,
+            0.00102
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "46fe74cf-81ca-444c-a727-666d0e34a994"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0.50118,
+            0.75032
+          ],
+          "end": [
+            0.50118,
+            -0.79908
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "7c1208d5-7637-4920-8943-369f975b8a74"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.3,
+            -1.5
+          ],
+          "end": [
+            -2.3,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "657b2a01-37ca-4d3c-8004-a75e08aa2032"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.3,
+            -1.5
+          ],
+          "end": [
+            2.3,
+            1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "d13e07f1-e4fe-4d02-b51c-871844057f50"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.3,
+            1.5
+          ],
+          "end": [
+            -2.3,
+            1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "f849bb85-eee3-44d9-b881-7f1627d4304a"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            -2.5,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "84118230-d2f4-4bb3-819b-e1cb088384b6",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": -2.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -2.5,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "78f18f7d-f8a5-43e4-98c1-400155beaace",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -2.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            2.6,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "d8100462-8cef-473f-be33-7f843be6851c",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "D_SMA"
+          ]
+        },
+        "text": {
+          "content": "D_SMA",
+          "position": {
+            "x": 0,
+            "y": 2.6
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step",
+        "resolvedFileName": "D_SMA.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"D_SMA\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"Diode SMA (DO-214AC)\")\n\t(tags \"Diode SMA (DO-214AC)\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2.5 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"78f18f7d-f8a5-43e4-98c1-400155beaace\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"D_SMA\"\n\t\t(at 0 2.6 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d8100462-8cef-473f-be33-7f843be6851c\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"c4278de3-51d4-45cb-b37b-42a667e66bc5\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"aa802e2b-7add-4e63-bcb2-5328ca681d3d\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -3.51 -1.65)\n\t\t(end -3.51 1.65)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"da16a37e-07f2-4567-a6c8-ff0f60acb412\")\n\t)\n\t(fp_line\n\t\t(start -3.51 -1.65)\n\t\t(end 2 -1.65)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"53fd5ede-59c7-4c1a-a238-96e9dddba307\")\n\t)\n\t(fp_line\n\t\t(start -3.51 1.65)\n\t\t(end 2 1.65)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"dff34e10-67ca-4b77-95c8-838244782165\")\n\t)\n\t(fp_line\n\t\t(start -3.5 -1.75)\n\t\t(end 3.5 -1.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"dbd4b25f-4fcb-4744-84be-c5e4a4e42837\")\n\t)\n\t(fp_line\n\t\t(start -3.5 1.75)\n\t\t(end -3.5 -1.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"2dd2626e-6f74-400d-9266-48b047137055\")\n\t)\n\t(fp_line\n\t\t(start 3.5 -1.75)\n\t\t(end 3.5 1.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"4ca79e24-2e7b-47bd-871d-fec997d695df\")\n\t)\n\t(fp_line\n\t\t(start 3.5 1.75)\n\t\t(end -3.5 1.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"d08df98a-2ea9-4491-a654-062a8028f290\")\n\t)\n\t(fp_line\n\t\t(start -2.3 1.5)\n\t\t(end -2.3 -1.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1431ae02-b3a1-4485-9ca0-26bc320a78c5\")\n\t)\n\t(fp_line\n\t\t(start -0.64944 -0.79908)\n\t\t(end -0.64944 0.80112)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"0f99da12-e271-4d4a-8797-6ea6343d195d\")\n\t)\n\t(fp_line\n\t\t(start -0.64944 0.00102)\n\t\t(end -1.55114 0.00102)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"f7a8c838-49b4-4488-a08e-d89eb3dc4361\")\n\t)\n\t(fp_line\n\t\t(start -0.64944 0.00102)\n\t\t(end 0.50118 -0.79908)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d558df36-f3a4-4fcf-8ea7-9ca3c5a228aa\")\n\t)\n\t(fp_line\n\t\t(start -0.64944 0.00102)\n\t\t(end 0.50118 0.75032)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d55225e2-3236-4507-bfd9-80a48f293c40\")\n\t)\n\t(fp_line\n\t\t(start 0.50118 0.00102)\n\t\t(end 1.4994 0.00102)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"46fe74cf-81ca-444c-a727-666d0e34a994\")\n\t)\n\t(fp_line\n\t\t(start 0.50118 0.75032)\n\t\t(end 0.50118 -0.79908)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"7c1208d5-7637-4920-8943-369f975b8a74\")\n\t)\n\t(fp_line\n\t\t(start 2.3 -1.5)\n\t\t(end -2.3 -1.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"657b2a01-37ca-4d3c-8004-a75e08aa2032\")\n\t)\n\t(fp_line\n\t\t(start 2.3 -1.5)\n\t\t(end 2.3 1.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d13e07f1-e4fe-4d02-b51c-871844057f50\")\n\t)\n\t(fp_line\n\t\t(start 2.3 1.5)\n\t\t(end -2.3 1.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"f849bb85-eee3-44d9-b881-7f1627d4304a\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 -2.5 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"84118230-d2f4-4bb3-819b-e1cb088384b6\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -2 0)\n\t\t(size 2.5 1.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1388888889)\n\t\t(uuid \"e092a9e8-b915-4f8c-82db-96bdde4366ac\")\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 2 0)\n\t\t(size 2.5 1.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1388888889)\n\t\t(uuid \"7c00314a-7875-4f2e-ac99-32554d25fcd6\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SMA.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "D_SMA.kicad_mod"
+}

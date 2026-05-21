@@ -1,0 +1,51 @@
+{
+  "id": "openpcb.core.connector.pin-socket-1x02-2-54mm",
+  "uuid": "a053391c-0570-5968-bf0c-f8dd3033f837",
+  "version": "1.0.0",
+  "name": "Pin Socket 1x02 2.54mm",
+  "description": "Two-pin single-row 2.54 mm vertical pin socket.",
+  "category": "connector",
+  "tags": [
+    "connector",
+    "socket",
+    "2.54mm",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.connector.conn-01x02",
+  "defaultFootprint": "openpcb.core.footprint.connector.pin-socket-1x02-p2-54mm-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.pin-socket-1x02-p2-54mm-vertical",
+      "label": "1x02 vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x02.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Pin Socket 1x02 2.54mm",
+    "sourceHash": "ace78fd4fb396996f4236f800b19911cf59dd0055086d286aa25d40c4734a730",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

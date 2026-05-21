@@ -1,0 +1,942 @@
+{
+  "id": "openpcb.core.footprint.package.sot-223",
+  "uuid": "262d6908-c0d7-5dbd-b9dc-da639f8e61a6",
+  "version": "1.0.0",
+  "name": "SOT-223",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.package.sot-223"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "SOT-223.kicad_mod",
+    "sourceLibrary": "Package_TO_SOT_SMD",
+    "sourceItemName": "SOT-223",
+    "sourceHash": "49f22605ecc1fc70661654e09eb86ebe3545a2a8a8c98dd6039bf2bc4b9f4839",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_5ff7d1771ce76208",
+    "fileName": "SOT-223.kicad_mod",
+    "name": "SOT-223",
+    "description": "module CMS SOT223 4 pins",
+    "mountType": "smd",
+    "padCount": 4,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "cms",
+      "sot",
+      "smd"
+    ],
+    "sourceHash": "49f22605ecc1fc70661654e09eb86ebe3545a2a8a8c98dd6039bf2bc4b9f4839",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "SOT-223",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.15,
+            "y": -2.3
+          },
+          "widthMm": 2,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.15,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.15,
+            "y": 2.3
+          },
+          "widthMm": 2,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.15,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 3.8,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.85,
+            "y": -3.41
+          },
+          "b": {
+            "x": 1.91,
+            "y": -3.41
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.85,
+            "y": 3.41
+          },
+          "b": {
+            "x": 1.91,
+            "y": 3.41
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.91,
+            "y": -3.41
+          },
+          "b": {
+            "x": 1.91,
+            "y": -2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.91,
+            "y": 3.41
+          },
+          "b": {
+            "x": 1.91,
+            "y": 2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.85,
+            "y": -2.3
+          },
+          "b": {
+            "x": -1.85,
+            "y": 3.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.85,
+            "y": -2.3
+          },
+          "b": {
+            "x": -0.8,
+            "y": -3.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.85,
+            "y": 3.35
+          },
+          "b": {
+            "x": 1.85,
+            "y": 3.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.8,
+            "y": -3.35
+          },
+          "b": {
+            "x": 1.85,
+            "y": -3.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.85,
+            "y": -3.35
+          },
+          "b": {
+            "x": 1.85,
+            "y": 3.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.13,
+              "y": -3.31
+            },
+            {
+              "x": -3.37,
+              "y": -3.64
+            },
+            {
+              "x": -2.89,
+              "y": -3.64
+            },
+            {
+              "x": -3.13,
+              "y": -3.31
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-4.5:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -4.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:4.5:SOT-223",
+          "text": "SOT-223",
+          "at": {
+            "x": 0,
+            "y": 4.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.15,
+        "minY": -3.7,
+        "maxX": 4.15,
+        "maxY": 3.4699999999999998
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "SOT-223",
+    "description": "module CMS SOT223 4 pins",
+    "tags": [
+      "CMS",
+      "SOT"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.15,
+          "y": -2.3
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 1.5
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.15,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 1.5
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.15,
+          "y": 2.3
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 1.5
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.15,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 3.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.85,
+            -3.41
+          ],
+          "end": [
+            1.91,
+            -3.41
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "10341b74-de1d-44f8-b919-9dc7b01c77a6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.85,
+            3.41
+          ],
+          "end": [
+            1.91,
+            3.41
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "9eaaee9c-d787-4c4e-9409-486f5d803253"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.91,
+            -3.41
+          ],
+          "end": [
+            1.91,
+            -2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "668bbda1-c7e1-4e23-9d62-dd4d052018b0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.91,
+            3.41
+          ],
+          "end": [
+            1.91,
+            2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "7b7161b8-bc72-4822-9d67-8c4bc120433f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.4,
+            -3.6
+          ],
+          "end": [
+            -4.4,
+            3.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "1e6e1c3c-cf2e-4570-9270-1e4425f802c5"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.4,
+            3.6
+          ],
+          "end": [
+            4.4,
+            3.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "fe006c7f-e9e9-42b8-94e6-7fab62e45a96"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4.4,
+            -3.6
+          ],
+          "end": [
+            -4.4,
+            -3.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "18a70f3a-ba6f-445d-a1d1-b2229acce0b4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4.4,
+            3.6
+          ],
+          "end": [
+            4.4,
+            -3.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "1cb64177-a033-440a-bc55-482358e05d6e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.85,
+            -2.3
+          ],
+          "end": [
+            -1.85,
+            3.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "2a9ca989-6b38-468d-a714-75a033988b2c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.85,
+            -2.3
+          ],
+          "end": [
+            -0.8,
+            -3.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "bcb7341f-c5b7-4cf0-ac84-66c574c5e61c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.85,
+            3.35
+          ],
+          "end": [
+            1.85,
+            3.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c011dc66-40ad-4f1e-a34f-e251dae0cd31"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.8,
+            -3.35
+          ],
+          "end": [
+            1.85,
+            -3.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "80711826-0dce-449b-af78-388864936159"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.85,
+            -3.35
+          ],
+          "end": [
+            1.85,
+            3.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "a66ee799-671f-4902-ac92-f94d39f82acf"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.SilkS",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              -3.13,
+              -3.31
+            ],
+            [
+              "xy",
+              -3.37,
+              -3.64
+            ],
+            [
+              "xy",
+              -2.89,
+              -3.64
+            ],
+            [
+              "xy",
+              -3.13,
+              -3.31
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "yes",
+          "layer": "F.SilkS",
+          "uuid": "818bd365-7a79-40a2-b037-dacc75b8af05"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            90
+          ],
+          "layer": "F.Fab",
+          "uuid": "184c46b5-a004-48e0-8f63-d7d63dc324be",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.8,
+                0.8
+              ],
+              [
+                "thickness",
+                0.12
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 90,
+          "fontSizeMm": 0.8,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -4.5,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "4497a1e1-94b1-4cba-abfc-02d82a04371f",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -4.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            4.5,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "222a057b-4f1f-481e-81c0-82276f6e2fbf",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "SOT-223"
+          ]
+        },
+        "text": {
+          "content": "SOT-223",
+          "position": {
+            "x": 0,
+            "y": 4.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step",
+        "resolvedFileName": "SOT-223.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"SOT-223\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"module CMS SOT223 4 pins\")\n\t(tags \"CMS SOT\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -4.5 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"4497a1e1-94b1-4cba-abfc-02d82a04371f\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"SOT-223\"\n\t\t(at 0 4.5 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"222a057b-4f1f-481e-81c0-82276f6e2fbf\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"cf35375b-a35a-4ccf-b401-52356d4eb3ab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"e0b857b7-85f4-442e-9375-43b7f0b65024\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -1.85 -3.41)\n\t\t(end 1.91 -3.41)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"10341b74-de1d-44f8-b919-9dc7b01c77a6\")\n\t)\n\t(fp_line\n\t\t(start -1.85 3.41)\n\t\t(end 1.91 3.41)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"9eaaee9c-d787-4c4e-9409-486f5d803253\")\n\t)\n\t(fp_line\n\t\t(start 1.91 -3.41)\n\t\t(end 1.91 -2.15)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"668bbda1-c7e1-4e23-9d62-dd4d052018b0\")\n\t)\n\t(fp_line\n\t\t(start 1.91 3.41)\n\t\t(end 1.91 2.15)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"7b7161b8-bc72-4822-9d67-8c4bc120433f\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy -3.13 -3.31) (xy -3.37 -3.64) (xy -2.89 -3.64) (xy -3.13 -3.31)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill yes)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"818bd365-7a79-40a2-b037-dacc75b8af05\")\n\t)\n\t(fp_line\n\t\t(start -4.4 -3.6)\n\t\t(end -4.4 3.6)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"1e6e1c3c-cf2e-4570-9270-1e4425f802c5\")\n\t)\n\t(fp_line\n\t\t(start -4.4 3.6)\n\t\t(end 4.4 3.6)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"fe006c7f-e9e9-42b8-94e6-7fab62e45a96\")\n\t)\n\t(fp_line\n\t\t(start 4.4 -3.6)\n\t\t(end -4.4 -3.6)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"18a70f3a-ba6f-445d-a1d1-b2229acce0b4\")\n\t)\n\t(fp_line\n\t\t(start 4.4 3.6)\n\t\t(end 4.4 -3.6)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"1cb64177-a033-440a-bc55-482358e05d6e\")\n\t)\n\t(fp_line\n\t\t(start -1.85 -2.3)\n\t\t(end -1.85 3.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"2a9ca989-6b38-468d-a714-75a033988b2c\")\n\t)\n\t(fp_line\n\t\t(start -1.85 -2.3)\n\t\t(end -0.8 -3.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"bcb7341f-c5b7-4cf0-ac84-66c574c5e61c\")\n\t)\n\t(fp_line\n\t\t(start -1.85 3.35)\n\t\t(end 1.85 3.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c011dc66-40ad-4f1e-a34f-e251dae0cd31\")\n\t)\n\t(fp_line\n\t\t(start -0.8 -3.35)\n\t\t(end 1.85 -3.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"80711826-0dce-449b-af78-388864936159\")\n\t)\n\t(fp_line\n\t\t(start 1.85 -3.35)\n\t\t(end 1.85 3.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"a66ee799-671f-4902-ac92-f94d39f82acf\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 90)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"184c46b5-a004-48e0-8f63-d7d63dc324be\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.8 0.8)\n\t\t\t\t(thickness 0.12)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -3.15 -2.3)\n\t\t(size 2 1.5)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"ea891fee-0855-44cc-8da9-0c7b9e3b1505\")\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at -3.15 0)\n\t\t(size 2 1.5)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"2adbaf0f-7617-4618-9438-78a8bd4ec4b2\")\n\t)\n\t(pad \"3\" smd roundrect\n\t\t(at -3.15 2.3)\n\t\t(size 2 1.5)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"1b42a1a5-e735-42f2-b87a-1df5a461081d\")\n\t)\n\t(pad \"4\" smd roundrect\n\t\t(at 3.15 0)\n\t\t(size 2 3.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"023f2cc5-97fb-4421-8e37-e8aa385789b4\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/SOT-223.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "SOT-223.kicad_mod"
+}

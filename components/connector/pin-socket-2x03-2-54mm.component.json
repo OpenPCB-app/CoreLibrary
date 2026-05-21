@@ -1,0 +1,67 @@
+{
+  "id": "openpcb.core.connector.pin-socket-2x03-2-54mm",
+  "uuid": "3ecf640b-dded-5425-af3f-7b631b94b9e9",
+  "version": "1.0.0",
+  "name": "Pin Socket 2x03 2.54mm",
+  "description": "Six-pin dual-row 2.54 mm vertical pin socket.",
+  "category": "connector",
+  "tags": [
+    "connector",
+    "socket",
+    "2.54mm",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.connector.conn-02x03-odd-even",
+  "defaultFootprint": "openpcb.core.footprint.connector.pin-socket-2x03-p2-54mm-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.pin-socket-2x03-p2-54mm-vertical",
+      "label": "2x03 vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_02x03_Odd_Even.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Pin Socket 2x03 2.54mm",
+    "sourceHash": "057fd31e1a171564710034cfc12b05c8374367ebf570b28eddc9b9aa5efa19f8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -86,14 +86,19 @@ function packedFootprintFor(
   const base = assetEntryFor(absPath, bytes);
   const json = parseJsonBytes<{
     mountType?: string;
-    package?: { code?: string; standard?: string };
+    package?: { code?: string; standard?: string; imperial?: string | null; metric?: string | null };
     models3d?: string[];
   }>(bytes);
+  const packageCode = json.package?.code ?? json.package?.imperial ?? json.package?.metric;
   return {
     entry: {
       ...base,
-      package: json.package
-        ? { ...json.package, mountType: json.mountType }
+      package: json.package || json.mountType
+        ? {
+            code: packageCode ?? undefined,
+            standard: json.package?.standard,
+            mountType: json.mountType,
+          }
         : json.mountType
           ? { mountType: json.mountType }
           : undefined,
@@ -104,7 +109,7 @@ function packedFootprintFor(
 }
 
 function packedModel3dFor(absPath: string): PackedModel3d {
-  const data = parseJsonBytes<OpclibModel3dEntry>(readBytes(absPath));
+  const data = parseJsonBytes<OpclibModel3dEntry & { provenance?: unknown; offsetMm?: unknown; rotationDeg?: unknown }>(readBytes(absPath));
   const formats: OpclibModel3dEntry["formats"] = {};
   const assets: PackedModel3d["assets"] = [];
   for (const [format, info] of Object.entries(data.formats)) {
@@ -125,7 +130,17 @@ function packedModel3dFor(absPath: string): PackedModel3d {
     };
     assets.push({ format, path: info.path, bytes });
   }
-  return { entry: { ...data, formats }, assets };
+  return {
+    entry: {
+      id: data.id,
+      uuid: data.uuid,
+      version: data.version,
+      name: data.name,
+      formats,
+      boundsMm: data.boundsMm,
+    },
+    assets,
+  };
 }
 
 function packedComponentFor(absPath: string): PackedComponent {

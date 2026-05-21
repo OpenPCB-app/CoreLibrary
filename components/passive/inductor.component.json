@@ -1,0 +1,92 @@
+{
+  "id": "openpcb.core.passive.inductor",
+  "uuid": "f79d78bb-53e5-5d9a-ac66-00382bc8ae11",
+  "version": "1.0.0",
+  "name": "Inductor",
+  "description": "Generic two-pin SMD inductor with common chip package variants.",
+  "category": "passive",
+  "tags": [
+    "inductor",
+    "passive",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.passive.inductor",
+  "defaultFootprint": "openpcb.core.footprint.passive.l-0805-2012metric",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.l-0603-1608metric",
+      "label": "0603 / 1608 metric",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-0805-2012metric",
+      "label": "0805 / 2012 metric",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-1206-3216metric",
+      "label": "1206 / 3216 metric",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-1210-3225metric",
+      "label": "1210 / 3225 metric",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "L.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Inductor",
+    "sourceHash": "db9e582d92ed45a4c5f3aa6f357f80e79595a0f5f5a1c4075d9f35e1f0bab316",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

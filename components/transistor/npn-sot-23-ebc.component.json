@@ -1,0 +1,59 @@
+{
+  "id": "openpcb.core.transistor.npn-sot-23-ebc",
+  "uuid": "91bca4e8-5974-521a-a2b6-804e985a6eee",
+  "version": "1.0.0",
+  "name": "NPN Transistor SOT-23 EBC",
+  "description": "Generic NPN BJT using E-B-C SOT-23 pin order.",
+  "category": "transistor",
+  "tags": [
+    "transistor",
+    "bjt",
+    "npn",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.transistor.npn-ebc",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "E"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "B"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3",
+          "pinName": "C"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Q_NPN_EBC.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "NPN Transistor SOT-23 EBC",
+    "sourceHash": "e0a0143140c91a9d644abe6a132595cb6a2942b439c65216b0b226dd573dc162",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

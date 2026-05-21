@@ -42,14 +42,15 @@ interface SymbolSource {
   uuid: string;
   provenance: Provenance;
   normalized?: {
-    pins?: Array<{ number?: string }>;
-    preview?: { pins?: Array<{ number?: string }> };
+    pins?: Array<{ number?: string; unit?: number }>;
+    preview?: { pins?: Array<{ number?: string; unit?: number }> };
   };
 }
 
 interface FootprintSource {
   id: string;
   uuid: string;
+  name?: string;
   provenance: Provenance;
   models3d?: string[];
   normalized?: {
@@ -59,6 +60,9 @@ interface FootprintSource {
 
 const issues: Issue[] = [];
 const warnings: Issue[] = [];
+const flags = new Set(process.argv.slice(2));
+const STRICT = flags.has("--strict") || flags.has("--release");
+const REQUIRE_STEP_3D = flags.has("--require-step-3d") || flags.has("--release");
 const LIBRARY_ROOT = process.env.CORELIB_ROOT
   ? path.resolve(process.env.CORELIB_ROOT)
   : REPO_ROOT;
@@ -85,7 +89,15 @@ function fail(file: string, message: string) {
 }
 
 function warn(file: string, message: string) {
-  warnings.push({ file: displayPath(file), message });
+  const issue = { file: displayPath(file), message };
+  if (STRICT) issues.push(issue);
+  else warnings.push(issue);
+}
+
+function warnDisplay(file: string, message: string) {
+  const issue = { file, message };
+  if (STRICT) issues.push(issue);
+  else warnings.push(issue);
 }
 
 function displayPath(absPath: string): string {
@@ -151,6 +163,23 @@ function symbolPinNumbers(data: SymbolSource): Set<string> {
   return stringSet(data.normalized?.preview?.pins?.map((pin) => pin.number));
 }
 
+function symbolPins(data: SymbolSource): Array<{ number?: string; unit?: number }> {
+  if ((data.normalized?.pins ?? []).length > 0) return data.normalized!.pins!;
+  return data.normalized?.preview?.pins ?? [];
+}
+
+function checkDuplicateSymbolPins(file: string, data: SymbolSource): void {
+  const seen = new Set<string>();
+  for (const [index, pin] of symbolPins(data).entries()) {
+    const number = pin.number?.trim();
+    if (!number) continue;
+    const key = number;
+    if (seen.has(key)) fail(file, `duplicate symbol pin number ${key}`);
+    else seen.add(key);
+    if (index > 1024) fail(file, "symbol has suspiciously many pins");
+  }
+}
+
 function footprintPadNumbers(data: FootprintSource): Set<string> {
   return stringSet(data.normalized?.preview?.pads?.map((pad) => pad.number));
 }
@@ -159,11 +188,40 @@ function setDifference(left: Set<string>, right: Set<string>): string[] {
   return [...left].filter((value) => !right.has(value)).sort();
 }
 
+function firstPathSegment(file: string): string | null {
+  const rel = displayPath(file);
+  const parts = rel.split("/");
+  return parts.length >= 3 ? parts[1] ?? null : null;
+}
+
+function idCategory(id: string, prefix: string): string | null {
+  if (!id.startsWith(prefix)) return null;
+  return id.slice(prefix.length).split(".")[0] ?? null;
+}
+
+function checkCategoryMatchesFile(file: string, id: string, prefix: string): void {
+  const folder = firstPathSegment(file);
+  const category = idCategory(id, prefix);
+  if (folder && category && folder !== category) {
+    fail(file, `category folder ${folder} does not match id category ${category}`);
+  }
+}
+
+function rememberName(index: Map<string, string>, file: string, name: string | undefined, kind: string): void {
+  if (!name) return;
+  const normalized = name.trim().toLowerCase();
+  if (!normalized) return;
+  const hit = index.get(normalized);
+  if (hit) warn(file, `duplicate ${kind} name "${name}" (also in ${hit})`);
+  else index.set(normalized, displayPath(file));
+}
+
 // --- symbols ---
 const symbolIds = new Set<string>();
 const symbolPinsById = new Map<string, Set<string>>();
+const symbolNames = new Map<string, string>();
 for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
-  const data = loadJson<SymbolSource>(file);
+  const data = loadJson<SymbolSource & { name?: string }>(file);
   if (!validateSymbol(data)) {
     for (const err of validateSymbol.errors ?? [])
       fail(file, `${err.instancePath} ${err.message}`);
@@ -171,6 +229,9 @@ for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
   }
   checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
+  checkCategoryMatchesFile(file, data.id, "openpcb.core.symbol.");
+  rememberName(symbolNames, file, data.name, "symbol");
+  checkDuplicateSymbolPins(file, data);
   symbolIds.add(data.id);
   symbolPinsById.set(data.id, symbolPinNumbers(data));
 }
@@ -179,6 +240,8 @@ for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
 const footprintIds = new Set<string>();
 const footprintPadsById = new Map<string, Set<string>>();
 const footprintModelRefs: Array<{ file: string; footprintId: string; modelIds: string[] }> = [];
+const footprintHasModels = new Map<string, boolean>();
+const footprintNames = new Map<string, string>();
 for (const file of walkFiles(footprintsRoot, ".fp.json")) {
   const data = loadJson<FootprintSource>(file);
   if (!validateFootprint(data)) {
@@ -188,13 +251,17 @@ for (const file of walkFiles(footprintsRoot, ".fp.json")) {
   }
   checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
+  checkCategoryMatchesFile(file, data.id, "openpcb.core.footprint.");
+  rememberName(footprintNames, file, data.name, "footprint");
   footprintIds.add(data.id);
   footprintPadsById.set(data.id, footprintPadNumbers(data));
   footprintModelRefs.push({ file, footprintId: data.id, modelIds: data.models3d ?? [] });
+  footprintHasModels.set(data.id, (data.models3d ?? []).length > 0);
 }
 
 // --- models3d ---
 const modelIds = new Set<string>();
+const modelFormatPaths = new Set<string>();
 for (const file of walkFiles(modelsRoot, ".model.json")) {
   const data = loadJson<{
     id: string;
@@ -209,8 +276,13 @@ for (const file of walkFiles(modelsRoot, ".model.json")) {
   }
   checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
+  checkCategoryMatchesFile(file, data.id, "openpcb.core.3d.");
   modelIds.add(data.id);
+  if (REQUIRE_STEP_3D && !data.formats.step) fail(file, "release validation requires a STEP format");
   for (const [fmt, info] of Object.entries(data.formats)) {
+    if (modelFormatPaths.has(info.path)) warn(file, `duplicate 3d asset path: ${info.path}`);
+    modelFormatPaths.add(info.path);
+    if (!info.path.startsWith("3d/")) fail(file, `${fmt} asset path must stay under 3d/: ${info.path}`);
     const abs = path.join(LIBRARY_ROOT, info.path);
     if (!existsSync(abs)) {
       fail(file, `${fmt} asset missing: ${info.path}`);
@@ -221,6 +293,9 @@ for (const file of walkFiles(modelsRoot, ".model.json")) {
 }
 
 for (const ref of footprintModelRefs) {
+  if (REQUIRE_STEP_3D && ref.modelIds.length === 0) {
+    fail(ref.file, `release validation requires at least one STEP-backed 3d model on ${ref.footprintId}`);
+  }
   for (const modelId of ref.modelIds) {
     if (!modelIds.has(modelId))
       fail(ref.file, `unknown 3d model ref on ${ref.footprintId}: ${modelId}`);
@@ -228,10 +303,17 @@ for (const ref of footprintModelRefs) {
 }
 
 // --- components ---
+const componentNames = new Map<string, string>();
+const componentAliases = new Map<string, string>();
+const referencedFootprints = new Set<string>();
 for (const file of walkFiles(componentsRoot, ".component.json")) {
   const data = loadJson<{
     id: string;
     uuid: string;
+    name?: string;
+    category?: string;
+    tags?: string[];
+    aliases?: string[];
     symbol: string;
     defaultFootprint: string;
     provenance: Provenance;
@@ -247,6 +329,11 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
   }
   checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
+  checkCategoryMatchesFile(file, data.id, "openpcb.core.");
+  if (data.category && firstPathSegment(file) !== data.category) fail(file, `category field ${data.category} does not match folder ${firstPathSegment(file)}`);
+  rememberName(componentNames, file, data.name, "component");
+  for (const alias of data.aliases ?? []) rememberName(componentAliases, file, alias, "component alias");
+  if (data.category && !(data.tags ?? []).includes(data.category)) warn(file, `tags should include category "${data.category}"`);
   const symbolPins = symbolPinsById.get(data.symbol);
   if (!symbolIds.has(data.symbol))
     fail(file, `unknown symbol ref: ${data.symbol}`);
@@ -254,9 +341,12 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
   if (!variantFps.has(data.defaultFootprint))
     fail(file, `defaultFootprint ${data.defaultFootprint} not in footprints[]`);
   for (const v of data.footprints) {
+    referencedFootprints.add(v.footprint);
     const footprintPads = footprintPadsById.get(v.footprint);
     if (!footprintIds.has(v.footprint))
       fail(file, `unknown footprint ref: ${v.footprint}`);
+    if (REQUIRE_STEP_3D && !footprintHasModels.get(v.footprint))
+      fail(file, `release validation requires STEP-backed 3d model for footprint ${v.footprint}`);
     if (!symbolPins || !footprintPads) continue;
 
     const pinMap = v.pinMap ?? [];
@@ -284,6 +374,10 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
     if (unmappedPads.length > 0)
       warn(file, `pinMap for footprint ${v.footprint} does not map footprint pad(s): ${unmappedPads.join(", ")}`);
   }
+}
+
+for (const footprintId of footprintIds) {
+  if (!referencedFootprints.has(footprintId)) warnDisplay(idIndex.get(footprintId) ?? "<unknown>", `footprint is not referenced by any component: ${footprintId}`);
 }
 
 if (issues.length === 0) {

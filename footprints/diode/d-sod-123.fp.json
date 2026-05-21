@@ -1,0 +1,1001 @@
+{
+  "id": "openpcb.core.footprint.diode.d-sod-123",
+  "uuid": "8824347f-062d-57d6-8a45-88b53ecc3750",
+  "version": "1.0.0",
+  "name": "D_SOD-123",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.diode.d-sod-123"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "D_SOD-123.kicad_mod",
+    "sourceLibrary": "Diode_SMD",
+    "sourceItemName": "D_SOD-123",
+    "sourceHash": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_6196892b6b92f9e1",
+    "fileName": "D_SOD-123.kicad_mod",
+    "name": "D_SOD-123",
+    "description": "SOD-123",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "sod-123",
+      "smd"
+    ],
+    "sourceHash": "fd16785935b01254e1076f490e12f0f096da73cf087adefce51225585c62557a",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "D_SOD-123",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.65,
+            "y": 0
+          },
+          "widthMm": 0.9,
+          "heightMm": 1.2,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.65,
+            "y": 0
+          },
+          "widthMm": 0.9,
+          "heightMm": 1.2,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.36,
+            "y": -1
+          },
+          "b": {
+            "x": -2.36,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.36,
+            "y": -1
+          },
+          "b": {
+            "x": 1.65,
+            "y": -1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.36,
+            "y": 1
+          },
+          "b": {
+            "x": 1.65,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.4,
+            "y": -0.9
+          },
+          "b": {
+            "x": 1.4,
+            "y": -0.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.4,
+            "y": 0.9
+          },
+          "b": {
+            "x": -1.4,
+            "y": -0.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.75,
+            "y": 0
+          },
+          "b": {
+            "x": -0.35,
+            "y": 0
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.35,
+            "y": 0
+          },
+          "b": {
+            "x": -0.35,
+            "y": -0.55
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.35,
+            "y": 0
+          },
+          "b": {
+            "x": -0.35,
+            "y": 0.55
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.35,
+            "y": 0
+          },
+          "b": {
+            "x": 0.25,
+            "y": -0.4
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.25,
+            "y": -0.4
+          },
+          "b": {
+            "x": 0.25,
+            "y": 0.4
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.25,
+            "y": 0
+          },
+          "b": {
+            "x": 0.75,
+            "y": 0
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.25,
+            "y": 0.4
+          },
+          "b": {
+            "x": -0.35,
+            "y": 0
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.4,
+            "y": -0.9
+          },
+          "b": {
+            "x": 1.4,
+            "y": 0.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.4,
+            "y": 0.9
+          },
+          "b": {
+            "x": -1.4,
+            "y": 0.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:-2:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:2.1:D_SOD-123",
+          "text": "D_SOD-123",
+          "at": {
+            "x": 0,
+            "y": 2.1
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -2.42,
+        "minY": -1.06,
+        "maxX": 2.0999999999999996,
+        "maxY": 1.06
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "D_SOD-123",
+    "description": "SOD-123",
+    "tags": [
+      "SOD-123"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.65,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.9,
+          "height": 1.2
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.65,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.9,
+          "height": 1.2
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.36,
+            -1
+          ],
+          "end": [
+            -2.36,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "de699020-a29a-4525-a22d-28ad5ded289c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.36,
+            -1
+          ],
+          "end": [
+            1.65,
+            -1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "e1b647a2-f10b-41c9-a10d-290cc557cf1b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.36,
+            1
+          ],
+          "end": [
+            1.65,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "bb8e1113-3a33-4b8a-8d4d-dc28453c23b3"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.35,
+            -1.15
+          ],
+          "end": [
+            -2.35,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "f234f584-a276-4f4c-b983-7f290a1e5747"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.35,
+            -1.15
+          ],
+          "end": [
+            2.35,
+            -1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "4aacff46-a0e4-4a7e-adc9-4cb9bcd268bd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.35,
+            -1.15
+          ],
+          "end": [
+            2.35,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "f57b8828-8e33-4d6a-ba4b-817e53acd1da"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.35,
+            1.15
+          ],
+          "end": [
+            -2.35,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "277b3168-086d-4feb-9ab8-026e88452a58"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.4,
+            -0.9
+          ],
+          "end": [
+            1.4,
+            -0.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "4ad4e92b-9b64-4eed-8c4b-d96097a88e61"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.4,
+            0.9
+          ],
+          "end": [
+            -1.4,
+            -0.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "1ac565ca-970b-44d3-9087-59b04ab60eae"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.75,
+            0
+          ],
+          "end": [
+            -0.35,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "46dc275b-0899-4d0d-8713-b622e0c22f0e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.35,
+            0
+          ],
+          "end": [
+            -0.35,
+            -0.55
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "9b27c55d-1944-4b36-b982-eb719a46d948"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.35,
+            0
+          ],
+          "end": [
+            -0.35,
+            0.55
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "68f6cd3c-fdce-44a9-af86-78cf47501eda"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.35,
+            0
+          ],
+          "end": [
+            0.25,
+            -0.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "e7535fdf-c98f-460e-b3e7-c5c3c78dc09f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0.25,
+            -0.4
+          ],
+          "end": [
+            0.25,
+            0.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "00b1df15-efaf-4389-b1a8-f9ec8af76c39"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0.25,
+            0
+          ],
+          "end": [
+            0.75,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "44d78e10-5c1c-4284-ba9c-163e5208ec30"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0.25,
+            0.4
+          ],
+          "end": [
+            -0.35,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c82b3165-5533-40f3-a703-e13e1a64873f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.4,
+            -0.9
+          ],
+          "end": [
+            1.4,
+            0.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c36e9a65-0388-45d7-9b3b-1648a22d40d4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.4,
+            0.9
+          ],
+          "end": [
+            -1.4,
+            0.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "3ea8d381-2884-4493-a631-0d00c072c3e5"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            -2,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "4ef1dce9-e176-4a2e-8fb0-c36ec2740b29",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": -2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -2,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "5c813cbc-84b5-45a4-a0aa-35d3573110db",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            2.1,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "12459980-93ec-4d14-a5d8-25465bd8b01f",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "D_SOD-123"
+          ]
+        },
+        "text": {
+          "content": "D_SOD-123",
+          "position": {
+            "x": 0,
+            "y": 2.1
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step",
+        "resolvedFileName": "D_SOD-123.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"D_SOD-123\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"SOD-123\")\n\t(tags \"SOD-123\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"5c813cbc-84b5-45a4-a0aa-35d3573110db\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"D_SOD-123\"\n\t\t(at 0 2.1 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"12459980-93ec-4d14-a5d8-25465bd8b01f\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"9df2fb6c-9a01-450c-8dda-024b1c6ddfcc\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"434b35bb-86e7-4a80-b86a-8dfd526da733\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.36 -1)\n\t\t(end -2.36 1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"de699020-a29a-4525-a22d-28ad5ded289c\")\n\t)\n\t(fp_line\n\t\t(start -2.36 -1)\n\t\t(end 1.65 -1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"e1b647a2-f10b-41c9-a10d-290cc557cf1b\")\n\t)\n\t(fp_line\n\t\t(start -2.36 1)\n\t\t(end 1.65 1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"bb8e1113-3a33-4b8a-8d4d-dc28453c23b3\")\n\t)\n\t(fp_line\n\t\t(start -2.35 -1.15)\n\t\t(end -2.35 1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"f234f584-a276-4f4c-b983-7f290a1e5747\")\n\t)\n\t(fp_line\n\t\t(start -2.35 -1.15)\n\t\t(end 2.35 -1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"4aacff46-a0e4-4a7e-adc9-4cb9bcd268bd\")\n\t)\n\t(fp_line\n\t\t(start 2.35 -1.15)\n\t\t(end 2.35 1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"f57b8828-8e33-4d6a-ba4b-817e53acd1da\")\n\t)\n\t(fp_line\n\t\t(start 2.35 1.15)\n\t\t(end -2.35 1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"277b3168-086d-4feb-9ab8-026e88452a58\")\n\t)\n\t(fp_line\n\t\t(start -1.4 -0.9)\n\t\t(end 1.4 -0.9)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4ad4e92b-9b64-4eed-8c4b-d96097a88e61\")\n\t)\n\t(fp_line\n\t\t(start -1.4 0.9)\n\t\t(end -1.4 -0.9)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1ac565ca-970b-44d3-9087-59b04ab60eae\")\n\t)\n\t(fp_line\n\t\t(start -0.75 0)\n\t\t(end -0.35 0)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"46dc275b-0899-4d0d-8713-b622e0c22f0e\")\n\t)\n\t(fp_line\n\t\t(start -0.35 0)\n\t\t(end -0.35 -0.55)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"9b27c55d-1944-4b36-b982-eb719a46d948\")\n\t)\n\t(fp_line\n\t\t(start -0.35 0)\n\t\t(end -0.35 0.55)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"68f6cd3c-fdce-44a9-af86-78cf47501eda\")\n\t)\n\t(fp_line\n\t\t(start -0.35 0)\n\t\t(end 0.25 -0.4)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e7535fdf-c98f-460e-b3e7-c5c3c78dc09f\")\n\t)\n\t(fp_line\n\t\t(start 0.25 -0.4)\n\t\t(end 0.25 0.4)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"00b1df15-efaf-4389-b1a8-f9ec8af76c39\")\n\t)\n\t(fp_line\n\t\t(start 0.25 0)\n\t\t(end 0.75 0)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"44d78e10-5c1c-4284-ba9c-163e5208ec30\")\n\t)\n\t(fp_line\n\t\t(start 0.25 0.4)\n\t\t(end -0.35 0)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c82b3165-5533-40f3-a703-e13e1a64873f\")\n\t)\n\t(fp_line\n\t\t(start 1.4 -0.9)\n\t\t(end 1.4 0.9)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c36e9a65-0388-45d7-9b3b-1648a22d40d4\")\n\t)\n\t(fp_line\n\t\t(start 1.4 0.9)\n\t\t(end -1.4 0.9)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"3ea8d381-2884-4493-a631-0d00c072c3e5\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 -2 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4ef1dce9-e176-4a2e-8fb0-c36ec2740b29\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -1.65 0)\n\t\t(size 0.9 1.2)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"8ca7cf40-9887-436c-bea9-a303f4626eef\")\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 1.65 0)\n\t\t(size 0.9 1.2)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"6df6f7bc-2215-4f91-8920-244285a2df55\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/D_SOD-123.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "D_SOD-123.kicad_mod"
+}

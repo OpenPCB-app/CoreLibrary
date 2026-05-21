@@ -1,0 +1,84 @@
+{
+  "id": "openpcb.core.diode.zener",
+  "uuid": "3144f341-def6-53f0-8553-b573feaf5cab",
+  "version": "1.0.0",
+  "name": "Zener Diode",
+  "description": "Generic two-pin Zener diode with common SMD package variants.",
+  "category": "diode",
+  "tags": [
+    "diode",
+    "zener",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.diode.zener",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-sod-123",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sod-123",
+      "label": "SOD-123",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "K"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "A"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sod-323",
+      "label": "SOD-323",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "K"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "A"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sma",
+      "label": "SMA",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "K"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "A"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "D_Zener.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Zener Diode",
+    "sourceHash": "dab545f78fababd1194583fc4ed3a8e4f1012a1755320d8cef1439fa97c533e2",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

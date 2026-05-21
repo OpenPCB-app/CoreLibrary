@@ -1,0 +1,51 @@
+{
+  "id": "openpcb.core.connector.pin-header-1x02-2-54mm",
+  "uuid": "be21e04e-732f-5e4c-b9ab-9468201972dd",
+  "version": "1.0.0",
+  "name": "Pin Header 1x02 2.54mm",
+  "description": "Two-pin single-row 2.54 mm vertical pin header.",
+  "category": "connector",
+  "tags": [
+    "connector",
+    "header",
+    "2.54mm",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.connector.conn-01x02",
+  "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x02-p2-54mm-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.pin-header-1x02-p2-54mm-vertical",
+      "label": "1x02 vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x02.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Pin Header 1x02 2.54mm",
+    "sourceHash": "e72c4e3f6acb61a94d6a883a5aae16ed3319e8fba28eeeb21a665cce051cb4a3",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "openpcb.core.opto.led",
+  "uuid": "a97c4f78-7c0c-5c09-876f-79a424c32ca3",
+  "version": "1.0.0",
+  "name": "LED",
+  "description": "Generic two-pin indicator LED with common SMD package variants.",
+  "category": "opto",
+  "tags": [
+    "led",
+    "opto",
+    "diode",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.opto.led",
+  "defaultFootprint": "openpcb.core.footprint.opto.led-0603-1608metric",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.opto.led-0603-1608metric",
+      "label": "0603 / 1608 metric",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "K"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "A"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.opto.led-0805-2012metric",
+      "label": "0805 / 2012 metric",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "K"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "A"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.opto.led-1206-3216metric",
+      "label": "1206 / 3216 metric",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "K"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "A"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LED.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "LED",
+    "sourceHash": "423c83b15197c7021314f718a78d379a07fedceebbdd8384e545a934a9829c8d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

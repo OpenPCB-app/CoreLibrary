@@ -1,0 +1,59 @@
+{
+  "id": "openpcb.core.transistor.nmos-sot-23-gsd",
+  "uuid": "18ef076b-ccc6-524f-8652-bbd9915f738c",
+  "version": "1.0.0",
+  "name": "NMOS Transistor SOT-23 GSD",
+  "description": "Generic N-channel MOSFET using G-S-D SOT-23 pin order.",
+  "category": "transistor",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "nmos",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.transistor.nmos-gsd",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "G"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "S"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3",
+          "pinName": "D"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Q_NMOS_GSD.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "NMOS Transistor SOT-23 GSD",
+    "sourceHash": "8b18986aa5adce3574fcbab96cb104b7fa367372269bcc1005e8052b8d31edde",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

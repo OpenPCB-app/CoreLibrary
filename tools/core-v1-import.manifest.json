@@ -1,0 +1,416 @@
+{
+  "version": "1.0.0",
+  "components": [
+    {
+      "id": "openpcb.core.diode.generic",
+      "name": "Generic Diode",
+      "description": "Generic two-pin diode with common SMD package variants.",
+      "category": "diode",
+      "tags": ["diode", "rectifier", "kicad-derived"],
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.generic",
+        "path": "kicad-symbols/Device.kicad_symdir/D.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sod-123",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sod-123",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod",
+          "label": "SOD-123",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sod-123",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SOD-123.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-sod-323",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SOD-323.kicad_mod",
+          "label": "SOD-323",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sod-323",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SOD-323.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sma",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.zener",
+      "name": "Zener Diode",
+      "description": "Generic two-pin Zener diode with common SMD package variants.",
+      "category": "diode",
+      "tags": ["diode", "zener", "kicad-derived"],
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.zener",
+        "path": "kicad-symbols/Device.kicad_symdir/D_Zener.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sod-123",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sod-123",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod",
+          "label": "SOD-123",
+          "model": { "id": "openpcb.core.3d.diode.d-sod-123", "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SOD-123.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-sod-323",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SOD-323.kicad_mod",
+          "label": "SOD-323",
+          "model": { "id": "openpcb.core.3d.diode.d-sod-323", "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SOD-323.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA",
+          "model": { "id": "openpcb.core.3d.diode.d-sma", "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.opto.led",
+      "name": "LED",
+      "description": "Generic two-pin indicator LED with common SMD package variants.",
+      "category": "opto",
+      "tags": ["led", "opto", "diode", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.opto.led", "path": "kicad-symbols/Device.kicad_symdir/LED.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.opto.led-0603-1608metric",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.opto.led-0603-1608metric",
+          "path": "kicad-footprints/LED_SMD.pretty/LED_0603_1608Metric.kicad_mod",
+          "label": "0603 / 1608 metric",
+          "model": { "id": "openpcb.core.3d.opto.led-0603-1608metric", "path": "kicad-packages3D/LED_SMD.3dshapes/LED_0603_1608Metric.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.opto.led-0805-2012metric",
+          "path": "kicad-footprints/LED_SMD.pretty/LED_0805_2012Metric.kicad_mod",
+          "label": "0805 / 2012 metric",
+          "model": { "id": "openpcb.core.3d.opto.led-0805-2012metric", "path": "kicad-packages3D/LED_SMD.3dshapes/LED_0805_2012Metric.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.opto.led-1206-3216metric",
+          "path": "kicad-footprints/LED_SMD.pretty/LED_1206_3216Metric.kicad_mod",
+          "label": "1206 / 3216 metric",
+          "model": { "id": "openpcb.core.3d.opto.led-1206-3216metric", "path": "kicad-packages3D/LED_SMD.3dshapes/LED_1206_3216Metric.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "K" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "A" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.passive.inductor",
+      "name": "Inductor",
+      "description": "Generic two-pin SMD inductor with common chip package variants.",
+      "category": "passive",
+      "tags": ["inductor", "passive", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.passive.inductor", "path": "kicad-symbols/Device.kicad_symdir/L.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.passive.l-0805-2012metric",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.passive.l-0603-1608metric",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_0603_1608Metric.kicad_mod",
+          "label": "0603 / 1608 metric",
+          "model": { "id": "openpcb.core.3d.passive.l-0603-1608metric", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_0603_1608Metric.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-0805-2012metric",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_0805_2012Metric.kicad_mod",
+          "label": "0805 / 2012 metric",
+          "model": { "id": "openpcb.core.3d.passive.l-0805-2012metric", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_0805_2012Metric.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-1206-3216metric",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_1206_3216Metric.kicad_mod",
+          "label": "1206 / 3216 metric",
+          "model": { "id": "openpcb.core.3d.passive.l-1206-3216metric", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_1206_3216Metric.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-1210-3225metric",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_1210_3225Metric.kicad_mod",
+          "label": "1210 / 3225 metric",
+          "model": { "id": "openpcb.core.3d.passive.l-1210-3225metric", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_1210_3225Metric.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-header-1x02-2-54mm",
+      "name": "Pin Header 1x02 2.54mm",
+      "description": "Two-pin single-row 2.54 mm vertical pin header.",
+      "category": "connector",
+      "tags": ["connector", "header", "2.54mm", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.connector.conn-01x02", "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x02.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x02-p2-54mm-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-header-1x02-p2-54mm-vertical",
+          "path": "kicad-footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_1x02_P2.54mm_Vertical.kicad_mod",
+          "label": "1x02 vertical",
+          "model": { "id": "openpcb.core.3d.connector.pin-header-1x02-p2-54mm-vertical", "path": "kicad-packages3D/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x02_P2.54mm_Vertical.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-header-2x03-2-54mm",
+      "name": "Pin Header 2x03 2.54mm",
+      "description": "Six-pin dual-row 2.54 mm vertical pin header.",
+      "category": "connector",
+      "tags": ["connector", "header", "2.54mm", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.connector.conn-02x03-odd-even", "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_02x03_Odd_Even.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-header-2x03-p2-54mm-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-header-2x03-p2-54mm-vertical",
+          "path": "kicad-footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_2x03_P2.54mm_Vertical.kicad_mod",
+          "label": "2x03 vertical",
+          "model": { "id": "openpcb.core.3d.connector.pin-header-2x03-p2-54mm-vertical", "path": "kicad-packages3D/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x03_P2.54mm_Vertical.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }, { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" }, { "pinNumber": "6", "padNumber": "6" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-socket-1x02-2-54mm",
+      "name": "Pin Socket 1x02 2.54mm",
+      "description": "Two-pin single-row 2.54 mm vertical pin socket.",
+      "category": "connector",
+      "tags": ["connector", "socket", "2.54mm", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.connector.conn-01x02", "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x02.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-socket-1x02-p2-54mm-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-socket-1x02-p2-54mm-vertical",
+          "path": "kicad-footprints/Connector_PinSocket_2.54mm.pretty/PinSocket_1x02_P2.54mm_Vertical.kicad_mod",
+          "label": "1x02 vertical",
+          "model": { "id": "openpcb.core.3d.connector.pin-socket-1x02-p2-54mm-vertical", "path": "kicad-packages3D/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x02_P2.54mm_Vertical.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-socket-2x03-2-54mm",
+      "name": "Pin Socket 2x03 2.54mm",
+      "description": "Six-pin dual-row 2.54 mm vertical pin socket.",
+      "category": "connector",
+      "tags": ["connector", "socket", "2.54mm", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.connector.conn-02x03-odd-even", "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_02x03_Odd_Even.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-socket-2x03-p2-54mm-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-socket-2x03-p2-54mm-vertical",
+          "path": "kicad-footprints/Connector_PinSocket_2.54mm.pretty/PinSocket_2x03_P2.54mm_Vertical.kicad_mod",
+          "label": "2x03 vertical",
+          "model": { "id": "openpcb.core.3d.connector.pin-socket-2x03-p2-54mm-vertical", "path": "kicad-packages3D/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x03_P2.54mm_Vertical.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }, { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" }, { "pinNumber": "6", "padNumber": "6" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.npn-sot-23-ebc",
+      "name": "NPN Transistor SOT-23 EBC",
+      "description": "Generic NPN BJT using E-B-C SOT-23 pin order.",
+      "category": "transistor",
+      "tags": ["transistor", "bjt", "npn", "sot-23", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.transistor.npn-ebc", "path": "kicad-symbols/Transistor_BJT.kicad_symdir/Q_NPN_EBC.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": { "id": "openpcb.core.3d.package.sot-23", "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1", "pinName": "E" }, { "pinNumber": "2", "padNumber": "2", "pinName": "B" }, { "pinNumber": "3", "padNumber": "3", "pinName": "C" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.pnp-sot-23-ebc",
+      "name": "PNP Transistor SOT-23 EBC",
+      "description": "Generic PNP BJT using E-B-C SOT-23 pin order.",
+      "category": "transistor",
+      "tags": ["transistor", "bjt", "pnp", "sot-23", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.transistor.pnp-ebc", "path": "kicad-symbols/Transistor_BJT.kicad_symdir/Q_PNP_EBC.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": { "id": "openpcb.core.3d.package.sot-23", "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1", "pinName": "E" }, { "pinNumber": "2", "padNumber": "2", "pinName": "B" }, { "pinNumber": "3", "padNumber": "3", "pinName": "C" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.nmos-sot-23-gsd",
+      "name": "NMOS Transistor SOT-23 GSD",
+      "description": "Generic N-channel MOSFET using G-S-D SOT-23 pin order.",
+      "category": "transistor",
+      "tags": ["transistor", "mosfet", "nmos", "sot-23", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.transistor.nmos-gsd", "path": "kicad-symbols/Transistor_FET.kicad_symdir/Q_NMOS_GSD.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": { "id": "openpcb.core.3d.package.sot-23", "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1", "pinName": "G" }, { "pinNumber": "2", "padNumber": "2", "pinName": "S" }, { "pinNumber": "3", "padNumber": "3", "pinName": "D" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.ams1117-3v3-sot-223",
+      "name": "AMS1117-3.3 SOT-223",
+      "description": "AMS1117 fixed 3.3 V linear regulator in SOT-223 package.",
+      "category": "ic",
+      "tags": ["ic", "regulator", "ldo", "3.3v", "sot-223", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.ic.ams1117-3v3", "path": "kicad-symbols/Regulator_Linear.kicad_symdir/AMS1117-3.3.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-223",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-223",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-223.kicad_mod",
+          "label": "SOT-223",
+          "model": { "id": "openpcb.core.3d.package.sot-223", "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "GND" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "VO" },
+            { "pinNumber": "3", "padNumber": "3", "pinName": "VI" },
+            { "pinNumber": "2", "padNumber": "4", "pinName": "VO" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.lm358",
+      "name": "LM358 Dual Op-Amp",
+      "description": "LM358 dual operational amplifier with SOIC-8 and DIP-8 variants.",
+      "category": "ic",
+      "tags": ["ic", "op-amp", "amplifier", "lm358", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.ic.lm358", "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/LM358.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8 3.9x4.9mm P1.27mm",
+          "model": { "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm", "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }, { "pinNumber": "3", "padNumber": "3" }, { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" }, { "pinNumber": "6", "padNumber": "6" }, { "pinNumber": "7", "padNumber": "7" }, { "pinNumber": "8", "padNumber": "8" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-8_W7.62mm.kicad_mod",
+          "label": "DIP-8 W7.62mm",
+          "model": { "id": "openpcb.core.3d.package.dip-8-w7-62mm", "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-8_W7.62mm.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }, { "pinNumber": "3", "padNumber": "3" }, { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" }, { "pinNumber": "6", "padNumber": "6" }, { "pinNumber": "7", "padNumber": "7" }, { "pinNumber": "8", "padNumber": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.ne555-soic-8",
+      "name": "NE555 Timer SOIC-8",
+      "description": "NE555 timer in SOIC-8 package.",
+      "category": "ic",
+      "tags": ["ic", "timer", "555", "soic-8", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.ic.ne555d", "path": "kicad-symbols/Timer.kicad_symdir/NE555D.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8 3.9x4.9mm P1.27mm",
+          "model": { "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm", "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "GND" }, { "pinNumber": "2", "padNumber": "2", "pinName": "TRIG" },
+            { "pinNumber": "3", "padNumber": "3", "pinName": "OUT" }, { "pinNumber": "4", "padNumber": "4", "pinName": "~{RST}" },
+            { "pinNumber": "5", "padNumber": "5", "pinName": "CONT" }, { "pinNumber": "6", "padNumber": "6", "pinName": "THRES" },
+            { "pinNumber": "7", "padNumber": "7", "pinName": "DISCH" }, { "pinNumber": "8", "padNumber": "8", "pinName": "VCC" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.74hc00-soic-14",
+      "name": "74HC00 Quad NAND SOIC-14",
+      "description": "74HC00 quad 2-input NAND gate in SOIC-14 package.",
+      "category": "ic",
+      "tags": ["ic", "logic", "nand", "74hc", "soic-14", "kicad-derived"],
+      "symbol": { "id": "openpcb.core.symbol.ic.74hc00", "path": "kicad-symbols/74xx.kicad_symdir/74HC00.kicad_sym" },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14 3.9x8.7mm P1.27mm",
+          "model": { "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm", "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step" },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }, { "pinNumber": "3", "padNumber": "3" }, { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" }, { "pinNumber": "6", "padNumber": "6" }, { "pinNumber": "7", "padNumber": "7" }, { "pinNumber": "8", "padNumber": "8" },
+            { "pinNumber": "9", "padNumber": "9" }, { "pinNumber": "10", "padNumber": "10" }, { "pinNumber": "11", "padNumber": "11" }, { "pinNumber": "12", "padNumber": "12" },
+            { "pinNumber": "13", "padNumber": "13" }, { "pinNumber": "14", "padNumber": "14" }
+          ]
+        }
+      ]
+    }
+  ]
+}

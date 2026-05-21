@@ -1,0 +1,465 @@
+{
+  "id": "openpcb.core.symbol.passive.inductor",
+  "uuid": "6a817a4f-948e-51c9-9c69-33ae0dfba939",
+  "version": "1.0.0",
+  "name": "Inductor",
+  "referencePrefix": "L",
+  "description": "Inductor",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "L.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "L",
+    "sourceHash": "e84434e62b8767e3eaf1509c59d9e0e9daad1ff9d7b2f9f2dc8c6bdf388f1709",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "L",
+      "Value": "L",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Inductor",
+      "ki_keywords": "inductor choke coil reactor magnetic",
+      "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "L.kicad_sym",
+        "sourceItemName": "L",
+        "sha256": "ea666fa611b3d896b47a0d12a8f2975511f696384535d3cc85bd039fb9259042"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_c85de5eb1ad10cee",
+    "name": "L",
+    "referencePrefix": "L",
+    "description": "Inductor",
+    "sourceHash": "e84434e62b8767e3eaf1509c59d9e0e9daad1ff9d7b2f9f2dc8c6bdf388f1709",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "1",
+        "localPosition": {
+          "x": 0,
+          "y": 3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "2",
+        "localPosition": {
+          "x": 0,
+          "y": -3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "L",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 0,
+            "y": 2.54
+          },
+          "mid": {
+            "x": 0.6323,
+            "y": 1.905
+          },
+          "end": {
+            "x": 0,
+            "y": 1.27
+          },
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 0,
+            "y": 1.27
+          },
+          "mid": {
+            "x": 0.6323,
+            "y": 0.635
+          },
+          "end": {
+            "x": 0,
+            "y": 0
+          },
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 0,
+            "y": 0
+          },
+          "mid": {
+            "x": 0.6323,
+            "y": -0.635
+          },
+          "end": {
+            "x": 0,
+            "y": -1.27
+          },
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 0,
+            "y": -1.27
+          },
+          "mid": {
+            "x": 0.6323,
+            "y": -1.905
+          },
+          "end": {
+            "x": 0,
+            "y": -2.54
+          },
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "1",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 3.81
+          },
+          "bodyEnd": {
+            "x": -2.3329521523757077e-16,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "2",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -3.81
+          },
+          "bodyEnd": {
+            "x": 7.776507174585693e-17,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "1",
+          "at": {
+            "x": -2.3329521523757077e-16,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 0,
+            "y": 4.318
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "2",
+          "at": {
+            "x": 7.776507174585693e-17,
+            "y": -3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 0,
+            "y": -4.318
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "L",
+          "at": {
+            "x": -0.0027057646686700076,
+            "y": 6.222999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        }
+      ],
+      "bounds": {
+        "minX": -0.75270576466867,
+        "minY": -4.952999999999999,
+        "maxX": 0.74729423533133,
+        "maxY": 7.4929999999999986
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "L",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 3.81
+        },
+        "length": 1.27,
+        "rotation": 270,
+        "unit": 1,
+        "hidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "2",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -3.81
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "hidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "L",
+      "Value": "L",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Inductor",
+      "ki_keywords": "inductor choke coil reactor magnetic",
+      "ki_fp_filters": "Choke_* *Coil* Inductor_* L_*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "node": [
+          "arc",
+          [
+            "start",
+            0,
+            2.54
+          ],
+          [
+            "mid",
+            0.6323,
+            1.905
+          ],
+          [
+            "end",
+            0,
+            1.27
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "node": [
+          "arc",
+          [
+            "start",
+            0,
+            1.27
+          ],
+          [
+            "mid",
+            0.6323,
+            0.635
+          ],
+          [
+            "end",
+            0,
+            0
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "node": [
+          "arc",
+          [
+            "start",
+            0,
+            0
+          ],
+          [
+            "mid",
+            0.6323,
+            -0.635
+          ],
+          [
+            "end",
+            0,
+            -1.27
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "node": [
+          "arc",
+          [
+            "start",
+            0,
+            -1.27
+          ],
+          [
+            "mid",
+            0.6323,
+            -1.905
+          ],
+          [
+            "end",
+            0,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol L (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference L (at -1.27 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value L (at 1.905 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description Inductor (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"inductor choke coil reactor magnetic\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"Choke_* *Coil* Inductor_* L_*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol L_0_1 (arc (start 0 2.54) (mid 0.6323 1.905) (end 0 1.27) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 1.27) (mid 0.6323 0.635) (end 0 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.6323 -0.635) (end 0 -1.27) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 -1.27) (mid 0.6323 -1.905) (end 0 -2.54) (stroke (width 0) (type default)) (fill (type none)))) (symbol L_1_1 (pin passive line (at 0 3.81 270) (length 1.27) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name 2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27
+  }
+}
