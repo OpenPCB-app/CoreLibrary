@@ -40,9 +40,20 @@ const args = Object.fromEntries(
 const version = args.version ?? "0.0.0";
 const channel = (args.channel ?? "stable") as "stable" | "beta" | "nightly";
 const outDir = args.out ? path.resolve(args.out) : path.join(REPO_ROOT, "dist");
+const signKeyPath =
+  args["sign-key"] && args["sign-key"] !== "true"
+    ? path.resolve(args["sign-key"])
+    : undefined;
+const keyId =
+  args["key-id"] && args["key-id"] !== "true" ? args["key-id"] : undefined;
 
 if (!/^[0-9]+\.[0-9]+\.[0-9]+/.test(version)) {
   console.error(`[pack] invalid --version=${version}`);
+  process.exit(1);
+}
+
+if (signKeyPath && !keyId) {
+  console.error("[pack] --sign-key requires --key-id");
   process.exit(1);
 }
 
@@ -56,10 +67,7 @@ function readBytes(absPath: string): Uint8Array {
   return readFileSync(absPath);
 }
 
-function assetEntryFor(
-  absPath: string,
-  bytes: Uint8Array,
-): OpclibAssetEntry {
+function assetEntryFor(absPath: string, bytes: Uint8Array): OpclibAssetEntry {
   const json = parseJsonBytes<AssetJson>(bytes);
   return {
     id: json.id,
@@ -72,9 +80,7 @@ function assetEntryFor(
   };
 }
 
-function packedAssetFor(
-  absPath: string,
-): PackedAsset<OpclibAssetEntry> {
+function packedAssetFor(absPath: string): PackedAsset<OpclibAssetEntry> {
   const bytes = readBytes(absPath);
   return { entry: assetEntryFor(absPath, bytes), bytes };
 }
@@ -86,22 +92,29 @@ function packedFootprintFor(
   const base = assetEntryFor(absPath, bytes);
   const json = parseJsonBytes<{
     mountType?: string;
-    package?: { code?: string; standard?: string; imperial?: string | null; metric?: string | null };
+    package?: {
+      code?: string;
+      standard?: string;
+      imperial?: string | null;
+      metric?: string | null;
+    };
     models3d?: string[];
   }>(bytes);
-  const packageCode = json.package?.code ?? json.package?.imperial ?? json.package?.metric;
+  const packageCode =
+    json.package?.code ?? json.package?.imperial ?? json.package?.metric;
   return {
     entry: {
       ...base,
-      package: json.package || json.mountType
-        ? {
-            code: packageCode ?? undefined,
-            standard: json.package?.standard,
-            mountType: json.mountType,
-          }
-        : json.mountType
-          ? { mountType: json.mountType }
-          : undefined,
+      package:
+        json.package || json.mountType
+          ? {
+              code: packageCode ?? undefined,
+              standard: json.package?.standard,
+              mountType: json.mountType,
+            }
+          : json.mountType
+            ? { mountType: json.mountType }
+            : undefined,
       models3d: json.models3d,
     },
     bytes,
@@ -109,13 +122,21 @@ function packedFootprintFor(
 }
 
 function packedModel3dFor(absPath: string): PackedModel3d {
-  const data = parseJsonBytes<OpclibModel3dEntry & { provenance?: unknown; offsetMm?: unknown; rotationDeg?: unknown }>(readBytes(absPath));
+  const data = parseJsonBytes<
+    OpclibModel3dEntry & {
+      provenance?: unknown;
+      offsetMm?: unknown;
+      rotationDeg?: unknown;
+    }
+  >(readBytes(absPath));
   const formats: OpclibModel3dEntry["formats"] = {};
   const assets: PackedModel3d["assets"] = [];
   for (const [format, info] of Object.entries(data.formats)) {
     if (!info) continue;
     if (format !== "glb" && format !== "step") {
-      console.error(`[pack] unsupported 3D format ${format} in ${relPath(absPath)}`);
+      console.error(
+        `[pack] unsupported 3D format ${format} in ${relPath(absPath)}`,
+      );
       process.exit(1);
     }
     const abs = path.join(REPO_ROOT, info.path);
@@ -199,6 +220,10 @@ const input: PackOpclibInput = {
     path.join(REPO_ROOT, "components"),
     ".component.json",
   ).map(packedComponentFor),
+  sign:
+    signKeyPath && keyId
+      ? { privateKey: readFileSync(signKeyPath), keyId }
+      : undefined,
 };
 
 const { bytes, manifest, packageSha256 } = packOpclib(input);
@@ -208,5 +233,8 @@ writeFileSync(outPath, bytes);
 console.log(
   `[pack] wrote ${outPath}\n` +
     `       symbols=${manifest.symbols.length} footprints=${manifest.footprints.length} models3d=${manifest.models3d.length} components=${manifest.components.length}\n` +
-    `       packageSha256=${packageSha256}`,
+    `       packageSha256=${packageSha256}` +
+    (manifest.signature
+      ? `\n       signed: keyId=${manifest.signature.keyId} alg=${manifest.signature.algorithm}`
+      : "\n       (unsigned)"),
 );

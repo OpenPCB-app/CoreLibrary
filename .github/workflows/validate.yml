@@ -29,8 +29,8 @@ jobs:
       - name: Run tests
         run: bun test
 
-      - name: Validate library source
-        run: bun tools/validate.ts
+      - name: Validate library source (strict / release)
+        run: bun tools/validate.ts --release --strict
 
       - name: Pack release candidate
         # Tags `ci-<run_id>` so artifact filenames don't collide with real releases.
