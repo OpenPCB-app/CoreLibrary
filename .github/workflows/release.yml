@@ -37,11 +37,39 @@ jobs:
       - name: Validate source
         run: bun run validate
 
+      - name: Restore signing key
+        if: ${{ env.OPCLIB_SIGNING_KEY != '' }}
+        env:
+          OPCLIB_SIGNING_KEY: ${{ secrets.OPCLIB_SIGNING_KEY }}
+        run: |
+          install -m 700 -d "$RUNNER_TEMP/keys"
+          KEY_PATH="$RUNNER_TEMP/keys/opclib-signing.pem"
+          printf '%s' "$OPCLIB_SIGNING_KEY" > "$KEY_PATH"
+          chmod 600 "$KEY_PATH"
+          echo "OPCLIB_SIGN_KEY_PATH=$KEY_PATH" >> "$GITHUB_ENV"
+
       - name: Pack release
+        env:
+          OPCLIB_SIGNING_KEY: ${{ secrets.OPCLIB_SIGNING_KEY }}
+          OPCLIB_KEY_ID: ${{ vars.OPCLIB_KEY_ID }}
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           echo "Packing version ${VERSION}"
-          bun tools/pack.ts --version="${VERSION}"
+          SIGN_ARGS=""
+          if [ -n "${OPCLIB_SIGN_KEY_PATH:-}" ] && [ -n "${OPCLIB_KEY_ID:-}" ]; then
+            SIGN_ARGS="--sign-key=${OPCLIB_SIGN_KEY_PATH} --key-id=${OPCLIB_KEY_ID}"
+            echo "Signing enabled (keyId=${OPCLIB_KEY_ID})"
+          else
+            echo "Signing disabled (no key/keyId configured)"
+          fi
+          bun tools/pack.ts --version="${VERSION}" $SIGN_ARGS
+
+      - name: Generate SHA256SUMS
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          cd dist
+          sha256sum "openpcb-core-library-${VERSION}.opclib" > SHA256SUMS
+          cat SHA256SUMS
 
       - name: Verify package
         run: |
@@ -80,12 +108,17 @@ jobs:
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           ARTIFACT="dist/openpcb-core-library-${VERSION}.opclib"
+          SUMS="dist/SHA256SUMS"
+          ASSETS=("$ARTIFACT" "$SUMS")
+          if [ -f keys/openpcb-core.pub ]; then
+            ASSETS+=("keys/openpcb-core.pub")
+          fi
           if gh release view "${GITHUB_REF_NAME}" >/dev/null 2>&1; then
-            gh release upload "${GITHUB_REF_NAME}" "$ARTIFACT" --clobber
+            gh release upload "${GITHUB_REF_NAME}" "${ASSETS[@]}" --clobber
           else
             gh release create "${GITHUB_REF_NAME}" \
               --verify-tag \
               --title "${GITHUB_REF_NAME}" \
               --notes "OpenPCB Core Library ${VERSION}" \
-              "$ARTIFACT"
+              "${ASSETS[@]}"
           fi
