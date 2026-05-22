@@ -15,13 +15,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: 1.3.0
 
+      # npm runs prepare scripts respecting topological dep order; bun
+      # parallelises and races on nested github: peer-deps (kicad-import
+      # needs kicad-parsers/dist before its own tsc build can resolve).
       - name: Install dependencies
-        run: bun install --frozen-lockfile
+        run: npm install --no-package-lock --no-save
 
       - name: Typecheck tools/
         run: bun run typecheck

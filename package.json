@@ -33,5 +33,11 @@
     "@types/bun": "latest",
     "typescript": "~5.8.3"
   },
+  "trustedDependencies": [
+    "@openpcb/kicad-import",
+    "@openpcb/kicad-parsers",
+    "@openpcb/opclib-pack",
+    "@openpcb/rendering-core"
+  ],
   "packageManager": "bun@1.3.0"
 }
