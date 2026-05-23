@@ -42,7 +42,7 @@ jobs:
         run: bun test
 
       - name: Validate source
-        run: bun run validate
+        run: bun run validate --release
 
       - name: Restore signing key
         if: ${{ env.OPCLIB_SIGNING_KEY != '' }}

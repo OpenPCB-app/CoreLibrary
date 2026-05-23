@@ -12,6 +12,7 @@ import {
   type PackedModel3d,
   type PackOpclibInput,
 } from "@openpcb/opclib-pack";
+import { convertStepToGlbNode } from "@openpcb/step-to-glb/node";
 import { REPO_ROOT, relPath, sha256Bytes, walkFiles } from "./lib";
 
 type AssetJson = {
@@ -46,6 +47,12 @@ const signKeyPath =
     : undefined;
 const keyId =
   args["key-id"] && args["key-id"] !== "true" ? args["key-id"] : undefined;
+const STEP_TO_GLB_PARAMS = {
+  linearUnit: "millimeter" as const,
+  linearDeflectionType: "absolute_value" as const,
+  linearDeflection: 0.05,
+  angularDeflection: 0.5,
+};
 
 if (!/^[0-9]+\.[0-9]+\.[0-9]+/.test(version)) {
   console.error(`[pack] invalid --version=${version}`);
@@ -121,7 +128,18 @@ function packedFootprintFor(
   };
 }
 
-function packedModel3dFor(absPath: string): PackedModel3d {
+function arrayBufferFrom(bytes: Uint8Array): ArrayBuffer {
+  return bytes.buffer.slice(
+    bytes.byteOffset,
+    bytes.byteOffset + bytes.byteLength,
+  ) as ArrayBuffer;
+}
+
+function glbPathForStep(stepPath: string): string {
+  return stepPath.replace(/\.(step|stp)$/i, ".glb");
+}
+
+async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
   const data = parseJsonBytes<
     OpclibModel3dEntry & {
       provenance?: unknown;
@@ -151,6 +169,31 @@ function packedModel3dFor(absPath: string): PackedModel3d {
     };
     assets.push({ format, path: info.path, bytes });
   }
+
+  if (!formats.glb && formats.step) {
+    const stepAsset = assets.find((asset) => asset.format === "step");
+    if (!stepAsset) {
+      console.error(`[pack] cannot generate GLB for ${relPath(absPath)}: missing STEP asset`);
+      process.exit(1);
+    }
+    const result = await convertStepToGlbNode(
+      arrayBufferFrom(stepAsset.bytes),
+      STEP_TO_GLB_PARAMS,
+      null,
+    );
+    if (result.status !== "ok") {
+      console.error(
+        `[pack] STEP→GLB failed for ${relPath(absPath)}: ${result.message}`,
+      );
+      process.exit(1);
+    }
+    const bytes = new Uint8Array(result.glbBytes);
+    const glbPath = glbPathForStep(formats.step.path);
+    const glbSha256 = sha256Bytes(bytes);
+    formats.glb = { path: glbPath, sha256: glbSha256 };
+    assets.push({ format: "glb", path: glbPath, bytes });
+  }
+
   return {
     entry: {
       id: data.id,
@@ -213,8 +256,10 @@ const input: PackOpclibInput = {
   footprints: walkFiles(path.join(REPO_ROOT, "footprints"), ".fp.json").map(
     packedFootprintFor,
   ),
-  models3d: walkFiles(path.join(REPO_ROOT, "3d"), ".model.json").map(
-    packedModel3dFor,
+  models3d: await Promise.all(
+    walkFiles(path.join(REPO_ROOT, "3d"), ".model.json").map(
+      packedModel3dFor,
+    ),
   ),
   components: walkFiles(
     path.join(REPO_ROOT, "components"),

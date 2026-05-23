@@ -54,7 +54,27 @@ describe("CoreLibrary pack shared compatibility", () => {
     expect(pkg.manifest.symbols.length).toBeGreaterThan(0);
     expect(pkg.manifest.footprints.length).toBeGreaterThan(0);
     expect(pkg.manifest.components.length).toBeGreaterThan(0);
-  });
+  }, 120_000);
+
+  test("packed referenced 3D models include renderable GLB assets", async () => {
+    const artifactPath = await runPack("0.0.0-3d", makeTempDir());
+    const pkg = await readOpclibFromPath(artifactPath);
+    const modelsById = new Map(pkg.manifest.models3d.map((model) => [model.id, model]));
+
+    let referencedModels = 0;
+    for (const footprint of pkg.manifest.footprints) {
+      for (const modelId of footprint.models3d ?? []) {
+        referencedModels += 1;
+        const model = modelsById.get(modelId);
+        expect(model, `missing model ${modelId}`).toBeDefined();
+        expect(model!.formats.glb, `missing GLB for ${modelId}`).toBeDefined();
+        expect(model!.formats.step, `missing STEP for ${modelId}`).toBeDefined();
+        expect(pkg.assets.has(model!.formats.glb!.path.toLowerCase())).toBe(true);
+      }
+    }
+
+    expect(referencedModels).toBeGreaterThan(0);
+  }, 120_000);
 
   test("shared reader rejects a tampered package asset", async () => {
     const dir = makeTempDir();
@@ -75,5 +95,5 @@ describe("CoreLibrary pack shared compatibility", () => {
     await expect(readOpclibFromPath(tamperedPath)).rejects.toThrow(
       OpclibFormatError,
     );
-  });
+  }, 120_000);
 });

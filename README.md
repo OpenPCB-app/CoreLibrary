@@ -7,10 +7,10 @@ desktop app.
 ## Layout
 
 ```
-symbols/<category>/<name>.symbol.json    component symbols
-footprints/<category>/<name>.fp.json      physical footprints
-3d/<category>/<name>.glb                3D model geometry
-3d/<category>/<name>.model.json         optional sidecar metadata
+symbols/<category>/<name>.symbol.json        component symbols
+footprints/<category>/<name>.fp.json          physical footprints
+3d/<category>/<name>.step                    source 3D model geometry
+3d/<category>/<name>.model.json              sidecar metadata; pack generates GLB
 components/<category>/<name>.component.json  assembled components
 schemas/                                JSON Schema (draft 2020-12)
 tools/validate.ts                        schema + cross-reference validator

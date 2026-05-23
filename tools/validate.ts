@@ -296,6 +296,9 @@ for (const ref of footprintModelRefs) {
   if (REQUIRE_STEP_3D && ref.modelIds.length === 0) {
     fail(ref.file, `release validation requires at least one STEP-backed 3d model on ${ref.footprintId}`);
   }
+  if (REQUIRE_STEP_3D && ref.modelIds.length !== 1) {
+    fail(ref.file, `release validation requires exactly one 3d model on ${ref.footprintId}`);
+  }
   for (const modelId of ref.modelIds) {
     if (!modelIds.has(modelId))
       fail(ref.file, `unknown 3d model ref on ${ref.footprintId}: ${modelId}`);
