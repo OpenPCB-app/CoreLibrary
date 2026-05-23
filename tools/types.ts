@@ -43,6 +43,10 @@ export interface Model3dEntry {
   name: string;
   formats: Partial<Record<"glb" | "step", { path: string; sha256: string }>>;
   boundsMm?: { x: number; y: number; z: number };
+  offsetMm?: { x: number; y: number; z: number };
+  rotationDeg?: { x: number; y: number; z: number };
+  scaleMm?: { x: number; y: number; z: number };
+  transformBaked?: boolean;
 }
 
 export interface ComponentEntry {

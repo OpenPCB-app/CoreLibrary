@@ -13,6 +13,7 @@
     "pack": "bun tools/pack.ts",
     "typecheck": "bun --bun tsc --noEmit --project tsconfig.json",
     "test": "bun test",
+    "audit:3d": "bun tools/audit-3d-placement.ts",
     "import:kicad": "bun tools/import-kicad.ts",
     "import:kicad:batch": "bun tools/import-kicad-batch.ts",
     "backfill:step-models": "bun tools/backfill-step-models.ts",

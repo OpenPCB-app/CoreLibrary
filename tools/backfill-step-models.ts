@@ -214,6 +214,7 @@ async function run(argv: string[]): Promise<void> {
       provenance: provenance(stepSource, path.basename(stepSource), hash, args.convertedAt),
       offsetMm: { x: 0, y: 0, z: 0 },
       rotationDeg: { x: 0, y: 0, z: 0 },
+      scaleMm: { x: 1, y: 1, z: 1 },
     };
 
     await writeJson(footprintPath, footprint, args.dryRun);

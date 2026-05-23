@@ -261,6 +261,7 @@ async function run(argv: string[]): Promise<void> {
       ),
       offsetMm: modelRef?.offset ?? { x: 0, y: 0, z: 0 },
       rotationDeg: modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
+      scaleMm: modelRef?.scale ?? { x: 1, y: 1, z: 1 },
     }),
   ]);
   await mkdir(path.dirname(stepPath), { recursive: true });

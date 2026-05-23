@@ -169,7 +169,24 @@
             "y": { "type": "number" },
             "z": { "type": "number" }
           }
+        },
+        "offsetMm": { "$ref": "#/$defs/xyzVector" },
+        "rotationDeg": { "$ref": "#/$defs/xyzVector" },
+        "scaleMm": { "$ref": "#/$defs/xyzVector" },
+        "transformBaked": {
+          "type": "boolean",
+          "description": "True when offsetMm/rotationDeg/scaleMm were baked into the GLB during packaging and must not be applied again at render time."
         }
+      }
+    },
+    "xyzVector": {
+      "type": "object",
+      "required": ["x", "y", "z"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "z": { "type": "number" }
       }
     },
     "modelFormat": {

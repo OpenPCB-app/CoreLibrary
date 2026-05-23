@@ -589,6 +589,7 @@ async function run(argv: string[]): Promise<void> {
           provenance: provenance("step", stepSource, path.basename(stepSource), stepHash, args.convertedAt),
           offsetMm: modelRef?.offset ?? { x: 0, y: 0, z: 0 },
           rotationDeg: modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
+          scaleMm: modelRef?.scale ?? { x: 1, y: 1, z: 1 },
         }, args.dryRun);
         await copyAsset(stepSource, stepPath, args.dryRun);
         modelIds.add(manifestFootprint.model.id);

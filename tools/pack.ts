@@ -13,6 +13,7 @@ import {
   type PackOpclibInput,
 } from "@openpcb/opclib-pack";
 import { convertStepToGlbNode } from "@openpcb/step-to-glb/node";
+import type { Model3DRef } from "@openpcb/step-to-glb";
 import { REPO_ROOT, relPath, sha256Bytes, walkFiles } from "./lib";
 
 type AssetJson = {
@@ -139,12 +140,33 @@ function glbPathForStep(stepPath: string): string {
   return stepPath.replace(/\.(step|stp)$/i, ".glb");
 }
 
+const ZERO_VECTOR = { x: 0, y: 0, z: 0 };
+const IDENTITY_SCALE = { x: 1, y: 1, z: 1 };
+
+function modelRefForStep(
+  stepPath: string,
+  data: {
+    offsetMm?: { x: number; y: number; z: number };
+    rotationDeg?: { x: number; y: number; z: number };
+    scaleMm?: { x: number; y: number; z: number };
+  },
+): Model3DRef {
+  return {
+    path: stepPath,
+    resolvedFileName: path.basename(stepPath),
+    offset: data.offsetMm ?? ZERO_VECTOR,
+    rotation: data.rotationDeg ?? ZERO_VECTOR,
+    scale: data.scaleMm ?? IDENTITY_SCALE,
+  };
+}
+
 async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
   const data = parseJsonBytes<
     OpclibModel3dEntry & {
       provenance?: unknown;
-      offsetMm?: unknown;
-      rotationDeg?: unknown;
+      offsetMm?: { x: number; y: number; z: number };
+      rotationDeg?: { x: number; y: number; z: number };
+      scaleMm?: { x: number; y: number; z: number };
     }
   >(readBytes(absPath));
   const formats: OpclibModel3dEntry["formats"] = {};
@@ -173,13 +195,16 @@ async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
   if (!formats.glb && formats.step) {
     const stepAsset = assets.find((asset) => asset.format === "step");
     if (!stepAsset) {
-      console.error(`[pack] cannot generate GLB for ${relPath(absPath)}: missing STEP asset`);
+      console.error(
+        `[pack] cannot generate GLB for ${relPath(absPath)}: missing STEP asset`,
+      );
       process.exit(1);
     }
     const result = await convertStepToGlbNode(
       arrayBufferFrom(stepAsset.bytes),
       STEP_TO_GLB_PARAMS,
-      null,
+      modelRefForStep(formats.step.path, data),
+      { axisCorrection: "none" },
     );
     if (result.status !== "ok") {
       console.error(
@@ -202,6 +227,10 @@ async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
       name: data.name,
       formats,
       boundsMm: data.boundsMm,
+      offsetMm: data.offsetMm,
+      rotationDeg: data.rotationDeg,
+      scaleMm: data.scaleMm,
+      transformBaked: Boolean(formats.glb),
     },
     assets,
   };
@@ -257,9 +286,7 @@ const input: PackOpclibInput = {
     packedFootprintFor,
   ),
   models3d: await Promise.all(
-    walkFiles(path.join(REPO_ROOT, "3d"), ".model.json").map(
-      packedModel3dFor,
-    ),
+    walkFiles(path.join(REPO_ROOT, "3d"), ".model.json").map(packedModel3dFor),
   ),
   components: walkFiles(
     path.join(REPO_ROOT, "components"),
