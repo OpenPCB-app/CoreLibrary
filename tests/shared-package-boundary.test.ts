@@ -40,7 +40,10 @@ describe("shared package boundary", () => {
       "github:OpenPCB-app/shared#rendering-core-v0.1.2",
     );
     expect(pkg.dependencies?.["@openpcb/opclib-pack"]).toBe(
-      "github:OpenPCB-app/shared#opclib-pack-v0.2.0",
+      "github:OpenPCB-app/shared#opclib-pack-v0.2.1",
+    );
+    expect(pkg.dependencies?.["@openpcb/step-to-glb"]).toBe(
+      "github:OpenPCB-app/shared#step-to-glb-v0.1.4",
     );
   });
 });
