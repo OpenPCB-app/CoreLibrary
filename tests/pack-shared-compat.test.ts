@@ -1,4 +1,4 @@
-import { afterAll, beforeAll, describe, expect, test } from "bun:test";
+import { afterAll, describe, expect, test } from "bun:test";
 import { mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
@@ -7,7 +7,6 @@ import { OpclibFormatError, readOpclibFromPath } from "@openpcb/opclib-pack";
 
 const repoRoot = path.resolve(import.meta.dir, "..");
 const tempDirs: string[] = [];
-let sharedArtifactPath = "";
 
 function makeTempDir(): string {
   const dir = mkdtempSync(path.join(tmpdir(), "openpcb-core-pack-test-"));
@@ -37,9 +36,7 @@ async function runPack(version: string, outDir: string): Promise<string> {
   return path.join(outDir, `openpcb-core-library-${version}.opclib`);
 }
 
-beforeAll(async () => {
-  sharedArtifactPath = await runPack("0.0.0-test", makeTempDir());
-}, 180_000);
+const sharedArtifactPath = runPack("0.0.0-test", makeTempDir());
 
 afterAll(() => {
   for (const dir of tempDirs.splice(0)) {
@@ -49,7 +46,7 @@ afterAll(() => {
 
 describe("CoreLibrary pack shared compatibility", () => {
   test("CLI output validates through shared readOpclibFromPath", async () => {
-    const pkg = await readOpclibFromPath(sharedArtifactPath);
+    const pkg = await readOpclibFromPath(await sharedArtifactPath);
 
     expect(pkg.manifest.schemaVersion).toBe("1.0.0");
     expect(pkg.manifest.library.id).toBe("openpcb.core");
@@ -60,7 +57,7 @@ describe("CoreLibrary pack shared compatibility", () => {
   }, 120_000);
 
   test("packed referenced 3D models include renderable GLB assets", async () => {
-    const pkg = await readOpclibFromPath(sharedArtifactPath);
+    const pkg = await readOpclibFromPath(await sharedArtifactPath);
     const modelsById = new Map(pkg.manifest.models3d.map((model) => [model.id, model]));
 
     let referencedModels = 0;
@@ -80,11 +77,12 @@ describe("CoreLibrary pack shared compatibility", () => {
 
   test("shared reader rejects a tampered package asset", async () => {
     const dir = makeTempDir();
-    const pkg = await readOpclibFromPath(sharedArtifactPath);
+    const artifactPath = await sharedArtifactPath;
+    const pkg = await readOpclibFromPath(artifactPath);
     const symbolPath = pkg.manifest.symbols[0]?.path;
     expect(symbolPath).toBeString();
 
-    const entries = unzipSync(readFileSync(sharedArtifactPath));
+    const entries = unzipSync(readFileSync(artifactPath));
     const tamperedBytes = entries[symbolPath as string];
     expect(tamperedBytes).toBeInstanceOf(Uint8Array);
     if (!tamperedBytes) throw new Error(`missing packed symbol ${symbolPath}`);
