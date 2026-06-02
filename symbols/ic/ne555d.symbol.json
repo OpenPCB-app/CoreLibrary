@@ -17,7 +17,7 @@
     "sourceItemName": "NE555D",
     "sourceHash": "e166002ae602f94d602c9959cdef0f3543da3adeda18cced2b8aa9927af53441",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "convertedAt": "2026-06-02T05:57:37.019Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -292,8 +292,8 @@
             "y": -8.128
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
+          "rotationDeg": 90,
+          "anchorX": "right",
           "anchorY": "middle",
           "role": "pin-name"
         },
@@ -301,11 +301,11 @@
           "id": "u0:1:number",
           "text": "1",
           "at": {
-            "x": 0,
-            "y": -10.668
+            "x": 0.5080000000000001,
+            "y": -8.89
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
+          "rotationDeg": 90,
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
@@ -318,8 +318,8 @@
             "y": 8.128
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
+          "rotationDeg": 90,
+          "anchorX": "left",
           "anchorY": "middle",
           "role": "pin-name"
         },
@@ -327,11 +327,11 @@
           "id": "u0:8:number",
           "text": "8",
           "at": {
-            "x": 2.54,
-            "y": 10.668
+            "x": 3.048,
+            "y": 8.89
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
+          "rotationDeg": 90,
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
@@ -353,13 +353,13 @@
           "id": "u1:2:number",
           "text": "2",
           "at": {
-            "x": -10.668,
-            "y": -5.08
+            "x": -8.89,
+            "y": -4.572
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
+          "anchorX": "center",
+          "anchorY": "bottom",
           "role": "pin-number"
         },
         {
@@ -379,13 +379,13 @@
           "id": "u1:3:number",
           "text": "3",
           "at": {
-            "x": 10.668,
-            "y": 0
+            "x": 8.89,
+            "y": 0.5080000000000001
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
-          "anchorX": "left",
-          "anchorY": "middle",
+          "anchorX": "center",
+          "anchorY": "bottom",
           "role": "pin-number"
         },
         {
@@ -405,13 +405,13 @@
           "id": "u1:4:number",
           "text": "4",
           "at": {
-            "x": -10.668,
-            "y": 5.08
+            "x": -8.89,
+            "y": 5.588
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
+          "anchorX": "center",
+          "anchorY": "bottom",
           "role": "pin-number"
         },
         {
@@ -422,8 +422,8 @@
             "y": 8.128
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
+          "rotationDeg": 90,
+          "anchorX": "left",
           "anchorY": "middle",
           "role": "pin-name"
         },
@@ -431,11 +431,11 @@
           "id": "u1:5:number",
           "text": "5",
           "at": {
-            "x": 0,
-            "y": 10.668
+            "x": 0.5079999999999998,
+            "y": 8.89
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
+          "rotationDeg": 90,
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
@@ -457,13 +457,13 @@
           "id": "u1:6:number",
           "text": "6",
           "at": {
-            "x": -10.668,
-            "y": -2.54
+            "x": -8.89,
+            "y": -2.032
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
+          "anchorX": "center",
+          "anchorY": "bottom",
           "role": "pin-number"
         },
         {
@@ -483,13 +483,13 @@
           "id": "u1:7:number",
           "text": "7",
           "at": {
-            "x": -10.668,
-            "y": 2.54
+            "x": -8.89,
+            "y": 3.048
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
+          "anchorX": "center",
+          "anchorY": "bottom",
           "role": "pin-number"
         },
         {
@@ -497,7 +497,7 @@
           "text": "U",
           "at": {
             "x": 0,
-            "y": 12.572999999999999
+            "y": 12.5476
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -510,7 +510,7 @@
           "text": "NE555D",
           "at": {
             "x": 0,
-            "y": -12.572999999999999
+            "y": -11.760200000000001
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -520,10 +520,10 @@
         }
       ],
       "bounds": {
-        "minX": -11.4554,
-        "minY": -13.842999999999998,
-        "maxX": 11.4554,
-        "maxY": 13.842999999999998
+        "minX": -10.16,
+        "minY": -13.0302,
+        "maxX": 10.16,
+        "maxY": 13.817599999999999
       },
       "warnings": []
     }
@@ -544,7 +544,10 @@
         "length": 2.54,
         "rotation": 90,
         "unit": 0,
+        "convert": 0,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -560,7 +563,10 @@
         "length": 2.54,
         "rotation": 270,
         "unit": 0,
+        "convert": 0,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -576,7 +582,10 @@
         "length": 2.54,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -592,7 +601,10 @@
         "length": 2.54,
         "rotation": 180,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -608,7 +620,10 @@
         "length": 2.54,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -624,7 +639,10 @@
         "length": 2.54,
         "rotation": 270,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -640,7 +658,10 @@
         "length": 2.54,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -656,7 +677,10 @@
         "length": 2.54,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       }
@@ -674,6 +698,7 @@
     "bodyGraphics": [
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "rectangle",
           [
@@ -710,6 +735,9 @@
     "warnings": [],
     "rawSource": "(symbol NE555D (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -10.16 8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value NE555D (at 2.54 8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm (at 0 -24.13 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.ti.com/lit/ds/symlink/ne555.pdf (at 0 -26.67 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Precision Timers, 555 compatible, SOIC-8\" (at 0 -21.59 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"single timer 555\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOIC*3.9x4.9mm*P1.27mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol NE555D_0_0 (pin power_in line (at 0 -10.16 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin power_in line (at 2.54 10.16 270) (length 2.54) (name VCC (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27)))))) (symbol NE555D_0_1 (rectangle (start -7.62 7.62) (end 7.62 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol NE555D_1_1 (pin input line (at -10.16 -5.08 0) (length 2.54) (name TRIG (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 0 180) (length 2.54) (name OUT (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name ~{RST} (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 10.16 270) (length 2.54) (name CONT (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -2.54 0) (length 2.54) (name THRES (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name DISCH (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
     "referenceFontSizeMm": 1.27,
-    "valueFontSizeMm": 1.27
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
   }
 }

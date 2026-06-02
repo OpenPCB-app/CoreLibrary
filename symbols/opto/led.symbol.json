@@ -17,7 +17,7 @@
     "sourceItemName": "LED",
     "sourceHash": "06d11685a81a354b2fc746ea7730c89691190f052cfb04dd4eb84eda6c4b4c34",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "convertedAt": "2026-06-02T05:57:37.019Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -194,8 +194,8 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "K",
-          "number": "1",
+          "name": "",
+          "number": null,
           "electricalType": "passive",
           "unit": 1,
           "anchor": {
@@ -210,8 +210,8 @@
         },
         {
           "id": "u1:2",
-          "name": "A",
-          "number": "2",
+          "name": "",
+          "number": null,
           "electricalType": "passive",
           "unit": 1,
           "anchor": {
@@ -227,62 +227,10 @@
       ],
       "labels": [
         {
-          "id": "u1:1:name",
-          "text": "K",
-          "at": {
-            "x": -0.762,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "left",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
-          "id": "u1:1:number",
-          "text": "1",
-          "at": {
-            "x": -4.318,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
-          "role": "pin-number"
-        },
-        {
-          "id": "u1:2:name",
-          "text": "A",
-          "at": {
-            "x": 0.762,
-            "y": 3.110602869834277e-16
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
-          "id": "u1:2:number",
-          "text": "2",
-          "at": {
-            "x": 4.318,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "left",
-          "anchorY": "middle",
-          "role": "pin-number"
-        },
-        {
           "id": "symbol:reference",
           "text": "D",
           "at": {
-            "x": 0,
+            "x": -0.3810000000000002,
             "y": 2.667
           },
           "fontSizeMm": 1.27,
@@ -295,7 +243,7 @@
           "id": "symbol:value",
           "text": "LED",
           "at": {
-            "x": 0,
+            "x": -0.3810000000000002,
             "y": -3.556
           },
           "fontSizeMm": 1.27,
@@ -306,9 +254,9 @@
         }
       ],
       "bounds": {
-        "minX": -5.1053999999999995,
+        "minX": -4.572,
         "minY": -4.8260000000000005,
-        "maxX": 5.1053999999999995,
+        "maxX": 3.8099999999999996,
         "maxY": 3.9369999999999994
       },
       "warnings": []
@@ -330,7 +278,10 @@
         "length": 2.54,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -346,7 +297,10 @@
         "length": 2.54,
         "rotation": 180,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       }
@@ -365,6 +319,7 @@
     "bodyGraphics": [
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -417,6 +372,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -469,6 +425,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -506,6 +463,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -543,6 +501,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -592,6 +551,9 @@
     "warnings": [],
     "rawSource": "(symbol LED (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference D (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value LED (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Light emitting diode\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Pins \"1=K 2=A\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"LED diode\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"LED* LED_SMD:* LED_THT:*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol LED_0_1 (polyline (pts (xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.27 0) (xy 1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.27 -1.27) (xy -1.27 1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol LED_1_1 (pin passive line (at -3.81 0 0) (length 2.54) (name K (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 2.54) (name A (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
     "referenceFontSizeMm": 1.27,
-    "valueFontSizeMm": 1.27
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
   }
 }

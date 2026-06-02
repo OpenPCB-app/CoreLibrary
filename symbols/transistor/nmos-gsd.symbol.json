@@ -17,7 +17,7 @@
     "sourceItemName": "Q_NMOS_GSD",
     "sourceHash": "693aae0fbc2a043e60997015e0049f47c6579abdb210cfb88048ed5cc65b15f8",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "convertedAt": "2026-06-02T05:57:37.019Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -325,7 +325,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "G",
+          "name": "",
           "number": "1",
           "electricalType": "input",
           "unit": 1,
@@ -341,7 +341,7 @@
         },
         {
           "id": "u1:2",
-          "name": "S",
+          "name": "",
           "number": "2",
           "electricalType": "passive",
           "unit": 1,
@@ -357,7 +357,7 @@
         },
         {
           "id": "u1:3",
-          "name": "D",
+          "name": "",
           "number": "3",
           "electricalType": "passive",
           "unit": 1,
@@ -374,79 +374,40 @@
       ],
       "labels": [
         {
-          "id": "u1:1:name",
-          "text": "G",
-          "at": {
-            "x": -2.032,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "left",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
           "id": "u1:1:number",
           "text": "1",
           "at": {
-            "x": -5.588,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
-          "role": "pin-number"
-        },
-        {
-          "id": "u1:2:name",
-          "text": "S",
-          "at": {
-            "x": 2.54,
-            "y": -3.048
+            "x": -3.81,
+            "y": 0.508
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
           "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-name"
+          "anchorY": "bottom",
+          "role": "pin-number"
         },
         {
           "id": "u1:2:number",
           "text": "2",
           "at": {
-            "x": 2.54,
-            "y": -5.588
+            "x": 3.048,
+            "y": -3.81
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
+          "rotationDeg": 90,
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
         },
         {
-          "id": "u1:3:name",
-          "text": "D",
-          "at": {
-            "x": 2.5399999999999996,
-            "y": 3.048
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
           "id": "u1:3:number",
           "text": "3",
           "at": {
-            "x": 2.54,
-            "y": 5.588
+            "x": 3.048,
+            "y": 3.81
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
+          "rotationDeg": 90,
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
@@ -455,8 +416,8 @@
           "id": "symbol:reference",
           "text": "Q",
           "at": {
-            "x": -0.9017,
-            "y": 7.493
+            "x": -0.25399999999999956,
+            "y": 6.35
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -468,8 +429,8 @@
           "id": "symbol:value",
           "text": "Q_NMOS_GSD",
           "at": {
-            "x": -0.9017,
-            "y": -7.493
+            "x": -0.25399999999999956,
+            "y": -6.35
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -479,10 +440,10 @@
         }
       ],
       "bounds": {
-        "minX": -6.3754,
-        "minY": -8.763,
-        "maxX": 4.572,
-        "maxY": 8.763
+        "minX": -5.08,
+        "minY": -7.619999999999999,
+        "maxX": 4.572000000000001,
+        "maxY": 7.619999999999999
       },
       "warnings": []
     }
@@ -503,7 +464,10 @@
         "length": 2.54,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -519,7 +483,10 @@
         "length": 2.54,
         "rotation": 90,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -535,7 +502,10 @@
         "length": 2.54,
         "rotation": 270,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       }
@@ -552,6 +522,7 @@
     "bodyGraphics": [
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -589,6 +560,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -626,6 +598,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -663,6 +636,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -700,6 +674,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -737,6 +712,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -784,6 +760,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -831,6 +808,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "circle",
           [
@@ -864,6 +842,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -901,6 +880,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "circle",
           [
@@ -934,6 +914,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "circle",
           [
@@ -967,6 +948,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -1009,6 +991,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -1046,6 +1029,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -1095,6 +1079,9 @@
     "warnings": [],
     "rawSource": "(symbol Q_NMOS_GSD (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference Q (at 5.08 1.905 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value Q_NMOS_GSD (at 5.08 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint \"\" (at 5.08 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"N-MOSFET transistor, gate/source/drain\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"transistor NMOS N-MOS N-MOSFET\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Q_NMOS_GSD_0_1 (polyline (pts (xy 0.254 1.905) (xy 0.254 -1.905)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.254 0) (xy -2.54 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.762 2.286) (xy 0.762 1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.762 0.508) (xy 0.762 -0.508)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.762 -1.27) (xy 0.762 -2.286)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 1.651 0) (radius 2.794) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 2.54 2.54) (xy 2.54 1.778)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.54 1.778) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 2.54 -1.778) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.921 0.381) (xy 3.683 0.381)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)) (stroke (width 0) (type default)) (fill (type none)))) (symbol Q_NMOS_GSD_1_1 (pin input line (at -5.08 0 0) (length 2.54) (name G (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 -5.08 90) (length 2.54) (name S (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name D (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
     "referenceFontSizeMm": 1.27,
-    "valueFontSizeMm": 1.27
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": true,
+    "hidePinNumbers": false
   }
 }

@@ -26,6 +26,29 @@
     "provenance": { "$ref": "#/$defs/provenance" },
     "boundsMm": {
       "type": "object",
+      "description": "Baked-GLB extent (size) per axis, in mm. Written by `pack --write-bounds`.",
+      "required": ["x", "y", "z"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "z": { "type": "number" }
+      }
+    },
+    "boundsMinMm": {
+      "type": "object",
+      "description": "Baked-GLB AABB minimum corner (scene Z-up frame). min.z<0 means the body/leads dip below the board. Used by the orientation gate.",
+      "required": ["x", "y", "z"],
+      "additionalProperties": false,
+      "properties": {
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "z": { "type": "number" }
+      }
+    },
+    "boundsMaxMm": {
+      "type": "object",
+      "description": "Baked-GLB AABB maximum corner (scene Z-up frame).",
       "required": ["x", "y", "z"],
       "additionalProperties": false,
       "properties": {

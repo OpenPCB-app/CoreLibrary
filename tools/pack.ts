@@ -15,6 +15,7 @@ import {
 import { convertStepToGlbNode } from "@openpcb/step-to-glb/node";
 import type { Model3DRef } from "@openpcb/step-to-glb";
 import { REPO_ROOT, relPath, sha256Bytes, walkFiles } from "./lib";
+import { computeGlbBounds, roundVec3, type ModelBounds } from "./glb-bounds";
 
 type AssetJson = {
   id: string;
@@ -48,6 +49,8 @@ const signKeyPath =
     : undefined;
 const keyId =
   args["key-id"] && args["key-id"] !== "true" ? args["key-id"] : undefined;
+/** When set, write computed GLB bounds back into the source `.model.json`. */
+const writeBounds = args["write-bounds"] === "true";
 const STEP_TO_GLB_PARAMS = {
   linearUnit: "millimeter" as const,
   linearDeflectionType: "absolute_value" as const,
@@ -219,6 +222,17 @@ async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
     assets.push({ format: "glb", path: glbPath, bytes });
   }
 
+  // Measure the baked GLB so the manifest carries an extent and (optionally) the
+  // sidecar gains committed bounds used by the orientation gate.
+  let bounds: ModelBounds | undefined;
+  const glbAsset = assets.find((asset) => asset.format === "glb");
+  if (glbAsset) {
+    bounds = await computeGlbBounds(glbAsset.bytes);
+    if (writeBounds) {
+      patchSidecarBounds(absPath, bounds);
+    }
+  }
+
   return {
     entry: {
       id: data.id,
@@ -226,7 +240,7 @@ async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
       version: data.version,
       name: data.name,
       formats,
-      boundsMm: data.boundsMm,
+      boundsMm: bounds ? roundVec3(bounds.size) : data.boundsMm,
       offsetMm: data.offsetMm,
       rotationDeg: data.rotationDeg,
       scaleMm: data.scaleMm,
@@ -234,6 +248,18 @@ async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
     },
     assets,
   };
+}
+
+/** Write computed bounds into a source `.model.json`, preserving the rest. */
+function patchSidecarBounds(absPath: string, bounds: ModelBounds): void {
+  const json = JSON.parse(readFileSync(absPath, "utf8")) as Record<
+    string,
+    unknown
+  >;
+  json.boundsMm = roundVec3(bounds.size);
+  json.boundsMinMm = roundVec3(bounds.min);
+  json.boundsMaxMm = roundVec3(bounds.max);
+  writeFileSync(absPath, `${JSON.stringify(json, null, 2)}\n`);
 }
 
 function packedComponentFor(absPath: string): PackedComponent {

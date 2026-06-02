@@ -17,7 +17,7 @@
     "sourceItemName": "Q_PNP_EBC",
     "sourceHash": "627fd8b9ab205af4a825c81e7dd1df57c2ba513ea3dc3e60d5419e8707b84b0f",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "convertedAt": "2026-06-02T05:57:37.019Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -191,7 +191,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "E",
+          "name": "",
           "number": "1",
           "electricalType": "passive",
           "unit": 1,
@@ -207,7 +207,7 @@
         },
         {
           "id": "u1:2",
-          "name": "B",
+          "name": "",
           "number": "2",
           "electricalType": "input",
           "unit": 1,
@@ -223,7 +223,7 @@
         },
         {
           "id": "u1:3",
-          "name": "C",
+          "name": "",
           "number": "3",
           "electricalType": "passive",
           "unit": 1,
@@ -240,79 +240,40 @@
       ],
       "labels": [
         {
-          "id": "u1:1:name",
-          "text": "E",
-          "at": {
-            "x": 2.54,
-            "y": -3.048
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
           "id": "u1:1:number",
           "text": "1",
           "at": {
-            "x": 2.54,
-            "y": -5.588
+            "x": 3.048,
+            "y": -3.81
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
+          "rotationDeg": 90,
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
-        },
-        {
-          "id": "u1:2:name",
-          "text": "B",
-          "at": {
-            "x": -2.032,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "left",
-          "anchorY": "middle",
-          "role": "pin-name"
         },
         {
           "id": "u1:2:number",
           "text": "2",
           "at": {
-            "x": -5.588,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
-          "role": "pin-number"
-        },
-        {
-          "id": "u1:3:name",
-          "text": "C",
-          "at": {
-            "x": 2.5399999999999996,
-            "y": 3.048
+            "x": -3.81,
+            "y": 0.508
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
           "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-name"
+          "anchorY": "bottom",
+          "role": "pin-number"
         },
         {
           "id": "u1:3:number",
           "text": "3",
           "at": {
-            "x": 2.54,
-            "y": 5.588
+            "x": 3.048,
+            "y": 3.81
           },
           "fontSizeMm": 1.27,
-          "rotationDeg": 0,
+          "rotationDeg": 90,
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
@@ -321,8 +282,8 @@
           "id": "symbol:reference",
           "text": "Q",
           "at": {
-            "x": -1.0795000000000003,
-            "y": 7.493
+            "x": -0.43180000000000085,
+            "y": 6.35
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -334,8 +295,8 @@
           "id": "symbol:value",
           "text": "Q_PNP_EBC",
           "at": {
-            "x": -1.0795000000000003,
-            "y": -7.493
+            "x": -0.43180000000000085,
+            "y": -6.35
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -345,10 +306,10 @@
         }
       ],
       "bounds": {
-        "minX": -6.3754,
-        "minY": -8.763,
-        "maxX": 4.216399999999999,
-        "maxY": 8.763
+        "minX": -5.08,
+        "minY": -7.619999999999999,
+        "maxX": 4.216399999999998,
+        "maxY": 7.619999999999999
       },
       "warnings": []
     }
@@ -369,7 +330,10 @@
         "length": 2.54,
         "rotation": 90,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -385,7 +349,10 @@
         "length": 2.54,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -401,7 +368,10 @@
         "length": 2.54,
         "rotation": 270,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       }
@@ -420,6 +390,7 @@
     "bodyGraphics": [
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -457,6 +428,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -494,6 +466,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -531,6 +504,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -568,6 +542,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "circle",
           [
@@ -601,6 +576,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "polyline",
           [
@@ -650,6 +626,9 @@
     "warnings": [],
     "rawSource": "(symbol Q_PNP_EBC (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference Q (at 5.08 1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value Q_PNP_EBC (at 5.08 -1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint \"\" (at 5.08 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"PNP transistor, emitter/base/collector\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Device PNP (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Pins \"1=E 2=B 3=C\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords BJT (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Q_PNP_EBC_0_1 (polyline (pts (xy -2.54 0) (xy 0.635 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.635 1.905) (xy 0.635 -1.905)) (stroke (width 0.508) (type default)) (fill (type none))) (polyline (pts (xy 0.635 0.635) (xy 2.54 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.635 -0.635) (xy 2.54 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 1.27 0) (radius 2.8194) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 2.286 -1.778) (xy 1.778 -2.286) (xy 1.27 -1.27) (xy 2.286 -1.778)) (stroke (width 0) (type default)) (fill (type outline)))) (symbol Q_PNP_EBC_1_1 (pin passive line (at 2.54 -5.08 90) (length 2.54) (name E (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin input line (at -5.08 0 0) (length 2.54) (name B (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.54) (name C (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
     "referenceFontSizeMm": 1.27,
-    "valueFontSizeMm": 1.27
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": true,
+    "hidePinNumbers": false
   }
 }

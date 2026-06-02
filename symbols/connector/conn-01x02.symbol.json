@@ -17,7 +17,7 @@
     "sourceItemName": "Conn_01x02",
     "sourceHash": "0544aec58a78853a51ffccb72d5c65a2ea4af3554b29be3a5f580da795c6821c",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "convertedAt": "2026-06-02T05:57:37.019Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -108,7 +108,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "Pin_1",
+          "name": "",
           "number": "1",
           "electricalType": "passive",
           "unit": 1,
@@ -124,7 +124,7 @@
         },
         {
           "id": "u1:2",
-          "name": "Pin_2",
+          "name": "",
           "number": "2",
           "electricalType": "passive",
           "unit": 1,
@@ -141,63 +141,37 @@
       ],
       "labels": [
         {
-          "id": "u1:1:name",
-          "text": "Pin_1",
-          "at": {
-            "x": -0.762,
-            "y": 0
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "left",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
           "id": "u1:1:number",
           "text": "1",
           "at": {
-            "x": -5.588,
-            "y": 0
+            "x": -3.175,
+            "y": 0.508
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
+          "anchorX": "center",
+          "anchorY": "bottom",
           "role": "pin-number"
-        },
-        {
-          "id": "u1:2:name",
-          "text": "Pin_2",
-          "at": {
-            "x": -0.762,
-            "y": -2.54
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "left",
-          "anchorY": "middle",
-          "role": "pin-name"
         },
         {
           "id": "u1:2:number",
           "text": "2",
           "at": {
-            "x": -5.588,
-            "y": -2.54
+            "x": -3.175,
+            "y": -2.032
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
-          "anchorX": "right",
-          "anchorY": "middle",
+          "anchorX": "center",
+          "anchorY": "bottom",
           "role": "pin-number"
         },
         {
           "id": "symbol:reference",
           "text": "J",
           "at": {
-            "x": -1.6002,
-            "y": 2.6670000000000003
+            "x": -1.8415,
+            "y": 3.048
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -209,7 +183,7 @@
           "id": "symbol:value",
           "text": "Conn_01x02",
           "at": {
-            "x": -1.6002,
+            "x": -1.8415,
             "y": -5.207000000000001
           },
           "fontSizeMm": 1.27,
@@ -220,10 +194,10 @@
         }
       ],
       "bounds": {
-        "minX": -6.3754,
+        "minX": -5.778499999999999,
         "minY": -6.477,
-        "maxX": 3.175,
-        "maxY": 3.9370000000000007
+        "maxX": 2.0954999999999995,
+        "maxY": 4.318
       },
       "warnings": []
     }
@@ -244,7 +218,10 @@
         "length": 3.81,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -260,7 +237,10 @@
         "length": 3.81,
         "rotation": 0,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       }
@@ -278,6 +258,7 @@
     "bodyGraphics": [
       {
         "unit": 1,
+        "convert": 1,
         "node": [
           "rectangle",
           [
@@ -312,6 +293,7 @@
       },
       {
         "unit": 1,
+        "convert": 1,
         "node": [
           "rectangle",
           [
@@ -346,6 +328,7 @@
       },
       {
         "unit": 1,
+        "convert": 1,
         "node": [
           "rectangle",
           [
@@ -382,6 +365,9 @@
     "warnings": [],
     "rawSource": "(symbol Conn_01x02 (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference J (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value Conn_01x02 (at 0 -5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords connector (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters Connector*:*_1x??_* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Conn_01x02_1_1 (rectangle (start -1.27 1.27) (end 1.27 -3.81) (stroke (width 0.254) (type default)) (fill (type background))) (rectangle (start -1.27 0.127) (end 0 -0.127) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -2.413) (end 0 -2.667) (stroke (width 0.1524) (type default)) (fill (type none))) (pin passive line (at -5.08 0 0) (length 3.81) (name Pin_1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name Pin_2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
     "referenceFontSizeMm": 1.27,
-    "valueFontSizeMm": 1.27
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": false
   }
 }

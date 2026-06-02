@@ -17,7 +17,7 @@
     "sourceItemName": "L",
     "sourceHash": "e84434e62b8767e3eaf1509c59d9e0e9daad1ff9d7b2f9f2dc8c6bdf388f1709",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "convertedAt": "2026-06-02T05:57:37.019Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -145,8 +145,8 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "1",
-          "number": "1",
+          "name": "",
+          "number": null,
           "electricalType": "passive",
           "unit": 1,
           "anchor": {
@@ -161,8 +161,8 @@
         },
         {
           "id": "u1:2",
-          "name": "2",
-          "number": "2",
+          "name": "",
+          "number": null,
           "electricalType": "passive",
           "unit": 1,
           "anchor": {
@@ -178,63 +178,11 @@
       ],
       "labels": [
         {
-          "id": "u1:1:name",
-          "text": "1",
-          "at": {
-            "x": -2.3329521523757077e-16,
-            "y": 3.048
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
-          "id": "u1:1:number",
-          "text": "1",
-          "at": {
-            "x": 0,
-            "y": 4.318
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-number"
-        },
-        {
-          "id": "u1:2:name",
-          "text": "2",
-          "at": {
-            "x": 7.776507174585693e-17,
-            "y": -3.048
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-name"
-        },
-        {
-          "id": "u1:2:number",
-          "text": "2",
-          "at": {
-            "x": 0,
-            "y": -4.318
-          },
-          "fontSizeMm": 1.27,
-          "rotationDeg": 0,
-          "anchorX": "center",
-          "anchorY": "middle",
-          "role": "pin-number"
-        },
-        {
           "id": "symbol:reference",
           "text": "L",
           "at": {
             "x": -0.0027057646686700076,
-            "y": 6.222999999999999
+            "y": 5.08
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -245,9 +193,9 @@
       ],
       "bounds": {
         "minX": -0.75270576466867,
-        "minY": -4.952999999999999,
+        "minY": -3.8100000000000005,
         "maxX": 0.74729423533133,
-        "maxY": 7.4929999999999986
+        "maxY": 6.35
       },
       "warnings": []
     }
@@ -268,7 +216,10 @@
         "length": 1.27,
         "rotation": 270,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       },
@@ -284,7 +235,10 @@
         "length": 1.27,
         "rotation": 90,
         "unit": 1,
+        "convert": 1,
         "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
         "nameFontSizeMm": 1.27,
         "numberFontSizeMm": 1.27
       }
@@ -302,6 +256,7 @@
     "bodyGraphics": [
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "arc",
           [
@@ -341,6 +296,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "arc",
           [
@@ -380,6 +336,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "arc",
           [
@@ -419,6 +376,7 @@
       },
       {
         "unit": 0,
+        "convert": 1,
         "node": [
           "arc",
           [
@@ -460,6 +418,9 @@
     "warnings": [],
     "rawSource": "(symbol L (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference L (at -1.27 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value L (at 1.905 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description Inductor (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"inductor choke coil reactor magnetic\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"Choke_* *Coil* Inductor_* L_*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol L_0_1 (arc (start 0 2.54) (mid 0.6323 1.905) (end 0 1.27) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 1.27) (mid 0.6323 0.635) (end 0 0) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 0) (mid 0.6323 -0.635) (end 0 -1.27) (stroke (width 0) (type default)) (fill (type none))) (arc (start 0 -1.27) (mid 0.6323 -1.905) (end 0 -2.54) (stroke (width 0) (type default)) (fill (type none)))) (symbol L_1_1 (pin passive line (at 0 3.81 270) (length 1.27) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name 2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
     "referenceFontSizeMm": 1.27,
-    "valueFontSizeMm": 1.27
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
   }
 }
