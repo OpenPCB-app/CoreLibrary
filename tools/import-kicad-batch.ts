@@ -21,7 +21,15 @@ import { ID_REGEX, REPO_ROOT, SEMVER_REGEX, sha256File } from "./lib";
 
 const LICENSE = "CC-BY-SA-4.0+KiCad-Libraries-Exception";
 const TOOL = "CoreLibrary tools/import-kicad-batch.ts";
-const DEFAULT_KICAD_ROOT = path.resolve(REPO_ROOT, "..", "kicad-libs");
+// Pinned KiCad official-libraries checkout, vendored at ../references/kicad-libs (KiCad 10.0.4).
+const KICAD_UPSTREAM_URL = "https://gitlab.com/kicad/libraries";
+const KICAD_UPSTREAM_COMMIT = "c7e226a49";
+const DEFAULT_KICAD_ROOT = path.resolve(
+  REPO_ROOT,
+  "..",
+  "references",
+  "kicad-libs",
+);
 
 interface PinMapEntry {
   pinNumber: string;
@@ -47,13 +55,29 @@ interface ManifestSymbol {
   path: string;
 }
 
+interface ManufacturerPart {
+  manufacturer: string;
+  mpn: string;
+  datasheet?: string;
+  lcsc?: string;
+  jlcpcbAssemblyType?: string;
+  lifecycle?: string;
+  rohs?: boolean | null;
+}
+
 interface ManifestComponent {
   id: string;
   name: string;
   description: string;
   category: string;
+  subcategory?: string;
   tags: string[];
+  keywords?: string[];
   aliases?: string[];
+  datasheet?: string | null;
+  datasheetSource?: string;
+  parameters?: Record<string, unknown>;
+  manufacturerParts?: ManufacturerPart[];
   symbol: ManifestSymbol;
   defaultFootprint: string;
   footprints: ManifestFootprint[];
@@ -80,7 +104,11 @@ interface ResolvedSymbol {
   parsed: ParsedKicadSymbol;
   normalized: NormalizedImportedSymbol;
   hash: string;
-  sourceFiles: Array<{ fileName: string; sourceItemName: string; sha256: string }>;
+  sourceFiles: Array<{
+    fileName: string;
+    sourceItemName: string;
+    sha256: string;
+  }>;
 }
 
 interface ResolvedFootprint {
@@ -93,14 +121,20 @@ interface ResolvedFootprint {
 function parseArgs(argv: string[]): Args {
   const values = new Map<string, string>();
   const flags = new Set<string>();
-  const allowedValues = new Set(["manifest", "kicad-root", "out", "converted-at"]);
+  const allowedValues = new Set([
+    "manifest",
+    "kicad-root",
+    "out",
+    "converted-at",
+  ]);
   const allowedFlags = new Set(["dry-run", "strict", "allow-overwrite"]);
   for (const arg of argv) {
     if (!arg.startsWith("--")) throw new Error(`Invalid argument: ${arg}`);
     if (arg.includes("=")) {
       const [key, ...rest] = arg.slice(2).split("=");
       if (!key) throw new Error(`Invalid argument: ${arg}`);
-      if (!allowedValues.has(key)) throw new Error(`Unknown argument: --${key}`);
+      if (!allowedValues.has(key))
+        throw new Error(`Unknown argument: --${key}`);
       values.set(key, rest.join("="));
     } else {
       const flag = arg.slice(2);
@@ -114,7 +148,8 @@ function parseArgs(argv: string[]): Args {
   const out = values.get("out") ?? REPO_ROOT;
   const kicadRoot = values.get("kicad-root") ?? DEFAULT_KICAD_ROOT;
   const convertedAt = values.get("converted-at") ?? new Date().toISOString();
-  if (Number.isNaN(Date.parse(convertedAt))) throw new Error("--converted-at must be an ISO date-time");
+  if (Number.isNaN(Date.parse(convertedAt)))
+    throw new Error("--converted-at must be an ISO date-time");
   return {
     manifest: path.resolve(manifest),
     out: path.resolve(out),
@@ -140,7 +175,9 @@ function uuidFromSeed(seed: string): string {
     hex.slice(0, 8),
     hex.slice(8, 12),
     `5${hex.slice(13, 16)}`,
-    ((Number.parseInt(hex.slice(16, 18), 16) & 0x3f) | 0x80).toString(16).padStart(2, "0") + hex.slice(18, 20),
+    ((Number.parseInt(hex.slice(16, 18), 16) & 0x3f) | 0x80)
+      .toString(16)
+      .padStart(2, "0") + hex.slice(18, 20),
     hex.slice(20, 32),
   ].join("-");
 }
@@ -157,17 +194,26 @@ function requireString(value: unknown, pathName: string): string {
 
 function requireId(value: unknown, pathName: string): string {
   const id = requireString(value, pathName);
-  if (!ID_REGEX.test(id)) throw new Error(`${pathName} must be a valid OpenPCB id`);
+  if (!ID_REGEX.test(id))
+    throw new Error(`${pathName} must be a valid OpenPCB id`);
   return id;
 }
 
-function requireSourcePath(value: unknown, pathName: string, suffix: string): string {
+function requireSourcePath(
+  value: unknown,
+  pathName: string,
+  suffix: string,
+): string {
   const source = requireString(value, pathName);
-  if (!source.endsWith(suffix)) throw new Error(`${pathName} must end with ${suffix}`);
+  if (!source.endsWith(suffix))
+    throw new Error(`${pathName} must end with ${suffix}`);
   return source;
 }
 
-function optionalStringArray(value: unknown, pathName: string): string[] | undefined {
+function optionalStringArray(
+  value: unknown,
+  pathName: string,
+): string[] | undefined {
   if (value === undefined) return undefined;
   if (!Array.isArray(value) || value.some((item) => typeof item !== "string"))
     throw new Error(`${pathName} must be an array of strings`);
@@ -180,16 +226,68 @@ function requireStringArray(value: unknown, pathName: string): string[] {
   return array;
 }
 
-function readPinMap(value: unknown, pathName: string): PinMapEntry[] | undefined {
+function optionalString(value: unknown, pathName: string): string | undefined {
+  if (value === undefined) return undefined;
+  return requireString(value, pathName);
+}
+
+function optionalNullableString(
+  value: unknown,
+  pathName: string,
+): string | null | undefined {
+  if (value === undefined) return undefined;
+  if (value === null) return null;
+  return requireString(value, pathName);
+}
+
+function optionalParameters(
+  value: unknown,
+  pathName: string,
+): Record<string, unknown> | undefined {
+  if (value === undefined) return undefined;
+  if (!isObject(value)) throw new Error(`${pathName} must be an object`);
+  return value;
+}
+
+function optionalManufacturerParts(
+  value: unknown,
+  pathName: string,
+): ManufacturerPart[] | undefined {
   if (value === undefined) return undefined;
   if (!Array.isArray(value)) throw new Error(`${pathName} must be an array`);
   return value.map((item, index) => {
-    if (!isObject(item)) throw new Error(`${pathName}[${index}] must be an object`);
+    if (!isObject(item))
+      throw new Error(`${pathName}[${index}] must be an object`);
+    requireString(item.manufacturer, `${pathName}[${index}].manufacturer`);
+    requireString(item.mpn, `${pathName}[${index}].mpn`);
+    return item as unknown as ManufacturerPart;
+  });
+}
+
+function readPinMap(
+  value: unknown,
+  pathName: string,
+): PinMapEntry[] | undefined {
+  if (value === undefined) return undefined;
+  if (!Array.isArray(value)) throw new Error(`${pathName} must be an array`);
+  return value.map((item, index) => {
+    if (!isObject(item))
+      throw new Error(`${pathName}[${index}] must be an object`);
     const entry: PinMapEntry = {
-      pinNumber: requireString(item.pinNumber, `${pathName}[${index}].pinNumber`),
-      padNumber: requireString(item.padNumber, `${pathName}[${index}].padNumber`),
+      pinNumber: requireString(
+        item.pinNumber,
+        `${pathName}[${index}].pinNumber`,
+      ),
+      padNumber: requireString(
+        item.padNumber,
+        `${pathName}[${index}].padNumber`,
+      ),
     };
-    if (item.pinName !== undefined) entry.pinName = requireString(item.pinName, `${pathName}[${index}].pinName`);
+    if (item.pinName !== undefined)
+      entry.pinName = requireString(
+        item.pinName,
+        `${pathName}[${index}].pinName`,
+      );
     return entry;
   });
 }
@@ -202,7 +300,10 @@ function readManifestModel(value: unknown, pathName: string): ManifestModel {
   };
 }
 
-function readManifestFootprint(value: unknown, pathName: string): ManifestFootprint {
+function readManifestFootprint(
+  value: unknown,
+  pathName: string,
+): ManifestFootprint {
   if (!isObject(value)) throw new Error(`${pathName} must be an object`);
   return {
     id: requireId(value.id, `${pathName}.id`),
@@ -213,30 +314,60 @@ function readManifestFootprint(value: unknown, pathName: string): ManifestFootpr
   };
 }
 
-function readManifestComponent(value: unknown, pathName: string): ManifestComponent {
+function readManifestComponent(
+  value: unknown,
+  pathName: string,
+): ManifestComponent {
   if (!isObject(value)) throw new Error(`${pathName} must be an object`);
   const symbolValue = value.symbol;
-  if (!isObject(symbolValue)) throw new Error(`${pathName}.symbol must be an object`);
+  if (!isObject(symbolValue))
+    throw new Error(`${pathName}.symbol must be an object`);
   const footprintsValue = value.footprints;
   if (!Array.isArray(footprintsValue) || footprintsValue.length === 0)
     throw new Error(`${pathName}.footprints must be a non-empty array`);
   const compatibilityValue = value.compatibility;
   const compatibility = isObject(compatibilityValue)
-    ? { minOpenPcbVersion: typeof compatibilityValue.minOpenPcbVersion === "string" ? compatibilityValue.minOpenPcbVersion : undefined }
+    ? {
+        minOpenPcbVersion:
+          typeof compatibilityValue.minOpenPcbVersion === "string"
+            ? compatibilityValue.minOpenPcbVersion
+            : undefined,
+      }
     : undefined;
   return {
     id: requireId(value.id, `${pathName}.id`),
     name: requireString(value.name, `${pathName}.name`),
     description: requireString(value.description, `${pathName}.description`),
     category: requireString(value.category, `${pathName}.category`),
+    subcategory: optionalString(value.subcategory, `${pathName}.subcategory`),
     tags: requireStringArray(value.tags, `${pathName}.tags`),
+    keywords: optionalStringArray(value.keywords, `${pathName}.keywords`),
     aliases: optionalStringArray(value.aliases, `${pathName}.aliases`),
+    datasheet: optionalNullableString(value.datasheet, `${pathName}.datasheet`),
+    datasheetSource: optionalString(
+      value.datasheetSource,
+      `${pathName}.datasheetSource`,
+    ),
+    parameters: optionalParameters(value.parameters, `${pathName}.parameters`),
+    manufacturerParts: optionalManufacturerParts(
+      value.manufacturerParts,
+      `${pathName}.manufacturerParts`,
+    ),
     symbol: {
       id: requireId(symbolValue.id, `${pathName}.symbol.id`),
-      path: requireSourcePath(symbolValue.path, `${pathName}.symbol.path`, ".kicad_sym"),
+      path: requireSourcePath(
+        symbolValue.path,
+        `${pathName}.symbol.path`,
+        ".kicad_sym",
+      ),
     },
-    defaultFootprint: requireId(value.defaultFootprint, `${pathName}.defaultFootprint`),
-    footprints: footprintsValue.map((item, index) => readManifestFootprint(item, `${pathName}.footprints[${index}]`)),
+    defaultFootprint: requireId(
+      value.defaultFootprint,
+      `${pathName}.defaultFootprint`,
+    ),
+    footprints: footprintsValue.map((item, index) =>
+      readManifestFootprint(item, `${pathName}.footprints[${index}]`),
+    ),
     compatibility,
   };
 }
@@ -249,22 +380,28 @@ async function loadManifest(file: string): Promise<ImportManifest> {
     throw new Error("manifest.components must be a non-empty array");
   return {
     version: requireString(raw.version, "manifest.version"),
-    components: componentsValue.map((item, index) => readManifestComponent(item, `manifest.components[${index}]`)),
+    components: componentsValue.map((item, index) =>
+      readManifestComponent(item, `manifest.components[${index}]`),
+    ),
   };
 }
 
 function validateManifestShape(manifest: ImportManifest): void {
-  if (!SEMVER_REGEX.test(manifest.version)) throw new Error("manifest.version must be semver");
+  if (!SEMVER_REGEX.test(manifest.version))
+    throw new Error("manifest.version must be semver");
   const componentIds = new Set<string>();
   const symbolIds = new Map<string, string>();
   const footprintIds = new Map<string, string>();
   const modelIds = new Map<string, string>();
   for (const component of manifest.components) {
-    if (componentIds.has(component.id)) throw new Error(`duplicate component id: ${component.id}`);
+    if (componentIds.has(component.id))
+      throw new Error(`duplicate component id: ${component.id}`);
     componentIds.add(component.id);
     const componentCategory = idPart(component.id, "openpcb.core.").category;
     if (componentCategory !== component.category)
-      throw new Error(`${component.id} category mismatch: id has ${componentCategory}, component has ${component.category}`);
+      throw new Error(
+        `${component.id} category mismatch: id has ${componentCategory}, component has ${component.category}`,
+      );
     rememberId(symbolIds, component.symbol.id, component.symbol.path, "symbol");
     const footprintIdsForComponent = new Set<string>();
     for (const footprint of component.footprints) {
@@ -273,13 +410,23 @@ function validateManifestShape(manifest: ImportManifest): void {
       rememberId(modelIds, footprint.model.id, footprint.model.path, "model");
     }
     if (!footprintIdsForComponent.has(component.defaultFootprint))
-      throw new Error(`${component.id} defaultFootprint is not in manifest footprints[]`);
+      throw new Error(
+        `${component.id} defaultFootprint is not in manifest footprints[]`,
+      );
   }
 }
 
-function rememberId(ids: Map<string, string>, id: string, source: string, kind: string): void {
+function rememberId(
+  ids: Map<string, string>,
+  id: string,
+  source: string,
+  kind: string,
+): void {
   const hit = ids.get(id);
-  if (hit && hit !== source) throw new Error(`${kind} id collision: ${id} maps to both ${hit} and ${source}`);
+  if (hit && hit !== source)
+    throw new Error(
+      `${kind} id collision: ${id} maps to both ${hit} and ${source}`,
+    );
   ids.set(id, source);
 }
 
@@ -287,8 +434,12 @@ function sourcePath(kicadRoot: string, source: string): string {
   return path.isAbsolute(source) ? source : path.join(kicadRoot, source);
 }
 
-function idPart(id: string, prefix: string): { category: string; slug: string } {
-  if (!id.startsWith(prefix)) throw new Error(`${id} must start with ${prefix}`);
+function idPart(
+  id: string,
+  prefix: string,
+): { category: string; slug: string } {
+  if (!id.startsWith(prefix))
+    throw new Error(`${id} must start with ${prefix}`);
   const rest = id.slice(prefix.length);
   const parts = rest.split(".");
   if (parts.length < 2) throw new Error(`${id} must include category and slug`);
@@ -308,8 +459,16 @@ function uniqueTags(tags: string[]): string[] {
   return out;
 }
 
-function provenance(format: string, sourcePathValue: string, item: string, hash: string, convertedAt: string) {
-  const parent = path.basename(path.dirname(sourcePathValue)).replace(/\.(kicad_symdir|pretty|3dshapes)$/, "");
+function provenance(
+  format: string,
+  sourcePathValue: string,
+  item: string,
+  hash: string,
+  convertedAt: string,
+) {
+  const parent = path
+    .basename(path.dirname(sourcePathValue))
+    .replace(/\.(kicad_symdir|pretty|3dshapes)$/, "");
   return {
     source: "kicad-derived",
     license: LICENSE,
@@ -319,15 +478,21 @@ function provenance(format: string, sourcePathValue: string, item: string, hash:
     sourceLibrary: parent,
     sourceItemName: item,
     sourceHash: hash,
-    upstreamUrl: "https://gitlab.com/kicad/libraries",
+    upstreamUrl: KICAD_UPSTREAM_URL,
+    upstreamCommit: KICAD_UPSTREAM_COMMIT,
     convertedAt,
     conversionTool: TOOL,
   };
 }
 
-function normalizeSymbol(symbol: ParsedKicadSymbol, sourceHash: string): NormalizedImportedSymbol {
+function normalizeSymbol(
+  symbol: ParsedKicadSymbol,
+  sourceHash: string,
+): NormalizedImportedSymbol {
   const preview = buildSymbolPreviewFromParsed(symbol);
-  const referencePrefix = (symbol.properties.Reference ?? symbol.name).replace(/[^A-Za-z#]/g, "").slice(0, 8);
+  const referencePrefix = (symbol.properties.Reference ?? symbol.name)
+    .replace(/[^A-Za-z#]/g, "")
+    .slice(0, 8);
   return {
     id: stableId("sym", `${sourceHash}:${symbol.name}`),
     name: symbol.name,
@@ -335,14 +500,20 @@ function normalizeSymbol(symbol: ParsedKicadSymbol, sourceHash: string): Normali
     description: symbol.properties.Description ?? null,
     sourceHash,
     pins: symbol.pins.map((pin, index) => ({
-      originPinKey: pin.number.trim().length > 0 ? `u${pin.unit}:${pin.number}` : `u${pin.unit}:idx${index + 1}`,
+      originPinKey:
+        pin.number.trim().length > 0
+          ? `u${pin.unit}:${pin.number}`
+          : `u${pin.unit}:idx${index + 1}`,
       number: pin.number.trim().length > 0 ? pin.number : null,
       name: pin.name,
       localPosition: { x: pin.position.x, y: pin.position.y },
       electricalType: pin.electricalType,
       unit: pin.unit,
     })),
-    warnings: preview.warnings.map((warning) => ({ code: warning.code, message: warning.message })),
+    warnings: preview.warnings.map((warning) => ({
+      code: warning.code,
+      message: warning.message,
+    })),
     preview,
   };
 }
@@ -350,7 +521,8 @@ function normalizeSymbol(symbol: ParsedKicadSymbol, sourceHash: string): Normali
 function dedupeSymbolPins(symbol: ParsedKicadSymbol): ParsedKicadSymbol {
   const seen = new Set<string>();
   const pins = symbol.pins.filter((pin, index) => {
-    const key = pin.number.trim().length > 0 ? pin.number : `${pin.unit}:idx${index}`;
+    const key =
+      pin.number.trim().length > 0 ? pin.number : `${pin.unit}:idx${index}`;
     if (seen.has(key)) return false;
     seen.add(key);
     return true;
@@ -358,7 +530,11 @@ function dedupeSymbolPins(symbol: ParsedKicadSymbol): ParsedKicadSymbol {
   return pins.length === symbol.pins.length ? symbol : { ...symbol, pins };
 }
 
-function normalizeFootprint(footprint: ParsedKicadFootprint, sourceHash: string, fileName: string): NormalizedImportedFootprint {
+function normalizeFootprint(
+  footprint: ParsedKicadFootprint,
+  sourceHash: string,
+  fileName: string,
+): NormalizedImportedFootprint {
   const preview = buildFootprintPreviewFromParsed(footprint);
   const pkg = extractPackageCode(footprint.name);
   const mountType = footprint.attributes.type;
@@ -370,9 +546,17 @@ function normalizeFootprint(footprint: ParsedKicadFootprint, sourceHash: string,
     mountType,
     padCount: footprint.pads.length,
     packageCode: { imperial: pkg.imperial, metric: pkg.metric },
-    tags: uniqueTags([...footprint.tags, mountType, pkg.imperial ?? "", pkg.metric ?? ""]),
+    tags: uniqueTags([
+      ...footprint.tags,
+      mountType,
+      pkg.imperial ?? "",
+      pkg.metric ?? "",
+    ]),
     sourceHash,
-    warnings: preview.warnings.map((warning) => ({ code: warning.code, message: warning.message })),
+    warnings: preview.warnings.map((warning) => ({
+      code: warning.code,
+      message: warning.message,
+    })),
     preview,
   };
 }
@@ -387,8 +571,12 @@ interface ParsedSymbolWithSources {
   sources: Array<{ file: string; sourceItemName: string; sha256: string }>;
 }
 
-async function parseSymbolWithInheritance(file: string, seen = new Set<string>()): Promise<ParsedSymbolWithSources> {
-  if (seen.has(file)) throw new Error(`cyclic KiCad symbol inheritance at ${file}`);
+async function parseSymbolWithInheritance(
+  file: string,
+  seen = new Set<string>(),
+): Promise<ParsedSymbolWithSources> {
+  if (seen.has(file))
+    throw new Error(`cyclic KiCad symbol inheritance at ${file}`);
   seen.add(file);
   const source = await readFile(file, "utf8");
   const sourceHash = sha256(source);
@@ -396,12 +584,14 @@ async function parseSymbolWithInheritance(file: string, seen = new Set<string>()
   if (!parsed) throw new Error(`no symbol found in ${file}`);
   const dedupedParsed = dedupeSymbolPins(parsed);
   const ownSource = { file, sourceItemName: parsed.name, sha256: sourceHash };
-  if (dedupedParsed.pins.length > 0) return { parsed: dedupedParsed, sources: [ownSource] };
+  if (dedupedParsed.pins.length > 0)
+    return { parsed: dedupedParsed, sources: [ownSource] };
 
   const parentName = extendsName(source);
   if (!parentName) return { parsed: dedupedParsed, sources: [ownSource] };
   const parentFile = path.join(path.dirname(file), `${parentName}.kicad_sym`);
-  if (!existsSync(parentFile)) return { parsed: dedupedParsed, sources: [ownSource] };
+  if (!existsSync(parentFile))
+    return { parsed: dedupedParsed, sources: [ownSource] };
   const parent = await parseSymbolWithInheritance(parentFile, seen);
   return {
     parsed: dedupeSymbolPins({
@@ -413,20 +603,29 @@ async function parseSymbolWithInheritance(file: string, seen = new Set<string>()
       warnings: [
         ...parent.parsed.warnings,
         ...parsed.warnings,
-        { code: "symbol_extends_resolved", message: `Resolved pins from ${parentName}` },
+        {
+          code: "symbol_extends_resolved",
+          message: `Resolved pins from ${parentName}`,
+        },
       ],
     }),
     sources: [ownSource, ...parent.sources],
   };
 }
 
-async function resolveSymbol(kicadRoot: string, manifestSymbol: ManifestSymbol): Promise<ResolvedSymbol> {
+async function resolveSymbol(
+  kicadRoot: string,
+  manifestSymbol: ManifestSymbol,
+): Promise<ResolvedSymbol> {
   const source = sourcePath(kicadRoot, manifestSymbol.path);
   if (!existsSync(source)) throw new Error(`missing symbol source: ${source}`);
   const inherited = await parseSymbolWithInheritance(source);
   const parsed = inherited.parsed;
-  if (parsed.pins.length === 0) throw new Error(`symbol has no parsed pins: ${source}`);
-  const hash = sha256(inherited.sources.map((item) => `${item.file}:${item.sha256}`).join("\n"));
+  if (parsed.pins.length === 0)
+    throw new Error(`symbol has no parsed pins: ${source}`);
+  const hash = sha256(
+    inherited.sources.map((item) => `${item.file}:${item.sha256}`).join("\n"),
+  );
   return {
     source,
     parsed,
@@ -440,9 +639,13 @@ async function resolveSymbol(kicadRoot: string, manifestSymbol: ManifestSymbol):
   };
 }
 
-async function resolveFootprint(kicadRoot: string, manifestFootprint: ManifestFootprint): Promise<ResolvedFootprint> {
+async function resolveFootprint(
+  kicadRoot: string,
+  manifestFootprint: ManifestFootprint,
+): Promise<ResolvedFootprint> {
   const source = sourcePath(kicadRoot, manifestFootprint.path);
-  if (!existsSync(source)) throw new Error(`missing footprint source: ${source}`);
+  if (!existsSync(source))
+    throw new Error(`missing footprint source: ${source}`);
   const content = await readFile(source, "utf8");
   const hash = sha256(content);
   const parsed = parseKicadFootprint(content);
@@ -451,57 +654,119 @@ async function resolveFootprint(kicadRoot: string, manifestFootprint: ManifestFo
   return { source, parsed, normalized, hash };
 }
 
-function pinMapFor(symbol: ResolvedSymbol, footprint: ResolvedFootprint, configured: PinMapEntry[] | undefined): PinMapEntry[] {
-  const symbolPins = new Set(symbol.normalized.pins.map((pin) => pin.number).filter((number): number is string => number !== null));
-  const footprintPads = new Set(footprint.normalized.preview.pads.map((pad) => pad.number));
-  const pinMap = configured ?? [...symbolPins].map((number) => ({ pinNumber: number, padNumber: number }));
+function pinMapFor(
+  symbol: ResolvedSymbol,
+  footprint: ResolvedFootprint,
+  configured: PinMapEntry[] | undefined,
+): PinMapEntry[] {
+  const symbolPins = new Set(
+    symbol.normalized.pins
+      .map((pin) => pin.number)
+      .filter((number): number is string => number !== null),
+  );
+  const footprintPads = new Set(
+    footprint.normalized.preview.pads.map((pad) => pad.number),
+  );
+  const pinMap =
+    configured ??
+    [...symbolPins].map((number) => ({ pinNumber: number, padNumber: number }));
   const mappedPins = new Set<string>();
   for (const entry of pinMap) {
     mappedPins.add(entry.pinNumber);
-    if (!symbolPins.has(entry.pinNumber)) throw new Error(`pinMap references unknown symbol pin ${entry.pinNumber} on ${symbol.source}`);
-    if (!footprintPads.has(entry.padNumber)) throw new Error(`pinMap references unknown footprint pad ${entry.padNumber} on ${footprint.source}`);
+    if (!symbolPins.has(entry.pinNumber))
+      throw new Error(
+        `pinMap references unknown symbol pin ${entry.pinNumber} on ${symbol.source}`,
+      );
+    if (!footprintPads.has(entry.padNumber))
+      throw new Error(
+        `pinMap references unknown footprint pad ${entry.padNumber} on ${footprint.source}`,
+      );
   }
   const missing = [...symbolPins].filter((pin) => !mappedPins.has(pin));
-  if (missing.length > 0) throw new Error(`pinMap does not cover symbol pin(s) ${missing.join(", ")} on ${symbol.source}`);
+  if (missing.length > 0)
+    throw new Error(
+      `pinMap does not cover symbol pin(s) ${missing.join(", ")} on ${symbol.source}`,
+    );
   return pinMap;
 }
 
-function validateStrictPinMap(symbol: ResolvedSymbol, footprint: ResolvedFootprint, configured: PinMapEntry[] | undefined, pinMap: PinMapEntry[]): void {
-  if (!configured) throw new Error(`strict mode requires explicit pinMap for ${footprint.source}`);
+function validateStrictPinMap(
+  symbol: ResolvedSymbol,
+  footprint: ResolvedFootprint,
+  configured: PinMapEntry[] | undefined,
+  pinMap: PinMapEntry[],
+): void {
+  if (!configured)
+    throw new Error(
+      `strict mode requires explicit pinMap for ${footprint.source}`,
+    );
   const mappedPads = new Set(pinMap.map((entry) => entry.padNumber));
-  const unmappedPads = footprint.normalized.preview.pads.map((pad) => pad.number).filter((pad) => !mappedPads.has(pad));
-  if (unmappedPads.length > 0) throw new Error(`strict mode found unmapped footprint pad(s) ${unmappedPads.join(", ")} on ${footprint.source}`);
-  const pinNamesByNumber = new Map(symbol.normalized.pins.map((pin) => [pin.number, pin.name]));
+  const unmappedPads = footprint.normalized.preview.pads
+    .map((pad) => pad.number)
+    .filter((pad) => !mappedPads.has(pad));
+  if (unmappedPads.length > 0)
+    throw new Error(
+      `strict mode found unmapped footprint pad(s) ${unmappedPads.join(", ")} on ${footprint.source}`,
+    );
+  const pinNamesByNumber = new Map(
+    symbol.normalized.pins.map((pin) => [pin.number, pin.name]),
+  );
   for (const entry of pinMap) {
     const actualName = pinNamesByNumber.get(entry.pinNumber);
     if (entry.pinName && actualName && entry.pinName !== actualName)
-      throw new Error(`strict mode pinName mismatch for pin ${entry.pinNumber}: manifest has ${entry.pinName}, symbol has ${actualName}`);
+      throw new Error(
+        `strict mode pinName mismatch for pin ${entry.pinNumber}: manifest has ${entry.pinName}, symbol has ${actualName}`,
+      );
   }
 }
 
-async function writeJson(file: string, data: unknown, dryRun: boolean): Promise<void> {
+async function writeJson(
+  file: string,
+  data: unknown,
+  dryRun: boolean,
+): Promise<void> {
   if (dryRun) return;
   await mkdir(path.dirname(file), { recursive: true });
   await writeFile(file, `${JSON.stringify(data, null, 2)}\n`);
 }
 
-async function copyAsset(source: string, target: string, dryRun: boolean): Promise<void> {
+async function copyAsset(
+  source: string,
+  target: string,
+  dryRun: boolean,
+): Promise<void> {
   if (dryRun) return;
   await mkdir(path.dirname(target), { recursive: true });
   await copyFile(source, target);
 }
 
-function rememberPath(paths: Map<string, string>, file: string, source: string, allowOverwrite: boolean): void {
+function rememberPath(
+  paths: Map<string, string>,
+  file: string,
+  source: string,
+  allowOverwrite: boolean,
+): void {
   const hit = paths.get(file);
   if (hit && hit !== source) throw new Error(`output path collision: ${file}`);
-  if (!hit && !allowOverwrite && existsSync(file)) throw new Error(`output path already exists: ${file} (pass --allow-overwrite to replace)`);
+  if (!hit && !allowOverwrite && existsSync(file))
+    throw new Error(
+      `output path already exists: ${file} (pass --allow-overwrite to replace)`,
+    );
   paths.set(file, source);
 }
 
-function validateStrictModelRef(footprint: ResolvedFootprint, stepSource: string): void {
+function validateStrictModelRef(
+  footprint: ResolvedFootprint,
+  stepSource: string,
+): void {
   const stepName = path.basename(stepSource);
-  const match = footprint.parsed.model3dRefs.find((ref) => ref.resolvedFileName === stepName);
-  if (!match) throw new Error(`strict mode requires footprint ${footprint.source} to reference STEP ${stepName}`);
+  const match = footprint.parsed.model3dRefs.find(
+    (ref) => ref.resolvedFileName === stepName,
+  );
+  if (!match)
+    throw new Error(
+      `strict mode requires footprint ${footprint.source} to reference STEP ${stepName}`,
+    );
 }
 
 async function run(argv: string[]): Promise<void> {
@@ -517,111 +782,257 @@ async function run(argv: string[]): Promise<void> {
   for (const component of manifest.components) {
     const symbol = await resolveSymbol(args.kicadRoot, component.symbol);
     const symbolPart = idPart(component.symbol.id, "openpcb.core.symbol.");
-    const symbolPath = path.join(args.out, "symbols", symbolPart.category, `${symbolPart.slug}.symbol.json`);
-    rememberPath(outputPaths, symbolPath, component.symbol.path, args.allowOverwrite);
+    const symbolPath = path.join(
+      args.out,
+      "symbols",
+      symbolPart.category,
+      `${symbolPart.slug}.symbol.json`,
+    );
+    rememberPath(
+      outputPaths,
+      symbolPath,
+      component.symbol.path,
+      args.allowOverwrite,
+    );
     if (!symbolIds.has(component.symbol.id)) {
-      await writeJson(symbolPath, {
-        id: component.symbol.id,
-        uuid: uuidFromSeed(component.symbol.id),
-        version: manifest.version,
-        name: component.name,
-        referencePrefix: symbol.normalized.referencePrefix,
-        description: symbol.normalized.description ?? `${component.name} symbol imported from KiCad`,
-        provenance: provenance("kicad-sym", symbol.source, symbol.parsed.name, symbol.hash, args.convertedAt),
-        parser: {
-          warnings: symbol.parsed.warnings,
-          properties: symbol.parsed.properties,
-          units: symbol.parsed.units,
-          sourceFiles: symbol.sourceFiles,
+      await writeJson(
+        symbolPath,
+        {
+          id: component.symbol.id,
+          uuid: uuidFromSeed(component.symbol.id),
+          version: manifest.version,
+          name: component.name,
+          referencePrefix: symbol.normalized.referencePrefix,
+          description:
+            symbol.normalized.description ??
+            `${component.name} symbol imported from KiCad`,
+          provenance: provenance(
+            "kicad-sym",
+            symbol.source,
+            symbol.parsed.name,
+            symbol.hash,
+            args.convertedAt,
+          ),
+          parser: {
+            warnings: symbol.parsed.warnings,
+            properties: symbol.parsed.properties,
+            units: symbol.parsed.units,
+            sourceFiles: symbol.sourceFiles,
+          },
+          normalized: symbol.normalized,
+          raw: symbol.parsed,
         },
-        normalized: symbol.normalized,
-        raw: symbol.parsed,
-      }, args.dryRun);
+        args.dryRun,
+      );
       symbolIds.add(component.symbol.id);
     }
 
-    const componentFootprints: Array<{ footprint: string; label: string; pinMap: PinMapEntry[] }> = [];
+    const componentFootprints: Array<{
+      footprint: string;
+      label: string;
+      pinMap: PinMapEntry[];
+    }> = [];
     for (const manifestFootprint of component.footprints) {
-      const footprint = await resolveFootprint(args.kicadRoot, manifestFootprint);
+      const footprint = await resolveFootprint(
+        args.kicadRoot,
+        manifestFootprint,
+      );
       const pinMap = pinMapFor(symbol, footprint, manifestFootprint.pinMap);
-      if (args.strict) validateStrictPinMap(symbol, footprint, manifestFootprint.pinMap, pinMap);
-      componentFootprints.push({ footprint: manifestFootprint.id, label: manifestFootprint.label, pinMap });
+      if (args.strict)
+        validateStrictPinMap(
+          symbol,
+          footprint,
+          manifestFootprint.pinMap,
+          pinMap,
+        );
+      componentFootprints.push({
+        footprint: manifestFootprint.id,
+        label: manifestFootprint.label,
+        pinMap,
+      });
 
-      const footprintPart = idPart(manifestFootprint.id, "openpcb.core.footprint.");
-      const footprintPath = path.join(args.out, "footprints", footprintPart.category, `${footprintPart.slug}.fp.json`);
-      rememberPath(outputPaths, footprintPath, manifestFootprint.path, args.allowOverwrite);
+      const footprintPart = idPart(
+        manifestFootprint.id,
+        "openpcb.core.footprint.",
+      );
+      const footprintPath = path.join(
+        args.out,
+        "footprints",
+        footprintPart.category,
+        `${footprintPart.slug}.fp.json`,
+      );
+      rememberPath(
+        outputPaths,
+        footprintPath,
+        manifestFootprint.path,
+        args.allowOverwrite,
+      );
       if (!footprintIds.has(manifestFootprint.id)) {
-        await writeJson(footprintPath, {
-          id: manifestFootprint.id,
-          uuid: uuidFromSeed(manifestFootprint.id),
-          version: manifest.version,
-          name: footprint.parsed.name,
-          mountType: footprint.normalized.mountType,
-          package: footprint.normalized.packageCode,
-          models3d: [manifestFootprint.model.id],
-          provenance: provenance("kicad-mod", footprint.source, footprint.parsed.name, footprint.hash, args.convertedAt),
-          parser: { warnings: footprint.parsed.warnings },
-          normalized: footprint.normalized,
-          raw: footprint.parsed,
-          sourceFileName: path.basename(footprint.source),
-        }, args.dryRun);
+        await writeJson(
+          footprintPath,
+          {
+            id: manifestFootprint.id,
+            uuid: uuidFromSeed(manifestFootprint.id),
+            version: manifest.version,
+            name: footprint.parsed.name,
+            mountType: footprint.normalized.mountType,
+            package: footprint.normalized.packageCode,
+            models3d: [manifestFootprint.model.id],
+            provenance: provenance(
+              "kicad-mod",
+              footprint.source,
+              footprint.parsed.name,
+              footprint.hash,
+              args.convertedAt,
+            ),
+            parser: { warnings: footprint.parsed.warnings },
+            normalized: footprint.normalized,
+            raw: footprint.parsed,
+            sourceFileName: path.basename(footprint.source),
+          },
+          args.dryRun,
+        );
         footprintIds.add(manifestFootprint.id);
       }
 
-      const stepSource = sourcePath(args.kicadRoot, manifestFootprint.model.path);
-      if (!existsSync(stepSource)) throw new Error(`missing STEP source: ${stepSource}`);
+      const stepSource = sourcePath(
+        args.kicadRoot,
+        manifestFootprint.model.path,
+      );
+      if (!existsSync(stepSource))
+        throw new Error(`missing STEP source: ${stepSource}`);
       if (args.strict) validateStrictModelRef(footprint, stepSource);
       const modelPart = idPart(manifestFootprint.model.id, "openpcb.core.3d.");
-      const modelRel = path.join("3d", modelPart.category, `${modelPart.slug}.step`).split(path.sep).join("/");
-      const modelPath = path.join(args.out, "3d", modelPart.category, `${modelPart.slug}.model.json`);
+      const modelRel = path
+        .join("3d", modelPart.category, `${modelPart.slug}.step`)
+        .split(path.sep)
+        .join("/");
+      const modelPath = path.join(
+        args.out,
+        "3d",
+        modelPart.category,
+        `${modelPart.slug}.model.json`,
+      );
       const stepPath = path.join(args.out, modelRel);
-      rememberPath(outputPaths, modelPath, manifestFootprint.model.path, args.allowOverwrite);
-      rememberPath(outputPaths, stepPath, manifestFootprint.model.path, args.allowOverwrite);
+      rememberPath(
+        outputPaths,
+        modelPath,
+        manifestFootprint.model.path,
+        args.allowOverwrite,
+      );
+      rememberPath(
+        outputPaths,
+        stepPath,
+        manifestFootprint.model.path,
+        args.allowOverwrite,
+      );
       if (!modelIds.has(manifestFootprint.model.id)) {
-        const modelRef = footprint.parsed.model3dRefs.find((ref) => ref.resolvedFileName === path.basename(stepSource)) ?? footprint.parsed.model3dRefs[0];
+        const modelRef =
+          footprint.parsed.model3dRefs.find(
+            (ref) => ref.resolvedFileName === path.basename(stepSource),
+          ) ?? footprint.parsed.model3dRefs[0];
         const stepHash = sha256File(stepSource);
-        await writeJson(modelPath, {
-          id: manifestFootprint.model.id,
-          uuid: uuidFromSeed(manifestFootprint.model.id),
-          version: manifest.version,
-          name: `${footprint.parsed.name} STEP model`,
-          formats: { step: { path: modelRel, sha256: stepHash } },
-          provenance: provenance("step", stepSource, path.basename(stepSource), stepHash, args.convertedAt),
-          offsetMm: modelRef?.offset ?? { x: 0, y: 0, z: 0 },
-          rotationDeg: modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
-          scaleMm: modelRef?.scale ?? { x: 1, y: 1, z: 1 },
-        }, args.dryRun);
+        await writeJson(
+          modelPath,
+          {
+            id: manifestFootprint.model.id,
+            uuid: uuidFromSeed(manifestFootprint.model.id),
+            version: manifest.version,
+            name: `${footprint.parsed.name} STEP model`,
+            formats: { step: { path: modelRel, sha256: stepHash } },
+            provenance: provenance(
+              "step",
+              stepSource,
+              path.basename(stepSource),
+              stepHash,
+              args.convertedAt,
+            ),
+            offsetMm: modelRef?.offset ?? { x: 0, y: 0, z: 0 },
+            rotationDeg: modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
+            scaleMm: modelRef?.scale ?? { x: 1, y: 1, z: 1 },
+          },
+          args.dryRun,
+        );
         await copyAsset(stepSource, stepPath, args.dryRun);
         modelIds.add(manifestFootprint.model.id);
       }
     }
 
-    if (!componentFootprints.some((item) => item.footprint === component.defaultFootprint))
-      throw new Error(`${component.id} defaultFootprint is not in footprints[]`);
+    if (
+      !componentFootprints.some(
+        (item) => item.footprint === component.defaultFootprint,
+      )
+    )
+      throw new Error(
+        `${component.id} defaultFootprint is not in footprints[]`,
+      );
     const componentPart = idPart(component.id, "openpcb.core.");
-    const componentPath = path.join(args.out, "components", component.category, `${componentPart.slug}.component.json`);
+    const componentPath = path.join(
+      args.out,
+      "components",
+      component.category,
+      `${componentPart.slug}.component.json`,
+    );
     rememberPath(outputPaths, componentPath, component.id, args.allowOverwrite);
-    await writeJson(componentPath, {
-      id: component.id,
-      uuid: uuidFromSeed(component.id),
-      version: manifest.version,
-      name: component.name,
-      description: component.description,
-      category: component.category,
-      tags: uniqueTags(component.tags),
-      aliases: component.aliases ?? [],
-      symbol: component.symbol.id,
-      defaultFootprint: component.defaultFootprint,
-      footprints: componentFootprints,
-      provenance: provenance("openpcb-component", symbol.source, component.name, sha256(`${component.id}:${component.footprints.map((item) => item.id).join(":")}`), args.convertedAt),
-      compatibility: component.compatibility ?? { minOpenPcbVersion: "0.1.0" },
-    }, args.dryRun);
+    const kicadDatasheet = symbol.parsed.properties.Datasheet?.trim();
+    const datasheetSource =
+      component.datasheetSource ??
+      (kicadDatasheet && /^https?:\/\//i.test(kicadDatasheet)
+        ? kicadDatasheet
+        : undefined);
+    await writeJson(
+      componentPath,
+      {
+        id: component.id,
+        uuid: uuidFromSeed(component.id),
+        version: manifest.version,
+        name: component.name,
+        description: component.description,
+        category: component.category,
+        ...(component.subcategory !== undefined
+          ? { subcategory: component.subcategory }
+          : {}),
+        tags: uniqueTags(component.tags),
+        ...(component.keywords !== undefined
+          ? { keywords: component.keywords }
+          : {}),
+        aliases: component.aliases ?? [],
+        ...(component.datasheet !== undefined
+          ? { datasheet: component.datasheet }
+          : {}),
+        ...(datasheetSource !== undefined ? { datasheetSource } : {}),
+        ...(component.parameters !== undefined
+          ? { parameters: component.parameters }
+          : {}),
+        ...(component.manufacturerParts !== undefined
+          ? { manufacturerParts: component.manufacturerParts }
+          : {}),
+        symbol: component.symbol.id,
+        defaultFootprint: component.defaultFootprint,
+        footprints: componentFootprints,
+        provenance: provenance(
+          "openpcb-component",
+          symbol.source,
+          component.name,
+          sha256(
+            `${component.id}:${component.footprints.map((item) => item.id).join(":")}`,
+          ),
+          args.convertedAt,
+        ),
+        compatibility: component.compatibility ?? {
+          minOpenPcbVersion: "0.1.0",
+        },
+      },
+      args.dryRun,
+    );
     componentCount += 1;
   }
 
   const action = args.dryRun ? "validated" : "wrote";
   const mode = args.strict ? " strict" : "";
-  console.log(`[import-kicad-batch]${mode} ${action} ${componentCount} components, ${symbolIds.size} symbols, ${footprintIds.size} footprints, ${modelIds.size} STEP models`);
+  console.log(
+    `[import-kicad-batch]${mode} ${action} ${componentCount} components, ${symbolIds.size} symbols, ${footprintIds.size} footprints, ${modelIds.size} STEP models`,
+  );
 }
 
 run(Bun.argv.slice(2)).catch((error: unknown) => {

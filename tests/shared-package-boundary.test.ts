@@ -31,13 +31,13 @@ describe("shared package boundary", () => {
 
     expect(pkg.workspaces ?? []).not.toContain("packages/*");
     expect(pkg.dependencies?.["@openpcb/kicad-parsers"]).toBe(
-      "github:OpenPCB-app/shared#kicad-parsers-v0.1.2",
+      "github:OpenPCB-app/shared#kicad-parsers-v0.1.3",
     );
     expect(pkg.dependencies?.["@openpcb/kicad-import"]).toBe(
-      "github:OpenPCB-app/shared#kicad-import-v0.1.0",
+      "github:OpenPCB-app/shared#kicad-import-v0.1.1",
     );
     expect(pkg.dependencies?.["@openpcb/rendering-core"]).toBe(
-      "github:OpenPCB-app/shared#rendering-core-v0.1.2",
+      "github:OpenPCB-app/shared#rendering-core-v0.1.3",
     );
     expect(pkg.dependencies?.["@openpcb/opclib-pack"]).toBe(
       "github:OpenPCB-app/shared#opclib-pack-v0.2.1",

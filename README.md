@@ -54,6 +54,13 @@ This library contains data converted or adapted from the KiCad official
 libraries. See [ATTRIBUTION.md](ATTRIBUTION.md) and [NOTICE.md](NOTICE.md) for
 licensing details, original sources, and the KiCad Libraries Exception.
 
+The KiCad source libraries are vendored at `../references/kicad-libs`, pinned to
+**KiCad 10.0.4** (`https://gitlab.com/kicad/libraries` @ `c7e226a49`). Verify the
+checkout with `bun run fetch:kicad-libs`. Import manifests resolve their
+`kicad-symbols/…`, `kicad-footprints/…`, and `kicad-packages3D/…` paths against
+this tree (`--kicad-root ../references/kicad-libs`, the importer default). In
+KiCad 10 symbols are unpacked per-symbol files: `<Lib>.kicad_symdir/<Name>.kicad_sym`.
+
 ## ID convention
 
 `openpcb.core.<category>.<slug>` — dotted, lowercase. Examples:

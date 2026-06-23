@@ -59,7 +59,7 @@ See existing files under `symbols/`, `footprints/` for reference.
 
 ## 3D models
 
-Pre-generated `.glb` files are committed alongside `.model.json` metadata; do not skip the GLB. If a STEP is unavailable, leave the entry out — do not ship a hollow placeholder.
+Each footprint references one STEP-backed `.model.json` sidecar; the `.step` source is committed under `3d/<category>/`. The runtime `.glb` is **generated at `bun pack`** (and is gitignored, not committed). If a STEP is unavailable upstream, leave the entry out and defer the part to Wave 2 — do not ship a hollow placeholder (`validate --release` requires exactly one STEP-backed 3D model per footprint).
 
 ## Tests
 

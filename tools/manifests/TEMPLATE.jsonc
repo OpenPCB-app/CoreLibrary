@@ -1,0 +1,51 @@
+{
+  // Import manifest template for the batch importer:
+  //   bun tools/import-kicad-batch.ts --manifest tools/manifests/<phase>.json \
+  //     --kicad-root ../references/kicad-libs --strict [--allow-overwrite]
+  //
+  // Source paths resolve against --kicad-root (default ../references/kicad-libs,
+  // KiCad 10.0.4 @ c7e226a49). KiCad 10 layout notes:
+  //   - symbols are UNPACKED per-symbol files: kicad-symbols/<Lib>.kicad_symdir/<Name>.kicad_sym
+  //     (NOT a packed <Lib>.kicad_sym#<Name> — that older form does not exist here)
+  //   - transistors live in Transistor_BJT/Transistor_FET, not Device
+  //   - every footprint MUST reference a STEP (kicad-packages3D/<Lib>.3dshapes/<FP>.step)
+  //     so `validate --release` passes; parts with no upstream STEP are deferred to Wave 2.
+  "version": "0.2.0",
+  "components": [
+    {
+      "id": "openpcb.core.<category>.<slug>",
+      "name": "Human Name",
+      "description": "One-line description. Generic — assign MPN per build.",
+      "category": "<category>",
+      "subcategory": "<optional, e.g. schottky / regulator_linear>",
+      "tags": ["<category>", "kicad-derived"],
+      "keywords": ["ALT-NAME", "search-term"],
+      "aliases": [],
+      "parameters": { "<key>": "<value+unit>" },
+      "manufacturerParts": [],
+      // link-only: a manufacturer URL for function-parts, null for pure generics.
+      // datasheetSource defaults from the KiCad symbol's Datasheet property when omitted.
+      "datasheet": null,
+      // "datasheetSource": "https://www.example.com/ds.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.<category>.<slug>",
+        "path": "kicad-symbols/<Lib>.kicad_symdir/<SymbolName>.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.<category>.<slug>",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.<category>.<slug>",
+          "path": "kicad-footprints/<Lib>.pretty/<FP>.kicad_mod",
+          "label": "Human FP label",
+          "model": {
+            "id": "openpcb.core.3d.<category>.<slug>",
+            "path": "kicad-packages3D/<Lib>.3dshapes/<FP>.step"
+          },
+          // pinMap must cover EVERY symbol pin; pinName optional but checked under --strict.
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1", "pinName": "~" }]
+        }
+      ],
+      "compatibility": { "minOpenPcbVersion": "0.1.0" }
+    }
+  ]
+}

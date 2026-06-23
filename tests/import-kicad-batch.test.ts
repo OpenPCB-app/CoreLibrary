@@ -1,5 +1,12 @@
 import { afterEach, describe, expect, test } from "bun:test";
-import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
 
@@ -13,7 +20,14 @@ interface TestManifest {
     name: string;
     description: string;
     category: string;
+    subcategory?: string;
     tags: string[];
+    keywords?: string[];
+    aliases?: string[];
+    datasheet?: string | null;
+    datasheetSource?: string;
+    parameters?: Record<string, unknown>;
+    manufacturerParts?: Array<{ manufacturer: string; mpn: string }>;
     symbol: { id: string; path: string };
     defaultFootprint: string;
     footprints: Array<{
@@ -21,19 +35,26 @@ interface TestManifest {
       path: string;
       label: string;
       model: { id: string; path: string };
-      pinMap?: Array<{ pinNumber: string; padNumber: string; pinName?: string }>;
+      pinMap?: Array<{
+        pinNumber: string;
+        padNumber: string;
+        pinName?: string;
+      }>;
     }>;
   }>;
 }
 
 function makeTempDir(): string {
-  const dir = mkdtempSync(path.join(tmpdir(), "openpcb-core-batch-import-test-"));
+  const dir = mkdtempSync(
+    path.join(tmpdir(), "openpcb-core-batch-import-test-"),
+  );
   tempDirs.push(dir);
   return dir;
 }
 
 afterEach(() => {
-  for (const dir of tempDirs.splice(0)) rmSync(dir, { recursive: true, force: true });
+  for (const dir of tempDirs.splice(0))
+    rmSync(dir, { recursive: true, force: true });
 });
 
 const symbolFixture = `(kicad_symbol_lib
@@ -42,6 +63,20 @@ const symbolFixture = `(kicad_symbol_lib
     (property "Reference" "D" (at 0 0 0) (effects (font (size 1.27 1.27))))
     (property "Value" "D" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
     (symbol "D_1_1"
+      (pin passive line (at 0 3.81 270) (length 1.27)
+        (name "K" (effects (font (size 1.27 1.27))))
+        (number "1" (effects (font (size 1.27 1.27)))))
+      (pin passive line (at 0 -3.81 90) (length 1.27)
+        (name "A" (effects (font (size 1.27 1.27))))
+        (number "2" (effects (font (size 1.27 1.27))))))))`;
+
+const symbolWithDatasheetFixture = `(kicad_symbol_lib
+  (version 20231120) (generator "openpcb_test")
+  (symbol "D_DS"
+    (property "Reference" "D" (at 0 0 0) (effects (font (size 1.27 1.27))))
+    (property "Value" "D_DS" (at 0 -2.54 0) (effects (font (size 1.27 1.27))))
+    (property "Datasheet" "https://example.com/d.pdf" (at 0 -5.08 0) (effects (font (size 1.27 1.27))))
+    (symbol "D_DS_1_1"
       (pin passive line (at 0 3.81 270) (length 1.27)
         (name "K" (effects (font (size 1.27 1.27))))
         (number "1" (effects (font (size 1.27 1.27)))))
@@ -106,11 +141,24 @@ function writeFixtureTree(root: string): void {
   mkdirSync(footprintDir, { recursive: true });
   mkdirSync(modelDir, { recursive: true });
   writeFileSync(path.join(symbolDir, "D.kicad_sym"), symbolFixture);
+  writeFileSync(
+    path.join(symbolDir, "D_DS.kicad_sym"),
+    symbolWithDatasheetFixture,
+  );
   writeFileSync(path.join(symbolDir, "Parent.kicad_sym"), parentSymbolFixture);
   writeFileSync(path.join(symbolDir, "Child.kicad_sym"), childSymbolFixture);
-  writeFileSync(path.join(footprintDir, "D_SOD-123.kicad_mod"), footprintFixture);
-  writeFileSync(path.join(modelDir, "D_SOD-123.step"), "ISO-10303-21;\nEND-ISO-10303-21;\n");
-  writeFileSync(path.join(modelDir, "Other.step"), "ISO-10303-21;\nEND-ISO-10303-21;\n");
+  writeFileSync(
+    path.join(footprintDir, "D_SOD-123.kicad_mod"),
+    footprintFixture,
+  );
+  writeFileSync(
+    path.join(modelDir, "D_SOD-123.step"),
+    "ISO-10303-21;\nEND-ISO-10303-21;\n",
+  );
+  writeFileSync(
+    path.join(modelDir, "Other.step"),
+    "ISO-10303-21;\nEND-ISO-10303-21;\n",
+  );
 }
 
 function manifest(pinNumber = "1"): TestManifest {
@@ -123,14 +171,20 @@ function manifest(pinNumber = "1"): TestManifest {
         description: "Test diode imported from fixture files.",
         category: "diode",
         tags: ["diode", "test"],
-        symbol: { id: "openpcb.core.symbol.diode.test", path: "symbols/D.kicad_sym" },
+        symbol: {
+          id: "openpcb.core.symbol.diode.test",
+          path: "symbols/D.kicad_sym",
+        },
         defaultFootprint: "openpcb.core.footprint.diode.d-sod-123-test",
         footprints: [
           {
             id: "openpcb.core.footprint.diode.d-sod-123-test",
             path: "footprints/D_SOD-123.kicad_mod",
             label: "SOD-123",
-            model: { id: "openpcb.core.3d.diode.d-sod-123-test", path: "models/D_SOD-123.step" },
+            model: {
+              id: "openpcb.core.3d.diode.d-sod-123-test",
+              path: "models/D_SOD-123.step",
+            },
             pinMap: [
               { pinNumber, padNumber: "1", pinName: "K" },
               { pinNumber: "2", padNumber: "2", pinName: "A" },
@@ -158,7 +212,9 @@ async function runBatch(args: string[]) {
   return { stdout, stderr, exitCode };
 }
 
-async function runValidate(root: string): Promise<{ stdout: string; stderr: string; exitCode: number }> {
+async function runValidate(
+  root: string,
+): Promise<{ stdout: string; stderr: string; exitCode: number }> {
   const proc = Bun.spawn({
     cmd: ["bun", "tools/validate.ts"],
     cwd: repoRoot,
@@ -180,7 +236,10 @@ describe("KiCad batch importer", () => {
     const out = makeTempDir();
     writeFixtureTree(root);
     const data = manifest();
-    data.components[0]!.symbol = { id: "openpcb.core.symbol.diode.test", path: "symbols/Child.kicad_sym" };
+    data.components[0]!.symbol = {
+      id: "openpcb.core.symbol.diode.test",
+      path: "symbols/Child.kicad_sym",
+    };
     data.components[0]!.footprints[0]!.pinMap = [
       { pinNumber: "1", padNumber: "1", pinName: "A" },
       { pinNumber: "2", padNumber: "2", pinName: "Y" },
@@ -195,15 +254,22 @@ describe("KiCad batch importer", () => {
       "--strict",
       "--converted-at=2026-05-21T00:00:00.000Z",
     ]);
-    const symbol = JSON.parse(readFileSync(path.join(out, "symbols/diode/test.symbol.json"), "utf8")) as {
+    const symbol = JSON.parse(
+      readFileSync(path.join(out, "symbols/diode/test.symbol.json"), "utf8"),
+    ) as {
       normalized: { pins: Array<{ number: string; unit: number }> };
       parser: { sourceFiles: Array<{ fileName: string }> };
     };
-    const pinKeys = symbol.normalized.pins.map((pin) => `${pin.unit}:${pin.number}`);
+    const pinKeys = symbol.normalized.pins.map(
+      (pin) => `${pin.unit}:${pin.number}`,
+    );
 
     expect(result.exitCode, `${result.stdout}\n${result.stderr}`).toBe(0);
     expect(pinKeys).toEqual(["1:1", "1:2"]);
-    expect(symbol.parser.sourceFiles.map((item) => item.fileName)).toEqual(["Child.kicad_sym", "Parent.kicad_sym"]);
+    expect(symbol.parser.sourceFiles.map((item) => item.fileName)).toEqual([
+      "Child.kicad_sym",
+      "Parent.kicad_sym",
+    ]);
   });
 
   test("dry-run validates without writing files", async () => {
@@ -240,11 +306,19 @@ describe("KiCad batch importer", () => {
       "--converted-at=2026-05-21T00:00:00.000Z",
     ]);
     const validation = await runValidate(out);
-    const component = JSON.parse(readFileSync(path.join(out, "components/diode/test.component.json"), "utf8")) as { id: string };
+    const component = JSON.parse(
+      readFileSync(
+        path.join(out, "components/diode/test.component.json"),
+        "utf8",
+      ),
+    ) as { id: string };
 
     expect(result.exitCode, `${result.stdout}\n${result.stderr}`).toBe(0);
     expect(component.id).toBe("openpcb.core.diode.test");
-    expect(validation.exitCode, `${validation.stdout}\n${validation.stderr}`).toBe(0);
+    expect(
+      validation.exitCode,
+      `${validation.stdout}\n${validation.stderr}`,
+    ).toBe(0);
   });
 
   test("rejects pin maps with unknown symbol pins", async () => {
@@ -314,13 +388,101 @@ describe("KiCad batch importer", () => {
     const manifestPath = path.join(root, "manifest.json");
     writeFileSync(manifestPath, `${JSON.stringify(manifest(), null, 2)}\n`);
 
-    const first = await runBatch([`--manifest=${manifestPath}`, `--kicad-root=${root}`, `--out=${out}`]);
-    const second = await runBatch([`--manifest=${manifestPath}`, `--kicad-root=${root}`, `--out=${out}`]);
-    const third = await runBatch([`--manifest=${manifestPath}`, `--kicad-root=${root}`, `--out=${out}`, "--allow-overwrite"]);
+    const first = await runBatch([
+      `--manifest=${manifestPath}`,
+      `--kicad-root=${root}`,
+      `--out=${out}`,
+    ]);
+    const second = await runBatch([
+      `--manifest=${manifestPath}`,
+      `--kicad-root=${root}`,
+      `--out=${out}`,
+    ]);
+    const third = await runBatch([
+      `--manifest=${manifestPath}`,
+      `--kicad-root=${root}`,
+      `--out=${out}`,
+      "--allow-overwrite",
+    ]);
 
     expect(first.exitCode, `${first.stdout}\n${first.stderr}`).toBe(0);
     expect(second.exitCode).not.toBe(0);
     expect(second.stderr).toContain("output path already exists");
     expect(third.exitCode, `${third.stdout}\n${third.stderr}`).toBe(0);
+  });
+
+  test("passes through metadata fields into the component", async () => {
+    const root = makeTempDir();
+    const out = makeTempDir();
+    writeFixtureTree(root);
+    const data = manifest();
+    const component = data.components[0]!;
+    component.subcategory = "schottky";
+    component.keywords = ["SS14", "DO-214AC"];
+    component.parameters = { reverse_voltage: "40V", forward_current: "1A" };
+    component.datasheet = "https://example.com/explicit.pdf";
+    component.manufacturerParts = [{ manufacturer: "Diodes Inc", mpn: "SS14" }];
+    const manifestPath = path.join(root, "manifest.json");
+    writeFileSync(manifestPath, `${JSON.stringify(data, null, 2)}\n`);
+
+    const result = await runBatch([
+      `--manifest=${manifestPath}`,
+      `--kicad-root=${root}`,
+      `--out=${out}`,
+      "--converted-at=2026-05-21T00:00:00.000Z",
+    ]);
+    const written = JSON.parse(
+      readFileSync(
+        path.join(out, "components/diode/test.component.json"),
+        "utf8",
+      ),
+    ) as {
+      subcategory?: string;
+      keywords?: string[];
+      parameters?: Record<string, unknown>;
+      datasheet?: string | null;
+      manufacturerParts?: Array<{ manufacturer: string; mpn: string }>;
+    };
+
+    expect(result.exitCode, `${result.stdout}\n${result.stderr}`).toBe(0);
+    expect(written.subcategory).toBe("schottky");
+    expect(written.keywords).toEqual(["SS14", "DO-214AC"]);
+    expect(written.parameters).toEqual({
+      reverse_voltage: "40V",
+      forward_current: "1A",
+    });
+    expect(written.datasheet).toBe("https://example.com/explicit.pdf");
+    expect(written.manufacturerParts).toEqual([
+      { manufacturer: "Diodes Inc", mpn: "SS14" },
+    ]);
+  });
+
+  test("captures the KiCad symbol Datasheet property into datasheetSource", async () => {
+    const root = makeTempDir();
+    const out = makeTempDir();
+    writeFixtureTree(root);
+    const data = manifest();
+    data.components[0]!.symbol = {
+      id: "openpcb.core.symbol.diode.test",
+      path: "symbols/D_DS.kicad_sym",
+    };
+    const manifestPath = path.join(root, "manifest.json");
+    writeFileSync(manifestPath, `${JSON.stringify(data, null, 2)}\n`);
+
+    const result = await runBatch([
+      `--manifest=${manifestPath}`,
+      `--kicad-root=${root}`,
+      `--out=${out}`,
+      "--converted-at=2026-05-21T00:00:00.000Z",
+    ]);
+    const written = JSON.parse(
+      readFileSync(
+        path.join(out, "components/diode/test.component.json"),
+        "utf8",
+      ),
+    ) as { datasheetSource?: string };
+
+    expect(result.exitCode, `${result.stdout}\n${result.stderr}`).toBe(0);
+    expect(written.datasheetSource).toBe("https://example.com/d.pdf");
   });
 });

@@ -62,7 +62,8 @@ const issues: Issue[] = [];
 const warnings: Issue[] = [];
 const flags = new Set(process.argv.slice(2));
 const STRICT = flags.has("--strict") || flags.has("--release");
-const REQUIRE_STEP_3D = flags.has("--require-step-3d") || flags.has("--release");
+const REQUIRE_STEP_3D =
+  flags.has("--require-step-3d") || flags.has("--release");
 const LIBRARY_ROOT = process.env.CORELIB_ROOT
   ? path.resolve(process.env.CORELIB_ROOT)
   : REPO_ROOT;
@@ -83,6 +84,8 @@ const REQUIRED_KICAD_PROVENANCE_FIELDS = [
 
 const KICAD_LICENSE = "CC-BY-SA-4.0+KiCad-Libraries-Exception";
 const INCOMPATIBLE_KICAD_LICENSES = new Set(["CC-BY-4.0", "CC0-1.0"]);
+// Categories whose components should carry headline specs + search keywords (advisory only).
+const SPEC_CATEGORIES = new Set(["ic", "power", "sensor"]);
 
 function fail(file: string, message: string) {
   issues.push({ file: displayPath(file), message });
@@ -100,6 +103,20 @@ function warnDisplay(file: string, message: string) {
   else warnings.push(issue);
 }
 
+// Advisory note: always informational, never escalates to a failure under --strict.
+function note(file: string, message: string) {
+  warnings.push({ file: displayPath(file), message });
+}
+
+function isHttpUri(value: string): boolean {
+  try {
+    const url = new URL(value);
+    return url.protocol === "http:" || url.protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
 function displayPath(absPath: string): string {
   return path.relative(LIBRARY_ROOT, absPath).split(path.sep).join("/");
 }
@@ -114,17 +131,24 @@ function checkProvenance(file: string, provenance: Provenance) {
   if (provenance.source !== "kicad-derived") return;
 
   for (const field of REQUIRED_KICAD_PROVENANCE_FIELDS) {
-    if (!hasValue(provenance[field])) fail(file, `missing KiCad provenance field: ${field}`);
+    if (!hasValue(provenance[field]))
+      fail(file, `missing KiCad provenance field: ${field}`);
   }
 
   if (provenance.license !== KICAD_LICENSE) {
     const reason = INCOMPATIBLE_KICAD_LICENSES.has(provenance.license ?? "")
       ? "weak conflicting license"
       : "non-CC-BY-SA compatible license";
-    fail(file, `KiCad-derived asset uses ${reason}: ${provenance.license ?? "<missing>"}`);
+    fail(
+      file,
+      `KiCad-derived asset uses ${reason}: ${provenance.license ?? "<missing>"}`,
+    );
   }
 
-  if (Array.isArray(provenance.attribution) && provenance.attribution.length === 0) {
+  if (
+    Array.isArray(provenance.attribution) &&
+    provenance.attribution.length === 0
+  ) {
     warn(file, "KiCad-derived asset has empty attribution");
   }
 }
@@ -154,16 +178,25 @@ function checkUniqueness(file: string, id: string, uuid: string) {
 }
 
 function stringSet(values: Array<string | undefined> | undefined): Set<string> {
-  return new Set((values ?? []).filter((value): value is string => typeof value === "string" && value.trim().length > 0));
+  return new Set(
+    (values ?? []).filter(
+      (value): value is string =>
+        typeof value === "string" && value.trim().length > 0,
+    ),
+  );
 }
 
 function symbolPinNumbers(data: SymbolSource): Set<string> {
-  const normalizedPins = stringSet(data.normalized?.pins?.map((pin) => pin.number));
+  const normalizedPins = stringSet(
+    data.normalized?.pins?.map((pin) => pin.number),
+  );
   if (normalizedPins.size > 0) return normalizedPins;
   return stringSet(data.normalized?.preview?.pins?.map((pin) => pin.number));
 }
 
-function symbolPins(data: SymbolSource): Array<{ number?: string; unit?: number }> {
+function symbolPins(
+  data: SymbolSource,
+): Array<{ number?: string; unit?: number }> {
   if ((data.normalized?.pins ?? []).length > 0) return data.normalized!.pins!;
   return data.normalized?.preview?.pins ?? [];
 }
@@ -191,7 +224,7 @@ function setDifference(left: Set<string>, right: Set<string>): string[] {
 function firstPathSegment(file: string): string | null {
   const rel = displayPath(file);
   const parts = rel.split("/");
-  return parts.length >= 3 ? parts[1] ?? null : null;
+  return parts.length >= 3 ? (parts[1] ?? null) : null;
 }
 
 function idCategory(id: string, prefix: string): string | null {
@@ -199,15 +232,27 @@ function idCategory(id: string, prefix: string): string | null {
   return id.slice(prefix.length).split(".")[0] ?? null;
 }
 
-function checkCategoryMatchesFile(file: string, id: string, prefix: string): void {
+function checkCategoryMatchesFile(
+  file: string,
+  id: string,
+  prefix: string,
+): void {
   const folder = firstPathSegment(file);
   const category = idCategory(id, prefix);
   if (folder && category && folder !== category) {
-    fail(file, `category folder ${folder} does not match id category ${category}`);
+    fail(
+      file,
+      `category folder ${folder} does not match id category ${category}`,
+    );
   }
 }
 
-function rememberName(index: Map<string, string>, file: string, name: string | undefined, kind: string): void {
+function rememberName(
+  index: Map<string, string>,
+  file: string,
+  name: string | undefined,
+  kind: string,
+): void {
   if (!name) return;
   const normalized = name.trim().toLowerCase();
   if (!normalized) return;
@@ -239,7 +284,11 @@ for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
 // --- footprints ---
 const footprintIds = new Set<string>();
 const footprintPadsById = new Map<string, Set<string>>();
-const footprintModelRefs: Array<{ file: string; footprintId: string; modelIds: string[] }> = [];
+const footprintModelRefs: Array<{
+  file: string;
+  footprintId: string;
+  modelIds: string[];
+}> = [];
 const footprintHasModels = new Map<string, boolean>();
 const footprintNames = new Map<string, string>();
 for (const file of walkFiles(footprintsRoot, ".fp.json")) {
@@ -255,7 +304,11 @@ for (const file of walkFiles(footprintsRoot, ".fp.json")) {
   rememberName(footprintNames, file, data.name, "footprint");
   footprintIds.add(data.id);
   footprintPadsById.set(data.id, footprintPadNumbers(data));
-  footprintModelRefs.push({ file, footprintId: data.id, modelIds: data.models3d ?? [] });
+  footprintModelRefs.push({
+    file,
+    footprintId: data.id,
+    modelIds: data.models3d ?? [],
+  });
   footprintHasModels.set(data.id, (data.models3d ?? []).length > 0);
 }
 
@@ -278,11 +331,14 @@ for (const file of walkFiles(modelsRoot, ".model.json")) {
   checkUniqueness(file, data.id, data.uuid);
   checkCategoryMatchesFile(file, data.id, "openpcb.core.3d.");
   modelIds.add(data.id);
-  if (REQUIRE_STEP_3D && !data.formats.step) fail(file, "release validation requires a STEP format");
+  if (REQUIRE_STEP_3D && !data.formats.step)
+    fail(file, "release validation requires a STEP format");
   for (const [fmt, info] of Object.entries(data.formats)) {
-    if (modelFormatPaths.has(info.path)) warn(file, `duplicate 3d asset path: ${info.path}`);
+    if (modelFormatPaths.has(info.path))
+      warn(file, `duplicate 3d asset path: ${info.path}`);
     modelFormatPaths.add(info.path);
-    if (!info.path.startsWith("3d/")) fail(file, `${fmt} asset path must stay under 3d/: ${info.path}`);
+    if (!info.path.startsWith("3d/"))
+      fail(file, `${fmt} asset path must stay under 3d/: ${info.path}`);
     const abs = path.join(LIBRARY_ROOT, info.path);
     if (!existsSync(abs)) {
       fail(file, `${fmt} asset missing: ${info.path}`);
@@ -294,10 +350,16 @@ for (const file of walkFiles(modelsRoot, ".model.json")) {
 
 for (const ref of footprintModelRefs) {
   if (REQUIRE_STEP_3D && ref.modelIds.length === 0) {
-    fail(ref.file, `release validation requires at least one STEP-backed 3d model on ${ref.footprintId}`);
+    fail(
+      ref.file,
+      `release validation requires at least one STEP-backed 3d model on ${ref.footprintId}`,
+    );
   }
   if (REQUIRE_STEP_3D && ref.modelIds.length !== 1) {
-    fail(ref.file, `release validation requires exactly one 3d model on ${ref.footprintId}`);
+    fail(
+      ref.file,
+      `release validation requires exactly one 3d model on ${ref.footprintId}`,
+    );
   }
   for (const modelId of ref.modelIds) {
     if (!modelIds.has(modelId))
@@ -315,8 +377,13 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
     uuid: string;
     name?: string;
     category?: string;
+    subcategory?: string;
     tags?: string[];
+    keywords?: string[];
     aliases?: string[];
+    datasheet?: string | null;
+    datasheetSource?: string;
+    parameters?: Record<string, unknown>;
     symbol: string;
     defaultFootprint: string;
     provenance: Provenance;
@@ -333,10 +400,39 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
   checkProvenance(file, data.provenance);
   checkUniqueness(file, data.id, data.uuid);
   checkCategoryMatchesFile(file, data.id, "openpcb.core.");
-  if (data.category && firstPathSegment(file) !== data.category) fail(file, `category field ${data.category} does not match folder ${firstPathSegment(file)}`);
+  if (data.category && firstPathSegment(file) !== data.category)
+    fail(
+      file,
+      `category field ${data.category} does not match folder ${firstPathSegment(file)}`,
+    );
   rememberName(componentNames, file, data.name, "component");
-  for (const alias of data.aliases ?? []) rememberName(componentAliases, file, alias, "component alias");
-  if (data.category && !(data.tags ?? []).includes(data.category)) warn(file, `tags should include category "${data.category}"`);
+  for (const alias of data.aliases ?? [])
+    rememberName(componentAliases, file, alias, "component alias");
+  if (data.category && !(data.tags ?? []).includes(data.category))
+    warn(file, `tags should include category "${data.category}"`);
+  if (
+    typeof data.datasheet === "string" &&
+    data.datasheet.length > 0 &&
+    !isHttpUri(data.datasheet)
+  )
+    fail(file, `datasheet must be an http(s) URL: ${data.datasheet}`);
+  if (data.datasheetSource !== undefined && !isHttpUri(data.datasheetSource))
+    fail(
+      file,
+      `datasheetSource must be an http(s) URL: ${data.datasheetSource}`,
+    );
+  if (data.category && SPEC_CATEGORIES.has(data.category)) {
+    if (!data.parameters || Object.keys(data.parameters).length === 0)
+      note(
+        file,
+        `${data.category} component has no parameters (add headline specs)`,
+      );
+    if (!data.keywords || data.keywords.length === 0)
+      note(
+        file,
+        `${data.category} component has no keywords (add search terms)`,
+      );
+  }
   const symbolPins = symbolPinsById.get(data.symbol);
   if (!symbolIds.has(data.symbol))
     fail(file, `unknown symbol ref: ${data.symbol}`);
@@ -349,7 +445,10 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
     if (!footprintIds.has(v.footprint))
       fail(file, `unknown footprint ref: ${v.footprint}`);
     if (REQUIRE_STEP_3D && !footprintHasModels.get(v.footprint))
-      fail(file, `release validation requires STEP-backed 3d model for footprint ${v.footprint}`);
+      fail(
+        file,
+        `release validation requires STEP-backed 3d model for footprint ${v.footprint}`,
+      );
     if (!symbolPins || !footprintPads) continue;
 
     const pinMap = v.pinMap ?? [];
@@ -364,27 +463,44 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
       mappedPins.add(entry.pinNumber);
       mappedPads.add(entry.padNumber);
       if (!symbolPins.has(entry.pinNumber))
-        fail(file, `pinMap references unknown symbol pin ${entry.pinNumber} for footprint ${v.footprint}`);
+        fail(
+          file,
+          `pinMap references unknown symbol pin ${entry.pinNumber} for footprint ${v.footprint}`,
+        );
       if (!footprintPads.has(entry.padNumber))
-        fail(file, `pinMap references unknown footprint pad ${entry.padNumber} for footprint ${v.footprint}`);
+        fail(
+          file,
+          `pinMap references unknown footprint pad ${entry.padNumber} for footprint ${v.footprint}`,
+        );
     }
 
     const unmappedPins = setDifference(symbolPins, mappedPins);
     if (unmappedPins.length > 0)
-      fail(file, `pinMap for footprint ${v.footprint} does not map symbol pin(s): ${unmappedPins.join(", ")}`);
+      fail(
+        file,
+        `pinMap for footprint ${v.footprint} does not map symbol pin(s): ${unmappedPins.join(", ")}`,
+      );
 
     const unmappedPads = setDifference(footprintPads, mappedPads);
     if (unmappedPads.length > 0)
-      warn(file, `pinMap for footprint ${v.footprint} does not map footprint pad(s): ${unmappedPads.join(", ")}`);
+      warn(
+        file,
+        `pinMap for footprint ${v.footprint} does not map footprint pad(s): ${unmappedPads.join(", ")}`,
+      );
   }
 }
 
 for (const footprintId of footprintIds) {
-  if (!referencedFootprints.has(footprintId)) warnDisplay(idIndex.get(footprintId) ?? "<unknown>", `footprint is not referenced by any component: ${footprintId}`);
+  if (!referencedFootprints.has(footprintId))
+    warnDisplay(
+      idIndex.get(footprintId) ?? "<unknown>",
+      `footprint is not referenced by any component: ${footprintId}`,
+    );
 }
 
 if (issues.length === 0) {
-  for (const warning of warnings) console.warn(`  ${warning.file}: ${warning.message}`);
+  for (const warning of warnings)
+    console.warn(`  ${warning.file}: ${warning.message}`);
   console.log(
     `[validate] OK — ${symbolIds.size} symbols, ${footprintIds.size} footprints, ${modelIds.size} 3d models, ${idIndex.size - symbolIds.size - footprintIds.size - modelIds.size} components`,
   );

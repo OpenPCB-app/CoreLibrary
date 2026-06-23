@@ -57,6 +57,14 @@
         }
       }
     },
+    "subcategory": { "type": "string" },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "datasheet": { "type": ["string", "null"], "format": "uri" },
+    "datasheetSource": { "type": "string", "format": "uri" },
     "parameters": { "type": "object" },
     "manufacturerParts": { "type": "array" },
     "provenance": { "$ref": "#/$defs/provenance" },

@@ -40,6 +40,9 @@ jobs:
       - name: Validate library source (strict / release)
         run: bun tools/validate.ts --release --strict
 
+      - name: Check datasheet links
+        run: bun tools/check-datasheet-links.ts
+
       - name: Pack release candidate
         # Tags `ci-<run_id>` so artifact filenames don't collide with real releases.
         run: bun tools/pack.ts --version=0.0.0-ci.${{ github.run_id }}
