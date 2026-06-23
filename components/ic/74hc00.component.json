@@ -1,0 +1,180 @@
+{
+  "id": "openpcb.core.ic.74hc00",
+  "uuid": "32db1750-3fce-5961-9afe-0b321e6d306e",
+  "version": "0.2.0",
+  "name": "74HC00 Quad 2-Input NAND Gate",
+  "description": "74HC00 quad 2-input NAND gate (high-speed CMOS); SOIC-14 and DIP-14 variants. Generic — assign MPN per build.",
+  "category": "ic",
+  "subcategory": "logic",
+  "tags": [
+    "ic",
+    "logic",
+    "74xx",
+    "nand",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "74HC00",
+    "7400",
+    "quad NAND",
+    "CMOS logic"
+  ],
+  "aliases": [
+    "openpcb.core.ic.74hc00-soic-14"
+  ],
+  "datasheetSource": "http://www.ti.com/lit/gpn/sn74hc00",
+  "parameters": {
+    "family": "74HC",
+    "function": "quad 2-input NAND",
+    "channels": "4",
+    "supply_min": "2V",
+    "supply_max": "6V"
+  },
+  "symbol": "openpcb.core.symbol.ic.74hc00",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "label": "SOIC-14 3.9x8.7mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+      "label": "DIP-14 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "74HC00.kicad_sym",
+    "sourceLibrary": "74xx",
+    "sourceItemName": "74HC00 Quad 2-Input NAND Gate",
+    "sourceHash": "a99973459a52dda03d5e239641fa4e26800cd18d2a7991d04501cfbbbe71667a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "id": "openpcb.core.ic.ne555",
+  "uuid": "464331ac-77ea-5c15-bfbe-53fd659dcbc9",
+  "version": "0.2.0",
+  "name": "NE555 Timer",
+  "description": "NE555 single precision timer; SOIC-8 and DIP-8 variants. Generic — assign MPN per build.",
+  "category": "ic",
+  "subcategory": "timer",
+  "tags": [
+    "ic",
+    "timer",
+    "555",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "NE555",
+    "555",
+    "timer",
+    "oscillator"
+  ],
+  "aliases": [
+    "openpcb.core.ic.ne555-soic-8"
+  ],
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/ne555.pdf",
+  "parameters": {
+    "function": "timer",
+    "supply_min": "4.5V",
+    "supply_max": "16V"
+  },
+  "symbol": "openpcb.core.symbol.ic.ne555d",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8 3.9x4.9mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "GND"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "TRIG"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3",
+          "pinName": "OUT"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4",
+          "pinName": "~{RST}"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5",
+          "pinName": "CONT"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6",
+          "pinName": "THRES"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7",
+          "pinName": "DISCH"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8",
+          "pinName": "VCC"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1",
+          "pinName": "GND"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2",
+          "pinName": "TRIG"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3",
+          "pinName": "OUT"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4",
+          "pinName": "~{RST}"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5",
+          "pinName": "CONT"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6",
+          "pinName": "THRES"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7",
+          "pinName": "DISCH"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8",
+          "pinName": "VCC"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "NE555D.kicad_sym",
+    "sourceLibrary": "Timer",
+    "sourceItemName": "NE555 Timer",
+    "sourceHash": "8bbf149ad24336c07fd51c405b5d84c8424670fc0332cd7fe90137acfe56bd39",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

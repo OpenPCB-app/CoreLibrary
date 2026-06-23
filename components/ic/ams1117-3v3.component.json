@@ -1,19 +1,33 @@
 {
-  "id": "openpcb.core.ic.ams1117-3v3-sot-223",
-  "uuid": "8baba776-a706-5d9b-bf65-bbf3a79792c7",
-  "version": "1.0.0",
-  "name": "AMS1117-3.3 SOT-223",
-  "description": "AMS1117 fixed 3.3 V linear regulator in SOT-223 package.",
+  "id": "openpcb.core.ic.ams1117-3v3",
+  "uuid": "2d8a5302-aa54-5ecf-a67f-d2b28de746e9",
+  "version": "0.2.0",
+  "name": "AMS1117-3.3 LDO Regulator",
+  "description": "AMS1117-3.3 fixed 3.3V 1A low-dropout linear regulator; SOT-223. Generic — assign MPN per build.",
   "category": "ic",
+  "subcategory": "regulator_linear",
   "tags": [
     "ic",
     "regulator",
     "ldo",
-    "3.3v",
-    "sot-223",
     "kicad-derived"
   ],
-  "aliases": [],
+  "keywords": [
+    "AMS1117",
+    "AMS1117-3.3",
+    "LDO",
+    "3.3V regulator"
+  ],
+  "aliases": [
+    "openpcb.core.ic.ams1117-3v3-sot-223"
+  ],
+  "datasheetSource": "http://www.advanced-monolithic.com/pdf/ds1117.pdf",
+  "parameters": {
+    "output_voltage": "3.3V",
+    "output_current": "1A",
+    "type": "ldo",
+    "dropout": "1.3V"
+  },
   "symbol": "openpcb.core.symbol.ic.ams1117-3v3",
   "defaultFootprint": "openpcb.core.footprint.package.sot-223",
   "footprints": [
@@ -53,10 +67,11 @@
     "sourceFormat": "openpcb-component",
     "sourceFileName": "AMS1117-3.3.kicad_sym",
     "sourceLibrary": "Regulator_Linear",
-    "sourceItemName": "AMS1117-3.3 SOT-223",
-    "sourceHash": "f6951caf7f7bbfa07f735ac009549a4cbde8b5dd4a0c7c9f4e2400a02a369759",
+    "sourceItemName": "AMS1117-3.3 LDO Regulator",
+    "sourceHash": "edb85bc8162cdee0de280ab42f3d8c1ef81652b85c08770e0cc7e67c3b974b6c",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "compatibility": {

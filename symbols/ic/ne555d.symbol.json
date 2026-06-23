@@ -1,8 +1,8 @@
 {
   "id": "openpcb.core.symbol.ic.ne555d",
   "uuid": "96799efb-687c-51a8-a47b-390c5577f821",
-  "version": "1.0.0",
-  "name": "NE555 Timer SOIC-8",
+  "version": "0.2.0",
+  "name": "NE555 Timer",
   "referencePrefix": "U",
   "description": "Precision Timers, 555 compatible, SOIC-8",
   "provenance": {
@@ -15,9 +15,10 @@
     "sourceFileName": "NE555D.kicad_sym",
     "sourceLibrary": "Timer",
     "sourceItemName": "NE555D",
-    "sourceHash": "e166002ae602f94d602c9959cdef0f3543da3adeda18cced2b8aa9927af53441",
+    "sourceHash": "b89d747b0e4b542ff175f33ca0c1c8d87e1e4cac64f5301f5e9db28a9737e7ca",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-06-02T05:57:37.019Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -41,11 +42,11 @@
     ]
   },
   "normalized": {
-    "id": "sym_195cb49eaf9fe386",
+    "id": "sym_a28582923169b99e",
     "name": "NE555D",
     "referencePrefix": "U",
     "description": "Precision Timers, 555 compatible, SOIC-8",
-    "sourceHash": "e166002ae602f94d602c9959cdef0f3543da3adeda18cced2b8aa9927af53441",
+    "sourceHash": "b89d747b0e4b542ff175f33ca0c1c8d87e1e4cac64f5301f5e9db28a9737e7ca",
     "pins": [
       {
         "originPinKey": "u0:1",
@@ -301,8 +302,8 @@
           "id": "u0:1:number",
           "text": "1",
           "at": {
-            "x": 0.5080000000000001,
-            "y": -8.89
+            "x": 0.508,
+            "y": -9.956800000000001
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 90,
@@ -328,7 +329,7 @@
           "text": "8",
           "at": {
             "x": 3.048,
-            "y": 8.89
+            "y": 9.956800000000001
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 90,
@@ -431,8 +432,8 @@
           "id": "u1:5:number",
           "text": "5",
           "at": {
-            "x": 0.5079999999999998,
-            "y": 8.89
+            "x": 0.508,
+            "y": 9.956800000000001
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 90,

@@ -1,15 +1,15 @@
 {
-  "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
-  "uuid": "27cef197-f316-5ea7-8d5d-37a9a0432ae3",
+  "id": "openpcb.core.footprint.package.dip-14-w7-62mm",
+  "uuid": "d98187cb-59c7-5d15-93f8-1f5506e0d91a",
   "version": "0.2.0",
-  "name": "DIP-8_W7.62mm",
+  "name": "DIP-14_W7.62mm",
   "mountType": "through_hole",
   "package": {
     "imperial": null,
     "metric": null
   },
   "models3d": [
-    "openpcb.core.3d.package.dip-8-w7-62mm"
+    "openpcb.core.3d.package.dip-14-w7-62mm"
   ],
   "provenance": {
     "source": "kicad-derived",
@@ -18,10 +18,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "kicad-mod",
-    "sourceFileName": "DIP-8_W7.62mm.kicad_mod",
+    "sourceFileName": "DIP-14_W7.62mm.kicad_mod",
     "sourceLibrary": "Package_DIP",
-    "sourceItemName": "DIP-8_W7.62mm",
-    "sourceHash": "222fb44370968119abbd978176814cc43a71bc32ac2de275d8a3c418c0830fc6",
+    "sourceItemName": "DIP-14_W7.62mm",
+    "sourceHash": "45cf0d69e6038dc3015e395a519a24069fcfff2d70340934683d4241b2098762",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-06-23T00:00:00.000Z",
@@ -31,12 +31,12 @@
     "warnings": []
   },
   "normalized": {
-    "id": "fp_3b253e4cf0fc275c",
-    "fileName": "DIP-8_W7.62mm.kicad_mod",
-    "name": "DIP-8_W7.62mm",
-    "description": "8-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)",
+    "id": "fp_506abcce673cbafa",
+    "fileName": "DIP-14_W7.62mm.kicad_mod",
+    "name": "DIP-14_W7.62mm",
+    "description": "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)",
     "mountType": "through_hole",
-    "padCount": 8,
+    "padCount": 14,
     "packageCode": {
       "imperial": null,
       "metric": null
@@ -51,12 +51,12 @@
       "300mil",
       "through_hole"
     ],
-    "sourceHash": "222fb44370968119abbd978176814cc43a71bc32ac2de275d8a3c418c0830fc6",
+    "sourceHash": "45cf0d69e6038dc3015e395a519a24069fcfff2d70340934683d4241b2098762",
     "warnings": [],
     "preview": {
       "kind": "footprint",
       "units": "mm",
-      "name": "DIP-8_W7.62mm",
+      "name": "DIP-14_W7.62mm",
       "pads": [
         {
           "id": "1:0",
@@ -120,8 +120,8 @@
           "number": "5",
           "shape": "circle",
           "centerMm": {
-            "x": 7.62,
-            "y": 7.62
+            "x": 0,
+            "y": 10.16
           },
           "widthMm": 1.6,
           "heightMm": 1.6,
@@ -134,8 +134,8 @@
           "number": "6",
           "shape": "circle",
           "centerMm": {
-            "x": 7.62,
-            "y": 5.08
+            "x": 0,
+            "y": 12.7
           },
           "widthMm": 1.6,
           "heightMm": 1.6,
@@ -148,8 +148,8 @@
           "number": "7",
           "shape": "circle",
           "centerMm": {
-            "x": 7.62,
-            "y": 2.54
+            "x": 0,
+            "y": 15.24
           },
           "widthMm": 1.6,
           "heightMm": 1.6,
@@ -160,6 +160,90 @@
         {
           "id": "8:7",
           "number": "8",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.62,
+            "y": 15.24
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "9:8",
+          "number": "9",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.62,
+            "y": 12.7
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "10:9",
+          "number": "10",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.62,
+            "y": 10.16
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "11:10",
+          "number": "11",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.62,
+            "y": 7.62
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "12:11",
+          "number": "12",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.62,
+            "y": 5.08
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "13:12",
+          "number": "13",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.62,
+            "y": 2.54
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "14:13",
+          "number": "14",
           "shape": "circle",
           "centerMm": {
             "x": 7.62,
@@ -181,7 +265,7 @@
           },
           "b": {
             "x": 1.16,
-            "y": 8.95
+            "y": 16.57
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
@@ -190,11 +274,11 @@
           "kind": "line",
           "a": {
             "x": 1.16,
-            "y": 8.95
+            "y": 16.57
           },
           "b": {
             "x": 6.46,
-            "y": 8.95
+            "y": 16.57
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
@@ -229,7 +313,7 @@
           "kind": "line",
           "a": {
             "x": 6.46,
-            "y": 8.95
+            "y": 16.57
           },
           "b": {
             "x": 6.46,
@@ -255,7 +339,7 @@
           "kind": "line",
           "a": {
             "x": 0.635,
-            "y": 8.89
+            "y": 16.51
           },
           "b": {
             "x": 0.635,
@@ -285,7 +369,7 @@
           },
           "b": {
             "x": 6.985,
-            "y": 8.89
+            "y": 16.51
           },
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
@@ -294,11 +378,11 @@
           "kind": "line",
           "a": {
             "x": 6.985,
-            "y": 8.89
+            "y": 16.51
           },
           "b": {
             "x": 0.635,
-            "y": 8.89
+            "y": 16.51
           },
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
@@ -323,11 +407,11 @@
       ],
       "labels": [
         {
-          "id": "fp-text:F.Fab:3.81:3.81:${REFERENCE}",
+          "id": "fp-text:F.Fab:3.81:7.62:${REFERENCE}",
           "text": "REF**",
           "at": {
             "x": 3.81,
-            "y": 3.81
+            "y": 7.62
           },
           "fontSizeMm": 1,
           "rotationDeg": 90,
@@ -351,11 +435,11 @@
           "role": "reference"
         },
         {
-          "id": "fp-text:F.Fab:3.81:9.95:DIP-8_W7.62mm",
-          "text": "DIP-8_W7.62mm",
+          "id": "fp-text:F.Fab:3.81:17.57:DIP-14_W7.62mm",
+          "text": "DIP-14_W7.62mm",
           "at": {
             "x": 3.81,
-            "y": 9.95
+            "y": 17.57
           },
           "fontSizeMm": 1,
           "rotationDeg": 0,
@@ -369,14 +453,14 @@
         "minX": -0.8000000000000003,
         "minY": -1.3900000000000006,
         "maxX": 8.42,
-        "maxY": 9.01
+        "maxY": 16.63
       },
       "warnings": []
     }
   },
   "raw": {
-    "name": "DIP-8_W7.62mm",
-    "description": "8-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)",
+    "name": "DIP-14_W7.62mm",
+    "description": "14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)",
     "tags": [
       "THT",
       "DIP",
@@ -469,6 +553,120 @@
         "type": "thru_hole",
         "shape": "circle",
         "position": {
+          "x": 0,
+          "y": 10.16
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "6",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 12.7
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "7",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 15.24
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "8",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 7.62,
+          "y": 15.24
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "9",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 7.62,
+          "y": 12.7
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "10",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 7.62,
+          "y": 10.16
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "11",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
           "x": 7.62,
           "y": 7.62
         },
@@ -484,7 +682,7 @@
         "drillDiameter": 0.8
       },
       {
-        "number": "6",
+        "number": "12",
         "type": "thru_hole",
         "shape": "circle",
         "position": {
@@ -503,7 +701,7 @@
         "drillDiameter": 0.8
       },
       {
-        "number": "7",
+        "number": "13",
         "type": "thru_hole",
         "shape": "circle",
         "position": {
@@ -522,7 +720,7 @@
         "drillDiameter": 0.8
       },
       {
-        "number": "8",
+        "number": "14",
         "type": "thru_hole",
         "shape": "circle",
         "position": {
@@ -552,7 +750,7 @@
           ],
           "end": [
             1.16,
-            8.95
+            16.57
           ],
           "stroke": [
             [
@@ -573,11 +771,11 @@
         "data": {
           "start": [
             1.16,
-            8.95
+            16.57
           ],
           "end": [
             6.46,
-            8.95
+            16.57
           ],
           "stroke": [
             [
@@ -648,7 +846,7 @@
         "data": {
           "start": [
             6.46,
-            8.95
+            16.57
           ],
           "end": [
             6.46,
@@ -698,7 +896,7 @@
         "data": {
           "start": [
             0.635,
-            8.89
+            16.51
           ],
           "end": [
             0.635,
@@ -752,7 +950,7 @@
           ],
           "end": [
             6.985,
-            8.89
+            16.51
           ],
           "stroke": [
             [
@@ -773,11 +971,11 @@
         "data": {
           "start": [
             6.985,
-            8.89
+            16.51
           ],
           "end": [
             0.635,
-            8.89
+            16.51
           ],
           "stroke": [
             [
@@ -798,11 +996,11 @@
         "data": {
           "start": [
             -1.06,
-            -1.52
+            -1.53
           ],
           "end": [
             8.67,
-            9.14
+            16.77
           ],
           "stroke": [
             [
@@ -853,7 +1051,7 @@
         "data": {
           "at": [
             3.81,
-            3.81,
+            7.62,
             90
           ],
           "layer": "F.Fab",
@@ -880,7 +1078,7 @@
           "content": "${REFERENCE}",
           "position": {
             "x": 3.81,
-            "y": 3.81
+            "y": 7.62
           },
           "rotation": 90,
           "fontSizeMm": 1,
@@ -941,7 +1139,7 @@
         "data": {
           "at": [
             3.81,
-            9.95,
+            17.57,
             0
           ],
           "layer": "F.Fab",
@@ -961,14 +1159,14 @@
           ],
           "__args": [
             "Value",
-            "DIP-8_W7.62mm"
+            "DIP-14_W7.62mm"
           ]
         },
         "text": {
-          "content": "DIP-8_W7.62mm",
+          "content": "DIP-14_W7.62mm",
           "position": {
             "x": 3.81,
-            "y": 9.95
+            "y": 17.57
           },
           "rotation": 0,
           "fontSizeMm": 1,
@@ -982,8 +1180,8 @@
     ],
     "model3dRefs": [
       {
-        "path": "${KICAD10_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.step",
-        "resolvedFileName": "DIP-8_W7.62mm.step",
+        "path": "${KICAD10_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-14_W7.62mm.step",
+        "resolvedFileName": "DIP-14_W7.62mm.step",
         "offset": {
           "x": 0,
           "y": 0,
@@ -1005,7 +1203,7 @@
       "type": "through_hole"
     },
     "warnings": [],
-    "rawSource": "(footprint \"DIP-8_W7.62mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"8-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)\")\n\t(tags \"THT DIP DIL PDIP 2.54mm 7.62mm 300mil\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 3.81 -2.33 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"DIP-8_W7.62mm\"\n\t\t(at 3.81 9.95 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"package/DIP/legacy\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start 1.16 -1.33)\n\t\t(end 1.16 8.95)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 1.16 8.95)\n\t\t(end 6.46 8.95)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.81 -1.33)\n\t\t(end 1.16 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.46 -1.33)\n\t\t(end 4.81 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.46 8.95)\n\t\t(end 6.46 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_arc\n\t\t(start 4.81 -1.33)\n\t\t(mid 3.81 -0.33)\n\t\t(end 2.81 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -1.06 -1.52)\n\t\t(end 8.67 9.14)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 0.635 -0.27)\n\t\t(end 1.635 -1.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 0.635 8.89)\n\t\t(end 0.635 -0.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 1.635 -1.27)\n\t\t(end 6.985 -1.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 6.985 -1.27)\n\t\t(end 6.985 8.89)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 6.985 8.89)\n\t\t(end 0.635 8.89)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 3.81 3.81 90)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole roundrect\n\t\t(at 0 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(roundrect_rratio 0.15625)\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 0 2.54)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"3\" thru_hole circle\n\t\t(at 0 5.08)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"4\" thru_hole circle\n\t\t(at 0 7.62)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"5\" thru_hole circle\n\t\t(at 7.62 7.62)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"6\" thru_hole circle\n\t\t(at 7.62 5.08)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"7\" thru_hole circle\n\t\t(at 7.62 2.54)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"8\" thru_hole circle\n\t\t(at 7.62 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(point\n\t\t(at 3.81 3.81)\n\t\t(size 1.27)\n\t\t(layer \"F.Fab\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-8_W7.62mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+    "rawSource": "(footprint \"DIP-14_W7.62mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"14-lead though-hole mounted DIP package, row spacing 7.62mm (300 mils)\")\n\t(tags \"THT DIP DIL PDIP 2.54mm 7.62mm 300mil\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 3.81 -2.33 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"DIP-14_W7.62mm\"\n\t\t(at 3.81 17.57 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"package/DIP/legacy\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start 1.16 -1.33)\n\t\t(end 1.16 16.57)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 1.16 16.57)\n\t\t(end 6.46 16.57)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.81 -1.33)\n\t\t(end 1.16 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.46 -1.33)\n\t\t(end 4.81 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.46 16.57)\n\t\t(end 6.46 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_arc\n\t\t(start 4.81 -1.33)\n\t\t(mid 3.81 -0.33)\n\t\t(end 2.81 -1.33)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -1.06 -1.53)\n\t\t(end 8.67 16.77)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 0.635 -0.27)\n\t\t(end 1.635 -1.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 0.635 16.51)\n\t\t(end 0.635 -0.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 1.635 -1.27)\n\t\t(end 6.985 -1.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 6.985 -1.27)\n\t\t(end 6.985 16.51)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 6.985 16.51)\n\t\t(end 0.635 16.51)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 3.81 7.62 90)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole roundrect\n\t\t(at 0 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(roundrect_rratio 0.15625)\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 0 2.54)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"3\" thru_hole circle\n\t\t(at 0 5.08)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"4\" thru_hole circle\n\t\t(at 0 7.62)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"5\" thru_hole circle\n\t\t(at 0 10.16)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"6\" thru_hole circle\n\t\t(at 0 12.7)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"7\" thru_hole circle\n\t\t(at 0 15.24)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"8\" thru_hole circle\n\t\t(at 7.62 15.24)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"9\" thru_hole circle\n\t\t(at 7.62 12.7)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"10\" thru_hole circle\n\t\t(at 7.62 10.16)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"11\" thru_hole circle\n\t\t(at 7.62 7.62)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"12\" thru_hole circle\n\t\t(at 7.62 5.08)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"13\" thru_hole circle\n\t\t(at 7.62 2.54)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"14\" thru_hole circle\n\t\t(at 7.62 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(point\n\t\t(at 3.81 7.62)\n\t\t(size 1.27)\n\t\t(layer \"F.Fab\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Package_DIP.3dshapes/DIP-14_W7.62mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
   },
-  "sourceFileName": "DIP-8_W7.62mm.kicad_mod"
+  "sourceFileName": "DIP-14_W7.62mm.kicad_mod"
 }

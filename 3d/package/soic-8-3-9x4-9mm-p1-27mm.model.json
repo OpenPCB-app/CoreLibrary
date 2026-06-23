@@ -1,7 +1,7 @@
 {
   "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
   "uuid": "caad4e00-15a6-50b4-b48b-19d404f1b785",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "name": "SOIC-8_3.9x4.9mm_P1.27mm STEP model",
   "formats": {
     "step": {
@@ -21,7 +21,8 @@
     "sourceItemName": "SOIC-8_3.9x4.9mm_P1.27mm.step",
     "sourceHash": "07f46cff378d30e6c27dfd5a03092c795323f86d91c71fc7e743f4f418dc553a",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "offsetMm": {
@@ -34,19 +35,9 @@
     "y": 0,
     "z": 0
   },
-  "boundsMm": {
-    "x": 6,
-    "y": 4.9,
-    "z": 1.75
-  },
-  "boundsMinMm": {
-    "x": -3,
-    "y": -2.45,
-    "z": 0
-  },
-  "boundsMaxMm": {
-    "x": 3,
-    "y": 2.45,
-    "z": 1.75
+  "scaleMm": {
+    "x": 1,
+    "y": 1,
+    "z": 1
   }
 }

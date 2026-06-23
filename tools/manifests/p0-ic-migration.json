@@ -1,0 +1,180 @@
+{
+  "version": "0.2.0",
+  "components": [
+    {
+      "id": "openpcb.core.ic.74hc00",
+      "name": "74HC00 Quad 2-Input NAND Gate",
+      "description": "74HC00 quad 2-input NAND gate (high-speed CMOS); SOIC-14 and DIP-14 variants. Generic — assign MPN per build.",
+      "category": "ic",
+      "subcategory": "logic",
+      "tags": ["ic", "logic", "74xx", "nand", "kicad-derived"],
+      "keywords": ["74HC00", "7400", "quad NAND", "CMOS logic"],
+      "aliases": ["openpcb.core.ic.74hc00-soic-14"],
+      "parameters": {
+        "family": "74HC",
+        "function": "quad 2-input NAND",
+        "channels": "4",
+        "supply_min": "2V",
+        "supply_max": "6V"
+      },
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.74hc00",
+        "path": "kicad-symbols/74xx.kicad_symdir/74HC00.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14 3.9x8.7mm P1.27mm",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" },
+            { "pinNumber": "7", "padNumber": "7" },
+            { "pinNumber": "8", "padNumber": "8" },
+            { "pinNumber": "9", "padNumber": "9" },
+            { "pinNumber": "10", "padNumber": "10" },
+            { "pinNumber": "11", "padNumber": "11" },
+            { "pinNumber": "12", "padNumber": "12" },
+            { "pinNumber": "13", "padNumber": "13" },
+            { "pinNumber": "14", "padNumber": "14" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-14-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-14_W7.62mm.kicad_mod",
+          "label": "DIP-14 W7.62mm",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-14-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-14_W7.62mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" },
+            { "pinNumber": "7", "padNumber": "7" },
+            { "pinNumber": "8", "padNumber": "8" },
+            { "pinNumber": "9", "padNumber": "9" },
+            { "pinNumber": "10", "padNumber": "10" },
+            { "pinNumber": "11", "padNumber": "11" },
+            { "pinNumber": "12", "padNumber": "12" },
+            { "pinNumber": "13", "padNumber": "13" },
+            { "pinNumber": "14", "padNumber": "14" }
+          ]
+        }
+      ],
+      "compatibility": { "minOpenPcbVersion": "0.1.0" }
+    },
+    {
+      "id": "openpcb.core.ic.ne555",
+      "name": "NE555 Timer",
+      "description": "NE555 single precision timer; SOIC-8 and DIP-8 variants. Generic — assign MPN per build.",
+      "category": "ic",
+      "subcategory": "timer",
+      "tags": ["ic", "timer", "555", "kicad-derived"],
+      "keywords": ["NE555", "555", "timer", "oscillator"],
+      "aliases": ["openpcb.core.ic.ne555-soic-8"],
+      "parameters": {
+        "function": "timer",
+        "supply_min": "4.5V",
+        "supply_max": "16V"
+      },
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.ne555d",
+        "path": "kicad-symbols/Timer.kicad_symdir/NE555D.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8 3.9x4.9mm P1.27mm",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "GND" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "TRIG" },
+            { "pinNumber": "3", "padNumber": "3", "pinName": "OUT" },
+            { "pinNumber": "4", "padNumber": "4", "pinName": "~{RST}" },
+            { "pinNumber": "5", "padNumber": "5", "pinName": "CONT" },
+            { "pinNumber": "6", "padNumber": "6", "pinName": "THRES" },
+            { "pinNumber": "7", "padNumber": "7", "pinName": "DISCH" },
+            { "pinNumber": "8", "padNumber": "8", "pinName": "VCC" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-8_W7.62mm.kicad_mod",
+          "label": "DIP-8 W7.62mm",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-8-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-8_W7.62mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "GND" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "TRIG" },
+            { "pinNumber": "3", "padNumber": "3", "pinName": "OUT" },
+            { "pinNumber": "4", "padNumber": "4", "pinName": "~{RST}" },
+            { "pinNumber": "5", "padNumber": "5", "pinName": "CONT" },
+            { "pinNumber": "6", "padNumber": "6", "pinName": "THRES" },
+            { "pinNumber": "7", "padNumber": "7", "pinName": "DISCH" },
+            { "pinNumber": "8", "padNumber": "8", "pinName": "VCC" }
+          ]
+        }
+      ],
+      "compatibility": { "minOpenPcbVersion": "0.1.0" }
+    },
+    {
+      "id": "openpcb.core.ic.ams1117-3v3",
+      "name": "AMS1117-3.3 LDO Regulator",
+      "description": "AMS1117-3.3 fixed 3.3V 1A low-dropout linear regulator; SOT-223. Generic — assign MPN per build.",
+      "category": "ic",
+      "subcategory": "regulator_linear",
+      "tags": ["ic", "regulator", "ldo", "kicad-derived"],
+      "keywords": ["AMS1117", "AMS1117-3.3", "LDO", "3.3V regulator"],
+      "aliases": ["openpcb.core.ic.ams1117-3v3-sot-223"],
+      "parameters": {
+        "output_voltage": "3.3V",
+        "output_current": "1A",
+        "type": "ldo",
+        "dropout": "1.3V"
+      },
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.ams1117-3v3",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/AMS1117-3.3.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-223",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-223",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-223.kicad_mod",
+          "label": "SOT-223",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-223",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1", "pinName": "GND" },
+            { "pinNumber": "2", "padNumber": "2", "pinName": "VO" },
+            { "pinNumber": "3", "padNumber": "3", "pinName": "VI" },
+            { "pinNumber": "2", "padNumber": "4", "pinName": "VO" }
+          ]
+        }
+      ],
+      "compatibility": { "minOpenPcbVersion": "0.1.0" }
+    }
+  ]
+}

@@ -1,8 +1,8 @@
 {
   "id": "openpcb.core.symbol.ic.ams1117-3v3",
   "uuid": "18a435c1-9974-5ea0-8440-092a709b0fa6",
-  "version": "1.0.0",
-  "name": "AMS1117-3.3 SOT-223",
+  "version": "0.2.0",
+  "name": "AMS1117-3.3 LDO Regulator",
   "referencePrefix": "U",
   "description": "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",
   "provenance": {
@@ -15,9 +15,10 @@
     "sourceFileName": "AMS1117-3.3.kicad_sym",
     "sourceLibrary": "Regulator_Linear",
     "sourceItemName": "AMS1117-3.3",
-    "sourceHash": "f6f292b9c781e98e54aeb3ab4cc9dde2d726325da9d1e28d3275051e66bcc14d",
+    "sourceHash": "ea70b9d9802394b2c72d68b71eae930e179ce56501af375764d36f43a5715e5a",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-06-02T05:57:37.019Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "parser": {
@@ -51,11 +52,11 @@
     ]
   },
   "normalized": {
-    "id": "sym_5c6f9444f441fd47",
+    "id": "sym_3560caa859ea5040",
     "name": "AMS1117-3.3",
     "referencePrefix": "U",
     "description": "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",
-    "sourceHash": "f6f292b9c781e98e54aeb3ab4cc9dde2d726325da9d1e28d3275051e66bcc14d",
+    "sourceHash": "ea70b9d9802394b2c72d68b71eae930e179ce56501af375764d36f43a5715e5a",
     "pins": [
       {
         "originPinKey": "u1:1",
@@ -181,8 +182,8 @@
           "id": "u1:1:number",
           "text": "1",
           "at": {
-            "x": 0.5080000000000001,
-            "y": -6.35
+            "x": 0.508,
+            "y": -7.4168
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 90,

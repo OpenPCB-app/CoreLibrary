@@ -5,13 +5,9 @@
   "name": "LM358 Dual Op-Amp",
   "description": "LM358 dual operational amplifier with SOIC-8 and DIP-8 variants.",
   "category": "ic",
-  "tags": [
-    "ic",
-    "op-amp",
-    "amplifier",
-    "lm358",
-    "kicad-derived"
-  ],
+  "subcategory": "amplifier",
+  "tags": ["ic", "op-amp", "amplifier", "lm358", "kicad-derived"],
+  "keywords": ["LM358", "dual op-amp", "operational amplifier"],
   "aliases": [],
   "symbol": "openpcb.core.symbol.ic.lm358",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
@@ -93,12 +89,17 @@
       ]
     }
   ],
+  "parameters": {
+    "channels": "2",
+    "function": "dual op-amp",
+    "gbw": "1.1MHz",
+    "supply_min": "3V",
+    "supply_max": "32V"
+  },
   "provenance": {
     "source": "kicad-derived",
     "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
-    "attribution": [
-      "Derived from KiCad official libraries."
-    ],
+    "attribution": ["Derived from KiCad official libraries."],
     "sourceFormat": "openpcb-component",
     "sourceFileName": "LM358.kicad_sym",
     "sourceLibrary": "Amplifier_Operational",
