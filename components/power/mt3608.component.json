@@ -1,0 +1,84 @@
+{
+  "id": "openpcb.core.power.mt3608",
+  "uuid": "d7b4b3bf-8ed7-5421-ae9e-0042c640c34b",
+  "version": "0.2.0",
+  "name": "MT3608 Boost Regulator",
+  "description": "MT3608 high-efficiency step-up (boost) switching regulator in SOT-23-6.",
+  "category": "power",
+  "subcategory": "regulator-switching-boost",
+  "tags": [
+    "power",
+    "regulator",
+    "switching",
+    "boost",
+    "sot-23-6",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MT3608",
+    "boost",
+    "step-up",
+    "switching regulator"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.olimex.com/Products/Breadboarding/BB-PWR-3608/resources/MT3608.pdf",
+  "parameters": {
+    "vout": "up to 28V (adjustable)",
+    "iout": "2A switch",
+    "topology": "boost"
+  },
+  "symbol": "openpcb.core.symbol.power.mt3608",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23-6",
+      "label": "SOT-23-6",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MT3608.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "MT3608 Boost Regulator",
+    "sourceHash": "da2940c515f536082a923046227987d54727ec79d9b4778f77894fa67378d3d8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:03:11.984Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

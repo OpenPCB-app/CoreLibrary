@@ -1,0 +1,839 @@
+{
+  "version": "0.2.0",
+  "components": [
+    {
+      "id": "openpcb.core.connector.usb-a",
+      "name": "USB Type-A Receptacle",
+      "description": "USB Type-A horizontal through-hole receptacle.",
+      "category": "connector",
+      "subcategory": "usb",
+      "tags": [
+        "connector",
+        "usb",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "USB",
+        "USB-A",
+        "Type-A",
+        "receptacle"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.usb-a",
+        "path": "kicad-symbols/Connector.kicad_symdir/USB_A.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.usb-a-molex-67643",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.usb-a-molex-67643",
+          "path": "kicad-footprints/Connector_USB.pretty/USB_A_Molex_67643_Horizontal.kicad_mod",
+          "label": "USB-A Molex 67643 horizontal",
+          "model": {
+            "id": "openpcb.core.3d.connector.usb-a-molex-67643",
+            "path": "kicad-packages3D/Connector_USB.3dshapes/USB_A_Molex_67643_Horizontal.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "SH",
+              "padNumber": "SH"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.usb-micro-b",
+      "name": "USB Micro-B Receptacle",
+      "description": "USB Micro-B SMD receptacle.",
+      "category": "connector",
+      "subcategory": "usb",
+      "tags": [
+        "connector",
+        "usb",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "USB",
+        "Micro-B",
+        "Micro USB",
+        "receptacle"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.usb-micro-b",
+        "path": "kicad-symbols/Connector.kicad_symdir/USB_B_Micro.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.usb-micro-b-molex-47346",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.usb-micro-b-molex-47346",
+          "path": "kicad-footprints/Connector_USB.pretty/USB_Micro-B_Molex_47346-0001.kicad_mod",
+          "label": "USB Micro-B Molex 47346",
+          "model": {
+            "id": "openpcb.core.3d.connector.usb-micro-b-molex-47346",
+            "path": "kicad-packages3D/Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "SH",
+              "padNumber": "SH"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.jst-ph-1x02",
+      "name": "JST-PH 1x02 Connector",
+      "description": "JST PH-series 2.00 mm 2-pin top-entry connector.",
+      "category": "connector",
+      "subcategory": "jst-ph",
+      "tags": [
+        "connector",
+        "jst-ph",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "JST",
+        "JST-PH",
+        "PH",
+        "2.00mm"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.jst-ph-1x02",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x02.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.jst-ph-1x02-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.jst-ph-1x02-vertical",
+          "path": "kicad-footprints/Connector_JST.pretty/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.kicad_mod",
+          "label": "JST-PH B2B 1x02 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.jst-ph-1x02-vertical",
+            "path": "kicad-packages3D/Connector_JST.3dshapes/JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.jst-ph-1x03",
+      "name": "JST-PH 1x03 Connector",
+      "description": "JST PH-series 2.00 mm 3-pin top-entry connector.",
+      "category": "connector",
+      "subcategory": "jst-ph",
+      "tags": [
+        "connector",
+        "jst-ph",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "JST",
+        "JST-PH",
+        "PH",
+        "2.00mm"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.jst-ph-1x03",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x03.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.jst-ph-1x03-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.jst-ph-1x03-vertical",
+          "path": "kicad-footprints/Connector_JST.pretty/JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.kicad_mod",
+          "label": "JST-PH B3B 1x03 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.jst-ph-1x03-vertical",
+            "path": "kicad-packages3D/Connector_JST.3dshapes/JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.jst-ph-1x04",
+      "name": "JST-PH 1x04 Connector",
+      "description": "JST PH-series 2.00 mm 4-pin top-entry connector.",
+      "category": "connector",
+      "subcategory": "jst-ph",
+      "tags": [
+        "connector",
+        "jst-ph",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "JST",
+        "JST-PH",
+        "PH",
+        "2.00mm"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.jst-ph-1x04",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x04.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.jst-ph-1x04-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.jst-ph-1x04-vertical",
+          "path": "kicad-footprints/Connector_JST.pretty/JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical.kicad_mod",
+          "label": "JST-PH B4B 1x04 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.jst-ph-1x04-vertical",
+            "path": "kicad-packages3D/Connector_JST.3dshapes/JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-header-1x03",
+      "name": "Pin Header 1x03 2.54mm",
+      "description": "1x03 single-row 2.54 mm vertical pin header.",
+      "category": "connector",
+      "subcategory": "header",
+      "tags": [
+        "connector",
+        "header",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "connector",
+        "header",
+        "2.54mm",
+        "1x03"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.pin-header-1x03",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x03.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x03-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-header-1x03-vertical",
+          "path": "kicad-footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_1x03_P2.54mm_Vertical.kicad_mod",
+          "label": "1x03 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.pin-header-1x03-vertical",
+            "path": "kicad-packages3D/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-header-1x04",
+      "name": "Pin Header 1x04 2.54mm",
+      "description": "1x04 single-row 2.54 mm vertical pin header.",
+      "category": "connector",
+      "subcategory": "header",
+      "tags": [
+        "connector",
+        "header",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "connector",
+        "header",
+        "2.54mm",
+        "1x04"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.pin-header-1x04",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x04.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x04-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-header-1x04-vertical",
+          "path": "kicad-footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_1x04_P2.54mm_Vertical.kicad_mod",
+          "label": "1x04 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.pin-header-1x04-vertical",
+            "path": "kicad-packages3D/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x04_P2.54mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-header-1x06",
+      "name": "Pin Header 1x06 2.54mm",
+      "description": "1x06 single-row 2.54 mm vertical pin header.",
+      "category": "connector",
+      "subcategory": "header",
+      "tags": [
+        "connector",
+        "header",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "connector",
+        "header",
+        "2.54mm",
+        "1x06"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.pin-header-1x06",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x06.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x06-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-header-1x06-vertical",
+          "path": "kicad-footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_1x06_P2.54mm_Vertical.kicad_mod",
+          "label": "1x06 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.pin-header-1x06-vertical",
+            "path": "kicad-packages3D/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x06_P2.54mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-header-1x08",
+      "name": "Pin Header 1x08 2.54mm",
+      "description": "1x08 single-row 2.54 mm vertical pin header.",
+      "category": "connector",
+      "subcategory": "header",
+      "tags": [
+        "connector",
+        "header",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "connector",
+        "header",
+        "2.54mm",
+        "1x08"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.pin-header-1x08",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x08.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x08-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-header-1x08-vertical",
+          "path": "kicad-footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_1x08_P2.54mm_Vertical.kicad_mod",
+          "label": "1x08 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.pin-header-1x08-vertical",
+            "path": "kicad-packages3D/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x08_P2.54mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-header-2x05",
+      "name": "Pin Header 2x05 2.54mm",
+      "description": "Ten-pin dual-row 2.54 mm vertical pin header.",
+      "category": "connector",
+      "subcategory": "header",
+      "tags": [
+        "connector",
+        "header",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "connector",
+        "header",
+        "2.54mm",
+        "2x05"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.pin-header-2x05",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_02x05_Odd_Even.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-header-2x05-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-header-2x05-vertical",
+          "path": "kicad-footprints/Connector_PinHeader_2.54mm.pretty/PinHeader_2x05_P2.54mm_Vertical.kicad_mod",
+          "label": "2x05 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.pin-header-2x05-vertical",
+            "path": "kicad-packages3D/Connector_PinHeader_2.54mm.3dshapes/PinHeader_2x05_P2.54mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-socket-1x04",
+      "name": "Pin Socket 1x04 2.54mm",
+      "description": "Four-pin single-row 2.54 mm vertical pin socket.",
+      "category": "connector",
+      "subcategory": "socket",
+      "tags": [
+        "connector",
+        "socket",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "connector",
+        "socket",
+        "2.54mm",
+        "1x04"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.pin-socket-1x04",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_01x04.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-socket-1x04-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-socket-1x04-vertical",
+          "path": "kicad-footprints/Connector_PinSocket_2.54mm.pretty/PinSocket_1x04_P2.54mm_Vertical.kicad_mod",
+          "label": "1x04 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.pin-socket-1x04-vertical",
+            "path": "kicad-packages3D/Connector_PinSocket_2.54mm.3dshapes/PinSocket_1x04_P2.54mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.pin-socket-2x05",
+      "name": "Pin Socket 2x05 2.54mm",
+      "description": "Ten-pin dual-row 2.54 mm vertical pin socket.",
+      "category": "connector",
+      "subcategory": "socket",
+      "tags": [
+        "connector",
+        "socket",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "connector",
+        "socket",
+        "2.54mm",
+        "2x05"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.pin-socket-2x05",
+        "path": "kicad-symbols/Connector_Generic.kicad_symdir/Conn_02x05_Odd_Even.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.pin-socket-2x05-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.pin-socket-2x05-vertical",
+          "path": "kicad-footprints/Connector_PinSocket_2.54mm.pretty/PinSocket_2x05_P2.54mm_Vertical.kicad_mod",
+          "label": "2x05 vertical",
+          "model": {
+            "id": "openpcb.core.3d.connector.pin-socket-2x05-vertical",
+            "path": "kicad-packages3D/Connector_PinSocket_2.54mm.3dshapes/PinSocket_2x05_P2.54mm_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.switch.tactile-switch-tht",
+      "name": "Tactile Switch (THT)",
+      "description": "6 mm through-hole tactile push switch.",
+      "category": "switch",
+      "subcategory": "tactile",
+      "tags": [
+        "switch",
+        "tactile",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "switch",
+        "tactile",
+        "push button",
+        "6mm"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.switch.tactile-switch-tht",
+        "path": "kicad-symbols/Switch.kicad_symdir/SW_Push.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.switch.sw-push-6mm-h5mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.switch.sw-push-6mm-h5mm",
+          "path": "kicad-footprints/Button_Switch_THT.pretty/SW_PUSH_6mm_H5mm.kicad_mod",
+          "label": "6mm THT H5mm",
+          "model": {
+            "id": "openpcb.core.3d.switch.sw-push-6mm-h5mm",
+            "path": "kicad-packages3D/Button_Switch_THT.3dshapes/SW_PUSH_6mm_H5mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.switch.tactile-switch-smd",
+      "name": "Tactile Switch (SMD)",
+      "description": "SMD tactile push switch (Panasonic EVQP-type).",
+      "category": "switch",
+      "subcategory": "tactile",
+      "tags": [
+        "switch",
+        "tactile",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "switch",
+        "tactile",
+        "push button",
+        "SMD"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.switch.tactile-switch-smd",
+        "path": "kicad-symbols/Switch.kicad_symdir/SW_Push.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.switch.sw-spst-evqp0",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.switch.sw-spst-evqp0",
+          "path": "kicad-footprints/Button_Switch_SMD.pretty/SW_SPST_EVQP0.kicad_mod",
+          "label": "SMD EVQP0",
+          "model": {
+            "id": "openpcb.core.3d.switch.sw-spst-evqp0",
+            "path": "kicad-packages3D/Button_Switch_SMD.3dshapes/SW_SPST_EVQP0.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.mechanical.testpoint",
+      "name": "Test Point",
+      "description": "Loop test point, 2.5 mm.",
+      "category": "mechanical",
+      "subcategory": "testpoint",
+      "tags": [
+        "mechanical",
+        "testpoint",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "test point",
+        "testpoint",
+        "probe"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.mechanical.testpoint",
+        "path": "kicad-symbols/Connector.kicad_symdir/TestPoint.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.mechanical.testpoint-loop-d2-5mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.mechanical.testpoint-loop-d2-5mm",
+          "path": "kicad-footprints/TestPoint.pretty/TestPoint_Loop_D2.50mm_Drill1.0mm.kicad_mod",
+          "label": "Loop D2.5mm",
+          "model": {
+            "id": "openpcb.core.3d.mechanical.testpoint-loop-d2-5mm",
+            "path": "kicad-packages3D/TestPoint.3dshapes/TestPoint_Loop_D2.50mm_Drill1.0mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

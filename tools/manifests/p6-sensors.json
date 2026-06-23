@@ -1,0 +1,120 @@
+{
+  "version": "0.2.0",
+  "_note": "P6 sensors. Wave-2 (KiCad 10 gaps): MPU-6050 (InvenSense_QFN-24 has no STEP), HC-SR04 (no dedicated symbol), DHT22 (absent).",
+  "components": [
+    {
+      "id": "openpcb.core.sensor.bme280",
+      "name": "BME280 Environmental Sensor",
+      "description": "Bosch BME280 temperature / humidity / pressure sensor (LGA-8).",
+      "category": "sensor",
+      "subcategory": "environmental",
+      "tags": ["sensor", "environmental", "i2c", "spi", "kicad-derived"],
+      "keywords": [
+        "BME280",
+        "humidity",
+        "pressure",
+        "temperature",
+        "environmental"
+      ],
+      "parameters": {
+        "measures": "temperature + humidity + pressure",
+        "interface": "I2C / SPI",
+        "supply": "1.7V-3.6V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.sensor.bme280",
+        "path": "kicad-symbols/Sensor.kicad_symdir/BME280.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.sensor.bme280-lga-8",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.sensor.bme280-lga-8",
+          "path": "kicad-footprints/Package_LGA.pretty/Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.kicad_mod",
+          "label": "LGA-8 2.5x2.5mm",
+          "model": {
+            "id": "openpcb.core.3d.sensor.bme280-lga-8",
+            "path": "kicad-packages3D/Package_LGA.3dshapes/Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" },
+            { "pinNumber": "7", "padNumber": "7" },
+            { "pinNumber": "8", "padNumber": "8" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.sensor.ds18b20",
+      "name": "DS18B20 Temperature Sensor",
+      "description": "Maxim DS18B20 1-Wire digital temperature sensor (TO-92).",
+      "category": "sensor",
+      "subcategory": "temperature",
+      "tags": ["sensor", "temperature", "1-wire", "to-92", "kicad-derived"],
+      "keywords": ["DS18B20", "temperature", "1-Wire", "OneWire"],
+      "parameters": {
+        "measures": "temperature",
+        "interface": "1-Wire",
+        "range": "-55C to +125C"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.sensor.ds18b20",
+        "path": "kicad-symbols/Sensor_Temperature.kicad_symdir/DS18B20.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.sensor.ldr",
+      "name": "LDR Photoresistor",
+      "description": "Light-dependent resistor (photoresistor), 5 mm.",
+      "category": "sensor",
+      "subcategory": "light",
+      "tags": ["sensor", "light", "photoresistor", "ldr", "kicad-derived"],
+      "keywords": ["LDR", "photoresistor", "photocell", "light sensor"],
+      "parameters": { "measures": "ambient light", "type": "photoresistor" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.sensor.ldr",
+        "path": "kicad-symbols/Device.kicad_symdir/R_Photo.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.sensor.ldr-5mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.sensor.ldr-5mm",
+          "path": "kicad-footprints/OptoDevice.pretty/R_LDR_5.0x4.1mm_P3mm_Vertical.kicad_mod",
+          "label": "LDR 5.0x4.1mm vertical",
+          "model": {
+            "id": "openpcb.core.3d.sensor.ldr-5mm",
+            "path": "kicad-packages3D/OptoDevice.3dshapes/R_LDR_5.0x4.1mm_P3mm_Vertical.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    }
+  ]
+}

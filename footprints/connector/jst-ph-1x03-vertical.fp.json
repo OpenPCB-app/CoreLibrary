@@ -1,0 +1,1512 @@
+{
+  "id": "openpcb.core.footprint.connector.jst-ph-1x03-vertical",
+  "uuid": "75932021-01e1-59b5-886a-da783c842986",
+  "version": "0.2.0",
+  "name": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.connector.jst-ph-1x03-vertical"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.kicad_mod",
+    "sourceLibrary": "Connector_JST",
+    "sourceItemName": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "sourceHash": "dd50eb4b509c1f7584aff9b58968d46cfac74ce253d4d5cf31c0565c3bf53f4c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_34a8e156dc2b2d78",
+    "fileName": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.kicad_mod",
+    "name": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "description": "JST PH series connector, B3B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)",
+    "mountType": "through_hole",
+    "padCount": 3,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "connector",
+      "jst",
+      "ph",
+      "vertical",
+      "through_hole"
+    ],
+    "sourceHash": "dd50eb4b509c1f7584aff9b58968d46cfac74ce253d4d5cf31c0565c3bf53f4c",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.2,
+          "heightMm": 1.75,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.208333,
+          "drillDiameterMm": 0.75,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "oval",
+          "centerMm": {
+            "x": 2,
+            "y": 0
+          },
+          "widthMm": 1.2,
+          "heightMm": 1.75,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.75,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "oval",
+          "centerMm": {
+            "x": 4,
+            "y": 0
+          },
+          "widthMm": 1.2,
+          "heightMm": 1.75,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.75,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.36,
+            "y": -2.11
+          },
+          "b": {
+            "x": -2.36,
+            "y": -0.86
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.06,
+            "y": -0.5
+          },
+          "b": {
+            "x": -1.45,
+            "y": -0.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.06,
+            "y": 0.8
+          },
+          "b": {
+            "x": -1.45,
+            "y": 0.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.45,
+            "y": -1.2
+          },
+          "b": {
+            "x": -1.45,
+            "y": 2.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.45,
+            "y": 2.3
+          },
+          "b": {
+            "x": 5.45,
+            "y": 2.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.11,
+            "y": -2.11
+          },
+          "b": {
+            "x": -2.36,
+            "y": -2.11
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.6,
+            "y": -2.01
+          },
+          "b": {
+            "x": -0.6,
+            "y": -1.81
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.3,
+            "y": -2.01
+          },
+          "b": {
+            "x": -0.6,
+            "y": -2.01
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.3,
+            "y": -1.91
+          },
+          "b": {
+            "x": -0.6,
+            "y": -1.91
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.3,
+            "y": -1.81
+          },
+          "b": {
+            "x": -0.3,
+            "y": -2.01
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.5,
+            "y": -1.81
+          },
+          "b": {
+            "x": 0.5,
+            "y": -1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.5,
+            "y": -1.2
+          },
+          "b": {
+            "x": -1.45,
+            "y": -1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.9,
+            "y": 1.8
+          },
+          "b": {
+            "x": 1.1,
+            "y": 1.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.9,
+            "y": 2.3
+          },
+          "b": {
+            "x": 0.9,
+            "y": 1.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1,
+            "y": 2.3
+          },
+          "b": {
+            "x": 1,
+            "y": 1.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.1,
+            "y": 1.8
+          },
+          "b": {
+            "x": 1.1,
+            "y": 2.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.9,
+            "y": 1.8
+          },
+          "b": {
+            "x": 3.1,
+            "y": 1.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.9,
+            "y": 2.3
+          },
+          "b": {
+            "x": 2.9,
+            "y": 1.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3,
+            "y": 2.3
+          },
+          "b": {
+            "x": 3,
+            "y": 1.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.1,
+            "y": 1.8
+          },
+          "b": {
+            "x": 3.1,
+            "y": 2.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.5,
+            "y": -1.2
+          },
+          "b": {
+            "x": 3.5,
+            "y": -1.81
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.45,
+            "y": -1.2
+          },
+          "b": {
+            "x": 3.5,
+            "y": -1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.45,
+            "y": 2.3
+          },
+          "b": {
+            "x": 5.45,
+            "y": -1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.06,
+            "y": -0.5
+          },
+          "b": {
+            "x": 5.45,
+            "y": -0.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.06,
+            "y": 0.8
+          },
+          "b": {
+            "x": 5.45,
+            "y": 0.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.36,
+            "y": -2.11
+          },
+          "b": {
+            "x": -2.36,
+            "y": -0.86
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.11,
+            "y": -2.11
+          },
+          "b": {
+            "x": -2.36,
+            "y": -2.11
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "rect",
+          "x": -2.06,
+          "y": -1.81,
+          "width": 8.12,
+          "height": 4.720000000000001,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -1.95,
+          "y": -1.7,
+          "width": 7.9,
+          "height": 4.5,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:2:1.5:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 2,
+            "y": 1.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:2:-2.9:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 2,
+            "y": -2.9
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:2:4:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+          "text": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+          "at": {
+            "x": 2,
+            "y": 4
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -2.42,
+        "minY": -2.17,
+        "maxX": 6.119999999999999,
+        "maxY": 2.9700000000000006
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+    "description": "JST PH series connector, B3B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)",
+    "tags": [
+      "connector",
+      "JST",
+      "PH",
+      "vertical"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "roundrect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.2,
+          "height": 1.75
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "roundrectRatio": 0.208333,
+        "drillDiameter": 0.75
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 2,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.2,
+          "height": 1.75
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.75
+      },
+      {
+        "number": "3",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 4,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.2,
+          "height": 1.75
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.75
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.36,
+            -2.11
+          ],
+          "end": [
+            -2.36,
+            -0.86
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.06,
+            -0.5
+          ],
+          "end": [
+            -1.45,
+            -0.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.06,
+            0.8
+          ],
+          "end": [
+            -1.45,
+            0.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.45,
+            -1.2
+          ],
+          "end": [
+            -1.45,
+            2.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.45,
+            2.3
+          ],
+          "end": [
+            5.45,
+            2.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.11,
+            -2.11
+          ],
+          "end": [
+            -2.36,
+            -2.11
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.6,
+            -2.01
+          ],
+          "end": [
+            -0.6,
+            -1.81
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.3,
+            -2.01
+          ],
+          "end": [
+            -0.6,
+            -2.01
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.3,
+            -1.91
+          ],
+          "end": [
+            -0.6,
+            -1.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.3,
+            -1.81
+          ],
+          "end": [
+            -0.3,
+            -2.01
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.5,
+            -1.81
+          ],
+          "end": [
+            0.5,
+            -1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.5,
+            -1.2
+          ],
+          "end": [
+            -1.45,
+            -1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.9,
+            1.8
+          ],
+          "end": [
+            1.1,
+            1.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.9,
+            2.3
+          ],
+          "end": [
+            0.9,
+            1.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1,
+            2.3
+          ],
+          "end": [
+            1,
+            1.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.1,
+            1.8
+          ],
+          "end": [
+            1.1,
+            2.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.9,
+            1.8
+          ],
+          "end": [
+            3.1,
+            1.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.9,
+            2.3
+          ],
+          "end": [
+            2.9,
+            1.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3,
+            2.3
+          ],
+          "end": [
+            3,
+            1.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.1,
+            1.8
+          ],
+          "end": [
+            3.1,
+            2.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.5,
+            -1.2
+          ],
+          "end": [
+            3.5,
+            -1.81
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.45,
+            -1.2
+          ],
+          "end": [
+            3.5,
+            -1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.45,
+            2.3
+          ],
+          "end": [
+            5.45,
+            -1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.06,
+            -0.5
+          ],
+          "end": [
+            5.45,
+            -0.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.06,
+            0.8
+          ],
+          "end": [
+            5.45,
+            0.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.36,
+            -2.11
+          ],
+          "end": [
+            -2.36,
+            -0.86
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.11,
+            -2.11
+          ],
+          "end": [
+            -2.36,
+            -2.11
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.06,
+            -1.81
+          ],
+          "end": [
+            6.06,
+            2.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.45,
+            -2.2
+          ],
+          "end": [
+            6.45,
+            3.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.95,
+            -1.7
+          ],
+          "end": [
+            5.95,
+            2.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2,
+            1.5,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 2,
+            "y": 1.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            2,
+            -2.9,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 2,
+            "y": -2.9
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2,
+            4,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical"
+          ]
+        },
+        "text": {
+          "content": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical",
+          "position": {
+            "x": 2,
+            "y": 4
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.step",
+        "resolvedFileName": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"JST PH series connector, B3B-PH-K (http://www.jst-mfg.com/product/pdf/eng/ePH.pdf)\")\n\t(tags \"connector JST PH vertical\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 2 -2.9 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical\"\n\t\t(at 2 4 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"connector/JST\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.36 -2.11)\n\t\t(end -2.36 -0.86)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.06 -0.5)\n\t\t(end -1.45 -0.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.06 0.8)\n\t\t(end -1.45 0.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -1.45 -1.2)\n\t\t(end -1.45 2.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -1.45 2.3)\n\t\t(end 5.45 2.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -1.11 -2.11)\n\t\t(end -2.36 -2.11)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.6 -2.01)\n\t\t(end -0.6 -1.81)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.3 -2.01)\n\t\t(end -0.6 -2.01)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.3 -1.91)\n\t\t(end -0.6 -1.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.3 -1.81)\n\t\t(end -0.3 -2.01)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 0.5 -1.81)\n\t\t(end 0.5 -1.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 0.5 -1.2)\n\t\t(end -1.45 -1.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 0.9 1.8)\n\t\t(end 1.1 1.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 0.9 2.3)\n\t\t(end 0.9 1.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 1 2.3)\n\t\t(end 1 1.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 1.1 1.8)\n\t\t(end 1.1 2.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.9 1.8)\n\t\t(end 3.1 1.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.9 2.3)\n\t\t(end 2.9 1.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3 2.3)\n\t\t(end 3 1.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.1 1.8)\n\t\t(end 3.1 2.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.5 -1.2)\n\t\t(end 3.5 -1.81)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.45 -1.2)\n\t\t(end 3.5 -1.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.45 2.3)\n\t\t(end 5.45 -1.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.06 -0.5)\n\t\t(end 5.45 -0.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.06 0.8)\n\t\t(end 5.45 0.8)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -2.06 -1.81)\n\t\t(end 6.06 2.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -2.45 -2.2)\n\t\t(end 6.45 3.3)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -2.36 -2.11)\n\t\t(end -2.36 -0.86)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start -1.11 -2.11)\n\t\t(end -2.36 -2.11)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_rect\n\t\t(start -1.95 -1.7)\n\t\t(end 5.95 2.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 2 1.5 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole roundrect\n\t\t(at 0 0)\n\t\t(size 1.2 1.75)\n\t\t(drill 0.75)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(roundrect_rratio 0.208333)\n\t)\n\t(pad \"2\" thru_hole oval\n\t\t(at 2 0)\n\t\t(size 1.2 1.75)\n\t\t(drill 0.75)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"3\" thru_hole oval\n\t\t(at 4 0)\n\t\t(size 1.2 1.75)\n\t\t(drill 0.75)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Connector_JST.3dshapes/JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical.kicad_mod"
+}

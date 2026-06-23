@@ -1,0 +1,410 @@
+{
+  "id": "openpcb.core.symbol.switch.tactile-switch-tht",
+  "uuid": "82f82946-daae-5638-8311-da8bde184b1b",
+  "version": "0.2.0",
+  "name": "Tactile Switch (THT)",
+  "referencePrefix": "SW",
+  "description": "Push button switch, generic, two pins",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "SW_Push.kicad_sym",
+    "sourceLibrary": "Switch",
+    "sourceItemName": "SW_Push",
+    "sourceHash": "e102ad6ff38b183535fb7c2bebd7ec9c99f43948a0abd0037cac51cfa65afb67",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "SW",
+      "Value": "SW_Push",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Push button switch, generic, two pins",
+      "ki_keywords": "switch normally-open pushbutton push-button"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "SW_Push.kicad_sym",
+        "sourceItemName": "SW_Push",
+        "sha256": "650beb4ee58eda52928926b1eb0ad8b11dedaacc9ad1334bb4d3a920c38c9814"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_aa5738692900bc56",
+    "name": "SW_Push",
+    "referencePrefix": "SW",
+    "description": "Push button switch, generic, two pins",
+    "sourceHash": "e102ad6ff38b183535fb7c2bebd7ec9c99f43948a0abd0037cac51cfa65afb67",
+    "pins": [
+      {
+        "originPinKey": "u0:1",
+        "number": "1",
+        "name": "1",
+        "localPosition": {
+          "x": -5.08,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 0
+      },
+      {
+        "originPinKey": "u0:2",
+        "number": "2",
+        "name": "2",
+        "localPosition": {
+          "x": 5.08,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 0
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "SW_Push",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": -2.032,
+            "y": 0
+          },
+          "radiusMm": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": 1.27
+            },
+            {
+              "x": 0,
+              "y": 3.048
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.032,
+            "y": 0
+          },
+          "radiusMm": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": 1.27
+            },
+            {
+              "x": -2.54,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u0:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 0,
+          "anchor": {
+            "x": -5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u0:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 0,
+          "anchor": {
+            "x": 5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "SW",
+          "at": {
+            "x": 0,
+            "y": 4.318
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "SW_Push",
+          "at": {
+            "x": 0,
+            "y": -1.778
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.08,
+        "minY": -3.048,
+        "maxX": 5.08,
+        "maxY": 5.587999999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "SW_Push",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 0,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "2",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 5.08,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 0,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "SW",
+      "Value": "SW_Push",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Push button switch, generic, two pins",
+      "ki_keywords": "switch normally-open pushbutton push-button"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -2.032,
+            0
+          ],
+          [
+            "radius",
+            0.508
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              1.27
+            ],
+            [
+              "xy",
+              0,
+              3.048
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.032,
+            0
+          ],
+          [
+            "radius",
+            0.508
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              1.27
+            ],
+            [
+              "xy",
+              -2.54,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol SW_Push (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference SW (at 1.27 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value SW_Push (at 0 -1.524 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 5.08 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 5.08 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Push button switch, generic, two pins\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"switch normally-open pushbutton push-button\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol SW_Push_0_1 (circle (center -2.032 0) (radius 0.508) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 1.27) (xy 0 3.048)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.032 0) (radius 0.508) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 1.27) (xy -2.54 1.27)) (stroke (width 0) (type default)) (fill (type none))) (pin passive line (at -5.08 0 0) (length 2.54) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 5.08 0 180) (length 2.54) (name 2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

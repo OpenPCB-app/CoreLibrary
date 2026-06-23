@@ -1,0 +1,127 @@
+{
+  "id": "openpcb.core.ic.attiny85",
+  "uuid": "044af1c6-8647-5d06-912e-cf776a1e7b99",
+  "version": "0.2.0",
+  "name": "ATtiny85",
+  "description": "ATtiny85 8-bit AVR microcontroller (DIP-8 and SOIC-8).",
+  "category": "ic",
+  "subcategory": "mcu",
+  "tags": [
+    "ic",
+    "mcu",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "ATtiny85",
+    "AVR",
+    "8-bit MCU"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf",
+  "parameters": {
+    "core": "AVR 8-bit",
+    "flash": "8KB",
+    "ram": "512B",
+    "io": "6 GPIO"
+  },
+  "symbol": "openpcb.core.symbol.ic.attiny85",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8 3.9x4.9mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "ATtiny85-20P.kicad_sym",
+    "sourceLibrary": "MCU_Microchip_ATtiny",
+    "sourceItemName": "ATtiny85",
+    "sourceHash": "ba7a37867f55e0e0e3a4df6e9244401ec1a4c1dc115bdfe17d644e1ece9884d0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

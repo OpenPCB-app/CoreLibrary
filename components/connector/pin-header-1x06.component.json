@@ -1,0 +1,75 @@
+{
+  "id": "openpcb.core.connector.pin-header-1x06",
+  "uuid": "1ce72269-f831-5516-a9b6-a74a2d6b3467",
+  "version": "0.2.0",
+  "name": "Pin Header 1x06 2.54mm",
+  "description": "1x06 single-row 2.54 mm vertical pin header.",
+  "category": "connector",
+  "subcategory": "header",
+  "tags": [
+    "connector",
+    "header",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "connector",
+    "header",
+    "2.54mm",
+    "1x06"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.connector.pin-header-1x06",
+  "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x06-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.pin-header-1x06-vertical",
+      "label": "1x06 vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x06.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Pin Header 1x06 2.54mm",
+    "sourceHash": "6d11d62487a1e2d3c46dbc4e68bb9881a6ac17738eea7305a101d994bfe29fcf",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

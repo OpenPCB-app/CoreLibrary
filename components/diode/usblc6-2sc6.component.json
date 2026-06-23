@@ -1,0 +1,80 @@
+{
+  "id": "openpcb.core.diode.usblc6-2sc6",
+  "uuid": "3ec99ee1-9b2e-57ff-8069-4708c7d97a43",
+  "version": "0.2.0",
+  "name": "USBLC6-2SC6 USB ESD Protection",
+  "description": "USBLC6-2SC6 low-capacitance TVS diode array for USB 2.0 ESD protection (SOT-23-6).",
+  "category": "diode",
+  "subcategory": "esd-array",
+  "tags": [
+    "diode",
+    "tvs",
+    "esd",
+    "usb",
+    "protection",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "USBLC6",
+    "USBLC6-2SC6",
+    "ESD",
+    "USB protection",
+    "TVS array"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.st.com/resource/en/datasheet/usblc6-2.pdf",
+  "symbol": "openpcb.core.symbol.diode.usblc6-2sc6",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23-6",
+      "label": "SOT-23-6",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "USBLC6-2SC6.kicad_sym",
+    "sourceLibrary": "Power_Protection",
+    "sourceItemName": "USBLC6-2SC6 USB ESD Protection",
+    "sourceHash": "c7f5ef2505536c1868be8e18a6c7ff73031680d393fcf51d45d4eba8f460a288",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

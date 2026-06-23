@@ -1,0 +1,89 @@
+{
+  "id": "openpcb.core.diode.1n4148",
+  "uuid": "c34a88cf-ec82-5247-81ae-b65db085f28e",
+  "version": "0.2.0",
+  "name": "1N4148 Switching Diode",
+  "description": "1N4148 high-speed small-signal switching diode.",
+  "category": "diode",
+  "subcategory": "small-signal",
+  "tags": [
+    "diode",
+    "switching",
+    "small-signal",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "1N4148",
+    "switching diode",
+    "small signal",
+    "100V"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
+  "symbol": "openpcb.core.symbol.diode.1n4148",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-sod-123",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sod-123",
+      "label": "SOD-123",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sod-323",
+      "label": "SOD-323",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.diode.d-do-35",
+      "label": "DO-35 (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "1N4148.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "1N4148 Switching Diode",
+    "sourceHash": "d7a168cd80a5e30017f374294326b282c0a67f27ba1b6af08bccc33c034c9a8a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

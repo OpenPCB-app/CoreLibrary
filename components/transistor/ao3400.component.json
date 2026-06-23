@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.transistor.ao3400",
+  "uuid": "f1de093a-5652-5e50-a787-32bb260b8f44",
+  "version": "0.2.0",
+  "name": "AO3400 N-Channel MOSFET",
+  "description": "AO3400 30 V N-channel power MOSFET in SOT-23 (G-S-D).",
+  "category": "transistor",
+  "subcategory": "mosfet-n",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "nmos",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "AO3400",
+    "AO3400A",
+    "NMOS",
+    "power"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.aosmd.com/pdfs/datasheet/AO3400A.pdf",
+  "symbol": "openpcb.core.symbol.transistor.ao3400",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "AO3400A.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "AO3400 N-Channel MOSFET",
+    "sourceHash": "b35604e70c5320a51dde1a992ae272ded20b0515a218d2f3080dbd6e9409a8c6",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

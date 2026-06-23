@@ -1,0 +1,71 @@
+{
+  "id": "openpcb.core.sensor.ds18b20",
+  "uuid": "be24ec53-a815-5356-9c5d-8f570e4df576",
+  "version": "0.2.0",
+  "name": "DS18B20 Temperature Sensor",
+  "description": "Maxim DS18B20 1-Wire digital temperature sensor (TO-92).",
+  "category": "sensor",
+  "subcategory": "temperature",
+  "tags": [
+    "sensor",
+    "temperature",
+    "1-wire",
+    "to-92",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "DS18B20",
+    "temperature",
+    "1-Wire",
+    "OneWire"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf",
+  "parameters": {
+    "measures": "temperature",
+    "interface": "1-Wire",
+    "range": "-55C to +125C"
+  },
+  "symbol": "openpcb.core.symbol.sensor.ds18b20",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "DS18B20.kicad_sym",
+    "sourceLibrary": "Sensor_Temperature",
+    "sourceItemName": "DS18B20 Temperature Sensor",
+    "sourceHash": "1a7984835521ce46bcd4c3ab4fdc1d38b403460151e7576a15976a2d0123d3fc",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:22:16.772Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

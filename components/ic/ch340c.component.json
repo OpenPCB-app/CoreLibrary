@@ -1,0 +1,120 @@
+{
+  "id": "openpcb.core.ic.ch340c",
+  "uuid": "b167a7f0-5706-5808-88bd-9418760d2169",
+  "version": "0.2.0",
+  "name": "CH340C USB-UART",
+  "description": "CH340C USB-to-serial UART bridge with internal oscillator (SOIC-16).",
+  "category": "ic",
+  "subcategory": "interface",
+  "tags": [
+    "ic",
+    "interface",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "CH340C",
+    "USB to UART",
+    "USB serial",
+    "bridge"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://datasheet.lcsc.com/szlcsc/Jiangsu-Qin-Heng-CH340C_C84681.pdf",
+  "parameters": {
+    "function": "USB-UART bridge",
+    "interface": "USB 2.0 FS"
+  },
+  "symbol": "openpcb.core.symbol.ic.ch340c",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "label": "SOIC-16 3.9x9.9mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "CH340C.kicad_sym",
+    "sourceLibrary": "Interface_USB",
+    "sourceItemName": "CH340C USB-UART",
+    "sourceHash": "cc339247e1f1d5011eef65968e99c2178b4d1377b708e6d0d4f48d72a0d33db2",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

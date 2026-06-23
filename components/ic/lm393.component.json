@@ -1,0 +1,127 @@
+{
+  "id": "openpcb.core.ic.lm393",
+  "uuid": "36c204ae-de6c-5eec-91f4-83632aaa613d",
+  "version": "0.2.0",
+  "name": "LM393 Dual Comparator",
+  "description": "LM393 dual differential comparator with SOIC-8 and DIP-8 variants.",
+  "category": "ic",
+  "subcategory": "comparator",
+  "tags": [
+    "ic",
+    "comparator",
+    "lm393",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM393",
+    "dual comparator",
+    "comparator"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm393.pdf",
+  "parameters": {
+    "channels": "2",
+    "supply": "2V-36V",
+    "type": "open-collector"
+  },
+  "symbol": "openpcb.core.symbol.ic.lm393",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8 3.9x4.9mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM393.kicad_sym",
+    "sourceLibrary": "Comparator",
+    "sourceItemName": "LM393 Dual Comparator",
+    "sourceHash": "0cdde2a0ed0d951dd7f106e447ce195bc55683946025ebf524289736ffaa21f8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:03:11.984Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

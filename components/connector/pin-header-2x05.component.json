@@ -1,0 +1,91 @@
+{
+  "id": "openpcb.core.connector.pin-header-2x05",
+  "uuid": "c225aae6-c18d-5027-af13-ff0cbf08bfe2",
+  "version": "0.2.0",
+  "name": "Pin Header 2x05 2.54mm",
+  "description": "Ten-pin dual-row 2.54 mm vertical pin header.",
+  "category": "connector",
+  "subcategory": "header",
+  "tags": [
+    "connector",
+    "header",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "connector",
+    "header",
+    "2.54mm",
+    "2x05"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.connector.pin-header-2x05",
+  "defaultFootprint": "openpcb.core.footprint.connector.pin-header-2x05-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.pin-header-2x05-vertical",
+      "label": "2x05 vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_02x05_Odd_Even.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Pin Header 2x05 2.54mm",
+    "sourceHash": "5f8a2570b4515eac903b69707ffd81b7b43aa66b4ec06405b6e8b7cd944168ca",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

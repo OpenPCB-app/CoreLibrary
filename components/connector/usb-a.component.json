@@ -1,0 +1,71 @@
+{
+  "id": "openpcb.core.connector.usb-a",
+  "uuid": "80c68f3d-ca23-5e53-a622-f37da4ff7a04",
+  "version": "0.2.0",
+  "name": "USB Type-A Receptacle",
+  "description": "USB Type-A horizontal through-hole receptacle.",
+  "category": "connector",
+  "subcategory": "usb",
+  "tags": [
+    "connector",
+    "usb",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "USB",
+    "USB-A",
+    "Type-A",
+    "receptacle"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.connector.usb-a",
+  "defaultFootprint": "openpcb.core.footprint.connector.usb-a-molex-67643",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.usb-a-molex-67643",
+      "label": "USB-A Molex 67643 horizontal",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "SH",
+          "padNumber": "SH"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "USB_A.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "USB Type-A Receptacle",
+    "sourceHash": "d0031727ec461c576c316ab13f1a890946568c01843ffc1f6ff71702ce71756d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "openpcb.core.sensor.bme280",
+  "uuid": "f528e0be-e677-5707-9fbd-678b0815b811",
+  "version": "0.2.0",
+  "name": "BME280 Environmental Sensor",
+  "description": "Bosch BME280 temperature / humidity / pressure sensor (LGA-8).",
+  "category": "sensor",
+  "subcategory": "environmental",
+  "tags": [
+    "sensor",
+    "environmental",
+    "i2c",
+    "spi",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BME280",
+    "humidity",
+    "pressure",
+    "temperature",
+    "environmental"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bme280-ds002.pdf",
+  "parameters": {
+    "measures": "temperature + humidity + pressure",
+    "interface": "I2C / SPI",
+    "supply": "1.7V-3.6V"
+  },
+  "symbol": "openpcb.core.symbol.sensor.bme280",
+  "defaultFootprint": "openpcb.core.footprint.sensor.bme280-lga-8",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.sensor.bme280-lga-8",
+      "label": "LGA-8 2.5x2.5mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BME280.kicad_sym",
+    "sourceLibrary": "Sensor",
+    "sourceItemName": "BME280 Environmental Sensor",
+    "sourceHash": "d5953553c6c8d09907a543231928e4b60041bd6bbc8fc94ede137781f7418afa",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:22:16.772Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

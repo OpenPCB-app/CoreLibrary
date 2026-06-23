@@ -1,0 +1,310 @@
+{
+  "version": "0.2.0",
+  "_note": "P3 power/analog. DEFERRED (3D orientation-gate calibration needed for vertical TO-220 — long leads >6mm below board + body-behind-pads offset trip the gate): LM7805, LM317, LM2596 (TO-220). Wave-2 (absent in KiCad 10): MP1584, MP2307.",
+  "components": [
+    {
+      "id": "openpcb.core.power.ams1117-5v0",
+      "name": "AMS1117-5.0 LDO Regulator",
+      "description": "AMS1117 fixed 5.0 V low-dropout linear regulator in SOT-223.",
+      "category": "power",
+      "subcategory": "regulator-linear-ldo",
+      "tags": ["power", "regulator", "ldo", "5v", "sot-223", "kicad-derived"],
+      "keywords": ["AMS1117", "AMS1117-5.0", "LDO", "5V", "linear regulator"],
+      "parameters": {
+        "vout": "5.0V",
+        "iout": "1A",
+        "dropout": "1.3V",
+        "topology": "linear-ldo"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.ams1117-5v0",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/AMS1117-5.0.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-223",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-223",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-223.kicad_mod",
+          "label": "SOT-223",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-223",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "2", "padNumber": "4" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.ams1117-adj",
+      "name": "AMS1117-ADJ LDO Regulator",
+      "description": "AMS1117 adjustable low-dropout linear regulator in SOT-223.",
+      "category": "power",
+      "subcategory": "regulator-linear-ldo",
+      "tags": [
+        "power",
+        "regulator",
+        "ldo",
+        "adjustable",
+        "sot-223",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "AMS1117",
+        "AMS1117-ADJ",
+        "LDO",
+        "adjustable",
+        "linear regulator"
+      ],
+      "parameters": {
+        "vout": "1.25V-12V (adjustable)",
+        "iout": "1A",
+        "dropout": "1.3V",
+        "topology": "linear-ldo"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.ams1117-adj",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/AMS1117.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-223",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-223",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-223.kicad_mod",
+          "label": "SOT-223",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-223",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "2", "padNumber": "4" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.mt3608",
+      "name": "MT3608 Boost Regulator",
+      "description": "MT3608 high-efficiency step-up (boost) switching regulator in SOT-23-6.",
+      "category": "power",
+      "subcategory": "regulator-switching-boost",
+      "tags": [
+        "power",
+        "regulator",
+        "switching",
+        "boost",
+        "sot-23-6",
+        "kicad-derived"
+      ],
+      "keywords": ["MT3608", "boost", "step-up", "switching regulator"],
+      "parameters": {
+        "vout": "up to 28V (adjustable)",
+        "iout": "2A switch",
+        "topology": "boost"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.mt3608",
+        "path": "kicad-symbols/Regulator_Switching.kicad_symdir/MT3608.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23-6",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod",
+          "label": "SOT-23-6",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23-6",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.tl431",
+      "name": "TL431 Voltage Reference",
+      "description": "TL431 adjustable precision shunt voltage reference in SOT-23.",
+      "category": "power",
+      "subcategory": "voltage-reference",
+      "tags": ["power", "reference", "shunt", "sot-23", "kicad-derived"],
+      "keywords": ["TL431", "voltage reference", "shunt regulator", "2.5V"],
+      "parameters": {
+        "vref": "2.5V",
+        "vka": "2.5V-36V",
+        "topology": "shunt-reference"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.tl431",
+        "path": "kicad-symbols/Reference_Voltage.kicad_symdir/TL431DBZ.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.lm324",
+      "name": "LM324 Quad Op-Amp",
+      "description": "LM324 quad operational amplifier with SOIC-14 and DIP-14 variants.",
+      "category": "ic",
+      "subcategory": "op-amp",
+      "tags": ["ic", "op-amp", "amplifier", "lm324", "kicad-derived"],
+      "keywords": ["LM324", "quad op-amp", "operational amplifier"],
+      "parameters": {
+        "channels": "4",
+        "gbw": "1.2MHz",
+        "supply": "3V-32V",
+        "type": "general-purpose"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.lm324",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/LM324.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14 3.9x8.7mm P1.27mm",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" },
+            { "pinNumber": "7", "padNumber": "7" },
+            { "pinNumber": "8", "padNumber": "8" },
+            { "pinNumber": "9", "padNumber": "9" },
+            { "pinNumber": "10", "padNumber": "10" },
+            { "pinNumber": "11", "padNumber": "11" },
+            { "pinNumber": "12", "padNumber": "12" },
+            { "pinNumber": "13", "padNumber": "13" },
+            { "pinNumber": "14", "padNumber": "14" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-14-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-14_W7.62mm.kicad_mod",
+          "label": "DIP-14 W7.62mm",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-14-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-14_W7.62mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" },
+            { "pinNumber": "7", "padNumber": "7" },
+            { "pinNumber": "8", "padNumber": "8" },
+            { "pinNumber": "9", "padNumber": "9" },
+            { "pinNumber": "10", "padNumber": "10" },
+            { "pinNumber": "11", "padNumber": "11" },
+            { "pinNumber": "12", "padNumber": "12" },
+            { "pinNumber": "13", "padNumber": "13" },
+            { "pinNumber": "14", "padNumber": "14" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.lm393",
+      "name": "LM393 Dual Comparator",
+      "description": "LM393 dual differential comparator with SOIC-8 and DIP-8 variants.",
+      "category": "ic",
+      "subcategory": "comparator",
+      "tags": ["ic", "comparator", "lm393", "kicad-derived"],
+      "keywords": ["LM393", "dual comparator", "comparator"],
+      "parameters": {
+        "channels": "2",
+        "supply": "2V-36V",
+        "type": "open-collector"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.lm393",
+        "path": "kicad-symbols/Comparator.kicad_symdir/LM393.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8 3.9x4.9mm P1.27mm",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" },
+            { "pinNumber": "7", "padNumber": "7" },
+            { "pinNumber": "8", "padNumber": "8" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-8_W7.62mm.kicad_mod",
+          "label": "DIP-8 W7.62mm",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-8-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-8_W7.62mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" },
+            { "pinNumber": "7", "padNumber": "7" },
+            { "pinNumber": "8", "padNumber": "8" }
+          ]
+        }
+      ]
+    }
+  ]
+}

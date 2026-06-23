@@ -1,7 +1,7 @@
 {
   "id": "openpcb.core.3d.package.sot-23",
   "uuid": "d978656a-ce77-5dd8-845e-ff28cf0f2fbf",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "name": "SOT-23 STEP model",
   "formats": {
     "step": {
@@ -21,7 +21,8 @@
     "sourceItemName": "SOT-23.step",
     "sourceHash": "dd5d1711204e1d8d26cd11490923bd84340820baa69538c385a4300ec2539bc0",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:03:11.984Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "offsetMm": {
@@ -34,19 +35,9 @@
     "y": 0,
     "z": 0
   },
-  "boundsMm": {
-    "x": 2.5,
-    "y": 3,
-    "z": 1.2
-  },
-  "boundsMinMm": {
-    "x": -1.25,
-    "y": -1.5,
-    "z": 0
-  },
-  "boundsMaxMm": {
-    "x": 1.25,
-    "y": 1.5,
-    "z": 1.2
+  "scaleMm": {
+    "x": 1,
+    "y": 1,
+    "z": 1
   }
 }

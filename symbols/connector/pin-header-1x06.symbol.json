@@ -1,0 +1,786 @@
+{
+  "id": "openpcb.core.symbol.connector.pin-header-1x06",
+  "uuid": "e1f91f6f-9e84-507b-aaf3-fc91892211aa",
+  "version": "0.2.0",
+  "name": "Pin Header 1x06 2.54mm",
+  "referencePrefix": "J",
+  "description": "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Conn_01x06.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Conn_01x06",
+    "sourceHash": "7ce8cd13e0cd896985e860c619cca8845582323a35cf0b2c932461051a6d3e20",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "J",
+      "Value": "Conn_01x06",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Conn_01x06.kicad_sym",
+        "sourceItemName": "Conn_01x06",
+        "sha256": "fb6e672a9de615bc9825439ebde56a262e2e82ab22eec217f6b4dbf2604d950e"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_30322494abb26653",
+    "name": "Conn_01x06",
+    "referencePrefix": "J",
+    "description": "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",
+    "sourceHash": "7ce8cd13e0cd896985e860c619cca8845582323a35cf0b2c932461051a6d3e20",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "Pin_1",
+        "localPosition": {
+          "x": -5.08,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "Pin_2",
+        "localPosition": {
+          "x": -5.08,
+          "y": 2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "Pin_3",
+        "localPosition": {
+          "x": -5.08,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "Pin_4",
+        "localPosition": {
+          "x": -5.08,
+          "y": -2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "Pin_5",
+        "localPosition": {
+          "x": -5.08,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "Pin_6",
+        "localPosition": {
+          "x": -5.08,
+          "y": -7.62
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Conn_01x06",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -1.27,
+          "y": -8.89,
+          "width": 2.54,
+          "height": 15.24,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "rect",
+          "x": -1.27,
+          "y": 4.953,
+          "width": 1.27,
+          "height": 0.25399999999999956,
+          "fill": "none",
+          "strokeWidthMm": 0.1524
+        },
+        {
+          "kind": "rect",
+          "x": -1.27,
+          "y": 2.413,
+          "width": 1.27,
+          "height": 0.254,
+          "fill": "none",
+          "strokeWidthMm": 0.1524
+        },
+        {
+          "kind": "rect",
+          "x": -1.27,
+          "y": -0.127,
+          "width": 1.27,
+          "height": 0.254,
+          "fill": "none",
+          "strokeWidthMm": 0.1524
+        },
+        {
+          "kind": "rect",
+          "x": -1.27,
+          "y": -2.667,
+          "width": 1.27,
+          "height": 0.254,
+          "fill": "none",
+          "strokeWidthMm": 0.1524
+        },
+        {
+          "kind": "rect",
+          "x": -1.27,
+          "y": -5.207,
+          "width": 1.27,
+          "height": 0.25399999999999956,
+          "fill": "none",
+          "strokeWidthMm": 0.1524
+        },
+        {
+          "kind": "rect",
+          "x": -1.27,
+          "y": -7.747,
+          "width": 1.27,
+          "height": 0.25399999999999956,
+          "fill": "none",
+          "strokeWidthMm": 0.1524
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "",
+          "number": "4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "",
+          "number": "5",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "",
+          "number": "6",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": -7.62
+          },
+          "rotationDeg": 0
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -3.175,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -3.175,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -3.175,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -3.175,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -3.175,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -3.175,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "J",
+          "at": {
+            "x": -1.8415,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Conn_01x06",
+          "at": {
+            "x": -1.8415,
+            "y": -10.287
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.778499999999999,
+        "minY": -11.556999999999999,
+        "maxX": 2.0954999999999995,
+        "maxY": 9.398
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Conn_01x06",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "Pin_1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 5.08
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Pin_2",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 2.54
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Pin_3",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Pin_4",
+        "number": "4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": -2.54
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Pin_5",
+        "number": "5",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": -5.08
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Pin_6",
+        "number": "6",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": -7.62
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "J",
+      "Value": "Conn_01x06",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)",
+      "ki_keywords": "connector",
+      "ki_fp_filters": "Connector*:*_1x??_*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.27,
+            6.35
+          ],
+          [
+            "end",
+            1.27,
+            -8.89
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.27,
+            5.207
+          ],
+          [
+            "end",
+            0,
+            4.953
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.1524
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.27,
+            2.667
+          ],
+          [
+            "end",
+            0,
+            2.413
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.1524
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.27,
+            0.127
+          ],
+          [
+            "end",
+            0,
+            -0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.1524
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.27,
+            -2.413
+          ],
+          [
+            "end",
+            0,
+            -2.667
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.1524
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.27,
+            -4.953
+          ],
+          [
+            "end",
+            0,
+            -5.207
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.1524
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.27,
+            -7.493
+          ],
+          [
+            "end",
+            0,
+            -7.747
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.1524
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Conn_01x06 (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference J (at 0 7.62 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value Conn_01x06 (at 0 -10.16 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords connector (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters Connector*:*_1x??_* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Conn_01x06_1_1 (rectangle (start -1.27 6.35) (end 1.27 -8.89) (stroke (width 0.254) (type default)) (fill (type background))) (rectangle (start -1.27 5.207) (end 0 4.953) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 2.667) (end 0 2.413) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 0.127) (end 0 -0.127) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -2.413) (end 0 -2.667) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -4.953) (end 0 -5.207) (stroke (width 0.1524) (type default)) (fill (type none))) (rectangle (start -1.27 -7.493) (end 0 -7.747) (stroke (width 0.1524) (type default)) (fill (type none))) (pin passive line (at -5.08 5.08 0) (length 3.81) (name Pin_1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 2.54 0) (length 3.81) (name Pin_2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 0 0) (length 3.81) (name Pin_3 (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -2.54 0) (length 3.81) (name Pin_4 (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 0) (length 3.81) (name Pin_5 (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -7.62 0) (length 3.81) (name Pin_6 (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

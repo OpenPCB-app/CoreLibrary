@@ -1,0 +1,486 @@
+{
+  "id": "openpcb.core.symbol.diode.tvs",
+  "uuid": "9deba41e-053b-5a76-9598-11066fb4d803",
+  "version": "0.2.0",
+  "name": "TVS Diode",
+  "referencePrefix": "D",
+  "description": "Bidirectional transient-voltage-suppression diode, filled shape",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "D_TVS_Filled.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "D_TVS_Filled",
+    "sourceHash": "5f7d407e2f33f2af1a760ac9eb0418a01de30a8763de78f074afcebd9d8b2d39",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "D",
+      "Value": "D_TVS_Filled",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Bidirectional transient-voltage-suppression diode, filled shape",
+      "ki_keywords": "diode TVS thyrector",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "D_TVS_Filled.kicad_sym",
+        "sourceItemName": "D_TVS_Filled",
+        "sha256": "939dc29102ed6535f3f5080ae3dbc18f8c7f093cc9c55f56afb61856e3125b18"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_f25d2d19f22dfbd9",
+    "name": "D_TVS_Filled",
+    "referencePrefix": "D",
+    "description": "Bidirectional transient-voltage-suppression diode, filled shape",
+    "sourceHash": "5f7d407e2f33f2af1a760ac9eb0418a01de30a8763de78f074afcebd9d8b2d39",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "A1",
+        "localPosition": {
+          "x": -3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "A2",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "D_TVS_Filled",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": -1.27
+            },
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": -2.54,
+              "y": 1.27
+            },
+            {
+              "x": -2.54,
+              "y": -1.27
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.508,
+              "y": 1.27
+            },
+            {
+              "x": 0,
+              "y": 1.27
+            },
+            {
+              "x": 0,
+              "y": -1.27
+            },
+            {
+              "x": -0.508,
+              "y": -1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 0
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": 1.27
+            },
+            {
+              "x": 2.54,
+              "y": -1.27
+            },
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 2.54,
+              "y": 1.27
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 1.27,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "D",
+          "at": {
+            "x": 0,
+            "y": 2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "D_TVS_Filled",
+          "at": {
+            "x": 0,
+            "y": -2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.7244,
+        "minY": -3.937,
+        "maxX": 4.7244,
+        "maxY": 3.937
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "D_TVS_Filled",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "A1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "A2",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "D",
+      "Value": "D_TVS_Filled",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Bidirectional transient-voltage-suppression diode, filled shape",
+      "ki_keywords": "diode TVS thyrector",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              -1.27
+            ],
+            [
+              "xy",
+              0,
+              0
+            ],
+            [
+              "xy",
+              -2.54,
+              1.27
+            ],
+            [
+              "xy",
+              -2.54,
+              -1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.508,
+              1.27
+            ],
+            [
+              "xy",
+              0,
+              1.27
+            ],
+            [
+              "xy",
+              0,
+              -1.27
+            ],
+            [
+              "xy",
+              -0.508,
+              -1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              0
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              1.27
+            ],
+            [
+              "xy",
+              2.54,
+              -1.27
+            ],
+            [
+              "xy",
+              0,
+              0
+            ],
+            [
+              "xy",
+              2.54,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol D_TVS_Filled (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference D (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value D_TVS_Filled (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Bidirectional transient-voltage-suppression diode, filled shape\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"diode TVS thyrector\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"TO-???* *_Diode_* *SingleDiode* D_*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol D_TVS_Filled_0_1 (polyline (pts (xy -2.54 -1.27) (xy 0 0) (xy -2.54 1.27) (xy -2.54 -1.27)) (stroke (width 0.254) (type default)) (fill (type outline))) (polyline (pts (xy 0.508 1.27) (xy 0 1.27) (xy 0 -1.27) (xy -0.508 -1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 1.27) (xy 2.54 -1.27) (xy 0 0) (xy 2.54 1.27)) (stroke (width 0.254) (type default)) (fill (type outline)))) (symbol D_TVS_Filled_1_1 (pin passive line (at -3.81 0 0) (length 2.54) (name A1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 2.54) (name A2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

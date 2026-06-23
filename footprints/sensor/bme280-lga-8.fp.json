@@ -1,0 +1,1145 @@
+{
+  "id": "openpcb.core.footprint.sensor.bme280-lga-8",
+  "uuid": "ea208d1b-542b-5468-aa24-204b49fc45b6",
+  "version": "0.2.0",
+  "name": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.sensor.bme280-lga-8"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.kicad_mod",
+    "sourceLibrary": "Package_LGA",
+    "sourceItemName": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+    "sourceHash": "14464b7a437e7efb0fa9947b89a7d3825242f3ed82d649fe2ca45fad5d3dda86",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:22:16.772Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_432a51d8f98efc52",
+    "fileName": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.kicad_mod",
+    "name": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+    "description": "LGA-8",
+    "mountType": "smd",
+    "padCount": 8,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "lga",
+      "land",
+      "grid",
+      "array",
+      "smd"
+    ],
+    "sourceHash": "14464b7a437e7efb0fa9947b89a7d3825242f3ed82d649fe2ca45fad5d3dda86",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": -0.975,
+            "y": -1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "rect",
+          "centerMm": {
+            "x": -0.325,
+            "y": -1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0.325,
+            "y": -1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0.975,
+            "y": -1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "5:4",
+          "number": "5",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0.975,
+            "y": 1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "6:5",
+          "number": "6",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0.325,
+            "y": 1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "7:6",
+          "number": "7",
+          "shape": "rect",
+          "centerMm": {
+            "x": -0.325,
+            "y": 1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "8:7",
+          "number": "8",
+          "shape": "rect",
+          "centerMm": {
+            "x": -0.975,
+            "y": 1.025
+          },
+          "widthMm": 0.5,
+          "heightMm": 0.35,
+          "rotationDeg": 90,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.35,
+            "y": 1.35
+          },
+          "b": {
+            "x": -1.35,
+            "y": 1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.35,
+            "y": 1.36
+          },
+          "b": {
+            "x": -1.2,
+            "y": 1.36
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.2,
+            "y": -1.35
+          },
+          "b": {
+            "x": 1.35,
+            "y": -1.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.35,
+            "y": -1.35
+          },
+          "b": {
+            "x": 1.35,
+            "y": -1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.35,
+            "y": 1.35
+          },
+          "b": {
+            "x": 1.2,
+            "y": 1.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.35,
+            "y": 1.35
+          },
+          "b": {
+            "x": 1.35,
+            "y": 1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.25,
+            "y": -0.5
+          },
+          "b": {
+            "x": -0.5,
+            "y": -1.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.25,
+            "y": 1.25
+          },
+          "b": {
+            "x": -1.25,
+            "y": -0.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.5,
+            "y": -1.25
+          },
+          "b": {
+            "x": 1.25,
+            "y": -1.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.25,
+            "y": -1.25
+          },
+          "b": {
+            "x": 1.25,
+            "y": 1.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.25,
+            "y": 1.25
+          },
+          "b": {
+            "x": -1.25,
+            "y": 1.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.35,
+              "y": -1.35
+            },
+            {
+              "x": -1.71,
+              "y": -1.35
+            },
+            {
+              "x": -1.35,
+              "y": -1.71
+            },
+            {
+              "x": -1.35,
+              "y": -1.35
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.5,
+          "rotationDeg": 180,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0.015:-2.465:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0.015,
+            "y": -2.465
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0.015:2.535:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+          "text": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+          "at": {
+            "x": 0.015,
+            "y": 2.535
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.77,
+        "minY": -1.77,
+        "maxX": 1.4100000000000001,
+        "maxY": 1.4200000000000004
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+    "description": "LGA-8",
+    "tags": [
+      "lga",
+      "land",
+      "grid",
+      "array"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -0.975,
+          "y": -1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -0.325,
+          "y": -1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 0.325,
+          "y": -1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 0.975,
+          "y": -1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "5",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 0.975,
+          "y": 1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "6",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 0.325,
+          "y": 1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "7",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -0.325,
+          "y": 1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "8",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -0.975,
+          "y": 1.025
+        },
+        "rotation": 90,
+        "size": {
+          "width": 0.5,
+          "height": 0.35
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.35,
+            1.35
+          ],
+          "end": [
+            -1.35,
+            1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "d5511550-e82b-4fdd-903e-bdce5d15e3b4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.35,
+            1.36
+          ],
+          "end": [
+            -1.2,
+            1.36
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "df854839-cb92-4d75-8cbf-e71848ae56d8"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.2,
+            -1.35
+          ],
+          "end": [
+            1.35,
+            -1.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "dd2af098-e7aa-4fdd-853a-678cb82e1ac0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.35,
+            -1.35
+          ],
+          "end": [
+            1.35,
+            -1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "0e936bb6-18df-430b-bc3b-f2c95e6259a0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.35,
+            1.35
+          ],
+          "end": [
+            1.2,
+            1.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "7fb8d232-6a2b-492d-af2b-f7dff9699bae"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.35,
+            1.35
+          ],
+          "end": [
+            1.35,
+            1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "3ea88de0-259f-4213-917c-3587cbaf6a12"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.41,
+            -1.54
+          ],
+          "end": [
+            1.41,
+            -1.54
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "8d3df581-0c50-4d0d-8ecc-5fae78fb3b24"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.41,
+            1.54
+          ],
+          "end": [
+            -1.41,
+            -1.54
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "432cfad3-628f-4d32-a169-31d04df142cd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            1.41,
+            -1.54
+          ],
+          "end": [
+            1.41,
+            1.54
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "4c9132c5-3c6d-44ea-ae85-cc09c28c10ad"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            1.41,
+            1.54
+          ],
+          "end": [
+            -1.41,
+            1.54
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "2773d3db-aa1b-470f-be5b-e51f664f49ce"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.25,
+            -0.5
+          ],
+          "end": [
+            -0.5,
+            -1.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "fdec881e-26d3-424c-b704-6e6d6f84977a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.25,
+            1.25
+          ],
+          "end": [
+            -1.25,
+            -0.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "fedece91-839b-48bc-9647-8fc1565aa199"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.5,
+            -1.25
+          ],
+          "end": [
+            1.25,
+            -1.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "d4f23ed4-45ca-438c-9b31-19cc8865dc58"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.25,
+            -1.25
+          ],
+          "end": [
+            1.25,
+            1.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "25d352c0-8ada-4b1b-a853-40fae59a7425"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.25,
+            1.25
+          ],
+          "end": [
+            -1.25,
+            1.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "f7126508-f7f0-470d-9104-488ac6f40583"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.SilkS",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              -1.35,
+              -1.35
+            ],
+            [
+              "xy",
+              -1.71,
+              -1.35
+            ],
+            [
+              "xy",
+              -1.35,
+              -1.71
+            ],
+            [
+              "xy",
+              -1.35,
+              -1.35
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "yes",
+          "layer": "F.SilkS",
+          "uuid": "f3c84094-12e9-454c-be5c-e58e5e12eb86"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            180
+          ],
+          "layer": "F.Fab",
+          "uuid": "caa4ee9b-215e-4994-be0f-802917aa696c",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.5,
+                0.5
+              ],
+              [
+                "thickness",
+                0.075
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 180,
+          "fontSizeMm": 0.5,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0.015,
+            -2.465,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "2ef059b1-f65d-4ea6-893e-c7c932b151ef",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0.015,
+            "y": -2.465
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0.015,
+            2.535,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "c21d078a-0c04-4681-a1d1-27b25d639d6b",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering"
+          ]
+        },
+        "text": {
+          "content": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering",
+          "position": {
+            "x": 0.015,
+            "y": 2.535
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Package_LGA.3dshapes/Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.step",
+        "resolvedFileName": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.step",
+        "offset": {
+          "x": 0.01500000025,
+          "y": -0.03500000059,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"LGA-8\")\n\t(tags \"lga land grid array\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0.015 -2.465 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"2ef059b1-f65d-4ea6-893e-c7c932b151ef\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering\"\n\t\t(at 0.015 2.535 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c21d078a-0c04-4681-a1d1-27b25d639d6b\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"861c1bd2-5973-4e56-9b74-a7bc9cc05fcc\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"894a44e0-85c7-44a3-bafe-c0d2ad492b7d\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -1.35 1.35)\n\t\t(end -1.35 1.2)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"d5511550-e82b-4fdd-903e-bdce5d15e3b4\")\n\t)\n\t(fp_line\n\t\t(start -1.35 1.36)\n\t\t(end -1.2 1.36)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"df854839-cb92-4d75-8cbf-e71848ae56d8\")\n\t)\n\t(fp_line\n\t\t(start 1.2 -1.35)\n\t\t(end 1.35 -1.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"dd2af098-e7aa-4fdd-853a-678cb82e1ac0\")\n\t)\n\t(fp_line\n\t\t(start 1.35 -1.35)\n\t\t(end 1.35 -1.2)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"0e936bb6-18df-430b-bc3b-f2c95e6259a0\")\n\t)\n\t(fp_line\n\t\t(start 1.35 1.35)\n\t\t(end 1.2 1.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"7fb8d232-6a2b-492d-af2b-f7dff9699bae\")\n\t)\n\t(fp_line\n\t\t(start 1.35 1.35)\n\t\t(end 1.35 1.2)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"3ea88de0-259f-4213-917c-3587cbaf6a12\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy -1.35 -1.35) (xy -1.71 -1.35) (xy -1.35 -1.71) (xy -1.35 -1.35)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill yes)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f3c84094-12e9-454c-be5c-e58e5e12eb86\")\n\t)\n\t(fp_line\n\t\t(start -1.41 -1.54)\n\t\t(end 1.41 -1.54)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"8d3df581-0c50-4d0d-8ecc-5fae78fb3b24\")\n\t)\n\t(fp_line\n\t\t(start -1.41 1.54)\n\t\t(end -1.41 -1.54)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"432cfad3-628f-4d32-a169-31d04df142cd\")\n\t)\n\t(fp_line\n\t\t(start 1.41 -1.54)\n\t\t(end 1.41 1.54)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"4c9132c5-3c6d-44ea-ae85-cc09c28c10ad\")\n\t)\n\t(fp_line\n\t\t(start 1.41 1.54)\n\t\t(end -1.41 1.54)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"2773d3db-aa1b-470f-be5b-e51f664f49ce\")\n\t)\n\t(fp_line\n\t\t(start -1.25 -0.5)\n\t\t(end -0.5 -1.25)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"fdec881e-26d3-424c-b704-6e6d6f84977a\")\n\t)\n\t(fp_line\n\t\t(start -1.25 1.25)\n\t\t(end -1.25 -0.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"fedece91-839b-48bc-9647-8fc1565aa199\")\n\t)\n\t(fp_line\n\t\t(start -0.5 -1.25)\n\t\t(end 1.25 -1.25)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d4f23ed4-45ca-438c-9b31-19cc8865dc58\")\n\t)\n\t(fp_line\n\t\t(start 1.25 -1.25)\n\t\t(end 1.25 1.25)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"25d352c0-8ada-4b1b-a853-40fae59a7425\")\n\t)\n\t(fp_line\n\t\t(start 1.25 1.25)\n\t\t(end -1.25 1.25)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"f7126508-f7f0-470d-9104-488ac6f40583\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 180)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"caa4ee9b-215e-4994-be0f-802917aa696c\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.5 0.5)\n\t\t\t\t(thickness 0.075)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd rect\n\t\t(at -0.975 -1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"2ca5349a-d4e1-4c30-84d4-e20e221c8854\")\n\t)\n\t(pad \"2\" smd rect\n\t\t(at -0.325 -1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"45b5bdf4-2a83-41f4-86cf-5c718831ea33\")\n\t)\n\t(pad \"3\" smd rect\n\t\t(at 0.325 -1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"4bd053f4-40e6-480b-aedc-8cf529952e1b\")\n\t)\n\t(pad \"4\" smd rect\n\t\t(at 0.975 -1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"5ea17325-ab22-40b0-9e3b-ad8d966ba5f9\")\n\t)\n\t(pad \"5\" smd rect\n\t\t(at 0.975 1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"b732e7be-e744-481d-b742-e650c0511f4d\")\n\t)\n\t(pad \"6\" smd rect\n\t\t(at 0.325 1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"08bf1a71-33e4-40fd-8705-5fa271ccdb8f\")\n\t)\n\t(pad \"7\" smd rect\n\t\t(at -0.325 1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"7a0a042c-c0c8-4aa4-a05f-4fe19de7bc6f\")\n\t)\n\t(pad \"8\" smd rect\n\t\t(at -0.975 1.025 90)\n\t\t(size 0.5 0.35)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"1babf453-3a82-491c-a2dc-b1ad71de665b\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Package_LGA.3dshapes/Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.step\"\n\t\t(offset\n\t\t\t(xyz 0.01500000025 -0.03500000059 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering.kicad_mod"
+}

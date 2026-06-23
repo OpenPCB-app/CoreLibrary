@@ -1,0 +1,76 @@
+{
+  "id": "openpcb.core.opto.led-tht",
+  "uuid": "87fd1fab-312e-5abe-b5d8-d1df5a6430cd",
+  "version": "0.2.0",
+  "name": "LED (THT)",
+  "description": "Generic through-hole indicator LED in 3 mm and 5 mm round packages.",
+  "category": "opto",
+  "subcategory": "indicator",
+  "tags": [
+    "led",
+    "opto",
+    "diode",
+    "tht",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LED",
+    "THT LED",
+    "5mm",
+    "3mm",
+    "indicator"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.opto.led-tht",
+  "defaultFootprint": "openpcb.core.footprint.opto.led-d5-0mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.opto.led-d5-0mm",
+      "label": "5 mm round",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.opto.led-d3-0mm",
+      "label": "3 mm round",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LED.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "LED (THT)",
+    "sourceHash": "fda671ab307eca3cae9b0d932a57306be2a25634d1138bc95ab3b0d475b87bae",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

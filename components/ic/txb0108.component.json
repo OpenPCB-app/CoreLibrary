@@ -1,0 +1,136 @@
+{
+  "id": "openpcb.core.ic.txb0108",
+  "uuid": "d02c7daa-3d1e-5e7a-9041-45e9a6e524b3",
+  "version": "0.2.0",
+  "name": "TXB0108 Level Translator",
+  "description": "TXB0108 8-bit bidirectional voltage-level translator (TSSOP-20).",
+  "category": "ic",
+  "subcategory": "interface",
+  "tags": [
+    "ic",
+    "interface",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TXB0108",
+    "level translator",
+    "level shifter",
+    "bidirectional"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/txb0108.pdf",
+  "parameters": {
+    "function": "8-bit level translator",
+    "channels": "8"
+  },
+  "symbol": "openpcb.core.symbol.ic.txb0108",
+  "defaultFootprint": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+      "label": "TSSOP-20 4.4x6.5mm P0.65mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "17",
+          "padNumber": "17"
+        },
+        {
+          "pinNumber": "18",
+          "padNumber": "18"
+        },
+        {
+          "pinNumber": "19",
+          "padNumber": "19"
+        },
+        {
+          "pinNumber": "20",
+          "padNumber": "20"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TXB0108PW.kicad_sym",
+    "sourceLibrary": "Logic_LevelTranslator",
+    "sourceItemName": "TXB0108 Level Translator",
+    "sourceHash": "a107fee2e07711c27da793c070cbe440244ffa272bd5f2995c58adcdac923c80",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

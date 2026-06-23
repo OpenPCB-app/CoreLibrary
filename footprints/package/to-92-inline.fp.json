@@ -1,0 +1,763 @@
+{
+  "id": "openpcb.core.footprint.package.to-92-inline",
+  "uuid": "b600a224-a3a0-5886-8abd-dec5b99c38cb",
+  "version": "0.2.0",
+  "name": "TO-92_Inline",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.package.to-92-inline"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "TO-92_Inline.kicad_mod",
+    "sourceLibrary": "Package_TO_SOT_THT",
+    "sourceItemName": "TO-92_Inline",
+    "sourceHash": "19731cf8b8c297aa1405bb1441d8b9e1828eddbe919b0084f9dbfac29c9a36fc",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:22:16.772Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_8d1f881b8f1e840a",
+    "fileName": "TO-92_Inline.kicad_mod",
+    "name": "TO-92_Inline",
+    "description": "TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)",
+    "mountType": "through_hole",
+    "padCount": 3,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "to-92",
+      "sc-43",
+      "sc-43a",
+      "sot54",
+      "pa33",
+      "transistor",
+      "through_hole"
+    ],
+    "sourceHash": "19731cf8b8c297aa1405bb1441d8b9e1828eddbe919b0084f9dbfac29c9a36fc",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "TO-92_Inline",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.05,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.75,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "oval",
+          "centerMm": {
+            "x": 1.27,
+            "y": 0
+          },
+          "widthMm": 1.05,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.75,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "oval",
+          "centerMm": {
+            "x": 2.54,
+            "y": 0
+          },
+          "widthMm": 1.05,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.75,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.53,
+            "y": 1.85
+          },
+          "b": {
+            "x": 3.07,
+            "y": 1.85
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.5,
+            "y": 1.75
+          },
+          "b": {
+            "x": 3,
+            "y": 1.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -0.568478,
+            "y": 1.838478
+          },
+          "mid": {
+            "x": -1.132087,
+            "y": -0.994977
+          },
+          "end": {
+            "x": 1.27,
+            "y": -2.6
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 1.27,
+            "y": -2.6
+          },
+          "mid": {
+            "x": 3.672087,
+            "y": -0.994977
+          },
+          "end": {
+            "x": 3.108478,
+            "y": 1.838478
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -0.483625,
+            "y": 1.753625
+          },
+          "mid": {
+            "x": -1.021221,
+            "y": -0.949055
+          },
+          "end": {
+            "x": 1.27,
+            "y": -2.48
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 1.27,
+            "y": -2.48
+          },
+          "mid": {
+            "x": 3.561221,
+            "y": -0.949055
+          },
+          "end": {
+            "x": 3.023625,
+            "y": 1.753625
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:1.27:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 1.27,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:1.27:-3.56:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 1.27,
+            "y": -3.56
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:1.27:2.79:TO-92_Inline",
+          "text": "TO-92_Inline",
+          "at": {
+            "x": 1.27,
+            "y": 2.79
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.1920870000000003,
+        "minY": -2.660000000000001,
+        "maxX": 3.930000340188863,
+        "maxY": 2.660000562349432
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "TO-92_Inline",
+    "description": "TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)",
+    "tags": [
+      "to-92",
+      "sc-43",
+      "sc-43a",
+      "sot54",
+      "PA33",
+      "transistor"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "rect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.05,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.75
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 1.27,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.05,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.75
+      },
+      {
+        "number": "3",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 2.54,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.05,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.75
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.53,
+            1.85
+          ],
+          "end": [
+            3.07,
+            1.85
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "cf5cf09f-aa3b-4d09-93f0-cd60b4888842"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.46,
+            -2.73
+          ],
+          "end": [
+            -1.46,
+            2.01
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "72a79f77-a855-4ceb-b60f-4bb0540506aa"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.46,
+            -2.73
+          ],
+          "end": [
+            4,
+            -2.73
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "dad691fd-038e-4d6a-bbce-b7dcbddfb4a5"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4,
+            2.01
+          ],
+          "end": [
+            -1.46,
+            2.01
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "05180e66-b002-4a73-b421-69cbe95c21e7"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4,
+            2.01
+          ],
+          "end": [
+            4,
+            -2.73
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "986d9fd3-f662-42cd-a6e8-73c40d564b49"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.5,
+            1.75
+          ],
+          "end": [
+            3,
+            1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "5d7416fc-4b8c-4be4-a9fd-ef9b81ac6c9c"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.568478,
+            1.838478
+          ],
+          "mid": [
+            -1.132087,
+            -0.994977
+          ],
+          "end": [
+            1.27,
+            -2.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "99142eee-f758-4736-a8c8-cb8594d72329"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.27,
+            -2.6
+          ],
+          "mid": [
+            3.672087,
+            -0.994977
+          ],
+          "end": [
+            3.108478,
+            1.838478
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "6883339b-fe76-44dd-867c-5e7513ca94d9"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.483625,
+            1.753625
+          ],
+          "mid": [
+            -1.021221,
+            -0.949055
+          ],
+          "end": [
+            1.27,
+            -2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "aa16c43c-65a5-4741-be20-e91b6c83fa25"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.27,
+            -2.48
+          ],
+          "mid": [
+            3.561221,
+            -0.949055
+          ],
+          "end": [
+            3.023625,
+            1.753625
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "f16cbdf0-79ae-4941-a6bc-5ea567fda1f0"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            1.27,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "77380750-baf8-4990-b61d-2bd2227c89ba",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 1.27,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            1.27,
+            -3.56,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "f8d60c07-fcb4-4333-b1c1-8b3d3f312520",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 1.27,
+            "y": -3.56
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            1.27,
+            2.79,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "46e152dd-3e84-4692-ab08-8f8d182ac1f0",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "TO-92_Inline"
+          ]
+        },
+        "text": {
+          "content": "TO-92_Inline",
+          "position": {
+            "x": 1.27,
+            "y": 2.79
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step",
+        "resolvedFileName": "TO-92_Inline.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"TO-92_Inline\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)\")\n\t(tags \"to-92 sc-43 sc-43a sot54 PA33 transistor\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 1.27 -3.56 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f8d60c07-fcb4-4333-b1c1-8b3d3f312520\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"TO-92_Inline\"\n\t\t(at 1.27 2.79 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"46e152dd-3e84-4692-ab08-8f8d182ac1f0\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"13a62c66-6828-4621-95e7-083954b37b6f\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"a81db220-f19f-495f-8fd1-8d52823f6974\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.53 1.85)\n\t\t(end 3.07 1.85)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"cf5cf09f-aa3b-4d09-93f0-cd60b4888842\")\n\t)\n\t(fp_arc\n\t\t(start -0.568478 1.838478)\n\t\t(mid -1.132087 -0.994977)\n\t\t(end 1.27 -2.6)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"99142eee-f758-4736-a8c8-cb8594d72329\")\n\t)\n\t(fp_arc\n\t\t(start 1.27 -2.6)\n\t\t(mid 3.672087 -0.994977)\n\t\t(end 3.108478 1.838478)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"6883339b-fe76-44dd-867c-5e7513ca94d9\")\n\t)\n\t(fp_line\n\t\t(start -1.46 -2.73)\n\t\t(end -1.46 2.01)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"72a79f77-a855-4ceb-b60f-4bb0540506aa\")\n\t)\n\t(fp_line\n\t\t(start -1.46 -2.73)\n\t\t(end 4 -2.73)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"dad691fd-038e-4d6a-bbce-b7dcbddfb4a5\")\n\t)\n\t(fp_line\n\t\t(start 4 2.01)\n\t\t(end -1.46 2.01)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"05180e66-b002-4a73-b421-69cbe95c21e7\")\n\t)\n\t(fp_line\n\t\t(start 4 2.01)\n\t\t(end 4 -2.73)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"986d9fd3-f662-42cd-a6e8-73c40d564b49\")\n\t)\n\t(fp_line\n\t\t(start -0.5 1.75)\n\t\t(end 3 1.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"5d7416fc-4b8c-4be4-a9fd-ef9b81ac6c9c\")\n\t)\n\t(fp_arc\n\t\t(start -0.483625 1.753625)\n\t\t(mid -1.021221 -0.949055)\n\t\t(end 1.27 -2.48)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"aa16c43c-65a5-4741-be20-e91b6c83fa25\")\n\t)\n\t(fp_arc\n\t\t(start 1.27 -2.48)\n\t\t(mid 3.561221 -0.949055)\n\t\t(end 3.023625 1.753625)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"f16cbdf0-79ae-4941-a6bc-5ea567fda1f0\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 1.27 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"77380750-baf8-4990-b61d-2bd2227c89ba\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole rect\n\t\t(at 0 0)\n\t\t(size 1.05 1.5)\n\t\t(drill 0.75)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"30d66bfc-1f65-461a-a175-eddb5ee97273\")\n\t)\n\t(pad \"2\" thru_hole oval\n\t\t(at 1.27 0)\n\t\t(size 1.05 1.5)\n\t\t(drill 0.75)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"19a641f3-2188-4ac8-845f-9705044a4d32\")\n\t)\n\t(pad \"3\" thru_hole oval\n\t\t(at 2.54 0)\n\t\t(size 1.05 1.5)\n\t\t(drill 0.75)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"58a02559-fefd-4819-914f-420454f3bf9f\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "TO-92_Inline.kicad_mod"
+}

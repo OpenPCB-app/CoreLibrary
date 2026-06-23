@@ -1,0 +1,1241 @@
+{
+  "id": "openpcb.core.footprint.connector.usb-micro-b-molex-47346",
+  "uuid": "f7514785-79cf-5bee-9bdd-c86a530e0d7d",
+  "version": "0.2.0",
+  "name": "USB_Micro-B_Molex_47346-0001",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.connector.usb-micro-b-molex-47346"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "USB_Micro-B_Molex_47346-0001.kicad_mod",
+    "sourceLibrary": "Connector_USB",
+    "sourceItemName": "USB_Micro-B_Molex_47346-0001",
+    "sourceHash": "e15e3637e343c22c53226658d1cb476e38673183bc1865b2df05cbf608fc995e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_d3361c3803519776",
+    "fileName": "USB_Micro-B_Molex_47346-0001.kicad_mod",
+    "name": "USB_Micro-B_Molex_47346-0001",
+    "description": "Micro USB B receptable with flange, bottom-mount, SMD, right-angle (http://www.molex.com/pdm_docs/sd/473460001_sd.pdf)",
+    "mountType": "smd",
+    "padCount": 11,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "micro",
+      "b",
+      "usb",
+      "smd"
+    ],
+    "sourceHash": "e15e3637e343c22c53226658d1cb476e38673183bc1865b2df05cbf608fc995e",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "USB_Micro-B_Molex_47346-0001",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.3,
+            "y": -1.46
+          },
+          "widthMm": 0.45,
+          "heightMm": 1.38,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -0.65,
+            "y": -1.46
+          },
+          "widthMm": 0.45,
+          "heightMm": 1.38,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0,
+            "y": -1.46
+          },
+          "widthMm": 0.45,
+          "heightMm": 1.38,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0.65,
+            "y": -1.46
+          },
+          "widthMm": 0.45,
+          "heightMm": 1.38,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "5:4",
+          "number": "5",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.3,
+            "y": -1.46
+          },
+          "widthMm": 0.45,
+          "heightMm": 1.38,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "SH:5",
+          "number": "SH",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.375,
+            "y": 1.2
+          },
+          "widthMm": 1.65,
+          "heightMm": 1.3,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1923076923,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "SH:6",
+          "number": "SH",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -2.4875,
+            "y": -1.375
+          },
+          "widthMm": 1.425,
+          "heightMm": 1.55,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1754385965,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "SH:7",
+          "number": "SH",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.15,
+            "y": 1.2
+          },
+          "widthMm": 1.8,
+          "heightMm": 1.9,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1388888889,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "SH:8",
+          "number": "SH",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.55,
+            "y": 1.2
+          },
+          "widthMm": 1,
+          "heightMm": 1.9,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "SH:9",
+          "number": "SH",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 2.4875,
+            "y": -1.375
+          },
+          "widthMm": 1.425,
+          "heightMm": 1.55,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1754385965,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "SH:10",
+          "number": "SH",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.375,
+            "y": 1.2
+          },
+          "widthMm": 1.65,
+          "heightMm": 1.3,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1923076923,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.81,
+            "y": -1.71
+          },
+          "b": {
+            "x": -3.43,
+            "y": -1.71
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.81,
+            "y": 0.06
+          },
+          "b": {
+            "x": -3.81,
+            "y": -1.71
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.81,
+            "y": 2.6
+          },
+          "b": {
+            "x": -3.81,
+            "y": 2.34
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.81,
+            "y": -1.71
+          },
+          "b": {
+            "x": 3.43,
+            "y": -1.71
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.81,
+            "y": -1.71
+          },
+          "b": {
+            "x": 3.81,
+            "y": 0.06
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.81,
+            "y": 2.34
+          },
+          "b": {
+            "x": 3.81,
+            "y": 2.6
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.75,
+            "y": -1.65
+          },
+          "b": {
+            "x": 3.75,
+            "y": -1.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.75,
+            "y": 3.35
+          },
+          "b": {
+            "x": -3.75,
+            "y": -1.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.25,
+            "y": 2.65
+          },
+          "b": {
+            "x": 3.25,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.75,
+            "y": -1.65
+          },
+          "b": {
+            "x": 3.75,
+            "y": 3.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.75,
+            "y": 3.35
+          },
+          "b": {
+            "x": -3.75,
+            "y": 3.35
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:1.2:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 1.2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-3.3:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -3.3
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 180,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:4.6:USB_Micro-B_Molex_47346-0001",
+          "text": "USB_Micro-B_Molex_47346-0001",
+          "at": {
+            "x": 0,
+            "y": 4.6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 180,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.2,
+        "minY": -2.1500000000000004,
+        "maxX": 4.2,
+        "maxY": 3.41
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "USB_Micro-B_Molex_47346-0001",
+    "description": "Micro USB B receptable with flange, bottom-mount, SMD, right-angle (http://www.molex.com/pdm_docs/sd/473460001_sd.pdf)",
+    "tags": [
+      "Micro",
+      "B",
+      "USB",
+      "SMD"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.3,
+          "y": -1.46
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.45,
+          "height": 1.38
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -0.65,
+          "y": -1.46
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.45,
+          "height": 1.38
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 0,
+          "y": -1.46
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.45,
+          "height": 1.38
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 0.65,
+          "y": -1.46
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.45,
+          "height": 1.38
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "5",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.3,
+          "y": -1.46
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.45,
+          "height": 1.38
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "SH",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.375,
+          "y": 1.2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.65,
+          "height": 1.3
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1923076923
+      },
+      {
+        "number": "SH",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -2.4875,
+          "y": -1.375
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.425,
+          "height": 1.55
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1754385965
+      },
+      {
+        "number": "SH",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.15,
+          "y": 1.2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.8,
+          "height": 1.9
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1388888889
+      },
+      {
+        "number": "SH",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.55,
+          "y": 1.2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 1.9
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "SH",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 2.4875,
+          "y": -1.375
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.425,
+          "height": 1.55
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1754385965
+      },
+      {
+        "number": "SH",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.375,
+          "y": 1.2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.65,
+          "height": 1.3
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1923076923
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.81,
+            -1.71
+          ],
+          "end": [
+            -3.43,
+            -1.71
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "7a279428-e150-411d-b5f9-e59493f7d1df"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.81,
+            0.06
+          ],
+          "end": [
+            -3.81,
+            -1.71
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "2822766c-468a-4c69-b159-9db0e3dde5ce"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.81,
+            2.6
+          ],
+          "end": [
+            -3.81,
+            2.34
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "de98a511-ca80-4e13-a97e-f1ec73a94e2f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.81,
+            -1.71
+          ],
+          "end": [
+            3.43,
+            -1.71
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "1ec147a0-383c-40d9-9bb4-f5b2b2fbeb52"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.81,
+            -1.71
+          ],
+          "end": [
+            3.81,
+            0.06
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "2f65bdd5-d432-487d-a314-2d2a12c3891a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.81,
+            2.34
+          ],
+          "end": [
+            3.81,
+            2.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "a79c0249-6970-4084-8bf3-34c4933975f0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.7,
+            -2.65
+          ],
+          "end": [
+            4.7,
+            -2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "92abd6b7-6097-42f3-9e8e-4ed5a33b9631"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.7,
+            3.85
+          ],
+          "end": [
+            -4.7,
+            -2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "68d4847b-22bd-4781-b927-40e94ec4f74e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4.7,
+            -2.65
+          ],
+          "end": [
+            4.7,
+            3.85
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "6c002130-df7d-49a1-9ccb-fe9a24b53821"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4.7,
+            3.85
+          ],
+          "end": [
+            -4.7,
+            3.85
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "e6ad0216-5b56-42ae-8d1e-873463abe822"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.75,
+            -1.65
+          ],
+          "end": [
+            3.75,
+            -1.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "d5cf8623-3e85-40f3-af39-7fcbc4278bae"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.75,
+            3.35
+          ],
+          "end": [
+            -3.75,
+            -1.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "d5221d56-821c-4c3f-b40c-d62021c68cf4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.25,
+            2.65
+          ],
+          "end": [
+            3.25,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "9ce6cc8f-618a-403f-8ea6-134962654f74"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            3.75,
+            -1.65
+          ],
+          "end": [
+            3.75,
+            3.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "31f2a123-45ea-4fff-837b-4e9333433a86"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            3.75,
+            3.35
+          ],
+          "end": [
+            -3.75,
+            3.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "6e4cea03-f977-40b4-824c-5b6deec0ef5a"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "Dwgs.User",
+        "data": {
+          "at": [
+            0,
+            2.67,
+            180
+          ],
+          "layer": "Dwgs.User",
+          "uuid": "235555d1-7b23-4b6b-a085-667aaa7548a9",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.4,
+                0.4
+              ],
+              [
+                "thickness",
+                0.04
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "PCB Edge"
+          ]
+        },
+        "text": {
+          "content": "PCB Edge",
+          "position": {
+            "x": 0,
+            "y": 2.67
+          },
+          "rotation": 180,
+          "fontSizeMm": 0.4,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            1.2,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "c3dc0bbf-a55f-4448-a4c0-37a582634183",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 1.2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -3.3,
+            180
+          ],
+          "layer": "F.SilkS",
+          "uuid": "a1ad70d0-21fd-46c0-9cfc-c6140fa81aec",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -3.3
+          },
+          "rotation": 180,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            4.6,
+            180
+          ],
+          "layer": "F.Fab",
+          "uuid": "a7f2267a-cfc2-4801-919f-63a6fb7930cc",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "USB_Micro-B_Molex_47346-0001"
+          ]
+        },
+        "text": {
+          "content": "USB_Micro-B_Molex_47346-0001",
+          "position": {
+            "x": 0,
+            "y": 4.6
+          },
+          "rotation": 180,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step",
+        "resolvedFileName": "USB_Micro-B_Molex_47346-0001.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"USB_Micro-B_Molex_47346-0001\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"Micro USB B receptable with flange, bottom-mount, SMD, right-angle (http://www.molex.com/pdm_docs/sd/473460001_sd.pdf)\")\n\t(tags \"Micro B USB SMD\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -3.3 180)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"a1ad70d0-21fd-46c0-9cfc-c6140fa81aec\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"USB_Micro-B_Molex_47346-0001\"\n\t\t(at 0 4.6 180)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"a7f2267a-cfc2-4801-919f-63a6fb7930cc\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"5bec1855-2400-4332-b0ef-09c9c07e273d\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"88d96f13-44bc-4fec-a528-0a107af065f9\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -3.81 -1.71)\n\t\t(end -3.43 -1.71)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"7a279428-e150-411d-b5f9-e59493f7d1df\")\n\t)\n\t(fp_line\n\t\t(start -3.81 0.06)\n\t\t(end -3.81 -1.71)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"2822766c-468a-4c69-b159-9db0e3dde5ce\")\n\t)\n\t(fp_line\n\t\t(start -3.81 2.6)\n\t\t(end -3.81 2.34)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"de98a511-ca80-4e13-a97e-f1ec73a94e2f\")\n\t)\n\t(fp_line\n\t\t(start 3.81 -1.71)\n\t\t(end 3.43 -1.71)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1ec147a0-383c-40d9-9bb4-f5b2b2fbeb52\")\n\t)\n\t(fp_line\n\t\t(start 3.81 -1.71)\n\t\t(end 3.81 0.06)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"2f65bdd5-d432-487d-a314-2d2a12c3891a\")\n\t)\n\t(fp_line\n\t\t(start 3.81 2.34)\n\t\t(end 3.81 2.6)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"a79c0249-6970-4084-8bf3-34c4933975f0\")\n\t)\n\t(fp_line\n\t\t(start -4.7 -2.65)\n\t\t(end 4.7 -2.65)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"92abd6b7-6097-42f3-9e8e-4ed5a33b9631\")\n\t)\n\t(fp_line\n\t\t(start -4.7 3.85)\n\t\t(end -4.7 -2.65)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"68d4847b-22bd-4781-b927-40e94ec4f74e\")\n\t)\n\t(fp_line\n\t\t(start 4.7 -2.65)\n\t\t(end 4.7 3.85)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"6c002130-df7d-49a1-9ccb-fe9a24b53821\")\n\t)\n\t(fp_line\n\t\t(start 4.7 3.85)\n\t\t(end -4.7 3.85)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"e6ad0216-5b56-42ae-8d1e-873463abe822\")\n\t)\n\t(fp_line\n\t\t(start -3.75 -1.65)\n\t\t(end 3.75 -1.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d5cf8623-3e85-40f3-af39-7fcbc4278bae\")\n\t)\n\t(fp_line\n\t\t(start -3.75 3.35)\n\t\t(end -3.75 -1.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d5221d56-821c-4c3f-b40c-d62021c68cf4\")\n\t)\n\t(fp_line\n\t\t(start -3.25 2.65)\n\t\t(end 3.25 2.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"9ce6cc8f-618a-403f-8ea6-134962654f74\")\n\t)\n\t(fp_line\n\t\t(start 3.75 -1.65)\n\t\t(end 3.75 3.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"31f2a123-45ea-4fff-837b-4e9333433a86\")\n\t)\n\t(fp_line\n\t\t(start 3.75 3.35)\n\t\t(end -3.75 3.35)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"6e4cea03-f977-40b4-824c-5b6deec0ef5a\")\n\t)\n\t(fp_text user \"PCB Edge\"\n\t\t(at 0 2.67 180)\n\t\t(layer \"Dwgs.User\")\n\t\t(uuid \"235555d1-7b23-4b6b-a085-667aaa7548a9\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.4 0.4)\n\t\t\t\t(thickness 0.04)\n\t\t\t)\n\t\t)\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 1.2 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c3dc0bbf-a55f-4448-a4c0-37a582634183\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -1.3 -1.46)\n\t\t(size 0.45 1.38)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"f2984208-5786-42e7-be51-91297d8780ea\")\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at -0.65 -1.46)\n\t\t(size 0.45 1.38)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"27cad2ec-3334-4738-927c-44da42b3906e\")\n\t)\n\t(pad \"3\" smd roundrect\n\t\t(at 0 -1.46)\n\t\t(size 0.45 1.38)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"38846792-d511-4f79-a2cc-ad6d9dfb19d8\")\n\t)\n\t(pad \"4\" smd roundrect\n\t\t(at 0.65 -1.46)\n\t\t(size 0.45 1.38)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"91392a5f-3bc5-4724-af1b-cfa378cd6883\")\n\t)\n\t(pad \"5\" smd roundrect\n\t\t(at 1.3 -1.46)\n\t\t(size 0.45 1.38)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"29cde39e-7611-4bc0-a10d-a52cf2911378\")\n\t)\n\t(pad \"SH\" smd roundrect\n\t\t(at -3.375 1.2)\n\t\t(size 1.65 1.3)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1923076923)\n\t\t(uuid \"9d34f138-ed47-4c8c-99c0-9b05fc02ab50\")\n\t)\n\t(pad \"SH\" smd roundrect\n\t\t(at -2.4875 -1.375)\n\t\t(size 1.425 1.55)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1754385965)\n\t\t(uuid \"a93f9f9b-55bc-4176-8969-bf78fa0eca6b\")\n\t)\n\t(pad \"SH\" smd roundrect\n\t\t(at -1.15 1.2)\n\t\t(size 1.8 1.9)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1388888889)\n\t\t(uuid \"0171c55c-882e-46c9-af4b-a5906532c443\")\n\t)\n\t(pad \"SH\" smd roundrect\n\t\t(at 1.55 1.2)\n\t\t(size 1 1.9)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"bec9b5d8-f17f-4c85-a7ce-f52251ad2da3\")\n\t)\n\t(pad \"SH\" smd roundrect\n\t\t(at 2.4875 -1.375)\n\t\t(size 1.425 1.55)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1754385965)\n\t\t(uuid \"e7de2c47-c40b-4458-a08d-a88f7bcce509\")\n\t)\n\t(pad \"SH\" smd roundrect\n\t\t(at 3.375 1.2)\n\t\t(size 1.65 1.3)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1923076923)\n\t\t(uuid \"0db560dc-2578-4f2a-8d4c-858e50de96fd\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_Micro-B_Molex_47346-0001.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "USB_Micro-B_Molex_47346-0001.kicad_mod"
+}

@@ -1,0 +1,744 @@
+{
+  "id": "openpcb.core.symbol.ic.w25q32",
+  "uuid": "24aa5792-3307-5d78-b085-316a75b4f10d",
+  "version": "0.2.0",
+  "name": "W25Q32 SPI Flash",
+  "referencePrefix": "U",
+  "description": "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "W25Q32JVSS.kicad_sym",
+    "sourceLibrary": "Memory_Flash",
+    "sourceItemName": "W25Q32JVSS",
+    "sourceHash": "7ca11f2e9c710423913240f186fc15dea21235ff6ffac2f10f024affa1e6e17e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "W25Q32JVSS",
+      "Footprint": "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm",
+      "Datasheet": "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf",
+      "Description": "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)",
+      "ki_keywords": "flash memory SPI",
+      "ki_fp_filters": "*SOIC*5.3x5.3mm*P1.27mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "W25Q32JVSS.kicad_sym",
+        "sourceItemName": "W25Q32JVSS",
+        "sha256": "49133cae4075c838798a68067881f10d0836a3316f7de485f334d92d71569550"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_cac6be328a0cd02a",
+    "name": "W25Q32JVSS",
+    "referencePrefix": "U",
+    "description": "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)",
+    "sourceHash": "7ca11f2e9c710423913240f186fc15dea21235ff6ffac2f10f024affa1e6e17e",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "~{CS}",
+        "localPosition": {
+          "x": -10.16,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "DO/IO_{1}",
+        "localPosition": {
+          "x": -10.16,
+          "y": 0
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "~{WP}/IO_{2}",
+        "localPosition": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -12.7
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "DI/IO_{0}",
+        "localPosition": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "CLK",
+        "localPosition": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "~{HOLD}/~{RESET}/IO_{3}",
+        "localPosition": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "VCC",
+        "localPosition": {
+          "x": 0,
+          "y": 12.7
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "W25Q32JVSS",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -10.16,
+          "width": 17.78,
+          "height": 20.32,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "~{CS}",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "DO/IO_{1}",
+          "number": "2",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "~{WP}/IO_{2}",
+          "number": "3",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "GND",
+          "number": "4",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -10.16
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:5",
+          "name": "DI/IO_{0}",
+          "number": "5",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "CLK",
+          "number": "6",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:7",
+          "name": "~{HOLD}/~{RESET}/IO_{3}",
+          "number": "7",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:8",
+          "name": "VCC",
+          "number": "8",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 10.16
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "~{CS}",
+          "at": {
+            "x": -7.112,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -8.89,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "DO/IO_{1}",
+          "at": {
+            "x": -7.112,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -8.89,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "~{WP}/IO_{2}",
+          "at": {
+            "x": -7.112,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": -12.4968
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "DI/IO_{0}",
+          "at": {
+            "x": -7.112,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "CLK",
+          "at": {
+            "x": -7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "~{HOLD}/~{RESET}/IO_{3}",
+          "at": {
+            "x": -7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "VCC",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 0.508,
+            "y": 12.4968
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0.41910000000000025,
+            "y": 14.300199999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "W25Q32JVSS",
+          "at": {
+            "x": 0.41910000000000025,
+            "y": -14.300199999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -15.570199999999998,
+        "maxX": 10.9982,
+        "maxY": 15.570199999999998
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "W25Q32JVSS",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "~{CS}",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "DO/IO_{1}",
+        "number": "2",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{WP}/IO_{2}",
+        "number": "3",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "4",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "DI/IO_{0}",
+        "number": "5",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CLK",
+        "number": "6",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{HOLD}/~{RESET}/IO_{3}",
+        "number": "7",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "8",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "W25Q32JVSS",
+      "Footprint": "Package_SO:SOIC-8_5.3x5.3mm_P1.27mm",
+      "Datasheet": "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf",
+      "Description": "32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)",
+      "ki_keywords": "flash memory SPI",
+      "ki_fp_filters": "*SOIC*5.3x5.3mm*P1.27mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            10.16
+          ],
+          [
+            "end",
+            10.16,
+            -10.16
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol W25Q32JVSS (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -6.35 11.43 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value W25Q32JVSS (at 7.62 11.43 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Package_SO:SOIC-8_5.3x5.3mm_P1.27mm (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"32Mbit / 4MiB Serial Flash Memory, Standard/Dual/Quad SPI, 2.7-3.6V, SOIC-8 (208 mil)\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"flash memory SPI\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters *SOIC*5.3x5.3mm*P1.27mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol W25Q32JVSS_0_1 (rectangle (start -7.62 10.16) (end 10.16 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol W25Q32JVSS_1_1 (pin input line (at -10.16 7.62 0) (length 2.54) (name ~{CS} (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 0 0) (length 2.54) (name DO/IO_{1} (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 -2.54 0) (length 2.54) (name ~{WP}/IO_{2} (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 2.54 0) (length 2.54) (name DI/IO_{0} (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name CLK (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 -5.08 0) (length 2.54) (name ~{HOLD}/~{RESET}/IO_{3} (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name VCC (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

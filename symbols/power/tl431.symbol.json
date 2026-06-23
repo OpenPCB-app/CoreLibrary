@@ -1,0 +1,469 @@
+{
+  "id": "openpcb.core.symbol.power.tl431",
+  "uuid": "7611f634-4c6e-5fbf-9464-1eeaf1481ce3",
+  "version": "0.2.0",
+  "name": "TL431 Voltage Reference",
+  "referencePrefix": "U",
+  "description": "Shunt Regulator, SOT-23",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "TL431DBZ.kicad_sym",
+    "sourceLibrary": "Reference_Voltage",
+    "sourceItemName": "TL431DBZ",
+    "sourceHash": "89e31f50cf6b896678a44b8c374137d45574b015da0327ba1308bb08dc4f6d82",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:03:11.984Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "TL431DBZ",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/tl431.pdf",
+      "Description": "Shunt Regulator, SOT-23",
+      "ki_keywords": "diode device shunt regulator",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "TL431DBZ.kicad_sym",
+        "sourceItemName": "TL431DBZ",
+        "sha256": "60ff225e16630c34bc9d6001151127ba538ce2771627f35c15f872c9169fcf1d"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_2a4a49af48876c16",
+    "name": "TL431DBZ",
+    "referencePrefix": "U",
+    "description": "Shunt Regulator, SOT-23",
+    "sourceHash": "89e31f50cf6b896678a44b8c374137d45574b015da0327ba1308bb08dc4f6d82",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "K",
+        "localPosition": {
+          "x": 2.54,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "REF",
+        "localPosition": {
+          "x": 0,
+          "y": 2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "A",
+        "localPosition": {
+          "x": -2.54,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "TL431DBZ",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -0.762,
+              "y": -0.762
+            },
+            {
+              "x": -0.762,
+              "y": 0.762
+            },
+            {
+              "x": 0.762,
+              "y": 0
+            },
+            {
+              "x": -0.762,
+              "y": -0.762
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.254,
+              "y": -0.762
+            },
+            {
+              "x": 0.762,
+              "y": -0.762
+            },
+            {
+              "x": 0.762,
+              "y": 0.762
+            },
+            {
+              "x": 0.762,
+              "y": 0.762
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 0,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 0
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 0,
+            "y": 0
+          },
+          "rotationDeg": 0
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 3.81
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "TL431DBZ",
+          "at": {
+            "x": 0,
+            "y": -2.1590000000000003
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.1496,
+        "minY": -3.4290000000000003,
+        "maxX": 3.1496,
+        "maxY": 5.08
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "TL431DBZ",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "K",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "REF",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "A",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "TL431DBZ",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/tl431.pdf",
+      "Description": "Shunt Regulator, SOT-23",
+      "ki_keywords": "diode device shunt regulator",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              0
+            ],
+            [
+              "xy",
+              0,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -0.762,
+              -0.762
+            ],
+            [
+              "xy",
+              -0.762,
+              0.762
+            ],
+            [
+              "xy",
+              0.762,
+              0
+            ],
+            [
+              "xy",
+              -0.762,
+              -0.762
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.254,
+              -0.762
+            ],
+            [
+              "xy",
+              0.762,
+              -0.762
+            ],
+            [
+              "xy",
+              0.762,
+              0.762
+            ],
+            [
+              "xy",
+              0.762,
+              0.762
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol TL431DBZ (pin_numbers (hide yes)) (pin_names (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -2.54 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value TL431DBZ (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Package_TO_SOT_SMD:SOT-23 (at 0 -4.826 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property Datasheet http://www.ti.com/lit/ds/symlink/tl431.pdf (at 1.778 -9.144 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property Description \"Shunt Regulator, SOT-23\" (at 0 -7.112 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"diode device shunt regulator\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOT?23* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol TL431DBZ_0_1 (polyline (pts (xy -1.27 0) (xy 0 0) (xy 1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.762 -0.762) (xy -0.762 0.762) (xy 0.762 0) (xy -0.762 -0.762)) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 0.254 -0.762) (xy 0.762 -0.762) (xy 0.762 0.762) (xy 0.762 0.762)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol TL431DBZ_1_1 (pin passive line (at 2.54 0 180) (length 2.54) (name K (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 2.54 270) (length 2.54) (name REF (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at -2.54 0 0) (length 2.54) (name A (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

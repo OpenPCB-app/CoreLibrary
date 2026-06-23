@@ -1,0 +1,78 @@
+{
+  "id": "openpcb.core.power.ams1117-adj",
+  "uuid": "5e7f5e1b-4510-567b-9433-24c36fac2a68",
+  "version": "0.2.0",
+  "name": "AMS1117-ADJ LDO Regulator",
+  "description": "AMS1117 adjustable low-dropout linear regulator in SOT-223.",
+  "category": "power",
+  "subcategory": "regulator-linear-ldo",
+  "tags": [
+    "power",
+    "regulator",
+    "ldo",
+    "adjustable",
+    "sot-223",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "AMS1117",
+    "AMS1117-ADJ",
+    "LDO",
+    "adjustable",
+    "linear regulator"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.advanced-monolithic.com/pdf/ds1117.pdf",
+  "parameters": {
+    "vout": "1.25V-12V (adjustable)",
+    "iout": "1A",
+    "dropout": "1.3V",
+    "topology": "linear-ldo"
+  },
+  "symbol": "openpcb.core.symbol.power.ams1117-adj",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-223",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-223",
+      "label": "SOT-223",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "AMS1117.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "AMS1117-ADJ LDO Regulator",
+    "sourceHash": "8cc044df5e96d5ac92036016e4e25a3d37b8bee0bca0199581e1683d96b7fe2e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:03:11.984Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

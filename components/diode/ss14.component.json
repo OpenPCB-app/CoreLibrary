@@ -1,0 +1,61 @@
+{
+  "id": "openpcb.core.diode.ss14",
+  "uuid": "b5a9e7a9-f906-5635-96f4-bf06af52ba0c",
+  "version": "0.2.0",
+  "name": "SS14 Schottky Diode",
+  "description": "SS14 1 A 40 V surface-mount Schottky rectifier (SMA).",
+  "category": "diode",
+  "subcategory": "schottky",
+  "tags": [
+    "diode",
+    "schottky",
+    "rectifier",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SS14",
+    "schottky",
+    "1A",
+    "40V"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.vishay.com/docs/88746/ss12.pdf",
+  "symbol": "openpcb.core.symbol.diode.ss14",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sma",
+      "label": "SMA",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SS14.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "SS14 Schottky Diode",
+    "sourceHash": "1f1c4b65feb81fcdc55f768360c5b59830fb8e2eca43a085f41017c7b470db2c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

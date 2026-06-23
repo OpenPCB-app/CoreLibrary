@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.transistor.mmbt3906",
+  "uuid": "a184795f-fefa-5cc1-8bac-254b9dcdfc1f",
+  "version": "0.2.0",
+  "name": "MMBT3906 PNP Transistor",
+  "description": "MMBT3906 40 V PNP general-purpose BJT in SOT-23 (B-E-C).",
+  "category": "transistor",
+  "subcategory": "bjt-pnp",
+  "tags": [
+    "transistor",
+    "bjt",
+    "pnp",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MMBT3906",
+    "2N3906",
+    "PNP",
+    "general purpose"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pdf/datasheet/pzt3906-d.pdf",
+  "symbol": "openpcb.core.symbol.transistor.mmbt3906",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MMBT3906.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "MMBT3906 PNP Transistor",
+    "sourceHash": "4e17f79e8343c89f08513b842f12a7962f0036349d722493cd98fa7e06edc5e5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

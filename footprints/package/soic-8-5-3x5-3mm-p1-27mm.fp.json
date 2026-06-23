@@ -1,0 +1,1244 @@
+{
+  "id": "openpcb.core.footprint.package.soic-8-5-3x5-3mm-p1-27mm",
+  "uuid": "77a31a11-53e8-534e-b10e-cefbe9b56604",
+  "version": "0.2.0",
+  "name": "SOIC-8_5.3x5.3mm_P1.27mm",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.package.soic-8-5-3x5-3mm-p1-27mm"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "SOIC-8_5.3x5.3mm_P1.27mm.kicad_mod",
+    "sourceLibrary": "Package_SO",
+    "sourceItemName": "SOIC-8_5.3x5.3mm_P1.27mm",
+    "sourceHash": "cc86a7083c9df1c1bf808dfa469e913d446455fd7ab7a7941e18681b80e8b9b5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_a436e27e6e503ea5",
+    "fileName": "SOIC-8_5.3x5.3mm_P1.27mm.kicad_mod",
+    "name": "SOIC-8_5.3x5.3mm_P1.27mm",
+    "description": "SOIC, 8 Pin (JEITA/EIAJ ED-7311-19 variation 08-001-BBA and Atmel/Microchip, 208 mils width, https://www.jeita.or.jp/japanese/standard/book/ED-7311-19/#target/page_no=21, https://ww1.microchip.com/downloads/en/DeviceDoc/20005045C.pdf#page=23, https://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf#page=162)",
+    "mountType": "smd",
+    "padCount": 8,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "soic",
+      "so",
+      "p-sop",
+      "sop",
+      "sop-8",
+      "so-8",
+      "8s2",
+      "s2ae/f",
+      "k04-056",
+      "case-751be",
+      "so8w",
+      "8-pin-soic",
+      "psa",
+      "w8-2",
+      "w8-4",
+      "w8ms-1",
+      "fpt-8p-m08",
+      "smd"
+    ],
+    "sourceHash": "cc86a7083c9df1c1bf808dfa469e913d446455fd7ab7a7941e18681b80e8b9b5",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "SOIC-8_5.3x5.3mm_P1.27mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.5875,
+            "y": -1.905
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.5875,
+            "y": -0.635
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.5875,
+            "y": 0.635
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.5875,
+            "y": 1.905
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "5:4",
+          "number": "5",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.5875,
+            "y": 1.905
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "6:5",
+          "number": "6",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.5875,
+            "y": 0.635
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "7:6",
+          "number": "7",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.5875,
+            "y": -0.635
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "8:7",
+          "number": "8",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.5875,
+            "y": -1.905
+          },
+          "widthMm": 1.625,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.76,
+            "y": -2.76
+          },
+          "b": {
+            "x": 2.76,
+            "y": -2.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.76,
+            "y": -2.49
+          },
+          "b": {
+            "x": -2.76,
+            "y": -2.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.76,
+            "y": 2.76
+          },
+          "b": {
+            "x": -2.76,
+            "y": 2.49
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.76,
+            "y": -2.76
+          },
+          "b": {
+            "x": 2.76,
+            "y": -2.49
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.76,
+            "y": 2.49
+          },
+          "b": {
+            "x": 2.76,
+            "y": 2.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.76,
+            "y": 2.76
+          },
+          "b": {
+            "x": -2.76,
+            "y": 2.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.59,
+              "y": -2.5
+            },
+            {
+              "x": -3.93,
+              "y": -2.97
+            },
+            {
+              "x": -3.25,
+              "y": -2.97
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.65,
+              "y": -2.65
+            },
+            {
+              "x": 2.65,
+              "y": -2.65
+            },
+            {
+              "x": 2.65,
+              "y": 2.65
+            },
+            {
+              "x": -2.65,
+              "y": 2.65
+            },
+            {
+              "x": -2.65,
+              "y": -1.65
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-3.6:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -3.6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:3.6:SOIC-8_5.3x5.3mm_P1.27mm",
+          "text": "SOIC-8_5.3x5.3mm_P1.27mm",
+          "at": {
+            "x": 0,
+            "y": 3.6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.4,
+        "minY": -3.0300000000000002,
+        "maxX": 4.4,
+        "maxY": 2.8199999999999994
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "SOIC-8_5.3x5.3mm_P1.27mm",
+    "description": "SOIC, 8 Pin (JEITA/EIAJ ED-7311-19 variation 08-001-BBA and Atmel/Microchip, 208 mils width, https://www.jeita.or.jp/japanese/standard/book/ED-7311-19/#target/page_no=21, https://ww1.microchip.com/downloads/en/DeviceDoc/20005045C.pdf#page=23, https://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf#page=162)",
+    "tags": [
+      "SOIC",
+      "SO",
+      "P-SOP",
+      "SOP",
+      "SOP-8",
+      "SO",
+      "SO-8",
+      "8S2",
+      "S2AE/F",
+      "K04-056",
+      "CASE-751BE",
+      "SO8W",
+      "8-Pin-SOIC",
+      "PSA",
+      "W8-2",
+      "W8-4",
+      "W8MS-1",
+      "FPT-8P-M08"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.5875,
+          "y": -1.905
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.5875,
+          "y": -0.635
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.5875,
+          "y": 0.635
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.5875,
+          "y": 1.905
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "5",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.5875,
+          "y": 1.905
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "6",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.5875,
+          "y": 0.635
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "7",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.5875,
+          "y": -0.635
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "8",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.5875,
+          "y": -1.905
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.625,
+          "height": 0.65
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.76,
+            -2.76
+          ],
+          "end": [
+            2.76,
+            -2.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.76,
+            -2.49
+          ],
+          "end": [
+            -2.76,
+            -2.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.76,
+            2.76
+          ],
+          "end": [
+            -2.76,
+            2.49
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.76,
+            -2.76
+          ],
+          "end": [
+            2.76,
+            -2.49
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.76,
+            2.49
+          ],
+          "end": [
+            2.76,
+            2.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.76,
+            2.76
+          ],
+          "end": [
+            -2.76,
+            2.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.65,
+            -2.48
+          ],
+          "end": [
+            -2.9,
+            -2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.65,
+            2.48
+          ],
+          "end": [
+            -4.65,
+            -2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.9,
+            -2.9
+          ],
+          "end": [
+            2.9,
+            -2.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.9,
+            -2.48
+          ],
+          "end": [
+            -2.9,
+            -2.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.9,
+            2.48
+          ],
+          "end": [
+            -4.65,
+            2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.9,
+            2.9
+          ],
+          "end": [
+            -2.9,
+            2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.9,
+            -2.9
+          ],
+          "end": [
+            2.9,
+            -2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.9,
+            -2.48
+          ],
+          "end": [
+            4.65,
+            -2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.9,
+            2.48
+          ],
+          "end": [
+            2.9,
+            2.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.9,
+            2.9
+          ],
+          "end": [
+            -2.9,
+            2.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4.65,
+            -2.48
+          ],
+          "end": [
+            4.65,
+            2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            4.65,
+            2.48
+          ],
+          "end": [
+            2.9,
+            2.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.SilkS",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              -3.59,
+              -2.5
+            ],
+            [
+              "xy",
+              -3.93,
+              -2.97
+            ],
+            [
+              "xy",
+              -3.25,
+              -2.97
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "yes",
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.Fab",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              -1.65,
+              -2.65
+            ],
+            [
+              "xy",
+              2.65,
+              -2.65
+            ],
+            [
+              "xy",
+              2.65,
+              2.65
+            ],
+            [
+              "xy",
+              -2.65,
+              2.65
+            ],
+            [
+              "xy",
+              -2.65,
+              -1.65
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -3.6,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -3.6
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            3.6,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "SOIC-8_5.3x5.3mm_P1.27mm"
+          ]
+        },
+        "text": {
+          "content": "SOIC-8_5.3x5.3mm_P1.27mm",
+          "position": {
+            "x": 0,
+            "y": 3.6
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step",
+        "resolvedFileName": "SOIC-8_5.3x5.3mm_P1.27mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"SOIC-8_5.3x5.3mm_P1.27mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"SOIC, 8 Pin (JEITA/EIAJ ED-7311-19 variation 08-001-BBA and Atmel/Microchip, 208 mils width, https://www.jeita.or.jp/japanese/standard/book/ED-7311-19/#target/page_no=21, https://ww1.microchip.com/downloads/en/DeviceDoc/20005045C.pdf#page=23, https://ww1.microchip.com/downloads/en/DeviceDoc/doc2535.pdf#page=162)\")\n\t(tags \"SOIC SO P-SOP SOP SOP-8 SO SO-8 8S2 S2AE/F K04-056 CASE-751BE SO8W 8-Pin-SOIC PSA W8-2 W8-4 W8MS-1 FPT-8P-M08\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -3.6 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"SOIC-8_5.3x5.3mm_P1.27mm\"\n\t\t(at 0 3.6 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"package/gullwing\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.76 -2.76)\n\t\t(end 2.76 -2.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.76 -2.49)\n\t\t(end -2.76 -2.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.76 2.76)\n\t\t(end -2.76 2.49)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.76 -2.76)\n\t\t(end 2.76 -2.49)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.76 2.49)\n\t\t(end 2.76 2.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.76 2.76)\n\t\t(end -2.76 2.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy -3.59 -2.5)\n\t\t\t(xy -3.93 -2.97)\n\t\t\t(xy -3.25 -2.97)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill yes)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -4.65 -2.48)\n\t\t(end -2.9 -2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -4.65 2.48)\n\t\t(end -4.65 -2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -2.9 -2.9)\n\t\t(end 2.9 -2.9)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -2.9 -2.48)\n\t\t(end -2.9 -2.9)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -2.9 2.48)\n\t\t(end -4.65 2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -2.9 2.9)\n\t\t(end -2.9 2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 2.9 -2.9)\n\t\t(end 2.9 -2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 2.9 -2.48)\n\t\t(end 4.65 -2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 2.9 2.48)\n\t\t(end 2.9 2.9)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 2.9 2.9)\n\t\t(end -2.9 2.9)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 4.65 -2.48)\n\t\t(end 4.65 2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 4.65 2.48)\n\t\t(end 2.9 2.48)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy -1.65 -2.65)\n\t\t\t(xy 2.65 -2.65)\n\t\t\t(xy 2.65 2.65)\n\t\t\t(xy -2.65 2.65)\n\t\t\t(xy -2.65 -1.65)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -3.5875 -1.905)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at -3.5875 -0.635)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"3\" smd roundrect\n\t\t(at -3.5875 0.635)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"4\" smd roundrect\n\t\t(at -3.5875 1.905)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"5\" smd roundrect\n\t\t(at 3.5875 1.905)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"6\" smd roundrect\n\t\t(at 3.5875 0.635)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"7\" smd roundrect\n\t\t(at 3.5875 -0.635)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"8\" smd roundrect\n\t\t(at 3.5875 -1.905)\n\t\t(size 1.625 0.65)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Package_SO.3dshapes/SOIC-8_5.3x5.3mm_P1.27mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "SOIC-8_5.3x5.3mm_P1.27mm.kicad_mod"
+}

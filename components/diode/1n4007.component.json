@@ -1,0 +1,75 @@
+{
+  "id": "openpcb.core.diode.1n4007",
+  "uuid": "35e88b83-ca95-5f3f-b9e7-ee4a72307356",
+  "version": "0.2.0",
+  "name": "1N4007 Rectifier Diode",
+  "description": "1N4007 1 A 1000 V general-purpose rectifier (DO-41 THT and M7/SMA SMD).",
+  "category": "diode",
+  "subcategory": "rectifier",
+  "tags": [
+    "diode",
+    "rectifier",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "1N4007",
+    "M7",
+    "rectifier",
+    "1A",
+    "1000V"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.vishay.com/docs/88503/1n4001.pdf",
+  "symbol": "openpcb.core.symbol.diode.1n4007",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-do-41",
+      "label": "DO-41 (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sma",
+      "label": "SMA (M7)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "1N4007.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "1N4007 Rectifier Diode",
+    "sourceHash": "49c30ea887992b7ba4188993e3c089faf3e4f671477a06f7058eb0eeb11dc5e2",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

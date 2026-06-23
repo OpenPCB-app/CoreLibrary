@@ -1,0 +1,65 @@
+{
+  "id": "openpcb.core.transistor.si2302",
+  "uuid": "99962f7f-3bdd-5794-a641-93da0234ebae",
+  "version": "0.2.0",
+  "name": "Si2302 N-Channel MOSFET",
+  "description": "Si2302 20 V logic-level N-channel MOSFET in SOT-23 (G-S-D); generic NMOS symbol.",
+  "category": "transistor",
+  "subcategory": "mosfet-n",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "nmos",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "Si2302",
+    "SI2302",
+    "NMOS",
+    "logic level"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.transistor.si2302",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Q_NMOS_GSD.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "Si2302 N-Channel MOSFET",
+    "sourceHash": "eeed153d2628e34b276df8c24fd07b542a562fb112e5333f428de2163a12caee",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

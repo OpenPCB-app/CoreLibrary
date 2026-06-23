@@ -1,0 +1,214 @@
+{
+  "id": "openpcb.core.symbol.mechanical.testpoint",
+  "uuid": "b1bdf2eb-08a0-53df-a3fa-359d5a46a0c3",
+  "version": "0.2.0",
+  "name": "Test Point",
+  "referencePrefix": "TP",
+  "description": "test point",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "TestPoint.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "TestPoint",
+    "sourceHash": "9ee3cab3697111b9cbc744e63f5037693cfdac6380a231bc8a66f3985e5d30b2",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "TP",
+      "Value": "TestPoint",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "test point",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "TestPoint.kicad_sym",
+        "sourceItemName": "TestPoint",
+        "sha256": "e983b0d2c450bc8c517b5bd83873bbe060f9e11e71dbb07951765a1b54f39a8e"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_62585f74c6b2f864",
+    "name": "TestPoint",
+    "referencePrefix": "TP",
+    "description": "test point",
+    "sourceHash": "9ee3cab3697111b9cbc744e63f5037693cfdac6380a231bc8a66f3985e5d30b2",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "1",
+        "localPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "TestPoint",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 3.302
+          },
+          "radiusMm": 0.762,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": 2.54
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "TP",
+          "at": {
+            "x": 0,
+            "y": 5.334
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "TestPoint",
+          "at": {
+            "x": 0,
+            "y": -1.27
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.5433,
+        "minY": -2.5399999999999996,
+        "maxX": 3.5433,
+        "maxY": 6.603999999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "TestPoint",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "TP",
+      "Value": "TestPoint",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "test point",
+      "ki_keywords": "test point tp",
+      "ki_fp_filters": "Pin* Test*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            3.302
+          ],
+          [
+            "radius",
+            0.762
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol TestPoint (pin_numbers (hide yes)) (pin_names (offset 0.762) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference TP (at 0 6.858 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value TestPoint (at 0 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 5.08 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 5.08 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"test point\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"test point tp\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"Pin* Test*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol TestPoint_0_1 (circle (center 0 3.302) (radius 0.762) (stroke (width 0) (type default)) (fill (type none)))) (symbol TestPoint_1_1 (pin passive line (at 0 0 90) (length 2.54) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.762,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

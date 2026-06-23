@@ -1,0 +1,59 @@
+{
+  "id": "openpcb.core.connector.jst-ph-1x02",
+  "uuid": "e28b5424-1009-5695-9338-3133cb8301b5",
+  "version": "0.2.0",
+  "name": "JST-PH 1x02 Connector",
+  "description": "JST PH-series 2.00 mm 2-pin top-entry connector.",
+  "category": "connector",
+  "subcategory": "jst-ph",
+  "tags": [
+    "connector",
+    "jst-ph",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "JST",
+    "JST-PH",
+    "PH",
+    "2.00mm"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.connector.jst-ph-1x02",
+  "defaultFootprint": "openpcb.core.footprint.connector.jst-ph-1x02-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.jst-ph-1x02-vertical",
+      "label": "JST-PH B2B 1x02 vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x02.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "JST-PH 1x02 Connector",
+    "sourceHash": "ecb2290983b5f947d1df267db173c220b0faf1c7d84b4a2004ffd2bc9f9f44f0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "id": "openpcb.core.3d.diode.d-sod-323",
   "uuid": "02f17def-b3d9-59c2-ad2d-d32c98a6abf3",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "name": "D_SOD-323 STEP model",
   "formats": {
     "step": {
@@ -21,7 +21,8 @@
     "sourceItemName": "D_SOD-323.step",
     "sourceHash": "cd8619b2119cd95683a2c5e660ab4f2d4db674f696cd6f9e9756f221171a214d",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "offsetMm": {
@@ -34,19 +35,9 @@
     "y": 0,
     "z": 0
   },
-  "boundsMm": {
-    "x": 2.5,
-    "y": 1.25,
-    "z": 1.11
-  },
-  "boundsMinMm": {
-    "x": -1.25,
-    "y": -0.625,
-    "z": 0
-  },
-  "boundsMaxMm": {
-    "x": 1.25,
-    "y": 0.625,
-    "z": 1.11
+  "scaleMm": {
+    "x": 1,
+    "y": 1,
+    "z": 1
   }
 }

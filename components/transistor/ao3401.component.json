@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.transistor.ao3401",
+  "uuid": "3aeaf47a-79bd-56ba-b83b-6ad976c08bba",
+  "version": "0.2.0",
+  "name": "AO3401 P-Channel MOSFET",
+  "description": "AO3401 30 V P-channel power MOSFET in SOT-23 (G-S-D).",
+  "category": "transistor",
+  "subcategory": "mosfet-p",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "pmos",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "AO3401",
+    "AO3401A",
+    "PMOS",
+    "power"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf",
+  "symbol": "openpcb.core.symbol.transistor.ao3401",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "AO3401A.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "AO3401 P-Channel MOSFET",
+    "sourceHash": "dea73c51bbd8c5ae580e5821cae86edefdf8a7918874411de3c3579c5f336c9e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

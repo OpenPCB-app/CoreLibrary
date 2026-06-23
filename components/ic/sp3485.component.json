@@ -1,0 +1,88 @@
+{
+  "id": "openpcb.core.ic.sp3485",
+  "uuid": "4bd64d23-031c-5a40-82bd-fca960b302d9",
+  "version": "0.2.0",
+  "name": "SP3485 RS-485 Transceiver",
+  "description": "SP3485 3.3 V RS-485 transceiver (SOIC-8).",
+  "category": "ic",
+  "subcategory": "interface",
+  "tags": [
+    "ic",
+    "interface",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SP3485",
+    "RS-485",
+    "transceiver",
+    "3.3V"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.icbase.com/pdf/SPX/SPX00480106.pdf",
+  "parameters": {
+    "function": "RS-485 transceiver",
+    "supply": "3.3V"
+  },
+  "symbol": "openpcb.core.symbol.ic.sp3485",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8 3.9x4.9mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SP3485EN.kicad_sym",
+    "sourceLibrary": "Interface_UART",
+    "sourceItemName": "SP3485 RS-485 Transceiver",
+    "sourceHash": "9a49b6cba6eec468f661a837586ea9ae577ceb4c5ff5783abe5134652729d424",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

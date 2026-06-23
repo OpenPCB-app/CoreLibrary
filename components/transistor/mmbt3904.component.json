@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.transistor.mmbt3904",
+  "uuid": "a50ceee3-b01a-5ce9-9761-60527d8095fb",
+  "version": "0.2.0",
+  "name": "MMBT3904 NPN Transistor",
+  "description": "MMBT3904 40 V NPN general-purpose BJT in SOT-23 (B-E-C).",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "bjt",
+    "npn",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MMBT3904",
+    "2N3904",
+    "NPN",
+    "general purpose"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf",
+  "symbol": "openpcb.core.symbol.transistor.mmbt3904",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MMBT3904.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "MMBT3904 NPN Transistor",
+    "sourceHash": "3ed6f6c3ccaab21877803b9cd6d21b81943a3b92097fcaf3cfa0b6c4b9da8a84",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

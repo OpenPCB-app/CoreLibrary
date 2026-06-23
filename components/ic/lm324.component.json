@@ -1,0 +1,177 @@
+{
+  "id": "openpcb.core.ic.lm324",
+  "uuid": "347a8c61-3061-5f63-ae27-6505134f82ff",
+  "version": "0.2.0",
+  "name": "LM324 Quad Op-Amp",
+  "description": "LM324 quad operational amplifier with SOIC-14 and DIP-14 variants.",
+  "category": "ic",
+  "subcategory": "op-amp",
+  "tags": [
+    "ic",
+    "op-amp",
+    "amplifier",
+    "lm324",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM324",
+    "quad op-amp",
+    "operational amplifier"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf",
+  "parameters": {
+    "channels": "4",
+    "gbw": "1.2MHz",
+    "supply": "3V-32V",
+    "type": "general-purpose"
+  },
+  "symbol": "openpcb.core.symbol.ic.lm324",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "label": "SOIC-14 3.9x8.7mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+      "label": "DIP-14 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM324.kicad_sym",
+    "sourceLibrary": "Amplifier_Operational",
+    "sourceItemName": "LM324 Quad Op-Amp",
+    "sourceHash": "61447d2ae8d7a59750f0005cad8b10f7d1d6504304f4049fae3050509b494316",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:03:11.984Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

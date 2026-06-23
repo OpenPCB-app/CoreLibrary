@@ -1,7 +1,7 @@
 {
   "id": "openpcb.core.3d.diode.d-sma",
   "uuid": "91c2f6e9-edd2-50e0-a903-dc5a8732cd0a",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "name": "D_SMA STEP model",
   "formats": {
     "step": {
@@ -21,7 +21,8 @@
     "sourceItemName": "D_SMA.step",
     "sourceHash": "1cfddd4e3b1bf22b8fc6ee3258c2aade882ed7b85b528e23b9db42437775a1db",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "offsetMm": {
@@ -34,19 +35,9 @@
     "y": 0,
     "z": 0
   },
-  "boundsMm": {
-    "x": 5,
-    "y": 2.7,
-    "z": 2.22
-  },
-  "boundsMinMm": {
-    "x": -2.5,
-    "y": -1.35,
-    "z": 0
-  },
-  "boundsMaxMm": {
-    "x": 2.5,
-    "y": 1.35,
-    "z": 2.22
+  "scaleMm": {
+    "x": 1,
+    "y": 1,
+    "z": 1
   }
 }

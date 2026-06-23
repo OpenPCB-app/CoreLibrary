@@ -1,0 +1,54 @@
+{
+  "id": "openpcb.core.mechanical.testpoint",
+  "uuid": "8736e297-70bb-5463-add4-7974e2ef869d",
+  "version": "0.2.0",
+  "name": "Test Point",
+  "description": "Loop test point, 2.5 mm.",
+  "category": "mechanical",
+  "subcategory": "testpoint",
+  "tags": [
+    "mechanical",
+    "testpoint",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "test point",
+    "testpoint",
+    "probe"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.mechanical.testpoint",
+  "defaultFootprint": "openpcb.core.footprint.mechanical.testpoint-loop-d2-5mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.mechanical.testpoint-loop-d2-5mm",
+      "label": "Loop D2.5mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TestPoint.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "Test Point",
+    "sourceHash": "ae19f57bab1176c443438c3c7a257a73bdec0aed53e9b6d97527a019582e6120",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

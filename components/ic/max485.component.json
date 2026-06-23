@@ -1,0 +1,126 @@
+{
+  "id": "openpcb.core.ic.max485",
+  "uuid": "e3392fc5-80e6-5cd8-8e70-a9e69046f017",
+  "version": "0.2.0",
+  "name": "MAX485 RS-485 Transceiver",
+  "description": "MAX485 RS-485/RS-422 transceiver (DIP-8, SOIC-8).",
+  "category": "ic",
+  "subcategory": "interface",
+  "tags": [
+    "ic",
+    "interface",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MAX485",
+    "RS-485",
+    "RS-422",
+    "transceiver"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf",
+  "parameters": {
+    "function": "RS-485 transceiver",
+    "supply": "5V"
+  },
+  "symbol": "openpcb.core.symbol.ic.max485",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8 3.9x4.9mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MAX485E.kicad_sym",
+    "sourceLibrary": "Interface_UART",
+    "sourceItemName": "MAX485 RS-485 Transceiver",
+    "sourceHash": "c0867cc4a8c4dc6bd1f2b4e8d8e7bfc5e2a56bdba84a9b10ee9df0d28322a8ac",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

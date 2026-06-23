@@ -1,0 +1,662 @@
+{
+  "id": "openpcb.core.symbol.transistor.ss8550",
+  "uuid": "eb4b6794-e087-5c31-b86e-32cfea2b9215",
+  "version": "0.2.0",
+  "name": "SS8550 PNP Transistor",
+  "referencePrefix": "Q",
+  "description": "General Purpose PNP Transistor, 1.5A Ic, 25V Vce, SOT-23",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "SS8550.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "SS8550",
+    "sourceHash": "6e4084ec8c95202e9ef524e658fe90e407e9114b9bc460711d8922cb2325dadf",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from Q_PNP_BEC"
+      }
+    ],
+    "properties": {
+      "Reference": "Q",
+      "Value": "SS8550",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8550.pdf",
+      "Description": "General Purpose PNP Transistor, 1.5A Ic, 25V Vce, SOT-23",
+      "Sim.Device": "PNP",
+      "Sim.Pins": "1=B 2=E 3=C",
+      "ki_keywords": "SS8550 PNP Transistor",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "SS8550.kicad_sym",
+        "sourceItemName": "SS8550",
+        "sha256": "e4e691a5b4ba7dc96e26fcbd63ec6ebc257a54ea0fdd85adfafded6f476354a0"
+      },
+      {
+        "fileName": "Q_PNP_BEC.kicad_sym",
+        "sourceItemName": "Q_PNP_BEC",
+        "sha256": "ff789ffd945a968f94a77f5f4f7524d1fbe68d1070a3883eef318c37fd5510f3"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_b2f0bfabd0e50b92",
+    "name": "SS8550",
+    "referencePrefix": "Q",
+    "description": "General Purpose PNP Transistor, 1.5A Ic, 25V Vce, SOT-23",
+    "sourceHash": "6e4084ec8c95202e9ef524e658fe90e407e9114b9bc460711d8922cb2325dadf",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "B",
+        "localPosition": {
+          "x": -5.08,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "E",
+        "localPosition": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "C",
+        "localPosition": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from Q_PNP_BEC"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "SS8550",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 0
+            },
+            {
+              "x": 0.635,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.635,
+              "y": 1.905
+            },
+            {
+              "x": 0.635,
+              "y": -1.905
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.635,
+              "y": 0.635
+            },
+            {
+              "x": 2.54,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.635,
+              "y": -0.635
+            },
+            {
+              "x": 2.54,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 1.27,
+            "y": 0
+          },
+          "radiusMm": 2.8194,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.286,
+              "y": -1.778
+            },
+            {
+              "x": 1.778,
+              "y": -2.286
+            },
+            {
+              "x": 1.27,
+              "y": -1.27
+            },
+            {
+              "x": 2.286,
+              "y": -1.778
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 2.5399999999999996,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -3.81,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 3.048,
+            "y": -4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 3.048,
+            "y": 4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "Q",
+          "at": {
+            "x": -0.43180000000000085,
+            "y": 6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "SS8550",
+          "at": {
+            "x": -0.43180000000000085,
+            "y": -6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.08,
+        "minY": -7.810499999999999,
+        "maxX": 4.216399999999998,
+        "maxY": 7.810499999999999
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from Q_PNP_BEC"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "SS8550",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "B",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "E",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "Q",
+      "Value": "SS8550",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8550.pdf",
+      "Description": "General Purpose PNP Transistor, 1.5A Ic, 25V Vce, SOT-23",
+      "Sim.Device": "PNP",
+      "Sim.Pins": "1=B 2=E 3=C",
+      "ki_keywords": "SS8550 PNP Transistor",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              0
+            ],
+            [
+              "xy",
+              0.635,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.635,
+              1.905
+            ],
+            [
+              "xy",
+              0.635,
+              -1.905
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.635,
+              0.635
+            ],
+            [
+              "xy",
+              2.54,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.635,
+              -0.635
+            ],
+            [
+              "xy",
+              2.54,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            1.27,
+            0
+          ],
+          [
+            "radius",
+            2.8194
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.286,
+              -1.778
+            ],
+            [
+              "xy",
+              1.778,
+              -2.286
+            ],
+            [
+              "xy",
+              1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              2.286,
+              -1.778
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from Q_PNP_BEC"
+      }
+    ],
+    "rawSource": "(symbol SS8550 (extends Q_PNP_BEC) (property Reference Q (at 5.08 1.905 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value SS8550 (at 5.08 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_TO_SOT_SMD:SOT-23 (at 5.08 -7.366 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)) (justify left))) (property Datasheet http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8550.pdf (at 5.08 -4.826 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Description \"General Purpose PNP Transistor, 1.5A Ic, 25V Vce, SOT-23\" (at 34.036 -2.286 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"SS8550 PNP Transistor\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOT?23* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

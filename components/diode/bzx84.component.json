@@ -1,0 +1,64 @@
+{
+  "id": "openpcb.core.diode.bzx84",
+  "uuid": "727c0417-ff57-5e0e-bd97-90ce473ea672",
+  "version": "0.2.0",
+  "name": "BZX84 Zener Diode",
+  "description": "BZX84 series Zener diode in SOT-23 (set voltage per build).",
+  "category": "diode",
+  "subcategory": "zener",
+  "tags": [
+    "diode",
+    "zener",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BZX84",
+    "zener",
+    "BZX84C"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf",
+  "symbol": "openpcb.core.symbol.diode.bzx84",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BZX84Cxx.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "BZX84 Zener Diode",
+    "sourceHash": "d35825db17c9d59f5fdb608c508a16a464fa86aaf83cc9fb45a9b658511443cc",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

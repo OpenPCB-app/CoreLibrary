@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.transistor.ss8050",
+  "uuid": "a3e95283-ff02-5fdf-b920-d1b777af56aa",
+  "version": "0.2.0",
+  "name": "SS8050 NPN Transistor",
+  "description": "SS8050 high-current NPN BJT in TO-92 (B-E-C).",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "bjt",
+    "npn",
+    "to-92",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SS8050",
+    "NPN",
+    "high current",
+    "TO-92"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf",
+  "symbol": "openpcb.core.symbol.transistor.ss8050",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SS8050.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "SS8050 NPN Transistor",
+    "sourceHash": "a40ad4519a39f67b3249d7646d469fd7feb815247df107ee7587679e44779506",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

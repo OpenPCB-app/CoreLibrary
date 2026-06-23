@@ -1,0 +1,1709 @@
+{
+  "id": "openpcb.core.symbol.ic.sp3485",
+  "uuid": "a1e7029a-d764-549a-a64c-706b7dd0ee44",
+  "version": "0.2.0",
+  "name": "SP3485 RS-485 Transceiver",
+  "referencePrefix": "U",
+  "description": "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "SP3485EN.kicad_sym",
+    "sourceLibrary": "Interface_UART",
+    "sourceItemName": "SP3485EN",
+    "sourceHash": "c35dc4e5954cd42f616264541cfffa1a1ea9a034d23be9ae6a095ad34aeacae3",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LTC2850xS8"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "SP3485EN",
+      "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "Datasheet": "http://www.icbase.com/pdf/SPX/SPX00480106.pdf",
+      "Description": "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8",
+      "ki_keywords": "Low Power Half-Duplex RS-485 Transceiver 10Mbps",
+      "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "SP3485EN.kicad_sym",
+        "sourceItemName": "SP3485EN",
+        "sha256": "112e803c3c5ddea334c119cf70433c289d3c60329a7f515830b1c7e9080f9166"
+      },
+      {
+        "fileName": "LTC2850xS8.kicad_sym",
+        "sourceItemName": "LTC2850xS8",
+        "sha256": "d3eb1cb0e556e81028e4be16a7d0db09732753f611475329d1f761e4a257d176"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_3fa0dad7bf7aab88",
+    "name": "SP3485EN",
+    "referencePrefix": "U",
+    "description": "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8",
+    "sourceHash": "c35dc4e5954cd42f616264541cfffa1a1ea9a034d23be9ae6a095ad34aeacae3",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "RO",
+        "localPosition": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "~{RE}",
+        "localPosition": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "DE",
+        "localPosition": {
+          "x": -10.16,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "DI",
+        "localPosition": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "A",
+        "localPosition": {
+          "x": 10.16,
+          "y": 7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "B",
+        "localPosition": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "VCC",
+        "localPosition": {
+          "x": 0,
+          "y": 15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LTC2850xS8"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "SP3485EN",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -12.7,
+          "width": 15.24,
+          "height": 25.4,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -4.191,
+              "y": 2.54
+            },
+            {
+              "x": -1.27,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -4.191,
+              "y": 0
+            },
+            {
+              "x": -0.889,
+              "y": 0
+            },
+            {
+              "x": -0.889,
+              "y": -2.286
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.175,
+              "y": 5.08
+            },
+            {
+              "x": -4.191,
+              "y": 5.08
+            },
+            {
+              "x": -4.064,
+              "y": 5.08
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": -5.08
+            },
+            {
+              "x": -4.191,
+              "y": -5.08
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.413,
+              "y": -5.08
+            },
+            {
+              "x": -2.413,
+              "y": -1.27
+            },
+            {
+              "x": 2.667,
+              "y": -4.826
+            },
+            {
+              "x": -2.413,
+              "y": -8.89
+            },
+            {
+              "x": -2.413,
+              "y": -5.08
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -0.635,
+              "y": -7.62
+            },
+            {
+              "x": 5.08,
+              "y": -7.62
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0.381,
+            "y": -2.54
+          },
+          "radiusMm": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.889,
+              "y": -2.54
+            },
+            {
+              "x": 3.81,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.032,
+              "y": 7.62
+            },
+            {
+              "x": 5.715,
+              "y": 7.62
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.048,
+              "y": 2.54
+            },
+            {
+              "x": 5.715,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 3.81,
+            "y": 2.54
+          },
+          "radiusMm": 0.2794,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.81,
+              "y": -2.54
+            },
+            {
+              "x": 3.81,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 5.08,
+              "y": -7.62
+            },
+            {
+              "x": 5.08,
+              "y": 7.62
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -0.762,
+            "y": 2.54
+          },
+          "radiusMm": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.032,
+              "y": 4.826
+            },
+            {
+              "x": 2.032,
+              "y": 8.636
+            },
+            {
+              "x": -3.048,
+              "y": 5.08
+            },
+            {
+              "x": 2.032,
+              "y": 1.016
+            },
+            {
+              "x": 2.032,
+              "y": 4.826
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": 2.54
+          },
+          "radiusMm": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 5.08,
+            "y": 7.62
+          },
+          "radiusMm": 0.2794,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "RO",
+          "number": "1",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "~{RE}",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "DE",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "DI",
+          "number": "4",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "GND",
+          "number": "5",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -12.7
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:6",
+          "name": "A",
+          "number": "6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "B",
+          "number": "7",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:8",
+          "name": "VCC",
+          "number": "8",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 12.7
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "RO",
+          "at": {
+            "x": -7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "~{RE}",
+          "at": {
+            "x": -7.112,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "DE",
+          "at": {
+            "x": -7.112,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -8.89,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "DI",
+          "at": {
+            "x": -7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 0.508,
+            "y": -15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "A",
+          "at": {
+            "x": 7.112,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 8.89,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "B",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "VCC",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 0.508,
+            "y": 15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 16.8402
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "SP3485EN",
+          "at": {
+            "x": 0,
+            "y": -16.8402
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -18.1102,
+        "maxX": 10.16,
+        "maxY": 18.1102
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from LTC2850xS8"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "SP3485EN",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "RO",
+        "number": "1",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{RE}",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "DE",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "DI",
+        "number": "4",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "5",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "A",
+        "number": "6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "B",
+        "number": "7",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "8",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "SP3485EN",
+      "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "Datasheet": "http://www.icbase.com/pdf/SPX/SPX00480106.pdf",
+      "Description": "Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8",
+      "ki_keywords": "Low Power Half-Duplex RS-485 Transceiver 10Mbps",
+      "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            12.7
+          ],
+          [
+            "end",
+            7.62,
+            -12.7
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -4.191,
+              2.54
+            ],
+            [
+              "xy",
+              -1.27,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -4.191,
+              0
+            ],
+            [
+              "xy",
+              -0.889,
+              0
+            ],
+            [
+              "xy",
+              -0.889,
+              -2.286
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.175,
+              5.08
+            ],
+            [
+              "xy",
+              -4.191,
+              5.08
+            ],
+            [
+              "xy",
+              -4.064,
+              5.08
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              -5.08
+            ],
+            [
+              "xy",
+              -4.191,
+              -5.08
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.413,
+              -5.08
+            ],
+            [
+              "xy",
+              -2.413,
+              -1.27
+            ],
+            [
+              "xy",
+              2.667,
+              -4.826
+            ],
+            [
+              "xy",
+              -2.413,
+              -8.89
+            ],
+            [
+              "xy",
+              -2.413,
+              -5.08
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -0.635,
+              -7.62
+            ],
+            [
+              "xy",
+              5.08,
+              -7.62
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0.381,
+            -2.54
+          ],
+          [
+            "radius",
+            0.508
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.889,
+              -2.54
+            ],
+            [
+              "xy",
+              3.81,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.032,
+              7.62
+            ],
+            [
+              "xy",
+              5.715,
+              7.62
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.048,
+              2.54
+            ],
+            [
+              "xy",
+              5.715,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            3.81,
+            2.54
+          ],
+          [
+            "radius",
+            0.2794
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.81,
+              -2.54
+            ],
+            [
+              "xy",
+              3.81,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              5.08,
+              -7.62
+            ],
+            [
+              "xy",
+              5.08,
+              7.62
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -0.762,
+            2.54
+          ],
+          [
+            "radius",
+            0.508
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.032,
+              4.826
+            ],
+            [
+              "xy",
+              2.032,
+              8.636
+            ],
+            [
+              "xy",
+              -3.048,
+              5.08
+            ],
+            [
+              "xy",
+              2.032,
+              1.016
+            ],
+            [
+              "xy",
+              2.032,
+              4.826
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            2.54
+          ],
+          [
+            "radius",
+            0.508
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            5.08,
+            7.62
+          ],
+          [
+            "radius",
+            0.2794
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LTC2850xS8"
+      }
+    ],
+    "rawSource": "(symbol SP3485EN (extends LTC2850xS8) (property Reference U (at -7.62 13.97 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value SP3485EN (at 1.905 13.97 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm (at 26.67 -8.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property Datasheet http://www.icbase.com/pdf/SPX/SPX00480106.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"Low Power Half-Duplex RS-485 Transceiver 10Mbps\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOIC*3.9x4.9mm*P1.27mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

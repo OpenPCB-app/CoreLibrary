@@ -1,0 +1,75 @@
+{
+  "id": "openpcb.core.connector.usb-micro-b",
+  "uuid": "bcc41449-2134-5737-94e8-55549def663d",
+  "version": "0.2.0",
+  "name": "USB Micro-B Receptacle",
+  "description": "USB Micro-B SMD receptacle.",
+  "category": "connector",
+  "subcategory": "usb",
+  "tags": [
+    "connector",
+    "usb",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "USB",
+    "Micro-B",
+    "Micro USB",
+    "receptacle"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.connector.usb-micro-b",
+  "defaultFootprint": "openpcb.core.footprint.connector.usb-micro-b-molex-47346",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.usb-micro-b-molex-47346",
+      "label": "USB Micro-B Molex 47346",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "SH",
+          "padNumber": "SH"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "USB_B_Micro.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "USB Micro-B Receptacle",
+    "sourceHash": "e03f18a0967fcd13a79547b572471b9c4abde8b9304b5ad8618d0bf2c01ee9cc",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

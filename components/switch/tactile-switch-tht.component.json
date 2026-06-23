@@ -1,0 +1,59 @@
+{
+  "id": "openpcb.core.switch.tactile-switch-tht",
+  "uuid": "298fc36f-7395-5797-a1f4-0a8192c6c7c2",
+  "version": "0.2.0",
+  "name": "Tactile Switch (THT)",
+  "description": "6 mm through-hole tactile push switch.",
+  "category": "switch",
+  "subcategory": "tactile",
+  "tags": [
+    "switch",
+    "tactile",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "switch",
+    "tactile",
+    "push button",
+    "6mm"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.switch.tactile-switch-tht",
+  "defaultFootprint": "openpcb.core.footprint.switch.sw-push-6mm-h5mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.switch.sw-push-6mm-h5mm",
+      "label": "6mm THT H5mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SW_Push.kicad_sym",
+    "sourceLibrary": "Switch",
+    "sourceItemName": "Tactile Switch (THT)",
+    "sourceHash": "2c43f558d89755a93e55afa096e4be53e0af23d08fc966de20c61faed9d612e8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

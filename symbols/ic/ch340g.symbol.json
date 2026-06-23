@@ -1,0 +1,1320 @@
+{
+  "id": "openpcb.core.symbol.ic.ch340g",
+  "uuid": "64e66920-eb76-55f3-841a-864a8e35fcf3",
+  "version": "0.2.0",
+  "name": "CH340G USB-UART",
+  "referencePrefix": "U",
+  "description": "USB serial converter, UART, SOIC-16",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "CH340G.kicad_sym",
+    "sourceLibrary": "Interface_USB",
+    "sourceItemName": "CH340G",
+    "sourceHash": "ba68aae00868baed56f11a0df46690026c0a574c9a66ae85892d62560151d7e0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "CH340G",
+      "Footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "Datasheet": "http://www.datasheet5.com/pdf-local-2195953",
+      "Description": "USB serial converter, UART, SOIC-16",
+      "ki_keywords": "USB UART Serial Converter Interface",
+      "ki_fp_filters": "SOIC*3.9x9.9mm*P1.27mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "CH340G.kicad_sym",
+        "sourceItemName": "CH340G",
+        "sha256": "0a39d944fe3f90bf1e1625327af92e26fa675f9876a3841f8d086b1d99aef8b3"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_b5ef46076fd80f19",
+    "name": "CH340G",
+    "referencePrefix": "U",
+    "description": "USB serial converter, UART, SOIC-16",
+    "sourceHash": "ba68aae00868baed56f11a0df46690026c0a574c9a66ae85892d62560151d7e0",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "TXD",
+        "localPosition": {
+          "x": 10.16,
+          "y": 10.16
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "RXD",
+        "localPosition": {
+          "x": 10.16,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "V3",
+        "localPosition": {
+          "x": 0,
+          "y": 15.24
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "UD+",
+        "localPosition": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "UD-",
+        "localPosition": {
+          "x": -10.16,
+          "y": 0
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "XI",
+        "localPosition": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "XO",
+        "localPosition": {
+          "x": -10.16,
+          "y": -10.16
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "~{CTS}",
+        "localPosition": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "~{DSR}",
+        "localPosition": {
+          "x": 10.16,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "~{RI}",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "~{DCD}",
+        "localPosition": {
+          "x": 10.16,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "~{DTR}",
+        "localPosition": {
+          "x": 10.16,
+          "y": -7.62
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "~{RTS}",
+        "localPosition": {
+          "x": 10.16,
+          "y": -10.16
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "R232",
+        "localPosition": {
+          "x": -10.16,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "VCC",
+        "localPosition": {
+          "x": -2.54,
+          "y": 15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "CH340G",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -12.7,
+          "width": 15.24,
+          "height": 25.4,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "GND",
+          "number": "1",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -12.7
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:2",
+          "name": "TXD",
+          "number": "2",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "RXD",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:4",
+          "name": "V3",
+          "number": "4",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 12.7
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:5",
+          "name": "UD+",
+          "number": "5",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "UD-",
+          "number": "6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:7",
+          "name": "XI",
+          "number": "7",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:8",
+          "name": "XO",
+          "number": "8",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:9",
+          "name": "~{CTS}",
+          "number": "9",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:10",
+          "name": "~{DSR}",
+          "number": "10",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:11",
+          "name": "~{RI}",
+          "number": "11",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:12",
+          "name": "~{DCD}",
+          "number": "12",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:13",
+          "name": "~{DTR}",
+          "number": "13",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:14",
+          "name": "~{RTS}",
+          "number": "14",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:15",
+          "name": "R232",
+          "number": "15",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:16",
+          "name": "VCC",
+          "number": "16",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -2.5400000000000005,
+            "y": 12.7
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 0.508,
+            "y": -15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "TXD",
+          "at": {
+            "x": 7.112,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 8.89,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "RXD",
+          "at": {
+            "x": 7.112,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 8.89,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "V3",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": 15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "UD+",
+          "at": {
+            "x": -7.112,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "UD-",
+          "at": {
+            "x": -7.112,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -8.89,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "XI",
+          "at": {
+            "x": -7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "XO",
+          "at": {
+            "x": -7.112,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": -8.89,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "~{CTS}",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": 8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "~{DSR}",
+          "at": {
+            "x": 7.112,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": 8.89,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "~{RI}",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "~{DCD}",
+          "at": {
+            "x": 7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": 8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "~{DTR}",
+          "at": {
+            "x": 7.112,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": 8.89,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "~{RTS}",
+          "at": {
+            "x": 7.112,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": 8.89,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "R232",
+          "at": {
+            "x": -7.112,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": -8.89,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "VCC",
+          "at": {
+            "x": -2.5400000000000005,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": -2.032,
+            "y": 15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 17.0942
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "CH340G",
+          "at": {
+            "x": 0,
+            "y": -16.8402
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -18.1102,
+        "maxX": 10.16,
+        "maxY": 18.364200000000004
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "CH340G",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "GND",
+        "number": "1",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "TXD",
+        "number": "2",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "RXD",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V3",
+        "number": "4",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "UD+",
+        "number": "5",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "UD-",
+        "number": "6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "XI",
+        "number": "7",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "XO",
+        "number": "8",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{CTS}",
+        "number": "9",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{DSR}",
+        "number": "10",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{RI}",
+        "number": "11",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{DCD}",
+        "number": "12",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{DTR}",
+        "number": "13",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{RTS}",
+        "number": "14",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R232",
+        "number": "15",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "16",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "CH340G",
+      "Footprint": "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm",
+      "Datasheet": "http://www.datasheet5.com/pdf-local-2195953",
+      "Description": "USB serial converter, UART, SOIC-16",
+      "ki_keywords": "USB UART Serial Converter Interface",
+      "ki_fp_filters": "SOIC*3.9x9.9mm*P1.27mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            12.7
+          ],
+          [
+            "end",
+            7.62,
+            -12.7
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol CH340G (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -5.08 13.97 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property Value CH340G (at 1.27 13.97 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_SO:SOIC-16_3.9x9.9mm_P1.27mm (at 1.27 -13.97 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Datasheet http://www.datasheet5.com/pdf-local-2195953 (at -8.89 20.32 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"USB serial converter, UART, SOIC-16\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"USB UART Serial Converter Interface\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOIC*3.9x9.9mm*P1.27mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol CH340G_0_1 (rectangle (start -7.62 12.7) (end 7.62 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol CH340G_1_1 (pin power_in line (at 0 -15.24 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 10.16 180) (length 2.54) (name TXD (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 7.62 180) (length 2.54) (name RXD (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_out line (at 0 15.24 270) (length 2.54) (name V3 (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 2.54 0) (length 2.54) (name UD+ (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -10.16 0 0) (length 2.54) (name UD- (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -5.08 0) (length 2.54) (name XI (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin output line (at -10.16 -10.16 0) (length 2.54) (name XO (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 2.54 180) (length 2.54) (name ~{CTS} (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 0 180) (length 2.54) (name ~{DSR} (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 -2.54 180) (length 2.54) (name ~{RI} (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 -5.08 180) (length 2.54) (name ~{DCD} (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 -7.62 180) (length 2.54) (name ~{DTR} (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 -10.16 180) (length 2.54) (name ~{RTS} (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 7.62 0) (length 2.54) (name R232 (effects (font (size 1.27 1.27)))) (number 15 (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 15.24 270) (length 2.54) (name VCC (effects (font (size 1.27 1.27)))) (number 16 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

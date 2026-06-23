@@ -1,0 +1,175 @@
+{
+  "id": "openpcb.core.ic.74hc04",
+  "uuid": "1509ee22-f666-584a-9cf6-16ee353d8f72",
+  "version": "0.2.0",
+  "name": "74HC04 Hex Inverter",
+  "description": "74HC04 hex inverter (DIP-14, SOIC-14).",
+  "category": "ic",
+  "subcategory": "logic",
+  "tags": [
+    "ic",
+    "logic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "74HC04",
+    "hex inverter",
+    "NOT gate",
+    "74HC"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf",
+  "parameters": {
+    "family": "74HC",
+    "function": "hex inverter",
+    "supply": "2V-6V"
+  },
+  "symbol": "openpcb.core.symbol.ic.74hc04",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+      "label": "DIP-14 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "label": "SOIC-14 3.9x8.7mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "74HC04.kicad_sym",
+    "sourceLibrary": "74xx",
+    "sourceItemName": "74HC04 Hex Inverter",
+    "sourceHash": "235d1e305a780900eee93721a1907b9c1745ea63e412f9b4e5868ee75744e657",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

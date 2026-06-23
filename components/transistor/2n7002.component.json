@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.transistor.2n7002",
+  "uuid": "fd552369-a9db-524a-b85e-aca25abfef16",
+  "version": "0.2.0",
+  "name": "2N7002 N-Channel MOSFET",
+  "description": "2N7002 60 V logic-level N-channel MOSFET in SOT-23 (G-S-D).",
+  "category": "transistor",
+  "subcategory": "mosfet-n",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "nmos",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "2N7002",
+    "NMOS",
+    "logic level",
+    "small signal"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF",
+  "symbol": "openpcb.core.symbol.transistor.2n7002",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "2N7002.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "2N7002 N-Channel MOSFET",
+    "sourceHash": "eba4d43dd89d12e6ea38d0202873a27095c17c09a05a531f0868fe58a0c53203",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

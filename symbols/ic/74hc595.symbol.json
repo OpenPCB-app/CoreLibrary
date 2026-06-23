@@ -1,0 +1,1320 @@
+{
+  "id": "openpcb.core.symbol.ic.74hc595",
+  "uuid": "9729e12f-7446-586c-b644-d49c70683f2f",
+  "version": "0.2.0",
+  "name": "74HC595 Shift Register",
+  "referencePrefix": "U",
+  "description": "8-bit serial in/out Shift Register 3-State Outputs",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "74HC595.kicad_sym",
+    "sourceLibrary": "74xx",
+    "sourceItemName": "74HC595",
+    "sourceHash": "dd1a56151dcda822bc2c73a4a96e185a8e2cfd28eecbb8e4444d07788b42c4f1",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "74HC595",
+      "Footprint": "",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+      "Description": "8-bit serial in/out Shift Register 3-State Outputs",
+      "ki_keywords": "HCMOS SR 3State",
+      "ki_fp_filters": "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SOIC*5.3x10.2mm*P1.27mm* SOIC*7.5x10.3mm*P1.27mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "74HC595.kicad_sym",
+        "sourceItemName": "74HC595",
+        "sha256": "20f4937a51a34b399bb9a8a676db952d4ca55817331548a2544ef039019df775"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_0fb33b0846891e57",
+    "name": "74HC595",
+    "referencePrefix": "U",
+    "description": "8-bit serial in/out Shift Register 3-State Outputs",
+    "sourceHash": "dd1a56151dcda822bc2c73a4a96e185a8e2cfd28eecbb8e4444d07788b42c4f1",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "QB",
+        "localPosition": {
+          "x": 10.16,
+          "y": 7.62
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "QC",
+        "localPosition": {
+          "x": 10.16,
+          "y": 5.08
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "QD",
+        "localPosition": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "QE",
+        "localPosition": {
+          "x": 10.16,
+          "y": 0
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "QF",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "QG",
+        "localPosition": {
+          "x": 10.16,
+          "y": -5.08
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "QH",
+        "localPosition": {
+          "x": 10.16,
+          "y": -7.62
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -17.78
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "QH'",
+        "localPosition": {
+          "x": 10.16,
+          "y": -12.7
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "~{SRCLR}",
+        "localPosition": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "SRCLK",
+        "localPosition": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "RCLK",
+        "localPosition": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "~{OE}",
+        "localPosition": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "SER",
+        "localPosition": {
+          "x": -10.16,
+          "y": 10.16
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "QA",
+        "localPosition": {
+          "x": 10.16,
+          "y": 10.16
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "VCC",
+        "localPosition": {
+          "x": 0,
+          "y": 15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "74HC595",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -15.24,
+          "width": 15.24,
+          "height": 27.939999999999998,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "QB",
+          "number": "1",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "QC",
+          "number": "2",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "QD",
+          "number": "3",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:4",
+          "name": "QE",
+          "number": "4",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:5",
+          "name": "QF",
+          "number": "5",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "QG",
+          "number": "6",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "QH",
+          "number": "7",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:8",
+          "name": "GND",
+          "number": "8",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -17.78
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -15.240000000000002
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:9",
+          "name": "QH'",
+          "number": "9",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:10",
+          "name": "~{SRCLR}",
+          "number": "10",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:11",
+          "name": "SRCLK",
+          "number": "11",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:12",
+          "name": "RCLK",
+          "number": "12",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:13",
+          "name": "~{OE}",
+          "number": "13",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:14",
+          "name": "SER",
+          "number": "14",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:15",
+          "name": "QA",
+          "number": "15",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:16",
+          "name": "VCC",
+          "number": "16",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 12.7
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "QB",
+          "at": {
+            "x": 7.112,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 8.89,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "QC",
+          "at": {
+            "x": 7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "QD",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "QE",
+          "at": {
+            "x": 7.112,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 8.89,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "QF",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "QG",
+          "at": {
+            "x": 7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "QH",
+          "at": {
+            "x": 7.112,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 8.89,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 0.508,
+            "y": -17.576800000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "QH'",
+          "at": {
+            "x": 7.112,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": 8.89,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "~{SRCLR}",
+          "at": {
+            "x": -7.112,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": -8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "SRCLK",
+          "at": {
+            "x": -7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": -8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "RCLK",
+          "at": {
+            "x": -7.112,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": -8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "~{OE}",
+          "at": {
+            "x": -7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": -8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "SER",
+          "at": {
+            "x": -7.112,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": -8.89,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "QA",
+          "at": {
+            "x": 7.112,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": 8.89,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "VCC",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": 0.508,
+            "y": 15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 17.0942
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "74HC595",
+          "at": {
+            "x": 0,
+            "y": -19.380200000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -20.6502,
+        "maxX": 10.16,
+        "maxY": 18.3642
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "74HC595",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "QB",
+        "number": "1",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QC",
+        "number": "2",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QD",
+        "number": "3",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QE",
+        "number": "4",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QF",
+        "number": "5",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QG",
+        "number": "6",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QH",
+        "number": "7",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "8",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -17.78
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QH'",
+        "number": "9",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{SRCLR}",
+        "number": "10",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SRCLK",
+        "number": "11",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "RCLK",
+        "number": "12",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{OE}",
+        "number": "13",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SER",
+        "number": "14",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "QA",
+        "number": "15",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "16",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "74HC595",
+      "Footprint": "",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/sn74hc595.pdf",
+      "Description": "8-bit serial in/out Shift Register 3-State Outputs",
+      "ki_keywords": "HCMOS SR 3State",
+      "ki_fp_filters": "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SOIC*5.3x10.2mm*P1.27mm* SOIC*7.5x10.3mm*P1.27mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            12.7
+          ],
+          [
+            "end",
+            7.62,
+            -15.24
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol 74HC595 (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -7.62 13.97 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value 74HC595 (at -7.62 -16.51 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.ti.com/lit/ds/symlink/sn74hc595.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"8-bit serial in/out Shift Register 3-State Outputs\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"HCMOS SR 3State\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm* SOIC*5.3x10.2mm*P1.27mm* SOIC*7.5x10.3mm*P1.27mm*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol 74HC595_1_0 (pin tri_state line (at 10.16 7.62 180) (length 2.54) (name QB (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin tri_state line (at 10.16 5.08 180) (length 2.54) (name QC (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin tri_state line (at 10.16 2.54 180) (length 2.54) (name QD (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin tri_state line (at 10.16 0 180) (length 2.54) (name QE (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin tri_state line (at 10.16 -2.54 180) (length 2.54) (name QF (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin tri_state line (at 10.16 -5.08 180) (length 2.54) (name QG (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin tri_state line (at 10.16 -7.62 180) (length 2.54) (name QH (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -17.78 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 -12.7 180) (length 2.54) (name QH' (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 2.54 0) (length 2.54) (name ~{SRCLR} (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name SRCLK (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -2.54 0) (length 2.54) (name RCLK (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -5.08 0) (length 2.54) (name ~{OE} (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 10.16 0) (length 2.54) (name SER (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27))))) (pin tri_state line (at 10.16 10.16 180) (length 2.54) (name QA (effects (font (size 1.27 1.27)))) (number 15 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 15.24 270) (length 2.54) (name VCC (effects (font (size 1.27 1.27)))) (number 16 (effects (font (size 1.27 1.27)))))) (symbol 74HC595_1_1 (rectangle (start -7.62 12.7) (end 7.62 -15.24) (stroke (width 0.254) (type default)) (fill (type background)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

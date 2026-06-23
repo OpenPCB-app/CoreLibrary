@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.transistor.ss8550",
+  "uuid": "f899a3b3-ff54-5af5-a969-94690fd91c91",
+  "version": "0.2.0",
+  "name": "SS8550 PNP Transistor",
+  "description": "SS8550 high-current PNP BJT in TO-92 (B-E-C).",
+  "category": "transistor",
+  "subcategory": "bjt-pnp",
+  "tags": [
+    "transistor",
+    "bjt",
+    "pnp",
+    "to-92",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SS8550",
+    "PNP",
+    "high current",
+    "TO-92"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8550.pdf",
+  "symbol": "openpcb.core.symbol.transistor.ss8550",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SS8550.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "SS8550 PNP Transistor",
+    "sourceHash": "c758c20b44e8274c8a9d3fa1f54690eea9b5148ee04ad3783d753850fc04810a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

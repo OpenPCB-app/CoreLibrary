@@ -1,0 +1,1668 @@
+{
+  "id": "openpcb.core.footprint.connector.usb-a-molex-67643",
+  "uuid": "296ea5a5-fb26-5e44-8810-d74549ae8007",
+  "version": "0.2.0",
+  "name": "USB_A_Molex_67643_Horizontal",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.connector.usb-a-molex-67643"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "USB_A_Molex_67643_Horizontal.kicad_mod",
+    "sourceLibrary": "Connector_USB",
+    "sourceItemName": "USB_A_Molex_67643_Horizontal",
+    "sourceHash": "d749ba02dedf1a4cad8895c47af38fce519fceae976b507ceef179ce29382d72",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_08089a4f243aee08",
+    "fileName": "USB_A_Molex_67643_Horizontal.kicad_mod",
+    "name": "USB_A_Molex_67643_Horizontal",
+    "description": "USB type A, Horizontal, https://www.molex.com/pdm_docs/sd/676433910_sd.pdf",
+    "mountType": "through_hole",
+    "padCount": 6,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "usb_a",
+      "female",
+      "connector",
+      "receptacle",
+      "through_hole"
+    ],
+    "sourceHash": "d749ba02dedf1a4cad8895c47af38fce519fceae976b507ceef179ce29382d72",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "USB_A_Molex_67643_Horizontal",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1666666667,
+          "drillDiameterMm": 0.95,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 2.5,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.95,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "circle",
+          "centerMm": {
+            "x": 4.5,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.95,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7,
+            "y": 0
+          },
+          "widthMm": 1.6,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.95,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "SH:4",
+          "number": "SH",
+          "shape": "circle",
+          "centerMm": {
+            "x": -3.07,
+            "y": 2.71
+          },
+          "widthMm": 3,
+          "heightMm": 3,
+          "rotationDeg": 0,
+          "drillDiameterMm": 2.3,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "SH:5",
+          "number": "SH",
+          "shape": "circle",
+          "centerMm": {
+            "x": 10.07,
+            "y": 2.71
+          },
+          "widthMm": 3,
+          "heightMm": 3,
+          "rotationDeg": 0,
+          "drillDiameterMm": 2.3,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.81,
+            "y": 12.58
+          },
+          "b": {
+            "x": -3.81,
+            "y": 13.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.81,
+            "y": 13.1
+          },
+          "b": {
+            "x": 10.81,
+            "y": 13.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.16,
+            "y": -2.38
+          },
+          "b": {
+            "x": -3.16,
+            "y": 0.95
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.16,
+            "y": -2.38
+          },
+          "b": {
+            "x": 10.16,
+            "y": -2.38
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.16,
+            "y": 12.58
+          },
+          "b": {
+            "x": -3.81,
+            "y": 12.58
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.16,
+            "y": 12.58
+          },
+          "b": {
+            "x": -3.16,
+            "y": 4.47
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.9,
+            "y": -2.6
+          },
+          "b": {
+            "x": 0.9,
+            "y": -2.6
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.16,
+            "y": -2.38
+          },
+          "b": {
+            "x": 10.16,
+            "y": 0.95
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.16,
+            "y": 4.47
+          },
+          "b": {
+            "x": 10.16,
+            "y": 12.58
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.81,
+            "y": 12.58
+          },
+          "b": {
+            "x": 10.16,
+            "y": 12.58
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.81,
+            "y": 13.1
+          },
+          "b": {
+            "x": 10.81,
+            "y": 12.58
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.7,
+            "y": 12.69
+          },
+          "b": {
+            "x": -3.7,
+            "y": 12.99
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.7,
+            "y": 12.99
+          },
+          "b": {
+            "x": 10.7,
+            "y": 12.99
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.05,
+            "y": -2.27
+          },
+          "b": {
+            "x": 10.05,
+            "y": -2.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.05,
+            "y": 9.27
+          },
+          "b": {
+            "x": 10.05,
+            "y": 9.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.05,
+            "y": 12.69
+          },
+          "b": {
+            "x": -3.7,
+            "y": 12.69
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.05,
+            "y": 12.69
+          },
+          "b": {
+            "x": -3.05,
+            "y": -2.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1,
+            "y": -2.27
+          },
+          "b": {
+            "x": 0,
+            "y": -1.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": -1.27
+          },
+          "b": {
+            "x": 1,
+            "y": -2.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.05,
+            "y": -2.27
+          },
+          "b": {
+            "x": 10.05,
+            "y": 12.69
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.7,
+            "y": 12.69
+          },
+          "b": {
+            "x": 10.05,
+            "y": 12.69
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.7,
+            "y": 12.99
+          },
+          "b": {
+            "x": 10.7,
+            "y": 12.69
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:3.5:3.7:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 3.5,
+            "y": 3.7
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:3.5:-3.19:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 3.5,
+            "y": -3.19
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:3.5:14.5:USB_A_Molex_67643_Horizontal",
+          "text": "USB_A_Molex_67643_Horizontal",
+          "at": {
+            "x": 3.5,
+            "y": 14.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.57,
+        "minY": -2.66,
+        "maxX": 11.57,
+        "maxY": 13.16
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "USB_A_Molex_67643_Horizontal",
+    "description": "USB type A, Horizontal, https://www.molex.com/pdm_docs/sd/676433910_sd.pdf",
+    "tags": [
+      "USB_A",
+      "Female",
+      "Connector",
+      "receptacle"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "roundrect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "roundrectRatio": 0.1666666667,
+        "drillDiameter": 0.95
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 2.5,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.95
+      },
+      {
+        "number": "3",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 4.5,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.95
+      },
+      {
+        "number": "4",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 7,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.95
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -3.07,
+          "y": 2.71
+        },
+        "rotation": 0,
+        "size": {
+          "width": 3,
+          "height": 3
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 2.3
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 10.07,
+          "y": 2.71
+        },
+        "rotation": 0,
+        "size": {
+          "width": 3,
+          "height": 3
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 2.3
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.81,
+            12.58
+          ],
+          "end": [
+            -3.81,
+            13.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "a793aa9d-14d1-4b06-803f-133a28ce5593"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.81,
+            13.1
+          ],
+          "end": [
+            10.81,
+            13.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b064f63c-4828-4a91-b349-b3bf2eca4044"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.16,
+            -2.38
+          ],
+          "end": [
+            -3.16,
+            0.95
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "f91fc83b-7088-4246-a35a-89f88d25e05a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.16,
+            -2.38
+          ],
+          "end": [
+            10.16,
+            -2.38
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "4c784483-8c83-47f0-bfaf-4c6c19ede978"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.16,
+            12.58
+          ],
+          "end": [
+            -3.81,
+            12.58
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "288db5c2-69b1-41b8-865f-7c85a7b716f9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.16,
+            12.58
+          ],
+          "end": [
+            -3.16,
+            4.47
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "070d01df-f3ca-4841-83c8-ebec6014f02f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.9,
+            -2.6
+          ],
+          "end": [
+            0.9,
+            -2.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "217aca3c-f000-4746-88bd-aa296dd7edd7"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            10.16,
+            -2.38
+          ],
+          "end": [
+            10.16,
+            0.95
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "02c36777-48f4-4c9d-8f98-92b208bfba68"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            10.16,
+            4.47
+          ],
+          "end": [
+            10.16,
+            12.58
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "ad2f3113-f40c-4239-8398-7147cded0ef3"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            10.81,
+            12.58
+          ],
+          "end": [
+            10.16,
+            12.58
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "938a787d-3f82-431b-a17d-82dfe3ae9a21"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            10.81,
+            13.1
+          ],
+          "end": [
+            10.81,
+            12.58
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "5e51cd6d-3473-447e-8f33-bd427ee1275b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.2,
+            12.19
+          ],
+          "end": [
+            -3.55,
+            12.19
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "18e5ce2d-caaa-4d3c-a542-7c3d18f97bf8"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.2,
+            13.49
+          ],
+          "end": [
+            -4.2,
+            12.19
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "06829ac4-e295-406d-86d5-410547984fb4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.2,
+            13.49
+          ],
+          "end": [
+            11.2,
+            13.49
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "d11095f3-dd4f-4781-98a4-dce90b4b2489"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.55,
+            -2.77
+          ],
+          "end": [
+            -3.55,
+            0.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "ce2d28e6-1ba7-447c-8dd9-e734eaa7cf23"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.55,
+            -2.77
+          ],
+          "end": [
+            10.55,
+            -2.77
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "427be8c6-0c31-4f6f-a301-9e54c0789ae0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.55,
+            12.19
+          ],
+          "end": [
+            -3.55,
+            4.66
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "152139b9-acba-453c-aa70-fc4d6a36dfe6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10.55,
+            -2.77
+          ],
+          "end": [
+            10.55,
+            0.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "1f0421a0-14b3-4ffa-b57a-0c3d8df92509"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10.55,
+            12.19
+          ],
+          "end": [
+            10.55,
+            4.66
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "54517dd9-a195-4151-945d-0106a68b8b8f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            11.2,
+            12.19
+          ],
+          "end": [
+            10.55,
+            12.19
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "414472a4-9d2e-4e19-8ae7-eb31a0bf21f7"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            11.2,
+            13.49
+          ],
+          "end": [
+            11.2,
+            12.19
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "26c01cf3-bd9e-4da7-93f1-1f5ad1dbc225"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.7,
+            12.69
+          ],
+          "end": [
+            -3.7,
+            12.99
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "52298c0b-6f17-44e9-b069-886decd39f9e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.7,
+            12.99
+          ],
+          "end": [
+            10.7,
+            12.99
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "4509d9ac-36d5-46bf-9a6d-ddc13badd809"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.05,
+            -2.27
+          ],
+          "end": [
+            10.05,
+            -2.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "74d3a8db-6baa-4186-8cb6-d911e301e4ec"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.05,
+            9.27
+          ],
+          "end": [
+            10.05,
+            9.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "016afd6a-479c-4d73-b692-7fb299615b47"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.05,
+            12.69
+          ],
+          "end": [
+            -3.7,
+            12.69
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "2e9d6e5e-7b40-4c0f-bcc2-52f4b106f1a5"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.05,
+            12.69
+          ],
+          "end": [
+            -3.05,
+            -2.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "8d9ecb18-e0f8-42fc-a4af-5ef5f1eae488"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1,
+            -2.27
+          ],
+          "end": [
+            0,
+            -1.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "aa17ced7-0a99-42d8-9b70-30803e46478b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0,
+            -1.27
+          ],
+          "end": [
+            1,
+            -2.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "88444d6a-9095-428c-97b4-6fb0a4f27907"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            10.05,
+            -2.27
+          ],
+          "end": [
+            10.05,
+            12.69
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "520befb7-a87f-433b-9bca-ff78de6e9391"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            10.7,
+            12.69
+          ],
+          "end": [
+            10.05,
+            12.69
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "a8fe9cd4-c50d-4756-bdbe-b03751ef0f5e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            10.7,
+            12.99
+          ],
+          "end": [
+            10.7,
+            12.69
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "cdb0e725-3de8-4555-9c85-c7030b579933"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.55,
+            4.66
+          ],
+          "mid": [
+            -5.078208,
+            2.71
+          ],
+          "end": [
+            -3.55,
+            0.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "c1f6c59f-e338-4485-a523-5ce7bd49d9a1"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10.55,
+            0.76
+          ],
+          "mid": [
+            12.078208,
+            2.71
+          ],
+          "end": [
+            10.55,
+            4.66
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "8bb4c650-5211-4bf9-a664-f9d7e227beba"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            3.5,
+            3.7,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "99fd78be-c468-47ed-a9d2-012ea8c5cd43",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 3.5,
+            "y": 3.7
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            3.5,
+            -3.19,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "54bb8604-84db-4bba-85f6-c96301b59880",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 3.5,
+            "y": -3.19
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            3.5,
+            14.5,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "4945ad9a-46e8-48a3-89ed-7915b4fe32f2",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "USB_A_Molex_67643_Horizontal"
+          ]
+        },
+        "text": {
+          "content": "USB_A_Molex_67643_Horizontal",
+          "position": {
+            "x": 3.5,
+            "y": 14.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_A_Molex_67643_Horizontal.step",
+        "resolvedFileName": "USB_A_Molex_67643_Horizontal.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"USB_A_Molex_67643_Horizontal\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"USB type A, Horizontal, https://www.molex.com/pdm_docs/sd/676433910_sd.pdf\")\n\t(tags \"USB_A Female Connector receptacle\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 3.5 -3.19 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"54bb8604-84db-4bba-85f6-c96301b59880\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"USB_A_Molex_67643_Horizontal\"\n\t\t(at 3.5 14.5 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4945ad9a-46e8-48a3-89ed-7915b4fe32f2\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"772a7bfc-9b5f-4ac2-a54a-73bd22b0f9af\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"838c5c0e-5674-467a-b1c5-de1f19abe2bf\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -3.81 12.58)\n\t\t(end -3.81 13.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"a793aa9d-14d1-4b06-803f-133a28ce5593\")\n\t)\n\t(fp_line\n\t\t(start -3.81 13.1)\n\t\t(end 10.81 13.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b064f63c-4828-4a91-b349-b3bf2eca4044\")\n\t)\n\t(fp_line\n\t\t(start -3.16 -2.38)\n\t\t(end -3.16 0.95)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f91fc83b-7088-4246-a35a-89f88d25e05a\")\n\t)\n\t(fp_line\n\t\t(start -3.16 -2.38)\n\t\t(end 10.16 -2.38)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"4c784483-8c83-47f0-bfaf-4c6c19ede978\")\n\t)\n\t(fp_line\n\t\t(start -3.16 12.58)\n\t\t(end -3.81 12.58)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"288db5c2-69b1-41b8-865f-7c85a7b716f9\")\n\t)\n\t(fp_line\n\t\t(start -3.16 12.58)\n\t\t(end -3.16 4.47)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"070d01df-f3ca-4841-83c8-ebec6014f02f\")\n\t)\n\t(fp_line\n\t\t(start -0.9 -2.6)\n\t\t(end 0.9 -2.6)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"217aca3c-f000-4746-88bd-aa296dd7edd7\")\n\t)\n\t(fp_line\n\t\t(start 10.16 -2.38)\n\t\t(end 10.16 0.95)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"02c36777-48f4-4c9d-8f98-92b208bfba68\")\n\t)\n\t(fp_line\n\t\t(start 10.16 4.47)\n\t\t(end 10.16 12.58)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"ad2f3113-f40c-4239-8398-7147cded0ef3\")\n\t)\n\t(fp_line\n\t\t(start 10.81 12.58)\n\t\t(end 10.16 12.58)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"938a787d-3f82-431b-a17d-82dfe3ae9a21\")\n\t)\n\t(fp_line\n\t\t(start 10.81 13.1)\n\t\t(end 10.81 12.58)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"5e51cd6d-3473-447e-8f33-bd427ee1275b\")\n\t)\n\t(fp_line\n\t\t(start -4.2 12.19)\n\t\t(end -3.55 12.19)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"18e5ce2d-caaa-4d3c-a542-7c3d18f97bf8\")\n\t)\n\t(fp_line\n\t\t(start -4.2 13.49)\n\t\t(end -4.2 12.19)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"06829ac4-e295-406d-86d5-410547984fb4\")\n\t)\n\t(fp_line\n\t\t(start -4.2 13.49)\n\t\t(end 11.2 13.49)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"d11095f3-dd4f-4781-98a4-dce90b4b2489\")\n\t)\n\t(fp_line\n\t\t(start -3.55 -2.77)\n\t\t(end -3.55 0.76)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"ce2d28e6-1ba7-447c-8dd9-e734eaa7cf23\")\n\t)\n\t(fp_line\n\t\t(start -3.55 -2.77)\n\t\t(end 10.55 -2.77)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"427be8c6-0c31-4f6f-a301-9e54c0789ae0\")\n\t)\n\t(fp_line\n\t\t(start -3.55 12.19)\n\t\t(end -3.55 4.66)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"152139b9-acba-453c-aa70-fc4d6a36dfe6\")\n\t)\n\t(fp_line\n\t\t(start 10.55 -2.77)\n\t\t(end 10.55 0.76)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"1f0421a0-14b3-4ffa-b57a-0c3d8df92509\")\n\t)\n\t(fp_line\n\t\t(start 10.55 12.19)\n\t\t(end 10.55 4.66)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"54517dd9-a195-4151-945d-0106a68b8b8f\")\n\t)\n\t(fp_line\n\t\t(start 11.2 12.19)\n\t\t(end 10.55 12.19)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"414472a4-9d2e-4e19-8ae7-eb31a0bf21f7\")\n\t)\n\t(fp_line\n\t\t(start 11.2 13.49)\n\t\t(end 11.2 12.19)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"26c01cf3-bd9e-4da7-93f1-1f5ad1dbc225\")\n\t)\n\t(fp_arc\n\t\t(start -3.55 4.66)\n\t\t(mid -5.078208 2.71)\n\t\t(end -3.55 0.76)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"c1f6c59f-e338-4485-a523-5ce7bd49d9a1\")\n\t)\n\t(fp_arc\n\t\t(start 10.55 0.76)\n\t\t(mid 12.078208 2.71)\n\t\t(end 10.55 4.66)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"8bb4c650-5211-4bf9-a664-f9d7e227beba\")\n\t)\n\t(fp_line\n\t\t(start -3.7 12.69)\n\t\t(end -3.7 12.99)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"52298c0b-6f17-44e9-b069-886decd39f9e\")\n\t)\n\t(fp_line\n\t\t(start -3.7 12.99)\n\t\t(end 10.7 12.99)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4509d9ac-36d5-46bf-9a6d-ddc13badd809\")\n\t)\n\t(fp_line\n\t\t(start -3.05 -2.27)\n\t\t(end 10.05 -2.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"74d3a8db-6baa-4186-8cb6-d911e301e4ec\")\n\t)\n\t(fp_line\n\t\t(start -3.05 9.27)\n\t\t(end 10.05 9.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"016afd6a-479c-4d73-b692-7fb299615b47\")\n\t)\n\t(fp_line\n\t\t(start -3.05 12.69)\n\t\t(end -3.7 12.69)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"2e9d6e5e-7b40-4c0f-bcc2-52f4b106f1a5\")\n\t)\n\t(fp_line\n\t\t(start -3.05 12.69)\n\t\t(end -3.05 -2.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"8d9ecb18-e0f8-42fc-a4af-5ef5f1eae488\")\n\t)\n\t(fp_line\n\t\t(start -1 -2.27)\n\t\t(end 0 -1.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"aa17ced7-0a99-42d8-9b70-30803e46478b\")\n\t)\n\t(fp_line\n\t\t(start 0 -1.27)\n\t\t(end 1 -2.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"88444d6a-9095-428c-97b4-6fb0a4f27907\")\n\t)\n\t(fp_line\n\t\t(start 10.05 -2.27)\n\t\t(end 10.05 12.69)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"520befb7-a87f-433b-9bca-ff78de6e9391\")\n\t)\n\t(fp_line\n\t\t(start 10.7 12.69)\n\t\t(end 10.05 12.69)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"a8fe9cd4-c50d-4756-bdbe-b03751ef0f5e\")\n\t)\n\t(fp_line\n\t\t(start 10.7 12.99)\n\t\t(end 10.7 12.69)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"cdb0e725-3de8-4555-9c85-c7030b579933\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 3.5 3.7 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"99fd78be-c468-47ed-a9d2-012ea8c5cd43\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole roundrect\n\t\t(at 0 0)\n\t\t(size 1.6 1.5)\n\t\t(drill 0.95)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(roundrect_rratio 0.1666666667)\n\t\t(uuid \"1cf45211-9e76-4573-8020-67898c7298e6\")\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 2.5 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.95)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"5530e3e2-6d46-4b0e-9e6a-9a7a34e80cf8\")\n\t)\n\t(pad \"3\" thru_hole circle\n\t\t(at 4.5 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.95)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"ea31539d-fceb-48a9-b853-2fded4bf6581\")\n\t)\n\t(pad \"4\" thru_hole circle\n\t\t(at 7 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.95)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"3ecb47da-e2e1-4eba-89b8-72b808fd4109\")\n\t)\n\t(pad \"SH\" thru_hole circle\n\t\t(at -3.07 2.71)\n\t\t(size 3 3)\n\t\t(drill 2.3)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"874cda19-d890-46f0-8904-6628ed118322\")\n\t)\n\t(pad \"SH\" thru_hole circle\n\t\t(at 10.07 2.71)\n\t\t(size 3 3)\n\t\t(drill 2.3)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"4116e289-901a-4ecf-a607-51921cceb415\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_A_Molex_67643_Horizontal.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "USB_A_Molex_67643_Horizontal.kicad_mod"
+}

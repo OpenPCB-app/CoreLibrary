@@ -1,0 +1,90 @@
+{
+  "id": "openpcb.core.ic.w25q32",
+  "uuid": "4be6a801-92cc-5e27-93bc-32a5312ec1cc",
+  "version": "0.2.0",
+  "name": "W25Q32 SPI Flash",
+  "description": "W25Q32 32-Mbit SPI NOR flash memory (SOIC-8 208-mil).",
+  "category": "ic",
+  "subcategory": "memory",
+  "tags": [
+    "ic",
+    "memory",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "W25Q32",
+    "SPI flash",
+    "NOR flash",
+    "32Mbit",
+    "Winbond"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf",
+  "parameters": {
+    "type": "NOR flash",
+    "interface": "SPI",
+    "size": "32Mbit"
+  },
+  "symbol": "openpcb.core.symbol.ic.w25q32",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-5-3x5-3mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-5-3x5-3mm-p1-27mm",
+      "label": "SOIC-8 5.3x5.3mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "W25Q32JVSS.kicad_sym",
+    "sourceLibrary": "Memory_Flash",
+    "sourceItemName": "W25Q32 SPI Flash",
+    "sourceHash": "1caaf68dfdaa56e097825d082cc9034029660dd881babcb8651c3ed1ac31c9e5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

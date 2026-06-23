@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.diode.bav99",
+  "uuid": "32309fe5-0504-5d7d-8840-3af6c347ba67",
+  "version": "0.2.0",
+  "name": "BAV99 Dual Switching Diode",
+  "description": "BAV99 dual series switching diode in SOT-23.",
+  "category": "diode",
+  "subcategory": "switching-dual",
+  "tags": [
+    "diode",
+    "switching",
+    "dual",
+    "sot-23",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BAV99",
+    "dual diode",
+    "switching",
+    "series"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/BAV99_SER.pdf",
+  "symbol": "openpcb.core.symbol.diode.bav99",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BAV99.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "BAV99 Dual Switching Diode",
+    "sourceHash": "5ae483d574a94519b1cfe4e1f3cc4e963290009e54748be3187185e0e32b0822",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

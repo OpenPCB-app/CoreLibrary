@@ -1,0 +1,976 @@
+{
+  "id": "openpcb.core.symbol.ic.74hc04",
+  "uuid": "b9c48cc2-733e-5e71-9d35-659f78eeb1f5",
+  "version": "0.2.0",
+  "name": "74HC04 Hex Inverter",
+  "referencePrefix": "U",
+  "description": "Hex Inverter",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "74HC04.kicad_sym",
+    "sourceLibrary": "74xx",
+    "sourceItemName": "74HC04",
+    "sourceHash": "a1c08137e0e27e850e07cfea7f35b03eedb998dd9f5b392b2a55ecbf9be1f57c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 74LS04"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "74HC04",
+      "Footprint": "",
+      "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf",
+      "Description": "Hex Inverter",
+      "ki_locked": "",
+      "ki_keywords": "HCMOS not inv",
+      "ki_fp_filters": "DIP*W7.62mm* SSOP?14* TSSOP?14*"
+    },
+    "units": 7,
+    "sourceFiles": [
+      {
+        "fileName": "74HC04.kicad_sym",
+        "sourceItemName": "74HC04",
+        "sha256": "fa51c87ab73c9280e91e466ac9f66cfc1c38dabe394c3f80242021e35ea344f2"
+      },
+      {
+        "fileName": "74LS04.kicad_sym",
+        "sourceItemName": "74LS04",
+        "sha256": "ecbf63f043015fde72127be7b9d1ead4a7fb94d99c61da6282c827503da75492"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_d52cf3715be5dedc",
+    "name": "74HC04",
+    "referencePrefix": "U",
+    "description": "Hex Inverter",
+    "sourceHash": "a1c08137e0e27e850e07cfea7f35b03eedb998dd9f5b392b2a55ecbf9be1f57c",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u2:3",
+        "number": "3",
+        "name": "",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:4",
+        "number": "4",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u3:5",
+        "number": "5",
+        "name": "",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 3
+      },
+      {
+        "originPinKey": "u3:6",
+        "number": "6",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 3
+      },
+      {
+        "originPinKey": "u4:8",
+        "number": "8",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 4
+      },
+      {
+        "originPinKey": "u4:9",
+        "number": "9",
+        "name": "",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 4
+      },
+      {
+        "originPinKey": "u5:10",
+        "number": "10",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 5
+      },
+      {
+        "originPinKey": "u5:11",
+        "number": "11",
+        "name": "",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 5
+      },
+      {
+        "originPinKey": "u6:12",
+        "number": "12",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 6
+      },
+      {
+        "originPinKey": "u6:13",
+        "number": "13",
+        "name": "",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 6
+      },
+      {
+        "originPinKey": "u7:7",
+        "number": "7",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -12.7
+        },
+        "electricalType": "power_in",
+        "unit": 7
+      },
+      {
+        "originPinKey": "u7:14",
+        "number": "14",
+        "name": "VCC",
+        "localPosition": {
+          "x": 0,
+          "y": 12.7
+        },
+        "electricalType": "power_in",
+        "unit": 7
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 74LS04"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "74HC04",
+      "unitCount": 7,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": 3.81
+            },
+            {
+              "x": -3.81,
+              "y": -3.81
+            },
+            {
+              "x": 3.81,
+              "y": 0
+            },
+            {
+              "x": -3.81,
+              "y": 3.81
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -3.81,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 3.81,
+            "y": 4.6659043047514155e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -5.715,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 5.715,
+            "y": 0.5080000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 5.207000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "74HC04",
+          "at": {
+            "x": 0,
+            "y": -5.207000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.62,
+        "minY": -6.477,
+        "maxX": 7.62,
+        "maxY": 6.477
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from 74LS04"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "74HC04",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "2",
+        "electricalType": "output",
+        "direction": "inverted",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "4",
+        "electricalType": "output",
+        "direction": "inverted",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 180,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 3,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "6",
+        "electricalType": "output",
+        "direction": "inverted",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 180,
+        "unit": 3,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "8",
+        "electricalType": "output",
+        "direction": "inverted",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 180,
+        "unit": 4,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "9",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 4,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "10",
+        "electricalType": "output",
+        "direction": "inverted",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 180,
+        "unit": 5,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "11",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 5,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "12",
+        "electricalType": "output",
+        "direction": "inverted",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 180,
+        "unit": 6,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "13",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 6,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "7",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -12.7
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 7,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "14",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 12.7
+        },
+        "length": 5.08,
+        "rotation": 270,
+        "unit": 7,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 7,
+    "properties": {
+      "Reference": "U",
+      "Value": "74HC04",
+      "Footprint": "",
+      "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf",
+      "Description": "Hex Inverter",
+      "ki_locked": "",
+      "ki_keywords": "HCMOS not inv",
+      "ki_fp_filters": "DIP*W7.62mm* SSOP?14* TSSOP?14*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 0,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              3.81
+            ],
+            [
+              "xy",
+              -3.81,
+              -3.81
+            ],
+            [
+              "xy",
+              3.81,
+              0
+            ],
+            [
+              "xy",
+              -3.81,
+              3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 2,
+        "convert": 0,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              3.81
+            ],
+            [
+              "xy",
+              -3.81,
+              -3.81
+            ],
+            [
+              "xy",
+              3.81,
+              0
+            ],
+            [
+              "xy",
+              -3.81,
+              3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 3,
+        "convert": 0,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              3.81
+            ],
+            [
+              "xy",
+              -3.81,
+              -3.81
+            ],
+            [
+              "xy",
+              3.81,
+              0
+            ],
+            [
+              "xy",
+              -3.81,
+              3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 4,
+        "convert": 0,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              3.81
+            ],
+            [
+              "xy",
+              -3.81,
+              -3.81
+            ],
+            [
+              "xy",
+              3.81,
+              0
+            ],
+            [
+              "xy",
+              -3.81,
+              3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 5,
+        "convert": 0,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              3.81
+            ],
+            [
+              "xy",
+              -3.81,
+              -3.81
+            ],
+            [
+              "xy",
+              3.81,
+              0
+            ],
+            [
+              "xy",
+              -3.81,
+              3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 6,
+        "convert": 0,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              3.81
+            ],
+            [
+              "xy",
+              -3.81,
+              -3.81
+            ],
+            [
+              "xy",
+              3.81,
+              0
+            ],
+            [
+              "xy",
+              -3.81,
+              3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 7,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            7.62
+          ],
+          [
+            "end",
+            5.08,
+            -7.62
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 74LS04"
+      }
+    ],
+    "rawSource": "(symbol 74HC04 (extends 74LS04) (property Reference U (at 0 1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value 74HC04 (at 0 -1.27 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Hex Inverter\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"HCMOS not inv\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"DIP*W7.62mm* SSOP?14* TSSOP?14*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

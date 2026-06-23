@@ -1,0 +1,251 @@
+{
+  "id": "openpcb.core.ic.stm32f103c8",
+  "uuid": "348cb68c-730e-5b23-b12e-50524cc7a6c7",
+  "version": "0.2.0",
+  "name": "STM32F103C8",
+  "description": "STM32F103C8 ARM Cortex-M3 microcontroller, LQFP-48 (\"Blue Pill\").",
+  "category": "ic",
+  "subcategory": "mcu",
+  "tags": [
+    "ic",
+    "mcu",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "STM32F103",
+    "STM32",
+    "ARM",
+    "Cortex-M3",
+    "Blue Pill"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.st.com/resource/en/datasheet/stm32f103c8.pdf",
+  "parameters": {
+    "core": "ARM Cortex-M3",
+    "flash": "64KB",
+    "ram": "20KB",
+    "clock": "72MHz"
+  },
+  "symbol": "openpcb.core.symbol.ic.stm32f103c8",
+  "defaultFootprint": "openpcb.core.footprint.package.lqfp-48-7x7mm-p0-5mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.lqfp-48-7x7mm-p0-5mm",
+      "label": "LQFP-48 7x7mm P0.5mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "17",
+          "padNumber": "17"
+        },
+        {
+          "pinNumber": "18",
+          "padNumber": "18"
+        },
+        {
+          "pinNumber": "19",
+          "padNumber": "19"
+        },
+        {
+          "pinNumber": "20",
+          "padNumber": "20"
+        },
+        {
+          "pinNumber": "21",
+          "padNumber": "21"
+        },
+        {
+          "pinNumber": "22",
+          "padNumber": "22"
+        },
+        {
+          "pinNumber": "23",
+          "padNumber": "23"
+        },
+        {
+          "pinNumber": "24",
+          "padNumber": "24"
+        },
+        {
+          "pinNumber": "25",
+          "padNumber": "25"
+        },
+        {
+          "pinNumber": "26",
+          "padNumber": "26"
+        },
+        {
+          "pinNumber": "27",
+          "padNumber": "27"
+        },
+        {
+          "pinNumber": "28",
+          "padNumber": "28"
+        },
+        {
+          "pinNumber": "29",
+          "padNumber": "29"
+        },
+        {
+          "pinNumber": "30",
+          "padNumber": "30"
+        },
+        {
+          "pinNumber": "31",
+          "padNumber": "31"
+        },
+        {
+          "pinNumber": "32",
+          "padNumber": "32"
+        },
+        {
+          "pinNumber": "33",
+          "padNumber": "33"
+        },
+        {
+          "pinNumber": "34",
+          "padNumber": "34"
+        },
+        {
+          "pinNumber": "35",
+          "padNumber": "35"
+        },
+        {
+          "pinNumber": "36",
+          "padNumber": "36"
+        },
+        {
+          "pinNumber": "37",
+          "padNumber": "37"
+        },
+        {
+          "pinNumber": "38",
+          "padNumber": "38"
+        },
+        {
+          "pinNumber": "39",
+          "padNumber": "39"
+        },
+        {
+          "pinNumber": "40",
+          "padNumber": "40"
+        },
+        {
+          "pinNumber": "41",
+          "padNumber": "41"
+        },
+        {
+          "pinNumber": "42",
+          "padNumber": "42"
+        },
+        {
+          "pinNumber": "43",
+          "padNumber": "43"
+        },
+        {
+          "pinNumber": "44",
+          "padNumber": "44"
+        },
+        {
+          "pinNumber": "45",
+          "padNumber": "45"
+        },
+        {
+          "pinNumber": "46",
+          "padNumber": "46"
+        },
+        {
+          "pinNumber": "47",
+          "padNumber": "47"
+        },
+        {
+          "pinNumber": "48",
+          "padNumber": "48"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "STM32F103C8Tx.kicad_sym",
+    "sourceLibrary": "MCU_ST_STM32F1",
+    "sourceItemName": "STM32F103C8",
+    "sourceHash": "9b6c8be273876978102462972298f3e5478cfb2765d6ab3198fab2d2044f434e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

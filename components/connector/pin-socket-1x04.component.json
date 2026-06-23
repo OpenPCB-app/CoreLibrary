@@ -1,0 +1,67 @@
+{
+  "id": "openpcb.core.connector.pin-socket-1x04",
+  "uuid": "72edded6-ceec-55af-ae0f-e5bf423c2143",
+  "version": "0.2.0",
+  "name": "Pin Socket 1x04 2.54mm",
+  "description": "Four-pin single-row 2.54 mm vertical pin socket.",
+  "category": "connector",
+  "subcategory": "socket",
+  "tags": [
+    "connector",
+    "socket",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "connector",
+    "socket",
+    "2.54mm",
+    "1x04"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.connector.pin-socket-1x04",
+  "defaultFootprint": "openpcb.core.footprint.connector.pin-socket-1x04-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.pin-socket-1x04-vertical",
+      "label": "1x04 vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x04.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Pin Socket 1x04 2.54mm",
+    "sourceHash": "821fbf1b0786fdd272f9069d54323ff4f8f803734979e6d3d9c041eecd97d822",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T15:13:09.466Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

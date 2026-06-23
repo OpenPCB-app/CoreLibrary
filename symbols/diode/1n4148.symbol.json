@@ -1,0 +1,425 @@
+{
+  "id": "openpcb.core.symbol.diode.1n4148",
+  "uuid": "01d9eab7-a4b5-5fe7-83be-f5ecbedc0fe5",
+  "version": "0.2.0",
+  "name": "1N4148 Switching Diode",
+  "referencePrefix": "D",
+  "description": "100V 0.15A standard switching diode, DO-35",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "1N4148.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "1N4148",
+    "sourceHash": "98e0435ca03274cc745fabe0b252125510aaf77f3f195369ffd76e3ef770af76",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 1N4001"
+      }
+    ],
+    "properties": {
+      "Reference": "D",
+      "Value": "1N4148",
+      "Footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+      "Datasheet": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
+      "Description": "100V 0.15A standard switching diode, DO-35",
+      "Sim.Device": "D",
+      "Sim.Pins": "1=K 2=A",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "D*DO?35*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "1N4148.kicad_sym",
+        "sourceItemName": "1N4148",
+        "sha256": "9d91a0596d0be93558a0f083185733b69080fce7b8d342b10dfe9c73b39d6dfb"
+      },
+      {
+        "fileName": "1N4001.kicad_sym",
+        "sourceItemName": "1N4001",
+        "sha256": "344b1e29dd03b2df38f31cdd4c44adf4a2623c594d08c5a740f8026d70660d95"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_be8e8323ab63a5b5",
+    "name": "1N4148",
+    "referencePrefix": "D",
+    "description": "100V 0.15A standard switching diode, DO-35",
+    "sourceHash": "98e0435ca03274cc745fabe0b252125510aaf77f3f195369ffd76e3ef770af76",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "K",
+        "localPosition": {
+          "x": -3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "A",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 1N4001"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "1N4148",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": 1.27
+            },
+            {
+              "x": -1.27,
+              "y": -1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 1.27
+            },
+            {
+              "x": 1.27,
+              "y": -1.27
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": 1.27
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 0
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 1.27,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "D",
+          "at": {
+            "x": 0,
+            "y": 2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "1N4148",
+          "at": {
+            "x": 0,
+            "y": -2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.81,
+        "minY": -3.937,
+        "maxX": 3.81,
+        "maxY": 3.937
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from 1N4001"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "1N4148",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "K",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "A",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "D",
+      "Value": "1N4148",
+      "Footprint": "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal",
+      "Datasheet": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
+      "Description": "100V 0.15A standard switching diode, DO-35",
+      "Sim.Device": "D",
+      "Sim.Pins": "1=K 2=A",
+      "ki_keywords": "diode",
+      "ki_fp_filters": "D*DO?35*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              -1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              1.27
+            ],
+            [
+              "xy",
+              1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              0
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 1N4001"
+      }
+    ],
+    "rawSource": "(symbol 1N4148 (extends 1N4001) (property Reference D (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value 1N4148 (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"100V 0.15A standard switching diode, DO-35\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords diode (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters D*DO?35* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

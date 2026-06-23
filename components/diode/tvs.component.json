@@ -1,0 +1,74 @@
+{
+  "id": "openpcb.core.diode.tvs",
+  "uuid": "bf41044d-ae23-51db-a15a-19eb06a2a749",
+  "version": "0.2.0",
+  "name": "TVS Diode",
+  "description": "Generic unidirectional TVS transient-voltage-suppression diode (SMA/SMB).",
+  "category": "diode",
+  "subcategory": "tvs",
+  "tags": [
+    "diode",
+    "tvs",
+    "protection",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TVS",
+    "transient suppressor",
+    "ESD",
+    "surge"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.diode.tvs",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sma",
+      "label": "SMA",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.diode.d-smb",
+      "label": "SMB",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "D_TVS_Filled.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "TVS Diode",
+    "sourceHash": "c9039ab9b71f2dae6d8f692cb203040d87c6e4400a989e4e20a81b79faa59e9a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T13:56:34.975Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

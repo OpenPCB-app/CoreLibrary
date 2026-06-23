@@ -1,0 +1,786 @@
+{
+  "id": "openpcb.core.symbol.ic.lm393",
+  "uuid": "011409be-25e5-513c-aec3-944b03969997",
+  "version": "0.2.0",
+  "name": "LM393 Dual Comparator",
+  "referencePrefix": "U",
+  "description": "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "LM393.kicad_sym",
+    "sourceLibrary": "Comparator",
+    "sourceItemName": "LM393",
+    "sourceHash": "87fff9fb8a598315b88cccf6d5216fba0d35fba9a6951817b46d9488753c3b68",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:03:11.984Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LM2903"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "LM393",
+      "Footprint": "",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/lm393.pdf",
+      "Description": "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8",
+      "ki_locked": "",
+      "ki_keywords": "cmp open collector",
+      "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*"
+    },
+    "units": 3,
+    "sourceFiles": [
+      {
+        "fileName": "LM393.kicad_sym",
+        "sourceItemName": "LM393",
+        "sha256": "5b65d0aa0fd859771d2558418ed42e6cdec3d065b4c13e3bc149b38d866e3e37"
+      },
+      {
+        "fileName": "LM2903.kicad_sym",
+        "sourceItemName": "LM2903",
+        "sha256": "4bf0f362db42378dffedf55c2e6601626807c774c144b1374a94687a0530d5f6"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_10a30ad0c3ceff18",
+    "name": "LM393",
+    "referencePrefix": "U",
+    "description": "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8",
+    "sourceHash": "87fff9fb8a598315b88cccf6d5216fba0d35fba9a6951817b46d9488753c3b68",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "open_collector",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "-",
+        "localPosition": {
+          "x": -7.62,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "+",
+        "localPosition": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u2:5",
+        "number": "5",
+        "name": "+",
+        "localPosition": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:6",
+        "number": "6",
+        "name": "-",
+        "localPosition": {
+          "x": -7.62,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:7",
+        "number": "7",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "open_collector",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u3:4",
+        "number": "4",
+        "name": "V-",
+        "localPosition": {
+          "x": -2.54,
+          "y": -7.62
+        },
+        "electricalType": "power_in",
+        "unit": 3
+      },
+      {
+        "originPinKey": "u3:8",
+        "number": "8",
+        "name": "V+",
+        "localPosition": {
+          "x": -2.54,
+          "y": 7.62
+        },
+        "electricalType": "power_in",
+        "unit": 3
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LM2903"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "LM393",
+      "unitCount": 3,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -5.08,
+              "y": 5.08
+            },
+            {
+              "x": 5.08,
+              "y": 0
+            },
+            {
+              "x": -5.08,
+              "y": -5.08
+            },
+            {
+              "x": -5.08,
+              "y": 5.08
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.302,
+              "y": -0.508
+            },
+            {
+              "x": 2.794,
+              "y": -0.508
+            },
+            {
+              "x": 3.302,
+              "y": 0
+            },
+            {
+              "x": 2.794,
+              "y": 0.508
+            },
+            {
+              "x": 2.286,
+              "y": 0
+            },
+            {
+              "x": 2.794,
+              "y": -0.508
+            },
+            {
+              "x": 2.286,
+              "y": -0.508
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.127
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "open_collector",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "-",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "+",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 6.35,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "-",
+          "at": {
+            "x": -4.572,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -6.35,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "+",
+          "at": {
+            "x": -4.572,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -6.35,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 6.477
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "LM393",
+          "at": {
+            "x": 0,
+            "y": -6.477
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.62,
+        "minY": -7.747,
+        "maxX": 7.62,
+        "maxY": 7.747
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from LM2903"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "LM393",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "",
+        "number": "1",
+        "electricalType": "open_collector",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "-",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "+",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "+",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "-",
+        "number": "6",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "7",
+        "electricalType": "open_collector",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V-",
+        "number": "4",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": -7.62
+        },
+        "length": 3.81,
+        "rotation": 90,
+        "unit": 3,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V+",
+        "number": "8",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": 7.62
+        },
+        "length": 3.81,
+        "rotation": 270,
+        "unit": 3,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 3,
+    "properties": {
+      "Reference": "U",
+      "Value": "LM393",
+      "Footprint": "",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/lm393.pdf",
+      "Description": "Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8",
+      "ki_locked": "",
+      "ki_keywords": "cmp open collector",
+      "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -5.08,
+              5.08
+            ],
+            [
+              "xy",
+              5.08,
+              0
+            ],
+            [
+              "xy",
+              -5.08,
+              -5.08
+            ],
+            [
+              "xy",
+              -5.08,
+              5.08
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.302,
+              -0.508
+            ],
+            [
+              "xy",
+              2.794,
+              -0.508
+            ],
+            [
+              "xy",
+              3.302,
+              0
+            ],
+            [
+              "xy",
+              2.794,
+              0.508
+            ],
+            [
+              "xy",
+              2.286,
+              0
+            ],
+            [
+              "xy",
+              2.794,
+              -0.508
+            ],
+            [
+              "xy",
+              2.286,
+              -0.508
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.127
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 2,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -5.08,
+              5.08
+            ],
+            [
+              "xy",
+              5.08,
+              0
+            ],
+            [
+              "xy",
+              -5.08,
+              -5.08
+            ],
+            [
+              "xy",
+              -5.08,
+              5.08
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 2,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.302,
+              -0.508
+            ],
+            [
+              "xy",
+              2.794,
+              -0.508
+            ],
+            [
+              "xy",
+              3.302,
+              0
+            ],
+            [
+              "xy",
+              2.794,
+              0.508
+            ],
+            [
+              "xy",
+              2.286,
+              0
+            ],
+            [
+              "xy",
+              2.794,
+              -0.508
+            ],
+            [
+              "xy",
+              2.286,
+              -0.508
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.127
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LM2903"
+      }
+    ],
+    "rawSource": "(symbol LM393 (extends LM2903) (property Reference U (at 3.81 3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value LM393 (at 6.35 -3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.ti.com/lit/ds/symlink/lm393.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Low-Power, Low-Offset Voltage, Dual Comparators, DIP-8/SOIC-8/TO-99-8\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"cmp open collector\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* SOP*5.28x5.23mm*P1.27mm* VSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.127,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

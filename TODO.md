@@ -1,95 +1,97 @@
-# 3D Placement Hardening — TODO
+# CoreLibrary Expansion — TODO
 
-Plan: `~/.claude/plans/do-thorough-analysis-of-fizzy-clover.md`
+Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](CURRENT_STATE.md) for what's done and [HANDOFF.md](HANDOFF.md) for the per-phase workflow + gotchas.
 
-## Phase 1 — Convention doc
+**Source docs:** spec `../Corelibrary expansion plan.md` (§7.4 master parts table, Appendix D checklist); corrected plan `~/.claude/plans/act-as-senior-software-snazzy-lantern.md`.
 
-- [ ] `docs/3d-placement-convention.md` (Z-up/mm/origin, KLC identity rule, bake policy, mountType body-axis)
+**Invariant for every content phase:** branch `feat/corelib-<phase>` → author `tools/manifests/<phase>.json` (symdir paths; **every footprint has a STEP**) → `import --strict` → `validate --release --strict` → `audit:3d` → `bun test` → `pack` spot-check → PR. CI runs `--release --strict`, so no-STEP parts go to Wave 2.
 
-## Phase 3 — Bounds + geometric gate (CoreLibrary, self-contained)
+## Done
 
-- [ ] `tools/glb-bounds.ts` — compute baked-GLB bbox (min/max/size) in bun ← spike first
-- [ ] `tools/orientation-gate.ts` — pure gate: on-board / up-axis / XY-coverage / scale
-- [ ] `schemas/model3d.schema.json` — add optional `boundsMinMm`/`boundsMaxMm`
-- [ ] `tools/pack.ts` — compute bounds; `--write-bounds` patches sidecars
-- [ ] rewrite `tools/audit-3d-placement.ts` → real gate (`--release` exits nonzero), HTML report
-- [ ] `tools/validate.ts` — run gate in `--release`
+- [x] **P0** Foundations (schema fields, importer passthrough + KiCad-Datasheet capture, validator checks, fetch-kicad-libs, check-datasheet-links, PARAMETERS.md, manifest TEMPLATE, CI, docs).
+- [x] **P0.9** IC convention migration: `74hc00`(+DIP-14), `ne555`(+DIP-8), `ams1117-3v3`, `lm358` metadata; aliases for remap.
+- [x] **P1** Passives: ferrite-bead, capacitor-electrolytic, capacitor-tantalum, fuse-resettable, crystal, crystal-gnd.
+- [x] **P2** Discrete semis (`tools/manifests/p2-discrete.json`, branch `feat/corelib-p2`, +17 comp → 40 total, gates green): diodes 1N4148/1N4007(+M7 SMA)/SS14/BAV99/BZX84/TVS/USBLC6-2SC6, LED-THT (3/5mm), BJT MMBT3904/3906 + SS8050/8550, FET 2N7002/AO3400/AO3401/BSS138/Si2302. (M7→1N4007 sym, Si2302→generic Q_NMOS_GSD.)
+- [x] **P3** Power/analog (`tools/manifests/p3-power.json`, +6 comp → 46 total, gates green): AMS1117-5.0/ADJ (SOT-223), MT3608 (SOT-23-6), TL431 (SOT-23) → `power`; LM324 (SOIC-14/DIP-14), LM393 (SOIC-8/DIP-8) → `ic`.
+  - **Deferred (3D orientation-gate calibration needed for vertical TO-220 — long leads >6mm below board + body-behind-pads offset trip the hard gate):** LM7805, LM317, LM2596. Re-import them once `orientation-gate.ts` is calibrated for vertical-THT.
+- [x] **P4** Digital ICs (`tools/manifests/p4-digital.json`, +16 comp → 62 total, gates green; pinMaps generated identity-from-pads incl. RP2040 QFN-56 EP + ESP32 39-pad): ATmega328P (DIP-28 + TQFP-32), ATtiny85, STM32F103C8 (LQFP-48), RP2040 (QFN-56), ESP32-WROOM-32, 74HC595/04/14, 24LC256, W25Q32, CH340G/C, MAX485, SP3485, TXB0108. DIP models re-flipped (`scaleMm.y:-1`). **Wave-2: 74HC125, ESP-12F.**
+- [x] **P5** Connectors/electromech/mech (`tools/manifests/p5-connectors.json`, +15 comp → 77 total, gates green): USB-A, USB Micro-B, JST-PH 1x02/03/04, pin headers 1x03/04/06/08 + 2x05, pin sockets 1x04 + 2x05, tactile switch THT/SMD, TestPoint. Connector/USB/switch 3D Y-flipped; USB Micro-B z-seat offset.
+  - **Deferred:** DC barrel jack (only STEP-backed fp has an unnumbered pad — strict-reject), buzzer (TDK PS1240 STEP bakes 15mm below board — needs rotation, not flip), **MountingHole + Fiducial** (the no-STEP mechanical code-path — see below), USB-C 2.0 + IDC 2x05 (no STEP). Power symbols dropped per decision.
+- [x] **P6** Sensors (`tools/manifests/p6-sensors.json`, +3 comp → 80 total, gates green): BME280 (LGA-8), DS18B20 (TO-92, reuses shared `package.to-92-inline`), LDR (`R_Photo`).
+  - **Deferred:** DHT11 (body 8mm below board — same long-lead-THT gate issue as TO-220), MPU-6050/HC-SR04/DHT22 (Wave-2 below).
+- **Full sweep result: 23 → 80 components**, all gates green (`validate --release --strict` OK, `audit:3d` 81 ok / 0 errors / 3 warnings, `bun test` 38 pass, pack builds). Manifests + the P4/P5 generators (`scratchpad/gen-p4.ts`, `gen-p5.ts`) capture the build.
 
-## Phase 2 — Fix data
+### Deferred code path — no-STEP mechanical parts (gates MountingHole + Fiducial; decision #1 wanted them kept)
 
-- [ ] remove `scaleMm:{y:-1}` from 4 connector sidecars (ratify via contact sheet)
-- [ ] populate `boundsMm`/min/max on all sidecars (`pack --write-bounds`)
-- [ ] `tools/import-kicad{,-batch}.ts` — enforce KLC identity, warn on non-identity
+The strict importer + validator both require a STEP-backed model per footprint. MountingHole/Fiducial have a footprint but legitimately no 3D model. To ship them, add a narrow exemption (e.g. a `no3d: true` component flag, default false):
 
-## Phase 4 — Visual contact sheet
+- **importer** (`tools/import-kicad-batch.ts` ~L880/898-904/929): make `manifestFootprint.model` optional — `models3d: []`, skip the `stepSource`/`validateStrictModelRef`/model-write when `no3d`.
+- **validator** (`tools/validate.ts` L352/358/447): skip the "footprint requires exactly one STEP-backed model" checks when the owning component is `no3d`.
+- **schema** (`schemas/component.schema.json`): add `no3d` boolean.
+  Keep the exemption tight so the STEP gate stays hard for every electrical part.
 
-- [ ] `tools/render-3d-contact-sheet.ts` — playwright-cli overlay PNGs + HTML grid
+## Next — content phases (KiCad 10 lib names; verify each symbol/footprint/STEP before adding)
 
-## Phase 5 — Tests
+### P2 — Discrete semiconductors (~45) · categories `diode`, `transistor`, `opto`
 
-- [ ] `tests/model3d-orientation.test.ts` — gate + golden bounds (`tests/fixtures/model3d-bounds.json`)
-- [ ] extend `tests/validate-integrity.test.ts` — inject 90° → gate rejects
+- [ ] Diodes: 1N4148 (`Device:D` → `Diode_SMD`:SOD-123/323, `Diode_THT`:DO-35), 1N4007/M7 (SMA/DO-41), SS14 Schottky (`D_Schottky`:SMA), **BAV99** dual (`D_Dual_Series_ACK` → `Package_TO_SOT_SMD`:SOT-23 — verify pin order), BZX84 Zener (`D_Zener`), TVS (`D_TVS`:SMA/SMB), USBLC6-2SC6 (SOT-23-6).
+- [ ] LEDs: chip (`LED`:`LED_SMD` 0603/0805/1206), THT (`LED_THT` 3mm/5mm).
+- [ ] BJT/MOSFET: **symbols are in `Transistor_BJT`/`Transistor_FET`, NOT `Device`** — MMBT3904/3906 (`Q_NPN_BCE`/`Q_PNP_BCE` SOT-23), SS8050/8550, TO-92 (`Q_*_CBE`), 2N7002/AO3400/SI2302 (`Q_NMOS_GSD`), AO3401 (`Q_PMOS_GSD`), BSS138.
 
-## Phase 6 — shared/step-to-glb
+### P3 — Power & Analog ICs (~35) · **new `power` folder** + `ic`
 
-- [ ] worker+node return post-bake bbox + orientation-mismatch warning (release later)
+- [ ] Regulators → `power`: AMS1117-5.0/ADJ, LM7805 (`Regulator_Linear` TO-220/TO-252), LM317, MP1584/MP2307 (`Regulator_Switching` SOIC-8-EP), LM2596 (TO-263-5), MT3608 (SOT-23-6), TL431 (`Reference_Voltage`).
+- [ ] Op-amps/comparators/timer → `ic` (+`subcategory`): LM324 (`Amplifier_Operational` SOIC-14/DIP-14), LM393 (`Comparator`). (LM358, NE555 already done.)
+- [ ] Populate `parameters` (vout/iout/gbw…) + `keywords`; capture `datasheetSource`.
 
-## Phase 7 — OpenPCB
+### P4 — Digital: MCUs / logic / memory / interface (~45) · `ic`
 
-- [ ] `opclib-importer.ts` — assert no render-ref when `transformBaked`
-- [ ] `three-d/transform-helpers.ts` — back-layer + ordering unit tests
+- [ ] MCUs: ATmega328P (`MCU_Microchip_ATmega` TQFP-32/DIP-28), ATtiny85, STM32F103C8 (`MCU_ST_STM32F1` LQFP-48), RP2040 (`MCU_RaspberryPi` QFN-56). Rely on importer pin↔pad check; verify symbol exists in the pinned checkout.
+- [ ] Modules: ESP32-WROOM-32, ESP-12F (`RF_Module` → `RF_Module` footprints, castellated).
+- [ ] Logic/mem/interface: 74HC595/04/14/125, 24Cxx EEPROM, W25Q32 flash, CH340G/C (`Interface_USB`), MAX485/SP3485 (`Interface_UART`), TXB0108 (`Interface_Expansion`).
 
----
+### P5 — Connectors / electromechanical / mechanical / power symbols (~55)
 
-# Symbol import/render hardening (NEW — 2026-06-02)
+- [ ] 2.54mm headers/sockets 1×N & 2×N (`Connector_Generic` — generate sizes in manifest), USB-A/Micro-B/Type-C(2.0), JST-XH/PH, DC barrel jack, IDC 2×5, tactile switches (`Switch:SW_Push`), buzzer.
+- [ ] Mechanical: MountingHole M2/M2.5/M3, TestPoint, Fiducial, solder jumper.
+- [ ] **Power symbols** (GND/+3V3/+5V/+12V/VBUS/VCC/PWR_FLAG) — schematic-only; confirm importer/validator handle footprint-less + 0-pin parts (may need a small `power_symbol` code path).
 
-Bugs (screenshots): overlapping pin name/number text; left/right pin names
-collide at body centre (connectors); multi-unit parts (74HC00, LM358) draw all
-units + both DeMorgan body styles stacked at origin.
+### P6 — Jellybean sensors (~20) · **new `sensor` folder**
 
-Root causes (confirmed via code+JSON):
+- [ ] MPU-6050 (`Sensor_Motion` QFN-24), BME280 (`Sensor` LGA-8), DS18B20 (`Sensor_Temperature` TO-92/SOIC-8), DHT11 (`Sensor` SIP-4), HC-SR04 (4-pin header), LDR (`Device:R_Photo`).
 
-- **Convert/DeMorgan collapsed into unit.** `kicad-symbol-parser.ts` matches
-  `_(\d+)_(\d+)$` but keeps only group 1 (unit), drops group 2 (convert) → body
-  style 1 AND 2 graphics/pins get the same unit and render overlapped.
-- **Preview stacks units at origin.** `build-preview-models.ts` calls
-  `buildSymbolRenderModel({composeAllUnits:true, preserveOrigin:true})` → shiftX=0
-  for every unit → all gates overlap.
-- **Pin name placement** (`rendering-core/symbol-preview-builder.ts:61-113`): name
-  at `bodyEnd`, number at `anchor`, equal 0.508 gaps, no perpendicular number
-  offset; left/right names read inward and collide on narrow bodies.
-- **Mirror/rotate anchor not flipped** (`r3f-eda-canvas/symbol-render-layer.tsx`):
-  counter-scale `[-1,1,1]` applied but `anchorX` not inverted.
-- **Lost KiCad data**: `pin_names (offset N)`, per-pin `justify`, `pin_names hide`
-  / `pin_numbers hide`, convert — none parsed/normalized.
+### P7 — Datasheets (link-only) + cross-repo wiring
 
-## Symbol phases
+- [ ] Curate representative `datasheet` URLs for function-parts (seed from captured `datasheetSource`); keep generics `null`.
+- [ ] **Cross-repo (shared + app):** bump `@openpcb/opclib-pack` schema to carry `datasheet`/`keywords`/`subcategory`; drizzle migration on `OpenPCB` `components` table; `opclib-importer.ts` persist + `ComponentDetailPage.tsx` feed `DetailsCard` the real URL (currently `datasheetUrl={null}`).
 
-- [x] S0 symbol-render harness `tools/render-symbol-contact-sheet.ts` (re-parse
-      rawSource → model → 2D canvas PNG + text-overlap gate). Baseline: 5/13 overlap.
-- [x] S1 parser: capture convert (skip DeMorgan ≥2), pin_names offset, name/number
-      hide (symbol + per-pin). `kicad-symbol-parser.ts`.
-- [x] S2 import: thread hide → empty name / null number. `build-preview-models.ts`.
-- [x] S3 rendering-core: preview = unit 1 only (`composeAllUnits:false`); pin
-      number perpendicular to wire, name inside, skip `~`. `symbol-preview-builder.ts`.
-- [x] S3b power-pin name⨯number: vertical number pushed toward tip (t=0.92).
-      AMS1117 cleared. NE555 CONT (4-char name on short pin) = a pin's OWN
-      name/number adjacency → gate now ignores same-pin pairs (`symbol-gate.ts`,
-      shared by symbol + component audits). Flags only cross-pin collisions.
-- [x] DIP-8 3D Y-flip: same KiCad footprint-Y-down vs STEP-Y-up issue as the
-      connectors → `scaleMm.y=-1` (`3d/package/dip-8-w7-62mm.model.json`). 3D
-      release gate now 36 ok / 0 errors. Fixes LM358's DIP-8 variant.
-- [x] S4 r3f-eda-canvas: flip anchorX when mirrored (`symbol-render-layer.tsx`,
-      builds clean). Needs in-app visual check with a mirrored part.
-- [x] S5 regen symbols-only (temp dir → copy symbols/ back; 3d/ untouched);
-      validate OK. Harness now renders stored extends-resolved `raw`.
+### P8 — 3D release-grade
 
-Result: 74HC00, LM358, AMS1117 single-body clean; diode/LED/connector name-hide
-correct; transistors clean. Symbol harness `dist/audit-symbols/symbol-sheet.png`.
+- Mostly done (bounds/orientation infra exists; each phase ships STEP). Final pass: confirm `validate --release` + `audit:3d` green across the full set; spot-check sample categories in `dist/audit-3d-placement/report.html`.
 
-## Remaining (needs OpenPCB infra / release)
+### P9 — Release v1.0
 
-- [ ] OpenPCB: transform-helpers back-layer + ordering unit tests (Bun)
-- [ ] In-app verify mirrored-symbol anchor + 3D placement after shared release
-- [ ] shared per-package release (kicad-parsers, kicad-import, rendering-core,
-      r3f-eda-canvas) + repack opclib so app consumes fixes
+- [ ] `pack --version=X.Y.Z` with `OPCLIB_SIGNING_KEY`; verify signature + `SHA256SUMS`; tag `vX.Y.Z` → `release.yml` publishes.
+- [ ] Bump app's bundled lib (`OpenPCB/scripts/fetch-core-library.ts`); verify boot import in a packaged build.
+- [ ] Update README/CONTRIBUTING coverage table; route `component_request` issue template to manifest authoring.
+
+## Wave 2 (verified blockers — missing from vendored KiCad 10 libs)
+
+- [ ] Potentiometer (Alps/trim footprints lack STEP + carry an `MP` mounting pad — needs pinMap handling for the non-electrical pad).
+- [ ] Screw terminals (`Connector_TerminalBlock` .pretty absent).
+- [ ] microSD (`Connector_Card` symbols absent).
+- [ ] DHT22 (only DHT11 present).
+- [ ] **MP1584, MP2307** (P3 switching regulators — no symbol in KiCad 10 stock libs).
+- [ ] **74HC125** (P4 — only `74LS125`/`74LVC125`/`74AHCT125` in `74xx`, no HC variant), **ESP-12F footprint** (P4 — only ESP-12E present), **Solder Jumper** (P5 — `Jumper.pretty` has footprints but no schematic symbol), **JST-XH 3D** (P5 — footprints present, no STEP in `Connector_JST.3dshapes`), **MPU-6050** (P6 — `InvenSense_QFN-24` has no STEP), **HC-SR04** (P6 — no dedicated symbol; generic 4-pin header only).
+- [ ] **DC barrel jack** (P5 — only STEP-backed footprint `BarrelJack_CUI_PJ-063AH_Horizontal` has an unnumbered pad the strict importer rejects; needs the same non-electrical-pad handling as the potentiometer MP pad).
+- [ ] **Buzzer** (P5 — `Buzzer_TDK_PS1240P02BT` STEP bakes the body 15 mm BELOW the board; needs a rotation fix verified visually, not a simple flip) and **DHT11** (P6 — body 8 mm below board; same long-lead-THT class as the TO-220 item below).
+- [ ] **Vertical TO-220 / long-lead-THT 3D-gate calibration** (unblocks LM7805/LM317/LM2596 from P3 + DHT11 from P6): `tools/orientation-gate.ts` hard-errors on long leads (>6 mm below board) and body-behind-pads Y-offset, which are physically correct for vertical/long-lead THT. Calibrate (per-posture lead budget + skip/relax xy-center for `vertical` THT) so these import gate-green without falsifying geometry.
+- [ ] Incremental: `_HandSolder` resistor variants, more inductor sizes, film caps, resistor networks, RGB/WS2812 LEDs, bridge rectifier, power MOSFETs (TO-220/263).
+
+## Carried over — 3D / symbol hardening (cross-repo, not blocking content)
+
+From the prior effort (`~/.claude/plans/do-thorough-analysis-of-fizzy-clover.md`). CoreLibrary-side gate + bounds + symbol fixes are **done**; these remain:
+
+- [ ] Decide on the 4 connector sidecars' `scaleMm:{y:-1}` (ratify orientation via contact sheet; consistency with DIP fix).
+- [ ] `shared/step-to-glb`: worker+node return post-bake bbox + orientation-mismatch warning; per-package release so the app consumes parser/import/rendering fixes.
+- [ ] `OpenPCB`: `opclib-importer.ts` assert no render-ref when `transformBaked`; `three-d/transform-helpers.ts` back-layer + ordering unit tests; in-app verify mirrored-symbol anchor + 3D placement.

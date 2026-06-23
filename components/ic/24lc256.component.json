@@ -1,0 +1,127 @@
+{
+  "id": "openpcb.core.ic.24lc256",
+  "uuid": "acb93456-2563-58b7-bad9-2aea3b997466",
+  "version": "0.2.0",
+  "name": "24LC256 EEPROM",
+  "description": "24LC256 256-Kbit I2C serial EEPROM (DIP-8, SOIC-8).",
+  "category": "ic",
+  "subcategory": "memory",
+  "tags": [
+    "ic",
+    "memory",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "24LC256",
+    "EEPROM",
+    "I2C",
+    "256kbit"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://ww1.microchip.com/downloads/en/devicedoc/21203m.pdf",
+  "parameters": {
+    "type": "EEPROM",
+    "interface": "I2C",
+    "size": "256kbit"
+  },
+  "symbol": "openpcb.core.symbol.ic.24lc256",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8 W7.62mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8 3.9x4.9mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "24LC256.kicad_sym",
+    "sourceLibrary": "Memory_EEPROM",
+    "sourceItemName": "24LC256 EEPROM",
+    "sourceHash": "c491f614f870106b2ca757dfbe96e84f42830e668605d36fa25d8654d3a95c3a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

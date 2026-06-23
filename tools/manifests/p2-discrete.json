@@ -1,0 +1,601 @@
+{
+  "version": "0.2.0",
+  "components": [
+    {
+      "id": "openpcb.core.diode.1n4148",
+      "name": "1N4148 Switching Diode",
+      "description": "1N4148 high-speed small-signal switching diode.",
+      "category": "diode",
+      "subcategory": "small-signal",
+      "tags": ["diode", "switching", "small-signal", "kicad-derived"],
+      "keywords": ["1N4148", "switching diode", "small signal", "100V"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.1n4148",
+        "path": "kicad-symbols/Diode.kicad_symdir/1N4148.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sod-123",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sod-123",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SOD-123.kicad_mod",
+          "label": "SOD-123",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sod-123",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SOD-123.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-sod-323",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SOD-323.kicad_mod",
+          "label": "SOD-323",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sod-323",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SOD-323.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-do-35",
+          "path": "kicad-footprints/Diode_THT.pretty/D_DO-35_SOD27_P7.62mm_Horizontal.kicad_mod",
+          "label": "DO-35 (THT)",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-do-35",
+            "path": "kicad-packages3D/Diode_THT.3dshapes/D_DO-35_SOD27_P7.62mm_Horizontal.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.1n4007",
+      "name": "1N4007 Rectifier Diode",
+      "description": "1N4007 1 A 1000 V general-purpose rectifier (DO-41 THT and M7/SMA SMD).",
+      "category": "diode",
+      "subcategory": "rectifier",
+      "tags": ["diode", "rectifier", "kicad-derived"],
+      "keywords": ["1N4007", "M7", "rectifier", "1A", "1000V"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.1n4007",
+        "path": "kicad-symbols/Diode.kicad_symdir/1N4007.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-do-41",
+          "path": "kicad-footprints/Diode_THT.pretty/D_DO-41_SOD81_P7.62mm_Horizontal.kicad_mod",
+          "label": "DO-41 (THT)",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-do-41",
+            "path": "kicad-packages3D/Diode_THT.3dshapes/D_DO-41_SOD81_P7.62mm_Horizontal.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA (M7)",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sma",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.ss14",
+      "name": "SS14 Schottky Diode",
+      "description": "SS14 1 A 40 V surface-mount Schottky rectifier (SMA).",
+      "category": "diode",
+      "subcategory": "schottky",
+      "tags": ["diode", "schottky", "rectifier", "kicad-derived"],
+      "keywords": ["SS14", "schottky", "1A", "40V"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.ss14",
+        "path": "kicad-symbols/Diode.kicad_symdir/SS14.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sma",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.bav99",
+      "name": "BAV99 Dual Switching Diode",
+      "description": "BAV99 dual series switching diode in SOT-23.",
+      "category": "diode",
+      "subcategory": "switching-dual",
+      "tags": ["diode", "switching", "dual", "sot-23", "kicad-derived"],
+      "keywords": ["BAV99", "dual diode", "switching", "series"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.bav99",
+        "path": "kicad-symbols/Diode.kicad_symdir/BAV99.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.bzx84",
+      "name": "BZX84 Zener Diode",
+      "description": "BZX84 series Zener diode in SOT-23 (set voltage per build).",
+      "category": "diode",
+      "subcategory": "zener",
+      "tags": ["diode", "zener", "sot-23", "kicad-derived"],
+      "keywords": ["BZX84", "zener", "BZX84C"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.bzx84",
+        "path": "kicad-symbols/Diode.kicad_symdir/BZX84Cxx.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.tvs",
+      "name": "TVS Diode",
+      "description": "Generic unidirectional TVS transient-voltage-suppression diode (SMA/SMB).",
+      "category": "diode",
+      "subcategory": "tvs",
+      "tags": ["diode", "tvs", "protection", "kicad-derived"],
+      "keywords": ["TVS", "transient suppressor", "ESD", "surge"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.tvs",
+        "path": "kicad-symbols/Device.kicad_symdir/D_TVS_Filled.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sma",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.diode.d-smb",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMB.kicad_mod",
+          "label": "SMB",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-smb",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMB.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.usblc6-2sc6",
+      "name": "USBLC6-2SC6 USB ESD Protection",
+      "description": "USBLC6-2SC6 low-capacitance TVS diode array for USB 2.0 ESD protection (SOT-23-6).",
+      "category": "diode",
+      "subcategory": "esd-array",
+      "tags": ["diode", "tvs", "esd", "usb", "protection", "kicad-derived"],
+      "keywords": [
+        "USBLC6",
+        "USBLC6-2SC6",
+        "ESD",
+        "USB protection",
+        "TVS array"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.usblc6-2sc6",
+        "path": "kicad-symbols/Power_Protection.kicad_symdir/USBLC6-2SC6.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23-6",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod",
+          "label": "SOT-23-6",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23-6",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" },
+            { "pinNumber": "6", "padNumber": "6" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.opto.led-tht",
+      "name": "LED (THT)",
+      "description": "Generic through-hole indicator LED in 3 mm and 5 mm round packages.",
+      "category": "opto",
+      "subcategory": "indicator",
+      "tags": ["led", "opto", "diode", "tht", "kicad-derived"],
+      "keywords": ["LED", "THT LED", "5mm", "3mm", "indicator"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.opto.led-tht",
+        "path": "kicad-symbols/Device.kicad_symdir/LED.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.opto.led-d5-0mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.opto.led-d5-0mm",
+          "path": "kicad-footprints/LED_THT.pretty/LED_D5.0mm.kicad_mod",
+          "label": "5 mm round",
+          "model": {
+            "id": "openpcb.core.3d.opto.led-d5-0mm",
+            "path": "kicad-packages3D/LED_THT.3dshapes/LED_D5.0mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.opto.led-d3-0mm",
+          "path": "kicad-footprints/LED_THT.pretty/LED_D3.0mm.kicad_mod",
+          "label": "3 mm round",
+          "model": {
+            "id": "openpcb.core.3d.opto.led-d3-0mm",
+            "path": "kicad-packages3D/LED_THT.3dshapes/LED_D3.0mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.mmbt3904",
+      "name": "MMBT3904 NPN Transistor",
+      "description": "MMBT3904 40 V NPN general-purpose BJT in SOT-23 (B-E-C).",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": ["transistor", "bjt", "npn", "sot-23", "kicad-derived"],
+      "keywords": ["MMBT3904", "2N3904", "NPN", "general purpose"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.mmbt3904",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/MMBT3904.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.mmbt3906",
+      "name": "MMBT3906 PNP Transistor",
+      "description": "MMBT3906 40 V PNP general-purpose BJT in SOT-23 (B-E-C).",
+      "category": "transistor",
+      "subcategory": "bjt-pnp",
+      "tags": ["transistor", "bjt", "pnp", "sot-23", "kicad-derived"],
+      "keywords": ["MMBT3906", "2N3906", "PNP", "general purpose"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.mmbt3906",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/MMBT3906.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.ss8050",
+      "name": "SS8050 NPN Transistor",
+      "description": "SS8050 high-current NPN BJT in TO-92 (B-E-C).",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": ["transistor", "bjt", "npn", "to-92", "kicad-derived"],
+      "keywords": ["SS8050", "NPN", "high current", "TO-92"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.ss8050",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/SS8050.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.ss8550",
+      "name": "SS8550 PNP Transistor",
+      "description": "SS8550 high-current PNP BJT in TO-92 (B-E-C).",
+      "category": "transistor",
+      "subcategory": "bjt-pnp",
+      "tags": ["transistor", "bjt", "pnp", "to-92", "kicad-derived"],
+      "keywords": ["SS8550", "PNP", "high current", "TO-92"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.ss8550",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/SS8550.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.2n7002",
+      "name": "2N7002 N-Channel MOSFET",
+      "description": "2N7002 60 V logic-level N-channel MOSFET in SOT-23 (G-S-D).",
+      "category": "transistor",
+      "subcategory": "mosfet-n",
+      "tags": ["transistor", "mosfet", "nmos", "sot-23", "kicad-derived"],
+      "keywords": ["2N7002", "NMOS", "logic level", "small signal"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.2n7002",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/2N7002.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.ao3400",
+      "name": "AO3400 N-Channel MOSFET",
+      "description": "AO3400 30 V N-channel power MOSFET in SOT-23 (G-S-D).",
+      "category": "transistor",
+      "subcategory": "mosfet-n",
+      "tags": ["transistor", "mosfet", "nmos", "sot-23", "kicad-derived"],
+      "keywords": ["AO3400", "AO3400A", "NMOS", "power"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.ao3400",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/AO3400A.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.ao3401",
+      "name": "AO3401 P-Channel MOSFET",
+      "description": "AO3401 30 V P-channel power MOSFET in SOT-23 (G-S-D).",
+      "category": "transistor",
+      "subcategory": "mosfet-p",
+      "tags": ["transistor", "mosfet", "pmos", "sot-23", "kicad-derived"],
+      "keywords": ["AO3401", "AO3401A", "PMOS", "power"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.ao3401",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/AO3401A.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.bss138",
+      "name": "BSS138 N-Channel MOSFET",
+      "description": "BSS138 50 V logic-level N-channel MOSFET in SOT-23 (G-S-D); common level-shifter.",
+      "category": "transistor",
+      "subcategory": "mosfet-n",
+      "tags": ["transistor", "mosfet", "nmos", "sot-23", "kicad-derived"],
+      "keywords": ["BSS138", "NMOS", "logic level", "level shifter"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.bss138",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/BSS138.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.si2302",
+      "name": "Si2302 N-Channel MOSFET",
+      "description": "Si2302 20 V logic-level N-channel MOSFET in SOT-23 (G-S-D); generic NMOS symbol.",
+      "category": "transistor",
+      "subcategory": "mosfet-n",
+      "tags": ["transistor", "mosfet", "nmos", "sot-23", "kicad-derived"],
+      "keywords": ["Si2302", "SI2302", "NMOS", "logic level"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.si2302",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/Q_NMOS_GSD.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    }
+  ]
+}
