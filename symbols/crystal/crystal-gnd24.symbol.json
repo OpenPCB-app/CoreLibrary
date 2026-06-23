@@ -1,0 +1,820 @@
+{
+  "id": "openpcb.core.symbol.crystal.crystal-gnd24",
+  "uuid": "61f9c4bc-a478-56d4-a6b9-559a084adf1e",
+  "version": "0.2.0",
+  "name": "Crystal (4-pad, grounded case)",
+  "referencePrefix": "Y",
+  "description": "Four pin crystal, GND on pins 2 and 4",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Crystal_GND24.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Crystal_GND24",
+    "sourceHash": "683ac6fa8760a98f7611ab49e37c13d46730ee9f4f6dce8111b8f8d13dade440",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "Y",
+      "Value": "Crystal_GND24",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Four pin crystal, GND on pins 2 and 4",
+      "private": "KLC_S4.1",
+      "ki_keywords": "quartz ceramic resonator oscillator",
+      "ki_fp_filters": "Crystal*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Crystal_GND24.kicad_sym",
+        "sourceItemName": "Crystal_GND24",
+        "sha256": "84b419f45f564b391ab81579eb3c84f301ffad816f7488f98a13129a16073b3b"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_12a50228127118f3",
+    "name": "Crystal_GND24",
+    "referencePrefix": "Y",
+    "description": "Four pin crystal, GND on pins 2 and 4",
+    "sourceHash": "683ac6fa8760a98f7611ab49e37c13d46730ee9f4f6dce8111b8f8d13dade440",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "1",
+        "localPosition": {
+          "x": -3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "G",
+        "localPosition": {
+          "x": 0,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "3",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "G",
+        "localPosition": {
+          "x": 0,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Crystal_GND24",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 2.286
+            },
+            {
+              "x": -2.54,
+              "y": 3.556
+            },
+            {
+              "x": 2.54,
+              "y": 3.556
+            },
+            {
+              "x": 2.54,
+              "y": 2.286
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 0
+            },
+            {
+              "x": -2.032,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": -2.286
+            },
+            {
+              "x": -2.54,
+              "y": -3.556
+            },
+            {
+              "x": 2.54,
+              "y": -3.556
+            },
+            {
+              "x": 2.54,
+              "y": -2.286
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.032,
+              "y": -1.27
+            },
+            {
+              "x": -2.032,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "rect",
+          "x": -1.143,
+          "y": -2.54,
+          "width": 2.286,
+          "height": 5.08,
+          "fill": "none",
+          "strokeWidthMm": 0.3048
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": -3.81
+            },
+            {
+              "x": 0,
+              "y": -3.556
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.032,
+              "y": 0
+            },
+            {
+              "x": 2.54,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.032,
+              "y": -1.27
+            },
+            {
+              "x": 2.032,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 7.776507174585693e-17,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": 1.5553014349171386e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:4",
+          "name": "",
+          "number": "4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 7.776507174585693e-17,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -3.175,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 0.508,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 3.175,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "Y",
+          "at": {
+            "x": 0,
+            "y": 4.8260000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Crystal_GND24",
+          "at": {
+            "x": 0,
+            "y": -6.642100000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.1181,
+        "minY": -7.912100000000001,
+        "maxX": 5.1181,
+        "maxY": 6.096
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Crystal_GND24",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -3.81,
+          "y": 0
+        },
+        "length": 1.27,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "G",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "3",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 1.27,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "G",
+        "number": "4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "Y",
+      "Value": "Crystal_GND24",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Four pin crystal, GND on pins 2 and 4",
+      "private": "KLC_S4.1",
+      "ki_keywords": "quartz ceramic resonator oscillator",
+      "ki_fp_filters": "Crystal*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              2.286
+            ],
+            [
+              "xy",
+              -2.54,
+              3.556
+            ],
+            [
+              "xy",
+              2.54,
+              3.556
+            ],
+            [
+              "xy",
+              2.54,
+              2.286
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              0
+            ],
+            [
+              "xy",
+              -2.032,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              -2.286
+            ],
+            [
+              "xy",
+              -2.54,
+              -3.556
+            ],
+            [
+              "xy",
+              2.54,
+              -3.556
+            ],
+            [
+              "xy",
+              2.54,
+              -2.286
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.032,
+              -1.27
+            ],
+            [
+              "xy",
+              -2.032,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.143,
+            2.54
+          ],
+          [
+            "end",
+            1.143,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.3048
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              -3.81
+            ],
+            [
+              "xy",
+              0,
+              -3.556
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.032,
+              0
+            ],
+            [
+              "xy",
+              2.54,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.032,
+              -1.27
+            ],
+            [
+              "xy",
+              2.032,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Crystal_GND24 (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference Y (at 3.175 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value Crystal_GND24 (at 3.175 3.175 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Four pin crystal, GND on pins 2 and 4\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property private KLC_S3.3 \"The rectangle is not a symbol body but a graphical element\" (at 0 -12.7 0) (show_name yes) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property private KLC_S4.1 \"Some pins are on 50mil grid to make the symbol small\" (at 0 -15.24 0) (show_name yes) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"quartz ceramic resonator oscillator\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters Crystal* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Crystal_GND24_0_1 (polyline (pts (xy -2.54 2.286) (xy -2.54 3.556) (xy 2.54 3.556) (xy 2.54 2.286)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -2.54 0) (xy -2.032 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -2.54 -2.286) (xy -2.54 -3.556) (xy 2.54 -3.556) (xy 2.54 -2.286)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -2.032 -1.27) (xy -2.032 1.27)) (stroke (width 0.508) (type default)) (fill (type none))) (rectangle (start -1.143 2.54) (end 1.143 -2.54) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 0 -3.81) (xy 0 -3.556)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.032 0) (xy 2.54 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.032 -1.27) (xy 2.032 1.27)) (stroke (width 0.508) (type default)) (fill (type none)))) (symbol Crystal_GND24_1_1 (pin passive line (at -3.81 0 0) (length 1.27) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 1.27) (name G (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 1.27) (name 3 (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 1.27) (hide yes) (name G (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

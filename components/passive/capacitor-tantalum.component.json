@@ -1,0 +1,91 @@
+{
+  "id": "openpcb.core.passive.capacitor-tantalum",
+  "uuid": "ce413852-123e-5572-b45b-5b8133390272",
+  "version": "0.2.0",
+  "name": "Tantalum Capacitor (SMD)",
+  "description": "Solid tantalum SMD capacitor, EIA case A/B/C. Polarized. Generic — capacitance/voltage per instance.",
+  "category": "passive",
+  "subcategory": "capacitor_tantalum",
+  "tags": [
+    "passive",
+    "capacitor",
+    "tantalum",
+    "polarized",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "tantalum",
+    "SMD capacitor",
+    "EIA case"
+  ],
+  "aliases": [],
+  "parameters": {
+    "dielectric": "tantalum",
+    "polarized": "yes"
+  },
+  "symbol": "openpcb.core.symbol.passive.c-polarized",
+  "defaultFootprint": "openpcb.core.footprint.passive.cp-eia-3528-21-b",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.cp-eia-3216-18-a",
+      "label": "EIA-3216-18 (Case A)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.cp-eia-3528-21-b",
+      "label": "EIA-3528-21 (Case B)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.cp-eia-6032-28-c",
+      "label": "EIA-6032-28 (Case C)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "C_Polarized.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Tantalum Capacitor (SMD)",
+    "sourceHash": "9a20a1635d7f1b359bc3bf53ce6393d456c926705232a03c5bd52578602b64cb",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

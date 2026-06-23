@@ -1,0 +1,689 @@
+{
+  "id": "openpcb.core.footprint.crystal.crystal-smd-3215-2pin",
+  "uuid": "a03d2c45-e718-5275-91cc-5ae3591b9eeb",
+  "version": "0.2.0",
+  "name": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.crystal.crystal-smd-3215-2pin"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+    "sourceLibrary": "Crystal",
+    "sourceItemName": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+    "sourceHash": "75b26d09b915972459551bb719397c3b03ad8252006bf74eb7e4977b5ba417e1",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_0b961a4a50ab8756",
+    "fileName": "Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod",
+    "name": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+    "description": "SMD Crystal FC-135 https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135R_en.pdf",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "smd",
+      "smt",
+      "crystal"
+    ],
+    "sourceHash": "75b26d09b915972459551bb719397c3b03ad8252006bf74eb7e4977b5ba417e1",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": 1.25,
+            "y": 0
+          },
+          "widthMm": 1,
+          "heightMm": 1.8,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "rect",
+          "centerMm": {
+            "x": -1.25,
+            "y": 0
+          },
+          "widthMm": 1,
+          "heightMm": 1.8,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.675,
+            "y": -0.875
+          },
+          "b": {
+            "x": 0.675,
+            "y": -0.875
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.675,
+            "y": 0.875
+          },
+          "b": {
+            "x": 0.675,
+            "y": 0.875
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.6,
+            "y": -0.75
+          },
+          "b": {
+            "x": -1.6,
+            "y": 0.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.6,
+            "y": -0.75
+          },
+          "b": {
+            "x": 1.6,
+            "y": -0.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.6,
+            "y": 0.75
+          },
+          "b": {
+            "x": 1.6,
+            "y": 0.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.6,
+            "y": -0.75
+          },
+          "b": {
+            "x": 1.6,
+            "y": 0.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:-2:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:2:Crystal_SMD_3215-2Pin_3.2x1.5mm",
+          "text": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+          "at": {
+            "x": 0,
+            "y": 2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.75,
+        "minY": -1,
+        "maxX": 1.75,
+        "maxY": 1
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+    "description": "SMD Crystal FC-135 https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135R_en.pdf",
+    "tags": [
+      "SMD",
+      "SMT",
+      "Crystal"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 1.25,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 1.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -1.25,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 1.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.675,
+            -0.875
+          ],
+          "end": [
+            0.675,
+            -0.875
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b9878ceb-ac85-427a-b09b-697ad8ec3ffd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.675,
+            0.875
+          ],
+          "end": [
+            0.675,
+            0.875
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b52b18e4-822c-4965-a856-e89bc6ca2a7c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2,
+            -1.15
+          ],
+          "end": [
+            -2,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "f38e27a1-a78d-4990-9519-45fe554f9eeb"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2,
+            -1.15
+          ],
+          "end": [
+            2,
+            -1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "a29a4550-e3f4-484f-ac92-35f632cf9795"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2,
+            1.15
+          ],
+          "end": [
+            2,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "b910f6f2-f690-40e3-bcce-573253258138"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2,
+            -1.15
+          ],
+          "end": [
+            2,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "1bb56386-27bf-48da-a3c8-cf8e3865e950"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.6,
+            -0.75
+          ],
+          "end": [
+            -1.6,
+            0.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "42ddfbae-90a0-45c3-b956-1e250dbedf0a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.6,
+            -0.75
+          ],
+          "end": [
+            1.6,
+            -0.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c0b8055a-17f4-4ea9-8753-0640a49a9a51"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.6,
+            0.75
+          ],
+          "end": [
+            1.6,
+            0.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "1c198a32-35eb-49c5-a5e1-7a4c017cad26"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.6,
+            -0.75
+          ],
+          "end": [
+            1.6,
+            0.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "27871191-4170-4915-b012-2908b0488fb2"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            -2,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "07a95282-d319-46a8-9465-2833e3a6202b",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": -2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -2,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "f8fdfb31-5340-460f-9ad5-ae612b6e0d95",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            2,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "c06a9afa-a1b4-4cff-ab0d-58577361484f",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Crystal_SMD_3215-2Pin_3.2x1.5mm"
+          ]
+        },
+        "text": {
+          "content": "Crystal_SMD_3215-2Pin_3.2x1.5mm",
+          "position": {
+            "x": 0,
+            "y": 2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3215-2Pin_3.2x1.5mm.step",
+        "resolvedFileName": "Crystal_SMD_3215-2Pin_3.2x1.5mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Crystal_SMD_3215-2Pin_3.2x1.5mm\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"SMD Crystal FC-135 https://support.epson.biz/td/api/doc_check.php?dl=brief_FC-135R_en.pdf\")\n\t(tags \"SMD SMT Crystal\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f8fdfb31-5340-460f-9ad5-ae612b6e0d95\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Crystal_SMD_3215-2Pin_3.2x1.5mm\"\n\t\t(at 0 2 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c06a9afa-a1b4-4cff-ab0d-58577361484f\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"e098ae84-06ca-412a-ae8c-0e133f27db90\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"d23ffec3-73fe-4457-81a2-3c6bfdaf7133\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.675 -0.875)\n\t\t(end 0.675 -0.875)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b9878ceb-ac85-427a-b09b-697ad8ec3ffd\")\n\t)\n\t(fp_line\n\t\t(start -0.675 0.875)\n\t\t(end 0.675 0.875)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b52b18e4-822c-4965-a856-e89bc6ca2a7c\")\n\t)\n\t(fp_line\n\t\t(start -2 -1.15)\n\t\t(end -2 1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"f38e27a1-a78d-4990-9519-45fe554f9eeb\")\n\t)\n\t(fp_line\n\t\t(start -2 -1.15)\n\t\t(end 2 -1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"a29a4550-e3f4-484f-ac92-35f632cf9795\")\n\t)\n\t(fp_line\n\t\t(start -2 1.15)\n\t\t(end 2 1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"b910f6f2-f690-40e3-bcce-573253258138\")\n\t)\n\t(fp_line\n\t\t(start 2 -1.15)\n\t\t(end 2 1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"1bb56386-27bf-48da-a3c8-cf8e3865e950\")\n\t)\n\t(fp_line\n\t\t(start -1.6 -0.75)\n\t\t(end -1.6 0.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"42ddfbae-90a0-45c3-b956-1e250dbedf0a\")\n\t)\n\t(fp_line\n\t\t(start -1.6 -0.75)\n\t\t(end 1.6 -0.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c0b8055a-17f4-4ea9-8753-0640a49a9a51\")\n\t)\n\t(fp_line\n\t\t(start -1.6 0.75)\n\t\t(end 1.6 0.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1c198a32-35eb-49c5-a5e1-7a4c017cad26\")\n\t)\n\t(fp_line\n\t\t(start 1.6 -0.75)\n\t\t(end 1.6 0.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"27871191-4170-4915-b012-2908b0488fb2\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 -2 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"07a95282-d319-46a8-9465-2833e3a6202b\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd rect\n\t\t(at 1.25 0)\n\t\t(size 1 1.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"5f309129-2787-4831-83e1-b8e47abd636c\")\n\t)\n\t(pad \"2\" smd rect\n\t\t(at -1.25 0)\n\t\t(size 1 1.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"e5e4f8c5-e618-44fc-825d-06f612513e80\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3215-2Pin_3.2x1.5mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Crystal_SMD_3215-2Pin_3.2x1.5mm.kicad_mod"
+}

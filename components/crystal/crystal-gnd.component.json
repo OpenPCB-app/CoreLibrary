@@ -1,0 +1,71 @@
+{
+  "id": "openpcb.core.crystal.crystal-gnd",
+  "uuid": "bf9e4896-102d-5008-b02d-5010515fafa1",
+  "version": "0.2.0",
+  "name": "Crystal (4-pad, grounded case)",
+  "description": "Four-pad SMD quartz crystal with grounded case pads; SMD 3225. Generic — frequency per instance.",
+  "category": "crystal",
+  "subcategory": "crystal_4pad",
+  "tags": [
+    "crystal",
+    "resonator",
+    "quartz",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "crystal",
+    "quartz",
+    "4-pad",
+    "grounded case"
+  ],
+  "aliases": [],
+  "parameters": {
+    "type": "quartz crystal",
+    "pads": "4"
+  },
+  "symbol": "openpcb.core.symbol.crystal.crystal-gnd24",
+  "defaultFootprint": "openpcb.core.footprint.crystal.crystal-smd-3225-4pin",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.crystal.crystal-smd-3225-4pin",
+      "label": "SMD 3225 4-pin (3.2x2.5mm)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Crystal_GND24.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Crystal (4-pad, grounded case)",
+    "sourceHash": "883c5603c5838226e482a5348ecd976d0f671a53595ae3765b428a8a99e69e86",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

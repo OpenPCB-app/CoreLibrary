@@ -1,0 +1,89 @@
+{
+  "id": "openpcb.core.passive.ferrite-bead",
+  "uuid": "15798def-752d-5dbd-9cba-d5ad6efdd1e2",
+  "version": "0.2.0",
+  "name": "Ferrite Bead",
+  "description": "Ferrite bead for EMI/RFI suppression; 0402/0603/0805 chip sizes. Generic — impedance set per instance.",
+  "category": "passive",
+  "subcategory": "ferrite",
+  "tags": [
+    "passive",
+    "ferrite",
+    "emi",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "ferrite bead",
+    "EMI filter",
+    "chip bead"
+  ],
+  "aliases": [],
+  "parameters": {
+    "type": "ferrite bead"
+  },
+  "symbol": "openpcb.core.symbol.passive.ferrite-bead",
+  "defaultFootprint": "openpcb.core.footprint.passive.l-0603-1608metric",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.l-0402-1005metric",
+      "label": "0402 (1005 metric)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-0603-1608metric",
+      "label": "0603 (1608 metric)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-0805-2012metric",
+      "label": "0805 (2012 metric)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "FerriteBead.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Ferrite Bead",
+    "sourceHash": "6530a2e1ea16988d2cba814f8456d2d56452173d738f426ae162518d1458f20d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

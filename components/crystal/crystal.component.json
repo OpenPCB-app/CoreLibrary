@@ -1,0 +1,90 @@
+{
+  "id": "openpcb.core.crystal.crystal",
+  "uuid": "4b7a7400-81ea-5354-9b88-7fe086f1cae9",
+  "version": "0.2.0",
+  "name": "Crystal (2-pin)",
+  "description": "Two-pin quartz crystal resonator; HC-49 THT and SMD 5032/3215. Generic — frequency per instance.",
+  "category": "crystal",
+  "subcategory": "crystal_2pin",
+  "tags": [
+    "crystal",
+    "resonator",
+    "quartz",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "crystal",
+    "quartz",
+    "resonator",
+    "HC-49"
+  ],
+  "aliases": [],
+  "parameters": {
+    "type": "quartz crystal"
+  },
+  "symbol": "openpcb.core.symbol.crystal.crystal",
+  "defaultFootprint": "openpcb.core.footprint.crystal.crystal-smd-5032-2pin",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.crystal.hc49-u-vertical",
+      "label": "HC-49/U Vertical (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.crystal.crystal-smd-5032-2pin",
+      "label": "SMD 5032 2-pin (5.0x3.2mm)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.crystal.crystal-smd-3215-2pin",
+      "label": "SMD 3215 2-pin (3.2x1.5mm, e.g. 32.768kHz)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Crystal.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Crystal (2-pin)",
+    "sourceHash": "1da67edcd5d33211a7eae082fe128847928cb8f02686ccc02a5ef3e325c6772e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

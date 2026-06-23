@@ -1,15 +1,15 @@
 {
-  "id": "openpcb.core.footprint.passive.l-0603-1608metric",
-  "uuid": "e207369a-8da6-52c4-9240-b866d7d25e33",
+  "id": "openpcb.core.footprint.crystal.crystal-smd-5032-2pin",
+  "uuid": "bfb255ae-1e1a-50f8-a8f9-225ce1ab7817",
   "version": "0.2.0",
-  "name": "L_0603_1608Metric",
+  "name": "Crystal_SMD_5032-2Pin_5.0x3.2mm",
   "mountType": "smd",
   "package": {
     "imperial": null,
     "metric": null
   },
   "models3d": [
-    "openpcb.core.3d.passive.l-0603-1608metric"
+    "openpcb.core.3d.crystal.crystal-smd-5032-2pin"
   ],
   "provenance": {
     "source": "kicad-derived",
@@ -18,10 +18,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "kicad-mod",
-    "sourceFileName": "L_0603_1608Metric.kicad_mod",
-    "sourceLibrary": "Inductor_SMD",
-    "sourceItemName": "L_0603_1608Metric",
-    "sourceHash": "a2a9c562208496756e22f3ab19e0bd6db2341d14da92e7c767d5eafd1bb45d38",
+    "sourceFileName": "Crystal_SMD_5032-2Pin_5.0x3.2mm.kicad_mod",
+    "sourceLibrary": "Crystal",
+    "sourceItemName": "Crystal_SMD_5032-2Pin_5.0x3.2mm",
+    "sourceHash": "1a2bd6c5c541d392bc0ba9434c2154ce7868f65006ab5fb37a6b61e8881040e9",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-06-23T00:00:00.000Z",
@@ -31,10 +31,10 @@
     "warnings": []
   },
   "normalized": {
-    "id": "fp_b6515f3b77129ff0",
-    "fileName": "L_0603_1608Metric.kicad_mod",
-    "name": "L_0603_1608Metric",
-    "description": "Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)",
+    "id": "fp_fc8ad5e3d8c03456",
+    "fileName": "Crystal_SMD_5032-2Pin_5.0x3.2mm.kicad_mod",
+    "name": "Crystal_SMD_5032-2Pin_5.0x3.2mm",
+    "description": "SMD2520/2, Crystal, 5.0x3.2mm package, SMD, http://www.icbase.com/File/PDF/HKC/HKC00061008.pdf",
     "mountType": "smd",
     "padCount": 2,
     "packageCode": {
@@ -42,28 +42,27 @@
       "metric": null
     },
     "tags": [
-      "inductor",
       "smd"
     ],
-    "sourceHash": "a2a9c562208496756e22f3ab19e0bd6db2341d14da92e7c767d5eafd1bb45d38",
+    "sourceHash": "1a2bd6c5c541d392bc0ba9434c2154ce7868f65006ab5fb37a6b61e8881040e9",
     "warnings": [],
     "preview": {
       "kind": "footprint",
       "units": "mm",
-      "name": "L_0603_1608Metric",
+      "name": "Crystal_SMD_5032-2Pin_5.0x3.2mm",
       "pads": [
         {
           "id": "1:0",
           "number": "1",
           "shape": "roundrect",
           "centerMm": {
-            "x": -0.7875,
+            "x": -1.85,
             "y": 0
           },
-          "widthMm": 0.875,
-          "heightMm": 0.95,
+          "widthMm": 2,
+          "heightMm": 2.4,
           "rotationDeg": 0,
-          "roundrectRatio": 0.25,
+          "roundrectRatio": 0.125,
           "layer": "F.Cu"
         },
         {
@@ -71,13 +70,13 @@
           "number": "2",
           "shape": "roundrect",
           "centerMm": {
-            "x": 0.7875,
+            "x": 1.85,
             "y": 0
           },
-          "widthMm": 0.875,
-          "heightMm": 0.95,
+          "widthMm": 2,
+          "heightMm": 2.4,
           "rotationDeg": 0,
-          "roundrectRatio": 0.25,
+          "roundrectRatio": 0.125,
           "layer": "F.Cu"
         }
       ],
@@ -85,12 +84,12 @@
         {
           "kind": "line",
           "a": {
-            "x": -0.162779,
-            "y": -0.51
+            "x": -3.11,
+            "y": -1.86
           },
           "b": {
-            "x": 0.162779,
-            "y": -0.51
+            "x": -3.11,
+            "y": 1.86
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
@@ -98,22 +97,54 @@
         {
           "kind": "line",
           "a": {
-            "x": -0.162779,
-            "y": 0.51
+            "x": -3.11,
+            "y": 1.86
           },
           "b": {
-            "x": 0.162779,
-            "y": 0.51
+            "x": 2.76,
+            "y": 1.86
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
         },
         {
-          "kind": "rect",
-          "x": -0.8,
-          "y": -0.4,
-          "width": 1.6,
-          "height": 0.8,
+          "kind": "line",
+          "a": {
+            "x": 2.76,
+            "y": -1.86
+          },
+          "b": {
+            "x": -3.11,
+            "y": -1.86
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.5,
+              "y": -1.6
+            },
+            {
+              "x": 2.5,
+              "y": 1.6
+            },
+            {
+              "x": -1.7,
+              "y": 1.6
+            },
+            {
+              "x": -2.5,
+              "y": 0.8
+            },
+            {
+              "x": -2.5,
+              "y": -1.6
+            }
+          ],
+          "closed": true,
           "fill": "none",
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
@@ -127,7 +158,7 @@
             "x": 0,
             "y": 0
           },
-          "fontSizeMm": 0.4,
+          "fontSizeMm": 1,
           "rotationDeg": 0,
           "anchorX": "center",
           "anchorY": "middle",
@@ -135,11 +166,11 @@
           "role": "footprint-text"
         },
         {
-          "id": "fp-text:F.SilkS:0:-1.43:REF**",
+          "id": "fp-text:F.SilkS:0:-2.8:REF**",
           "text": "REF**",
           "at": {
             "x": 0,
-            "y": -1.43
+            "y": -2.8
           },
           "fontSizeMm": 1,
           "rotationDeg": 0,
@@ -149,11 +180,11 @@
           "role": "reference"
         },
         {
-          "id": "fp-text:F.Fab:0:1.43:L_0603_1608Metric",
-          "text": "L_0603_1608Metric",
+          "id": "fp-text:F.Fab:0:2.8:Crystal_SMD_5032-2Pin_5.0x3.2mm",
+          "text": "Crystal_SMD_5032-2Pin_5.0x3.2mm",
           "at": {
             "x": 0,
-            "y": 1.43
+            "y": 2.8
           },
           "fontSizeMm": 1,
           "rotationDeg": 0,
@@ -164,60 +195,58 @@
         }
       ],
       "bounds": {
-        "minX": -1.225,
-        "minY": -1,
-        "maxX": 1.225,
-        "maxY": 1
+        "minX": -3.17,
+        "minY": -1.9200000000000002,
+        "maxX": 2.8499999999999996,
+        "maxY": 1.9200000000000002
       },
       "warnings": []
     }
   },
   "raw": {
-    "name": "L_0603_1608Metric",
-    "description": "Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)",
-    "tags": [
-      "inductor"
-    ],
+    "name": "Crystal_SMD_5032-2Pin_5.0x3.2mm",
+    "description": "SMD2520/2, Crystal, 5.0x3.2mm package, SMD, http://www.icbase.com/File/PDF/HKC/HKC00061008.pdf",
+    "tags": [],
     "pads": [
       {
         "number": "1",
         "type": "smd",
         "shape": "roundrect",
         "position": {
-          "x": -0.7875,
+          "x": -1.85,
           "y": 0
         },
         "rotation": 0,
         "size": {
-          "width": 0.875,
-          "height": 0.95
+          "width": 2,
+          "height": 2.4
         },
         "layers": [
           "F.Cu",
           "F.Mask",
           "F.Paste"
         ],
-        "roundrectRatio": 0.25
+        "roundrectRatio": 0.125
       },
       {
         "number": "2",
         "type": "smd",
         "shape": "roundrect",
         "position": {
-          "x": 0.7875,
+          "x": 1.85,
           "y": 0
         },
         "rotation": 0,
         "size": {
-          "width": 0.875,
-          "height": 0.95
+          "width": 2,
+          "height": 2.4
         },
         "layers": [
           "F.Cu",
           "F.Mask",
           "F.Paste"
         ],
-        "roundrectRatio": 0.25
+        "roundrectRatio": 0.125
       }
     ],
     "graphics": [
@@ -226,12 +255,12 @@
         "layer": "F.SilkS",
         "data": {
           "start": [
-            -0.162779,
-            -0.51
+            -3.11,
+            -1.86
           ],
           "end": [
-            0.162779,
-            -0.51
+            -3.11,
+            1.86
           ],
           "stroke": [
             [
@@ -251,12 +280,37 @@
         "layer": "F.SilkS",
         "data": {
           "start": [
-            -0.162779,
-            0.51
+            -3.11,
+            1.86
           ],
           "end": [
-            0.162779,
-            0.51
+            2.76,
+            1.86
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.76,
+            -1.86
+          ],
+          "end": [
+            -3.11,
+            -1.86
           ],
           "stroke": [
             [
@@ -276,12 +330,12 @@
         "layer": "F.CrtYd",
         "data": {
           "start": [
-            -1.48,
-            -0.73
+            -3.1,
+            -2.1
           ],
           "end": [
-            1.48,
-            0.73
+            3.1,
+            2.1
           ],
           "stroke": [
             [
@@ -298,16 +352,61 @@
         }
       },
       {
-        "type": "rect",
-        "layer": "F.Fab",
+        "type": "circle",
+        "layer": "F.Adhes",
         "data": {
-          "start": [
-            -0.8,
-            -0.4
+          "center": [
+            0,
+            0
           ],
           "end": [
-            0.8,
-            0.4
+            0.4,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "yes",
+          "layer": "F.Adhes"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.Fab",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              2.5,
+              -1.6
+            ],
+            [
+              "xy",
+              2.5,
+              1.6
+            ],
+            [
+              "xy",
+              -1.7,
+              1.6
+            ],
+            [
+              "xy",
+              -2.5,
+              0.8
+            ],
+            [
+              "xy",
+              -2.5,
+              -1.6
+            ]
           ],
           "stroke": [
             [
@@ -338,12 +437,12 @@
               "font",
               [
                 "size",
-                0.4,
-                0.4
+                1,
+                1
               ],
               [
                 "thickness",
-                0.06
+                0.15
               ]
             ]
           ],
@@ -359,7 +458,7 @@
             "y": 0
           },
           "rotation": 0,
-          "fontSizeMm": 0.4,
+          "fontSizeMm": 1,
           "justifyH": "center",
           "justifyV": "middle",
           "mirrored": false,
@@ -373,7 +472,7 @@
         "data": {
           "at": [
             0,
-            -1.43,
+            -2.8,
             0
           ],
           "layer": "F.SilkS",
@@ -400,7 +499,7 @@
           "content": "REF**",
           "position": {
             "x": 0,
-            "y": -1.43
+            "y": -2.8
           },
           "rotation": 0,
           "fontSizeMm": 1,
@@ -417,7 +516,7 @@
         "data": {
           "at": [
             0,
-            1.43,
+            2.8,
             0
           ],
           "layer": "F.Fab",
@@ -437,14 +536,14 @@
           ],
           "__args": [
             "Value",
-            "L_0603_1608Metric"
+            "Crystal_SMD_5032-2Pin_5.0x3.2mm"
           ]
         },
         "text": {
-          "content": "L_0603_1608Metric",
+          "content": "Crystal_SMD_5032-2Pin_5.0x3.2mm",
           "position": {
             "x": 0,
-            "y": 1.43
+            "y": 2.8
           },
           "rotation": 0,
           "fontSizeMm": 1,
@@ -458,8 +557,8 @@
     ],
     "model3dRefs": [
       {
-        "path": "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step",
-        "resolvedFileName": "L_0603_1608Metric.step",
+        "path": "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_5032-2Pin_5.0x3.2mm.step",
+        "resolvedFileName": "Crystal_SMD_5032-2Pin_5.0x3.2mm.step",
         "offset": {
           "x": 0,
           "y": 0,
@@ -481,7 +580,7 @@
       "type": "smd"
     },
     "warnings": [],
-    "rawSource": "(footprint \"L_0603_1608Metric\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Inductor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf)\")\n\t(tags \"inductor\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -1.43 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"L_0603_1608Metric\"\n\t\t(at 0 1.43 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"SMD_2terminal_chip_molded\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.162779 -0.51)\n\t\t(end 0.162779 -0.51)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.162779 0.51)\n\t\t(end 0.162779 0.51)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -1.48 -0.73)\n\t\t(end 1.48 0.73)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_rect\n\t\t(start -0.8 -0.4)\n\t\t(end 0.8 0.4)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.4 0.4)\n\t\t\t\t(thickness 0.06)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -0.7875 0)\n\t\t(size 0.875 0.95)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 0.7875 0)\n\t\t(size 0.875 0.95)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_0603_1608Metric.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+    "rawSource": "(footprint \"Crystal_SMD_5032-2Pin_5.0x3.2mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"SMD2520/2, Crystal, 5.0x3.2mm package, SMD, http://www.icbase.com/File/PDF/HKC/HKC00061008.pdf\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2.8 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Crystal_SMD_5032-2Pin_5.0x3.2mm\"\n\t\t(at 0 2.8 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"crystal_resonator_oscillator\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -3.11 -1.86)\n\t\t(end -3.11 1.86)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -3.11 1.86)\n\t\t(end 2.76 1.86)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.76 -1.86)\n\t\t(end -3.11 -1.86)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_circle\n\t\t(center 0 0)\n\t\t(end 0.4 0)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill yes)\n\t\t(layer \"F.Adhes\")\n\t)\n\t(fp_rect\n\t\t(start -3.1 -2.1)\n\t\t(end 3.1 2.1)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy 2.5 -1.6)\n\t\t\t(xy 2.5 1.6)\n\t\t\t(xy -1.7 1.6)\n\t\t\t(xy -2.5 0.8)\n\t\t\t(xy -2.5 -1.6)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -1.85 0)\n\t\t(size 2 2.4)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.125)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 1.85 0)\n\t\t(size 2 2.4)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.125)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_5032-2Pin_5.0x3.2mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
   },
-  "sourceFileName": "L_0603_1608Metric.kicad_mod"
+  "sourceFileName": "Crystal_SMD_5032-2Pin_5.0x3.2mm.kicad_mod"
 }

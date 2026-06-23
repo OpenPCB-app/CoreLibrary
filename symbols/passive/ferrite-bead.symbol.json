@@ -1,0 +1,405 @@
+{
+  "id": "openpcb.core.symbol.passive.ferrite-bead",
+  "uuid": "ed0d765d-f265-5af8-add3-aa99b1de045f",
+  "version": "0.2.0",
+  "name": "Ferrite Bead",
+  "referencePrefix": "FB",
+  "description": "Ferrite bead",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "FerriteBead.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "FerriteBead",
+    "sourceHash": "df3cb81107b52fe795a82d56cdb60cd560248aa439ea2049038820c762146e6d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "FB",
+      "Value": "FerriteBead",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Ferrite bead",
+      "ki_keywords": "L ferrite bead inductor filter",
+      "ki_fp_filters": "Inductor_* L_* *Ferrite*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "FerriteBead.kicad_sym",
+        "sourceItemName": "FerriteBead",
+        "sha256": "7dc24f9e3169e49aee3017ad0f320d0f5f959203297f2b9d3c7e0500e33d0263"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_7d7b461c21e0fc98",
+    "name": "FerriteBead",
+    "referencePrefix": "FB",
+    "description": "Ferrite bead",
+    "sourceHash": "df3cb81107b52fe795a82d56cdb60cd560248aa439ea2049038820c762146e6d",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": 3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": -3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "FerriteBead",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.7686,
+              "y": 0.4064
+            },
+            {
+              "x": -1.7018,
+              "y": 2.2606
+            },
+            {
+              "x": 2.7686,
+              "y": -0.3048
+            },
+            {
+              "x": 1.6764,
+              "y": -2.159
+            },
+            {
+              "x": -2.7686,
+              "y": 0.4064
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": 1.27
+            },
+            {
+              "x": 0,
+              "y": 1.2954
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": -1.27
+            },
+            {
+              "x": 0,
+              "y": -1.2192
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 3.81
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 1.27
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -3.81
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -1.27
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "FB",
+          "at": {
+            "x": 0,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "FerriteBead",
+          "at": {
+            "x": 0,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.3307,
+        "minY": -6.35,
+        "maxX": 4.3307,
+        "maxY": 6.35
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "FerriteBead",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 3.81
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -3.81
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "FB",
+      "Value": "FerriteBead",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Ferrite bead",
+      "ki_keywords": "L ferrite bead inductor filter",
+      "ki_fp_filters": "Inductor_* L_* *Ferrite*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.7686,
+              0.4064
+            ],
+            [
+              "xy",
+              -1.7018,
+              2.2606
+            ],
+            [
+              "xy",
+              2.7686,
+              -0.3048
+            ],
+            [
+              "xy",
+              1.6764,
+              -2.159
+            ],
+            [
+              "xy",
+              -2.7686,
+              0.4064
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              1.27
+            ],
+            [
+              "xy",
+              0,
+              1.2954
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              -1.27
+            ],
+            [
+              "xy",
+              0,
+              -1.2192
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol FerriteBead (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference FB (at -3.81 0.635 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value FerriteBead (at 3.81 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at -1.778 0 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Ferrite bead\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"L ferrite bead inductor filter\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"Inductor_* L_* *Ferrite*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol FerriteBead_0_1 (polyline (pts (xy -2.7686 0.4064) (xy -1.7018 2.2606) (xy 2.7686 -0.3048) (xy 1.6764 -2.159) (xy -2.7686 0.4064)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 1.27) (xy 0 1.2954)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 -1.27) (xy 0 -1.2192)) (stroke (width 0) (type default)) (fill (type none)))) (symbol FerriteBead_1_1 (pin passive line (at 0 3.81 270) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": false,
+    "hidePinNumbers": true
+  }
+}

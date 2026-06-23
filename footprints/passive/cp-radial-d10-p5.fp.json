@@ -1,0 +1,7844 @@
+{
+  "id": "openpcb.core.footprint.passive.cp-radial-d10-p5",
+  "uuid": "a13fc8cd-5ca5-560f-8b44-e4a2b292dc92",
+  "version": "0.2.0",
+  "name": "CP_Radial_D10.0mm_P5.00mm",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.passive.cp-radial-d10-p5"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "CP_Radial_D10.0mm_P5.00mm.kicad_mod",
+    "sourceLibrary": "Capacitor_THT",
+    "sourceItemName": "CP_Radial_D10.0mm_P5.00mm",
+    "sourceHash": "9d9997d54ed746a52e212af51c3c6a4e3e3e7eba9696d8b5cf606ca29ff429b0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_d6a40791105ef3bb",
+    "fileName": "CP_Radial_D10.0mm_P5.00mm.kicad_mod",
+    "name": "CP_Radial_D10.0mm_P5.00mm",
+    "description": "CP, Radial series, Radial, pin pitch=5.00mm, diameter=10mm, height=16mm, Electrolytic Capacitor",
+    "mountType": "through_hole",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "cp",
+      "radial",
+      "series",
+      "pin",
+      "pitch",
+      "5.00mm",
+      "diameter",
+      "10mm",
+      "height",
+      "16mm",
+      "electrolytic",
+      "capacitor",
+      "through_hole"
+    ],
+    "sourceHash": "9d9997d54ed746a52e212af51c3c6a4e3e3e7eba9696d8b5cf606ca29ff429b0",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "CP_Radial_D10.0mm_P5.00mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.125,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 5,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.979646,
+            "y": -2.875
+          },
+          "b": {
+            "x": -1.979646,
+            "y": -2.875
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.479646,
+            "y": -3.375
+          },
+          "b": {
+            "x": -2.479646,
+            "y": -2.375
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.5,
+            "y": -5.08
+          },
+          "b": {
+            "x": 2.5,
+            "y": 5.08
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.54,
+            "y": -5.08
+          },
+          "b": {
+            "x": 2.54,
+            "y": 5.08
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.58,
+            "y": -5.079
+          },
+          "b": {
+            "x": 2.58,
+            "y": 5.079
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.62,
+            "y": -5.079
+          },
+          "b": {
+            "x": 2.62,
+            "y": 5.079
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.66,
+            "y": -5.077
+          },
+          "b": {
+            "x": 2.66,
+            "y": 5.077
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.7,
+            "y": -5.076
+          },
+          "b": {
+            "x": 2.7,
+            "y": 5.076
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.74,
+            "y": -5.074
+          },
+          "b": {
+            "x": 2.74,
+            "y": 5.074
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.78,
+            "y": -5.072
+          },
+          "b": {
+            "x": 2.78,
+            "y": 5.072
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.82,
+            "y": -5.07
+          },
+          "b": {
+            "x": 2.82,
+            "y": 5.07
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.86,
+            "y": -5.067
+          },
+          "b": {
+            "x": 2.86,
+            "y": 5.067
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.9,
+            "y": -5.064
+          },
+          "b": {
+            "x": 2.9,
+            "y": 5.064
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.94,
+            "y": -5.061
+          },
+          "b": {
+            "x": 2.94,
+            "y": 5.061
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.98,
+            "y": -5.057
+          },
+          "b": {
+            "x": 2.98,
+            "y": 5.057
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.02,
+            "y": -5.054
+          },
+          "b": {
+            "x": 3.02,
+            "y": 5.054
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.06,
+            "y": -5.049
+          },
+          "b": {
+            "x": 3.06,
+            "y": 5.049
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.1,
+            "y": -5.045
+          },
+          "b": {
+            "x": 3.1,
+            "y": 5.045
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.14,
+            "y": -5.04
+          },
+          "b": {
+            "x": 3.14,
+            "y": 5.04
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.18,
+            "y": -5.035
+          },
+          "b": {
+            "x": 3.18,
+            "y": 5.035
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.22,
+            "y": -5.029
+          },
+          "b": {
+            "x": 3.22,
+            "y": 5.029
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.26,
+            "y": -5.023
+          },
+          "b": {
+            "x": 3.26,
+            "y": 5.023
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.3,
+            "y": -5.017
+          },
+          "b": {
+            "x": 3.3,
+            "y": 5.017
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.34,
+            "y": -5.011
+          },
+          "b": {
+            "x": 3.34,
+            "y": 5.011
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.38,
+            "y": -5.004
+          },
+          "b": {
+            "x": 3.38,
+            "y": 5.004
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.42,
+            "y": -4.997
+          },
+          "b": {
+            "x": 3.42,
+            "y": 4.997
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.46,
+            "y": -4.989
+          },
+          "b": {
+            "x": 3.46,
+            "y": 4.989
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.5,
+            "y": -4.981
+          },
+          "b": {
+            "x": 3.5,
+            "y": 4.981
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.54,
+            "y": -4.973
+          },
+          "b": {
+            "x": 3.54,
+            "y": 4.973
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.58,
+            "y": -4.965
+          },
+          "b": {
+            "x": 3.58,
+            "y": 4.965
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.62,
+            "y": -4.956
+          },
+          "b": {
+            "x": 3.62,
+            "y": 4.956
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.66,
+            "y": -4.947
+          },
+          "b": {
+            "x": 3.66,
+            "y": 4.947
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.7,
+            "y": -4.937
+          },
+          "b": {
+            "x": 3.7,
+            "y": 4.937
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.74,
+            "y": -4.928
+          },
+          "b": {
+            "x": 3.74,
+            "y": 4.928
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.78,
+            "y": -4.917
+          },
+          "b": {
+            "x": 3.78,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.78,
+            "y": 1.24
+          },
+          "b": {
+            "x": 3.78,
+            "y": 4.917
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.82,
+            "y": -4.907
+          },
+          "b": {
+            "x": 3.82,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.82,
+            "y": 1.24
+          },
+          "b": {
+            "x": 3.82,
+            "y": 4.907
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.86,
+            "y": -4.896
+          },
+          "b": {
+            "x": 3.86,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.86,
+            "y": 1.24
+          },
+          "b": {
+            "x": 3.86,
+            "y": 4.896
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.9,
+            "y": -4.885
+          },
+          "b": {
+            "x": 3.9,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.9,
+            "y": 1.24
+          },
+          "b": {
+            "x": 3.9,
+            "y": 4.885
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.94,
+            "y": -4.873
+          },
+          "b": {
+            "x": 3.94,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.94,
+            "y": 1.24
+          },
+          "b": {
+            "x": 3.94,
+            "y": 4.873
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.98,
+            "y": -4.861
+          },
+          "b": {
+            "x": 3.98,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.98,
+            "y": 1.24
+          },
+          "b": {
+            "x": 3.98,
+            "y": 4.861
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.02,
+            "y": -4.849
+          },
+          "b": {
+            "x": 4.02,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.02,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.02,
+            "y": 4.849
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.06,
+            "y": -4.837
+          },
+          "b": {
+            "x": 4.06,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.06,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.06,
+            "y": 4.837
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.1,
+            "y": -4.824
+          },
+          "b": {
+            "x": 4.1,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.1,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.1,
+            "y": 4.824
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.14,
+            "y": -4.81
+          },
+          "b": {
+            "x": 4.14,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.14,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.14,
+            "y": 4.81
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.18,
+            "y": -4.797
+          },
+          "b": {
+            "x": 4.18,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.18,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.18,
+            "y": 4.797
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.22,
+            "y": -4.782
+          },
+          "b": {
+            "x": 4.22,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.22,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.22,
+            "y": 4.782
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.26,
+            "y": -4.768
+          },
+          "b": {
+            "x": 4.26,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.26,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.26,
+            "y": 4.768
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.3,
+            "y": -4.753
+          },
+          "b": {
+            "x": 4.3,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.3,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.3,
+            "y": 4.753
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.34,
+            "y": -4.738
+          },
+          "b": {
+            "x": 4.34,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.34,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.34,
+            "y": 4.738
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.38,
+            "y": -4.722
+          },
+          "b": {
+            "x": 4.38,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.38,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.38,
+            "y": 4.722
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.42,
+            "y": -4.706
+          },
+          "b": {
+            "x": 4.42,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.42,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.42,
+            "y": 4.706
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.46,
+            "y": -4.69
+          },
+          "b": {
+            "x": 4.46,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.46,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.46,
+            "y": 4.69
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.5,
+            "y": -4.673
+          },
+          "b": {
+            "x": 4.5,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.5,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.5,
+            "y": 4.673
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.54,
+            "y": -4.656
+          },
+          "b": {
+            "x": 4.54,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.54,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.54,
+            "y": 4.656
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.58,
+            "y": -4.638
+          },
+          "b": {
+            "x": 4.58,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.58,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.58,
+            "y": 4.638
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.62,
+            "y": -4.62
+          },
+          "b": {
+            "x": 4.62,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.62,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.62,
+            "y": 4.62
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.66,
+            "y": -4.602
+          },
+          "b": {
+            "x": 4.66,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.66,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.66,
+            "y": 4.602
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.7,
+            "y": -4.583
+          },
+          "b": {
+            "x": 4.7,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.7,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.7,
+            "y": 4.583
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.74,
+            "y": -4.564
+          },
+          "b": {
+            "x": 4.74,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.74,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.74,
+            "y": 4.564
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.78,
+            "y": -4.544
+          },
+          "b": {
+            "x": 4.78,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.78,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.78,
+            "y": 4.544
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.82,
+            "y": -4.524
+          },
+          "b": {
+            "x": 4.82,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.82,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.82,
+            "y": 4.524
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.86,
+            "y": -4.504
+          },
+          "b": {
+            "x": 4.86,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.86,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.86,
+            "y": 4.504
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.9,
+            "y": -4.483
+          },
+          "b": {
+            "x": 4.9,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.9,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.9,
+            "y": 4.483
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.94,
+            "y": -4.461
+          },
+          "b": {
+            "x": 4.94,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.94,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.94,
+            "y": 4.461
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.98,
+            "y": -4.439
+          },
+          "b": {
+            "x": 4.98,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.98,
+            "y": 1.24
+          },
+          "b": {
+            "x": 4.98,
+            "y": 4.439
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.02,
+            "y": -4.417
+          },
+          "b": {
+            "x": 5.02,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.02,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.02,
+            "y": 4.417
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.06,
+            "y": -4.394
+          },
+          "b": {
+            "x": 5.06,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.06,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.06,
+            "y": 4.394
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.1,
+            "y": -4.371
+          },
+          "b": {
+            "x": 5.1,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.1,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.1,
+            "y": 4.371
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.14,
+            "y": -4.347
+          },
+          "b": {
+            "x": 5.14,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.14,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.14,
+            "y": 4.347
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.18,
+            "y": -4.323
+          },
+          "b": {
+            "x": 5.18,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.18,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.18,
+            "y": 4.323
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.22,
+            "y": -4.298
+          },
+          "b": {
+            "x": 5.22,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.22,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.22,
+            "y": 4.298
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.26,
+            "y": -4.272
+          },
+          "b": {
+            "x": 5.26,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.26,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.26,
+            "y": 4.272
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.3,
+            "y": -4.247
+          },
+          "b": {
+            "x": 5.3,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.3,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.3,
+            "y": 4.247
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.34,
+            "y": -4.22
+          },
+          "b": {
+            "x": 5.34,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.34,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.34,
+            "y": 4.22
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.38,
+            "y": -4.193
+          },
+          "b": {
+            "x": 5.38,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.38,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.38,
+            "y": 4.193
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.42,
+            "y": -4.166
+          },
+          "b": {
+            "x": 5.42,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.42,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.42,
+            "y": 4.166
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.46,
+            "y": -4.138
+          },
+          "b": {
+            "x": 5.46,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.46,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.46,
+            "y": 4.138
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.5,
+            "y": -4.109
+          },
+          "b": {
+            "x": 5.5,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.5,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.5,
+            "y": 4.109
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.54,
+            "y": -4.08
+          },
+          "b": {
+            "x": 5.54,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.54,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.54,
+            "y": 4.08
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.58,
+            "y": -4.05
+          },
+          "b": {
+            "x": 5.58,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.58,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.58,
+            "y": 4.05
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.62,
+            "y": -4.02
+          },
+          "b": {
+            "x": 5.62,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.62,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.62,
+            "y": 4.02
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.66,
+            "y": -3.988
+          },
+          "b": {
+            "x": 5.66,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.66,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.66,
+            "y": 3.988
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.7,
+            "y": -3.957
+          },
+          "b": {
+            "x": 5.7,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.7,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.7,
+            "y": 3.957
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.74,
+            "y": -3.924
+          },
+          "b": {
+            "x": 5.74,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.74,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.74,
+            "y": 3.924
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.78,
+            "y": -3.891
+          },
+          "b": {
+            "x": 5.78,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.78,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.78,
+            "y": 3.891
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.82,
+            "y": -3.858
+          },
+          "b": {
+            "x": 5.82,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.82,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.82,
+            "y": 3.858
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.86,
+            "y": -3.823
+          },
+          "b": {
+            "x": 5.86,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.86,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.86,
+            "y": 3.823
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.9,
+            "y": -3.788
+          },
+          "b": {
+            "x": 5.9,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.9,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.9,
+            "y": 3.788
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.94,
+            "y": -3.752
+          },
+          "b": {
+            "x": 5.94,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.94,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.94,
+            "y": 3.752
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.98,
+            "y": -3.716
+          },
+          "b": {
+            "x": 5.98,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.98,
+            "y": 1.24
+          },
+          "b": {
+            "x": 5.98,
+            "y": 3.716
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.02,
+            "y": -3.678
+          },
+          "b": {
+            "x": 6.02,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.02,
+            "y": 1.24
+          },
+          "b": {
+            "x": 6.02,
+            "y": 3.678
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.06,
+            "y": -3.64
+          },
+          "b": {
+            "x": 6.06,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.06,
+            "y": 1.24
+          },
+          "b": {
+            "x": 6.06,
+            "y": 3.64
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.1,
+            "y": -3.601
+          },
+          "b": {
+            "x": 6.1,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.1,
+            "y": 1.24
+          },
+          "b": {
+            "x": 6.1,
+            "y": 3.601
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.14,
+            "y": -3.561
+          },
+          "b": {
+            "x": 6.14,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.14,
+            "y": 1.24
+          },
+          "b": {
+            "x": 6.14,
+            "y": 3.561
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.18,
+            "y": -3.52
+          },
+          "b": {
+            "x": 6.18,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.18,
+            "y": 1.24
+          },
+          "b": {
+            "x": 6.18,
+            "y": 3.52
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.22,
+            "y": -3.478
+          },
+          "b": {
+            "x": 6.22,
+            "y": -1.24
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.22,
+            "y": 1.24
+          },
+          "b": {
+            "x": 6.22,
+            "y": 3.478
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.26,
+            "y": -3.435
+          },
+          "b": {
+            "x": 6.26,
+            "y": 3.435
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.3,
+            "y": -3.391
+          },
+          "b": {
+            "x": 6.3,
+            "y": 3.391
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.34,
+            "y": -3.347
+          },
+          "b": {
+            "x": 6.34,
+            "y": 3.347
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.38,
+            "y": -3.301
+          },
+          "b": {
+            "x": 6.38,
+            "y": 3.301
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.42,
+            "y": -3.254
+          },
+          "b": {
+            "x": 6.42,
+            "y": 3.254
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.46,
+            "y": -3.205
+          },
+          "b": {
+            "x": 6.46,
+            "y": 3.205
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.5,
+            "y": -3.156
+          },
+          "b": {
+            "x": 6.5,
+            "y": 3.156
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.54,
+            "y": -3.105
+          },
+          "b": {
+            "x": 6.54,
+            "y": 3.105
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.58,
+            "y": -3.053
+          },
+          "b": {
+            "x": 6.58,
+            "y": 3.053
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.62,
+            "y": -3
+          },
+          "b": {
+            "x": 6.62,
+            "y": 3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.66,
+            "y": -2.945
+          },
+          "b": {
+            "x": 6.66,
+            "y": 2.945
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.7,
+            "y": -2.888
+          },
+          "b": {
+            "x": 6.7,
+            "y": 2.888
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.74,
+            "y": -2.83
+          },
+          "b": {
+            "x": 6.74,
+            "y": 2.83
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.78,
+            "y": -2.77
+          },
+          "b": {
+            "x": 6.78,
+            "y": 2.77
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.82,
+            "y": -2.708
+          },
+          "b": {
+            "x": 6.82,
+            "y": 2.708
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.86,
+            "y": -2.644
+          },
+          "b": {
+            "x": 6.86,
+            "y": 2.644
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.9,
+            "y": -2.578
+          },
+          "b": {
+            "x": 6.9,
+            "y": 2.578
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.94,
+            "y": -2.51
+          },
+          "b": {
+            "x": 6.94,
+            "y": 2.51
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.98,
+            "y": -2.439
+          },
+          "b": {
+            "x": 6.98,
+            "y": 2.439
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.02,
+            "y": -2.365
+          },
+          "b": {
+            "x": 7.02,
+            "y": 2.365
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.06,
+            "y": -2.288
+          },
+          "b": {
+            "x": 7.06,
+            "y": 2.288
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.1,
+            "y": -2.208
+          },
+          "b": {
+            "x": 7.1,
+            "y": 2.208
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.14,
+            "y": -2.124
+          },
+          "b": {
+            "x": 7.14,
+            "y": 2.124
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.18,
+            "y": -2.037
+          },
+          "b": {
+            "x": 7.18,
+            "y": 2.037
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.22,
+            "y": -1.944
+          },
+          "b": {
+            "x": 7.22,
+            "y": 1.944
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.26,
+            "y": -1.846
+          },
+          "b": {
+            "x": 7.26,
+            "y": 1.846
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.3,
+            "y": -1.742
+          },
+          "b": {
+            "x": 7.3,
+            "y": 1.742
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.34,
+            "y": -1.63
+          },
+          "b": {
+            "x": 7.34,
+            "y": 1.63
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.38,
+            "y": -1.509
+          },
+          "b": {
+            "x": 7.38,
+            "y": 1.509
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.42,
+            "y": -1.377
+          },
+          "b": {
+            "x": 7.42,
+            "y": 1.377
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.46,
+            "y": -1.23
+          },
+          "b": {
+            "x": 7.46,
+            "y": 1.23
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.5,
+            "y": -1.062
+          },
+          "b": {
+            "x": 7.5,
+            "y": 1.062
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.54,
+            "y": -0.862
+          },
+          "b": {
+            "x": 7.54,
+            "y": 0.862
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 7.58,
+            "y": -0.599
+          },
+          "b": {
+            "x": 7.58,
+            "y": 0.599
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.788861,
+            "y": -2.1875
+          },
+          "b": {
+            "x": -0.788861,
+            "y": -2.1875
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.288861,
+            "y": -2.6875
+          },
+          "b": {
+            "x": -1.288861,
+            "y": -1.6875
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.5,
+            "y": 0
+          },
+          "radiusMm": 5.12,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.5,
+            "y": 0
+          },
+          "radiusMm": 5,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:2.5:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 2.5,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:2.5:-6.25:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 2.5,
+            "y": -6.25
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:2.5:6.25:CP_Radial_D10.0mm_P5.00mm",
+          "text": "CP_Radial_D10.0mm_P5.00mm",
+          "at": {
+            "x": 2.5,
+            "y": 6.25
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.0396459999999994,
+        "minY": -5.18,
+        "maxX": 7.68,
+        "maxY": 5.18
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "CP_Radial_D10.0mm_P5.00mm",
+    "description": "CP, Radial series, Radial, pin pitch=5.00mm, diameter=10mm, height=16mm, Electrolytic Capacitor",
+    "tags": [
+      "CP",
+      "Radial",
+      "series",
+      "Radial",
+      "pin",
+      "pitch",
+      "5.00mm",
+      "diameter",
+      "10mm",
+      "height",
+      "16mm",
+      "Electrolytic",
+      "Capacitor"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "roundrect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "roundrectRatio": 0.125,
+        "drillDiameter": 1
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 5,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.979646,
+            -2.875
+          ],
+          "end": [
+            -1.979646,
+            -2.875
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.479646,
+            -3.375
+          ],
+          "end": [
+            -2.479646,
+            -2.375
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.5,
+            -5.08
+          ],
+          "end": [
+            2.5,
+            5.08
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.54,
+            -5.08
+          ],
+          "end": [
+            2.54,
+            5.08
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.58,
+            -5.079
+          ],
+          "end": [
+            2.58,
+            5.079
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.62,
+            -5.079
+          ],
+          "end": [
+            2.62,
+            5.079
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.66,
+            -5.077
+          ],
+          "end": [
+            2.66,
+            5.077
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.7,
+            -5.076
+          ],
+          "end": [
+            2.7,
+            5.076
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.74,
+            -5.074
+          ],
+          "end": [
+            2.74,
+            5.074
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.78,
+            -5.072
+          ],
+          "end": [
+            2.78,
+            5.072
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.82,
+            -5.07
+          ],
+          "end": [
+            2.82,
+            5.07
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.86,
+            -5.067
+          ],
+          "end": [
+            2.86,
+            5.067
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.9,
+            -5.064
+          ],
+          "end": [
+            2.9,
+            5.064
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.94,
+            -5.061
+          ],
+          "end": [
+            2.94,
+            5.061
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.98,
+            -5.057
+          ],
+          "end": [
+            2.98,
+            5.057
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.02,
+            -5.054
+          ],
+          "end": [
+            3.02,
+            5.054
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.06,
+            -5.049
+          ],
+          "end": [
+            3.06,
+            5.049
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.1,
+            -5.045
+          ],
+          "end": [
+            3.1,
+            5.045
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.14,
+            -5.04
+          ],
+          "end": [
+            3.14,
+            5.04
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.18,
+            -5.035
+          ],
+          "end": [
+            3.18,
+            5.035
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.22,
+            -5.029
+          ],
+          "end": [
+            3.22,
+            5.029
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.26,
+            -5.023
+          ],
+          "end": [
+            3.26,
+            5.023
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.3,
+            -5.017
+          ],
+          "end": [
+            3.3,
+            5.017
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.34,
+            -5.011
+          ],
+          "end": [
+            3.34,
+            5.011
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.38,
+            -5.004
+          ],
+          "end": [
+            3.38,
+            5.004
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.42,
+            -4.997
+          ],
+          "end": [
+            3.42,
+            4.997
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.46,
+            -4.989
+          ],
+          "end": [
+            3.46,
+            4.989
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.5,
+            -4.981
+          ],
+          "end": [
+            3.5,
+            4.981
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.54,
+            -4.973
+          ],
+          "end": [
+            3.54,
+            4.973
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.58,
+            -4.965
+          ],
+          "end": [
+            3.58,
+            4.965
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.62,
+            -4.956
+          ],
+          "end": [
+            3.62,
+            4.956
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.66,
+            -4.947
+          ],
+          "end": [
+            3.66,
+            4.947
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.7,
+            -4.937
+          ],
+          "end": [
+            3.7,
+            4.937
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.74,
+            -4.928
+          ],
+          "end": [
+            3.74,
+            4.928
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.78,
+            -4.917
+          ],
+          "end": [
+            3.78,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.78,
+            1.24
+          ],
+          "end": [
+            3.78,
+            4.917
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.82,
+            -4.907
+          ],
+          "end": [
+            3.82,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.82,
+            1.24
+          ],
+          "end": [
+            3.82,
+            4.907
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.86,
+            -4.896
+          ],
+          "end": [
+            3.86,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.86,
+            1.24
+          ],
+          "end": [
+            3.86,
+            4.896
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.9,
+            -4.885
+          ],
+          "end": [
+            3.9,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.9,
+            1.24
+          ],
+          "end": [
+            3.9,
+            4.885
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.94,
+            -4.873
+          ],
+          "end": [
+            3.94,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.94,
+            1.24
+          ],
+          "end": [
+            3.94,
+            4.873
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.98,
+            -4.861
+          ],
+          "end": [
+            3.98,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.98,
+            1.24
+          ],
+          "end": [
+            3.98,
+            4.861
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.02,
+            -4.849
+          ],
+          "end": [
+            4.02,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.02,
+            1.24
+          ],
+          "end": [
+            4.02,
+            4.849
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.06,
+            -4.837
+          ],
+          "end": [
+            4.06,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.06,
+            1.24
+          ],
+          "end": [
+            4.06,
+            4.837
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.1,
+            -4.824
+          ],
+          "end": [
+            4.1,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.1,
+            1.24
+          ],
+          "end": [
+            4.1,
+            4.824
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.14,
+            -4.81
+          ],
+          "end": [
+            4.14,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.14,
+            1.24
+          ],
+          "end": [
+            4.14,
+            4.81
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.18,
+            -4.797
+          ],
+          "end": [
+            4.18,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.18,
+            1.24
+          ],
+          "end": [
+            4.18,
+            4.797
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.22,
+            -4.782
+          ],
+          "end": [
+            4.22,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.22,
+            1.24
+          ],
+          "end": [
+            4.22,
+            4.782
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.26,
+            -4.768
+          ],
+          "end": [
+            4.26,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.26,
+            1.24
+          ],
+          "end": [
+            4.26,
+            4.768
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.3,
+            -4.753
+          ],
+          "end": [
+            4.3,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.3,
+            1.24
+          ],
+          "end": [
+            4.3,
+            4.753
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.34,
+            -4.738
+          ],
+          "end": [
+            4.34,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.34,
+            1.24
+          ],
+          "end": [
+            4.34,
+            4.738
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.38,
+            -4.722
+          ],
+          "end": [
+            4.38,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.38,
+            1.24
+          ],
+          "end": [
+            4.38,
+            4.722
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.42,
+            -4.706
+          ],
+          "end": [
+            4.42,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.42,
+            1.24
+          ],
+          "end": [
+            4.42,
+            4.706
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.46,
+            -4.69
+          ],
+          "end": [
+            4.46,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.46,
+            1.24
+          ],
+          "end": [
+            4.46,
+            4.69
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.5,
+            -4.673
+          ],
+          "end": [
+            4.5,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.5,
+            1.24
+          ],
+          "end": [
+            4.5,
+            4.673
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.54,
+            -4.656
+          ],
+          "end": [
+            4.54,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.54,
+            1.24
+          ],
+          "end": [
+            4.54,
+            4.656
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.58,
+            -4.638
+          ],
+          "end": [
+            4.58,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.58,
+            1.24
+          ],
+          "end": [
+            4.58,
+            4.638
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.62,
+            -4.62
+          ],
+          "end": [
+            4.62,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.62,
+            1.24
+          ],
+          "end": [
+            4.62,
+            4.62
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.66,
+            -4.602
+          ],
+          "end": [
+            4.66,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.66,
+            1.24
+          ],
+          "end": [
+            4.66,
+            4.602
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.7,
+            -4.583
+          ],
+          "end": [
+            4.7,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.7,
+            1.24
+          ],
+          "end": [
+            4.7,
+            4.583
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.74,
+            -4.564
+          ],
+          "end": [
+            4.74,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.74,
+            1.24
+          ],
+          "end": [
+            4.74,
+            4.564
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.78,
+            -4.544
+          ],
+          "end": [
+            4.78,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.78,
+            1.24
+          ],
+          "end": [
+            4.78,
+            4.544
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.82,
+            -4.524
+          ],
+          "end": [
+            4.82,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.82,
+            1.24
+          ],
+          "end": [
+            4.82,
+            4.524
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.86,
+            -4.504
+          ],
+          "end": [
+            4.86,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.86,
+            1.24
+          ],
+          "end": [
+            4.86,
+            4.504
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.9,
+            -4.483
+          ],
+          "end": [
+            4.9,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.9,
+            1.24
+          ],
+          "end": [
+            4.9,
+            4.483
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.94,
+            -4.461
+          ],
+          "end": [
+            4.94,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.94,
+            1.24
+          ],
+          "end": [
+            4.94,
+            4.461
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.98,
+            -4.439
+          ],
+          "end": [
+            4.98,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.98,
+            1.24
+          ],
+          "end": [
+            4.98,
+            4.439
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.02,
+            -4.417
+          ],
+          "end": [
+            5.02,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.02,
+            1.24
+          ],
+          "end": [
+            5.02,
+            4.417
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.06,
+            -4.394
+          ],
+          "end": [
+            5.06,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.06,
+            1.24
+          ],
+          "end": [
+            5.06,
+            4.394
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.1,
+            -4.371
+          ],
+          "end": [
+            5.1,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.1,
+            1.24
+          ],
+          "end": [
+            5.1,
+            4.371
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.14,
+            -4.347
+          ],
+          "end": [
+            5.14,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.14,
+            1.24
+          ],
+          "end": [
+            5.14,
+            4.347
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.18,
+            -4.323
+          ],
+          "end": [
+            5.18,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.18,
+            1.24
+          ],
+          "end": [
+            5.18,
+            4.323
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.22,
+            -4.298
+          ],
+          "end": [
+            5.22,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.22,
+            1.24
+          ],
+          "end": [
+            5.22,
+            4.298
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.26,
+            -4.272
+          ],
+          "end": [
+            5.26,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.26,
+            1.24
+          ],
+          "end": [
+            5.26,
+            4.272
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.3,
+            -4.247
+          ],
+          "end": [
+            5.3,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.3,
+            1.24
+          ],
+          "end": [
+            5.3,
+            4.247
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.34,
+            -4.22
+          ],
+          "end": [
+            5.34,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.34,
+            1.24
+          ],
+          "end": [
+            5.34,
+            4.22
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.38,
+            -4.193
+          ],
+          "end": [
+            5.38,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.38,
+            1.24
+          ],
+          "end": [
+            5.38,
+            4.193
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.42,
+            -4.166
+          ],
+          "end": [
+            5.42,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.42,
+            1.24
+          ],
+          "end": [
+            5.42,
+            4.166
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.46,
+            -4.138
+          ],
+          "end": [
+            5.46,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.46,
+            1.24
+          ],
+          "end": [
+            5.46,
+            4.138
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.5,
+            -4.109
+          ],
+          "end": [
+            5.5,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.5,
+            1.24
+          ],
+          "end": [
+            5.5,
+            4.109
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.54,
+            -4.08
+          ],
+          "end": [
+            5.54,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.54,
+            1.24
+          ],
+          "end": [
+            5.54,
+            4.08
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.58,
+            -4.05
+          ],
+          "end": [
+            5.58,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.58,
+            1.24
+          ],
+          "end": [
+            5.58,
+            4.05
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.62,
+            -4.02
+          ],
+          "end": [
+            5.62,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.62,
+            1.24
+          ],
+          "end": [
+            5.62,
+            4.02
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.66,
+            -3.988
+          ],
+          "end": [
+            5.66,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.66,
+            1.24
+          ],
+          "end": [
+            5.66,
+            3.988
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.7,
+            -3.957
+          ],
+          "end": [
+            5.7,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.7,
+            1.24
+          ],
+          "end": [
+            5.7,
+            3.957
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.74,
+            -3.924
+          ],
+          "end": [
+            5.74,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.74,
+            1.24
+          ],
+          "end": [
+            5.74,
+            3.924
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.78,
+            -3.891
+          ],
+          "end": [
+            5.78,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.78,
+            1.24
+          ],
+          "end": [
+            5.78,
+            3.891
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.82,
+            -3.858
+          ],
+          "end": [
+            5.82,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.82,
+            1.24
+          ],
+          "end": [
+            5.82,
+            3.858
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.86,
+            -3.823
+          ],
+          "end": [
+            5.86,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.86,
+            1.24
+          ],
+          "end": [
+            5.86,
+            3.823
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.9,
+            -3.788
+          ],
+          "end": [
+            5.9,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.9,
+            1.24
+          ],
+          "end": [
+            5.9,
+            3.788
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.94,
+            -3.752
+          ],
+          "end": [
+            5.94,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.94,
+            1.24
+          ],
+          "end": [
+            5.94,
+            3.752
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.98,
+            -3.716
+          ],
+          "end": [
+            5.98,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.98,
+            1.24
+          ],
+          "end": [
+            5.98,
+            3.716
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.02,
+            -3.678
+          ],
+          "end": [
+            6.02,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.02,
+            1.24
+          ],
+          "end": [
+            6.02,
+            3.678
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.06,
+            -3.64
+          ],
+          "end": [
+            6.06,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.06,
+            1.24
+          ],
+          "end": [
+            6.06,
+            3.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.1,
+            -3.601
+          ],
+          "end": [
+            6.1,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.1,
+            1.24
+          ],
+          "end": [
+            6.1,
+            3.601
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.14,
+            -3.561
+          ],
+          "end": [
+            6.14,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.14,
+            1.24
+          ],
+          "end": [
+            6.14,
+            3.561
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.18,
+            -3.52
+          ],
+          "end": [
+            6.18,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.18,
+            1.24
+          ],
+          "end": [
+            6.18,
+            3.52
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.22,
+            -3.478
+          ],
+          "end": [
+            6.22,
+            -1.24
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.22,
+            1.24
+          ],
+          "end": [
+            6.22,
+            3.478
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.26,
+            -3.435
+          ],
+          "end": [
+            6.26,
+            3.435
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.3,
+            -3.391
+          ],
+          "end": [
+            6.3,
+            3.391
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.34,
+            -3.347
+          ],
+          "end": [
+            6.34,
+            3.347
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.38,
+            -3.301
+          ],
+          "end": [
+            6.38,
+            3.301
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.42,
+            -3.254
+          ],
+          "end": [
+            6.42,
+            3.254
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.46,
+            -3.205
+          ],
+          "end": [
+            6.46,
+            3.205
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.5,
+            -3.156
+          ],
+          "end": [
+            6.5,
+            3.156
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.54,
+            -3.105
+          ],
+          "end": [
+            6.54,
+            3.105
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.58,
+            -3.053
+          ],
+          "end": [
+            6.58,
+            3.053
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.62,
+            -3
+          ],
+          "end": [
+            6.62,
+            3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.66,
+            -2.945
+          ],
+          "end": [
+            6.66,
+            2.945
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.7,
+            -2.888
+          ],
+          "end": [
+            6.7,
+            2.888
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.74,
+            -2.83
+          ],
+          "end": [
+            6.74,
+            2.83
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.78,
+            -2.77
+          ],
+          "end": [
+            6.78,
+            2.77
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.82,
+            -2.708
+          ],
+          "end": [
+            6.82,
+            2.708
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.86,
+            -2.644
+          ],
+          "end": [
+            6.86,
+            2.644
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.9,
+            -2.578
+          ],
+          "end": [
+            6.9,
+            2.578
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.94,
+            -2.51
+          ],
+          "end": [
+            6.94,
+            2.51
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.98,
+            -2.439
+          ],
+          "end": [
+            6.98,
+            2.439
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.02,
+            -2.365
+          ],
+          "end": [
+            7.02,
+            2.365
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.06,
+            -2.288
+          ],
+          "end": [
+            7.06,
+            2.288
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.1,
+            -2.208
+          ],
+          "end": [
+            7.1,
+            2.208
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.14,
+            -2.124
+          ],
+          "end": [
+            7.14,
+            2.124
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.18,
+            -2.037
+          ],
+          "end": [
+            7.18,
+            2.037
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.22,
+            -1.944
+          ],
+          "end": [
+            7.22,
+            1.944
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.26,
+            -1.846
+          ],
+          "end": [
+            7.26,
+            1.846
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.3,
+            -1.742
+          ],
+          "end": [
+            7.3,
+            1.742
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.34,
+            -1.63
+          ],
+          "end": [
+            7.34,
+            1.63
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.38,
+            -1.509
+          ],
+          "end": [
+            7.38,
+            1.509
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.42,
+            -1.377
+          ],
+          "end": [
+            7.42,
+            1.377
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.46,
+            -1.23
+          ],
+          "end": [
+            7.46,
+            1.23
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.5,
+            -1.062
+          ],
+          "end": [
+            7.5,
+            1.062
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.54,
+            -0.862
+          ],
+          "end": [
+            7.54,
+            0.862
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            7.58,
+            -0.599
+          ],
+          "end": [
+            7.58,
+            0.599
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.788861,
+            -2.1875
+          ],
+          "end": [
+            -0.788861,
+            -2.1875
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.288861,
+            -2.6875
+          ],
+          "end": [
+            -1.288861,
+            -1.6875
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "circle",
+        "layer": "F.SilkS",
+        "data": {
+          "center": [
+            2.5,
+            0
+          ],
+          "end": [
+            7.62,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "circle",
+        "layer": "F.CrtYd",
+        "data": {
+          "center": [
+            2.5,
+            0
+          ],
+          "end": [
+            7.75,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "circle",
+        "layer": "F.Fab",
+        "data": {
+          "center": [
+            2.5,
+            0
+          ],
+          "end": [
+            7.5,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2.5,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 2.5,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            2.5,
+            -6.25,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 2.5,
+            "y": -6.25
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2.5,
+            6.25,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "CP_Radial_D10.0mm_P5.00mm"
+          ]
+        },
+        "text": {
+          "content": "CP_Radial_D10.0mm_P5.00mm",
+          "position": {
+            "x": 2.5,
+            "y": 6.25
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D10.0mm_P5.00mm.step",
+        "resolvedFileName": "CP_Radial_D10.0mm_P5.00mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"CP_Radial_D10.0mm_P5.00mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"CP, Radial series, Radial, pin pitch=5.00mm, diameter=10mm, height=16mm, Electrolytic Capacitor\")\n\t(tags \"CP Radial series Radial pin pitch 5.00mm diameter 10mm height 16mm Electrolytic Capacitor\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 2.5 -6.25 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"CP_Radial_D10.0mm_P5.00mm\"\n\t\t(at 2.5 6.25 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"capacitor/THT/other\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.979646 -2.875)\n\t\t(end -1.979646 -2.875)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.479646 -3.375)\n\t\t(end -2.479646 -2.375)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.5 -5.08)\n\t\t(end 2.5 5.08)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.54 -5.08)\n\t\t(end 2.54 5.08)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.58 -5.079)\n\t\t(end 2.58 5.079)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.62 -5.079)\n\t\t(end 2.62 5.079)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.66 -5.077)\n\t\t(end 2.66 5.077)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.7 -5.076)\n\t\t(end 2.7 5.076)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.74 -5.074)\n\t\t(end 2.74 5.074)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.78 -5.072)\n\t\t(end 2.78 5.072)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.82 -5.07)\n\t\t(end 2.82 5.07)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.86 -5.067)\n\t\t(end 2.86 5.067)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.9 -5.064)\n\t\t(end 2.9 5.064)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.94 -5.061)\n\t\t(end 2.94 5.061)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.98 -5.057)\n\t\t(end 2.98 5.057)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.02 -5.054)\n\t\t(end 3.02 5.054)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.06 -5.049)\n\t\t(end 3.06 5.049)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.1 -5.045)\n\t\t(end 3.1 5.045)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.14 -5.04)\n\t\t(end 3.14 5.04)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.18 -5.035)\n\t\t(end 3.18 5.035)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.22 -5.029)\n\t\t(end 3.22 5.029)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.26 -5.023)\n\t\t(end 3.26 5.023)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.3 -5.017)\n\t\t(end 3.3 5.017)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.34 -5.011)\n\t\t(end 3.34 5.011)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.38 -5.004)\n\t\t(end 3.38 5.004)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.42 -4.997)\n\t\t(end 3.42 4.997)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.46 -4.989)\n\t\t(end 3.46 4.989)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.5 -4.981)\n\t\t(end 3.5 4.981)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.54 -4.973)\n\t\t(end 3.54 4.973)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.58 -4.965)\n\t\t(end 3.58 4.965)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.62 -4.956)\n\t\t(end 3.62 4.956)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.66 -4.947)\n\t\t(end 3.66 4.947)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.7 -4.937)\n\t\t(end 3.7 4.937)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.74 -4.928)\n\t\t(end 3.74 4.928)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.78 -4.917)\n\t\t(end 3.78 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.78 1.24)\n\t\t(end 3.78 4.917)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.82 -4.907)\n\t\t(end 3.82 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.82 1.24)\n\t\t(end 3.82 4.907)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.86 -4.896)\n\t\t(end 3.86 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.86 1.24)\n\t\t(end 3.86 4.896)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.9 -4.885)\n\t\t(end 3.9 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.9 1.24)\n\t\t(end 3.9 4.885)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.94 -4.873)\n\t\t(end 3.94 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.94 1.24)\n\t\t(end 3.94 4.873)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.98 -4.861)\n\t\t(end 3.98 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.98 1.24)\n\t\t(end 3.98 4.861)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.02 -4.849)\n\t\t(end 4.02 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.02 1.24)\n\t\t(end 4.02 4.849)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.06 -4.837)\n\t\t(end 4.06 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.06 1.24)\n\t\t(end 4.06 4.837)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.1 -4.824)\n\t\t(end 4.1 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.1 1.24)\n\t\t(end 4.1 4.824)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.14 -4.81)\n\t\t(end 4.14 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.14 1.24)\n\t\t(end 4.14 4.81)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.18 -4.797)\n\t\t(end 4.18 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.18 1.24)\n\t\t(end 4.18 4.797)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.22 -4.782)\n\t\t(end 4.22 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.22 1.24)\n\t\t(end 4.22 4.782)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.26 -4.768)\n\t\t(end 4.26 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.26 1.24)\n\t\t(end 4.26 4.768)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.3 -4.753)\n\t\t(end 4.3 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.3 1.24)\n\t\t(end 4.3 4.753)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.34 -4.738)\n\t\t(end 4.34 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.34 1.24)\n\t\t(end 4.34 4.738)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.38 -4.722)\n\t\t(end 4.38 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.38 1.24)\n\t\t(end 4.38 4.722)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.42 -4.706)\n\t\t(end 4.42 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.42 1.24)\n\t\t(end 4.42 4.706)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.46 -4.69)\n\t\t(end 4.46 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.46 1.24)\n\t\t(end 4.46 4.69)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.5 -4.673)\n\t\t(end 4.5 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.5 1.24)\n\t\t(end 4.5 4.673)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.54 -4.656)\n\t\t(end 4.54 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.54 1.24)\n\t\t(end 4.54 4.656)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.58 -4.638)\n\t\t(end 4.58 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.58 1.24)\n\t\t(end 4.58 4.638)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.62 -4.62)\n\t\t(end 4.62 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.62 1.24)\n\t\t(end 4.62 4.62)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.66 -4.602)\n\t\t(end 4.66 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.66 1.24)\n\t\t(end 4.66 4.602)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.7 -4.583)\n\t\t(end 4.7 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.7 1.24)\n\t\t(end 4.7 4.583)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.74 -4.564)\n\t\t(end 4.74 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.74 1.24)\n\t\t(end 4.74 4.564)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.78 -4.544)\n\t\t(end 4.78 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.78 1.24)\n\t\t(end 4.78 4.544)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.82 -4.524)\n\t\t(end 4.82 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.82 1.24)\n\t\t(end 4.82 4.524)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.86 -4.504)\n\t\t(end 4.86 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.86 1.24)\n\t\t(end 4.86 4.504)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.9 -4.483)\n\t\t(end 4.9 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.9 1.24)\n\t\t(end 4.9 4.483)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.94 -4.461)\n\t\t(end 4.94 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.94 1.24)\n\t\t(end 4.94 4.461)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.98 -4.439)\n\t\t(end 4.98 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 4.98 1.24)\n\t\t(end 4.98 4.439)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.02 -4.417)\n\t\t(end 5.02 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.02 1.24)\n\t\t(end 5.02 4.417)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.06 -4.394)\n\t\t(end 5.06 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.06 1.24)\n\t\t(end 5.06 4.394)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.1 -4.371)\n\t\t(end 5.1 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.1 1.24)\n\t\t(end 5.1 4.371)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.14 -4.347)\n\t\t(end 5.14 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.14 1.24)\n\t\t(end 5.14 4.347)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.18 -4.323)\n\t\t(end 5.18 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.18 1.24)\n\t\t(end 5.18 4.323)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.22 -4.298)\n\t\t(end 5.22 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.22 1.24)\n\t\t(end 5.22 4.298)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.26 -4.272)\n\t\t(end 5.26 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.26 1.24)\n\t\t(end 5.26 4.272)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.3 -4.247)\n\t\t(end 5.3 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.3 1.24)\n\t\t(end 5.3 4.247)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.34 -4.22)\n\t\t(end 5.34 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.34 1.24)\n\t\t(end 5.34 4.22)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.38 -4.193)\n\t\t(end 5.38 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.38 1.24)\n\t\t(end 5.38 4.193)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.42 -4.166)\n\t\t(end 5.42 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.42 1.24)\n\t\t(end 5.42 4.166)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.46 -4.138)\n\t\t(end 5.46 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.46 1.24)\n\t\t(end 5.46 4.138)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.5 -4.109)\n\t\t(end 5.5 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.5 1.24)\n\t\t(end 5.5 4.109)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.54 -4.08)\n\t\t(end 5.54 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.54 1.24)\n\t\t(end 5.54 4.08)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.58 -4.05)\n\t\t(end 5.58 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.58 1.24)\n\t\t(end 5.58 4.05)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.62 -4.02)\n\t\t(end 5.62 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.62 1.24)\n\t\t(end 5.62 4.02)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.66 -3.988)\n\t\t(end 5.66 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.66 1.24)\n\t\t(end 5.66 3.988)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.7 -3.957)\n\t\t(end 5.7 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.7 1.24)\n\t\t(end 5.7 3.957)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.74 -3.924)\n\t\t(end 5.74 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.74 1.24)\n\t\t(end 5.74 3.924)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.78 -3.891)\n\t\t(end 5.78 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.78 1.24)\n\t\t(end 5.78 3.891)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.82 -3.858)\n\t\t(end 5.82 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.82 1.24)\n\t\t(end 5.82 3.858)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.86 -3.823)\n\t\t(end 5.86 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.86 1.24)\n\t\t(end 5.86 3.823)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.9 -3.788)\n\t\t(end 5.9 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.9 1.24)\n\t\t(end 5.9 3.788)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.94 -3.752)\n\t\t(end 5.94 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.94 1.24)\n\t\t(end 5.94 3.752)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.98 -3.716)\n\t\t(end 5.98 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.98 1.24)\n\t\t(end 5.98 3.716)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.02 -3.678)\n\t\t(end 6.02 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.02 1.24)\n\t\t(end 6.02 3.678)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.06 -3.64)\n\t\t(end 6.06 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.06 1.24)\n\t\t(end 6.06 3.64)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.1 -3.601)\n\t\t(end 6.1 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.1 1.24)\n\t\t(end 6.1 3.601)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.14 -3.561)\n\t\t(end 6.14 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.14 1.24)\n\t\t(end 6.14 3.561)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.18 -3.52)\n\t\t(end 6.18 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.18 1.24)\n\t\t(end 6.18 3.52)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.22 -3.478)\n\t\t(end 6.22 -1.24)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.22 1.24)\n\t\t(end 6.22 3.478)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.26 -3.435)\n\t\t(end 6.26 3.435)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.3 -3.391)\n\t\t(end 6.3 3.391)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.34 -3.347)\n\t\t(end 6.34 3.347)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.38 -3.301)\n\t\t(end 6.38 3.301)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.42 -3.254)\n\t\t(end 6.42 3.254)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.46 -3.205)\n\t\t(end 6.46 3.205)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.5 -3.156)\n\t\t(end 6.5 3.156)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.54 -3.105)\n\t\t(end 6.54 3.105)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.58 -3.053)\n\t\t(end 6.58 3.053)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.62 -3)\n\t\t(end 6.62 3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.66 -2.945)\n\t\t(end 6.66 2.945)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.7 -2.888)\n\t\t(end 6.7 2.888)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.74 -2.83)\n\t\t(end 6.74 2.83)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.78 -2.77)\n\t\t(end 6.78 2.77)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.82 -2.708)\n\t\t(end 6.82 2.708)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.86 -2.644)\n\t\t(end 6.86 2.644)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.9 -2.578)\n\t\t(end 6.9 2.578)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.94 -2.51)\n\t\t(end 6.94 2.51)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 6.98 -2.439)\n\t\t(end 6.98 2.439)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.02 -2.365)\n\t\t(end 7.02 2.365)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.06 -2.288)\n\t\t(end 7.06 2.288)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.1 -2.208)\n\t\t(end 7.1 2.208)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.14 -2.124)\n\t\t(end 7.14 2.124)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.18 -2.037)\n\t\t(end 7.18 2.037)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.22 -1.944)\n\t\t(end 7.22 1.944)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.26 -1.846)\n\t\t(end 7.26 1.846)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.3 -1.742)\n\t\t(end 7.3 1.742)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.34 -1.63)\n\t\t(end 7.34 1.63)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.38 -1.509)\n\t\t(end 7.38 1.509)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.42 -1.377)\n\t\t(end 7.42 1.377)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.46 -1.23)\n\t\t(end 7.46 1.23)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.5 -1.062)\n\t\t(end 7.5 1.062)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.54 -0.862)\n\t\t(end 7.54 0.862)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 7.58 -0.599)\n\t\t(end 7.58 0.599)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_circle\n\t\t(center 2.5 0)\n\t\t(end 7.62 0)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_circle\n\t\t(center 2.5 0)\n\t\t(end 7.75 0)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -1.788861 -2.1875)\n\t\t(end -0.788861 -2.1875)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start -1.288861 -2.6875)\n\t\t(end -1.288861 -1.6875)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_circle\n\t\t(center 2.5 0)\n\t\t(end 7.5 0)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 2.5 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole roundrect\n\t\t(at 0 0)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(roundrect_rratio 0.125)\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 5 0)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/CP_Radial_D10.0mm_P5.00mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "CP_Radial_D10.0mm_P5.00mm.kicad_mod"
+}

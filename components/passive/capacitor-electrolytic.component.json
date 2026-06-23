@@ -1,0 +1,105 @@
+{
+  "id": "openpcb.core.passive.capacitor-electrolytic",
+  "uuid": "eb6b3cd8-1a70-5d3c-8452-e2c4a0381a08",
+  "version": "0.2.0",
+  "name": "Electrolytic Capacitor (Radial)",
+  "description": "Aluminium electrolytic capacitor, radial THT; D5–D10mm. Polarized. Generic — capacitance/voltage per instance.",
+  "category": "passive",
+  "subcategory": "capacitor_electrolytic",
+  "tags": [
+    "passive",
+    "capacitor",
+    "electrolytic",
+    "polarized",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "electrolytic",
+    "aluminium capacitor",
+    "radial cap"
+  ],
+  "aliases": [],
+  "parameters": {
+    "type": "aluminium electrolytic",
+    "polarized": "yes"
+  },
+  "symbol": "openpcb.core.symbol.passive.c-polarized",
+  "defaultFootprint": "openpcb.core.footprint.passive.cp-radial-d6-3-p2-5",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.cp-radial-d5-p2-5",
+      "label": "Radial D5.0mm P2.50mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.cp-radial-d6-3-p2-5",
+      "label": "Radial D6.3mm P2.50mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.cp-radial-d8-p3-5",
+      "label": "Radial D8.0mm P3.50mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.cp-radial-d10-p5",
+      "label": "Radial D10.0mm P5.00mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "C_Polarized.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Electrolytic Capacitor (Radial)",
+    "sourceHash": "ba34a5dd65d859d77cfd097b875704db6c698a8859b54a5dba68df8522968e5f",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

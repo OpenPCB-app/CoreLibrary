@@ -1,0 +1,77 @@
+{
+  "id": "openpcb.core.passive.fuse-resettable",
+  "uuid": "d68aba7d-9473-52e8-ac15-3340af013ad1",
+  "version": "0.2.0",
+  "name": "Resettable Fuse (PTC)",
+  "description": "Polymeric PTC resettable fuse (PolyFuse); 0805/1206 SMD. Generic — hold current per instance.",
+  "category": "passive",
+  "subcategory": "fuse",
+  "tags": [
+    "passive",
+    "fuse",
+    "ptc",
+    "polyfuse",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "resettable fuse",
+    "PTC",
+    "PolyFuse",
+    "PPTC"
+  ],
+  "aliases": [],
+  "parameters": {
+    "type": "PTC resettable"
+  },
+  "symbol": "openpcb.core.symbol.passive.polyfuse",
+  "defaultFootprint": "openpcb.core.footprint.passive.fuse-1206-3216metric",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.fuse-0805-2012metric",
+      "label": "0805 (2012 metric)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.fuse-1206-3216metric",
+      "label": "1206 (3216 metric)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Polyfuse.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Resettable Fuse (PTC)",
+    "sourceHash": "8774efe3f1dea9de51f4e6c266c0cb03897f46b2ed0ea46d59c0471327914d4a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

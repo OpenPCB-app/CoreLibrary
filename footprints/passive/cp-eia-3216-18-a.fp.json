@@ -1,0 +1,681 @@
+{
+  "id": "openpcb.core.footprint.passive.cp-eia-3216-18-a",
+  "uuid": "4bf9422a-e46a-58f9-a2e4-feaf9e4e51d1",
+  "version": "0.2.0",
+  "name": "CP_EIA-3216-18_Kemet-A",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.passive.cp-eia-3216-18-a"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "CP_EIA-3216-18_Kemet-A.kicad_mod",
+    "sourceLibrary": "Capacitor_Tantalum_SMD",
+    "sourceItemName": "CP_EIA-3216-18_Kemet-A",
+    "sourceHash": "80cca28df2211022d717241d4c4b13b807a3eaed6093ba44214201af6ecbc0d5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_8d44632b8b576db7",
+    "fileName": "CP_EIA-3216-18_Kemet-A.kicad_mod",
+    "name": "CP_EIA-3216-18_Kemet-A",
+    "description": "Tantalum Capacitor SMD Kemet-A (3216-18 Metric), IPC-7352 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf)",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "capacitor",
+      "tantalum",
+      "smd"
+    ],
+    "sourceHash": "80cca28df2211022d717241d4c4b13b807a3eaed6093ba44214201af6ecbc0d5",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "CP_EIA-3216-18_Kemet-A",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.3525,
+            "y": 0
+          },
+          "widthMm": 1.415,
+          "heightMm": 1.39,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.179856,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.3525,
+            "y": 0
+          },
+          "widthMm": 1.415,
+          "heightMm": 1.39,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.179856,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.32,
+            "y": -0.955
+          },
+          "b": {
+            "x": -2.32,
+            "y": 0.955
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.32,
+            "y": 0.955
+          },
+          "b": {
+            "x": 1.6,
+            "y": 0.955
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.6,
+            "y": -0.955
+          },
+          "b": {
+            "x": -2.32,
+            "y": -0.955
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.6,
+            "y": -0.4
+          },
+          "b": {
+            "x": -1.6,
+            "y": 0.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.6,
+            "y": 0.8
+          },
+          "b": {
+            "x": 1.6,
+            "y": 0.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.2,
+            "y": -0.8
+          },
+          "b": {
+            "x": -1.6,
+            "y": -0.4
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.6,
+            "y": -0.8
+          },
+          "b": {
+            "x": -1.2,
+            "y": -0.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.6,
+            "y": 0.8
+          },
+          "b": {
+            "x": 1.6,
+            "y": -0.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-1.75:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -1.75
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:1.75:CP_EIA-3216-18_Kemet-A",
+          "text": "CP_EIA-3216-18_Kemet-A",
+          "at": {
+            "x": 0,
+            "y": 1.75
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -2.38,
+        "minY": -1.015,
+        "maxX": 2.0599999999999996,
+        "maxY": 1.015
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "CP_EIA-3216-18_Kemet-A",
+    "description": "Tantalum Capacitor SMD Kemet-A (3216-18 Metric), IPC-7352 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf)",
+    "tags": [
+      "capacitor",
+      "tantalum"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.3525,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.415,
+          "height": 1.39
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.179856
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.3525,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.415,
+          "height": 1.39
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.179856
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.32,
+            -0.955
+          ],
+          "end": [
+            -2.32,
+            0.955
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.32,
+            0.955
+          ],
+          "end": [
+            1.6,
+            0.955
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.6,
+            -0.955
+          ],
+          "end": [
+            -2.32,
+            -0.955
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.6,
+            -0.4
+          ],
+          "end": [
+            -1.6,
+            0.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.6,
+            0.8
+          ],
+          "end": [
+            1.6,
+            0.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.2,
+            -0.8
+          ],
+          "end": [
+            -1.6,
+            -0.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.6,
+            -0.8
+          ],
+          "end": [
+            -1.2,
+            -0.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.6,
+            0.8
+          ],
+          "end": [
+            1.6,
+            -0.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.31,
+            -1.05
+          ],
+          "end": [
+            2.31,
+            1.05
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.8,
+                0.8
+              ],
+              [
+                "thickness",
+                0.12
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.8,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -1.75,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -1.75
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            1.75,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "CP_EIA-3216-18_Kemet-A"
+          ]
+        },
+        "text": {
+          "content": "CP_EIA-3216-18_Kemet-A",
+          "position": {
+            "x": 0,
+            "y": 1.75
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-3216-18_Kemet-A.step",
+        "resolvedFileName": "CP_EIA-3216-18_Kemet-A.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"CP_EIA-3216-18_Kemet-A\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Tantalum Capacitor SMD Kemet-A (3216-18 Metric), IPC-7352 nominal, (Body size from: http://www.kemet.com/Lists/ProductCatalog/Attachments/253/KEM_TC101_STD.pdf)\")\n\t(tags \"capacitor tantalum\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -1.75 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"CP_EIA-3216-18_Kemet-A\"\n\t\t(at 0 1.75 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"SMD_2terminal_chip_molded\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.32 -0.955)\n\t\t(end -2.32 0.955)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.32 0.955)\n\t\t(end 1.6 0.955)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 1.6 -0.955)\n\t\t(end -2.32 -0.955)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -2.31 -1.05)\n\t\t(end 2.31 1.05)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -1.6 -0.4)\n\t\t(end -1.6 0.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start -1.6 0.8)\n\t\t(end 1.6 0.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start -1.2 -0.8)\n\t\t(end -1.6 -0.4)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 1.6 -0.8)\n\t\t(end -1.2 -0.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 1.6 0.8)\n\t\t(end 1.6 -0.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.8 0.8)\n\t\t\t\t(thickness 0.12)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -1.3525 0)\n\t\t(size 1.415 1.39)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.179856)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 1.3525 0)\n\t\t(size 1.415 1.39)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.179856)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-3216-18_Kemet-A.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "CP_EIA-3216-18_Kemet-A.kicad_mod"
+}

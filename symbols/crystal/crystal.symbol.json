@@ -1,0 +1,476 @@
+{
+  "id": "openpcb.core.symbol.crystal.crystal",
+  "uuid": "934e48b8-961b-5bdc-ac68-b0175ec956bf",
+  "version": "0.2.0",
+  "name": "Crystal (2-pin)",
+  "referencePrefix": "Y",
+  "description": "Two pin crystal",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Crystal.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Crystal",
+    "sourceHash": "4db972911871949d68948d8d73f17de828e9510acb85aced4d9cc2a799dcb502",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "Y",
+      "Value": "Crystal",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Two pin crystal",
+      "ki_keywords": "quartz ceramic resonator oscillator",
+      "ki_fp_filters": "Crystal*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Crystal.kicad_sym",
+        "sourceItemName": "Crystal",
+        "sha256": "f3e250c89e52deccef0f88cd5f8e19e2aa2a242a9ec2ea2da7f89f84c6f39e55"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_ccada4eecaf05b69",
+    "name": "Crystal",
+    "referencePrefix": "Y",
+    "description": "Two pin crystal",
+    "sourceHash": "4db972911871949d68948d8d73f17de828e9510acb85aced4d9cc2a799dcb502",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "1",
+        "localPosition": {
+          "x": -3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "2",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Crystal",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 0
+            },
+            {
+              "x": -1.905,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.905,
+              "y": -1.27
+            },
+            {
+              "x": -1.905,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "rect",
+          "x": -1.143,
+          "y": -2.54,
+          "width": 2.286,
+          "height": 5.08,
+          "fill": "none",
+          "strokeWidthMm": 0.3048
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.905,
+              "y": -1.27
+            },
+            {
+              "x": 1.905,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": 0
+            },
+            {
+              "x": 1.905,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": 1.5553014349171386e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "Y",
+          "at": {
+            "x": 0,
+            "y": 3.9624
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Crystal",
+          "at": {
+            "x": 0,
+            "y": -3.9624
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.81,
+        "minY": -5.2324,
+        "maxX": 3.81,
+        "maxY": 5.2324
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Crystal",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -3.81,
+          "y": 0
+        },
+        "length": 1.27,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "2",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 1.27,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "Y",
+      "Value": "Crystal",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Two pin crystal",
+      "ki_keywords": "quartz ceramic resonator oscillator",
+      "ki_fp_filters": "Crystal*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              0
+            ],
+            [
+              "xy",
+              -1.905,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.905,
+              -1.27
+            ],
+            [
+              "xy",
+              -1.905,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.143,
+            2.54
+          ],
+          [
+            "end",
+            1.143,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.3048
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.905,
+              -1.27
+            ],
+            [
+              "xy",
+              1.905,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              0
+            ],
+            [
+              "xy",
+              1.905,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Crystal (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference Y (at 0 3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value Crystal (at 0 -3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Two pin crystal\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"quartz ceramic resonator oscillator\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters Crystal* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Crystal_0_1 (polyline (pts (xy -2.54 0) (xy -1.905 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.905 -1.27) (xy -1.905 1.27)) (stroke (width 0.508) (type default)) (fill (type none))) (rectangle (start -1.143 2.54) (end 1.143 -2.54) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy 1.905 -1.27) (xy 1.905 1.27)) (stroke (width 0.508) (type default)) (fill (type none))) (polyline (pts (xy 2.54 0) (xy 1.905 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol Crystal_1_1 (pin passive line (at -3.81 0 0) (length 1.27) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 1.27) (name 2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

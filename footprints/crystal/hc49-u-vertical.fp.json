@@ -1,0 +1,788 @@
+{
+  "id": "openpcb.core.footprint.crystal.hc49-u-vertical",
+  "uuid": "1822cca6-cc9d-5c7a-9714-fe74e93a33cd",
+  "version": "0.2.0",
+  "name": "Crystal_HC49-U_Vertical",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.crystal.hc49-u-vertical"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Crystal_HC49-U_Vertical.kicad_mod",
+    "sourceLibrary": "Crystal",
+    "sourceItemName": "Crystal_HC49-U_Vertical",
+    "sourceHash": "46a257cbaf91540167742153b4f9221daab10ad984df91390f21d575d7791249",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_2c554d6a12eacd9b",
+    "fileName": "Crystal_HC49-U_Vertical.kicad_mod",
+    "name": "Crystal_HC49-U_Vertical",
+    "description": "HC-49/U, Crystal, http://5hertz.com/pdfs/04404_D.pdf",
+    "mountType": "through_hole",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "through_hole"
+    ],
+    "sourceHash": "46a257cbaf91540167742153b4f9221daab10ad984df91390f21d575d7791249",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Crystal_HC49-U_Vertical",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 4.88,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.685,
+            "y": -2.435
+          },
+          "b": {
+            "x": 5.565,
+            "y": -2.435
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.565,
+            "y": 2.435
+          },
+          "b": {
+            "x": -0.685,
+            "y": 2.435
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.685,
+            "y": -2.325
+          },
+          "b": {
+            "x": 5.565,
+            "y": -2.325
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 5.565,
+            "y": 2.325
+          },
+          "b": {
+            "x": -0.685,
+            "y": 2.325
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -0.685,
+            "y": 2.435
+          },
+          "mid": {
+            "x": -3.12,
+            "y": 0
+          },
+          "end": {
+            "x": -0.685,
+            "y": -2.435
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 5.565,
+            "y": -2.435
+          },
+          "mid": {
+            "x": 8,
+            "y": 0
+          },
+          "end": {
+            "x": 5.565,
+            "y": 2.435
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -0.685,
+            "y": 2.325
+          },
+          "mid": {
+            "x": -3.01,
+            "y": 0
+          },
+          "end": {
+            "x": -0.685,
+            "y": -2.325
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 5.565,
+            "y": -2.325
+          },
+          "mid": {
+            "x": 7.89,
+            "y": 0
+          },
+          "end": {
+            "x": 5.565,
+            "y": 2.325
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:2.44:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 2.44,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:2.44:-3.52:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 2.44,
+            "y": -3.52
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:2.44:3.52:Crystal_HC49-U_Vertical",
+          "text": "Crystal_HC49-U_Vertical",
+          "at": {
+            "x": 2.44,
+            "y": 3.52
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.1799999999999997,
+        "minY": -2.495,
+        "maxX": 8.060000000000002,
+        "maxY": 2.495
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Crystal_HC49-U_Vertical",
+    "description": "HC-49/U, Crystal, http://5hertz.com/pdfs/04404_D.pdf",
+    "tags": [],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 4.88,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.685,
+            -2.435
+          ],
+          "end": [
+            5.565,
+            -2.435
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.565,
+            2.435
+          ],
+          "end": [
+            -0.685,
+            2.435
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -0.68,
+            -2.83
+          ],
+          "end": [
+            5.56,
+            -2.83
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            5.56,
+            2.83
+          ],
+          "end": [
+            -0.68,
+            2.83
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.685,
+            -2.325
+          ],
+          "end": [
+            5.565,
+            -2.325
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            5.565,
+            2.325
+          ],
+          "end": [
+            -0.685,
+            2.325
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.685,
+            2.435
+          ],
+          "mid": [
+            -3.12,
+            0
+          ],
+          "end": [
+            -0.685,
+            -2.435
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            5.565,
+            -2.435
+          ],
+          "mid": [
+            8,
+            0
+          ],
+          "end": [
+            5.565,
+            2.435
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -0.68,
+            2.83
+          ],
+          "mid": [
+            -3.51,
+            0
+          ],
+          "end": [
+            -0.68,
+            -2.83
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            5.56,
+            -2.83
+          ],
+          "mid": [
+            8.39,
+            0
+          ],
+          "end": [
+            5.56,
+            2.83
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.685,
+            2.325
+          ],
+          "mid": [
+            -3.01,
+            0
+          ],
+          "end": [
+            -0.685,
+            -2.325
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            5.565,
+            -2.325
+          ],
+          "mid": [
+            7.89,
+            0
+          ],
+          "end": [
+            5.565,
+            2.325
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2.44,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 2.44,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            2.44,
+            -3.52,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 2.44,
+            "y": -3.52
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2.44,
+            3.52,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Crystal_HC49-U_Vertical"
+          ]
+        },
+        "text": {
+          "content": "Crystal_HC49-U_Vertical",
+          "position": {
+            "x": 2.44,
+            "y": 3.52
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_HC49-U_Vertical.step",
+        "resolvedFileName": "Crystal_HC49-U_Vertical.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Crystal_HC49-U_Vertical\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"HC-49/U, Crystal, http://5hertz.com/pdfs/04404_D.pdf\")\n\t(tags \"\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 2.44 -3.52 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Crystal_HC49-U_Vertical\"\n\t\t(at 2.44 3.52 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"crystal_resonator_oscillator\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.685 -2.435)\n\t\t(end 5.565 -2.435)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 5.565 2.435)\n\t\t(end -0.685 2.435)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_arc\n\t\t(start -0.685 2.435)\n\t\t(mid -3.12 0)\n\t\t(end -0.685 -2.435)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_arc\n\t\t(start 5.565 -2.435)\n\t\t(mid 8 0)\n\t\t(end 5.565 2.435)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.68 -2.83)\n\t\t(end 5.56 -2.83)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 5.56 2.83)\n\t\t(end -0.68 2.83)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_arc\n\t\t(start -0.68 2.83)\n\t\t(mid -3.51 0)\n\t\t(end -0.68 -2.83)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_arc\n\t\t(start 5.56 -2.83)\n\t\t(mid 8.39 0)\n\t\t(end 5.56 2.83)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -0.685 -2.325)\n\t\t(end 5.565 -2.325)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 5.565 2.325)\n\t\t(end -0.685 2.325)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_arc\n\t\t(start -0.685 2.325)\n\t\t(mid -3.01 0)\n\t\t(end -0.685 -2.325)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_arc\n\t\t(start 5.565 -2.325)\n\t\t(mid 7.89 0)\n\t\t(end 5.565 2.325)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 2.44 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole circle\n\t\t(at 0 0)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 4.88 0)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_HC49-U_Vertical.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Crystal_HC49-U_Vertical.kicad_mod"
+}

@@ -1,0 +1,590 @@
+{
+  "id": "openpcb.core.footprint.crystal.crystal-smd-3225-4pin",
+  "uuid": "4378f248-20bf-58ae-b352-85d0940067d1",
+  "version": "0.2.0",
+  "name": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.crystal.crystal-smd-3225-4pin"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Crystal_SMD_3225-4Pin_3.2x2.5mm.kicad_mod",
+    "sourceLibrary": "Crystal",
+    "sourceItemName": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "sourceHash": "7648bca15399a8bd7856b5da6a1d2bc3a87049dc63958f8e8a3ab7409941a8e4",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_9f8086f4ec9daaab",
+    "fileName": "Crystal_SMD_3225-4Pin_3.2x2.5mm.kicad_mod",
+    "name": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "description": "SMD3225/4, Crystal, 3.2x2.5mm package, SMD, http://www.txccrystal.com/images/pdf/7m-accuracy.pdf",
+    "mountType": "smd",
+    "padCount": 4,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "smd"
+    ],
+    "sourceHash": "7648bca15399a8bd7856b5da6a1d2bc3a87049dc63958f8e8a3ab7409941a8e4",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.1,
+            "y": 0.85
+          },
+          "widthMm": 1.4,
+          "heightMm": 1.2,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.208333,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.1,
+            "y": 0.85
+          },
+          "widthMm": 1.4,
+          "heightMm": 1.2,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.208333,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.1,
+            "y": -0.85
+          },
+          "widthMm": 1.4,
+          "heightMm": 1.2,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.208333,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.1,
+            "y": -0.85
+          },
+          "widthMm": 1.4,
+          "heightMm": 1.2,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.208333,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.06,
+            "y": -1.71
+          },
+          "b": {
+            "x": -2.06,
+            "y": 1.71
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.06,
+            "y": 1.71
+          },
+          "b": {
+            "x": 2.06,
+            "y": 1.71
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.6,
+              "y": -1.25
+            },
+            {
+              "x": 1.6,
+              "y": 1.25
+            },
+            {
+              "x": -0.975,
+              "y": 1.25
+            },
+            {
+              "x": -1.6,
+              "y": 0.625
+            },
+            {
+              "x": -1.6,
+              "y": -1.25
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2.45:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.45
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:2.45:Crystal_SMD_3225-4Pin_3.2x2.5mm",
+          "text": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+          "at": {
+            "x": 0,
+            "y": 2.45
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -2.12,
+        "minY": -1.77,
+        "maxX": 2.12,
+        "maxY": 1.77
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+    "description": "SMD3225/4, Crystal, 3.2x2.5mm package, SMD, http://www.txccrystal.com/images/pdf/7m-accuracy.pdf",
+    "tags": [],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.1,
+          "y": 0.85
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.4,
+          "height": 1.2
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.208333
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.1,
+          "y": 0.85
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.4,
+          "height": 1.2
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.208333
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.1,
+          "y": -0.85
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.4,
+          "height": 1.2
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.208333
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.1,
+          "y": -0.85
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.4,
+          "height": 1.2
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.208333
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.06,
+            -1.71
+          ],
+          "end": [
+            -2.06,
+            1.71
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.06,
+            1.71
+          ],
+          "end": [
+            2.06,
+            1.71
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.1,
+            -1.75
+          ],
+          "end": [
+            2.1,
+            1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.Fab",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              1.6,
+              -1.25
+            ],
+            [
+              "xy",
+              1.6,
+              1.25
+            ],
+            [
+              "xy",
+              -0.975,
+              1.25
+            ],
+            [
+              "xy",
+              -1.6,
+              0.625
+            ],
+            [
+              "xy",
+              -1.6,
+              -1.25
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.8,
+                0.8
+              ],
+              [
+                "thickness",
+                0.12
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.8,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -2.45,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -2.45
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            2.45,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Crystal_SMD_3225-4Pin_3.2x2.5mm"
+          ]
+        },
+        "text": {
+          "content": "Crystal_SMD_3225-4Pin_3.2x2.5mm",
+          "position": {
+            "x": 0,
+            "y": 2.45
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+        "resolvedFileName": "Crystal_SMD_3225-4Pin_3.2x2.5mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Crystal_SMD_3225-4Pin_3.2x2.5mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"SMD3225/4, Crystal, 3.2x2.5mm package, SMD, http://www.txccrystal.com/images/pdf/7m-accuracy.pdf\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2.45 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Crystal_SMD_3225-4Pin_3.2x2.5mm\"\n\t\t(at 0 2.45 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"crystal_resonator_oscillator\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.06 -1.71)\n\t\t(end -2.06 1.71)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.06 1.71)\n\t\t(end 2.06 1.71)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -2.1 -1.75)\n\t\t(end 2.1 1.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy 1.6 -1.25)\n\t\t\t(xy 1.6 1.25)\n\t\t\t(xy -0.975 1.25)\n\t\t\t(xy -1.6 0.625)\n\t\t\t(xy -1.6 -1.25)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.8 0.8)\n\t\t\t\t(thickness 0.12)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -1.1 0.85)\n\t\t(size 1.4 1.2)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.208333)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 1.1 0.85)\n\t\t(size 1.4 1.2)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.208333)\n\t)\n\t(pad \"3\" smd roundrect\n\t\t(at 1.1 -0.85)\n\t\t(size 1.4 1.2)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.208333)\n\t)\n\t(pad \"4\" smd roundrect\n\t\t(at -1.1 -0.85)\n\t\t(size 1.4 1.2)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.208333)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Crystal_SMD_3225-4Pin_3.2x2.5mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Crystal_SMD_3225-4Pin_3.2x2.5mm.kicad_mod"
+}

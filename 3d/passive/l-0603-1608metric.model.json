@@ -1,7 +1,7 @@
 {
   "id": "openpcb.core.3d.passive.l-0603-1608metric",
   "uuid": "1b1a7eb2-6911-5676-aed3-a8ef89dda079",
-  "version": "1.0.0",
+  "version": "0.2.0",
   "name": "L_0603_1608Metric STEP model",
   "formats": {
     "step": {
@@ -21,7 +21,8 @@
     "sourceItemName": "L_0603_1608Metric.step",
     "sourceHash": "b0136ad7160588d2f5dac8c85da84a35646db656b5bc54bbb873b6b548eedbb3",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "offsetMm": {
@@ -34,19 +35,9 @@
     "y": 0,
     "z": 0
   },
-  "boundsMm": {
-    "x": 1.6,
-    "y": 0.8,
-    "z": 0.8
-  },
-  "boundsMinMm": {
-    "x": -0.8,
-    "y": -0.4,
-    "z": 0
-  },
-  "boundsMaxMm": {
-    "x": 0.8,
-    "y": 0.4,
-    "z": 0.8
+  "scaleMm": {
+    "x": 1,
+    "y": 1,
+    "z": 1
   }
 }

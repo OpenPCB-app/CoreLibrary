@@ -1,0 +1,412 @@
+{
+  "id": "openpcb.core.symbol.passive.c-polarized",
+  "uuid": "b434e6aa-eccc-5034-9c0f-45e74e9dc123",
+  "version": "0.2.0",
+  "name": "Electrolytic Capacitor (Radial)",
+  "referencePrefix": "C",
+  "description": "Polarized capacitor",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "C_Polarized.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "C_Polarized",
+    "sourceHash": "339a10407cc22a14c71a63fd85105b3a68f3e1a8df3d1af389f279d28b69c567",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-23T00:00:00.000Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "C",
+      "Value": "C_Polarized",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Polarized capacitor",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "C_Polarized.kicad_sym",
+        "sourceItemName": "C_Polarized",
+        "sha256": "e0371fff515df9a22bc5e6d82a2164943da1d389e2ccf0d220ff03d7d77cc87a"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_5cb4ab4b988ce4fb",
+    "name": "C_Polarized",
+    "referencePrefix": "C",
+    "description": "Polarized capacitor",
+    "sourceHash": "339a10407cc22a14c71a63fd85105b3a68f3e1a8df3d1af389f279d28b69c567",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": 3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": -3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "C_Polarized",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -2.286,
+          "y": 0.508,
+          "width": 4.572,
+          "height": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.778,
+              "y": 2.286
+            },
+            {
+              "x": -0.762,
+              "y": 2.286
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": 2.794
+            },
+            {
+              "x": -1.27,
+              "y": 1.778
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -2.286,
+          "y": -1.016,
+          "width": 4.572,
+          "height": 0.508,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 3.81
+          },
+          "bodyEnd": {
+            "x": -5.132494735226557e-16,
+            "y": 1.016
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -3.81
+          },
+          "bodyEnd": {
+            "x": 1.7108315784088525e-16,
+            "y": -1.016
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "C",
+          "at": {
+            "x": 0,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "C_Polarized",
+          "at": {
+            "x": 0,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.3307,
+        "minY": -6.35,
+        "maxX": 4.3307,
+        "maxY": 6.35
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "C_Polarized",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 3.81
+        },
+        "length": 2.794,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -3.81
+        },
+        "length": 2.794,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "C",
+      "Value": "C_Polarized",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Polarized capacitor",
+      "ki_keywords": "cap capacitor",
+      "ki_fp_filters": "CP_*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -2.286,
+            0.508
+          ],
+          [
+            "end",
+            2.286,
+            1.016
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.778,
+              2.286
+            ],
+            [
+              "xy",
+              -0.762,
+              2.286
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              2.794
+            ],
+            [
+              "xy",
+              -1.27,
+              1.778
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            2.286,
+            -0.508
+          ],
+          [
+            "end",
+            -2.286,
+            -1.016
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol C_Polarized (pin_numbers (hide yes)) (pin_names (offset 0.254)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference C (at 0.635 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value C_Polarized (at 0.635 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint \"\" (at 0.9652 -3.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Polarized capacitor\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"cap capacitor\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters CP_* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol C_Polarized_0_1 (rectangle (start -2.286 0.508) (end 2.286 1.016) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.778 2.286) (xy -0.762 2.286)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.27 2.794) (xy -1.27 1.778)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 2.286 -0.508) (end -2.286 -1.016) (stroke (width 0) (type default)) (fill (type outline)))) (symbol C_Polarized_1_1 (pin passive line (at 0 3.81 270) (length 2.794) (name \"\" (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 2.794) (name \"\" (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.254,
+    "hidePinNames": false,
+    "hidePinNumbers": true
+  }
+}
