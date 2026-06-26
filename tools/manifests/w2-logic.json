@@ -1,0 +1,408 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.ic.pcf8574",
+      "name": "PCF8574 I2C I/O Expander",
+      "description": "PCF8574 remote 8-bit I/O expander for I2C bus.",
+      "category": "ic",
+      "subcategory": "logic-io-expander",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "PCF8574",
+        "I2C",
+        "IO expander",
+        "GPIO"
+      ],
+      "parameters": {
+        "channels": "8",
+        "interface": "i2c",
+        "supply": "2.5-6V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.pcf8574",
+        "path": "kicad-symbols/Interface_Expansion.kicad_symdir/PCF8574AT.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-16",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-16-3-9x9-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.uln2003a",
+      "name": "ULN2003A Darlington Array",
+      "description": "ULN2003A 7-channel Darlington transistor array, 500mA/50V outputs with flyback diodes.",
+      "category": "ic",
+      "subcategory": "driver-darlington",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ULN2003",
+        "Darlington",
+        "driver",
+        "relay",
+        "stepper",
+        "motor"
+      ],
+      "parameters": {
+        "channels": "7",
+        "iout": "500mA",
+        "vmax": "50V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.uln2003a",
+        "path": "kicad-symbols/Transistor_Array.kicad_symdir/ULN2003A.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-16",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-16-3-9x9-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.74hc74",
+      "name": "74HC74 Dual D Flip-Flop",
+      "description": "74HC74 dual D-type flip-flop with set/reset.",
+      "category": "ic",
+      "subcategory": "logic-flipflop",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "74HC74",
+        "flip-flop",
+        "D-type",
+        "register"
+      ],
+      "parameters": {
+        "supply": "2-6V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.74hc74",
+        "path": "kicad-symbols/74xx.kicad_symdir/74HC74.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.74hc86",
+      "name": "74HC86 Quad XOR Gate",
+      "description": "74HC86 quad 2-input exclusive-OR gate.",
+      "category": "ic",
+      "subcategory": "logic-gate",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "74HC86",
+        "XOR",
+        "gate",
+        "logic"
+      ],
+      "parameters": {
+        "gates": "4",
+        "supply": "2-6V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.74hc86",
+        "path": "kicad-symbols/74xx.kicad_symdir/74HC86.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

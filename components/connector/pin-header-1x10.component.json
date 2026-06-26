@@ -1,0 +1,95 @@
+{
+  "id": "openpcb.core.connector.pin-header-1x10",
+  "uuid": "bdaf44fb-0849-5e35-9131-0245a0c8497d",
+  "version": "0.3.0",
+  "name": "Pin Header 1x10 2.54mm",
+  "description": "Single-row 2.54mm pin header, 10 positions, vertical.",
+  "category": "connector",
+  "subcategory": "header",
+  "tags": [
+    "connector",
+    "header",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "Pin Header 1x10 2.54mm",
+    "connector",
+    "header"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "pitch": "2.54mm",
+    "positions": "10",
+    "mount": "tht"
+  },
+  "symbol": "openpcb.core.symbol.connector.pin-header-1x10",
+  "defaultFootprint": "openpcb.core.footprint.connector.pin-header-1x10-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.pin-header-1x10-vertical",
+      "label": "Pin Header 1x10 2.54mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x10.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "Pin Header 1x10 2.54mm",
+    "sourceHash": "37aecc1a6b400dc4fe7ce2c878aaec6cac5bffb7a65ffb9715478d8eb9f94ffe",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:20:26.445Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

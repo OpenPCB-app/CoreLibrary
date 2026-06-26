@@ -1,0 +1,457 @@
+{
+  "id": "openpcb.core.symbol.diode.1n5819",
+  "uuid": "d53bb7c6-5768-5843-b1f4-5ced6b21a6c2",
+  "version": "0.3.0",
+  "name": "1N5819 Schottky Diode",
+  "referencePrefix": "D",
+  "description": "40V 1A Schottky Barrier Rectifier Diode, DO-41",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "1N5819.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "1N5819",
+    "sourceHash": "1c18e48017d8da36709076e299fd4e7858aefcf24f5490d237758c25c72ee97d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from SB120"
+      }
+    ],
+    "properties": {
+      "Reference": "D",
+      "Value": "1N5819",
+      "Footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "Datasheet": "http://www.vishay.com/docs/88525/1n5817.pdf",
+      "Description": "40V 1A Schottky Barrier Rectifier Diode, DO-41",
+      "ki_keywords": "diode Schottky",
+      "ki_fp_filters": "D*DO?41*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "1N5819.kicad_sym",
+        "sourceItemName": "1N5819",
+        "sha256": "ebf3b45a7ad75ec470034fc6a0137f687c3977489cbb26090e0676301a59504b"
+      },
+      {
+        "fileName": "SB120.kicad_sym",
+        "sourceItemName": "SB120",
+        "sha256": "c90276110eb99eff8d64cbc6a4892872f67447a32c35537222a87f0ff062d1a3"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_37187e84920369e4",
+    "name": "1N5819",
+    "referencePrefix": "D",
+    "description": "40V 1A Schottky Barrier Rectifier Diode, DO-41",
+    "sourceHash": "1c18e48017d8da36709076e299fd4e7858aefcf24f5490d237758c25c72ee97d",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "K",
+        "localPosition": {
+          "x": -3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "A",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from SB120"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "1N5819",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.905,
+              "y": 0.635
+            },
+            {
+              "x": -1.905,
+              "y": 1.27
+            },
+            {
+              "x": -1.27,
+              "y": 1.27
+            },
+            {
+              "x": -1.27,
+              "y": -1.27
+            },
+            {
+              "x": -0.635,
+              "y": -1.27
+            },
+            {
+              "x": -0.635,
+              "y": -0.635
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 1.27
+            },
+            {
+              "x": 1.27,
+              "y": -1.27
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": 1.27
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 0
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 1.27,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "D",
+          "at": {
+            "x": 0,
+            "y": 2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "1N5819",
+          "at": {
+            "x": 0,
+            "y": -2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.81,
+        "minY": -3.937,
+        "maxX": 3.81,
+        "maxY": 3.937
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from SB120"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "1N5819",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "K",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "A",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "D",
+      "Value": "1N5819",
+      "Footprint": "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal",
+      "Datasheet": "http://www.vishay.com/docs/88525/1n5817.pdf",
+      "Description": "40V 1A Schottky Barrier Rectifier Diode, DO-41",
+      "ki_keywords": "diode Schottky",
+      "ki_fp_filters": "D*DO?41*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.905,
+              0.635
+            ],
+            [
+              "xy",
+              -1.905,
+              1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              -0.635,
+              -1.27
+            ],
+            [
+              "xy",
+              -0.635,
+              -0.635
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              1.27
+            ],
+            [
+              "xy",
+              1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              0
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from SB120"
+      }
+    ],
+    "rawSource": "(symbol 1N5819 (extends SB120) (property Reference D (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value 1N5819 (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal (at 0 -4.445 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.vishay.com/docs/88525/1n5817.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"40V 1A Schottky Barrier Rectifier Diode, DO-41\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"diode Schottky\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters D*DO?41* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

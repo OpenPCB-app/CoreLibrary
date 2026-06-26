@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.bc817",
+  "uuid": "03210fe6-97f9-53ec-9867-de43c096e255",
+  "version": "0.3.0",
+  "name": "BC817 NPN Transistor",
+  "description": "BC817 NPN BJT, 45V 0.5A, SOT-23.",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BC817",
+    "NPN",
+    "BJT",
+    "transistor"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pub/Collateral/BC818-D.pdf",
+  "parameters": {
+    "type": "npn",
+    "vce": "45V",
+    "ic": "500mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.bc817",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BC817.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "BC817 NPN Transistor",
+    "sourceHash": "772c136e76307d4d487276c397f8247bcf63b05339c340bfde5d9f3165af6c77",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

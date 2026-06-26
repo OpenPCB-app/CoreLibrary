@@ -1,0 +1,63 @@
+{
+  "id": "openpcb.core.connector.jst-xh-1x02",
+  "uuid": "62d8d018-b22c-5c41-8298-bc8810a77882",
+  "version": "0.3.0",
+  "name": "JST-XH 2-pin",
+  "description": "JST XH-series 2.5mm through-hole connector, 2 positions, vertical.",
+  "category": "connector",
+  "subcategory": "header",
+  "tags": [
+    "connector",
+    "header",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "JST-XH 2-pin",
+    "connector",
+    "header"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "pitch": "2.50mm",
+    "positions": "2",
+    "mount": "tht"
+  },
+  "symbol": "openpcb.core.symbol.connector.jst-xh-1x02",
+  "defaultFootprint": "openpcb.core.footprint.connector.jst-xh-1x02-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.jst-xh-1x02-vertical",
+      "label": "JST-XH 2-pin",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x02.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "JST-XH 2-pin",
+    "sourceHash": "0b0b163b30309fffcc1fd313d6d9f14066e2d0e76e81fc6a3a089f621ec00adb",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:20:26.445Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

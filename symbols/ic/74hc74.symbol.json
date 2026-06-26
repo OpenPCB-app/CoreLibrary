@@ -1,0 +1,937 @@
+{
+  "id": "openpcb.core.symbol.ic.74hc74",
+  "uuid": "57fb5de9-3406-54da-b5ff-a10ee3c7ef34",
+  "version": "0.3.0",
+  "name": "74HC74 Dual D Flip-Flop",
+  "referencePrefix": "U",
+  "description": "Dual D Flip-flop, Set & Reset",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "74HC74.kicad_sym",
+    "sourceLibrary": "74xx",
+    "sourceItemName": "74HC74",
+    "sourceHash": "3b88b98d16a1f83094401e931f7e78ecd046e62fa02157d201e1f7ff7e475d42",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:18:21.375Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 74LS74"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "74HC74",
+      "Footprint": "",
+      "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf",
+      "Description": "Dual D Flip-flop, Set & Reset",
+      "ki_locked": "",
+      "ki_keywords": "TTL DFF",
+      "ki_fp_filters": "DIP*W7.62mm*"
+    },
+    "units": 3,
+    "sourceFiles": [
+      {
+        "fileName": "74HC74.kicad_sym",
+        "sourceItemName": "74HC74",
+        "sha256": "384190c63d0d7b37d0afc2896bdacfdb1e689560260ed3e4fec806f0e7047068"
+      },
+      {
+        "fileName": "74LS74.kicad_sym",
+        "sourceItemName": "74LS74",
+        "sha256": "3e62fbf56b728d9a298d098064a86a3a4efc96fa29733eb2752b0b6b75b0390d"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_2e2e7457676f7d00",
+    "name": "74HC74",
+    "referencePrefix": "U",
+    "description": "Dual D Flip-flop, Set & Reset",
+    "sourceHash": "3b88b98d16a1f83094401e931f7e78ecd046e62fa02157d201e1f7ff7e475d42",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "~{R}",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "D",
+        "localPosition": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "C",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "~{S}",
+        "localPosition": {
+          "x": 0,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "Q",
+        "localPosition": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "~{Q}",
+        "localPosition": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u2:8",
+        "number": "8",
+        "name": "~{Q}",
+        "localPosition": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:9",
+        "number": "9",
+        "name": "Q",
+        "localPosition": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "electricalType": "output",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:10",
+        "number": "10",
+        "name": "~{S}",
+        "localPosition": {
+          "x": 0,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:11",
+        "number": "11",
+        "name": "C",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:12",
+        "number": "12",
+        "name": "D",
+        "localPosition": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:13",
+        "number": "13",
+        "name": "~{R}",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u3:7",
+        "number": "7",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -10.16
+        },
+        "electricalType": "power_in",
+        "unit": 3
+      },
+      {
+        "originPinKey": "u3:14",
+        "number": "14",
+        "name": "VCC",
+        "localPosition": {
+          "x": 0,
+          "y": 10.16
+        },
+        "electricalType": "power_in",
+        "unit": 3
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 74LS74"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "74HC74",
+      "unitCount": 3,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -5.08,
+          "y": -5.08,
+          "width": 10.16,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "~{R}",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:2",
+          "name": "D",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "C",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "~{S}",
+          "number": "4",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.08
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:5",
+          "name": "Q",
+          "number": "5",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "~{Q}",
+          "number": "6",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "~{R}",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "D",
+          "at": {
+            "x": -4.572,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -6.35,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "C",
+          "at": {
+            "x": -4.572,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -6.35,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "~{S}",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": 7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "Q",
+          "at": {
+            "x": 4.572,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 6.35,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "~{Q}",
+          "at": {
+            "x": 4.572,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 6.35,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 10.0076
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "74HC74",
+          "at": {
+            "x": 0,
+            "y": -10.0076
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.62,
+        "minY": -11.2776,
+        "maxX": 7.62,
+        "maxY": 11.2776
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from 74LS74"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "74HC74",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "~{R}",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "clock",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{S}",
+        "number": "4",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q",
+        "number": "5",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{Q}",
+        "number": "6",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{Q}",
+        "number": "8",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q",
+        "number": "9",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{S}",
+        "number": "10",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C",
+        "number": "11",
+        "electricalType": "input",
+        "direction": "clock",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D",
+        "number": "12",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{R}",
+        "number": "13",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 2,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "7",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 3,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "14",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 3,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 3,
+    "properties": {
+      "Reference": "U",
+      "Value": "74HC74",
+      "Footprint": "",
+      "Datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf",
+      "Description": "Dual D Flip-flop, Set & Reset",
+      "ki_locked": "",
+      "ki_keywords": "TTL DFF",
+      "ki_fp_filters": "DIP*W7.62mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            5.08
+          ],
+          [
+            "end",
+            5.08,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 2,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            5.08
+          ],
+          [
+            "end",
+            5.08,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 3,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            7.62
+          ],
+          [
+            "end",
+            5.08,
+            -7.62
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from 74LS74"
+      }
+    ],
+    "rawSource": "(symbol 74HC74 (extends 74LS74) (property Reference U (at -7.62 8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value 74HC74 (at -7.62 -8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Dual D Flip-flop, Set & Reset\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"TTL DFF\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters DIP*W7.62mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

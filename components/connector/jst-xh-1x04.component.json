@@ -1,0 +1,71 @@
+{
+  "id": "openpcb.core.connector.jst-xh-1x04",
+  "uuid": "bf0a0bbc-0990-577b-9dae-9ec7b9ec7554",
+  "version": "0.3.0",
+  "name": "JST-XH 4-pin",
+  "description": "JST XH-series 2.5mm through-hole connector, 4 positions, vertical.",
+  "category": "connector",
+  "subcategory": "header",
+  "tags": [
+    "connector",
+    "header",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "JST-XH 4-pin",
+    "connector",
+    "header"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "pitch": "2.50mm",
+    "positions": "4",
+    "mount": "tht"
+  },
+  "symbol": "openpcb.core.symbol.connector.jst-xh-1x04",
+  "defaultFootprint": "openpcb.core.footprint.connector.jst-xh-1x04-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.jst-xh-1x04-vertical",
+      "label": "JST-XH 4-pin",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x04.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "JST-XH 4-pin",
+    "sourceHash": "4744fd3074ff5022ecd522d28ec35fa1db66b1bc175dbbfcd2596e8411ab5245",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:20:26.445Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

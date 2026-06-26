@@ -1,0 +1,95 @@
+{
+  "id": "openpcb.core.connector.idc-2x05",
+  "uuid": "b8957a57-05a6-5e47-8b53-48d5b794865f",
+  "version": "0.3.0",
+  "name": "IDC Header 2x05 (SWD/JTAG)",
+  "description": "2x5 2.54mm IDC box header, commonly used for SWD/JTAG.",
+  "category": "connector",
+  "subcategory": "header",
+  "tags": [
+    "connector",
+    "header",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "IDC Header 2x05 (SWD/JTAG)",
+    "connector",
+    "header"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "pitch": "2.54mm",
+    "positions": "2x5",
+    "mount": "tht"
+  },
+  "symbol": "openpcb.core.symbol.connector.idc-2x05",
+  "defaultFootprint": "openpcb.core.footprint.connector.idc-2x05-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.idc-2x05-vertical",
+      "label": "IDC Header 2x05 (SWD/JTAG)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_02x05_Odd_Even.kicad_sym",
+    "sourceLibrary": "Connector_Generic",
+    "sourceItemName": "IDC Header 2x05 (SWD/JTAG)",
+    "sourceHash": "b3e7cc7a17b3b870e6546179cf5ab6aebb629076f7a07f1a52cfdb9e213696e4",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:20:26.445Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

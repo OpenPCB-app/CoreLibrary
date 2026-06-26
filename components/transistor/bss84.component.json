@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.bss84",
+  "uuid": "414424da-1d84-5208-9a17-3a97ce715562",
+  "version": "0.3.0",
+  "name": "BSS84 P-Channel MOSFET",
+  "description": "BSS84 P-channel MOSFET, -50V -0.13A, SOT-23.",
+  "category": "transistor",
+  "subcategory": "mosfet-pch",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BSS84",
+    "P-channel",
+    "MOSFET",
+    "PMOS"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf",
+  "parameters": {
+    "channel": "p",
+    "vds": "-50V",
+    "id": "-130mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.bss84",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BSS84.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "BSS84 P-Channel MOSFET",
+    "sourceHash": "fce70fe2c34d41644d80185fb71ac02bb4fb2d84c1c30b62520a9af3c4b2eaca",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

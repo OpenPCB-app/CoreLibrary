@@ -1,0 +1,662 @@
+{
+  "id": "openpcb.core.symbol.transistor.bc847",
+  "uuid": "86a72a4c-4adc-5678-a15c-8103250f103d",
+  "version": "0.3.0",
+  "name": "BC847 NPN Transistor",
+  "referencePrefix": "Q",
+  "description": "0.1A Ic, 45V Vce, NPN Transistor, SOT-23",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "BC847.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "BC847",
+    "sourceHash": "3ef37886693dfc446f111d872931d08cfb42cfc3968a86006f0691180f6edb65",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from Q_NPN_BEC"
+      }
+    ],
+    "properties": {
+      "Reference": "Q",
+      "Value": "BC847",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657",
+      "Description": "0.1A Ic, 45V Vce, NPN Transistor, SOT-23",
+      "Sim.Device": "NPN",
+      "Sim.Pins": "1=B 2=E 3=C",
+      "ki_keywords": "NPN Small Signal Transistor",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "BC847.kicad_sym",
+        "sourceItemName": "BC847",
+        "sha256": "b3a4ac28f30cdb75e69869e365d6d05f05d56bbb6a9441f42cc1824f6dd26371"
+      },
+      {
+        "fileName": "Q_NPN_BEC.kicad_sym",
+        "sourceItemName": "Q_NPN_BEC",
+        "sha256": "759b9e634d5feee670543ba94ab905638c0b6ab68e1e7bcb88b1bf06d8274516"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_3b486584c92e922d",
+    "name": "BC847",
+    "referencePrefix": "Q",
+    "description": "0.1A Ic, 45V Vce, NPN Transistor, SOT-23",
+    "sourceHash": "3ef37886693dfc446f111d872931d08cfb42cfc3968a86006f0691180f6edb65",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "B",
+        "localPosition": {
+          "x": -5.08,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "E",
+        "localPosition": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "C",
+        "localPosition": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from Q_NPN_BEC"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "BC847",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 0
+            },
+            {
+              "x": 0.635,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.635,
+              "y": 1.905
+            },
+            {
+              "x": 0.635,
+              "y": -1.905
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 1.27,
+            "y": 0
+          },
+          "radiusMm": 2.8194,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.635,
+              "y": 0.635
+            },
+            {
+              "x": 2.54,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.635,
+              "y": -0.635
+            },
+            {
+              "x": 2.54,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": -1.778
+            },
+            {
+              "x": 1.778,
+              "y": -1.27
+            },
+            {
+              "x": 2.286,
+              "y": -2.286
+            },
+            {
+              "x": 1.27,
+              "y": -1.778
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 2.5399999999999996,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -3.81,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 3.048,
+            "y": -4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 3.048,
+            "y": 4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "Q",
+          "at": {
+            "x": -0.43180000000000085,
+            "y": 6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "BC847",
+          "at": {
+            "x": -0.43180000000000085,
+            "y": -6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.08,
+        "minY": -7.810499999999999,
+        "maxX": 4.216399999999998,
+        "maxY": 7.810499999999999
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from Q_NPN_BEC"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "BC847",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "B",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "E",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "Q",
+      "Value": "BC847",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657",
+      "Description": "0.1A Ic, 45V Vce, NPN Transistor, SOT-23",
+      "Sim.Device": "NPN",
+      "Sim.Pins": "1=B 2=E 3=C",
+      "ki_keywords": "NPN Small Signal Transistor",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              0
+            ],
+            [
+              "xy",
+              0.635,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.635,
+              1.905
+            ],
+            [
+              "xy",
+              0.635,
+              -1.905
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            1.27,
+            0
+          ],
+          [
+            "radius",
+            2.8194
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.635,
+              0.635
+            ],
+            [
+              "xy",
+              2.54,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.635,
+              -0.635
+            ],
+            [
+              "xy",
+              2.54,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              -1.778
+            ],
+            [
+              "xy",
+              1.778,
+              -1.27
+            ],
+            [
+              "xy",
+              2.286,
+              -2.286
+            ],
+            [
+              "xy",
+              1.27,
+              -1.778
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from Q_NPN_BEC"
+      }
+    ],
+    "rawSource": "(symbol BC847 (extends Q_NPN_BEC) (property Reference Q (at 5.08 1.905 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value BC847 (at 5.08 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_TO_SOT_SMD:SOT-23 (at 5.08 -1.905 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)) (justify left))) (property Datasheet http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657 (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Description \"0.1A Ic, 45V Vce, NPN Transistor, SOT-23\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"NPN Small Signal Transistor\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOT?23* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.bc847",
+  "uuid": "c3a1f311-e9a7-5674-a831-add47b92e5a1",
+  "version": "0.3.0",
+  "name": "BC847 NPN Transistor",
+  "description": "BC847 NPN BJT, 45V 0.1A, SOT-23.",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BC847",
+    "NPN",
+    "BJT",
+    "transistor"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.infineon.com/dgdl/Infineon-BC847SERIES_BC848SERIES_BC849SERIES_BC850SERIES-DS-v01_01-en.pdf?fileId=db3a304314dca389011541d4630a1657",
+  "parameters": {
+    "type": "npn",
+    "vce": "45V",
+    "ic": "100mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.bc847",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BC847.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "BC847 NPN Transistor",
+    "sourceHash": "7f12b8af0691fdb4ef9a3f89bb494691a972f6cc41d9f173288897c11f6a8620",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

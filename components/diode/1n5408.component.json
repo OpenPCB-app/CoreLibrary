@@ -1,0 +1,64 @@
+{
+  "id": "openpcb.core.diode.1n5408",
+  "uuid": "df2b4da2-2afc-5d1c-a50d-d0d4fab7ebad",
+  "version": "0.3.0",
+  "name": "1N5408 Rectifier Diode",
+  "description": "1N5408 1000V 3A general-purpose rectifier, DO-201AD.",
+  "category": "diode",
+  "subcategory": "rectifier",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "1N5408",
+    "rectifier",
+    "1000V",
+    "3A"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.vishay.com/docs/88516/1n5400.pdf",
+  "parameters": {
+    "reverse_voltage": "1000V",
+    "forward_current": "3A",
+    "type": "rectifier"
+  },
+  "symbol": "openpcb.core.symbol.diode.1n5408",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-do-201ad",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-do-201ad",
+      "label": "DO-201AD (THT)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "1N5408.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "1N5408 Rectifier Diode",
+    "sourceHash": "ca237f1dad7ed7bc674b85fa27dca338474ea0b19ee7de131304cf29027273c8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

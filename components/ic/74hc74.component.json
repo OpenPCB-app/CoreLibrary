@@ -1,0 +1,110 @@
+{
+  "id": "openpcb.core.ic.74hc74",
+  "uuid": "a7fe1b6c-961b-5e57-8425-9df41180dc44",
+  "version": "0.3.0",
+  "name": "74HC74 Dual D Flip-Flop",
+  "description": "74HC74 dual D-type flip-flop with set/reset.",
+  "category": "ic",
+  "subcategory": "logic-flipflop",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "74HC74",
+    "flip-flop",
+    "D-type",
+    "register"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT74.pdf",
+  "parameters": {
+    "supply": "2-6V"
+  },
+  "symbol": "openpcb.core.symbol.ic.74hc74",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "label": "SOIC-14",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "74HC74.kicad_sym",
+    "sourceLibrary": "74xx",
+    "sourceItemName": "74HC74 Dual D Flip-Flop",
+    "sourceHash": "62dd65c960531a55fed190b8887362c43e8a9ab465740c24a2bf835818ee6c08",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:18:21.375Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

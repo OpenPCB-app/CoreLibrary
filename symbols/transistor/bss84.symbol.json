@@ -1,0 +1,1133 @@
+{
+  "id": "openpcb.core.symbol.transistor.bss84",
+  "uuid": "2e8ab93f-b7fd-5704-b563-7f2e97d78df0",
+  "version": "0.3.0",
+  "name": "BSS84 P-Channel MOSFET",
+  "referencePrefix": "Q",
+  "description": "-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "BSS84.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "BSS84",
+    "sourceHash": "2e9da4d01b7557b04e5fa40f68989d08bf062e7b7be73e706dd60f5d21eeb636",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from TP0610T"
+      }
+    ],
+    "properties": {
+      "Reference": "Q",
+      "Value": "BSS84",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf",
+      "Description": "-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23",
+      "ki_keywords": "P-Channel MOSFET",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "BSS84.kicad_sym",
+        "sourceItemName": "BSS84",
+        "sha256": "5d8eefa2e90cec47140054e3806567f5648dc5c341a74c1253cbc12189f3c326"
+      },
+      {
+        "fileName": "TP0610T.kicad_sym",
+        "sourceItemName": "TP0610T",
+        "sha256": "fefd6d6119f6401e36903d15db2828afd61514052ab749748c8118095199a04e"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_a73bc5cc10e6c6fc",
+    "name": "BSS84",
+    "referencePrefix": "Q",
+    "description": "-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23",
+    "sourceHash": "2e9da4d01b7557b04e5fa40f68989d08bf062e7b7be73e706dd60f5d21eeb636",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "G",
+        "localPosition": {
+          "x": -5.08,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "S",
+        "localPosition": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "D",
+        "localPosition": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from TP0610T"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "BSS84",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.254,
+              "y": 1.905
+            },
+            {
+              "x": 0.254,
+              "y": -1.905
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.254,
+              "y": 0
+            },
+            {
+              "x": -2.54,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.762,
+              "y": 2.286
+            },
+            {
+              "x": 0.762,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.762,
+              "y": 1.778
+            },
+            {
+              "x": 3.302,
+              "y": 1.778
+            },
+            {
+              "x": 3.302,
+              "y": -1.778
+            },
+            {
+              "x": 0.762,
+              "y": -1.778
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.762,
+              "y": 0.508
+            },
+            {
+              "x": 0.762,
+              "y": -0.508
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.762,
+              "y": -1.27
+            },
+            {
+              "x": 0.762,
+              "y": -2.286
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 1.651,
+            "y": 0
+          },
+          "radiusMm": 2.794,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.286,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": 0.381
+            },
+            {
+              "x": 1.27,
+              "y": -0.381
+            },
+            {
+              "x": 2.286,
+              "y": 0
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": 2.54
+            },
+            {
+              "x": 2.54,
+              "y": 1.778
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": 1.778
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": -1.778
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": -2.54
+            },
+            {
+              "x": 2.54,
+              "y": 0
+            },
+            {
+              "x": 0.762,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.794,
+              "y": -0.508
+            },
+            {
+              "x": 2.921,
+              "y": -0.381
+            },
+            {
+              "x": 3.683,
+              "y": -0.381
+            },
+            {
+              "x": 3.81,
+              "y": -0.254
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.302,
+              "y": -0.381
+            },
+            {
+              "x": 2.921,
+              "y": 0.254
+            },
+            {
+              "x": 3.683,
+              "y": 0.254
+            },
+            {
+              "x": 3.302,
+              "y": -0.381
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 2.5399999999999996,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -3.81,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 3.048,
+            "y": -4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 3.048,
+            "y": 4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "Q",
+          "at": {
+            "x": -0.25399999999999956,
+            "y": 6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "BSS84",
+          "at": {
+            "x": -0.25399999999999956,
+            "y": -6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.08,
+        "minY": -7.810499999999999,
+        "maxX": 4.572000000000001,
+        "maxY": 7.810499999999999
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from TP0610T"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "BSS84",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "G",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "S",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "Q",
+      "Value": "BSS84",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23",
+      "Datasheet": "http://assets.nexperia.com/documents/data-sheet/BSS84.pdf",
+      "Description": "-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23",
+      "ki_keywords": "P-Channel MOSFET",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.254,
+              1.905
+            ],
+            [
+              "xy",
+              0.254,
+              -1.905
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.254,
+              0
+            ],
+            [
+              "xy",
+              -2.54,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.762,
+              2.286
+            ],
+            [
+              "xy",
+              0.762,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.762,
+              1.778
+            ],
+            [
+              "xy",
+              3.302,
+              1.778
+            ],
+            [
+              "xy",
+              3.302,
+              -1.778
+            ],
+            [
+              "xy",
+              0.762,
+              -1.778
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.762,
+              0.508
+            ],
+            [
+              "xy",
+              0.762,
+              -0.508
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.762,
+              -1.27
+            ],
+            [
+              "xy",
+              0.762,
+              -2.286
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            1.651,
+            0
+          ],
+          [
+            "radius",
+            2.794
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.286,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              0.381
+            ],
+            [
+              "xy",
+              1.27,
+              -0.381
+            ],
+            [
+              "xy",
+              2.286,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              2.54
+            ],
+            [
+              "xy",
+              2.54,
+              1.778
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            1.778
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            -1.778
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              -2.54
+            ],
+            [
+              "xy",
+              2.54,
+              0
+            ],
+            [
+              "xy",
+              0.762,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.794,
+              -0.508
+            ],
+            [
+              "xy",
+              2.921,
+              -0.381
+            ],
+            [
+              "xy",
+              3.683,
+              -0.381
+            ],
+            [
+              "xy",
+              3.81,
+              -0.254
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.302,
+              -0.381
+            ],
+            [
+              "xy",
+              2.921,
+              0.254
+            ],
+            [
+              "xy",
+              3.683,
+              0.254
+            ],
+            [
+              "xy",
+              3.302,
+              -0.381
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from TP0610T"
+      }
+    ],
+    "rawSource": "(symbol BSS84 (extends TP0610T) (property Reference Q (at 5.08 1.905 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value BSS84 (at 5.08 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_TO_SOT_SMD:SOT-23 (at 5.08 -1.905 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)) (justify left))) (property Datasheet http://assets.nexperia.com/documents/data-sheet/BSS84.pdf (at 5.08 -3.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Description \"-0.13A Id, -50V Vds, P-Channel MOSFET, SOT-23\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"P-Channel MOSFET\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOT?23* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

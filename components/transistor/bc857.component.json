@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.bc857",
+  "uuid": "bc284232-1c18-5baa-85d8-f9cdccdebd46",
+  "version": "0.3.0",
+  "name": "BC857 PNP Transistor",
+  "description": "BC857 PNP BJT, 45V 0.1A, SOT-23.",
+  "category": "transistor",
+  "subcategory": "bjt-pnp",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BC857",
+    "PNP",
+    "BJT",
+    "transistor"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pub/Collateral/BC860-D.pdf",
+  "parameters": {
+    "type": "pnp",
+    "vce": "45V",
+    "ic": "100mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.bc857",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BC857.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "BC857 PNP Transistor",
+    "sourceHash": "71579ca83124722b8e0b4b67be853b5b0d449cc049798e13a34fe15e7da47a1b",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

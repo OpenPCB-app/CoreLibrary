@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.mmbt2222a",
+  "uuid": "071793f0-affd-5db5-b46d-37f19fa06b3b",
+  "version": "0.3.0",
+  "name": "MMBT2222A NPN Transistor",
+  "description": "MMBT2222A NPN switching BJT, 40V 0.6A, SOT-23.",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MMBT2222",
+    "2N2222",
+    "NPN",
+    "switching"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/MMBT2222A.pdf",
+  "parameters": {
+    "type": "npn",
+    "vce": "40V",
+    "ic": "600mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.mmbt2222a",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MMBT2222A.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "MMBT2222A NPN Transistor",
+    "sourceHash": "af562bb58bba7764cd6ac3f29910ca6339601e2649ee1f553841067202f6aa76",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:23:47.899Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

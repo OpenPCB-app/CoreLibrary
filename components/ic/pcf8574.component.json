@@ -1,0 +1,120 @@
+{
+  "id": "openpcb.core.ic.pcf8574",
+  "uuid": "16bcdec2-15c0-588d-b9cc-20763d9a306c",
+  "version": "0.3.0",
+  "name": "PCF8574 I2C I/O Expander",
+  "description": "PCF8574 remote 8-bit I/O expander for I2C bus.",
+  "category": "ic",
+  "subcategory": "logic-io-expander",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "PCF8574",
+    "I2C",
+    "IO expander",
+    "GPIO"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.nxp.com/docs/en/data-sheet/PCF8574_PCF8574A.pdf",
+  "parameters": {
+    "channels": "8",
+    "interface": "i2c",
+    "supply": "2.5-6V"
+  },
+  "symbol": "openpcb.core.symbol.ic.pcf8574",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "label": "SOIC-16",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "PCF8574AT.kicad_sym",
+    "sourceLibrary": "Interface_Expansion",
+    "sourceItemName": "PCF8574 I2C I/O Expander",
+    "sourceHash": "01e4c24ec4c1ca6c5267852d642d00e71491eb55be2192a8a99293307d81253a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:18:21.375Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
