@@ -1,0 +1,1098 @@
+{
+  "id": "openpcb.core.footprint.opto.led-ws2812b-plcc4-5050",
+  "uuid": "8325e3e5-38fc-5d5d-a89d-e11c1c62d157",
+  "version": "0.3.0",
+  "name": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.opto.led-ws2812b-plcc4-5050"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.kicad_mod",
+    "sourceLibrary": "LED_SMD",
+    "sourceItemName": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+    "sourceHash": "157bb05e692b8bf0fa4da063b97264ec9faca5677dd989248b0aae9077996085",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-25T21:13:24.427Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_93387fa2df3081d3",
+    "fileName": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.kicad_mod",
+    "name": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+    "description": "5.0mm x 5.0mm Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+    "mountType": "smd",
+    "padCount": 4,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "led",
+      "rgb",
+      "neopixel",
+      "plcc-4",
+      "5050",
+      "smd"
+    ],
+    "sourceHash": "157bb05e692b8bf0fa4da063b97264ec9faca5677dd989248b0aae9077996085",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -2.45,
+            "y": -1.65
+          },
+          "widthMm": 1.5,
+          "heightMm": 0.9,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -2.45,
+            "y": 1.65
+          },
+          "widthMm": 1.5,
+          "heightMm": 0.9,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 2.45,
+            "y": 1.65
+          },
+          "widthMm": 1.5,
+          "heightMm": 0.9,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 2.45,
+            "y": -1.65
+          },
+          "widthMm": 1.5,
+          "heightMm": 0.9,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.1,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.5,
+            "y": -2.75
+          },
+          "b": {
+            "x": -3.5,
+            "y": 2.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.5,
+            "y": -2.75
+          },
+          "b": {
+            "x": 3.5,
+            "y": -2.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.5,
+            "y": 2.75
+          },
+          "b": {
+            "x": 3.05,
+            "y": 2.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.7,
+            "y": 0.9
+          },
+          "b": {
+            "x": -2.7,
+            "y": -0.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.7,
+            "y": 0.9
+          },
+          "b": {
+            "x": 2.7,
+            "y": -0.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.05,
+            "y": 2.75
+          },
+          "b": {
+            "x": 3.5,
+            "y": 2.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.5,
+            "y": 2.3
+          },
+          "b": {
+            "x": 3.5,
+            "y": -2.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.5,
+            "y": -2.5
+          },
+          "b": {
+            "x": -2.5,
+            "y": 2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.5,
+            "y": 2.5
+          },
+          "b": {
+            "x": 2.5,
+            "y": 2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.5,
+            "y": -2.5
+          },
+          "b": {
+            "x": -2.5,
+            "y": -2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.5,
+            "y": 1.5
+          },
+          "b": {
+            "x": 1.5,
+            "y": 2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.5,
+            "y": 2.5
+          },
+          "b": {
+            "x": 2.5,
+            "y": -2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radiusMm": 2,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.SilkS:-4:-1.6:1",
+          "text": "1",
+          "at": {
+            "x": -4,
+            "y": -1.6
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-3.5:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -3.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:4:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+          "text": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+          "at": {
+            "x": 0,
+            "y": 4
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.56,
+        "minY": -2.81,
+        "maxX": 3.56,
+        "maxY": 2.81
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+    "description": "5.0mm x 5.0mm Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+    "tags": [
+      "LED",
+      "RGB",
+      "NeoPixel",
+      "PLCC-4",
+      "5050"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -2.45,
+          "y": -1.65
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 0.9
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -2.45,
+          "y": 1.65
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 0.9
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 2.45,
+          "y": 1.65
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 0.9
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 2.45,
+          "y": -1.65
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 0.9
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.1
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.5,
+            -2.75
+          ],
+          "end": [
+            -3.5,
+            2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "1601d4d8-3063-4120-a409-b9aa03a5adfe"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.5,
+            -2.75
+          ],
+          "end": [
+            3.5,
+            -2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "573c7881-33a6-4295-bd4f-329ce6e6a77a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.5,
+            2.75
+          ],
+          "end": [
+            3.05,
+            2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "d06c4716-2586-4ad6-8c98-b46ec5cb1195"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.7,
+            0.9
+          ],
+          "end": [
+            -2.7,
+            -0.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "70a46f64-3e11-45ae-819c-05dbd3fba0a4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.7,
+            0.9
+          ],
+          "end": [
+            2.7,
+            -0.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "e48bb817-0d37-416b-af68-406e0f0e1db7"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.05,
+            2.75
+          ],
+          "end": [
+            3.5,
+            2.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "adcb7da5-562b-4661-a20c-0af79a7f5e56"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.5,
+            2.3
+          ],
+          "end": [
+            3.5,
+            -2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "fde6eec1-7c4a-4028-8baf-43dcaa915462"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.45,
+            -2.75
+          ],
+          "end": [
+            -3.45,
+            2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "e698f4d4-65a5-4d0f-a8ed-5745b8f0d483"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.45,
+            2.75
+          ],
+          "end": [
+            3.45,
+            2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "2d2813ac-2cb3-426c-9318-d6eb3fef0d3b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.45,
+            -2.75
+          ],
+          "end": [
+            -3.45,
+            -2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "3ed360c1-b7ac-408f-ae9c-5f158b031e9b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.45,
+            2.75
+          ],
+          "end": [
+            3.45,
+            -2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "62f632c6-6884-46e9-ac67-40d4696553e0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.5,
+            -2.5
+          ],
+          "end": [
+            -2.5,
+            2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c0c389f3-e39a-48d8-966d-313f4224879e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.5,
+            2.5
+          ],
+          "end": [
+            2.5,
+            2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "e4c74574-4660-4fc6-b56a-3f019923dc9c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.5,
+            -2.5
+          ],
+          "end": [
+            -2.5,
+            -2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "e2bf95a5-2ab1-44b7-8a52-0c672195a1d4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.5,
+            1.5
+          ],
+          "end": [
+            1.5,
+            2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "bfb2b50f-e0ce-4bd4-b9e6-cca37d8e1b12"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.5,
+            2.5
+          ],
+          "end": [
+            2.5,
+            -2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "90c3ef5b-455e-4d2f-aa38-e0f89bf4bf0c"
+        }
+      },
+      {
+        "type": "circle",
+        "layer": "F.Fab",
+        "data": {
+          "center": [
+            0,
+            0
+          ],
+          "end": [
+            0,
+            -2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab",
+          "uuid": "83b9b0b3-69d5-4d55-b734-61b11225d74a"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            -4,
+            -1.6,
+            0
+          ],
+          "unlocked": "yes",
+          "layer": "F.SilkS",
+          "uuid": "1dd9b978-b912-45e0-83fd-c616325b2a91",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.8,
+                0.8
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "1"
+          ]
+        },
+        "text": {
+          "content": "1",
+          "position": {
+            "x": -4,
+            "y": -1.6
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.8,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "c5756b5f-7ccc-4d42-872b-98775daca562",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.8,
+                0.8
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.8,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -3.5,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "29976fa0-918e-48c1-ba81-319324267df7",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -3.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            4,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "11f34c85-b80f-46bd-b71d-beeef7ef25a2",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+          ]
+        },
+        "text": {
+          "content": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm",
+          "position": {
+            "x": 0,
+            "y": 4
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.step",
+        "resolvedFileName": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"5.0mm x 5.0mm Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf\")\n\t(tags \"LED RGB NeoPixel PLCC-4 5050\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -3.5 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"29976fa0-918e-48c1-ba81-319324267df7\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm\"\n\t\t(at 0 4 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"11f34c85-b80f-46bd-b71d-beeef7ef25a2\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"af8ebc25-09f5-4728-90c8-7ad585d30554\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"e29d4fdc-7eec-4404-9165-4a75e440ba73\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -3.5 -2.75)\n\t\t(end -3.5 2.75)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type default)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1601d4d8-3063-4120-a409-b9aa03a5adfe\")\n\t)\n\t(fp_line\n\t\t(start -3.5 -2.75)\n\t\t(end 3.5 -2.75)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"573c7881-33a6-4295-bd4f-329ce6e6a77a\")\n\t)\n\t(fp_line\n\t\t(start -3.5 2.75)\n\t\t(end 3.05 2.75)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"d06c4716-2586-4ad6-8c98-b46ec5cb1195\")\n\t)\n\t(fp_line\n\t\t(start -2.7 0.9)\n\t\t(end -2.7 -0.9)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type default)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"70a46f64-3e11-45ae-819c-05dbd3fba0a4\")\n\t)\n\t(fp_line\n\t\t(start 2.7 0.9)\n\t\t(end 2.7 -0.9)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type default)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"e48bb817-0d37-416b-af68-406e0f0e1db7\")\n\t)\n\t(fp_line\n\t\t(start 3.05 2.75)\n\t\t(end 3.5 2.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type default)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"adcb7da5-562b-4661-a20c-0af79a7f5e56\")\n\t)\n\t(fp_line\n\t\t(start 3.5 2.3)\n\t\t(end 3.5 -2.75)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type default)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"fde6eec1-7c4a-4028-8baf-43dcaa915462\")\n\t)\n\t(fp_line\n\t\t(start -3.45 -2.75)\n\t\t(end -3.45 2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"e698f4d4-65a5-4d0f-a8ed-5745b8f0d483\")\n\t)\n\t(fp_line\n\t\t(start -3.45 2.75)\n\t\t(end 3.45 2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"2d2813ac-2cb3-426c-9318-d6eb3fef0d3b\")\n\t)\n\t(fp_line\n\t\t(start 3.45 -2.75)\n\t\t(end -3.45 -2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"3ed360c1-b7ac-408f-ae9c-5f158b031e9b\")\n\t)\n\t(fp_line\n\t\t(start 3.45 2.75)\n\t\t(end 3.45 -2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"62f632c6-6884-46e9-ac67-40d4696553e0\")\n\t)\n\t(fp_line\n\t\t(start -2.5 -2.5)\n\t\t(end -2.5 2.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c0c389f3-e39a-48d8-966d-313f4224879e\")\n\t)\n\t(fp_line\n\t\t(start -2.5 2.5)\n\t\t(end 2.5 2.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e4c74574-4660-4fc6-b56a-3f019923dc9c\")\n\t)\n\t(fp_line\n\t\t(start 2.5 -2.5)\n\t\t(end -2.5 -2.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e2bf95a5-2ab1-44b7-8a52-0c672195a1d4\")\n\t)\n\t(fp_line\n\t\t(start 2.5 1.5)\n\t\t(end 1.5 2.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"bfb2b50f-e0ce-4bd4-b9e6-cca37d8e1b12\")\n\t)\n\t(fp_line\n\t\t(start 2.5 2.5)\n\t\t(end 2.5 -2.5)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"90c3ef5b-455e-4d2f-aa38-e0f89bf4bf0c\")\n\t)\n\t(fp_circle\n\t\t(center 0 0)\n\t\t(end 0 -2)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"83b9b0b3-69d5-4d55-b734-61b11225d74a\")\n\t)\n\t(fp_text user \"1\"\n\t\t(at -4 -1.6 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1dd9b978-b912-45e0-83fd-c616325b2a91\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.8 0.8)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c5756b5f-7ccc-4d42-872b-98775daca562\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.8 0.8)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -2.45 -1.65)\n\t\t(size 1.5 0.9)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1)\n\t\t(uuid \"303fa036-5e50-4d6d-bb86-5cdfd4b88a9f\")\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at -2.45 1.65)\n\t\t(size 1.5 0.9)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1)\n\t\t(uuid \"19ff1e90-56ef-461a-889c-61ffea674474\")\n\t)\n\t(pad \"3\" smd roundrect\n\t\t(at 2.45 1.65)\n\t\t(size 1.5 0.9)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1)\n\t\t(uuid \"abc776f0-6816-4443-a596-fad8645d4ac8\")\n\t)\n\t(pad \"4\" smd roundrect\n\t\t(at 2.45 -1.65)\n\t\t(size 1.5 0.9)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.1)\n\t\t(uuid \"e6e3b1bc-4064-4031-9b80-d1df61337d0a\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/LED_SMD.3dshapes/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.kicad_mod"
+}

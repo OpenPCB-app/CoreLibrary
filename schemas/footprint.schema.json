@@ -20,6 +20,10 @@
     },
     "package": { "type": "object" },
     "models3d": { "type": "array", "items": { "type": "string" } },
+    "no3d": {
+      "type": "boolean",
+      "description": "Footprint legitimately ships without a 3D model (mechanical-only parts, or asm-only electrical parts lacking an upstream STEP). Exempts it from the release STEP gate."
+    },
     "provenance": { "$ref": "#/$defs/provenance" },
     "parser": { "type": "object" },
     "normalized": { "type": "object" },

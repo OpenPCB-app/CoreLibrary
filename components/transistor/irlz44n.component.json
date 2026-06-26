@@ -1,0 +1,77 @@
+{
+  "id": "openpcb.core.transistor.irlz44n",
+  "uuid": "675f9729-1d99-5a56-b2bf-3b3bd5c2d2fa",
+  "version": "0.3.0",
+  "name": "IRLZ44N N-Channel MOSFET",
+  "description": "IRLZ44N logic-level N-channel power MOSFET, 55 V, 47 A, TO-220.",
+  "category": "transistor",
+  "subcategory": "mosfet-nch-power",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "n-channel",
+    "power",
+    "to-220",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "IRLZ44N",
+    "MOSFET",
+    "N-channel",
+    "logic level",
+    "power",
+    "TO-220"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.infineon.com/dgdl/Infineon-IRLZ44N-DataSheet-v01_01-EN.pdf",
+  "datasheetSource": "http://www.irf.com/product-info/datasheets/data/irlz44n.pdf",
+  "parameters": {
+    "vds_max": "55V",
+    "id_max": "47A",
+    "rds_on": "22mOhm",
+    "vgs_th": "1-2V",
+    "channel": "n",
+    "logic_level": "true"
+  },
+  "symbol": "openpcb.core.symbol.transistor.irlz44n",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220-3 (vertical)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "IRLZ44N.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "IRLZ44N N-Channel MOSFET",
+    "sourceHash": "865d61909852601857cff449d40bf196017f845b6b0ecce6648296e271fc1f26",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-25T21:03:09.044Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

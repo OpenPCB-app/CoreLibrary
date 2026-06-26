@@ -1,0 +1,59 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.opto.ws2812b",
+      "name": "WS2812B Addressable RGB LED",
+      "description": "WS2812B integrated addressable RGB LED with built-in controller, single-wire 800 kbps, PLCC-4 5050.",
+      "category": "opto",
+      "subcategory": "led-addressable",
+      "tags": [
+        "opto",
+        "led",
+        "rgb",
+        "addressable",
+        "neopixel",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "WS2812B",
+        "WS2812",
+        "NeoPixel",
+        "addressable",
+        "RGB",
+        "5050",
+        "PLCC-4"
+      ],
+      "parameters": {
+        "color": "rgb",
+        "interface": "single-wire",
+        "voltage": "5V",
+        "data_rate": "800kbps",
+        "package": "PLCC-4 5050"
+      },
+      "datasheet": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.opto.ws2812b",
+        "path": "kicad-symbols/LED.kicad_symdir/WS2812B.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.opto.led-ws2812b-plcc4-5050",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.opto.led-ws2812b-plcc4-5050",
+          "path": "kicad-footprints/LED_SMD.pretty/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.kicad_mod",
+          "label": "PLCC-4 5050",
+          "model": {
+            "id": "openpcb.core.3d.opto.led-ws2812b-plcc4-5050",
+            "path": "kicad-packages3D/LED_SMD.3dshapes/LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" }
+          ]
+        }
+      ]
+    }
+  ]
+}

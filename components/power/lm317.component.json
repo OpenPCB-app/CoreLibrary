@@ -1,0 +1,75 @@
+{
+  "id": "openpcb.core.power.lm317",
+  "uuid": "34332b85-8ffd-54f9-9512-f3fb451e6205",
+  "version": "0.3.0",
+  "name": "LM317 Adjustable Regulator",
+  "description": "LM317 adjustable positive linear voltage regulator, 1.2–37 V, 1.5 A, TO-220.",
+  "category": "power",
+  "subcategory": "regulator-linear",
+  "tags": [
+    "power",
+    "regulator",
+    "linear",
+    "adjustable",
+    "to-220",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM317",
+    "317",
+    "adjustable regulator",
+    "variable",
+    "TO-220"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.ti.com/lit/ds/symlink/lm317.pdf",
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm317.pdf",
+  "parameters": {
+    "vout": "1.25V-37V",
+    "iout": "1.5A",
+    "vin_max": "40V",
+    "dropout": "2V",
+    "topology": "linear-adjustable"
+  },
+  "symbol": "openpcb.core.symbol.power.lm317",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220-3 (vertical)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM317_TO-220.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "LM317 Adjustable Regulator",
+    "sourceHash": "f97e3b11cabd944eeb0025cee45161d52c1bf3b7bf6a6ddbeaf39604911872a8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-25T21:03:09.044Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

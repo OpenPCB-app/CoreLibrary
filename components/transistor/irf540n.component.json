@@ -1,0 +1,76 @@
+{
+  "id": "openpcb.core.transistor.irf540n",
+  "uuid": "66a52024-a225-5155-99ad-685053aef6f8",
+  "version": "0.3.0",
+  "name": "IRF540N N-Channel MOSFET",
+  "description": "IRF540N N-channel power MOSFET, 100 V, 33 A, TO-220.",
+  "category": "transistor",
+  "subcategory": "mosfet-nch-power",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "n-channel",
+    "power",
+    "to-220",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "IRF540N",
+    "IRF540",
+    "MOSFET",
+    "N-channel",
+    "power",
+    "TO-220"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.infineon.com/dgdl/Infineon-IRF540N-DataSheet-v01_01-EN.pdf",
+  "datasheetSource": "http://www.irf.com/product-info/datasheets/data/irf540n.pdf",
+  "parameters": {
+    "vds_max": "100V",
+    "id_max": "33A",
+    "rds_on": "44mOhm",
+    "vgs_th": "2-4V",
+    "channel": "n"
+  },
+  "symbol": "openpcb.core.symbol.transistor.irf540n",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220-3 (vertical)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "IRF540N.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "IRF540N N-Channel MOSFET",
+    "sourceHash": "5fdea22caf9cb37e9ce849f70d3ca53eb703c7389431966e51106fb680aa7aa3",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-25T21:03:09.044Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

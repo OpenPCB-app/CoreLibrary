@@ -1,0 +1,81 @@
+{
+  "id": "openpcb.core.opto.ws2812b",
+  "uuid": "12f0d1c9-7b2f-5d69-a5a4-902ec6561121",
+  "version": "0.3.0",
+  "name": "WS2812B Addressable RGB LED",
+  "description": "WS2812B integrated addressable RGB LED with built-in controller, single-wire 800 kbps, PLCC-4 5050.",
+  "category": "opto",
+  "subcategory": "led-addressable",
+  "tags": [
+    "opto",
+    "led",
+    "rgb",
+    "addressable",
+    "neopixel",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "WS2812B",
+    "WS2812",
+    "NeoPixel",
+    "addressable",
+    "RGB",
+    "5050",
+    "PLCC-4"
+  ],
+  "aliases": [],
+  "datasheet": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+  "datasheetSource": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+  "parameters": {
+    "color": "rgb",
+    "interface": "single-wire",
+    "voltage": "5V",
+    "data_rate": "800kbps",
+    "package": "PLCC-4 5050"
+  },
+  "symbol": "openpcb.core.symbol.opto.ws2812b",
+  "defaultFootprint": "openpcb.core.footprint.opto.led-ws2812b-plcc4-5050",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.opto.led-ws2812b-plcc4-5050",
+      "label": "PLCC-4 5050",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "WS2812B.kicad_sym",
+    "sourceLibrary": "LED",
+    "sourceItemName": "WS2812B Addressable RGB LED",
+    "sourceHash": "ed90bd23ecaf4a54289bdbb6e9c3ba7320810b31e876fd5997aa15f545554cdf",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-25T21:13:24.427Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

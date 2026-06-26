@@ -1,0 +1,84 @@
+{
+  "id": "openpcb.core.power.lm2596-adj",
+  "uuid": "2c0cbbe5-3534-58be-aae0-e59e7d191f7f",
+  "version": "0.3.0",
+  "name": "LM2596 Adjustable Buck Converter",
+  "description": "LM2596 step-down switching regulator, 3 A, adjustable output, TO-263-5.",
+  "category": "power",
+  "subcategory": "regulator-switching-buck",
+  "tags": [
+    "power",
+    "regulator",
+    "buck",
+    "switching",
+    "to-263",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM2596",
+    "LM2596S",
+    "buck",
+    "step-down",
+    "switching regulator",
+    "DPAK"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm2596.pdf",
+  "parameters": {
+    "vout": "1.23V-37V",
+    "iout": "3A",
+    "vin_max": "40V",
+    "topology": "buck",
+    "switching_freq": "150kHz"
+  },
+  "symbol": "openpcb.core.symbol.power.lm2596-adj",
+  "defaultFootprint": "openpcb.core.footprint.package.to-263-5-tabpin3",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-263-5-tabpin3",
+      "label": "TO-263-5 (D2PAK)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM2596S-ADJ.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "LM2596 Adjustable Buck Converter",
+    "sourceHash": "7cd6c9500d8536a74d8656539ee56e47454d0459832e84961f9a9165ad4613c0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-25T21:03:09.044Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,260 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.power.l7805",
+      "name": "L7805 5V Linear Regulator",
+      "description": "L7805 fixed 5.0 V positive linear voltage regulator, 1.5 A, TO-220.",
+      "category": "power",
+      "subcategory": "regulator-linear",
+      "tags": ["power", "regulator", "linear", "5v", "to-220", "kicad-derived"],
+      "keywords": [
+        "L7805",
+        "7805",
+        "LM7805",
+        "5V",
+        "linear regulator",
+        "TO-220"
+      ],
+      "parameters": {
+        "vout": "5.0V",
+        "iout": "1.5A",
+        "vin_max": "35V",
+        "dropout": "2V",
+        "topology": "linear"
+      },
+      "datasheet": "https://www.st.com/resource/en/datasheet/l78.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.power.l7805",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/L7805.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220-3 (vertical)",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.lm317",
+      "name": "LM317 Adjustable Regulator",
+      "description": "LM317 adjustable positive linear voltage regulator, 1.2–37 V, 1.5 A, TO-220.",
+      "category": "power",
+      "subcategory": "regulator-linear",
+      "tags": [
+        "power",
+        "regulator",
+        "linear",
+        "adjustable",
+        "to-220",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM317",
+        "317",
+        "adjustable regulator",
+        "variable",
+        "TO-220"
+      ],
+      "parameters": {
+        "vout": "1.25V-37V",
+        "iout": "1.5A",
+        "vin_max": "40V",
+        "dropout": "2V",
+        "topology": "linear-adjustable"
+      },
+      "datasheet": "https://www.ti.com/lit/ds/symlink/lm317.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.power.lm317",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/LM317_TO-220.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220-3 (vertical)",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.lm2596-adj",
+      "name": "LM2596 Adjustable Buck Converter",
+      "description": "LM2596 step-down switching regulator, 3 A, adjustable output, TO-263-5.",
+      "category": "power",
+      "subcategory": "regulator-switching-buck",
+      "tags": [
+        "power",
+        "regulator",
+        "buck",
+        "switching",
+        "to-263",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM2596",
+        "LM2596S",
+        "buck",
+        "step-down",
+        "switching regulator",
+        "DPAK"
+      ],
+      "parameters": {
+        "vout": "1.23V-37V",
+        "iout": "3A",
+        "vin_max": "40V",
+        "topology": "buck",
+        "switching_freq": "150kHz"
+      },
+      "datasheet": "https://www.ti.com/lit/ds/symlink/lm2596.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.power.lm2596-adj",
+        "path": "kicad-symbols/Regulator_Switching.kicad_symdir/LM2596S-ADJ.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-263-5-tabpin3",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-263-5-tabpin3",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/TO-263-5_TabPin3.kicad_mod",
+          "label": "TO-263-5 (D2PAK)",
+          "model": {
+            "id": "openpcb.core.3d.package.to-263-5-tabpin3",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/TO-263-5_TabPin3.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" },
+            { "pinNumber": "5", "padNumber": "5" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.irlz44n",
+      "name": "IRLZ44N N-Channel MOSFET",
+      "description": "IRLZ44N logic-level N-channel power MOSFET, 55 V, 47 A, TO-220.",
+      "category": "transistor",
+      "subcategory": "mosfet-nch-power",
+      "tags": [
+        "transistor",
+        "mosfet",
+        "n-channel",
+        "power",
+        "to-220",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "IRLZ44N",
+        "MOSFET",
+        "N-channel",
+        "logic level",
+        "power",
+        "TO-220"
+      ],
+      "parameters": {
+        "vds_max": "55V",
+        "id_max": "47A",
+        "rds_on": "22mOhm",
+        "vgs_th": "1-2V",
+        "channel": "n",
+        "logic_level": "true"
+      },
+      "datasheet": "https://www.infineon.com/dgdl/Infineon-IRLZ44N-DataSheet-v01_01-EN.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.irlz44n",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/IRLZ44N.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220-3 (vertical)",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.irf540n",
+      "name": "IRF540N N-Channel MOSFET",
+      "description": "IRF540N N-channel power MOSFET, 100 V, 33 A, TO-220.",
+      "category": "transistor",
+      "subcategory": "mosfet-nch-power",
+      "tags": [
+        "transistor",
+        "mosfet",
+        "n-channel",
+        "power",
+        "to-220",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "IRF540N",
+        "IRF540",
+        "MOSFET",
+        "N-channel",
+        "power",
+        "TO-220"
+      ],
+      "parameters": {
+        "vds_max": "100V",
+        "id_max": "33A",
+        "rds_on": "44mOhm",
+        "vgs_th": "2-4V",
+        "channel": "n"
+      },
+      "datasheet": "https://www.infineon.com/dgdl/Infineon-IRF540N-DataSheet-v01_01-EN.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.irf540n",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/IRF540N.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220-3 (vertical)",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    }
+  ]
+}

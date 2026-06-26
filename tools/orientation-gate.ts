@@ -102,8 +102,17 @@ const SMD_BASE_BELOW_TOL = 0.1;
 const SMD_BASE_ABOVE_TOL = 0.3;
 /** Min body height above board to count as "has vertical extent" (not lying flat). */
 const MIN_BODY_HEIGHT = 0.1;
-/** THT through-hole leads may protrude this far below the board before it's suspect. */
+/**
+ * THT lead-protrusion budget below the board, by posture.
+ * Horizontal/axial/unknown parts seat close to the board, so a body dipping far
+ * below is almost always a mis-orientation. Vertical parts (TO-220, TO-92,
+ * DHT11) legitimately stand the body ABOVE the board while the full untrimmed
+ * leads reach much further below — so they get a larger budget. The independent
+ * "body must rise above board" check (max.z ≥ THT_MIN_BODY_HEIGHT) still catches
+ * a body baked upside-down, so the larger vertical budget can't mask a flip.
+ */
 const THT_LEAD_BELOW_MAX = 6.0;
+const THT_LEAD_BELOW_VERTICAL = 12.0;
 /** Min THT body height above board. */
 const THT_MIN_BODY_HEIGHT = 0.5;
 /** Absolute floor / ceiling for plausible package size on any axis. */
@@ -178,11 +187,15 @@ export function evaluateOrientation(input: GateInput): Finding[] {
 
   // --- on-board (z) ----------------------------------------------------------
   if (mountType === "tht") {
-    if (bounds.min.z < -THT_LEAD_BELOW_MAX) {
+    const leadBudget =
+      input.orientationHint === "vertical"
+        ? THT_LEAD_BELOW_VERTICAL
+        : THT_LEAD_BELOW_MAX;
+    if (bounds.min.z < -leadBudget) {
       findings.push({
         check: "on-board",
         severity: "error",
-        message: `THT body extends ${(-bounds.min.z).toFixed(2)}mm below board (> ${THT_LEAD_BELOW_MAX}mm lead budget) — likely mis-oriented`,
+        message: `THT body extends ${(-bounds.min.z).toFixed(2)}mm below board (> ${leadBudget}mm lead budget${input.orientationHint === "vertical" ? " for vertical posture" : ""}) — likely mis-oriented`,
       });
     }
     if (bounds.max.z < THT_MIN_BODY_HEIGHT) {
@@ -244,11 +257,22 @@ export function evaluateOrientation(input: GateInput): Finding[] {
     const dy = Math.abs(bounds.center.y - rc.y);
     const tx = centerTol(re.x);
     const ty = centerTol(re.y);
-    if (dx > tx || dy > ty) {
+    const xOff = dx > tx;
+    const yOff = dy > ty;
+    if (xOff || yOff) {
+      // A vertical THT body legitimately sits behind the pad row (the tab/body
+      // is offset along the posture axis while the leads land on the pads), so a
+      // drift along the *single* posture axis is expected geometry, not a fault.
+      // A drift on both axes — or on a non-vertical part — is still a hard error.
+      const bodyBehindPads =
+        mountType === "tht" &&
+        input.orientationHint === "vertical" &&
+        yOff &&
+        !xOff;
       findings.push({
         check: "xy-center",
-        severity: "error",
-        message: `model XY centre (${bounds.center.x.toFixed(2)}, ${bounds.center.y.toFixed(2)}) off footprint centre (${rc.x.toFixed(2)}, ${rc.y.toFixed(2)}) by (${dx.toFixed(2)}, ${dy.toFixed(2)})mm (tol ${tx.toFixed(2)}, ${ty.toFixed(2)}) — wrong offset / mirror / in-plane rotation`,
+        severity: bodyBehindPads ? "warning" : "error",
+        message: `model XY centre (${bounds.center.x.toFixed(2)}, ${bounds.center.y.toFixed(2)}) off footprint centre (${rc.x.toFixed(2)}, ${rc.y.toFixed(2)}) by (${dx.toFixed(2)}, ${dy.toFixed(2)})mm (tol ${tx.toFixed(2)}, ${ty.toFixed(2)})${bodyBehindPads ? " — vertical body behind pad row (expected)" : " — wrong offset / mirror / in-plane rotation"}`,
       });
     }
     // Coverage: body XY extent should be in the same ballpark as the footprint.

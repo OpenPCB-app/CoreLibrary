@@ -1,0 +1,553 @@
+{
+  "id": "openpcb.core.symbol.power.lm2596-adj",
+  "uuid": "fd85dd9c-5d53-5b0a-b092-4ef1c1db9353",
+  "version": "0.3.0",
+  "name": "LM2596 Adjustable Buck Converter",
+  "referencePrefix": "U",
+  "description": "Adjustable 3A Step-Down Voltage Regulator, TO-263",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "LM2596S-ADJ.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "LM2596S-ADJ",
+    "sourceHash": "76bbc27e188f060d620c690f2101548cb39fd0e17351010f2a3326c95ba000ac",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-25T21:03:09.044Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LM2596S-12"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "LM2596S-ADJ",
+      "Footprint": "Package_TO_SOT_SMD:TO-263-5_TabPin3",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/lm2596.pdf",
+      "Description": "Adjustable 3A Step-Down Voltage Regulator, TO-263",
+      "ki_keywords": "Step-Down Voltage Regulator Adjustable 3A",
+      "ki_fp_filters": "TO?263*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "LM2596S-ADJ.kicad_sym",
+        "sourceItemName": "LM2596S-ADJ",
+        "sha256": "0c23cb35746dadc54335a1a9e11f0d592025d3cf8718867cd8a8aaade1250094"
+      },
+      {
+        "fileName": "LM2596S-12.kicad_sym",
+        "sourceItemName": "LM2596S-12",
+        "sha256": "a107a9afaa17b7d9a93842e3bb37d2ecbd3cf5c7ec285fb1b3e7ab157070d2f2"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_5dc87d4aca41fd3a",
+    "name": "LM2596S-ADJ",
+    "referencePrefix": "U",
+    "description": "Adjustable 3A Step-Down Voltage Regulator, TO-263",
+    "sourceHash": "76bbc27e188f060d620c690f2101548cb39fd0e17351010f2a3326c95ba000ac",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "VIN",
+        "localPosition": {
+          "x": -12.7,
+          "y": 2.54
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "OUT",
+        "localPosition": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "FB",
+        "localPosition": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "~{ON}/OFF",
+        "localPosition": {
+          "x": -12.7,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LM2596S-12"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "LM2596S-ADJ",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -10.16,
+          "y": -5.08,
+          "width": 20.32,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "VIN",
+          "number": "1",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "OUT",
+          "number": "2",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "GND",
+          "number": "3",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:4",
+          "name": "FB",
+          "number": "4",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:5",
+          "name": "~{ON}/OFF",
+          "number": "5",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "VIN",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -11.43,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "OUT",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 11.43,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "FB",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 11.43,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "~{ON}/OFF",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -11.43,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 6.4769999999999985
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "LM2596S-ADJ",
+          "at": {
+            "x": 0,
+            "y": -9.2202
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -12.7,
+        "minY": -10.4902,
+        "maxX": 12.7,
+        "maxY": 7.746999999999998
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from LM2596S-12"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "LM2596S-ADJ",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "VIN",
+        "number": "1",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "OUT",
+        "number": "2",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "3",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "FB",
+        "number": "4",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{ON}/OFF",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "LM2596S-ADJ",
+      "Footprint": "Package_TO_SOT_SMD:TO-263-5_TabPin3",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/lm2596.pdf",
+      "Description": "Adjustable 3A Step-Down Voltage Regulator, TO-263",
+      "ki_keywords": "Step-Down Voltage Regulator Adjustable 3A",
+      "ki_fp_filters": "TO?263*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -10.16,
+            5.08
+          ],
+          [
+            "end",
+            10.16,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from LM2596S-12"
+      }
+    ],
+    "rawSource": "(symbol LM2596S-ADJ (extends LM2596S-12) (property Reference U (at -10.16 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value LM2596S-ADJ (at 0 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_TO_SOT_SMD:TO-263-5_TabPin3 (at 1.27 -6.35 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)) (justify left))) (property Datasheet http://www.ti.com/lit/ds/symlink/lm2596.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Adjustable 3A Step-Down Voltage Regulator, TO-263\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"Step-Down Voltage Regulator Adjustable 3A\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters TO?263* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

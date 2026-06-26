@@ -6,6 +6,27 @@ Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](
 
 **Invariant for every content phase:** branch `feat/corelib-<phase>` → author `tools/manifests/<phase>.json` (symdir paths; **every footprint has a STEP**) → `import --strict` → `validate --release --strict` → `audit:3d` → `bun test` → `pack` spot-check → PR. CI runs `--release --strict`, so no-STEP parts go to Wave 2.
 
+## 2026-06-25 session update — Foundations + W1 started → 86 components (uncommitted)
+
+**Decisions (maintainer):** full v1 grind (~250–300) · STEP gate relaxed (`no3d` for asm-only electrical too) · external+generated assets allowed under tagged provenance · datasheets data-only until release. Full record: `~/.claude/plans/act-as-senior-software-refactored-cray.md`.
+
+**Done this session (all gates green: validate --release --strict 86 OK, audit:3d 83 ok/0 err, bun test 41/41, typecheck clean):**
+
+- **Phase F tooling:** B1 orientation-gate calibration (`THT_LEAD_BELOW_VERTICAL=12` + body-behind-pads xy downgrade; +3 tests — **validated on real TO-220**, imports as a warning not error); B3 `no3d` flag end-to-end (schema+importer+validator, with a coverage note); provenance carve-out (`openpcb-generated`/`manufacturer` sources in `validate.ts`); new `tools/gen-pinmap.ts` (committed replacement for the lost scratchpad generators). Plus: `isElectricalPadNumber` (empty NPTH pads skip strict pad-coverage) and a `symbol.pinless` manifest flag (0-pin graphic symbols).
+- **W1 content (+6):** `w1-power-tht.json` = L7805, LM317, LM2596-adj, IRLZ44N, IRF540N; `w1-discrete.json` = WS2812B.
+
+**Blocked / deferred:** **MountingHole + Fiducial** (`w1-mechanical.json` authored, ready) — blocked by `@openpcb/kicad-import` `validateFootprintPads` rejecting the unnumbered NPTH pad; needs a **shared-package change** (bundle with Phase-R cross-repo). B2 named-`MP` pads (barrel jack/pot) still deferred.
+
+**Next (priority):** 1) W1 no3d/reuse ICs (TL072/LM339/MCP6002 reuse SOIC/DIP via `--allow-overwrite`+reflip; TP4056/CP2102 as `no3d`). 2) W1 connectors (USB-C/IDC/JST-XH/screw-term — `scaleMm.y:-1` flips + per-variant STEP). 3) W2 demand categories (power inductor, AP2112K, buck IC, PC817, ULN2003, EC11, relay, buzzer, 32.768 kHz xtal). 4) Shared `kicad-import` relax → import mechanical. 5) W3 external sourcing (MP1584/MPU-6050/ESP-12F/microSD/74HC125/DHT22/HC-SR04). 6) R release (opclib-pack 0.3.0 + app wiring + sign/tag). Per-part recipe in the plan file.
+
+### Earlier (pre-session) suggested steps
+
+1. **(optional) `git push origin master`** (now 5 commits ahead of `origin` + this session's uncommitted work).
+2. ~~Calibrate the 3D orientation gate~~ — **DONE** (B1).
+3. ~~Build the no-STEP mechanical path~~ — `no3d` **DONE**; MountingHole/Fiducial blocked on the shared `validateFootprintPads` change (see above).
+4. **More content** from _Wave 2_ (HandSolder/film/networks, RGB, bridge rectifier, externally-sourced MP1584/MP2307/MPU-6050/74HC125/USB-C/IDC).
+5. **P7 cross-repo** (opclib-pack schema bump + app wiring + datasheet URL curation), then **P9 release**.
+
 ## Done
 
 - [x] **P0** Foundations (schema fields, importer passthrough + KiCad-Datasheet capture, validator checks, fetch-kicad-libs, check-datasheet-links, PARAMETERS.md, manifest TEMPLATE, CI, docs).

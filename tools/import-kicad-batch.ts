@@ -46,13 +46,25 @@ interface ManifestFootprint {
   id: string;
   path: string;
   label: string;
-  model: ManifestModel;
+  /** Required unless `no3d` — the footprint's STEP-backed 3D model. */
+  model?: ManifestModel;
+  /**
+   * Footprint legitimately ships without a 3D model (mechanical parts like
+   * MountingHole/Fiducial that have no upstream STEP, or asm-only electrical
+   * parts whose STEP is unavailable). Suppresses the model lookup/write and
+   * exempts the footprint from the release STEP gate. Keep to genuine gaps.
+   */
+  no3d?: boolean;
   pinMap?: PinMapEntry[];
 }
 
 interface ManifestSymbol {
   id: string;
   path: string;
+  /** Symbol legitimately has no pins (mechanical: mounting holes, fiducials,
+   * logos). Opt-in so the "no parsed pins" safety net still catches real parse
+   * failures on electrical symbols. */
+  pinless?: boolean;
 }
 
 interface ManufacturerPart {
@@ -305,13 +317,20 @@ function readManifestFootprint(
   pathName: string,
 ): ManifestFootprint {
   if (!isObject(value)) throw new Error(`${pathName} must be an object`);
-  return {
+  const footprint: ManifestFootprint = {
     id: requireId(value.id, `${pathName}.id`),
     path: requireSourcePath(value.path, `${pathName}.path`, ".kicad_mod"),
     label: requireString(value.label, `${pathName}.label`),
-    model: readManifestModel(value.model, `${pathName}.model`),
     pinMap: readPinMap(value.pinMap, `${pathName}.pinMap`),
   };
+  if (value.no3d === true) {
+    footprint.no3d = true;
+    if (value.model !== undefined)
+      throw new Error(`${pathName}: a no3d footprint must not declare a model`);
+  } else {
+    footprint.model = readManifestModel(value.model, `${pathName}.model`);
+  }
+  return footprint;
 }
 
 function readManifestComponent(
@@ -360,6 +379,7 @@ function readManifestComponent(
         `${pathName}.symbol.path`,
         ".kicad_sym",
       ),
+      ...(symbolValue.pinless === true ? { pinless: true } : {}),
     },
     defaultFootprint: requireId(
       value.defaultFootprint,
@@ -407,7 +427,8 @@ function validateManifestShape(manifest: ImportManifest): void {
     for (const footprint of component.footprints) {
       footprintIdsForComponent.add(footprint.id);
       rememberId(footprintIds, footprint.id, footprint.path, "footprint");
-      rememberId(modelIds, footprint.model.id, footprint.model.path, "model");
+      if (footprint.model)
+        rememberId(modelIds, footprint.model.id, footprint.model.path, "model");
     }
     if (!footprintIdsForComponent.has(component.defaultFootprint))
       throw new Error(
@@ -621,8 +642,10 @@ async function resolveSymbol(
   if (!existsSync(source)) throw new Error(`missing symbol source: ${source}`);
   const inherited = await parseSymbolWithInheritance(source);
   const parsed = inherited.parsed;
-  if (parsed.pins.length === 0)
-    throw new Error(`symbol has no parsed pins: ${source}`);
+  if (parsed.pins.length === 0 && !manifestSymbol.pinless)
+    throw new Error(
+      `symbol has no parsed pins: ${source} (set symbol.pinless:true if this is intentional, e.g. a mounting hole/fiducial)`,
+    );
   const hash = sha256(
     inherited.sources.map((item) => `${item.file}:${item.sha256}`).join("\n"),
   );
@@ -652,6 +675,12 @@ async function resolveFootprint(
   const normalized = normalizeFootprint(parsed, hash, path.basename(source));
   validateFootprintPads(normalized.preview);
   return { source, parsed, normalized, hash };
+}
+
+/** A pad carries an electrical net only if it has a non-empty number; empty/null
+ * pads are NPTH/mechanical (mounting holes, edge slots) and need no pinMap. */
+function isElectricalPadNumber(num: string | null | undefined): num is string {
+  return typeof num === "string" && num.trim().length > 0;
 }
 
 function pinMapFor(
@@ -703,7 +732,9 @@ function validateStrictPinMap(
   const mappedPads = new Set(pinMap.map((entry) => entry.padNumber));
   const unmappedPads = footprint.normalized.preview.pads
     .map((pad) => pad.number)
-    .filter((pad) => !mappedPads.has(pad));
+    // Empty-number pads are NPTH/mechanical (mounting holes, edge slots) — never
+    // electrically mapped, so they don't need a pinMap entry.
+    .filter((pad) => isElectricalPadNumber(pad) && !mappedPads.has(pad));
   if (unmappedPads.length > 0)
     throw new Error(
       `strict mode found unmapped footprint pad(s) ${unmappedPads.join(", ")} on ${footprint.source}`,
@@ -877,7 +908,10 @@ async function run(argv: string[]): Promise<void> {
             name: footprint.parsed.name,
             mountType: footprint.normalized.mountType,
             package: footprint.normalized.packageCode,
-            models3d: [manifestFootprint.model.id],
+            models3d: manifestFootprint.no3d
+              ? []
+              : [manifestFootprint.model!.id],
+            ...(manifestFootprint.no3d ? { no3d: true } : {}),
             provenance: provenance(
               "kicad-mod",
               footprint.source,
@@ -895,66 +929,56 @@ async function run(argv: string[]): Promise<void> {
         footprintIds.add(manifestFootprint.id);
       }
 
-      const stepSource = sourcePath(
-        args.kicadRoot,
-        manifestFootprint.model.path,
-      );
-      if (!existsSync(stepSource))
-        throw new Error(`missing STEP source: ${stepSource}`);
-      if (args.strict) validateStrictModelRef(footprint, stepSource);
-      const modelPart = idPart(manifestFootprint.model.id, "openpcb.core.3d.");
-      const modelRel = path
-        .join("3d", modelPart.category, `${modelPart.slug}.step`)
-        .split(path.sep)
-        .join("/");
-      const modelPath = path.join(
-        args.out,
-        "3d",
-        modelPart.category,
-        `${modelPart.slug}.model.json`,
-      );
-      const stepPath = path.join(args.out, modelRel);
-      rememberPath(
-        outputPaths,
-        modelPath,
-        manifestFootprint.model.path,
-        args.allowOverwrite,
-      );
-      rememberPath(
-        outputPaths,
-        stepPath,
-        manifestFootprint.model.path,
-        args.allowOverwrite,
-      );
-      if (!modelIds.has(manifestFootprint.model.id)) {
-        const modelRef =
-          footprint.parsed.model3dRefs.find(
-            (ref) => ref.resolvedFileName === path.basename(stepSource),
-          ) ?? footprint.parsed.model3dRefs[0];
-        const stepHash = sha256File(stepSource);
-        await writeJson(
-          modelPath,
-          {
-            id: manifestFootprint.model.id,
-            uuid: uuidFromSeed(manifestFootprint.model.id),
-            version: manifest.version,
-            name: `${footprint.parsed.name} STEP model`,
-            formats: { step: { path: modelRel, sha256: stepHash } },
-            provenance: provenance(
-              "step",
-              stepSource,
-              path.basename(stepSource),
-              stepHash,
-              args.convertedAt,
-            ),
-            offsetMm: modelRef?.offset ?? { x: 0, y: 0, z: 0 },
-            rotationDeg: modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
-            scaleMm: modelRef?.scale ?? { x: 1, y: 1, z: 1 },
-          },
-          args.dryRun,
+      if (!manifestFootprint.no3d) {
+        const model = manifestFootprint.model!;
+        const stepSource = sourcePath(args.kicadRoot, model.path);
+        if (!existsSync(stepSource))
+          throw new Error(`missing STEP source: ${stepSource}`);
+        if (args.strict) validateStrictModelRef(footprint, stepSource);
+        const modelPart = idPart(model.id, "openpcb.core.3d.");
+        const modelRel = path
+          .join("3d", modelPart.category, `${modelPart.slug}.step`)
+          .split(path.sep)
+          .join("/");
+        const modelPath = path.join(
+          args.out,
+          "3d",
+          modelPart.category,
+          `${modelPart.slug}.model.json`,
         );
-        await copyAsset(stepSource, stepPath, args.dryRun);
-        modelIds.add(manifestFootprint.model.id);
+        const stepPath = path.join(args.out, modelRel);
+        rememberPath(outputPaths, modelPath, model.path, args.allowOverwrite);
+        rememberPath(outputPaths, stepPath, model.path, args.allowOverwrite);
+        if (!modelIds.has(model.id)) {
+          const modelRef =
+            footprint.parsed.model3dRefs.find(
+              (ref) => ref.resolvedFileName === path.basename(stepSource),
+            ) ?? footprint.parsed.model3dRefs[0];
+          const stepHash = sha256File(stepSource);
+          await writeJson(
+            modelPath,
+            {
+              id: model.id,
+              uuid: uuidFromSeed(model.id),
+              version: manifest.version,
+              name: `${footprint.parsed.name} STEP model`,
+              formats: { step: { path: modelRel, sha256: stepHash } },
+              provenance: provenance(
+                "step",
+                stepSource,
+                path.basename(stepSource),
+                stepHash,
+                args.convertedAt,
+              ),
+              offsetMm: modelRef?.offset ?? { x: 0, y: 0, z: 0 },
+              rotationDeg: modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
+              scaleMm: modelRef?.scale ?? { x: 1, y: 1, z: 1 },
+            },
+            args.dryRun,
+          );
+          await copyAsset(stepSource, stepPath, args.dryRun);
+          modelIds.add(model.id);
+        }
       }
     }
 

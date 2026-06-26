@@ -1,6 +1,6 @@
 # CoreLibrary — Current State (2026-06-23)
 
-Snapshot after the **P2–P6 content sweep** landed on branch `feat/corelib-p2` (base `master` `dc42a69`). For the roadmap + deferrals see [TODO.md](TODO.md); for how to continue see [HANDOFF.md](HANDOFF.md).
+Snapshot after the **P2–P6 content sweep** was committed to **`master` (`6b114e4`)**. For the roadmap + deferrals see [TODO.md](TODO.md); for how to continue see [HANDOFF.md](HANDOFF.md).
 
 ## Inventory — 80 components / 77 symbols / 84 footprints / 84 3D (all STEP-backed)
 
@@ -50,11 +50,17 @@ The expansion spec (`../Corelibrary expansion plan.md`) was written at an older 
 - **`@openpcb/opclib-pack`** already carries `parameters`/`manufacturerParts`, but **NOT** `datasheet`/`keywords`/`subcategory`. Surfacing those top-level fields in the app needs an opclib-pack schema bump (shared) + app importer/UI wiring + a drizzle migration — **deferred to P7** (not needed for generic passives).
 - **Per-instance `Value` editing works** (`PartInspectorPanel.tsx` → `update_part_properties`) — parametric passives are fully usable.
 
-## Gotchas (read before re-importing)
+## Gotchas (read before re-importing — expanded during the P2–P6 sweep)
 
-- **`import-kicad-batch --allow-overwrite` regenerates 3D sidecars from KiCad defaults**, clobbering hand-tuned `scaleMm.y:-1` orientation fixes (DIP/connector Y-flip). After any such re-import, run `bun run audit:3d`; if a model errors, re-apply `scaleMm.y:-1` in its `3d/.../*.model.json`. (Fixed DIP-8/DIP-14 this way on 2026-06-23.)
-- Importer flags use **`--flag=value`** form (e.g. `--manifest=...`, `--version=...`), not space-separated.
+- **`import-kicad-batch --allow-overwrite` regenerates 3D sidecars from KiCad defaults**, clobbering hand-tuned `scaleMm.y:-1` orientation fixes (DIP/connector Y-flip). After any such re-import, run `bun run audit:3d`; if a model errors, re-apply `scaleMm.y:-1` in its `3d/.../*.model.json`. **Avoid the dance entirely by using all-new asset ids for a phase** (then no `--allow-overwrite` needed) — only reuse a shared id when the asset is genuinely shared (e.g. `package.sot-23`, `package.to-92-inline`).
+- **`audit:3d` is a HARD release gate (0 errors required).** Sweep findings: vertical pin headers/sockets, USB, THT switches need **`scaleMm.y:-1`** (pin row mirrored into +Y); SMD parts seated <−0.1 mm need a small **`offsetMm.z`** (e.g. USB Micro-B +0.25); **long-lead vertical THT (TO-220, DHT11, buzzer) currently TRIP the gate as false-positives** and are deferred pending an `orientation-gate.ts` calibration (see TODO Wave-2).
+- **`--strict` requires an explicit `pinMap`** (it never auto-fills). For high-pin parts, generate identity maps from the footprint pad list — see the reusable generators `scratchpad/gen-p4.ts` / `gen-p5.ts` (read pads, emit `{pinNumber:n, padNumber:n}`; `padOverride` for non-electrical pads).
+- **The importer follows `extends` recursively** for pins → point `symbol.path` at the named child (e.g. `MMBT3904`, `DS18B20`); pins resolve from the parent.
+- **Duplicate footprint NAME across two asset ids fails validate** → reuse the existing shared footprint id (e.g. DS18B20 reuses `package.to-92-inline`) rather than minting a second asset for the same KiCad footprint.
+- **Sharing a symbol id across components makes the importer name the shared symbol after the _last_ component (name bleed)** → give each part its own symbol id unless the symbol is genuinely shared.
+- **Unnumbered/empty-number pads (DC barrel jack, potentiometer MP) are rejected by the strict importer** → defer (Wave-2) or add non-electrical-pad handling.
+- Importer flags use **`--flag=value`** form, not space-separated.
 
 ## Git
 
-On `master` (`dc42a69`), 3 commits ahead of the previous tip + the pre-existing 3D-hardening commit `0207ebb`. **4 commits ahead of `origin/master` — not yet pushed.**
+P2–P6 sweep committed to **`master`** as `6b114e4` (`feat(lib): P2–P6 content sweep — 23→80 components`), fast-forward merged from `feat/corelib-p2`. **`master` is 5 commits ahead of `origin/master` — NOT pushed.** Working tree clean.

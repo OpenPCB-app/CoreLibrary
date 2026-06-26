@@ -113,6 +113,54 @@ describe("evaluateOrientation — THT", () => {
     });
     expect(worstSeverity(findings)).toBe("error");
   });
+
+  // TO-220 reference: pads in a row along X (centre y≈0), body+tab stand up in
+  // +Z and sit behind the pad row in +Y, full leads reach ~9mm below the board.
+  const TO220_REF = { minX: -3.5, minY: -1.0, maxX: 3.5, maxY: 1.0 };
+
+  test("a vertical TO-220 (long leads, body behind the pad row) passes", () => {
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-5, -1, -9], [5, 9.5, 10]), // body up in +Z/+Y, leads -9mm
+      reference: TO220_REF,
+      orientationHint: "vertical",
+    });
+    // Allowed to warn (body-behind-pads, up-axis), but must not hard-fail.
+    expect(findings.some((f) => f.severity === "error")).toBe(false);
+  });
+
+  test("the same TO-220 bounds WITHOUT a vertical hint hard-fails on lead budget", () => {
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-5, -1, -9], [5, 9.5, 10]),
+      reference: TO220_REF,
+      // no orientationHint → default 6mm budget
+    });
+    expect(
+      findings.some((f) => f.check === "on-board" && f.severity === "error"),
+    ).toBe(true);
+  });
+
+  test("a vertical THT body offset ONLY in Y is a warning, but an X drift still errors", () => {
+    const behind = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-3.5, 2, -3], [3.5, 6, 9]), // centred in X, +4mm in Y
+      reference: TO220_REF,
+      orientationHint: "vertical",
+    });
+    const xy = behind.find((f) => f.check === "xy-center");
+    expect(xy?.severity).toBe("warning");
+
+    const drifted = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([1, 2, -3], [8, 6, 9]), // off in BOTH x and y
+      reference: TO220_REF,
+      orientationHint: "vertical",
+    });
+    expect(
+      drifted.some((f) => f.check === "xy-center" && f.severity === "error"),
+    ).toBe(true);
+  });
 });
 
 describe("referenceBounds", () => {
