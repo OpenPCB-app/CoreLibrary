@@ -1,0 +1,87 @@
+{
+  "id": "openpcb.core.ic.tlc555",
+  "uuid": "6322d5f4-2eb4-534e-8cf7-50c9e4b7a02f",
+  "version": "0.3.0",
+  "name": "TLC555 CMOS Timer",
+  "description": "TLC555 CMOS 555 timer, low power, up to 2MHz.",
+  "category": "ic",
+  "subcategory": "timer",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TLC555",
+    "555",
+    "timer",
+    "CMOS"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/tlc555.pdf",
+  "parameters": {
+    "supply": "2-15V",
+    "freq_max": "2MHz"
+  },
+  "symbol": "openpcb.core.symbol.ic.tlc555",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TLC555xD.kicad_sym",
+    "sourceLibrary": "Timer",
+    "sourceItemName": "TLC555 CMOS Timer",
+    "sourceHash": "f7fced6fcdbf7a10b9a8393b47eae20384b5a99a4aceb12243ec29121bbffc82",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

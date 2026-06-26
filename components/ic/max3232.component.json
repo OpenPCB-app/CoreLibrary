@@ -1,0 +1,119 @@
+{
+  "id": "openpcb.core.ic.max3232",
+  "uuid": "1451fb16-51f0-568a-8ea0-b359b6b715ab",
+  "version": "0.3.0",
+  "name": "MAX3232 RS-232 Transceiver",
+  "description": "MAX3232 dual RS-232 transceiver, 3-5.5V, 120kbps.",
+  "category": "ic",
+  "subcategory": "interface-rs232",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MAX3232",
+    "RS-232",
+    "transceiver",
+    "serial"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf",
+  "parameters": {
+    "channels": "2",
+    "supply": "3-5.5V"
+  },
+  "symbol": "openpcb.core.symbol.ic.max3232",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "label": "SOIC-16",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MAX3232.kicad_sym",
+    "sourceLibrary": "Interface_UART",
+    "sourceItemName": "MAX3232 RS-232 Transceiver",
+    "sourceHash": "84fa685762013223590dae7591a0ff9c084952963061b780dfd7cc5258379647",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,432 @@
+{
+  "id": "openpcb.core.symbol.diode.ss34",
+  "uuid": "166272aa-eb5f-5294-a767-617f1f23e109",
+  "version": "0.3.0",
+  "name": "SS34 Schottky Diode",
+  "referencePrefix": "D",
+  "description": "Schottky diode",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "D_Schottky.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "D_Schottky",
+    "sourceHash": "3524b57ad347b02af92a1e0c0468155db79c12146b2198a5382f656174867aaf",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "D",
+      "Value": "D_Schottky",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Schottky diode",
+      "ki_keywords": "diode Schottky",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "D_Schottky.kicad_sym",
+        "sourceItemName": "D_Schottky",
+        "sha256": "4618d1d395991ad2eecf6d39b27d42b447347fb69aeafcb02d741552bb5dc70f"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_1fc76f7f01adf93c",
+    "name": "D_Schottky",
+    "referencePrefix": "D",
+    "description": "Schottky diode",
+    "sourceHash": "3524b57ad347b02af92a1e0c0468155db79c12146b2198a5382f656174867aaf",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "K",
+        "localPosition": {
+          "x": -3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "A",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "D_Schottky",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.905,
+              "y": 0.635
+            },
+            {
+              "x": -1.905,
+              "y": 1.27
+            },
+            {
+              "x": -1.27,
+              "y": 1.27
+            },
+            {
+              "x": -1.27,
+              "y": -1.27
+            },
+            {
+              "x": -0.635,
+              "y": -1.27
+            },
+            {
+              "x": -0.635,
+              "y": -0.635
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 1.27
+            },
+            {
+              "x": 1.27,
+              "y": -1.27
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": 1.27
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 0
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 1.27,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "D",
+          "at": {
+            "x": 0,
+            "y": 2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "D_Schottky",
+          "at": {
+            "x": 0,
+            "y": -2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.937,
+        "minY": -3.937,
+        "maxX": 3.937,
+        "maxY": 3.937
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "D_Schottky",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "K",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "A",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "D",
+      "Value": "D_Schottky",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Schottky diode",
+      "ki_keywords": "diode Schottky",
+      "ki_fp_filters": "TO-???* *_Diode_* *SingleDiode* D_*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.905,
+              0.635
+            ],
+            [
+              "xy",
+              -1.905,
+              1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              -0.635,
+              -1.27
+            ],
+            [
+              "xy",
+              -0.635,
+              -0.635
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              1.27
+            ],
+            [
+              "xy",
+              1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              0
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol D_Schottky (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference D (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value D_Schottky (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Schottky diode\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"diode Schottky\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"TO-???* *_Diode_* *SingleDiode* D_*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol D_Schottky_0_1 (polyline (pts (xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy -1.27 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol D_Schottky_1_1 (pin passive line (at -3.81 0 0) (length 2.54) (name K (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 2.54) (name A (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

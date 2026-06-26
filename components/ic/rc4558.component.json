@@ -1,0 +1,87 @@
+{
+  "id": "openpcb.core.ic.rc4558",
+  "uuid": "cf14bad3-3f00-53b2-bde9-142eddcf3dc6",
+  "version": "0.3.0",
+  "name": "RC4558 Dual Op-Amp",
+  "description": "RC4558 dual general-purpose op-amp.",
+  "category": "ic",
+  "subcategory": "opamp",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "RC4558",
+    "op-amp",
+    "dual",
+    "audio"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/rc4558.pdf",
+  "parameters": {
+    "channels": "2",
+    "gbw": "3MHz"
+  },
+  "symbol": "openpcb.core.symbol.ic.rc4558",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "RC4558.kicad_sym",
+    "sourceLibrary": "Amplifier_Operational",
+    "sourceItemName": "RC4558 Dual Op-Amp",
+    "sourceHash": "3ba3f65a0628398d8997d617101899a5e176582a0f43b3dcfdde40a3cd30b231",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

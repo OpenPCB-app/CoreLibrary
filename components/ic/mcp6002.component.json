@@ -1,0 +1,89 @@
+{
+  "id": "openpcb.core.ic.mcp6002",
+  "uuid": "cc44d4a4-1b87-548c-867d-16a3892afd98",
+  "version": "0.3.0",
+  "name": "MCP6002 Dual RRIO Op-Amp",
+  "description": "MCP6002 dual rail-to-rail I/O op-amp, 1MHz, low power.",
+  "category": "ic",
+  "subcategory": "opamp",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MCP6002",
+    "op-amp",
+    "rail-to-rail",
+    "dual"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf",
+  "parameters": {
+    "channels": "2",
+    "gbw": "1MHz",
+    "supply": "1.8-6V",
+    "rail_to_rail": "true"
+  },
+  "symbol": "openpcb.core.symbol.ic.mcp6002",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MCP6002-xSN.kicad_sym",
+    "sourceLibrary": "Amplifier_Operational",
+    "sourceItemName": "MCP6002 Dual RRIO Op-Amp",
+    "sourceHash": "3017162faef23ee3d1563d87096c1478b07149ea5e7fc540333c644e9263672a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "openpcb.core.power.ap2112k-3v3",
+  "uuid": "3809743e-d105-58f7-b054-3368e1dd2446",
+  "version": "0.3.0",
+  "name": "AP2112K-3.3 LDO 600mA",
+  "description": "AP2112K-3.3 fixed 3.3V 600mA LDO, 250mV dropout, SOT-23-5, with enable.",
+  "category": "power",
+  "subcategory": "regulator-linear-ldo",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "AP2112K",
+    "LDO",
+    "3.3V",
+    "600mA",
+    "low-dropout"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.diodes.com/assets/Datasheets/AP2112.pdf",
+  "parameters": {
+    "vout": "3.3V",
+    "iout": "600mA",
+    "dropout": "250mV",
+    "topology": "linear-ldo"
+  },
+  "symbol": "openpcb.core.symbol.power.ap2112k-3v3",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23-5",
+      "label": "SOT-23-5",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "AP2112K-3.3.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "AP2112K-3.3 LDO 600mA",
+    "sourceHash": "ab4d2951494743aafa06e167d997ef6b5c487a346e50a8c9c1613b611c892c0a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

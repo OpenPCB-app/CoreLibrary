@@ -1,0 +1,1498 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.ic.tl072",
+      "name": "TL072 Dual JFET Op-Amp",
+      "description": "TL072 dual low-noise JFET-input operational amplifier.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TL072",
+        "op-amp",
+        "JFET",
+        "dual",
+        "audio"
+      ],
+      "parameters": {
+        "channels": "2",
+        "gbw": "3MHz",
+        "supply": "\u00b118V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.tl072",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/TL072.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.tl074",
+      "name": "TL074 Quad JFET Op-Amp",
+      "description": "TL074 quad low-noise JFET-input operational amplifier.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TL074",
+        "op-amp",
+        "JFET",
+        "quad"
+      ],
+      "parameters": {
+        "channels": "4",
+        "gbw": "3MHz",
+        "supply": "\u00b118V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.tl074",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/TL074.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.mcp6002",
+      "name": "MCP6002 Dual RRIO Op-Amp",
+      "description": "MCP6002 dual rail-to-rail I/O op-amp, 1MHz, low power.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "MCP6002",
+        "op-amp",
+        "rail-to-rail",
+        "dual"
+      ],
+      "parameters": {
+        "channels": "2",
+        "gbw": "1MHz",
+        "supply": "1.8-6V",
+        "rail_to_rail": "true"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.mcp6002",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/MCP6002-xSN.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.mcp6004",
+      "name": "MCP6004 Quad RRIO Op-Amp",
+      "description": "MCP6004 quad rail-to-rail I/O op-amp.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "MCP6004",
+        "op-amp",
+        "rail-to-rail",
+        "quad"
+      ],
+      "parameters": {
+        "channels": "4",
+        "gbw": "1MHz",
+        "supply": "1.8-6V",
+        "rail_to_rail": "true"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.mcp6004",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/MCP6004.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.lm339",
+      "name": "LM339 Quad Comparator",
+      "description": "LM339 quad differential comparator, open-collector outputs.",
+      "category": "ic",
+      "subcategory": "comparator",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM339",
+        "comparator",
+        "quad",
+        "open-collector"
+      ],
+      "parameters": {
+        "channels": "4",
+        "supply": "2-36V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.lm339",
+        "path": "kicad-symbols/Comparator.kicad_symdir/LM339.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.rc4558",
+      "name": "RC4558 Dual Op-Amp",
+      "description": "RC4558 dual general-purpose op-amp.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "RC4558",
+        "op-amp",
+        "dual",
+        "audio"
+      ],
+      "parameters": {
+        "channels": "2",
+        "gbw": "3MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.rc4558",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/RC4558.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.ne5532",
+      "name": "NE5532 Dual Low-Noise Op-Amp",
+      "description": "NE5532 dual low-noise high-performance audio op-amp.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "NE5532",
+        "op-amp",
+        "low-noise",
+        "audio",
+        "dual"
+      ],
+      "parameters": {
+        "channels": "2",
+        "gbw": "10MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.ne5532",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/NE5532.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.tlc555",
+      "name": "TLC555 CMOS Timer",
+      "description": "TLC555 CMOS 555 timer, low power, up to 2MHz.",
+      "category": "ic",
+      "subcategory": "timer",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TLC555",
+        "555",
+        "timer",
+        "CMOS"
+      ],
+      "parameters": {
+        "supply": "2-15V",
+        "freq_max": "2MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.tlc555",
+        "path": "kicad-symbols/Timer.kicad_symdir/TLC555xD.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.lm386",
+      "name": "LM386 Audio Power Amp",
+      "description": "LM386 low-voltage audio power amplifier, 0.5W.",
+      "category": "ic",
+      "subcategory": "audio-amp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM386",
+        "audio",
+        "amplifier",
+        "speaker"
+      ],
+      "parameters": {
+        "supply": "4-12V",
+        "pout": "0.5W"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.lm386",
+        "path": "kicad-symbols/Amplifier_Audio.kicad_symdir/LM386.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.max3232",
+      "name": "MAX3232 RS-232 Transceiver",
+      "description": "MAX3232 dual RS-232 transceiver, 3-5.5V, 120kbps.",
+      "category": "ic",
+      "subcategory": "interface-rs232",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "MAX3232",
+        "RS-232",
+        "transceiver",
+        "serial"
+      ],
+      "parameters": {
+        "channels": "2",
+        "supply": "3-5.5V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.max3232",
+        "path": "kicad-symbols/Interface_UART.kicad_symdir/MAX3232.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-16",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-16-3-9x9-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.74hc165",
+      "name": "74HC165 PISO Shift Register",
+      "description": "74HC165 8-bit parallel-in serial-out shift register.",
+      "category": "ic",
+      "subcategory": "logic-shift",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "74HC165",
+        "shift register",
+        "PISO",
+        "parallel-in"
+      ],
+      "parameters": {
+        "bits": "8",
+        "supply": "2-6V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.74hc165",
+        "path": "kicad-symbols/74xx.kicad_symdir/74HC165.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-16",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-16-3-9x9-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.74hc138",
+      "name": "74HC138 3-to-8 Decoder",
+      "description": "74HC138 3-to-8 line decoder/demultiplexer.",
+      "category": "ic",
+      "subcategory": "logic-decoder",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "74HC138",
+        "decoder",
+        "demultiplexer",
+        "3-to-8"
+      ],
+      "parameters": {
+        "supply": "2-6V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.74hc138",
+        "path": "kicad-symbols/74xx.kicad_symdir/74HC138.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-16",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-16-3-9x9-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.cd4051",
+      "name": "CD4051B 8-Ch Analog Mux",
+      "description": "CD4051B single 8-channel analog multiplexer/demultiplexer.",
+      "category": "ic",
+      "subcategory": "analog-mux",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "CD4051",
+        "CD4051B",
+        "mux",
+        "analog switch",
+        "8-channel"
+      ],
+      "parameters": {
+        "channels": "8",
+        "supply": "3-20V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.cd4051",
+        "path": "kicad-symbols/Analog_Switch.kicad_symdir/CD4051B.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-16",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-16-3-9x9-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.ap2112k-3v3",
+      "name": "AP2112K-3.3 LDO 600mA",
+      "description": "AP2112K-3.3 fixed 3.3V 600mA LDO, 250mV dropout, SOT-23-5, with enable.",
+      "category": "power",
+      "subcategory": "regulator-linear-ldo",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "AP2112K",
+        "LDO",
+        "3.3V",
+        "600mA",
+        "low-dropout"
+      ],
+      "parameters": {
+        "vout": "3.3V",
+        "iout": "600mA",
+        "dropout": "250mV",
+        "topology": "linear-ldo"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.ap2112k-3v3",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/AP2112K-3.3.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23-5",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod",
+          "label": "SOT-23-5",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23-5",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.me6211-3v3",
+      "name": "ME6211C33 LDO 500mA",
+      "description": "ME6211C33M5 fixed 3.3V 500mA LDO, SOT-23-5, with shutdown.",
+      "category": "power",
+      "subcategory": "regulator-linear-ldo",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ME6211",
+        "LDO",
+        "3.3V",
+        "500mA"
+      ],
+      "parameters": {
+        "vout": "3.3V",
+        "iout": "500mA",
+        "topology": "linear-ldo"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.me6211-3v3",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/ME6211C33M5.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23-5",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23-5.kicad_mod",
+          "label": "SOT-23-5",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23-5",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23-5.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.tlv1117-3v3",
+      "name": "TLV1117-3.3 LDO 800mA",
+      "description": "TLV1117-33 fixed 3.3V 800mA LDO, SOT-223.",
+      "category": "power",
+      "subcategory": "regulator-linear-ldo",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TLV1117",
+        "LDO",
+        "3.3V",
+        "800mA",
+        "SOT-223"
+      ],
+      "parameters": {
+        "vout": "3.3V",
+        "iout": "800mA",
+        "topology": "linear-ldo"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.tlv1117-3v3",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/TLV1117-33.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-223",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-223",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-223.kicad_mod",
+          "label": "SOT-223",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-223",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-223.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.dw01a",
+      "name": "DW01A Li-Ion Protection",
+      "description": "DW01A single-cell Li-Ion battery protection IC (OCP/OVP/UVP), SOT-23-6.",
+      "category": "power",
+      "subcategory": "battery-protection",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "DW01A",
+        "battery",
+        "protection",
+        "Li-Ion",
+        "BMS"
+      ],
+      "parameters": {
+        "cells": "1",
+        "topology": "protection"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.dw01a",
+        "path": "kicad-symbols/Battery_Management.kicad_symdir/DW01A.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23-6",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23-6.kicad_mod",
+          "label": "SOT-23-6",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23-6",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23-6.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.ss34",
+      "name": "SS34 Schottky Diode",
+      "description": "SS34 40V 3A surface-mount Schottky rectifier, SMA.",
+      "category": "diode",
+      "subcategory": "schottky",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "SS34",
+        "Schottky",
+        "40V",
+        "3A",
+        "SMA"
+      ],
+      "parameters": {
+        "reverse_voltage": "40V",
+        "forward_current": "3A",
+        "type": "schottky"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.ss34",
+        "path": "kicad-symbols/Device.kicad_symdir/D_Schottky.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA (DO-214AC)",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sma",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.crystal.resonator-ceramic",
+      "name": "Ceramic Resonator (3-pin)",
+      "description": "3-pin ceramic resonator with built-in load capacitors. Frequency per instance.",
+      "category": "crystal",
+      "subcategory": "resonator",
+      "tags": [
+        "crystal",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "resonator",
+        "ceramic",
+        "3-pin",
+        "murata"
+      ],
+      "parameters": {
+        "type": "ceramic",
+        "integrated_caps": "true"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.crystal.resonator-ceramic",
+        "path": "kicad-symbols/Device.kicad_symdir/Resonator.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.crystal.resonator-smd-3pin",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.crystal.resonator-smd-3pin",
+          "path": "kicad-footprints/Crystal.pretty/Resonator_SMD-3Pin_7.2x3.0mm.kicad_mod",
+          "label": "SMD 3-pin (7.2x3.0mm)",
+          "model": {
+            "id": "openpcb.core.3d.crystal.resonator-smd-3pin",
+            "path": "kicad-packages3D/Crystal.3dshapes/Resonator_SMD-3Pin_7.2x3.0mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

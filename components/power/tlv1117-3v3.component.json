@@ -1,0 +1,73 @@
+{
+  "id": "openpcb.core.power.tlv1117-3v3",
+  "uuid": "cede8062-3cb3-5a0a-8bc5-f0f84cc45c89",
+  "version": "0.3.0",
+  "name": "TLV1117-3.3 LDO 800mA",
+  "description": "TLV1117-33 fixed 3.3V 800mA LDO, SOT-223.",
+  "category": "power",
+  "subcategory": "regulator-linear-ldo",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TLV1117",
+    "LDO",
+    "3.3V",
+    "800mA",
+    "SOT-223"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/tlv1117.pdf",
+  "parameters": {
+    "vout": "3.3V",
+    "iout": "800mA",
+    "topology": "linear-ldo"
+  },
+  "symbol": "openpcb.core.symbol.power.tlv1117-3v3",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-223",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-223",
+      "label": "SOT-223",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TLV1117-33.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "TLV1117-3.3 LDO 800mA",
+    "sourceHash": "bd5d5bbbec7c169ea64476d30632f6d73540bba54519732593cb82b6e99ff65c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

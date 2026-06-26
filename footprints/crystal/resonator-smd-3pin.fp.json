@@ -1,0 +1,787 @@
+{
+  "id": "openpcb.core.footprint.crystal.resonator-smd-3pin",
+  "uuid": "89138fe6-704e-5e26-ac5f-136ad6d2003c",
+  "version": "0.3.0",
+  "name": "Resonator_SMD-3Pin_7.2x3.0mm",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.crystal.resonator-smd-3pin"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Resonator_SMD-3Pin_7.2x3.0mm.kicad_mod",
+    "sourceLibrary": "Crystal",
+    "sourceItemName": "Resonator_SMD-3Pin_7.2x3.0mm",
+    "sourceHash": "cf7a0f246c57e54894d6b107d703a48920d486b89e30407bcf987d1448e6327f",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_4436eb99f4498ee4",
+    "fileName": "Resonator_SMD-3Pin_7.2x3.0mm.kicad_mod",
+    "name": "Resonator_SMD-3Pin_7.2x3.0mm",
+    "description": "Murata CSTCC8M00G53-R0, Resonator/Filter, 8MHz, 7.2x3.0mm package, SMD, http://www.farnell.com/datasheets/19296.pdf?_ga=1.247244932.122297557.1475167906",
+    "mountType": "smd",
+    "padCount": 3,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "ceramic",
+      "smd"
+    ],
+    "sourceHash": "cf7a0f246c57e54894d6b107d703a48920d486b89e30407bcf987d1448e6327f",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Resonator_SMD-3Pin_7.2x3.0mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -2.5,
+            "y": 0
+          },
+          "widthMm": 1.4,
+          "heightMm": 3.8,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.178571,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.4,
+          "heightMm": 3.8,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.178571,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 2.5,
+            "y": 0
+          },
+          "widthMm": 1.4,
+          "heightMm": 3.8,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.178571,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.1,
+            "y": -1.76
+          },
+          "b": {
+            "x": -4.1,
+            "y": 1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.86,
+            "y": -1.76
+          },
+          "b": {
+            "x": -3.46,
+            "y": -1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.86,
+            "y": 1.76
+          },
+          "b": {
+            "x": -3.86,
+            "y": -1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.46,
+            "y": 1.76
+          },
+          "b": {
+            "x": -3.86,
+            "y": 1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.46,
+            "y": 2.16
+          },
+          "b": {
+            "x": -3.46,
+            "y": 1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.46,
+            "y": -1.76
+          },
+          "b": {
+            "x": 3.86,
+            "y": -1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.86,
+            "y": -1.76
+          },
+          "b": {
+            "x": 3.86,
+            "y": 1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.86,
+            "y": 1.76
+          },
+          "b": {
+            "x": 3.46,
+            "y": 1.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.6,
+              "y": -1.5
+            },
+            {
+              "x": 3.6,
+              "y": 1.5
+            },
+            {
+              "x": -2.85,
+              "y": 1.5
+            },
+            {
+              "x": -3.6,
+              "y": 0.75
+            },
+            {
+              "x": -3.6,
+              "y": -1.5
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2.85:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.85
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:2.85:Resonator_SMD-3Pin_7.2x3.0mm",
+          "text": "Resonator_SMD-3Pin_7.2x3.0mm",
+          "at": {
+            "x": 0,
+            "y": 2.85
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.159999999999998,
+        "minY": -1.9,
+        "maxX": 3.9199999999999995,
+        "maxY": 2.22
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Resonator_SMD-3Pin_7.2x3.0mm",
+    "description": "Murata CSTCC8M00G53-R0, Resonator/Filter, 8MHz, 7.2x3.0mm package, SMD, http://www.farnell.com/datasheets/19296.pdf?_ga=1.247244932.122297557.1475167906",
+    "tags": [
+      "ceramic"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -2.5,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.4,
+          "height": 3.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.178571
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.4,
+          "height": 3.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.178571
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 2.5,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.4,
+          "height": 3.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.178571
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.1,
+            -1.76
+          ],
+          "end": [
+            -4.1,
+            1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.86,
+            -1.76
+          ],
+          "end": [
+            -3.46,
+            -1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.86,
+            1.76
+          ],
+          "end": [
+            -3.86,
+            -1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.46,
+            1.76
+          ],
+          "end": [
+            -3.86,
+            1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.46,
+            2.16
+          ],
+          "end": [
+            -3.46,
+            1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.46,
+            -1.76
+          ],
+          "end": [
+            3.86,
+            -1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.86,
+            -1.76
+          ],
+          "end": [
+            3.86,
+            1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.86,
+            1.76
+          ],
+          "end": [
+            3.46,
+            1.76
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -4.1,
+            -2.15
+          ],
+          "end": [
+            4.1,
+            2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.Fab",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              3.6,
+              -1.5
+            ],
+            [
+              "xy",
+              3.6,
+              1.5
+            ],
+            [
+              "xy",
+              -2.85,
+              1.5
+            ],
+            [
+              "xy",
+              -3.6,
+              0.75
+            ],
+            [
+              "xy",
+              -3.6,
+              -1.5
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -2.85,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -2.85
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            2.85,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Resonator_SMD-3Pin_7.2x3.0mm"
+          ]
+        },
+        "text": {
+          "content": "Resonator_SMD-3Pin_7.2x3.0mm",
+          "position": {
+            "x": 0,
+            "y": 2.85
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Resonator_SMD-3Pin_7.2x3.0mm.step",
+        "resolvedFileName": "Resonator_SMD-3Pin_7.2x3.0mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Resonator_SMD-3Pin_7.2x3.0mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Murata CSTCC8M00G53-R0, Resonator/Filter, 8MHz, 7.2x3.0mm package, SMD, http://www.farnell.com/datasheets/19296.pdf?_ga=1.247244932.122297557.1475167906\")\n\t(tags \"ceramic\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2.85 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Resonator_SMD-3Pin_7.2x3.0mm\"\n\t\t(at 0 2.85 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"crystal_resonator_oscillator\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -4.1 -1.76)\n\t\t(end -4.1 1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -3.86 -1.76)\n\t\t(end -3.46 -1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -3.86 1.76)\n\t\t(end -3.86 -1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -3.46 1.76)\n\t\t(end -3.86 1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -3.46 2.16)\n\t\t(end -3.46 1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.46 -1.76)\n\t\t(end 3.86 -1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.86 -1.76)\n\t\t(end 3.86 1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 3.86 1.76)\n\t\t(end 3.46 1.76)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -4.1 -2.15)\n\t\t(end 4.1 2.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy 3.6 -1.5)\n\t\t\t(xy 3.6 1.5)\n\t\t\t(xy -2.85 1.5)\n\t\t\t(xy -3.6 0.75)\n\t\t\t(xy -3.6 -1.5)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -2.5 0)\n\t\t(size 1.4 3.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.178571)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 0 0)\n\t\t(size 1.4 3.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.178571)\n\t)\n\t(pad \"3\" smd roundrect\n\t\t(at 2.5 0)\n\t\t(size 1.4 3.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.178571)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Crystal.3dshapes/Resonator_SMD-3Pin_7.2x3.0mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Resonator_SMD-3Pin_7.2x3.0mm.kicad_mod"
+}

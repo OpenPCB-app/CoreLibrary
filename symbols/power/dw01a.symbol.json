@@ -1,0 +1,600 @@
+{
+  "id": "openpcb.core.symbol.power.dw01a",
+  "uuid": "78809750-695f-514b-b76b-98f92e34208d",
+  "version": "0.3.0",
+  "name": "DW01A Li-Ion Protection",
+  "referencePrefix": "U",
+  "description": "Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "DW01A.kicad_sym",
+    "sourceLibrary": "Battery_Management",
+    "sourceItemName": "DW01A",
+    "sourceHash": "9c090c9dc18d8fa75178908869340e1db8a778bf92a1601c9c88f332bf825bda",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "DW01A",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Datasheet": "https://hmsemi.com/downfile/DW01A.PDF",
+      "Description": "Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery",
+      "ki_keywords": "battery protection li-ion lipo overcurrent overdischarge overcharge",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "DW01A.kicad_sym",
+        "sourceItemName": "DW01A",
+        "sha256": "59cc4d98a8e49a4ad0f88b647170ea1fc6928bf8c9f55703c96c6b0f3324cbf2"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_6938502923e73cdd",
+    "name": "DW01A",
+    "referencePrefix": "U",
+    "description": "Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery",
+    "sourceHash": "9c090c9dc18d8fa75178908869340e1db8a778bf92a1601c9c88f332bf825bda",
+    "pins": [
+      {
+        "originPinKey": "u0:1",
+        "number": "1",
+        "name": "OD",
+        "localPosition": {
+          "x": -2.54,
+          "y": -7.62
+        },
+        "electricalType": "output",
+        "unit": 0
+      },
+      {
+        "originPinKey": "u0:2",
+        "number": "2",
+        "name": "CS",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 0
+      },
+      {
+        "originPinKey": "u0:3",
+        "number": "3",
+        "name": "OC",
+        "localPosition": {
+          "x": 2.54,
+          "y": -7.62
+        },
+        "electricalType": "output",
+        "unit": 0
+      },
+      {
+        "originPinKey": "u0:5",
+        "number": "5",
+        "name": "VCC",
+        "localPosition": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "electricalType": "power_in",
+        "unit": 0
+      },
+      {
+        "originPinKey": "u0:6",
+        "number": "6",
+        "name": "GND",
+        "localPosition": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "electricalType": "power_in",
+        "unit": 0
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "TD",
+        "localPosition": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "electricalType": "no_connect",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "DW01A",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -5.08,
+          "width": 15.24,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u0:1",
+          "name": "OD",
+          "number": "1",
+          "electricalType": "output",
+          "unit": 0,
+          "anchor": {
+            "x": -2.54,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u0:2",
+          "name": "CS",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 0,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u0:3",
+          "name": "OC",
+          "number": "3",
+          "electricalType": "output",
+          "unit": 0,
+          "anchor": {
+            "x": 2.54,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u0:5",
+          "name": "VCC",
+          "number": "5",
+          "electricalType": "power_in",
+          "unit": 0,
+          "anchor": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u0:6",
+          "name": "GND",
+          "number": "6",
+          "electricalType": "power_in",
+          "unit": 0,
+          "anchor": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "TD",
+          "number": "4",
+          "electricalType": "no_connect",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "u0:1:name",
+          "text": "OD",
+          "at": {
+            "x": -2.54,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u0:1:number",
+          "text": "1",
+          "at": {
+            "x": -2.032,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u0:2:name",
+          "text": "CS",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u0:2:number",
+          "text": "2",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u0:3:name",
+          "text": "OC",
+          "at": {
+            "x": 2.54,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u0:3:number",
+          "text": "3",
+          "at": {
+            "x": 3.048,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u0:5:name",
+          "text": "VCC",
+          "at": {
+            "x": -7.112,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u0:5:number",
+          "text": "5",
+          "at": {
+            "x": -8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u0:6:name",
+          "text": "GND",
+          "at": {
+            "x": -7.112,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u0:6:number",
+          "text": "6",
+          "at": {
+            "x": -8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "TD",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 6.477
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "DW01A",
+          "at": {
+            "x": 0,
+            "y": -9.0805
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -10.3505,
+        "maxX": 10.16,
+        "maxY": 7.747
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "DW01A",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "OD",
+        "number": "1",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 0,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CS",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 0,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "OC",
+        "number": "3",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 0,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "5",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 0,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "6",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 0,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "TD",
+        "number": "4",
+        "electricalType": "no_connect",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "DW01A",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "Datasheet": "https://hmsemi.com/downfile/DW01A.PDF",
+      "Description": "Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery",
+      "ki_keywords": "battery protection li-ion lipo overcurrent overdischarge overcharge",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            5.08
+          ],
+          [
+            "end",
+            7.62,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol DW01A (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -6.604 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value DW01A (at 4.318 6.604 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Package_TO_SOT_SMD:SOT-23-6 (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://hmsemi.com/downfile/DW01A.PDF (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Overcharge, overcurrent and overdischarge protection IC for single cell lithium-ion/polymer battery\" (at 0.254 1.524 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"battery protection li-ion lipo overcurrent overdischarge overcharge\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOT?23* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol DW01A_0_1 (pin output line (at -2.54 -7.62 90) (length 2.54) (name OD (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 -2.54 180) (length 2.54) (name CS (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin output line (at 2.54 -7.62 90) (length 2.54) (name OC (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_in line (at -10.16 2.54 0) (length 2.54) (name VCC (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin power_in line (at -10.16 -2.54 0) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27)))))) (symbol DW01A_1_1 (rectangle (start -7.62 5.08) (end 7.62 -5.08) (stroke (width 0.254) (type default)) (fill (type background))) (pin no_connect line (at 10.16 2.54 180) (length 2.54) (hide yes) (name TD (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

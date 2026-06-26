@@ -1,0 +1,88 @@
+{
+  "id": "openpcb.core.ic.ne5532",
+  "uuid": "c0e388bd-adfc-5871-af5d-b39cea78b9ce",
+  "version": "0.3.0",
+  "name": "NE5532 Dual Low-Noise Op-Amp",
+  "description": "NE5532 dual low-noise high-performance audio op-amp.",
+  "category": "ic",
+  "subcategory": "opamp",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "NE5532",
+    "op-amp",
+    "low-noise",
+    "audio",
+    "dual"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/ne5532.pdf",
+  "parameters": {
+    "channels": "2",
+    "gbw": "10MHz"
+  },
+  "symbol": "openpcb.core.symbol.ic.ne5532",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "NE5532.kicad_sym",
+    "sourceLibrary": "Amplifier_Operational",
+    "sourceItemName": "NE5532 Dual Low-Noise Op-Amp",
+    "sourceHash": "4e785565a32980c8a2ca702575501a0d6e2bd67ead93ac867617a0181398042f",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,2315 @@
+{
+  "id": "openpcb.core.symbol.ic.max3232",
+  "uuid": "1dab0154-2d66-55aa-b644-29a0efb1958e",
+  "version": "0.3.0",
+  "name": "MAX3232 RS-232 Transceiver",
+  "referencePrefix": "U",
+  "description": "3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "MAX3232.kicad_sym",
+    "sourceLibrary": "Interface_UART",
+    "sourceItemName": "MAX3232",
+    "sourceHash": "b295c143d21cbc4ef2813078ef7087756abb3e18a9afa902bdc89d77e19848db",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from MAX232"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "MAX3232",
+      "Footprint": "",
+      "Datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf",
+      "Description": "3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors",
+      "ki_keywords": "rs232 uart transceiver line-driver",
+      "ki_fp_filters": "SOIC*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "MAX3232.kicad_sym",
+        "sourceItemName": "MAX3232",
+        "sha256": "02b49e0c6440d59c398f025474a543303ffce639aa81ae285e42f218fbb03961"
+      },
+      {
+        "fileName": "MAX232.kicad_sym",
+        "sourceItemName": "MAX232",
+        "sha256": "33e93c65d48953d3f8867d3b6f348dbf0320d459ab874ac04ed1f76884b4f608"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_d95dadab59336932",
+    "name": "MAX3232",
+    "referencePrefix": "U",
+    "description": "3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors",
+    "sourceHash": "b295c143d21cbc4ef2813078ef7087756abb3e18a9afa902bdc89d77e19848db",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "C1+",
+        "localPosition": {
+          "x": -20.32,
+          "y": 22.86
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "VS+",
+        "localPosition": {
+          "x": 20.32,
+          "y": 10.16
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "C1-",
+        "localPosition": {
+          "x": -20.32,
+          "y": 15.24
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "C2+",
+        "localPosition": {
+          "x": 20.32,
+          "y": 22.86
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "C2-",
+        "localPosition": {
+          "x": 20.32,
+          "y": 15.24
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "VS-",
+        "localPosition": {
+          "x": 20.32,
+          "y": 2.54
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "T2OUT",
+        "localPosition": {
+          "x": 20.32,
+          "y": -7.62
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "R2IN",
+        "localPosition": {
+          "x": 20.32,
+          "y": -17.78
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "R2OUT",
+        "localPosition": {
+          "x": -20.32,
+          "y": -17.78
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "T2IN",
+        "localPosition": {
+          "x": -20.32,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "T1IN",
+        "localPosition": {
+          "x": -20.32,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "R1OUT",
+        "localPosition": {
+          "x": -20.32,
+          "y": -12.7
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "R1IN",
+        "localPosition": {
+          "x": 20.32,
+          "y": -12.7
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "T1OUT",
+        "localPosition": {
+          "x": 20.32,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -30.48
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "VCC",
+        "localPosition": {
+          "x": 0,
+          "y": 30.48
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from MAX232"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "MAX3232",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -15.24,
+          "y": -25.4,
+          "width": 30.48,
+          "height": 50.8,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": -0.635
+            },
+            {
+              "x": -3.81,
+              "y": -4.445
+            },
+            {
+              "x": 0,
+              "y": -2.54
+            },
+            {
+              "x": -3.81,
+              "y": -0.635
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": -2.54
+            },
+            {
+              "x": -8.255,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": -5.715
+            },
+            {
+              "x": -3.81,
+              "y": -9.525
+            },
+            {
+              "x": 0,
+              "y": -7.62
+            },
+            {
+              "x": -3.81,
+              "y": -5.715
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": -7.62
+            },
+            {
+              "x": -8.255,
+              "y": -7.62
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.175,
+              "y": -12.7
+            },
+            {
+              "x": -8.255,
+              "y": -12.7
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.175,
+              "y": -17.78
+            },
+            {
+              "x": -8.255,
+              "y": -17.78
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -2.54,
+            "y": -12.7
+          },
+          "radiusMm": 0.635,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -2.54,
+            "y": -17.78
+          },
+          "radiusMm": 0.635,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0.635,
+            "y": -2.54
+          },
+          "radiusMm": 0.635,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0.635,
+            "y": -7.62
+          },
+          "radiusMm": 0.635,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": -2.54
+            },
+            {
+              "x": 6.35,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": -7.62
+            },
+            {
+              "x": 6.35,
+              "y": -7.62
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.905,
+              "y": -10.795
+            },
+            {
+              "x": 1.905,
+              "y": -14.605
+            },
+            {
+              "x": -1.905,
+              "y": -12.7
+            },
+            {
+              "x": 1.905,
+              "y": -10.795
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.905,
+              "y": -12.7
+            },
+            {
+              "x": 6.35,
+              "y": -12.7
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.905,
+              "y": -15.875
+            },
+            {
+              "x": 1.905,
+              "y": -19.685
+            },
+            {
+              "x": -1.905,
+              "y": -17.78
+            },
+            {
+              "x": 1.905,
+              "y": -15.875
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.905,
+              "y": -17.78
+            },
+            {
+              "x": 6.35,
+              "y": -17.78
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "C1+",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 22.86
+          },
+          "bodyEnd": {
+            "x": -15.24,
+            "y": 22.86
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "VS+",
+          "number": "2",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": 10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "C1-",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -15.24,
+            "y": 15.24
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "C2+",
+          "number": "4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 22.86
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": 22.86
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:5",
+          "name": "C2-",
+          "number": "5",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "VS-",
+          "number": "6",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "T2OUT",
+          "number": "7",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": -7.619999999999999
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:8",
+          "name": "R2IN",
+          "number": "8",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -17.78
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": -17.78
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:9",
+          "name": "R2OUT",
+          "number": "9",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -17.78
+          },
+          "bodyEnd": {
+            "x": -15.24,
+            "y": -17.78
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:10",
+          "name": "T2IN",
+          "number": "10",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -15.24,
+            "y": -7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:11",
+          "name": "T1IN",
+          "number": "11",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -15.24,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:12",
+          "name": "R1OUT",
+          "number": "12",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": -15.24,
+            "y": -12.7
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:13",
+          "name": "R1IN",
+          "number": "13",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": -12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:14",
+          "name": "T1OUT",
+          "number": "14",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 15.24,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:15",
+          "name": "GND",
+          "number": "15",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -30.48
+          },
+          "bodyEnd": {
+            "x": 3.110602869834277e-16,
+            "y": -25.4
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:16",
+          "name": "VCC",
+          "number": "16",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 30.48
+          },
+          "bodyEnd": {
+            "x": -9.331808609502831e-16,
+            "y": 25.4
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "C1+",
+          "at": {
+            "x": -14.732,
+            "y": 22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -17.78,
+            "y": 23.368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "VS+",
+          "at": {
+            "x": 14.732,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 17.78,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "C1-",
+          "at": {
+            "x": -14.732,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -17.78,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "C2+",
+          "at": {
+            "x": 14.732,
+            "y": 22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 17.78,
+            "y": 23.368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "C2-",
+          "at": {
+            "x": 14.732,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 17.78,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "VS-",
+          "at": {
+            "x": 14.732,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 17.78,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "T2OUT",
+          "at": {
+            "x": 14.732,
+            "y": -7.619999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 17.78,
+            "y": -7.111999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "R2IN",
+          "at": {
+            "x": 14.732,
+            "y": -17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 17.78,
+            "y": -17.272000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "R2OUT",
+          "at": {
+            "x": -14.732,
+            "y": -17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": -17.78,
+            "y": -17.272000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "T2IN",
+          "at": {
+            "x": -14.732,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": -17.78,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "T1IN",
+          "at": {
+            "x": -14.732,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": -17.78,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "R1OUT",
+          "at": {
+            "x": -14.732,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": -17.78,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "R1IN",
+          "at": {
+            "x": 14.732,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": 17.78,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "T1OUT",
+          "at": {
+            "x": 14.732,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": 17.78,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "GND",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -25.907999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": 0.508,
+            "y": -30.0736
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "VCC",
+          "at": {
+            "x": -9.331808609502831e-16,
+            "y": 25.907999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": 0.5079999999999999,
+            "y": 30.0736
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol-text:0:-11.43:-22.86:LOGIC",
+          "text": "LOGIC",
+          "at": {
+            "x": -11.43,
+            "y": -22.86
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle"
+        },
+        {
+          "id": "symbol-text:0:11.43:-22.86:RS232",
+          "text": "RS232",
+          "at": {
+            "x": 11.43,
+            "y": -22.86
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 32.131
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "MAX3232",
+          "at": {
+            "x": 0,
+            "y": -32.131
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -20.32,
+        "minY": -33.401,
+        "maxX": 20.32,
+        "maxY": 33.401
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from MAX232"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "MAX3232",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "C1+",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 22.86
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VS+",
+        "number": "2",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 10.16
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C1-",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 15.24
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C2+",
+        "number": "4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 22.86
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C2-",
+        "number": "5",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 15.24
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VS-",
+        "number": "6",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 2.54
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "T2OUT",
+        "number": "7",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -7.62
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R2IN",
+        "number": "8",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -17.78
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R2OUT",
+        "number": "9",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -17.78
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "T2IN",
+        "number": "10",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -7.62
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "T1IN",
+        "number": "11",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -2.54
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R1OUT",
+        "number": "12",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -12.7
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R1IN",
+        "number": "13",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -12.7
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "T1OUT",
+        "number": "14",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -2.54
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "15",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -30.48
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "16",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 30.48
+        },
+        "length": 5.08,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "MAX3232",
+      "Footprint": "",
+      "Datasheet": "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf",
+      "Description": "3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors",
+      "ki_keywords": "rs232 uart transceiver line-driver",
+      "ki_fp_filters": "SOIC*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "text",
+          "LOGIC",
+          [
+            "at",
+            -11.43,
+            -22.86,
+            0
+          ],
+          [
+            "effects",
+            [
+              "font",
+              [
+                "size",
+                1.27,
+                1.27
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "text",
+          "RS232",
+          [
+            "at",
+            11.43,
+            -22.86,
+            0
+          ],
+          [
+            "effects",
+            [
+              "font",
+              [
+                "size",
+                1.27,
+                1.27
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -15.24,
+            -25.4
+          ],
+          [
+            "end",
+            15.24,
+            25.4
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              -0.635
+            ],
+            [
+              "xy",
+              -3.81,
+              -4.445
+            ],
+            [
+              "xy",
+              0,
+              -2.54
+            ],
+            [
+              "xy",
+              -3.81,
+              -0.635
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              -2.54
+            ],
+            [
+              "xy",
+              -8.255,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              -5.715
+            ],
+            [
+              "xy",
+              -3.81,
+              -9.525
+            ],
+            [
+              "xy",
+              0,
+              -7.62
+            ],
+            [
+              "xy",
+              -3.81,
+              -5.715
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              -7.62
+            ],
+            [
+              "xy",
+              -8.255,
+              -7.62
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.175,
+              -12.7
+            ],
+            [
+              "xy",
+              -8.255,
+              -12.7
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.175,
+              -17.78
+            ],
+            [
+              "xy",
+              -8.255,
+              -17.78
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -2.54,
+            -12.7
+          ],
+          [
+            "radius",
+            0.635
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -2.54,
+            -17.78
+          ],
+          [
+            "radius",
+            0.635
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0.635,
+            -2.54
+          ],
+          [
+            "radius",
+            0.635
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0.635,
+            -7.62
+          ],
+          [
+            "radius",
+            0.635
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              -2.54
+            ],
+            [
+              "xy",
+              6.35,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              -7.62
+            ],
+            [
+              "xy",
+              6.35,
+              -7.62
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.905,
+              -10.795
+            ],
+            [
+              "xy",
+              1.905,
+              -14.605
+            ],
+            [
+              "xy",
+              -1.905,
+              -12.7
+            ],
+            [
+              "xy",
+              1.905,
+              -10.795
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.905,
+              -12.7
+            ],
+            [
+              "xy",
+              6.35,
+              -12.7
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.905,
+              -15.875
+            ],
+            [
+              "xy",
+              1.905,
+              -19.685
+            ],
+            [
+              "xy",
+              -1.905,
+              -17.78
+            ],
+            [
+              "xy",
+              1.905,
+              -15.875
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.905,
+              -17.78
+            ],
+            [
+              "xy",
+              6.35,
+              -17.78
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from MAX232"
+      }
+    ],
+    "rawSource": "(symbol MAX3232 (extends MAX232) (property Reference U (at -2.54 28.575 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property Value MAX3232 (at -2.54 26.67 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property Footprint \"\" (at 1.27 -26.67 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Datasheet https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf (at 0 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"3.0V to 5.5V, Low-Power, up to 1Mbps, True RS-232 Transceivers Using Four 0.1μF External Capacitors\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"rs232 uart transceiver line-driver\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"SOIC*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

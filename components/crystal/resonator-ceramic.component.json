@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.crystal.resonator-ceramic",
+  "uuid": "c36fdd01-a8cb-5963-9b88-b295326b404a",
+  "version": "0.3.0",
+  "name": "Ceramic Resonator (3-pin)",
+  "description": "3-pin ceramic resonator with built-in load capacitors. Frequency per instance.",
+  "category": "crystal",
+  "subcategory": "resonator",
+  "tags": [
+    "crystal",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "resonator",
+    "ceramic",
+    "3-pin",
+    "murata"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "type": "ceramic",
+    "integrated_caps": "true"
+  },
+  "symbol": "openpcb.core.symbol.crystal.resonator-ceramic",
+  "defaultFootprint": "openpcb.core.footprint.crystal.resonator-smd-3pin",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.crystal.resonator-smd-3pin",
+      "label": "SMD 3-pin (7.2x3.0mm)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Resonator.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Ceramic Resonator (3-pin)",
+    "sourceHash": "19e88fbed171e4337fb6766c3af87c6b3edd651c0bfd0c469398ee28e3ea3295",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

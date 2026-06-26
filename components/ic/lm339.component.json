@@ -1,0 +1,111 @@
+{
+  "id": "openpcb.core.ic.lm339",
+  "uuid": "d00a4a43-33ab-56b9-9051-7936103bb1e2",
+  "version": "0.3.0",
+  "name": "LM339 Quad Comparator",
+  "description": "LM339 quad differential comparator, open-collector outputs.",
+  "category": "ic",
+  "subcategory": "comparator",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM339",
+    "comparator",
+    "quad",
+    "open-collector"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.st.com/resource/en/datasheet/lm139.pdf",
+  "parameters": {
+    "channels": "4",
+    "supply": "2-36V"
+  },
+  "symbol": "openpcb.core.symbol.ic.lm339",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "label": "SOIC-14",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM339.kicad_sym",
+    "sourceLibrary": "Comparator",
+    "sourceItemName": "LM339 Quad Comparator",
+    "sourceHash": "cb200288552561c3bbbba58e0696bc8751ca2f1a50ff25f05a8fc9bc1ffd7a29",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

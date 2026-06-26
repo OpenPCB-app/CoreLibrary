@@ -1,0 +1,64 @@
+{
+  "id": "openpcb.core.diode.ss34",
+  "uuid": "7116486f-16fa-5f2a-b16f-eabce5f62f6b",
+  "version": "0.3.0",
+  "name": "SS34 Schottky Diode",
+  "description": "SS34 40V 3A surface-mount Schottky rectifier, SMA.",
+  "category": "diode",
+  "subcategory": "schottky",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SS34",
+    "Schottky",
+    "40V",
+    "3A",
+    "SMA"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "reverse_voltage": "40V",
+    "forward_current": "3A",
+    "type": "schottky"
+  },
+  "symbol": "openpcb.core.symbol.diode.ss34",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sma",
+      "label": "SMA (DO-214AC)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "D_Schottky.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "SS34 Schottky Diode",
+    "sourceHash": "38f6a29c83f3c3fcd06fdcfb026b22239e1b649bd37368baa0c7df2dd4109849",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-06-26T07:14:53.876Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
