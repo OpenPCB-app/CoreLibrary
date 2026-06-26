@@ -6,7 +6,17 @@ Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](
 
 **Invariant for every content phase:** branch `feat/corelib-<phase>` → author `tools/manifests/<phase>.json` (symdir paths; **every footprint has a STEP**) → `import --strict` → `validate --release --strict` → `audit:3d` → `bun test` → `pack` spot-check → PR. CI runs `--release --strict`, so no-STEP parts go to Wave 2.
 
-## 2026-06-25 session update — Foundations + W1 started → 86 components (uncommitted)
+## 2026-06-26 update — 125-component milestone reached (committed to master)
+
+**80 → 125 components**, all gates green, committed (`5df616c` foundations+W1, `dbc6af6` W2-clean→105, `314948b` W1/W2→125). Added since 86: opamps/comparators/timers (TL072/TL074/MCP6002/MCP6004/LM339/RC4558/NE5532/TLC555/LM386), LDOs/protection (AP2112K/ME6211/TLV1117/DW01A), interface/logic (MAX3232/PCF8574/ULN2003A/74HC02/74HC74/74HC86/74HC138/74HC165/CD4051), connectors (pin-header 1x10/1x12/2x08, JST-XH 2/3/4, IDC 2x05), SOT-23 BJTs (BC817/807/847/857/MMBT2222A/BSS84), diodes (SS34/1N5819/1N5408), ceramic resonator.
+
+**Method:** reuse existing `package.*`/`diode.*` footprints via `--allow-overwrite` (SOIC/SOT clean; DIP/connectors need `scaleMm.y:-1` re-flip — patched post-import). Generators in `scratchpad/gen-w2a.py`. **Don't duplicate parametric R/C/L/crystal** — adding L_0805/Crystal_3215 again triggers duplicate-name failures (they're already footprint variants of `inductor`/`crystal`).
+
+**⚠ NEW cross-repo blocker:** at 125 components the packed `.opclib` = **539 zip entries > the shared reader's `maxEntries:500` cap** → `@openpcb/opclib-pack` would reject the library (and so would the app at boot). Raised to **8192** in the shared SOURCE (`shared/packages/opclib-pack/src/validate/constants.ts`) + local `node_modules` to pass `pack-shared-compat`; **the shared repo still needs its own commit + version bump + app re-pin** (Phase R). Byte limits (50 MB / 200 MB) remain the real zip-bomb guard.
+
+**Still deferred:** MountingHole/Fiducial (need `@openpcb/kicad-import` `validateFootprintPads` NPTH-pad relaxation — shared change); USB-C (complex non-identity pinMap); EC11/relay/buzzer/PC817; W3 external-sourced; R release.
+
+## 2026-06-25 session update — Foundations + W1 started → 86 components
 
 **Decisions (maintainer):** full v1 grind (~250–300) · STEP gate relaxed (`no3d` for asm-only electrical too) · external+generated assets allowed under tagged provenance · datasheets data-only until release. Full record: `~/.claude/plans/act-as-senior-software-refactored-cray.md`.
 
