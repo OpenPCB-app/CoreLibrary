@@ -1,0 +1,305 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.ic.l293d",
+      "name": "L293D Motor Driver",
+      "description": "L293D quad half-H-bridge motor driver, DIP-16.",
+      "category": "ic",
+      "subcategory": "driver",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "L293D",
+        "motor driver",
+        "H-bridge"
+      ],
+      "parameters": {
+        "channels": "4",
+        "vout": "36V",
+        "iout": "600mA"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.l293d",
+        "path": "kicad-symbols/Driver_Motor.kicad_symdir/L293D.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.dip-16-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-16_W7.62mm.kicad_mod",
+          "label": "DIP-16",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-16-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-16_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.uln2803a",
+      "name": "ULN2803A Darlington Array",
+      "description": "ULN2803A octal Darlington transistor array, DIP-18 / SOIC-18.",
+      "category": "ic",
+      "subcategory": "driver",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ULN2803A",
+        "Darlington",
+        "array",
+        "driver"
+      ],
+      "parameters": {
+        "channels": "8",
+        "vout": "50V",
+        "iout": "500mA"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.uln2803a",
+        "path": "kicad-symbols/Transistor_Array.kicad_symdir/ULN2803A.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.dip-18-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.dip-18-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-18_W7.62mm.kicad_mod",
+          "label": "DIP-18",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-18-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-18_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.soic-18w-7-5x11-6mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-18W_7.5x11.6mm_P1.27mm.kicad_mod",
+          "label": "SOIC-18W",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-18w-7-5x11-6mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-18W_7.5x11.6mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
