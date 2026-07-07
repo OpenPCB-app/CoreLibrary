@@ -1,0 +1,174 @@
+{
+  "id": "openpcb.core.ic.cd4013",
+  "uuid": "bea3ad42-147a-5118-ae65-a3bb0352691e",
+  "version": "0.3.0",
+  "name": "CD4013 Dual D Flip-Flop",
+  "description": "CD4013B dual D-type flip-flop, CMOS.",
+  "category": "ic",
+  "subcategory": "logic",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "CD4013",
+    "4013",
+    "flip-flop",
+    "CMOS",
+    "logic"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF",
+  "parameters": {
+    "family": "CD4000",
+    "function": "dual D-FF"
+  },
+  "symbol": "openpcb.core.symbol.ic.cd4013",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+      "label": "DIP-14",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "label": "SOIC-14",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "4013.kicad_sym",
+    "sourceLibrary": "4xxx",
+    "sourceItemName": "CD4013 Dual D Flip-Flop",
+    "sourceHash": "7c7538ef061b2de617bfbe0d12be568b700251eb1f32e5c1809108defdc5a52d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:45:38.942Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

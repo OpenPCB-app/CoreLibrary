@@ -1,0 +1,1322 @@
+{
+  "id": "openpcb.core.symbol.ic.cd4017",
+  "uuid": "97647a51-caf9-588f-98f8-ba8ffe052aa2",
+  "version": "0.3.0",
+  "name": "CD4017 Decade Counter",
+  "referencePrefix": "U",
+  "description": "Johnson Counter ( 10 outputs )",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "4017.kicad_sym",
+    "sourceLibrary": "4xxx",
+    "sourceItemName": "4017",
+    "sourceHash": "9a1718bd96196ae60298e411203b0ed7ef01b4b6945f7c1a5fe8418c221e9e3c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:45:38.942Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "4017",
+      "Footprint": "",
+      "Datasheet": "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf",
+      "Description": "Johnson Counter ( 10 outputs )",
+      "ki_locked": "",
+      "ki_keywords": "CNT CNT10",
+      "ki_fp_filters": "DIP?16*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "4017.kicad_sym",
+        "sourceItemName": "4017",
+        "sha256": "38d7e43e3f5d8ca446d7d2b3a89a40fb54df93379696ccc90281adce2d5e45a9"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_0ad07a6f2488f133",
+    "name": "4017",
+    "referencePrefix": "U",
+    "description": "Johnson Counter ( 10 outputs )",
+    "sourceHash": "9a1718bd96196ae60298e411203b0ed7ef01b4b6945f7c1a5fe8418c221e9e3c",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "Q5",
+        "localPosition": {
+          "x": 12.7,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "Q1",
+        "localPosition": {
+          "x": 12.7,
+          "y": 10.16
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "Q0",
+        "localPosition": {
+          "x": 12.7,
+          "y": 12.7
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "Q2",
+        "localPosition": {
+          "x": 12.7,
+          "y": 7.62
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "Q6",
+        "localPosition": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "Q7",
+        "localPosition": {
+          "x": 12.7,
+          "y": -5.08
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "Q3",
+        "localPosition": {
+          "x": 12.7,
+          "y": 5.08
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "VSS",
+        "localPosition": {
+          "x": 0,
+          "y": -22.86
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "Q8",
+        "localPosition": {
+          "x": 12.7,
+          "y": -7.62
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "Q4",
+        "localPosition": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "Q9",
+        "localPosition": {
+          "x": 12.7,
+          "y": -10.16
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "Cout",
+        "localPosition": {
+          "x": 12.7,
+          "y": -15.24
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "CKEN",
+        "localPosition": {
+          "x": -12.7,
+          "y": 10.16
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "CLK",
+        "localPosition": {
+          "x": -12.7,
+          "y": 12.7
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "Reset",
+        "localPosition": {
+          "x": -12.7,
+          "y": 5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "VDD",
+        "localPosition": {
+          "x": 0,
+          "y": 20.32
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "4017",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -17.78,
+          "width": 15.24,
+          "height": 33.02,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "Q5",
+          "number": "1",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 6.221205739668554e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "Q1",
+          "number": "2",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "Q0",
+          "number": "3",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:4",
+          "name": "Q2",
+          "number": "4",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 7.620000000000001
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:5",
+          "name": "Q6",
+          "number": "5",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "Q7",
+          "number": "6",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": -5.079999999999999
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "Q3",
+          "number": "7",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 5.080000000000001
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:8",
+          "name": "VSS",
+          "number": "8",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": 3.110602869834277e-16,
+            "y": -17.78
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:9",
+          "name": "Q8",
+          "number": "9",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": -7.619999999999999
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:10",
+          "name": "Q4",
+          "number": "10",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:11",
+          "name": "Q9",
+          "number": "11",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": -10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:12",
+          "name": "Cout",
+          "number": "12",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": -15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:13",
+          "name": "CKEN",
+          "number": "13",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -7.619999999999999,
+            "y": 10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:14",
+          "name": "CLK",
+          "number": "14",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": -7.619999999999999,
+            "y": 12.7
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:15",
+          "name": "Reset",
+          "number": "15",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -7.619999999999999,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:16",
+          "name": "VDD",
+          "number": "16",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 20.32
+          },
+          "bodyEnd": {
+            "x": -9.331808609502831e-16,
+            "y": 15.24
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "Q5",
+          "at": {
+            "x": 7.111999999999999,
+            "y": 6.221205739668554e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 10.16,
+            "y": 0.5080000000000003
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "Q1",
+          "at": {
+            "x": 7.111999999999999,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 10.16,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "Q0",
+          "at": {
+            "x": 7.111999999999999,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 10.16,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "Q2",
+          "at": {
+            "x": 7.111999999999999,
+            "y": 7.620000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 10.16,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "Q6",
+          "at": {
+            "x": 7.111999999999999,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 10.16,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "Q7",
+          "at": {
+            "x": 7.111999999999999,
+            "y": -5.079999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 10.16,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "Q3",
+          "at": {
+            "x": 7.111999999999999,
+            "y": 5.080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 10.16,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "VSS",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 0.508,
+            "y": -22.4536
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "Q8",
+          "at": {
+            "x": 7.111999999999999,
+            "y": -7.619999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": 10.16,
+            "y": -7.111999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "Q4",
+          "at": {
+            "x": 7.111999999999999,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": 10.16,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "Q9",
+          "at": {
+            "x": 7.111999999999999,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": 10.16,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "Cout",
+          "at": {
+            "x": 7.111999999999999,
+            "y": -15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": 10.16,
+            "y": -14.732
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "CKEN",
+          "at": {
+            "x": -7.111999999999999,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": -10.16,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "CLK",
+          "at": {
+            "x": -7.111999999999999,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": -10.16,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "Reset",
+          "at": {
+            "x": -7.111999999999999,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": -10.16,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "VDD",
+          "at": {
+            "x": -9.331808609502831e-16,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": 0.5079999999999999,
+            "y": 19.913600000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 21.971000000000007
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "4017",
+          "at": {
+            "x": 0,
+            "y": -24.13
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -12.7,
+        "minY": -25.4,
+        "maxX": 12.7,
+        "maxY": 23.241000000000007
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "4017",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "Q5",
+        "number": "1",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 0
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q1",
+        "number": "2",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 10.16
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q0",
+        "number": "3",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 12.7
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q2",
+        "number": "4",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 7.62
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q6",
+        "number": "5",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q7",
+        "number": "6",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -5.08
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q3",
+        "number": "7",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 5.08
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VSS",
+        "number": "8",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -22.86
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q8",
+        "number": "9",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -7.62
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q4",
+        "number": "10",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q9",
+        "number": "11",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -10.16
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Cout",
+        "number": "12",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -15.24
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CKEN",
+        "number": "13",
+        "electricalType": "input",
+        "direction": "inverted",
+        "position": {
+          "x": -12.7,
+          "y": 10.16
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CLK",
+        "number": "14",
+        "electricalType": "input",
+        "direction": "clock",
+        "position": {
+          "x": -12.7,
+          "y": 12.7
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Reset",
+        "number": "15",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 5.08
+        },
+        "length": 5.08,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "16",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 20.32
+        },
+        "length": 5.08,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "4017",
+      "Footprint": "",
+      "Datasheet": "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf",
+      "Description": "Johnson Counter ( 10 outputs )",
+      "ki_locked": "",
+      "ki_keywords": "CNT CNT10",
+      "ki_fp_filters": "DIP?16*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            15.24
+          ],
+          [
+            "end",
+            7.62,
+            -17.78
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol 4017 (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -7.62 16.51 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value 4017 (at -7.62 -19.05 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Johnson Counter ( 10 outputs )\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_locked \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property ki_keywords \"CNT CNT10\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters DIP?16* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol 4017_1_0 (pin output line (at 12.7 0 180) (length 5.08) (name Q5 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 10.16 180) (length 5.08) (name Q1 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 12.7 180) (length 5.08) (name Q0 (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 7.62 180) (length 5.08) (name Q2 (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 -2.54 180) (length 5.08) (name Q6 (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 -5.08 180) (length 5.08) (name Q7 (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 5.08 180) (length 5.08) (name Q3 (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -22.86 90) (length 5.08) (name VSS (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 -7.62 180) (length 5.08) (name Q8 (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 2.54 180) (length 5.08) (name Q4 (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 -10.16 180) (length 5.08) (name Q9 (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27))))) (pin output line (at 12.7 -15.24 180) (length 5.08) (name Cout (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin input inverted (at -12.7 10.16 0) (length 5.08) (name CKEN (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27))))) (pin input clock (at -12.7 12.7 0) (length 5.08) (name CLK (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 5.08 0) (length 5.08) (name Reset (effects (font (size 1.27 1.27)))) (number 15 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 20.32 270) (length 5.08) (name VDD (effects (font (size 1.27 1.27)))) (number 16 (effects (font (size 1.27 1.27)))))) (symbol 4017_1_1 (rectangle (start -7.62 15.24) (end 7.62 -17.78) (stroke (width 0.254) (type default)) (fill (type background)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

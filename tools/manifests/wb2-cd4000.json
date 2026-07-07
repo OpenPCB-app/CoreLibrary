@@ -1,0 +1,676 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.ic.cd4011",
+      "name": "CD4011 Quad NAND Gate",
+      "description": "CD4011B quad 2-input NAND gate, CMOS.",
+      "category": "ic",
+      "subcategory": "logic",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "CD4011",
+        "4011",
+        "NAND",
+        "CMOS",
+        "logic"
+      ],
+      "parameters": {
+        "family": "CD4000",
+        "function": "quad NAND"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.cd4011",
+        "path": "kicad-symbols/4xxx.kicad_symdir/4011.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.dip-14-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-14_W7.62mm.kicad_mod",
+          "label": "DIP-14",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-14-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-14_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.cd4013",
+      "name": "CD4013 Dual D Flip-Flop",
+      "description": "CD4013B dual D-type flip-flop, CMOS.",
+      "category": "ic",
+      "subcategory": "logic",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "CD4013",
+        "4013",
+        "flip-flop",
+        "CMOS",
+        "logic"
+      ],
+      "parameters": {
+        "family": "CD4000",
+        "function": "dual D-FF"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.cd4013",
+        "path": "kicad-symbols/4xxx.kicad_symdir/4013.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.dip-14-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-14_W7.62mm.kicad_mod",
+          "label": "DIP-14",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-14-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-14_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.cd4017",
+      "name": "CD4017 Decade Counter",
+      "description": "CD4017B decade counter/divider with 10 decoded outputs, CMOS.",
+      "category": "ic",
+      "subcategory": "logic",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "CD4017",
+        "4017",
+        "counter",
+        "CMOS",
+        "logic"
+      ],
+      "parameters": {
+        "family": "CD4000",
+        "function": "decade counter"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.cd4017",
+        "path": "kicad-symbols/4xxx.kicad_symdir/4017.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.dip-16-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-16_W7.62mm.kicad_mod",
+          "label": "DIP-16",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-16-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-16_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-16_3.9x9.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-16",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-16-3-9x9-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-16_3.9x9.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.cd4066",
+      "name": "CD4066 Quad Bilateral Switch",
+      "description": "CD4066B quad bilateral analog switch, CMOS.",
+      "category": "ic",
+      "subcategory": "logic",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "CD4066",
+        "4066",
+        "analog switch",
+        "CMOS"
+      ],
+      "parameters": {
+        "family": "CD4000",
+        "function": "quad switch"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.cd4066",
+        "path": "kicad-symbols/4xxx.kicad_symdir/4066.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.dip-14-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-14_W7.62mm.kicad_mod",
+          "label": "DIP-14",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-14-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-14_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

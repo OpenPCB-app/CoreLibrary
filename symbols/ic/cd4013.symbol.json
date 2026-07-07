@@ -1,0 +1,912 @@
+{
+  "id": "openpcb.core.symbol.ic.cd4013",
+  "uuid": "a3b4bb90-f3c6-54f2-a0bc-266fcb4b61a3",
+  "version": "0.3.0",
+  "name": "CD4013 Dual D Flip-Flop",
+  "referencePrefix": "U",
+  "description": "Dual D  FlipFlop, Set & reset",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "4013.kicad_sym",
+    "sourceLibrary": "4xxx",
+    "sourceItemName": "4013",
+    "sourceHash": "bb8c358862d394c91736d16a2a8513123e351d1ecf2c18c35049cf68e8e04637",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:45:38.942Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "4013",
+      "Footprint": "",
+      "Datasheet": "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF",
+      "Description": "Dual D  FlipFlop, Set & reset",
+      "ki_locked": "",
+      "ki_keywords": "CMOS DFF",
+      "ki_fp_filters": "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"
+    },
+    "units": 3,
+    "sourceFiles": [
+      {
+        "fileName": "4013.kicad_sym",
+        "sourceItemName": "4013",
+        "sha256": "745862a56499a751c63363c69e460fdc209878d5310bf90b46e5e3fcce34e679"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_5edcaefa0fd2147c",
+    "name": "4013",
+    "referencePrefix": "U",
+    "description": "Dual D  FlipFlop, Set & reset",
+    "sourceHash": "bb8c358862d394c91736d16a2a8513123e351d1ecf2c18c35049cf68e8e04637",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "Q",
+        "localPosition": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "~{Q}",
+        "localPosition": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "C",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "R",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "D",
+        "localPosition": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "S",
+        "localPosition": {
+          "x": 0,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u2:8",
+        "number": "8",
+        "name": "S",
+        "localPosition": {
+          "x": 0,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:9",
+        "number": "9",
+        "name": "D",
+        "localPosition": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:10",
+        "number": "10",
+        "name": "R",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:11",
+        "number": "11",
+        "name": "C",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:12",
+        "number": "12",
+        "name": "~{Q}",
+        "localPosition": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u2:13",
+        "number": "13",
+        "name": "Q",
+        "localPosition": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "electricalType": "output",
+        "unit": 2
+      },
+      {
+        "originPinKey": "u3:7",
+        "number": "7",
+        "name": "VSS",
+        "localPosition": {
+          "x": 0,
+          "y": -10.16
+        },
+        "electricalType": "power_in",
+        "unit": 3
+      },
+      {
+        "originPinKey": "u3:14",
+        "number": "14",
+        "name": "VDD",
+        "localPosition": {
+          "x": 0,
+          "y": 10.16
+        },
+        "electricalType": "power_in",
+        "unit": 3
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "4013",
+      "unitCount": 3,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -5.08,
+          "y": -5.08,
+          "width": 10.16,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "Q",
+          "number": "1",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "~{Q}",
+          "number": "2",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "C",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "R",
+          "number": "4",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:5",
+          "name": "D",
+          "number": "5",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "S",
+          "number": "6",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.08
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "Q",
+          "at": {
+            "x": 4.572,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 6.35,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "~{Q}",
+          "at": {
+            "x": 4.572,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 6.35,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "C",
+          "at": {
+            "x": -4.572,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -6.35,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "R",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "D",
+          "at": {
+            "x": -4.572,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -6.35,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "S",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 0.508,
+            "y": 7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 9.0805
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "4013",
+          "at": {
+            "x": 0,
+            "y": -9.0805
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.62,
+        "minY": -10.3505,
+        "maxX": 7.62,
+        "maxY": 10.3505
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "4013",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "Q",
+        "number": "1",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{Q}",
+        "number": "2",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "clock",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R",
+        "number": "4",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "S",
+        "number": "6",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "S",
+        "number": "8",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D",
+        "number": "9",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R",
+        "number": "10",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C",
+        "number": "11",
+        "electricalType": "input",
+        "direction": "clock",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{Q}",
+        "number": "12",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Q",
+        "number": "13",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 2,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VSS",
+        "number": "7",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 3,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "14",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 3,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 3,
+    "properties": {
+      "Reference": "U",
+      "Value": "4013",
+      "Footprint": "",
+      "Datasheet": "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF",
+      "Description": "Dual D  FlipFlop, Set & reset",
+      "ki_locked": "",
+      "ki_keywords": "CMOS DFF",
+      "ki_fp_filters": "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            5.08
+          ],
+          [
+            "end",
+            5.08,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 2,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            5.08
+          ],
+          [
+            "end",
+            5.08,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 3,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            7.62
+          ],
+          [
+            "end",
+            5.08,
+            -7.62
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol 4013 (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -7.62 8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value 4013 (at -7.62 -8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Dual D  FlipFlop, Set & reset\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_locked \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property ki_keywords \"CMOS DFF\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm* TSSOP*4.4x5mm*P0.65mm*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol 4013_1_1 (rectangle (start -5.08 5.08) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background))) (pin output line (at 7.62 2.54 180) (length 2.54) (name Q (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 -2.54 180) (length 2.54) (name ~{Q} (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin input clock (at -7.62 0 0) (length 2.54) (name C (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin input line (at 0 -7.62 90) (length 2.54) (name R (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 2.54 0) (length 2.54) (name D (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin input line (at 0 7.62 270) (length 2.54) (name S (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27)))))) (symbol 4013_2_1 (rectangle (start -5.08 5.08) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background))) (pin input line (at 0 7.62 270) (length 2.54) (name S (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 2.54 0) (length 2.54) (name D (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27))))) (pin input line (at 0 -7.62 90) (length 2.54) (name R (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27))))) (pin input clock (at -7.62 0 0) (length 2.54) (name C (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 -2.54 180) (length 2.54) (name ~{Q} (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 2.54 180) (length 2.54) (name Q (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27)))))) (symbol 4013_3_0 (pin power_in line (at 0 -10.16 90) (length 2.54) (name VSS (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 10.16 270) (length 2.54) (name VDD (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27)))))) (symbol 4013_3_1 (rectangle (start -5.08 7.62) (end 5.08 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "id": "openpcb.core.ic.cd4017",
+  "uuid": "88bec4a8-723b-510f-897c-c64109c66aee",
+  "version": "0.3.0",
+  "name": "CD4017 Decade Counter",
+  "description": "CD4017B decade counter/divider with 10 decoded outputs, CMOS.",
+  "category": "ic",
+  "subcategory": "logic",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "CD4017",
+    "4017",
+    "counter",
+    "CMOS",
+    "logic"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf",
+  "parameters": {
+    "family": "CD4000",
+    "function": "decade counter"
+  },
+  "symbol": "openpcb.core.symbol.ic.cd4017",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-16-w7-62mm",
+      "label": "DIP-16",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "label": "SOIC-16",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "4017.kicad_sym",
+    "sourceLibrary": "4xxx",
+    "sourceItemName": "CD4017 Decade Counter",
+    "sourceHash": "dc63efa6dd958666bbc6381104770f04aa5b8fdaf93791dd732398bef79ac35c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:45:38.942Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
