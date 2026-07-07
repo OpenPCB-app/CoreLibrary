@@ -34,6 +34,23 @@ const CONTACT_DIR = path.join(OUT_DIR, "contact");
 const GLB_DIR = path.join(CONTACT_DIR, "glb");
 const THREE_ROOT = path.join(REPO_ROOT, "node_modules", "three");
 
+// Composite-sheet layout — MUST stay in sync with the same literals in VIEWER_HTML.
+// The canvas is drawn at the page origin at DPR=1 (the full-page PNG width equals
+// the resize width), so a row's cell rect in canvas coords == its rect in PNG px.
+const TILE = 220,
+  GAP = 8,
+  LABEL = 26,
+  COLS = 2;
+const CELL_W = TILE * 2 + GAP; // top + iso side by side
+const CELL_H = TILE + LABEL;
+// Worst-first ordering for the sheet + gallery.
+const VERDICT_RANK: Record<string, number> = {
+  error: 0,
+  warning: 1,
+  review: 2,
+  ok: 3,
+};
+
 type Preview = NonNullable<FootprintSidecar["normalized"]>["preview"];
 
 interface Row {
@@ -45,6 +62,8 @@ interface Row {
   bounds: Awaited<ReturnType<typeof convertModel>>["bounds"];
   findings: ReturnType<typeof evaluatePlacement>["findings"];
   verdict: ReturnType<typeof evaluatePlacement>["verdict"];
+  /** Cell rect in the composite PNG (px), so the gallery builder can crop this tile. */
+  tile?: { x: number; y: number; w: number; h: number };
 }
 
 function slug(id: string): string {
@@ -101,6 +120,20 @@ async function build(): Promise<Row[]> {
       console.log(`[contact-sheet] ${placement.verdict.padEnd(7)} ${fp.name}`);
     }
   }
+
+  // Worst-first so the sheet + gallery lead with problems; stable within a rank.
+  rows.sort(
+    (a, b) => (VERDICT_RANK[a.verdict] ?? 9) - (VERDICT_RANK[b.verdict] ?? 9),
+  );
+  // Assign each row its cell rect in the composite PNG (matches VIEWER_HTML layout,
+  // 1px border padding included) so build-3d-report can crop deterministically.
+  rows.forEach((row, i) => {
+    const col = i % COLS;
+    const r = Math.floor(i / COLS);
+    const x0 = GAP + col * (CELL_W + GAP);
+    const y0 = GAP + r * (CELL_H + GAP);
+    row.tile = { x: x0 - 1, y: y0 - 1, w: CELL_W + 2, h: CELL_H + 2 };
+  });
 
   // three itself is served live from node_modules under /three/ (see server).
   writeFileSync(
