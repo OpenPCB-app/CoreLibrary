@@ -6,6 +6,16 @@ Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](
 
 **Invariant for every content phase:** branch `feat/corelib-<phase>` → author `tools/manifests/<phase>.json` (symdir paths; **every footprint has a STEP**) → `import --strict` → `validate --release --strict` → `audit:3d` → `bun test` → `pack` spot-check → PR. CI runs `--release --strict`, so no-STEP parts go to Wave 2.
 
+## 2026-07-07 update — content-grind round resumed (plan: `~/.claude/plans/do-thorough-analysis-of-cozy-shamir.md`)
+
+**Decisions:** KiCad-vendored parts only this round → ~180–210 (external Wave C parked); **release held** until v1; MPN sourcing deferred. Reconstructed target list → **[TARGETS.md](TARGETS.md)** (master spec `Corelibrary expansion plan.md` is lost).
+
+**Phase 0 DONE:** baseline re-verified green (125); `CURRENT_STATE.md`/`.gitignore` refreshed; **`../references/kicad-libs` restored** (symbols+footprints full @10.0.4; packages3D **blobless+sparse** — `sparse-checkout add <Lib>.3dshapes` per wave; disk was 98% full). Provenance: 10.0.4 tag = byte-identical to pinned `c7e226a49` (footprint+STEP sha256 exact match) → keep the stamp, no importer change.
+
+**Corrections to Wave-2 below (verified against the KiCad 10.0.4 clone — older checkout was incomplete):** **PC817** (`Isolator`), **screw terminals** (`TerminalBlock_*.pretty`), **MountingHole** (symbol+fp) ARE present → not external. Orientation-gate already calibrated (B1) — TO-220 family (L7805/LM317/LM2596-adj/IRF540N/IRLZ44N) already shipped; the 8 audit:3d warnings are the known benign false-positives.
+
+**Next:** Phase 1 residual = cross-repo NPTH relax in `../shared` `@openpcb/kicad-import` (`shared:link`) for MountingHole/Fiducial/barrel/pot/terminal-MP-pads. Phase 2 = Wave A content (see TARGETS.md), starting with TO-92 discretes (reuse shared `package.to-92-inline`).
+
 ## 2026-06-26 update — 125-component milestone reached (committed to master)
 
 **80 → 125 components**, all gates green, committed (`5df616c` foundations+W1, `dbc6af6` W2-clean→105, `314948b` W1/W2→125). Added since 86: opamps/comparators/timers (TL072/TL074/MCP6002/MCP6004/LM339/RC4558/NE5532/TLC555/LM386), LDOs/protection (AP2112K/ME6211/TLV1117/DW01A), interface/logic (MAX3232/PCF8574/ULN2003A/74HC02/74HC74/74HC86/74HC138/74HC165/CD4051), connectors (pin-header 1x10/1x12/2x08, JST-XH 2/3/4, IDC 2x05), SOT-23 BJTs (BC817/807/847/857/MMBT2222A/BSS84), diodes (SS34/1N5819/1N5408), ceramic resonator.
