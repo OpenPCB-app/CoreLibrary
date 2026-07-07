@@ -1,0 +1,165 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.transistor.bc547",
+      "name": "BC547 NPN Transistor",
+      "description": "BC547 NPN BJT, 45V 100mA, TO-92.",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": ["transistor", "kicad-derived"],
+      "keywords": ["BC547", "NPN", "BJT", "transistor", "TO-92"],
+      "parameters": { "type": "npn", "vce": "45V", "ic": "100mA" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.bc547",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/BC547.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.bc557",
+      "name": "BC557 PNP Transistor",
+      "description": "BC557 PNP BJT, 45V 100mA, TO-92.",
+      "category": "transistor",
+      "subcategory": "bjt-pnp",
+      "tags": ["transistor", "kicad-derived"],
+      "keywords": ["BC557", "PNP", "BJT", "transistor", "TO-92"],
+      "parameters": { "type": "pnp", "vce": "45V", "ic": "100mA" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.bc557",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/BC557.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.2n3904",
+      "name": "2N3904 NPN Transistor",
+      "description": "2N3904 NPN BJT, 40V 200mA, TO-92.",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": ["transistor", "kicad-derived"],
+      "keywords": ["2N3904", "NPN", "BJT", "transistor", "TO-92"],
+      "parameters": { "type": "npn", "vce": "40V", "ic": "200mA" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.2n3904",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/2N3904.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.2n3906",
+      "name": "2N3906 PNP Transistor",
+      "description": "2N3906 PNP BJT, 40V 200mA, TO-92.",
+      "category": "transistor",
+      "subcategory": "bjt-pnp",
+      "tags": ["transistor", "kicad-derived"],
+      "keywords": ["2N3906", "PNP", "BJT", "transistor", "TO-92"],
+      "parameters": { "type": "pnp", "vce": "40V", "ic": "200mA" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.2n3906",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/2N3906.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.2n7000",
+      "name": "2N7000 N-Channel MOSFET",
+      "description": "2N7000 N-channel MOSFET, 60V 200mA, TO-92.",
+      "category": "transistor",
+      "subcategory": "mosfet-n",
+      "tags": ["transistor", "mosfet", "kicad-derived"],
+      "keywords": ["2N7000", "N-Channel", "MOSFET", "TO-92"],
+      "parameters": { "type": "nmos", "vds": "60V", "id": "200mA" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.2n7000",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/2N7000.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "openpcb.core.transistor.2n7000",
+  "uuid": "6fef1f01-d96f-5c3d-b0f3-b51dbf4d8c79",
+  "version": "0.3.0",
+  "name": "2N7000 N-Channel MOSFET",
+  "description": "2N7000 N-channel MOSFET, 60V 200mA, TO-92.",
+  "category": "transistor",
+  "subcategory": "mosfet-n",
+  "tags": [
+    "transistor",
+    "mosfet",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "2N7000",
+    "N-Channel",
+    "MOSFET",
+    "TO-92"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.vishay.com/docs/70226/70226.pdf",
+  "parameters": {
+    "type": "nmos",
+    "vds": "60V",
+    "id": "200mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.2n7000",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "2N7000.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "2N7000 N-Channel MOSFET",
+    "sourceHash": "b912d838f303650bac9f5cd3a77fa05de4f436dbcacbb7fea2555287df719418",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:14:04.276Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

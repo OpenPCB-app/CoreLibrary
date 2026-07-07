@@ -1,0 +1,69 @@
+{
+  "id": "openpcb.core.transistor.bc547",
+  "uuid": "24f5feee-e63b-503e-8ec3-0ae9872e67a5",
+  "version": "0.3.0",
+  "name": "BC547 NPN Transistor",
+  "description": "BC547 NPN BJT, 45V 100mA, TO-92.",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BC547",
+    "NPN",
+    "BJT",
+    "transistor",
+    "TO-92"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pub/Collateral/BC550-D.pdf",
+  "parameters": {
+    "type": "npn",
+    "vce": "45V",
+    "ic": "100mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.bc547",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BC547.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "BC547 NPN Transistor",
+    "sourceHash": "ac3a4d9be5d87e4442dc4ce0c5db97747b18e967c50148d2a760da029eed939d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:14:04.276Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

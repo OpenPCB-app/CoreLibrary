@@ -1,0 +1,69 @@
+{
+  "id": "openpcb.core.transistor.2n3906",
+  "uuid": "54645dda-c41a-51d5-8912-2e7cc01d3292",
+  "version": "0.3.0",
+  "name": "2N3906 PNP Transistor",
+  "description": "2N3906 PNP BJT, 40V 200mA, TO-92.",
+  "category": "transistor",
+  "subcategory": "bjt-pnp",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "2N3906",
+    "PNP",
+    "BJT",
+    "transistor",
+    "TO-92"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pub/Collateral/2N3906-D.PDF",
+  "parameters": {
+    "type": "pnp",
+    "vce": "40V",
+    "ic": "200mA"
+  },
+  "symbol": "openpcb.core.symbol.transistor.2n3906",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "2N3906.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "2N3906 PNP Transistor",
+    "sourceHash": "acf9008ba04ac8a2733531ec5d8261ace0821d4cd6b0aec08437150f1171b0f6",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:14:04.276Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
