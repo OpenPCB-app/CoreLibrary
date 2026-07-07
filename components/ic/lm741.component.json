@@ -1,0 +1,125 @@
+{
+  "id": "openpcb.core.ic.lm741",
+  "uuid": "067adf48-885d-572b-accf-9ed6c0e04b00",
+  "version": "0.3.0",
+  "name": "LM741 Op-Amp",
+  "description": "LM741 single general-purpose operational amplifier.",
+  "category": "ic",
+  "subcategory": "opamp",
+  "tags": [
+    "ic",
+    "opamp",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM741",
+    "op-amp",
+    "amplifier"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm741.pdf",
+  "parameters": {
+    "channels": "1",
+    "gbw": "1MHz"
+  },
+  "symbol": "openpcb.core.symbol.ic.lm741",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM741.kicad_sym",
+    "sourceLibrary": "Amplifier_Operational",
+    "sourceItemName": "LM741 Op-Amp",
+    "sourceHash": "968371219deb344030625803816944d57c8f06824c76b993a7057511b734f4a8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:36:39.314Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

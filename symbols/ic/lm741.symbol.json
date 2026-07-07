@@ -1,0 +1,759 @@
+{
+  "id": "openpcb.core.symbol.ic.lm741",
+  "uuid": "59ef6163-85d6-58c5-91eb-2c6781f9dbe1",
+  "version": "0.3.0",
+  "name": "LM741 Op-Amp",
+  "referencePrefix": "U",
+  "description": "Operational Amplifier, DIP-8/TO-99-8",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "LM741.kicad_sym",
+    "sourceLibrary": "Amplifier_Operational",
+    "sourceItemName": "LM741",
+    "sourceHash": "645da55ecf66012f5138bbf18934611fecda9903751cbb47aea1ba116a0d7792",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:36:39.314Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "LM741",
+      "Footprint": "",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/lm741.pdf",
+      "Description": "Operational Amplifier, DIP-8/TO-99-8",
+      "ki_keywords": "single opamp",
+      "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TSSOP*3x3mm*P0.65mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "LM741.kicad_sym",
+        "sourceItemName": "LM741",
+        "sha256": "f7fdb2eea00ae83682a939f848ac807a249a43db877a6cb7d214f1aca081360c"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_7d60d3fc30176fda",
+    "name": "LM741",
+    "referencePrefix": "U",
+    "description": "Operational Amplifier, DIP-8/TO-99-8",
+    "sourceHash": "645da55ecf66012f5138bbf18934611fecda9903751cbb47aea1ba116a0d7792",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "NULL",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "-",
+        "localPosition": {
+          "x": -7.62,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "+",
+        "localPosition": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "V-",
+        "localPosition": {
+          "x": -2.54,
+          "y": -7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "NULL",
+        "localPosition": {
+          "x": 2.54,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "V+",
+        "localPosition": {
+          "x": -2.54,
+          "y": 7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "NC",
+        "localPosition": {
+          "x": 0,
+          "y": 2.54
+        },
+        "electricalType": "no_connect",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "LM741",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -5.08,
+              "y": 5.08
+            },
+            {
+              "x": 5.08,
+              "y": 0
+            },
+            {
+              "x": -5.08,
+              "y": -5.08
+            },
+            {
+              "x": -5.08,
+              "y": 5.08
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "NULL",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 3.110602869834277e-16,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:2",
+          "name": "-",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "+",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "V-",
+          "number": "4",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -2.5399999999999996,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:5",
+          "name": "NULL",
+          "number": "5",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 2.5400000000000005,
+            "y": -1.2700000000000005
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:6",
+          "name": "",
+          "number": "6",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "V+",
+          "number": "7",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -2.540000000000001,
+            "y": 3.81
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:8",
+          "name": "NC",
+          "number": "8",
+          "electricalType": "no_connect",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 0
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "NULL",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -3.048
+          },
+          "fontSizeMm": 0.508,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 0.508,
+            "y": -7.2136000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "-",
+          "at": {
+            "x": -4.572,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -6.35,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "+",
+          "at": {
+            "x": -4.572,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -6.35,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "V-",
+          "at": {
+            "x": -2.5399999999999996,
+            "y": -4.318
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -2.032,
+            "y": -7.315200000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "NULL",
+          "at": {
+            "x": 2.5400000000000005,
+            "y": -1.7780000000000005
+          },
+          "fontSizeMm": 0.508,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 3.048,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 6.35,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "V+",
+          "at": {
+            "x": -2.540000000000001,
+            "y": 4.318
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -2.032,
+            "y": 7.315200000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "NC",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 0.508,
+            "y": 2.3368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 8.978900000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "LM741",
+          "at": {
+            "x": 0,
+            "y": -8.978900000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.62,
+        "minY": -10.2489,
+        "maxX": 7.62,
+        "maxY": 10.2489
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "LM741",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "NULL",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 0.508,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "-",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "+",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V-",
+        "number": "4",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": -7.62
+        },
+        "length": 3.81,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "NULL",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -7.62
+        },
+        "length": 6.35,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 0.508,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "6",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V+",
+        "number": "7",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": 7.62
+        },
+        "length": 3.81,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "NC",
+        "number": "8",
+        "electricalType": "no_connect",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "LM741",
+      "Footprint": "",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/lm741.pdf",
+      "Description": "Operational Amplifier, DIP-8/TO-99-8",
+      "ki_keywords": "single opamp",
+      "ki_fp_filters": "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TSSOP*3x3mm*P0.65mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -5.08,
+              5.08
+            ],
+            [
+              "xy",
+              5.08,
+              0
+            ],
+            [
+              "xy",
+              -5.08,
+              -5.08
+            ],
+            [
+              "xy",
+              -5.08,
+              5.08
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol LM741 (pin_names (offset 0.127)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at 0 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value LM741 (at 0 3.81 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint \"\" (at 1.27 1.27 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.ti.com/lit/ds/symlink/lm741.pdf (at 3.81 3.81 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Operational Amplifier, DIP-8/TO-99-8\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"single opamp\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TSSOP*3x3mm*P0.65mm*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol LM741_0_1 (polyline (pts (xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol LM741_1_1 (pin input line (at 0 -7.62 90) (length 5.08) (name NULL (effects (font (size 0.508 0.508)))) (number 1 (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 -2.54 0) (length 2.54) (name - (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin input line (at -7.62 2.54 0) (length 2.54) (name + (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 -7.62 90) (length 3.81) (name V- (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin input line (at 2.54 -7.62 90) (length 6.35) (name NULL (effects (font (size 0.508 0.508)))) (number 5 (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 0 180) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 7.62 270) (length 3.81) (name V+ (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin no_connect line (at 0 2.54 270) (length 2.54) (hide yes) (name NC (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.127,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

@@ -1,0 +1,634 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.ic.lm741",
+      "name": "LM741 Op-Amp",
+      "description": "LM741 single general-purpose operational amplifier.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "opamp",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM741",
+        "op-amp",
+        "amplifier"
+      ],
+      "parameters": {
+        "channels": "1",
+        "gbw": "1MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.lm741",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/LM741.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-8_W7.62mm.kicad_mod",
+          "label": "DIP-8",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-8-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-8_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.tl081",
+      "name": "TL081 JFET Op-Amp",
+      "description": "TL081 single JFET-input operational amplifier.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "opamp",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TL081",
+        "op-amp",
+        "JFET",
+        "amplifier"
+      ],
+      "parameters": {
+        "channels": "1",
+        "gbw": "3MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.tl081",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/TL081.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-8_W7.62mm.kicad_mod",
+          "label": "DIP-8",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-8-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-8_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.tl082",
+      "name": "TL082 Dual JFET Op-Amp",
+      "description": "TL082 dual JFET-input operational amplifier.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "opamp",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TL082",
+        "op-amp",
+        "JFET",
+        "dual",
+        "amplifier"
+      ],
+      "parameters": {
+        "channels": "2",
+        "gbw": "3MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.tl082",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/TL082.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-8_W7.62mm.kicad_mod",
+          "label": "DIP-8",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-8-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-8_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.tl084",
+      "name": "TL084 Quad JFET Op-Amp",
+      "description": "TL084 quad JFET-input operational amplifier.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "opamp",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TL084",
+        "op-amp",
+        "JFET",
+        "quad",
+        "amplifier"
+      ],
+      "parameters": {
+        "channels": "4",
+        "gbw": "3MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.tl084",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/TL084.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-14_3.9x8.7mm_P1.27mm.kicad_mod",
+          "label": "SOIC-14",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-14-3-9x8-7mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-14_3.9x8.7mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-14-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-14_W7.62mm.kicad_mod",
+          "label": "DIP-14",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-14-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-14_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.ne5534",
+      "name": "NE5534 Low-Noise Op-Amp",
+      "description": "NE5534 single low-noise operational amplifier.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "opamp",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "NE5534",
+        "op-amp",
+        "low-noise",
+        "amplifier"
+      ],
+      "parameters": {
+        "channels": "1",
+        "gbw": "10MHz"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.ne5534",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/NE5534.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8_3.9x4.9mm_P1.27mm.kicad_mod",
+          "label": "SOIC-8",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-8-3-9x4-9mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8_3.9x4.9mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.dip-8-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-8_W7.62mm.kicad_mod",
+          "label": "DIP-8",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-8-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-8_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

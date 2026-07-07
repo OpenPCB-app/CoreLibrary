@@ -1,0 +1,127 @@
+{
+  "id": "openpcb.core.ic.tl082",
+  "uuid": "033b6f59-d340-507e-90d6-144276f9b8fc",
+  "version": "0.3.0",
+  "name": "TL082 Dual JFET Op-Amp",
+  "description": "TL082 dual JFET-input operational amplifier.",
+  "category": "ic",
+  "subcategory": "opamp",
+  "tags": [
+    "ic",
+    "opamp",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TL082",
+    "op-amp",
+    "JFET",
+    "dual",
+    "amplifier"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/tl081.pdf",
+  "parameters": {
+    "channels": "2",
+    "gbw": "3MHz"
+  },
+  "symbol": "openpcb.core.symbol.ic.tl082",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TL082.kicad_sym",
+    "sourceLibrary": "Amplifier_Operational",
+    "sourceItemName": "TL082 Dual JFET Op-Amp",
+    "sourceHash": "71cc5eb8854377dbe71fb8cfd5f55b4bcf91371f162b715db72fab6db9f67a8e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:36:39.314Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
