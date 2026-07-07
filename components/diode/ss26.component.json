@@ -1,0 +1,63 @@
+{
+  "id": "openpcb.core.diode.ss26",
+  "uuid": "d7bbee74-c137-5243-97b7-f8828e557f0a",
+  "version": "0.3.0",
+  "name": "SS26 Schottky Diode",
+  "description": "SS26 Schottky rectifier, 60V 2A, SMB.",
+  "category": "diode",
+  "subcategory": "schottky",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SS26",
+    "Schottky",
+    "diode"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.vishay.com/docs/88748/ss22.pdf",
+  "parameters": {
+    "type": "schottky",
+    "vrrm": "60V",
+    "if": "2A"
+  },
+  "symbol": "openpcb.core.symbol.diode.ss26",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-smb",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-smb",
+      "label": "SMB",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SS26.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "SS26 Schottky Diode",
+    "sourceHash": "498acffa81016d4dd33fb5694afdaaf29b4b18300c91eb13080b9270551c731a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:34:50.225Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

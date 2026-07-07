@@ -1,0 +1,298 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.diode.1n4001",
+      "name": "1N4001 Rectifier Diode",
+      "description": "1N4001 general-purpose rectifier, 50V 1A, DO-41.",
+      "category": "diode",
+      "subcategory": "rectifier",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "1N4001",
+        "rectifier",
+        "diode"
+      ],
+      "parameters": {
+        "type": "rectifier",
+        "vrrm": "50V",
+        "if": "1A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.1n4001",
+        "path": "kicad-symbols/Diode.kicad_symdir/1N4001.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-do-41",
+          "path": "kicad-footprints/Diode_THT.pretty/D_DO-41_SOD81_P7.62mm_Horizontal.kicad_mod",
+          "label": "DO-41",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-do-41",
+            "path": "kicad-packages3D/Diode_THT.3dshapes/D_DO-41_SOD81_P7.62mm_Horizontal.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.1n4004",
+      "name": "1N4004 Rectifier Diode",
+      "description": "1N4004 general-purpose rectifier, 400V 1A, DO-41.",
+      "category": "diode",
+      "subcategory": "rectifier",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "1N4004",
+        "rectifier",
+        "diode"
+      ],
+      "parameters": {
+        "type": "rectifier",
+        "vrrm": "400V",
+        "if": "1A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.1n4004",
+        "path": "kicad-symbols/Diode.kicad_symdir/1N4004.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-do-41",
+          "path": "kicad-footprints/Diode_THT.pretty/D_DO-41_SOD81_P7.62mm_Horizontal.kicad_mod",
+          "label": "DO-41",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-do-41",
+            "path": "kicad-packages3D/Diode_THT.3dshapes/D_DO-41_SOD81_P7.62mm_Horizontal.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.ss16",
+      "name": "SS16 Schottky Diode",
+      "description": "SS16 Schottky rectifier, 60V 1A, SMA.",
+      "category": "diode",
+      "subcategory": "schottky",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "SS16",
+        "Schottky",
+        "diode"
+      ],
+      "parameters": {
+        "type": "schottky",
+        "vrrm": "60V",
+        "if": "1A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.ss16",
+        "path": "kicad-symbols/Diode.kicad_symdir/SS16.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sma",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.ss24",
+      "name": "SS24 Schottky Diode",
+      "description": "SS24 Schottky rectifier, 40V 2A, SMA.",
+      "category": "diode",
+      "subcategory": "schottky",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "SS24",
+        "Schottky",
+        "diode"
+      ],
+      "parameters": {
+        "type": "schottky",
+        "vrrm": "40V",
+        "if": "2A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.ss24",
+        "path": "kicad-symbols/Diode.kicad_symdir/SS24.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-sma",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
+          "label": "SMA",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-sma",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.ss26",
+      "name": "SS26 Schottky Diode",
+      "description": "SS26 Schottky rectifier, 60V 2A, SMB.",
+      "category": "diode",
+      "subcategory": "schottky",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "SS26",
+        "Schottky",
+        "diode"
+      ],
+      "parameters": {
+        "type": "schottky",
+        "vrrm": "60V",
+        "if": "2A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.ss26",
+        "path": "kicad-symbols/Diode.kicad_symdir/SS26.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.d-smb",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.d-smb",
+          "path": "kicad-footprints/Diode_SMD.pretty/D_SMB.kicad_mod",
+          "label": "SMB",
+          "model": {
+            "id": "openpcb.core.3d.diode.d-smb",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMB.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.bat54c",
+      "name": "BAT54C Dual Schottky",
+      "description": "BAT54C dual Schottky (common cathode), 30V 200mA, SOT-23.",
+      "category": "diode",
+      "subcategory": "schottky",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "BAT54C",
+        "Schottky",
+        "dual",
+        "diode"
+      ],
+      "parameters": {
+        "type": "schottky",
+        "vrrm": "30V",
+        "if": "200mA"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.bat54c",
+        "path": "kicad-symbols/Diode.kicad_symdir/BAT54C.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/SOT-23.kicad_mod",
+          "label": "SOT-23",
+          "model": {
+            "id": "openpcb.core.3d.package.sot-23",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/SOT-23.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

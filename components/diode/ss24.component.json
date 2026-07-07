@@ -1,0 +1,63 @@
+{
+  "id": "openpcb.core.diode.ss24",
+  "uuid": "400bdb84-7a9e-5315-81be-073ea7cabacb",
+  "version": "0.3.0",
+  "name": "SS24 Schottky Diode",
+  "description": "SS24 Schottky rectifier, 40V 2A, SMA.",
+  "category": "diode",
+  "subcategory": "schottky",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SS24",
+    "Schottky",
+    "diode"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.vishay.com/docs/88748/ss22.pdf",
+  "parameters": {
+    "type": "schottky",
+    "vrrm": "40V",
+    "if": "2A"
+  },
+  "symbol": "openpcb.core.symbol.diode.ss24",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sma",
+      "label": "SMA",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SS24.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "SS24 Schottky Diode",
+    "sourceHash": "8b2298fc7b7732eea8a8e4f2f495aad547b3fc3fe3e2cf3872a3726e507c69b8",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:34:50.225Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

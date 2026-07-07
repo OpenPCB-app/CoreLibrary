@@ -1,0 +1,63 @@
+{
+  "id": "openpcb.core.diode.ss16",
+  "uuid": "3ae2b38c-a0f4-5403-a57c-f31dfe8166d7",
+  "version": "0.3.0",
+  "name": "SS16 Schottky Diode",
+  "description": "SS16 Schottky rectifier, 60V 1A, SMA.",
+  "category": "diode",
+  "subcategory": "schottky",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "SS16",
+    "Schottky",
+    "diode"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.vishay.com/docs/88746/ss12.pdf",
+  "parameters": {
+    "type": "schottky",
+    "vrrm": "60V",
+    "if": "1A"
+  },
+  "symbol": "openpcb.core.symbol.diode.ss16",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-sma",
+      "label": "SMA",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SS16.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "SS16 Schottky Diode",
+    "sourceHash": "26dbae8a198d93b734c554049e1c9d4667b3959be957ce55834526fbdf1adb16",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:34:50.225Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

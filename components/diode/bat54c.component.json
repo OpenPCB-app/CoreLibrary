@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.diode.bat54c",
+  "uuid": "a5d36016-79d0-5b47-8baf-65d3a956b736",
+  "version": "0.3.0",
+  "name": "BAT54C Dual Schottky",
+  "description": "BAT54C dual Schottky (common cathode), 30V 200mA, SOT-23.",
+  "category": "diode",
+  "subcategory": "schottky",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BAT54C",
+    "Schottky",
+    "dual",
+    "diode"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.diodes.com/_files/datasheets/ds11005.pdf",
+  "parameters": {
+    "type": "schottky",
+    "vrrm": "30V",
+    "if": "200mA"
+  },
+  "symbol": "openpcb.core.symbol.diode.bat54c",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BAT54C.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "BAT54C Dual Schottky",
+    "sourceHash": "51d4c476af00dc698980f3c8faa8f6a4a0a487e2b4a6ced8b63371b9d635edbf",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:34:50.225Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

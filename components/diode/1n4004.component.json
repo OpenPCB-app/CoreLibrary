@@ -1,0 +1,63 @@
+{
+  "id": "openpcb.core.diode.1n4004",
+  "uuid": "f505e5af-1c1e-5905-a19a-115532268563",
+  "version": "0.3.0",
+  "name": "1N4004 Rectifier Diode",
+  "description": "1N4004 general-purpose rectifier, 400V 1A, DO-41.",
+  "category": "diode",
+  "subcategory": "rectifier",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "1N4004",
+    "rectifier",
+    "diode"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.vishay.com/docs/88503/1n4001.pdf",
+  "parameters": {
+    "type": "rectifier",
+    "vrrm": "400V",
+    "if": "1A"
+  },
+  "symbol": "openpcb.core.symbol.diode.1n4004",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.d-do-41",
+      "label": "DO-41",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "1N4004.kicad_sym",
+    "sourceLibrary": "Diode",
+    "sourceItemName": "1N4004 Rectifier Diode",
+    "sourceHash": "9c34a634a881a300817766b3a5f3c269ad0b0c426e0e8fcd2d494b143d956b63",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:34:50.225Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
