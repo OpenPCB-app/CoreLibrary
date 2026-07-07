@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.tip120",
+  "uuid": "c81dafec-76e0-529b-9e64-69f4335cdae6",
+  "version": "0.3.0",
+  "name": "TIP120 NPN Darlington",
+  "description": "TIP120 NPN Darlington transistor, 60V 5A, TO-220.",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TIP120",
+    "NPN",
+    "Darlington",
+    "transistor"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF",
+  "parameters": {
+    "type": "npn-darlington",
+    "vce": "60V",
+    "ic": "5A"
+  },
+  "symbol": "openpcb.core.symbol.transistor.tip120",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TIP120.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "TIP120 NPN Darlington",
+    "sourceHash": "ff6aa0bba9b08273f07d233afb149788cfe05ee3bc318c6908dee08065fbdfcd",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:41:26.291Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

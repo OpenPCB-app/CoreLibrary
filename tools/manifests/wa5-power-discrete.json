@@ -1,0 +1,376 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.transistor.tip120",
+      "name": "TIP120 NPN Darlington",
+      "description": "TIP120 NPN Darlington transistor, 60V 5A, TO-220.",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": [
+        "transistor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TIP120",
+        "NPN",
+        "Darlington",
+        "transistor"
+      ],
+      "parameters": {
+        "type": "npn-darlington",
+        "vce": "60V",
+        "ic": "5A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.tip120",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/TIP120.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.tip122",
+      "name": "TIP122 NPN Darlington",
+      "description": "TIP122 NPN Darlington transistor, 100V 5A, TO-220.",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": [
+        "transistor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TIP122",
+        "NPN",
+        "Darlington",
+        "transistor"
+      ],
+      "parameters": {
+        "type": "npn-darlington",
+        "vce": "100V",
+        "ic": "5A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.tip122",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/TIP122.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.tip41c",
+      "name": "TIP41C NPN Transistor",
+      "description": "TIP41C NPN power transistor, 100V 6A, TO-220.",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": [
+        "transistor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TIP41C",
+        "NPN",
+        "power",
+        "transistor"
+      ],
+      "parameters": {
+        "type": "npn",
+        "vce": "100V",
+        "ic": "6A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.tip41c",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/TIP41C.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.tip42c",
+      "name": "TIP42C PNP Transistor",
+      "description": "TIP42C PNP power transistor, 100V 6A, TO-220.",
+      "category": "transistor",
+      "subcategory": "bjt-pnp",
+      "tags": [
+        "transistor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TIP42C",
+        "PNP",
+        "power",
+        "transistor"
+      ],
+      "parameters": {
+        "type": "pnp",
+        "vce": "100V",
+        "ic": "6A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.tip42c",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/TIP42C.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.irf3205",
+      "name": "IRF3205 N-Channel MOSFET",
+      "description": "IRF3205 N-channel power MOSFET, 55V 110A, TO-220.",
+      "category": "transistor",
+      "subcategory": "mosfet-n",
+      "tags": [
+        "transistor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "IRF3205",
+        "N-Channel",
+        "MOSFET",
+        "power"
+      ],
+      "parameters": {
+        "type": "nmos",
+        "vds": "55V",
+        "id": "110A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.irf3205",
+        "path": "kicad-symbols/Transistor_FET.kicad_symdir/IRF3205.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.bd139",
+      "name": "BD139 NPN Transistor",
+      "description": "BD139 NPN medium-power transistor, 80V 1.5A, TO-126.",
+      "category": "transistor",
+      "subcategory": "bjt-npn",
+      "tags": [
+        "transistor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "BD139",
+        "NPN",
+        "transistor",
+        "TO-126"
+      ],
+      "parameters": {
+        "type": "npn",
+        "vce": "80V",
+        "ic": "1.5A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.bd139",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/BD139.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-126-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-126-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-126-3_Vertical.kicad_mod",
+          "label": "TO-126",
+          "model": {
+            "id": "openpcb.core.3d.package.to-126-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-126-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.transistor.bd140",
+      "name": "BD140 PNP Transistor",
+      "description": "BD140 PNP medium-power transistor, 80V 1.5A, TO-126.",
+      "category": "transistor",
+      "subcategory": "bjt-pnp",
+      "tags": [
+        "transistor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "BD140",
+        "PNP",
+        "transistor",
+        "TO-126"
+      ],
+      "parameters": {
+        "type": "pnp",
+        "vce": "80V",
+        "ic": "1.5A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.transistor.bd140",
+        "path": "kicad-symbols/Transistor_BJT.kicad_symdir/BD140.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-126-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-126-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-126-3_Vertical.kicad_mod",
+          "label": "TO-126",
+          "model": {
+            "id": "openpcb.core.3d.package.to-126-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-126-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

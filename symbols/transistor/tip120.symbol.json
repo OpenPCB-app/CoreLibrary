@@ -1,0 +1,1967 @@
+{
+  "id": "openpcb.core.symbol.transistor.tip120",
+  "uuid": "b8fa0073-eefa-5083-914a-f962ac45cbfc",
+  "version": "0.3.0",
+  "name": "TIP120 NPN Darlington",
+  "referencePrefix": "Q",
+  "description": "5A Ic, 60V Vce, Silicon Darlington Power NPN Transistor, TO-220",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "TIP120.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "TIP120",
+    "sourceHash": "fc4200350067b287477aeaa34149e1aefdcb13ac1f0f62d317b32a1278a6dfa4",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:41:26.291Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "Q",
+      "Value": "TIP120",
+      "Footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "Datasheet": "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF",
+      "Description": "5A Ic, 60V Vce, Silicon Darlington Power NPN Transistor, TO-220",
+      "ki_keywords": "Darlington Power NPN Transistor",
+      "ki_fp_filters": "TO?220*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "TIP120.kicad_sym",
+        "sourceItemName": "TIP120",
+        "sha256": "c9a73e7e926131c2628a29ec5b87c69eae68b2e62e524beedf99e1694ce3e70e"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_803c0ed4d01df9e0",
+    "name": "TIP120",
+    "referencePrefix": "Q",
+    "description": "5A Ic, 60V Vce, Silicon Darlington Power NPN Transistor, TO-220",
+    "sourceHash": "fc4200350067b287477aeaa34149e1aefdcb13ac1f0f62d317b32a1278a6dfa4",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "B",
+        "localPosition": {
+          "x": -5.08,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "C",
+        "localPosition": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "E",
+        "localPosition": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "TIP120",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": 0
+            },
+            {
+              "x": -0.889,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -0.762,
+            "y": 0
+          },
+          "radiusMm": 0.127,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -0.254,
+              "y": 2.032
+            },
+            {
+              "x": -0.254,
+              "y": 0
+            },
+            {
+              "x": -0.254,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.3048
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -0.254,
+              "y": 1.27
+            },
+            {
+              "x": 0.762,
+              "y": 2.286
+            },
+            {
+              "x": 2.54,
+              "y": 2.286
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -0.254,
+              "y": 1.016
+            },
+            {
+              "x": -0.762,
+              "y": 1.016
+            },
+            {
+              "x": -0.762,
+              "y": -2.032
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -0.254,
+              "y": 0.762
+            },
+            {
+              "x": 0.762,
+              "y": -0.254
+            },
+            {
+              "x": 1.27,
+              "y": -0.254
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.635,
+              "y": -0.127
+            },
+            {
+              "x": 0.381,
+              "y": 0.381
+            },
+            {
+              "x": 0.127,
+              "y": 0.127
+            },
+            {
+              "x": 0.635,
+              "y": -0.127
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.762,
+              "y": -0.254
+            },
+            {
+              "x": 0.762,
+              "y": -2.032
+            },
+            {
+              "x": 1.143,
+              "y": -2.032
+            },
+            {
+              "x": 1.27,
+              "y": -1.778
+            },
+            {
+              "x": 1.397,
+              "y": -2.286
+            },
+            {
+              "x": 1.524,
+              "y": -1.778
+            },
+            {
+              "x": 1.651,
+              "y": -2.286
+            },
+            {
+              "x": 1.778,
+              "y": -1.778
+            },
+            {
+              "x": 1.905,
+              "y": -2.286
+            },
+            {
+              "x": 2.032,
+              "y": -2.032
+            },
+            {
+              "x": 2.54,
+              "y": -2.032
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0.762,
+            "y": -0.254
+          },
+          "radiusMm": 0.127,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.762,
+              "y": -2.032
+            },
+            {
+              "x": 0.381,
+              "y": -2.032
+            },
+            {
+              "x": 0.254,
+              "y": -2.286
+            },
+            {
+              "x": 0.127,
+              "y": -1.778
+            },
+            {
+              "x": 0,
+              "y": -2.286
+            },
+            {
+              "x": -0.127,
+              "y": -1.778
+            },
+            {
+              "x": -0.254,
+              "y": -2.286
+            },
+            {
+              "x": -0.381,
+              "y": -1.778
+            },
+            {
+              "x": -0.508,
+              "y": -2.032
+            },
+            {
+              "x": -0.762,
+              "y": -2.032
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0.762,
+            "y": -2.032
+          },
+          "radiusMm": 0.127,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 0.762
+            },
+            {
+              "x": 1.27,
+              "y": -1.27
+            },
+            {
+              "x": 1.27,
+              "y": -1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.381
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 0
+            },
+            {
+              "x": 2.286,
+              "y": 1.016
+            },
+            {
+              "x": 2.54,
+              "y": 1.016
+            },
+            {
+              "x": 2.54,
+              "y": 2.286
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 1.27,
+            "y": 0
+          },
+          "radiusMm": 3.175,
+          "fill": "none",
+          "strokeWidthMm": 0.3556
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": -0.508
+            },
+            {
+              "x": 2.286,
+              "y": -1.524
+            },
+            {
+              "x": 2.54,
+              "y": -1.524
+            },
+            {
+              "x": 2.54,
+              "y": -2.032
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.159,
+              "y": -1.397
+            },
+            {
+              "x": 1.905,
+              "y": -0.889
+            },
+            {
+              "x": 1.651,
+              "y": -1.143
+            },
+            {
+              "x": 2.159,
+              "y": -1.397
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": 2.286
+          },
+          "radiusMm": 0.127,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": 1.016
+          },
+          "radiusMm": 0.127,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": -1.524
+            },
+            {
+              "x": 3.175,
+              "y": -1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": -1.524
+          },
+          "radiusMm": 0.127,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": -2.032
+            },
+            {
+              "x": 2.54,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": -2.032
+          },
+          "radiusMm": 0.127,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.794,
+              "y": 0.127
+            },
+            {
+              "x": 3.556,
+              "y": 0.127
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.175,
+              "y": 1.016
+            },
+            {
+              "x": 2.54,
+              "y": 1.016
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.175,
+              "y": 1.016
+            },
+            {
+              "x": 3.175,
+              "y": 0.127
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.175,
+              "y": 0.127
+            },
+            {
+              "x": 2.794,
+              "y": -0.635
+            },
+            {
+              "x": 3.556,
+              "y": -0.635
+            },
+            {
+              "x": 3.175,
+              "y": 0.127
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.175,
+              "y": -0.635
+            },
+            {
+              "x": 3.175,
+              "y": -1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 2.5399999999999996,
+            "y": 2.4130000000000003
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -3.175,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 3.048,
+            "y": 4.86664
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 3.048,
+            "y": -4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "Q",
+          "at": {
+            "x": -0.22860000000000014,
+            "y": 6.530340000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "TIP120",
+          "at": {
+            "x": -0.22860000000000014,
+            "y": -6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.08,
+        "minY": -7.810499999999999,
+        "maxX": 4.6228,
+        "maxY": 7.80034
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "TIP120",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "B",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 0
+        },
+        "length": 3.81,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "C",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": 5.08
+        },
+        "length": 2.667,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "E",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "Q",
+      "Value": "TIP120",
+      "Footprint": "Package_TO_SOT_THT:TO-220-3_Vertical",
+      "Datasheet": "https://www.onsemi.com/pub/Collateral/TIP120-D.PDF",
+      "Description": "5A Ic, 60V Vce, Silicon Darlington Power NPN Transistor, TO-220",
+      "ki_keywords": "Darlington Power NPN Transistor",
+      "ki_fp_filters": "TO?220*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              0
+            ],
+            [
+              "xy",
+              -0.889,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -0.762,
+            0
+          ],
+          [
+            "radius",
+            0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -0.254,
+              2.032
+            ],
+            [
+              "xy",
+              -0.254,
+              0
+            ],
+            [
+              "xy",
+              -0.254,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.3048
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -0.254,
+              1.27
+            ],
+            [
+              "xy",
+              0.762,
+              2.286
+            ],
+            [
+              "xy",
+              2.54,
+              2.286
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -0.254,
+              1.016
+            ],
+            [
+              "xy",
+              -0.762,
+              1.016
+            ],
+            [
+              "xy",
+              -0.762,
+              -2.032
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -0.254,
+              0.762
+            ],
+            [
+              "xy",
+              0.762,
+              -0.254
+            ],
+            [
+              "xy",
+              1.27,
+              -0.254
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.635,
+              -0.127
+            ],
+            [
+              "xy",
+              0.381,
+              0.381
+            ],
+            [
+              "xy",
+              0.127,
+              0.127
+            ],
+            [
+              "xy",
+              0.635,
+              -0.127
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.762,
+              -0.254
+            ],
+            [
+              "xy",
+              0.762,
+              -2.032
+            ],
+            [
+              "xy",
+              1.143,
+              -2.032
+            ],
+            [
+              "xy",
+              1.27,
+              -1.778
+            ],
+            [
+              "xy",
+              1.397,
+              -2.286
+            ],
+            [
+              "xy",
+              1.524,
+              -1.778
+            ],
+            [
+              "xy",
+              1.651,
+              -2.286
+            ],
+            [
+              "xy",
+              1.778,
+              -1.778
+            ],
+            [
+              "xy",
+              1.905,
+              -2.286
+            ],
+            [
+              "xy",
+              2.032,
+              -2.032
+            ],
+            [
+              "xy",
+              2.54,
+              -2.032
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0.762,
+            -0.254
+          ],
+          [
+            "radius",
+            0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.762,
+              -2.032
+            ],
+            [
+              "xy",
+              0.381,
+              -2.032
+            ],
+            [
+              "xy",
+              0.254,
+              -2.286
+            ],
+            [
+              "xy",
+              0.127,
+              -1.778
+            ],
+            [
+              "xy",
+              0,
+              -2.286
+            ],
+            [
+              "xy",
+              -0.127,
+              -1.778
+            ],
+            [
+              "xy",
+              -0.254,
+              -2.286
+            ],
+            [
+              "xy",
+              -0.381,
+              -1.778
+            ],
+            [
+              "xy",
+              -0.508,
+              -2.032
+            ],
+            [
+              "xy",
+              -0.762,
+              -2.032
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0.762,
+            -2.032
+          ],
+          [
+            "radius",
+            0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              0.762
+            ],
+            [
+              "xy",
+              1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              1.27,
+              -1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.381
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              0
+            ],
+            [
+              "xy",
+              2.286,
+              1.016
+            ],
+            [
+              "xy",
+              2.54,
+              1.016
+            ],
+            [
+              "xy",
+              2.54,
+              2.286
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            1.27,
+            0
+          ],
+          [
+            "radius",
+            3.175
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.3556
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              -0.508
+            ],
+            [
+              "xy",
+              2.286,
+              -1.524
+            ],
+            [
+              "xy",
+              2.54,
+              -1.524
+            ],
+            [
+              "xy",
+              2.54,
+              -2.032
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.159,
+              -1.397
+            ],
+            [
+              "xy",
+              1.905,
+              -0.889
+            ],
+            [
+              "xy",
+              1.651,
+              -1.143
+            ],
+            [
+              "xy",
+              2.159,
+              -1.397
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            2.286
+          ],
+          [
+            "radius",
+            0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            1.016
+          ],
+          [
+            "radius",
+            0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              -1.524
+            ],
+            [
+              "xy",
+              3.175,
+              -1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            -1.524
+          ],
+          [
+            "radius",
+            0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              -2.032
+            ],
+            [
+              "xy",
+              2.54,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            -2.032
+          ],
+          [
+            "radius",
+            0.127
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.794,
+              0.127
+            ],
+            [
+              "xy",
+              3.556,
+              0.127
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.175,
+              1.016
+            ],
+            [
+              "xy",
+              2.54,
+              1.016
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.175,
+              1.016
+            ],
+            [
+              "xy",
+              3.175,
+              0.127
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.175,
+              0.127
+            ],
+            [
+              "xy",
+              2.794,
+              -0.635
+            ],
+            [
+              "xy",
+              3.556,
+              -0.635
+            ],
+            [
+              "xy",
+              3.175,
+              0.127
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.175,
+              -0.635
+            ],
+            [
+              "xy",
+              3.175,
+              -1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol TIP120 (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference Q (at 5.08 1.905 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value TIP120 (at 5.08 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_TO_SOT_THT:TO-220-3_Vertical (at 5.08 -1.905 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)) (justify left))) (property Datasheet https://www.onsemi.com/pub/Collateral/TIP120-D.PDF (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Description \"5A Ic, 60V Vce, Silicon Darlington Power NPN Transistor, TO-220\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"Darlington Power NPN Transistor\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters TO?220* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol TIP120_0_1 (polyline (pts (xy -1.27 0) (xy -0.889 0)) (stroke (width 0) (type default)) (fill (type none))) (circle (center -0.762 0) (radius 0.127) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.254 2.032) (xy -0.254 0) (xy -0.254 0)) (stroke (width 0.3048) (type default)) (fill (type none))) (polyline (pts (xy -0.254 1.27) (xy 0.762 2.286) (xy 2.54 2.286)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.254 1.016) (xy -0.762 1.016) (xy -0.762 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -0.254 0.762) (xy 0.762 -0.254) (xy 1.27 -0.254)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.635 -0.127) (xy 0.381 0.381) (xy 0.127 0.127) (xy 0.635 -0.127)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.762 -0.254) (xy 0.762 -2.032) (xy 1.143 -2.032) (xy 1.27 -1.778) (xy 1.397 -2.286) (xy 1.524 -1.778) (xy 1.651 -2.286) (xy 1.778 -1.778) (xy 1.905 -2.286) (xy 2.032 -2.032) (xy 2.54 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 0.762 -0.254) (radius 0.127) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.762 -2.032) (xy 0.381 -2.032) (xy 0.254 -2.286) (xy 0.127 -1.778) (xy 0 -2.286) (xy -0.127 -1.778) (xy -0.254 -2.286) (xy -0.381 -1.778) (xy -0.508 -2.032) (xy -0.762 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 0.762 -2.032) (radius 0.127) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0.762) (xy 1.27 -1.27) (xy 1.27 -1.27)) (stroke (width 0.381) (type default)) (fill (type none))) (polyline (pts (xy 1.27 0) (xy 2.286 1.016) (xy 2.54 1.016) (xy 2.54 2.286)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 1.27 0) (radius 3.175) (stroke (width 0.3556) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -0.508) (xy 2.286 -1.524) (xy 2.54 -1.524) (xy 2.54 -2.032)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.159 -1.397) (xy 1.905 -0.889) (xy 1.651 -1.143) (xy 2.159 -1.397)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.54 2.286) (radius 0.127) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.54 1.016) (radius 0.127) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 -1.524) (xy 3.175 -1.524)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.54 -1.524) (radius 0.127) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 -2.032) (xy 2.54 -2.54)) (stroke (width 0) (type default)) (fill (type none))) (circle (center 2.54 -2.032) (radius 0.127) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.794 0.127) (xy 3.556 0.127)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 3.175 1.016) (xy 2.54 1.016)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 3.175 1.016) (xy 3.175 0.127)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 3.175 0.127) (xy 2.794 -0.635) (xy 3.556 -0.635) (xy 3.175 0.127)) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 3.175 -0.635) (xy 3.175 -1.524)) (stroke (width 0) (type default)) (fill (type none)))) (symbol TIP120_1_1 (pin input line (at -5.08 0 0) (length 3.81) (name B (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 5.08 270) (length 2.667) (name C (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 -5.08 90) (length 2.54) (name E (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

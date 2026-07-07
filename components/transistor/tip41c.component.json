@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.tip41c",
+  "uuid": "18389539-d9f5-523d-a2d0-869965c60d55",
+  "version": "0.3.0",
+  "name": "TIP41C NPN Transistor",
+  "description": "TIP41C NPN power transistor, 100V 6A, TO-220.",
+  "category": "transistor",
+  "subcategory": "bjt-npn",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TIP41C",
+    "NPN",
+    "power",
+    "transistor"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=tip41.PDF",
+  "parameters": {
+    "type": "npn",
+    "vce": "100V",
+    "ic": "6A"
+  },
+  "symbol": "openpcb.core.symbol.transistor.tip41c",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TIP41C.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "TIP41C NPN Transistor",
+    "sourceHash": "6fdf556ceade88e8fe7a9f5601975aca753ee9c902d2d9d586379cb080464031",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:41:26.291Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

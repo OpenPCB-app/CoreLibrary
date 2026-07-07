@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.irf3205",
+  "uuid": "00b76888-bb9e-566c-a417-7b59854858a8",
+  "version": "0.3.0",
+  "name": "IRF3205 N-Channel MOSFET",
+  "description": "IRF3205 N-channel power MOSFET, 55V 110A, TO-220.",
+  "category": "transistor",
+  "subcategory": "mosfet-n",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "IRF3205",
+    "N-Channel",
+    "MOSFET",
+    "power"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.irf.com/product-info/datasheets/data/irf3205.pdf",
+  "parameters": {
+    "type": "nmos",
+    "vds": "55V",
+    "id": "110A"
+  },
+  "symbol": "openpcb.core.symbol.transistor.irf3205",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "IRF3205.kicad_sym",
+    "sourceLibrary": "Transistor_FET",
+    "sourceItemName": "IRF3205 N-Channel MOSFET",
+    "sourceHash": "fb6c212b124a7ca922263c464751f977f215f8612c3a80e58bc9129db42f4fb5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:41:26.291Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

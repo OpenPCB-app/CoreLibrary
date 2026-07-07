@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.tip42c",
+  "uuid": "4847db3c-0d96-5d1d-9dbb-74b808ad65f7",
+  "version": "0.3.0",
+  "name": "TIP42C PNP Transistor",
+  "description": "TIP42C PNP power transistor, 100V 6A, TO-220.",
+  "category": "transistor",
+  "subcategory": "bjt-pnp",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TIP42C",
+    "PNP",
+    "power",
+    "transistor"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=TIP42.PDF",
+  "parameters": {
+    "type": "pnp",
+    "vce": "100V",
+    "ic": "6A"
+  },
+  "symbol": "openpcb.core.symbol.transistor.tip42c",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TIP42C.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "TIP42C PNP Transistor",
+    "sourceHash": "c0a467b3e773bb59dd79e2be166b4f09b84f8c90ce0453d1b1b7c0bea0cc317c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:41:26.291Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.transistor.bd140",
+  "uuid": "9e5c21a0-f143-5ed8-8f61-b0af8555e889",
+  "version": "0.3.0",
+  "name": "BD140 PNP Transistor",
+  "description": "BD140 PNP medium-power transistor, 80V 1.5A, TO-126.",
+  "category": "transistor",
+  "subcategory": "bjt-pnp",
+  "tags": [
+    "transistor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "BD140",
+    "PNP",
+    "transistor",
+    "TO-126"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.st.com/internet/com/TECHNICAL_RESOURCES/TECHNICAL_LITERATURE/DATASHEET/CD00001225.pdf",
+  "parameters": {
+    "type": "pnp",
+    "vce": "80V",
+    "ic": "1.5A"
+  },
+  "symbol": "openpcb.core.symbol.transistor.bd140",
+  "defaultFootprint": "openpcb.core.footprint.package.to-126-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-126-3-vertical",
+      "label": "TO-126",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "BD140.kicad_sym",
+    "sourceLibrary": "Transistor_BJT",
+    "sourceItemName": "BD140 PNP Transistor",
+    "sourceHash": "b6f65c0688949d35fa05580082937b904439f3f1d1a53a33f68ca03c81793de2",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:41:26.291Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
