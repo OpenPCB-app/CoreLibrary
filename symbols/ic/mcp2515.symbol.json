@@ -1,0 +1,1464 @@
+{
+  "id": "openpcb.core.symbol.ic.mcp2515",
+  "uuid": "3f31afbf-1bae-5ac6-9ff6-5d46957a4110",
+  "version": "0.3.0",
+  "name": "MCP2515 CAN Controller",
+  "referencePrefix": "U",
+  "description": "Stand-Alone CAN Controller with SPI Interface, SOIC-18",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "MCP2515-xSO.kicad_sym",
+    "sourceLibrary": "Interface_CAN_LIN",
+    "sourceItemName": "MCP2515-xSO",
+    "sourceHash": "c3c50d48a7783020a3021de968a4a05881751aee9d3acd47a38e172d4f5a6ba6",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:48:24.621Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP2515-xSO",
+      "Footprint": "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf",
+      "Description": "Stand-Alone CAN Controller with SPI Interface, SOIC-18",
+      "ki_keywords": "CAN Controller SPI",
+      "ki_fp_filters": "SOIC*7.5x11.6mm*P1.27mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "MCP2515-xSO.kicad_sym",
+        "sourceItemName": "MCP2515-xSO",
+        "sha256": "1330fe37b4f829fce5999b8eeb9accacf4650d84d54076039d080a08d0ca8545"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_56c28e873b8a3510",
+    "name": "MCP2515-xSO",
+    "referencePrefix": "U",
+    "description": "Stand-Alone CAN Controller with SPI Interface, SOIC-18",
+    "sourceHash": "c3c50d48a7783020a3021de968a4a05881751aee9d3acd47a38e172d4f5a6ba6",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "TXCAN",
+        "localPosition": {
+          "x": 15.24,
+          "y": 12.7
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "RXCAN",
+        "localPosition": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "CLKOUT/SOF",
+        "localPosition": {
+          "x": -15.24,
+          "y": -10.16
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "~{TX0RTS}",
+        "localPosition": {
+          "x": 15.24,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "~{TX1RTS}",
+        "localPosition": {
+          "x": 15.24,
+          "y": -10.16
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "~{TX2RTS}",
+        "localPosition": {
+          "x": 15.24,
+          "y": -12.7
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "OSC2",
+        "localPosition": {
+          "x": -15.24,
+          "y": -5.08
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "OSC1",
+        "localPosition": {
+          "x": -15.24,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "VSS",
+        "localPosition": {
+          "x": 0,
+          "y": -20.32
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "~{RX1BF}",
+        "localPosition": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "~{RX0BF}",
+        "localPosition": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "~{INT}",
+        "localPosition": {
+          "x": 15.24,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "SCK",
+        "localPosition": {
+          "x": -15.24,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "SI",
+        "localPosition": {
+          "x": -15.24,
+          "y": 15.24
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "SO",
+        "localPosition": {
+          "x": -15.24,
+          "y": 12.7
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "~{CS}",
+        "localPosition": {
+          "x": -15.24,
+          "y": 10.16
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:17",
+        "number": "17",
+        "name": "~{RESET}",
+        "localPosition": {
+          "x": 15.24,
+          "y": -15.24
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:18",
+        "number": "18",
+        "name": "VDD",
+        "localPosition": {
+          "x": 0,
+          "y": 20.32
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "MCP2515-xSO",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -12.7,
+          "y": -17.78,
+          "width": 25.4,
+          "height": 35.56,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "TXCAN",
+          "number": "1",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "RXCAN",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "CLKOUT/SOF",
+          "number": "3",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "~{TX0RTS}",
+          "number": "4",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:5",
+          "name": "~{TX1RTS}",
+          "number": "5",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "~{TX2RTS}",
+          "number": "6",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "OSC2",
+          "number": "7",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:8",
+          "name": "OSC1",
+          "number": "8",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:9",
+          "name": "VSS",
+          "number": "9",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -20.32
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -17.78
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:10",
+          "name": "~{RX1BF}",
+          "number": "10",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:11",
+          "name": "~{RX0BF}",
+          "number": "11",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:12",
+          "name": "~{INT}",
+          "number": "12",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:13",
+          "name": "SCK",
+          "number": "13",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:14",
+          "name": "SI",
+          "number": "14",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 15.24
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:15",
+          "name": "SO",
+          "number": "15",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 12.7
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:16",
+          "name": "~{CS}",
+          "number": "16",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:17",
+          "name": "~{RESET}",
+          "number": "17",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:18",
+          "name": "VDD",
+          "number": "18",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 20.32
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 17.78
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "TXCAN",
+          "at": {
+            "x": 12.192,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "RXCAN",
+          "at": {
+            "x": 12.192,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "CLKOUT/SOF",
+          "at": {
+            "x": -12.192,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "~{TX0RTS}",
+          "at": {
+            "x": 12.192,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "~{TX1RTS}",
+          "at": {
+            "x": 12.192,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "~{TX2RTS}",
+          "at": {
+            "x": 12.192,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "OSC2",
+          "at": {
+            "x": -12.192,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "OSC1",
+          "at": {
+            "x": -12.192,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "VSS",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": 0.508,
+            "y": -20.1168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "~{RX1BF}",
+          "at": {
+            "x": 12.192,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "~{RX0BF}",
+          "at": {
+            "x": 12.192,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "~{INT}",
+          "at": {
+            "x": 12.192,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "SCK",
+          "at": {
+            "x": -12.192,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "SI",
+          "at": {
+            "x": -12.192,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "SO",
+          "at": {
+            "x": -12.192,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "~{CS}",
+          "at": {
+            "x": -12.192,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:17:name",
+          "text": "~{RESET}",
+          "at": {
+            "x": 12.192,
+            "y": -15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:17:number",
+          "text": "17",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -14.732
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:18:name",
+          "text": "VDD",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:18:number",
+          "text": "18",
+          "at": {
+            "x": 0.508,
+            "y": 20.1168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 22.174200000000003
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "MCP2515-xSO",
+          "at": {
+            "x": 0,
+            "y": -21.920199999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -15.24,
+        "minY": -23.190199999999997,
+        "maxX": 15.24,
+        "maxY": 23.444200000000002
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "MCP2515-xSO",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "TXCAN",
+        "number": "1",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "RXCAN",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CLKOUT/SOF",
+        "number": "3",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{TX0RTS}",
+        "number": "4",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{TX1RTS}",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{TX2RTS}",
+        "number": "6",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "OSC2",
+        "number": "7",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "OSC1",
+        "number": "8",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VSS",
+        "number": "9",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -20.32
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{RX1BF}",
+        "number": "10",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{RX0BF}",
+        "number": "11",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{INT}",
+        "number": "12",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SCK",
+        "number": "13",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SI",
+        "number": "14",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SO",
+        "number": "15",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{CS}",
+        "number": "16",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{RESET}",
+        "number": "17",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "18",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 20.32
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP2515-xSO",
+      "Footprint": "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf",
+      "Description": "Stand-Alone CAN Controller with SPI Interface, SOIC-18",
+      "ki_keywords": "CAN Controller SPI",
+      "ki_fp_filters": "SOIC*7.5x11.6mm*P1.27mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -12.7,
+            17.78
+          ],
+          [
+            "end",
+            12.7,
+            -17.78
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol MCP2515-xSO (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -10.16 19.685 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property Value MCP2515-xSO (at 19.05 20.32 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right top))) (property Footprint Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm (at 0 -22.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property Datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf (at 2.54 -20.32 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Stand-Alone CAN Controller with SPI Interface, SOIC-18\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"CAN Controller SPI\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOIC*7.5x11.6mm*P1.27mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol MCP2515-xSO_0_1 (rectangle (start -12.7 17.78) (end 12.7 -17.78) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol MCP2515-xSO_1_1 (pin output line (at 15.24 12.7 180) (length 2.54) (name TXCAN (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin input line (at 15.24 15.24 180) (length 2.54) (name RXCAN (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin output line (at -15.24 -10.16 0) (length 2.54) (name CLKOUT/SOF (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin input line (at 15.24 -7.62 180) (length 2.54) (name ~{TX0RTS} (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin input line (at 15.24 -10.16 180) (length 2.54) (name ~{TX1RTS} (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin input line (at 15.24 -12.7 180) (length 2.54) (name ~{TX2RTS} (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin output line (at -15.24 -5.08 0) (length 2.54) (name OSC2 (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin input line (at -15.24 -7.62 0) (length 2.54) (name OSC1 (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -20.32 90) (length 2.54) (name VSS (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27))))) (pin output line (at 15.24 -5.08 180) (length 2.54) (name ~{RX1BF} (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27))))) (pin output line (at 15.24 -2.54 180) (length 2.54) (name ~{RX0BF} (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27))))) (pin output line (at 15.24 0 180) (length 2.54) (name ~{INT} (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin input line (at -15.24 7.62 0) (length 2.54) (name SCK (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27))))) (pin input line (at -15.24 15.24 0) (length 2.54) (name SI (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27))))) (pin output line (at -15.24 12.7 0) (length 2.54) (name SO (effects (font (size 1.27 1.27)))) (number 15 (effects (font (size 1.27 1.27))))) (pin input line (at -15.24 10.16 0) (length 2.54) (name ~{CS} (effects (font (size 1.27 1.27)))) (number 16 (effects (font (size 1.27 1.27))))) (pin input line (at 15.24 -15.24 180) (length 2.54) (name ~{RESET} (effects (font (size 1.27 1.27)))) (number 17 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 20.32 270) (length 2.54) (name VDD (effects (font (size 1.27 1.27)))) (number 18 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

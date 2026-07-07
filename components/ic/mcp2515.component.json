@@ -1,0 +1,205 @@
+{
+  "id": "openpcb.core.ic.mcp2515",
+  "uuid": "6f3d99fd-f427-5aac-80b2-d37cc09f5db4",
+  "version": "0.3.0",
+  "name": "MCP2515 CAN Controller",
+  "description": "MCP2515 stand-alone CAN 2.0B controller with SPI, SOIC-18 / DIP-18.",
+  "category": "ic",
+  "subcategory": "interface",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MCP2515",
+    "CAN",
+    "controller",
+    "SPI"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf",
+  "parameters": {
+    "bus": "CAN 2.0B",
+    "interface": "SPI"
+  },
+  "symbol": "openpcb.core.symbol.ic.mcp2515",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-18w-7-5x11-6mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-18w-7-5x11-6mm-p1-27mm",
+      "label": "SOIC-18W",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "17",
+          "padNumber": "17"
+        },
+        {
+          "pinNumber": "18",
+          "padNumber": "18"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.dip-18-w7-62mm",
+      "label": "DIP-18",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "17",
+          "padNumber": "17"
+        },
+        {
+          "pinNumber": "18",
+          "padNumber": "18"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MCP2515-xSO.kicad_sym",
+    "sourceLibrary": "Interface_CAN_LIN",
+    "sourceItemName": "MCP2515 CAN Controller",
+    "sourceHash": "8b019cef76129a59812b5e81ffa0104c4769107f62a90c22bb7ea0673fac0cf9",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:48:24.621Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

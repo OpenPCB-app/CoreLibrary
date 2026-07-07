@@ -1,0 +1,190 @@
+{
+  "id": "openpcb.core.ic.mcp3008",
+  "uuid": "0416f789-3148-5ce9-9487-119cb327d9b6",
+  "version": "0.3.0",
+  "name": "MCP3008 ADC",
+  "description": "MCP3008 8-channel 10-bit SPI ADC, DIP-16 / SOIC-16.",
+  "category": "ic",
+  "subcategory": "data-converter",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MCP3008",
+    "ADC",
+    "SPI",
+    "10-bit"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf",
+  "parameters": {
+    "channels": "8",
+    "resolution": "10-bit",
+    "interface": "SPI"
+  },
+  "symbol": "openpcb.core.symbol.ic.mcp3008",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-16-w7-62mm",
+      "label": "DIP-16",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "label": "SOIC-16",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MCP3008.kicad_sym",
+    "sourceLibrary": "Analog_ADC",
+    "sourceItemName": "MCP3008 ADC",
+    "sourceHash": "e2367c63cfa537a3b362b98df5f35989f0da6ce1a6d2cb3d753ec5da1c3765ed",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:48:24.621Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

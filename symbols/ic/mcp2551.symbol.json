@@ -1,0 +1,744 @@
+{
+  "id": "openpcb.core.symbol.ic.mcp2551",
+  "uuid": "0d542afe-91bf-57eb-a957-36372888379c",
+  "version": "0.3.0",
+  "name": "MCP2551 CAN Transceiver",
+  "referencePrefix": "U",
+  "description": "High-Speed CAN Transceiver, 1Mbps, 5V supply, DIP-8",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "MCP2551-I-P.kicad_sym",
+    "sourceLibrary": "Interface_CAN_LIN",
+    "sourceItemName": "MCP2551-I-P",
+    "sourceHash": "3e86b2b9d35d7202a27ed385d24480e025516fbe66432db29bb9425cf8a8e75a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:48:24.621Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP2551-I-P",
+      "Footprint": "Package_DIP:DIP-8_W7.62mm",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf",
+      "Description": "High-Speed CAN Transceiver, 1Mbps, 5V supply, DIP-8",
+      "ki_keywords": "High-Speed CAN Transceiver",
+      "ki_fp_filters": "DIP*W7.62mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "MCP2551-I-P.kicad_sym",
+        "sourceItemName": "MCP2551-I-P",
+        "sha256": "5b7f7cb5a19d6046774017388ac0dde28536519b9b9d168851031f6e85bca2c5"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_287fff483a3eaf7d",
+    "name": "MCP2551-I-P",
+    "referencePrefix": "U",
+    "description": "High-Speed CAN Transceiver, 1Mbps, 5V supply, DIP-8",
+    "sourceHash": "3e86b2b9d35d7202a27ed385d24480e025516fbe66432db29bb9425cf8a8e75a",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "TXD",
+        "localPosition": {
+          "x": -12.7,
+          "y": 5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "VSS",
+        "localPosition": {
+          "x": 0,
+          "y": -10.16
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "VDD",
+        "localPosition": {
+          "x": 0,
+          "y": 10.16
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "RXD",
+        "localPosition": {
+          "x": -12.7,
+          "y": 2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "Vref",
+        "localPosition": {
+          "x": -12.7,
+          "y": -2.54
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "CANL",
+        "localPosition": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "CANH",
+        "localPosition": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "Rs",
+        "localPosition": {
+          "x": -12.7,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "MCP2551-I-P",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -10.16,
+          "y": -7.62,
+          "width": 20.32,
+          "height": 15.24,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "TXD",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "VSS",
+          "number": "2",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -7.62
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "VDD",
+          "number": "3",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 7.62
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:4",
+          "name": "RXD",
+          "number": "4",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "Vref",
+          "number": "5",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "CANL",
+          "number": "6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "CANH",
+          "number": "7",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:8",
+          "name": "Rs",
+          "number": "8",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "TXD",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -11.43,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "VSS",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 0.508,
+            "y": -9.956800000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "VDD",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 0.508,
+            "y": 9.956800000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "RXD",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -11.43,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "Vref",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -11.43,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "CANL",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 11.43,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "CANH",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 11.43,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "Rs",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": -11.43,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 11.7602
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "MCP2551-I-P",
+          "at": {
+            "x": 0,
+            "y": -11.7602
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -12.7,
+        "minY": -13.030199999999999,
+        "maxX": 12.7,
+        "maxY": 13.030199999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "MCP2551-I-P",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "TXD",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VSS",
+        "number": "2",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "3",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "RXD",
+        "number": "4",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Vref",
+        "number": "5",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CANL",
+        "number": "6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CANH",
+        "number": "7",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Rs",
+        "number": "8",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP2551-I-P",
+      "Footprint": "Package_DIP:DIP-8_W7.62mm",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf",
+      "Description": "High-Speed CAN Transceiver, 1Mbps, 5V supply, DIP-8",
+      "ki_keywords": "High-Speed CAN Transceiver",
+      "ki_fp_filters": "DIP*W7.62mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -10.16,
+            7.62
+          ],
+          [
+            "end",
+            10.16,
+            -7.62
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol MCP2551-I-P (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -10.16 8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value MCP2551-I-P (at 2.54 8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_DIP:DIP-8_W7.62mm (at 0 -12.7 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)))) (property Datasheet http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"High-Speed CAN Transceiver, 1Mbps, 5V supply, DIP-8\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"High-Speed CAN Transceiver\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters DIP*W7.62mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol MCP2551-I-P_0_1 (rectangle (start -10.16 7.62) (end 10.16 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol MCP2551-I-P_1_1 (pin input line (at -12.7 5.08 0) (length 2.54) (name TXD (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -10.16 90) (length 2.54) (name VSS (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 10.16 270) (length 2.54) (name VDD (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin output line (at -12.7 2.54 0) (length 2.54) (name RXD (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin power_out line (at -12.7 -2.54 0) (length 2.54) (name Vref (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 12.7 -2.54 180) (length 2.54) (name CANL (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 12.7 2.54 180) (length 2.54) (name CANH (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 -5.08 0) (length 2.54) (name Rs (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

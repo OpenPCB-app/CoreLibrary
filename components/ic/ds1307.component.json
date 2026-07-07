@@ -1,0 +1,125 @@
+{
+  "id": "openpcb.core.ic.ds1307",
+  "uuid": "598f398c-9731-5535-9cd3-b2fac680cf94",
+  "version": "0.3.0",
+  "name": "DS1307 RTC",
+  "description": "DS1307 I2C real-time clock, DIP-8 / SOIC-8.",
+  "category": "ic",
+  "subcategory": "rtc",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "DS1307",
+    "RTC",
+    "real-time clock",
+    "I2C"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf",
+  "parameters": {
+    "interface": "I2C",
+    "function": "RTC"
+  },
+  "symbol": "openpcb.core.symbol.ic.ds1307",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
+      "label": "DIP-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "label": "SOIC-8",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "DS1307+.kicad_sym",
+    "sourceLibrary": "Timer_RTC",
+    "sourceItemName": "DS1307 RTC",
+    "sourceHash": "29c65155f6daf5c53ec7b1a5c75899b5a1139e44d210e37df72f05f695abeea4",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:48:24.621Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

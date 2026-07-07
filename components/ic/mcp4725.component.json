@@ -1,0 +1,80 @@
+{
+  "id": "openpcb.core.ic.mcp4725",
+  "uuid": "df833c4c-e88c-5b0a-b769-8cfb5eed22db",
+  "version": "0.3.0",
+  "name": "MCP4725 DAC",
+  "description": "MCP4725 12-bit I2C DAC with EEPROM, SOT-23-6.",
+  "category": "ic",
+  "subcategory": "data-converter",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MCP4725",
+    "DAC",
+    "I2C",
+    "12-bit"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://ww1.microchip.com/downloads/en/DeviceDoc/22039d.pdf",
+  "parameters": {
+    "channels": "1",
+    "resolution": "12-bit",
+    "interface": "I2C"
+  },
+  "symbol": "openpcb.core.symbol.ic.mcp4725",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23-6",
+      "label": "SOT-23-6",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MCP4725xxx-xCH.kicad_sym",
+    "sourceLibrary": "Analog_DAC",
+    "sourceItemName": "MCP4725 DAC",
+    "sourceHash": "d7a792d51394630e858c4acb8c91dd07f5588be43de8cd6c94b8b16b2568aa1f",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:48:24.621Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

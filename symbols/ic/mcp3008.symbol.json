@@ -1,0 +1,1865 @@
+{
+  "id": "openpcb.core.symbol.ic.mcp3008",
+  "uuid": "14f049d2-f08e-5924-9e60-902e2162790e",
+  "version": "0.3.0",
+  "name": "MCP3008 ADC",
+  "referencePrefix": "U",
+  "description": "A/D Converter, 10-Bit, 8-Channel, SPI Interface , 2.7V-5.5V",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "MCP3008.kicad_sym",
+    "sourceLibrary": "Analog_ADC",
+    "sourceItemName": "MCP3008",
+    "sourceHash": "fe5f90f5a42c5f9e00a9871c4e88c3ae36e8b67aeec28737346f308c2faace6e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:48:24.621Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from MCP3208"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP3008",
+      "Footprint": "",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf",
+      "Description": "A/D Converter, 10-Bit, 8-Channel, SPI Interface , 2.7V-5.5V",
+      "ki_keywords": "12bit ADC Reference Single Supply SPI 8CH",
+      "ki_fp_filters": "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "MCP3008.kicad_sym",
+        "sourceItemName": "MCP3008",
+        "sha256": "2eb27f76798d62e2edc24e48157be6648334e2f044496a7a16274aa5fd0b790e"
+      },
+      {
+        "fileName": "MCP3208.kicad_sym",
+        "sourceItemName": "MCP3208",
+        "sha256": "cfb2be046b87a769f2d36c0ff530ce34b766d08055c1bdffd1bf6daae0487c35"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_2a4ac6f790074bb3",
+    "name": "MCP3008",
+    "referencePrefix": "U",
+    "description": "A/D Converter, 10-Bit, 8-Channel, SPI Interface , 2.7V-5.5V",
+    "sourceHash": "fe5f90f5a42c5f9e00a9871c4e88c3ae36e8b67aeec28737346f308c2faace6e",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "CH0",
+        "localPosition": {
+          "x": -15.24,
+          "y": 7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "CH1",
+        "localPosition": {
+          "x": -15.24,
+          "y": 5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "CH2",
+        "localPosition": {
+          "x": -15.24,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "CH3",
+        "localPosition": {
+          "x": -15.24,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "CH4",
+        "localPosition": {
+          "x": -15.24,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "CH5",
+        "localPosition": {
+          "x": -15.24,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "CH6",
+        "localPosition": {
+          "x": -15.24,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "CH7",
+        "localPosition": {
+          "x": -15.24,
+          "y": -10.16
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "DGND",
+        "localPosition": {
+          "x": 5.08,
+          "y": -15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "~{CS}/SHDN",
+        "localPosition": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "Din",
+        "localPosition": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "Dout",
+        "localPosition": {
+          "x": 15.24,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "CLK",
+        "localPosition": {
+          "x": 15.24,
+          "y": 2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "AGND",
+        "localPosition": {
+          "x": -2.54,
+          "y": -15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "Vref",
+        "localPosition": {
+          "x": -2.54,
+          "y": 12.7
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "Vdd",
+        "localPosition": {
+          "x": 5.08,
+          "y": 12.7
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from MCP3208"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "MCP3008",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -7.62,
+              "y": 8.89
+            },
+            {
+              "x": -7.62,
+              "y": -11.43
+            },
+            {
+              "x": -5.08,
+              "y": -10.16
+            },
+            {
+              "x": -5.08,
+              "y": 7.62
+            },
+            {
+              "x": -7.62,
+              "y": 8.89
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": 1.27
+            },
+            {
+              "x": -5.08,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.905,
+              "y": 3.175
+            },
+            {
+              "x": 1.905,
+              "y": -0.635
+            },
+            {
+              "x": -2.54,
+              "y": -0.635
+            },
+            {
+              "x": -3.81,
+              "y": 1.27
+            },
+            {
+              "x": -2.54,
+              "y": 3.175
+            },
+            {
+              "x": 1.905,
+              "y": 3.175
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.905,
+              "y": 1.27
+            },
+            {
+              "x": 3.81,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.81,
+              "y": -3.175
+            },
+            {
+              "x": -3.81,
+              "y": -3.175
+            },
+            {
+              "x": -3.81,
+              "y": -11.43
+            },
+            {
+              "x": -6.35,
+              "y": -11.43
+            },
+            {
+              "x": -6.35,
+              "y": -10.795
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 3.81,
+          "y": -3.81,
+          "width": 3.1750000000000003,
+          "height": 7.62,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -12.7,
+          "y": -12.7,
+          "width": 25.4,
+          "height": 22.86,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "CH0",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "CH1",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "CH2",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "CH3",
+          "number": "4",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "CH4",
+          "number": "5",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "CH5",
+          "number": "6",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:7",
+          "name": "CH6",
+          "number": "7",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:8",
+          "name": "CH7",
+          "number": "8",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:9",
+          "name": "DGND",
+          "number": "9",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 5.08,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": -12.7
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:10",
+          "name": "~{CS}/SHDN",
+          "number": "10",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:11",
+          "name": "Din",
+          "number": "11",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:12",
+          "name": "Dout",
+          "number": "12",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:13",
+          "name": "CLK",
+          "number": "13",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:14",
+          "name": "AGND",
+          "number": "14",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": -12.7
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:15",
+          "name": "Vref",
+          "number": "15",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": -2.5400000000000005,
+            "y": 10.16
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:16",
+          "name": "Vdd",
+          "number": "16",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 5.08,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": 5.079999999999999,
+            "y": 10.16
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "CH0",
+          "at": {
+            "x": -12.192,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "CH1",
+          "at": {
+            "x": -12.192,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "CH2",
+          "at": {
+            "x": -12.192,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "CH3",
+          "at": {
+            "x": -12.192,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "CH4",
+          "at": {
+            "x": -12.192,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "CH5",
+          "at": {
+            "x": -12.192,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "CH6",
+          "at": {
+            "x": -12.192,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "CH7",
+          "at": {
+            "x": -12.192,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "DGND",
+          "at": {
+            "x": 5.08,
+            "y": -13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": 5.588,
+            "y": -15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "~{CS}/SHDN",
+          "at": {
+            "x": 12.192,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "Din",
+          "at": {
+            "x": 12.192,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "Dout",
+          "at": {
+            "x": 12.192,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "CLK",
+          "at": {
+            "x": 12.192,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "AGND",
+          "at": {
+            "x": -2.54,
+            "y": -13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": -2.032,
+            "y": -15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "Vref",
+          "at": {
+            "x": -2.5400000000000005,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": -2.032,
+            "y": 12.4968
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "Vdd",
+          "at": {
+            "x": 5.079999999999999,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": 5.588,
+            "y": 12.4968
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol-text:0:-6.35:-1.27:MUX",
+          "text": "MUX",
+          "at": {
+            "x": -6.35,
+            "y": -1.27
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 900,
+          "anchorX": "center",
+          "anchorY": "middle"
+        },
+        {
+          "id": "symbol-text:0:-0.635:1.27:ADC",
+          "text": "ADC",
+          "at": {
+            "x": -0.635,
+            "y": 1.27
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle"
+        },
+        {
+          "id": "symbol-text:0:5.969:-2.921:CNTRL",
+          "text": "CNTRL",
+          "at": {
+            "x": 5.969,
+            "y": -2.921
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 900,
+          "anchorX": "center",
+          "anchorY": "middle"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 15.087599999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "MCP3008",
+          "at": {
+            "x": 0,
+            "y": -17.627599999999997
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -15.24,
+        "minY": -18.897599999999997,
+        "maxX": 15.24,
+        "maxY": 16.357599999999998
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from MCP3208"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "MCP3008",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "CH0",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CH1",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CH2",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CH3",
+        "number": "4",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CH4",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CH5",
+        "number": "6",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CH6",
+        "number": "7",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CH7",
+        "number": "8",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "DGND",
+        "number": "9",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 5.08,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{CS}/SHDN",
+        "number": "10",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Din",
+        "number": "11",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Dout",
+        "number": "12",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CLK",
+        "number": "13",
+        "electricalType": "input",
+        "direction": "clock",
+        "position": {
+          "x": 15.24,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "AGND",
+        "number": "14",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Vref",
+        "number": "15",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Vdd",
+        "number": "16",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 5.08,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP3008",
+      "Footprint": "",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf",
+      "Description": "A/D Converter, 10-Bit, 8-Channel, SPI Interface , 2.7V-5.5V",
+      "ki_keywords": "12bit ADC Reference Single Supply SPI 8CH",
+      "ki_fp_filters": "DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "text",
+          "MUX",
+          [
+            "at",
+            -6.35,
+            -1.27,
+            900
+          ],
+          [
+            "effects",
+            [
+              "font",
+              [
+                "size",
+                1.27,
+                1.27
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "text",
+          "ADC",
+          [
+            "at",
+            -0.635,
+            1.27,
+            0
+          ],
+          [
+            "effects",
+            [
+              "font",
+              [
+                "size",
+                1.27,
+                1.27
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "text",
+          "CNTRL",
+          [
+            "at",
+            5.969,
+            -2.921,
+            900
+          ],
+          [
+            "effects",
+            [
+              "font",
+              [
+                "size",
+                1.27,
+                1.27
+              ]
+            ],
+            [
+              "justify",
+              "left",
+              "bottom"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -7.62,
+              8.89
+            ],
+            [
+              "xy",
+              -7.62,
+              -11.43
+            ],
+            [
+              "xy",
+              -5.08,
+              -10.16
+            ],
+            [
+              "xy",
+              -5.08,
+              7.62
+            ],
+            [
+              "xy",
+              -7.62,
+              8.89
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              1.27
+            ],
+            [
+              "xy",
+              -5.08,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.905,
+              3.175
+            ],
+            [
+              "xy",
+              1.905,
+              -0.635
+            ],
+            [
+              "xy",
+              -2.54,
+              -0.635
+            ],
+            [
+              "xy",
+              -3.81,
+              1.27
+            ],
+            [
+              "xy",
+              -2.54,
+              3.175
+            ],
+            [
+              "xy",
+              1.905,
+              3.175
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.905,
+              1.27
+            ],
+            [
+              "xy",
+              3.81,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.81,
+              -3.175
+            ],
+            [
+              "xy",
+              -3.81,
+              -3.175
+            ],
+            [
+              "xy",
+              -3.81,
+              -11.43
+            ],
+            [
+              "xy",
+              -6.35,
+              -11.43
+            ],
+            [
+              "xy",
+              -6.35,
+              -10.795
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            3.81,
+            -3.81
+          ],
+          [
+            "end",
+            6.985,
+            3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            12.7,
+            -12.7
+          ],
+          [
+            "end",
+            -12.7,
+            10.16
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from MCP3208"
+      }
+    ],
+    "rawSource": "(symbol MCP3008 (extends MCP3208) (property Reference U (at -5.08 13.335 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property Value MCP3008 (at -5.08 11.43 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify right))) (property Footprint \"\" (at 2.54 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/21295d.pdf (at 2.54 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"A/D Converter, 10-Bit, 8-Channel, SPI Interface , 2.7V-5.5V\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"12bit ADC Reference Single Supply SPI 8CH\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"DIP*W7.62mm* SOIC*3.9x9.9mm*P1.27mm*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}
