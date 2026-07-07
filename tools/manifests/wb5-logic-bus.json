@@ -1,0 +1,427 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.ic.74hc244",
+      "name": "74HC244 Octal Buffer",
+      "description": "74HC244 octal buffer / line driver, 3-state, SOIC-20 / TSSOP-20.",
+      "category": "ic",
+      "subcategory": "logic",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "74HC244",
+        "buffer",
+        "line driver",
+        "logic"
+      ],
+      "parameters": {
+        "family": "74HC",
+        "function": "octal buffer"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.74hc244",
+        "path": "kicad-symbols/74xx.kicad_symdir/74HC244.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-20w-7-5x12-8mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-20w-7-5x12-8mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-20W_7.5x12.8mm_P1.27mm.kicad_mod",
+          "label": "SOIC-20W",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-20w-7-5x12-8mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-20W_7.5x12.8mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+          "path": "kicad-footprints/Package_SO.pretty/TSSOP-20_4.4x6.5mm_P0.65mm.kicad_mod",
+          "label": "TSSOP-20",
+          "model": {
+            "id": "openpcb.core.3d.package.tssop-20-4-4x6-5mm-p0-65mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/TSSOP-20_4.4x6.5mm_P0.65mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.74hc245",
+      "name": "74HC245 Octal Bus Transceiver",
+      "description": "74HC245 octal bus transceiver, 3-state, SOIC-20 / TSSOP-20.",
+      "category": "ic",
+      "subcategory": "logic",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "74HC245",
+        "transceiver",
+        "bus",
+        "logic"
+      ],
+      "parameters": {
+        "family": "74HC",
+        "function": "octal transceiver"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.74hc245",
+        "path": "kicad-symbols/74xx.kicad_symdir/74HC245.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-20w-7-5x12-8mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-20w-7-5x12-8mm-p1-27mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-20W_7.5x12.8mm_P1.27mm.kicad_mod",
+          "label": "SOIC-20W",
+          "model": {
+            "id": "openpcb.core.3d.package.soic-20w-7-5x12-8mm-p1-27mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-20W_7.5x12.8mm_P1.27mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+          "path": "kicad-footprints/Package_SO.pretty/TSSOP-20_4.4x6.5mm_P0.65mm.kicad_mod",
+          "label": "TSSOP-20",
+          "model": {
+            "id": "openpcb.core.3d.package.tssop-20-4-4x6-5mm-p0-65mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/TSSOP-20_4.4x6.5mm_P0.65mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
