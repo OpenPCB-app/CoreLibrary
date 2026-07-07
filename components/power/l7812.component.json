@@ -1,0 +1,69 @@
+{
+  "id": "openpcb.core.power.l7812",
+  "uuid": "8f43fe41-b571-5fce-8b1c-aba4a3dd7f90",
+  "version": "0.3.0",
+  "name": "L7812 12V Linear Regulator",
+  "description": "L7812 fixed 12V positive linear regulator, 1.5A, TO-220.",
+  "category": "power",
+  "subcategory": "regulator-linear",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "L7812",
+    "7812",
+    "regulator",
+    "12V",
+    "linear"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf",
+  "parameters": {
+    "vout": "12V",
+    "iout": "1.5A",
+    "type": "linear"
+  },
+  "symbol": "openpcb.core.symbol.power.l7812",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "L7812.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "L7812 12V Linear Regulator",
+    "sourceHash": "5e7d2eacdb5228a1bb3f04ca4f09678e1b31b39736004018644508785ae680c1",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:44:13.599Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

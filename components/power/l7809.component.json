@@ -1,0 +1,69 @@
+{
+  "id": "openpcb.core.power.l7809",
+  "uuid": "211a0202-ab2e-5ff1-b04a-f55c1633f2f8",
+  "version": "0.3.0",
+  "name": "L7809 9V Linear Regulator",
+  "description": "L7809 fixed 9V positive linear regulator, 1.5A, TO-220.",
+  "category": "power",
+  "subcategory": "regulator-linear",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "L7809",
+    "7809",
+    "regulator",
+    "9V",
+    "linear"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf",
+  "parameters": {
+    "vout": "9V",
+    "iout": "1.5A",
+    "type": "linear"
+  },
+  "symbol": "openpcb.core.symbol.power.l7809",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "L7809.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "L7809 9V Linear Regulator",
+    "sourceHash": "89e41112b8b2f031e08cec80522b0b634a33f063219c7b81ddfa89b2bef50efe",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:44:13.599Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

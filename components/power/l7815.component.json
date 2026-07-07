@@ -1,0 +1,69 @@
+{
+  "id": "openpcb.core.power.l7815",
+  "uuid": "1a2e6163-394d-5f7d-9ede-950dcb365e63",
+  "version": "0.3.0",
+  "name": "L7815 15V Linear Regulator",
+  "description": "L7815 fixed 15V positive linear regulator, 1.5A, TO-220.",
+  "category": "power",
+  "subcategory": "regulator-linear",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "L7815",
+    "7815",
+    "regulator",
+    "15V",
+    "linear"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf",
+  "parameters": {
+    "vout": "15V",
+    "iout": "1.5A",
+    "type": "linear"
+  },
+  "symbol": "openpcb.core.symbol.power.l7815",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "L7815.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "L7815 15V Linear Regulator",
+    "sourceHash": "8c38e75fe33fde32cdb75aeb70b471bef71c12a07fba6ca78118389c28787369",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:44:13.599Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

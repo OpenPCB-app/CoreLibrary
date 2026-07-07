@@ -1,0 +1,277 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.power.l7812",
+      "name": "L7812 12V Linear Regulator",
+      "description": "L7812 fixed 12V positive linear regulator, 1.5A, TO-220.",
+      "category": "power",
+      "subcategory": "regulator-linear",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "L7812",
+        "7812",
+        "regulator",
+        "12V",
+        "linear"
+      ],
+      "parameters": {
+        "vout": "12V",
+        "iout": "1.5A",
+        "type": "linear"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.l7812",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/L7812.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.l7809",
+      "name": "L7809 9V Linear Regulator",
+      "description": "L7809 fixed 9V positive linear regulator, 1.5A, TO-220.",
+      "category": "power",
+      "subcategory": "regulator-linear",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "L7809",
+        "7809",
+        "regulator",
+        "9V",
+        "linear"
+      ],
+      "parameters": {
+        "vout": "9V",
+        "iout": "1.5A",
+        "type": "linear"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.l7809",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/L7809.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.l7815",
+      "name": "L7815 15V Linear Regulator",
+      "description": "L7815 fixed 15V positive linear regulator, 1.5A, TO-220.",
+      "category": "power",
+      "subcategory": "regulator-linear",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "L7815",
+        "7815",
+        "regulator",
+        "15V",
+        "linear"
+      ],
+      "parameters": {
+        "vout": "15V",
+        "iout": "1.5A",
+        "type": "linear"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.l7815",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/L7815.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.l7905",
+      "name": "L7905 -5V Linear Regulator",
+      "description": "L7905 fixed -5V negative linear regulator, 1.5A, TO-220.",
+      "category": "power",
+      "subcategory": "regulator-linear",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "L7905",
+        "7905",
+        "regulator",
+        "-5V",
+        "negative",
+        "linear"
+      ],
+      "parameters": {
+        "vout": "-5V",
+        "iout": "1.5A",
+        "type": "linear"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.l7905",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/L7905.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.l7912",
+      "name": "L7912 -12V Linear Regulator",
+      "description": "L7912 fixed -12V negative linear regulator, 1.5A, TO-220.",
+      "category": "power",
+      "subcategory": "regulator-linear",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "L7912",
+        "7912",
+        "regulator",
+        "-12V",
+        "negative",
+        "linear"
+      ],
+      "parameters": {
+        "vout": "-12V",
+        "iout": "1.5A",
+        "type": "linear"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.l7912",
+        "path": "kicad-symbols/Regulator_Linear.kicad_symdir/L7912.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-220-3-vertical",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-220-3_Vertical.kicad_mod",
+          "label": "TO-220",
+          "model": {
+            "id": "openpcb.core.3d.package.to-220-3-vertical",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

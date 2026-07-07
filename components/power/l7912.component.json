@@ -1,0 +1,70 @@
+{
+  "id": "openpcb.core.power.l7912",
+  "uuid": "fbaaf15e-66aa-5fdc-9f73-856e27c3d025",
+  "version": "0.3.0",
+  "name": "L7912 -12V Linear Regulator",
+  "description": "L7912 fixed -12V negative linear regulator, 1.5A, TO-220.",
+  "category": "power",
+  "subcategory": "regulator-linear",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "L7912",
+    "7912",
+    "regulator",
+    "-12V",
+    "negative",
+    "linear"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/86/41/c7/2b/45/f2/CD00000450.pdf/files/CD00000450.pdf/jcr:content/translations/en.CD00000450.pdf",
+  "parameters": {
+    "vout": "-12V",
+    "iout": "1.5A",
+    "type": "linear"
+  },
+  "symbol": "openpcb.core.symbol.power.l7912",
+  "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-220-3-vertical",
+      "label": "TO-220",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "L7912.kicad_sym",
+    "sourceLibrary": "Regulator_Linear",
+    "sourceItemName": "L7912 -12V Linear Regulator",
+    "sourceHash": "3108f8c783d1edea4a85dde56e892ef0d03fd4fafe40d25401438ec6b2ee35b0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:44:13.599Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
