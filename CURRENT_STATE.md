@@ -1,8 +1,10 @@
 # CoreLibrary — Current State (2026-07-07)
 
-Snapshot at the **125-component milestone** on **`master` (`447f2f7`)** — re-verified green today (typecheck · `bun test` 41 pass · `validate --release --strict` 125 OK · `audit:3d` 0 errors · pack builds). For the roadmap + deferrals see [TODO.md](TODO.md); for how to continue see [HANDOFF.md](HANDOFF.md). **Active roadmap:** content grind to v1 (250–300), KiCad-vendored parts only this round → ~180–210; plan at `~/.claude/plans/do-thorough-analysis-of-cozy-shamir.md`.
+Snapshot at **169 components** on branch **`feat/corelib-wave-ab`** (11 commits off `447f2f7`) — verified green (typecheck · `bun test` 41 pass · `validate --release --strict` 169 OK · `audit:3d` 0 errors · pack builds). For the roadmap + deferrals see [TODO.md](TODO.md); for how to continue see [HANDOFF.md](HANDOFF.md). **Active roadmap:** content grind to v1 (250–300), KiCad-vendored parts only this round → ~180–210; plan at `~/.claude/plans/do-thorough-analysis-of-cozy-shamir.md`.
 
-## Inventory — 125 components / 122 symbols / 97 footprints / 97 3D (all STEP-backed)
+**Wave A+B (2026-07-07, +44 → 169):** TO-92 discretes (BC547/BC557/2N3904/2N3906/2N7000); diodes (1N4001/1N4004/SS16/SS24/SS26/BAT54C); op-amps (LM741/TL081/TL082/TL084/NE5534); LM35 + PC817; power discretes (TIP120/122/41C/42C, IRF3205, BD139/140); 78xx/79xx regs (L7812/09/15/7905/12); CD4000 (4011/4013/4017/4066); L293D + ULN2803A; CAN/RTC/ADC/DAC (MCP2515/2551, DS1307/DS3231, MCP3008/4725); 74HC244/245. New footprints: DIP-4, TO-126-3, DIP-18, SOIC-18W, SOIC-20W (DIP y-flips applied). **Stopped at NPTH boundary** — MountingHole/Fiducial/pot/barrel-jack/screw-terminals need the cross-repo `@openpcb/kicad-import` `validateFootprintPads` change (next step).
+
+## Inventory — 169 components / 166 symbols / 102 footprints / 102 3D (all STEP-backed) — was 125
 
 P0/P0.9/P1 = 23; P2–P6 sweep +57 → 80; W1/W2 waves +45 → 125 (manifests `tools/manifests/p{2..6}-*.json`, `w1-*.json`, `w2-*.json`; high-pin pinMaps via `tools/gen-pinmap.ts`).
 
@@ -22,16 +24,16 @@ P0/P0.9/P1 = 23; P2–P6 sweep +57 → 80; W1/W2 waves +45 → 125 (manifests `t
 
 Deferred parts + the no-STEP mechanical code path are tracked in [TODO.md](TODO.md) (Wave-2 + the long-lead-THT 3D-gate-calibration item).
 
-## Gates — all green (re-verified 2026-07-07)
+## Gates — all green (re-verified 2026-07-07 @169)
 
 | Check               | Command                                    | Result                        |
 | ------------------- | ------------------------------------------ | ----------------------------- |
-| Release validation  | `bun tools/validate.ts --release --strict` | OK (125 comp)                 |
-| 3D orientation gate | `bun run audit:3d`                         | 89 ok / 0 errors / 8 warnings |
+| Release validation  | `bun tools/validate.ts --release --strict` | OK (169 comp)                 |
+| 3D orientation gate | `bun run audit:3d`                         | 94 ok / 0 errors / 8 warnings |
 | Datasheet links     | `bun tools/check-datasheet-links.ts`       | no-op (no curated URLs yet)   |
 | Tests               | `bun test`                                 | 41 pass                       |
 | Typecheck           | `bun run typecheck`                        | clean                         |
-| Pack                | `bun tools/pack.ts --version=0.0.0-dev`    | `.opclib` built (125 comp)    |
+| Pack                | `bun tools/pack.ts --version=0.0.0-dev`    | `.opclib` built (169 comp)    |
 
 The 8 audit:3d warnings are the known false-positives (long pin-header rows, testpoint loop, vertical TO-220) pending the `orientation-gate.ts` vertical-THT calibration — see [TODO.md](TODO.md).
 
@@ -65,4 +67,4 @@ The expansion spec (`../Corelibrary expansion plan.md`) was written at an older 
 
 ## Git
 
-125-component milestone committed to **`master`** (`447f2f7` docs / `314948b` W1/W2→125). **`master` is 9 commits ahead of `origin/master` — NOT pushed.** Working tree: `graphify-out/` (graphify skill output) now gitignored; docs (`CURRENT_STATE.md`, `.gitignore`) refreshed this session.
+125→169 Wave A+B committed to branch **`feat/corelib-wave-ab`** (11 commits off `master`@`447f2f7`). **NOT pushed** (master itself still 9 commits ahead of origin). Merge the branch to master when ready. Working tree clean (only `.graphifyignore` untracked, pre-existing).

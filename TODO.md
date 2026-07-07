@@ -14,7 +14,13 @@ Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](
 
 **Corrections to Wave-2 below (verified against the KiCad 10.0.4 clone — older checkout was incomplete):** **PC817** (`Isolator`), **screw terminals** (`TerminalBlock_*.pretty`), **MountingHole** (symbol+fp) ARE present → not external. Orientation-gate already calibrated (B1) — TO-220 family (L7805/LM317/LM2596-adj/IRF540N/IRLZ44N) already shipped; the 8 audit:3d warnings are the known benign false-positives.
 
-**Next:** Phase 1 residual = cross-repo NPTH relax in `../shared` `@openpcb/kicad-import` (`shared:link`) for MountingHole/Fiducial/barrel/pot/terminal-MP-pads. Phase 2 = Wave A content (see TARGETS.md), starting with TO-92 discretes (reuse shared `package.to-92-inline`).
+**Phase 2 Wave A+B DONE (+44 → 169, branch `feat/corelib-wave-ab`, 11 commits, all gates green).** Added: TO-92 discretes, diodes (1N400x/SSxx/BAT54C), op-amps (LM741/TL08x/NE5534), LM35+PC817, TO-220/TO-126 power discretes, 78xx/79xx regs, CD4000, L293D/ULN2803A, CAN/RTC/ADC/DAC, 74HC244/245. New footprints DIP-4/TO-126-3/DIP-18/SOIC-18W/SOIC-20W (DIP y-flips applied). Generators: `scratchpad/genman.py` + `runbatch.sh` (reuse-churn auto-restore).
+
+**Next (stopped at NPTH boundary):**
+1. **Cross-repo NPTH relax** (approved) — `../shared` `@openpcb/kicad-import` `validateFootprintPads` via `shared:link`, unblocks **MountingHole/Fiducial (`no3d`), potentiometer, DC barrel jack, screw terminals** (`w1-mechanical.json` waiting).
+2. Remaining KiCad-only content → v1 approach: header-size variants (1x05/07/16, 2x04/06/10), passive footprint variants (HandSolder R / film cap / MOV / R-network — extend existing R/C ids), more sensors/opto (phototransistor, IR LED, NTC, 7-seg).
+3. Wave C external-sourced (parked) to close ~180 → 250–300.
+4. Merge `feat/corelib-wave-ab` → master (never auto-pushed).
 
 ## 2026-06-26 update — 125-component milestone reached (committed to master)
 
