@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.sensor.lm35",
+  "uuid": "efd623be-27b8-5eff-96a8-a76dafbee1ea",
+  "version": "0.3.0",
+  "name": "LM35 Temperature Sensor",
+  "description": "LM35 precision analog temperature sensor, TO-92.",
+  "category": "sensor",
+  "subcategory": "temperature",
+  "tags": [
+    "sensor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM35",
+    "temperature",
+    "analog",
+    "sensor"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm35.pdf",
+  "parameters": {
+    "measures": "temperature",
+    "output": "analog",
+    "range": "-55C to +150C"
+  },
+  "symbol": "openpcb.core.symbol.sensor.lm35",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM35-LP.kicad_sym",
+    "sourceLibrary": "Sensor_Temperature",
+    "sourceItemName": "LM35 Temperature Sensor",
+    "sourceHash": "781574bd6c1b17f01c69a32be9c353e3666cf6ee732193362af73f68bca3afbc",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:38:22.596Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

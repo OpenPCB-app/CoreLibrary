@@ -1,0 +1,70 @@
+{
+  "id": "openpcb.core.opto.pc817",
+  "uuid": "d9609ce3-a8d0-59c0-b8d8-27d6d4cc73aa",
+  "version": "0.3.0",
+  "name": "PC817 Optocoupler",
+  "description": "PC817 phototransistor optocoupler, DIP-4.",
+  "category": "opto",
+  "subcategory": "optocoupler",
+  "tags": [
+    "opto",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "PC817",
+    "optocoupler",
+    "isolator"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf",
+  "parameters": {
+    "channels": "1",
+    "isolation": "5kV"
+  },
+  "symbol": "openpcb.core.symbol.opto.pc817",
+  "defaultFootprint": "openpcb.core.footprint.package.dip-4-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.dip-4-w7-62mm",
+      "label": "DIP-4",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "PC817.kicad_sym",
+    "sourceLibrary": "Isolator",
+    "sourceItemName": "PC817 Optocoupler",
+    "sourceHash": "157bfb91991f3662c0fdeeff45f819b90a5a4257df1094ab0af6c94f85af6984",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-07T09:38:22.596Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

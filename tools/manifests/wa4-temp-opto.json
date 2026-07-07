@@ -1,0 +1,113 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.sensor.lm35",
+      "name": "LM35 Temperature Sensor",
+      "description": "LM35 precision analog temperature sensor, TO-92.",
+      "category": "sensor",
+      "subcategory": "temperature",
+      "tags": [
+        "sensor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM35",
+        "temperature",
+        "analog",
+        "sensor"
+      ],
+      "parameters": {
+        "measures": "temperature",
+        "output": "analog",
+        "range": "-55C to +150C"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.sensor.lm35",
+        "path": "kicad-symbols/Sensor_Temperature.kicad_symdir/LM35-LP.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "path": "kicad-footprints/Package_TO_SOT_THT.pretty/TO-92_Inline.kicad_mod",
+          "label": "TO-92 inline",
+          "model": {
+            "id": "openpcb.core.3d.package.to-92-inline",
+            "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.opto.pc817",
+      "name": "PC817 Optocoupler",
+      "description": "PC817 phototransistor optocoupler, DIP-4.",
+      "category": "opto",
+      "subcategory": "optocoupler",
+      "tags": [
+        "opto",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "PC817",
+        "optocoupler",
+        "isolator"
+      ],
+      "parameters": {
+        "channels": "1",
+        "isolation": "5kV"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.opto.pc817",
+        "path": "kicad-symbols/Isolator.kicad_symdir/PC817.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.dip-4-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.dip-4-w7-62mm",
+          "path": "kicad-footprints/Package_DIP.pretty/DIP-4_W7.62mm.kicad_mod",
+          "label": "DIP-4",
+          "model": {
+            "id": "openpcb.core.3d.package.dip-4-w7-62mm",
+            "path": "kicad-packages3D/Package_DIP.3dshapes/DIP-4_W7.62mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
