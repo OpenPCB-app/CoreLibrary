@@ -6,6 +6,19 @@ Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](
 
 **Invariant for every content phase:** branch `feat/corelib-<phase>` → author `tools/manifests/<phase>.json` (symdir paths; **every footprint has a STEP**) → `import --strict` → `validate --release --strict` → `audit:3d` → `bun test` → `pack` spot-check → PR. CI runs `--release --strict`, so no-STEP parts go to Wave 2.
 
+## 2026-07-10 update — NPTH unblocked, Wave C landed → 227 (plan: `~/.claude-personal/plans/act-as-pcb-engineer-drifting-jellyfish.md`)
+
+**Phase 0 cross-repo DONE:** shared `kicad-import` 0.1.2 `allowUnnumberedPads` (NPTH relax); shared `opclib-pack` 0.3.0 = `maxEntries:8192` committed + component `subcategory`/`datasheet`/`keywords` (P7 schema); OpenPCB app wired (migration 0010, importer maps metadata + MPN, DetailsCard shows real datasheet URL); pins bumped both consumers. **Local tags `kicad-import-v0.1.2` / `opclib-pack-v0.3.0` exist — push shared main + tags BEFORE pushing consumers** (their `package.json` pins reference the tags).
+**Orientation gate recalibrated to 0 warnings:** up-axis vs min horizontal axis (long pin rows), body-behind-pads within 0.6×depth passes, thin-standing coverage waiver; `orientationHint` + `belowBoardBudgetMm` sidecar overrides (DHT11 posture, PS1240 uncut leads, 18650 locating posts); manifests may declare model transforms (y-mirror survives `--allow-overwrite`); manifest `existing:true` footprint refs (share package assets without uuid churn).
+**Content (+58 → 227, all gates green):** `w1-mechanical` + `w2-mechanical-tht` (mounting holes M2–M4 + plated, fiducials, screw terminals, barrel jack, 3296W trimmer, PS1240 buzzer→new `audio`, DHT11); `w3-kicad-breadth` (headers 1x05–2x20 incl. RPi HAT, NTC, MOV, film cap, SIP-9 R-network, IR LED, phototransistor, 7-seg, slide switch); `wc-general-ee` (USB-C 16P no3d, ABS+DIP-4 bridges, SRD+G5V-1 relays→new `relay`, AP63203/XL4015 bucks, TP4056/MCP73831 chargers, CR2032/18650 holders→new `battery`, INA219/ACS712, SG-8002 osc no3d, 32.768kHz crystal, microSD DM3AT, 5×20 fuse holder, DRV8833, W5500, RJ45 magjack, LM386, PAM8403, LM4040, AD620, ADuM1201, A1301, ESP32-C3/S3, ATmega32U4, STM32G030F6).
+**P7 metadata DONE:** `manufacturerParts` on 168 function parts (package-matched MPNs); packed opclib carries 150/227 datasheet URLs (curated ∪ KiCad fallback). Cleanups: `ams1117-3v3` ic→power (alias remap), subcategories normalized (opamp, capacitor-electrolytic/-tantalum, regulator-buck/-boost, reference, mosfet-n/p, crystal/crystal-gnd).
+
+**Next:**
+1. Push: shared main+tags → CoreLibrary master → OpenPCB (order matters, see above).
+2. Close 227 → 250–300: remaining Wave C external-sourced (MP1584, MPU-6050 STEP, HC-SR04, DHT22, ESP-12F, EC11 encoder, JST-XH STEP, 74HC125) — needs external/authored STEPs per sourcing policy.
+3. App smoke test: import dev pack, verify metadata columns + alias remap + no3d parts render.
+4. P9: tag v1 release once the target is met (release.yml signs + publishes).
+
 ## 2026-07-07 update — content-grind round resumed (plan: `~/.claude/plans/do-thorough-analysis-of-cozy-shamir.md`)
 
 **Decisions:** KiCad-vendored parts only this round → ~180–210 (external Wave C parked); **release held** until v1; MPN sourcing deferred. Reconstructed target list → **[TARGETS.md](TARGETS.md)** (master spec `Corelibrary expansion plan.md` is lost).

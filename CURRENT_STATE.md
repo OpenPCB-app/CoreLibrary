@@ -1,10 +1,14 @@
-# CoreLibrary — Current State (2026-07-07)
+# CoreLibrary — Current State (2026-07-10)
 
-Snapshot at **169 components** on branch **`feat/corelib-wave-ab`** (11 commits off `447f2f7`) — verified green (typecheck · `bun test` 41 pass · `validate --release --strict` 169 OK · `audit:3d` 0 errors · pack builds). For the roadmap + deferrals see [TODO.md](TODO.md); for how to continue see [HANDOFF.md](HANDOFF.md). **Active roadmap:** content grind to v1 (250–300), KiCad-vendored parts only this round → ~180–210; plan at `~/.claude/plans/do-thorough-analysis-of-cozy-shamir.md`.
+Snapshot at **227 components** on **`master`** — verified green (typecheck · `bun test` 47 pass · `validate --release --strict` 227 OK · `audit:3d` 136 ok / 0 errors / 0 warnings · pack builds, opclib carries 168 MPN + 150 datasheet URLs). For the roadmap + deferrals see [TODO.md](TODO.md); for how to continue see [HANDOFF.md](HANDOFF.md). **Active roadmap:** close 227 → 250–300 via external-sourced Wave C remainder, then P9 v1 release; plan at `~/.claude-personal/plans/act-as-pcb-engineer-drifting-jellyfish.md`.
+
+**2026-07-10 (+58 → 227):** NPTH boundary crossed (shared kicad-import 0.1.2 `allowUnnumberedPads`) — mounting holes M2–M4 + plated, fiducials, screw terminals, barrel jack, trimmer, buzzer (new `audio`), DHT11. KiCad breadth: headers 1x05–2x20 (RPi HAT), NTC, MOV, film cap, SIP-9 network, IR LED, phototransistor, 7-seg, slide switch. General-EE Wave C: USB-C 16P (no3d), bridges, relays (new `relay`), AP63203/XL4015 bucks, TP4056/MCP73831 chargers, battery holders (new `battery`), INA219/ACS712, SG-8002 osc (no3d), 32.768 kHz crystal, microSD, fuse holder, DRV8833, W5500, RJ45 magjack, LM386, PAM8403, LM4040, AD620, ADuM1201, A1301, ESP32-C3/S3, ATmega32U4, STM32G030F6. Orientation gate recalibrated (0 warnings); `orientationHint`/`belowBoardBudgetMm`/manifest transforms/`existing:true` refs added; opclib-pack 0.3.0 metadata (subcategory/datasheet/keywords) wired through pack → app; MPN backfill on 168 function parts; `ams1117-3v3` moved ic→power (alias remap); subcategories normalized.
 
 **Wave A+B (2026-07-07, +44 → 169):** TO-92 discretes (BC547/BC557/2N3904/2N3906/2N7000); diodes (1N4001/1N4004/SS16/SS24/SS26/BAT54C); op-amps (LM741/TL081/TL082/TL084/NE5534); LM35 + PC817; power discretes (TIP120/122/41C/42C, IRF3205, BD139/140); 78xx/79xx regs (L7812/09/15/7905/12); CD4000 (4011/4013/4017/4066); L293D + ULN2803A; CAN/RTC/ADC/DAC (MCP2515/2551, DS1307/DS3231, MCP3008/4725); 74HC244/245. New footprints: DIP-4, TO-126-3, DIP-18, SOIC-18W, SOIC-20W (DIP y-flips applied). **Stopped at NPTH boundary** — MountingHole/Fiducial/pot/barrel-jack/screw-terminals need the cross-repo `@openpcb/kicad-import` `validateFootprintPads` change (next step).
 
-## Inventory — 169 components / 166 symbols / 102 footprints / 102 3D (all STEP-backed) — was 125
+## Inventory — 227 components / 223 symbols / 146 footprints / 136 3D (STEP-backed; 10 footprints no3d) — was 169
+
+Per-category (2026-07-10): ic 69 · connector 36 · transistor 32 · power 22 · diode 20 · passive 13 · mechanical 9 · opto 7 · sensor 6 · crystal 5 · switch 3 · relay 2 · battery 2 · audio 1. Older 169-snapshot table below.
 
 P0/P0.9/P1 = 23; P2–P6 sweep +57 → 80; W1/W2 waves +45 → 125 (manifests `tools/manifests/p{2..6}-*.json`, `w1-*.json`, `w2-*.json`; high-pin pinMaps via `tools/gen-pinmap.ts`).
 
@@ -24,18 +28,18 @@ P0/P0.9/P1 = 23; P2–P6 sweep +57 → 80; W1/W2 waves +45 → 125 (manifests `t
 
 Deferred parts + the no-STEP mechanical code path are tracked in [TODO.md](TODO.md) (Wave-2 + the long-lead-THT 3D-gate-calibration item).
 
-## Gates — all green (re-verified 2026-07-07 @169)
+## Gates — all green (re-verified 2026-07-10 @227)
 
-| Check               | Command                                    | Result                        |
-| ------------------- | ------------------------------------------ | ----------------------------- |
-| Release validation  | `bun tools/validate.ts --release --strict` | OK (169 comp)                 |
-| 3D orientation gate | `bun run audit:3d`                         | 94 ok / 0 errors / 8 warnings |
-| Datasheet links     | `bun tools/check-datasheet-links.ts`       | no-op (no curated URLs yet)   |
-| Tests               | `bun test`                                 | 41 pass                       |
-| Typecheck           | `bun run typecheck`                        | clean                         |
-| Pack                | `bun tools/pack.ts --version=0.0.0-dev`    | `.opclib` built (169 comp)    |
+| Check               | Command                                    | Result                          |
+| ------------------- | ------------------------------------------ | ------------------------------- |
+| Release validation  | `bun tools/validate.ts --release --strict` | OK (227 comp)                   |
+| 3D orientation gate | `bun run audit:3d`                         | 136 ok / 0 errors / 0 warnings  |
+| Datasheet links     | `bun tools/check-datasheet-links.ts`       | active (curated URLs exist)     |
+| Tests               | `bun test`                                 | 47 pass                         |
+| Typecheck           | `bun run typecheck`                        | clean                           |
+| Pack                | `bun tools/pack.ts --version=0.0.0-dev`    | `.opclib` built (227 comp)      |
 
-The 8 audit:3d warnings are the known false-positives (long pin-header rows, testpoint loop, vertical TO-220) pending the `orientation-gate.ts` vertical-THT calibration — see [TODO.md](TODO.md).
+The former 8 audit:3d false-positive warnings are resolved — the gate was recalibrated (up-axis vs cross-section, body-behind-pads budget, thin-standing waiver) and per-footprint `orientationHint`/`belowBoardBudgetMm` overrides cover DHT11/PS1240/18650.
 
 ## What changed in P0/P1 (vs the spec's assumptions)
 
@@ -51,7 +55,7 @@ The expansion spec (`../Corelibrary expansion plan.md`) was written at an older 
 ## Cross-repo status
 
 - **App supports builtin id remap** via `aliases[]` — `OpenPCB/src/modules/library/backend/sync/opclib-importer.ts` → `migrateLegacyAliases()`. The 3 renamed ICs carry old ids in `aliases[]`; placed references migrate on import. No app change needed for the rename.
-- **`@openpcb/opclib-pack`** already carries `parameters`/`manufacturerParts`, but **NOT** `datasheet`/`keywords`/`subcategory`. Surfacing those top-level fields in the app needs an opclib-pack schema bump (shared) + app importer/UI wiring + a drizzle migration — **deferred to P7** (not needed for generic passives).
+- **`@openpcb/opclib-pack` 0.3.0 (P7 DONE, 2026-07-10)** carries `subcategory`/`datasheet`/`keywords` + `maxEntries:8192`; pack.ts passes them through (curated `datasheet` wins, falls back to `datasheetSource`). App wired: migration `0010_component_metadata.sql`, importer maps metadata + seeds manufacturer/MPN from `manufacturerParts[0]`, DetailsCard shows the real datasheet link. **Shared tags `opclib-pack-v0.3.0` + `kicad-import-v0.1.2` are local-only until shared main+tags are pushed** — push shared before consumers.
 - **Per-instance `Value` editing works** (`PartInspectorPanel.tsx` → `update_part_properties`) — parametric passives are fully usable.
 
 ## Gotchas (read before re-importing — expanded during the P2–P6 sweep)
@@ -67,4 +71,4 @@ The expansion spec (`../Corelibrary expansion plan.md`) was written at an older 
 
 ## Git
 
-125→169 Wave A+B committed to branch **`feat/corelib-wave-ab`** (11 commits off `master`@`447f2f7`). **NOT pushed** (master itself still 9 commits ahead of origin). Merge the branch to master when ready. Working tree clean (only `.graphifyignore` untracked, pre-existing).
+All work is on **`master`** (Wave A+B merged; 2026-07-10 session adds ~10 commits: cross-repo unblocks, gate recalibration, w1/w2/w3/wc waves, MPN backfill, cleanups). **NOT pushed** — push order: shared main+tags → CoreLibrary master → OpenPCB master. Working tree clean (only `.graphifyignore` untracked, pre-existing).
