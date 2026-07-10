@@ -6,8 +6,18 @@
   "description": "LM358 dual operational amplifier with SOIC-8 and DIP-8 variants.",
   "category": "ic",
   "subcategory": "amplifier",
-  "tags": ["ic", "op-amp", "amplifier", "lm358", "kicad-derived"],
-  "keywords": ["LM358", "dual op-amp", "operational amplifier"],
+  "tags": [
+    "ic",
+    "op-amp",
+    "amplifier",
+    "lm358",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM358",
+    "dual op-amp",
+    "operational amplifier"
+  ],
   "aliases": [],
   "symbol": "openpcb.core.symbol.ic.lm358",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
@@ -99,7 +109,9 @@
   "provenance": {
     "source": "kicad-derived",
     "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
-    "attribution": ["Derived from KiCad official libraries."],
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
     "sourceFormat": "openpcb-component",
     "sourceFileName": "LM358.kicad_sym",
     "sourceLibrary": "Amplifier_Operational",
@@ -111,5 +123,12 @@
   },
   "compatibility": {
     "minOpenPcbVersion": "0.1.0"
-  }
+  },
+  "manufacturerParts": [
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "LM358DR"
+    }
+  ],
+  "datasheet": "https://www.ti.com/lit/ds/symlink/lm358.pdf"
 }
