@@ -25,6 +25,8 @@ type AssetJson = {
 };
 
 type ComponentSourceJson = Omit<OpclibComponentEntry, "provenance"> & {
+  /** Auto-captured KiCad datasheet URL; fallback when no curated `datasheet`. */
+  datasheetSource?: string | null;
   provenance: {
     source: OpclibComponentEntry["provenance"]["source"];
     license: string;
@@ -272,6 +274,9 @@ function packedComponentFor(absPath: string): PackedComponent {
     name: json.name,
     description: json.description,
     category: json.category,
+    subcategory: json.subcategory,
+    datasheet: json.datasheet ?? json.datasheetSource ?? null,
+    keywords: json.keywords,
     tags: json.tags,
     aliases: json.aliases,
     symbol: json.symbol,
