@@ -1,0 +1,165 @@
+{
+  "id": "openpcb.core.symbol.mechanical.mountinghole-m4",
+  "uuid": "92467059-decd-5741-8c23-072f849c55d2",
+  "version": "0.3.0",
+  "name": "Mounting Hole M4",
+  "referencePrefix": "H",
+  "description": "Mounting Hole without connection",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "MountingHole.kicad_sym",
+    "sourceLibrary": "Mechanical",
+    "sourceItemName": "MountingHole",
+    "sourceHash": "cff9a97f46b2590b7e05d7e774055944e265d286c4917ef61bbefcc25d5c904a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "H",
+      "Value": "MountingHole",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Mounting Hole without connection",
+      "ki_keywords": "mounting hole",
+      "ki_fp_filters": "MountingHole*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "MountingHole.kicad_sym",
+        "sourceItemName": "MountingHole",
+        "sha256": "e7fcef9afbddcad8416f3fa33b127ccc1d26ef70f9d5d4da1dbb963411645010"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_654d86b8d7efc2b8",
+    "name": "MountingHole",
+    "referencePrefix": "H",
+    "description": "Mounting Hole without connection",
+    "sourceHash": "cff9a97f46b2590b7e05d7e774055944e265d286c4917ef61bbefcc25d5c904a",
+    "pins": [],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "MountingHole",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radiusMm": 1.27,
+          "fill": "none",
+          "strokeWidthMm": 1.27
+        }
+      ],
+      "pins": [],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "H",
+          "at": {
+            "x": 0,
+            "y": 3.175
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "MountingHole",
+          "at": {
+            "x": 0,
+            "y": -3.175
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.7244,
+        "minY": -4.445,
+        "maxX": 4.7244,
+        "maxY": 4.445
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "MountingHole",
+    "kicadId": null,
+    "pins": [],
+    "units": 1,
+    "properties": {
+      "Reference": "H",
+      "Value": "MountingHole",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Mounting Hole without connection",
+      "ki_keywords": "mounting hole",
+      "ki_fp_filters": "MountingHole*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            0
+          ],
+          [
+            "radius",
+            1.27
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              1.27
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol MountingHole (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom no) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference H (at 0 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value MountingHole (at 0 3.175 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Mounting Hole without connection\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"mounting hole\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters MountingHole* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol MountingHole_0_1 (circle (center 0 0) (radius 1.27) (stroke (width 1.27) (type default)) (fill (type none)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

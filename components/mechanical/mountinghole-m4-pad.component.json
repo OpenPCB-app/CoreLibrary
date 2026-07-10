@@ -1,0 +1,59 @@
+{
+  "id": "openpcb.core.mechanical.mountinghole-m4-pad",
+  "uuid": "da217b3d-20c5-5173-b2b6-83b8dec3c8de",
+  "version": "0.3.0",
+  "name": "Mounting Hole M4 (Plated)",
+  "description": "M4 mounting hole (4.3 mm drill) with plated annular pad, connectable to a net.",
+  "category": "mechanical",
+  "subcategory": "mounting-hole",
+  "tags": [
+    "mechanical",
+    "mounting-hole",
+    "m4",
+    "plated",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "mounting hole",
+    "M4",
+    "screw",
+    "plated",
+    "chassis",
+    "earth"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.mechanical.mountinghole-m4-pad",
+  "defaultFootprint": "openpcb.core.footprint.mechanical.mountinghole-m4-pad",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.mechanical.mountinghole-m4-pad",
+      "label": "M4 plated (4.3 mm)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MountingHole_Pad.kicad_sym",
+    "sourceLibrary": "Mechanical",
+    "sourceItemName": "Mounting Hole M4 (Plated)",
+    "sourceHash": "59a5017c54d281213a4c3454baedc2879997900fcb855034aa4dcc660417b148",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

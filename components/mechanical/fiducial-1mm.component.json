@@ -1,0 +1,49 @@
+{
+  "id": "openpcb.core.mechanical.fiducial-1mm",
+  "uuid": "a2bd1e8e-a724-5ffe-8333-2b5a86fad8f6",
+  "version": "0.3.0",
+  "name": "Fiducial 1mm",
+  "description": "Fiducial marker, 1 mm copper / 2 mm mask opening, for automated assembly.",
+  "category": "mechanical",
+  "subcategory": "fiducial",
+  "tags": [
+    "mechanical",
+    "fiducial",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "fiducial",
+    "alignment",
+    "assembly",
+    "pick and place"
+  ],
+  "aliases": [],
+  "symbol": "openpcb.core.symbol.mechanical.fiducial",
+  "defaultFootprint": "openpcb.core.footprint.mechanical.fiducial-1mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.mechanical.fiducial-1mm",
+      "label": "1 mm (2 mm mask)",
+      "pinMap": []
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Fiducial.kicad_sym",
+    "sourceLibrary": "Mechanical",
+    "sourceItemName": "Fiducial 1mm",
+    "sourceHash": "485589e644e991f64841a3a7c92b1fb6c9b06132c0b73adac3de79c7b2f33b77",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:05:27.162Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

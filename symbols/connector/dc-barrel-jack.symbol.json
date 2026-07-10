@@ -1,0 +1,771 @@
+{
+  "id": "openpcb.core.symbol.connector.dc-barrel-jack",
+  "uuid": "337d36ea-323a-5b02-be53-c1253fdcf669",
+  "version": "0.3.0",
+  "name": "DC Barrel Jack",
+  "referencePrefix": "J",
+  "description": "DC Barrel Jack with an internal switch",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Barrel_Jack_Switch.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "Barrel_Jack_Switch",
+    "sourceHash": "b9b4e9320ddad30b0afc887fccfc3a31eea2363d3dc61aaba2998ee45f4417c6",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "J",
+      "Value": "Barrel_Jack_Switch",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "DC Barrel Jack with an internal switch",
+      "ki_keywords": "DC power barrel jack connector",
+      "ki_fp_filters": "BarrelJack*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Barrel_Jack_Switch.kicad_sym",
+        "sourceItemName": "Barrel_Jack_Switch",
+        "sha256": "22b97c564ffbc2346faa746d6b6129d045a86bdee721f1e1ae72c6fd4f550251"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_7540c6a212c4b148",
+    "name": "Barrel_Jack_Switch",
+    "referencePrefix": "J",
+    "description": "DC Barrel Jack with an internal switch",
+    "sourceHash": "b9b4e9320ddad30b0afc887fccfc3a31eea2363d3dc61aaba2998ee45f4417c6",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Barrel_Jack_Switch",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -5.08,
+          "y": -3.81,
+          "width": 10.16,
+          "height": 7.62,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": -2.54
+            },
+            {
+              "x": -2.54,
+              "y": -2.54
+            },
+            {
+              "x": -1.27,
+              "y": -1.27
+            },
+            {
+              "x": 0,
+              "y": -2.54
+            },
+            {
+              "x": 2.54,
+              "y": -2.54
+            },
+            {
+              "x": 5.08,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -3.302,
+            "y": 1.905
+          },
+          "mid": {
+            "x": -3.9343,
+            "y": 2.54
+          },
+          "end": {
+            "x": -3.302,
+            "y": 3.175
+          },
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -3.302,
+            "y": 1.905
+          },
+          "mid": {
+            "x": -3.9343,
+            "y": 2.54
+          },
+          "end": {
+            "x": -3.302,
+            "y": 3.175
+          },
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": -2.286
+            },
+            {
+              "x": 1.905,
+              "y": -1.651
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "rect",
+          "x": -3.302,
+          "y": 1.905,
+          "width": 6.984999999999999,
+          "height": 1.2699999999999998,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 5.08,
+              "y": 2.54
+            },
+            {
+              "x": 3.81,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 5.08,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": -2.286
+            },
+            {
+              "x": 0.635,
+              "y": -1.651
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 6.35,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 6.35,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 6.35,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "J",
+          "at": {
+            "x": 1.2065000000000001,
+            "y": 5.587999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Barrel_Jack_Switch",
+          "at": {
+            "x": 1.2065000000000001,
+            "y": -5.207
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.880099999999999,
+        "minY": -6.477,
+        "maxX": 8.293099999999999,
+        "maxY": 6.857999999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Barrel_Jack_Switch",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "J",
+      "Value": "Barrel_Jack_Switch",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "DC Barrel Jack with an internal switch",
+      "ki_keywords": "DC power barrel jack connector",
+      "ki_fp_filters": "BarrelJack*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            3.81
+          ],
+          [
+            "end",
+            5.08,
+            -3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              -2.54
+            ],
+            [
+              "xy",
+              -2.54,
+              -2.54
+            ],
+            [
+              "xy",
+              -1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              0,
+              -2.54
+            ],
+            [
+              "xy",
+              2.54,
+              -2.54
+            ],
+            [
+              "xy",
+              5.08,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -3.302,
+            1.905
+          ],
+          [
+            "mid",
+            -3.9343,
+            2.54
+          ],
+          [
+            "end",
+            -3.302,
+            3.175
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -3.302,
+            1.905
+          ],
+          [
+            "mid",
+            -3.9343,
+            2.54
+          ],
+          [
+            "end",
+            -3.302,
+            3.175
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              -2.286
+            ],
+            [
+              "xy",
+              1.905,
+              -1.651
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            3.683,
+            3.175
+          ],
+          [
+            "end",
+            -3.302,
+            1.905
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              5.08,
+              2.54
+            ],
+            [
+              "xy",
+              3.81,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              5.08,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              -2.286
+            ],
+            [
+              "xy",
+              0.635,
+              -1.651
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Barrel_Jack_Switch (pin_names (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference J (at 0 5.334 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value Barrel_Jack_Switch (at 0 -5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 1.27 -1.016 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 1.27 -1.016 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"DC Barrel Jack with an internal switch\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"DC power barrel jack connector\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters BarrelJack* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Barrel_Jack_Switch_0_1 (rectangle (start -5.08 3.81) (end 5.08 -3.81) (stroke (width 0.254) (type default)) (fill (type background))) (polyline (pts (xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start -3.302 1.905) (mid -3.9343 2.54) (end -3.302 3.175) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start -3.302 1.905) (mid -3.9343 2.54) (end -3.302 3.175) (stroke (width 0.254) (type default)) (fill (type outline))) (polyline (pts (xy 1.27 -2.286) (xy 1.905 -1.651)) (stroke (width 0.254) (type default)) (fill (type none))) (rectangle (start 3.683 3.175) (end -3.302 1.905) (stroke (width 0.254) (type default)) (fill (type outline))) (polyline (pts (xy 5.08 2.54) (xy 3.81 2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 5.08 0) (xy 1.27 0) (xy 1.27 -2.286) (xy 0.635 -1.651)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol Barrel_Jack_Switch_1_1 (pin passive line (at 7.62 2.54 180) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 7.62 -2.54 180) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at 7.62 0 180) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

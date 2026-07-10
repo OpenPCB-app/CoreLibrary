@@ -1,0 +1,59 @@
+{
+  "id": "openpcb.core.mechanical.mountinghole-m3-pad",
+  "uuid": "6653adab-4b2a-58eb-9c01-7e3a3ee29f81",
+  "version": "0.3.0",
+  "name": "Mounting Hole M3 (Plated)",
+  "description": "M3 mounting hole (3.2 mm drill) with plated annular pad, connectable to a net.",
+  "category": "mechanical",
+  "subcategory": "mounting-hole",
+  "tags": [
+    "mechanical",
+    "mounting-hole",
+    "m3",
+    "plated",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "mounting hole",
+    "M3",
+    "screw",
+    "plated",
+    "chassis",
+    "earth"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.mechanical.mountinghole-m3-pad",
+  "defaultFootprint": "openpcb.core.footprint.mechanical.mountinghole-m3-pad",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.mechanical.mountinghole-m3-pad",
+      "label": "M3 plated (3.2 mm)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MountingHole_Pad.kicad_sym",
+    "sourceLibrary": "Mechanical",
+    "sourceItemName": "Mounting Hole M3 (Plated)",
+    "sourceHash": "a44bc7e83bec45d0b5f0644b687cfb5af9da3cc3e991de1882128c3988f1961c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

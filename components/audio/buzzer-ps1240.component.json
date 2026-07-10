@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.audio.buzzer-ps1240",
+  "uuid": "b2022277-0cbb-5aed-96a1-6486b144af18",
+  "version": "0.3.0",
+  "name": "Piezo Buzzer PS1240",
+  "description": "TDK PS1240 piezoelectric buzzer, 12.2 mm diameter, 4 kHz, THT.",
+  "category": "audio",
+  "subcategory": "buzzer",
+  "tags": [
+    "audio",
+    "buzzer",
+    "piezo",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "buzzer",
+    "piezo",
+    "speaker",
+    "beeper",
+    "PS1240"
+  ],
+  "aliases": [],
+  "datasheet": "https://product.tdk.com/system/files/dam/doc/product/sw_piezo/sw_piezo/piezo/catalog/piezoelectronic_buzzer_ps_en.pdf",
+  "parameters": {
+    "type": "piezo",
+    "diameter": "12.2mm",
+    "frequency": "4kHz"
+  },
+  "symbol": "openpcb.core.symbol.audio.buzzer",
+  "defaultFootprint": "openpcb.core.footprint.audio.buzzer-ps1240",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.audio.buzzer-ps1240",
+      "label": "PS1240 (D12.2 mm)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Buzzer.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Piezo Buzzer PS1240",
+    "sourceHash": "cebccab0c47bbe8104f1d584c710d5c0fc557c021832aab310bb11c3a4229d45",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

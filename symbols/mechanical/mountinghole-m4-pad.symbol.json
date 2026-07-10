@@ -1,0 +1,214 @@
+{
+  "id": "openpcb.core.symbol.mechanical.mountinghole-m4-pad",
+  "uuid": "12ba5262-9266-5d3c-8287-15cd502dc85d",
+  "version": "0.3.0",
+  "name": "Mounting Hole M4 (Plated)",
+  "referencePrefix": "H",
+  "description": "Mounting Hole with connection",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "MountingHole_Pad.kicad_sym",
+    "sourceLibrary": "Mechanical",
+    "sourceItemName": "MountingHole_Pad",
+    "sourceHash": "813ed20b2b15cd36b56f55598f98b6f98bff594ad81d721e2a459e96675c3391",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "H",
+      "Value": "MountingHole_Pad",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Mounting Hole with connection",
+      "ki_keywords": "mounting hole",
+      "ki_fp_filters": "MountingHole*Pad*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "MountingHole_Pad.kicad_sym",
+        "sourceItemName": "MountingHole_Pad",
+        "sha256": "ca49dd64295e9455cb552f7d298cf9a5540f59a7ddf48bb2b1172091b023837c"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_b05e8865ea496634",
+    "name": "MountingHole_Pad",
+    "referencePrefix": "H",
+    "description": "Mounting Hole with connection",
+    "sourceHash": "813ed20b2b15cd36b56f55598f98b6f98bff594ad81d721e2a459e96675c3391",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "1",
+        "localPosition": {
+          "x": 0,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "MountingHole_Pad",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 1.27
+          },
+          "radiusMm": 1.27,
+          "fill": "none",
+          "strokeWidthMm": 1.27
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": 0
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "H",
+          "at": {
+            "x": 0,
+            "y": 4.445
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "MountingHole_Pad",
+          "at": {
+            "x": 0,
+            "y": -3.81
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -6.2992,
+        "minY": -5.08,
+        "maxX": 6.2992,
+        "maxY": 5.715
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "MountingHole_Pad",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "1",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "H",
+      "Value": "MountingHole_Pad",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Mounting Hole with connection",
+      "ki_keywords": "mounting hole",
+      "ki_fp_filters": "MountingHole*Pad*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            1.27
+          ],
+          [
+            "radius",
+            1.27
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              1.27
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol MountingHole_Pad (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom no) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference H (at 0 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value MountingHole_Pad (at 0 4.445 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Mounting Hole with connection\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"mounting hole\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters MountingHole*Pad* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol MountingHole_Pad_0_1 (circle (center 0 1.27) (radius 1.27) (stroke (width 1.27) (type default)) (fill (type none)))) (symbol MountingHole_Pad_1_1 (pin input line (at 0 -2.54 90) (length 2.54) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

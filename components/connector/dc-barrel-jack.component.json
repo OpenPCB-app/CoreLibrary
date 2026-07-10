@@ -1,0 +1,65 @@
+{
+  "id": "openpcb.core.connector.dc-barrel-jack",
+  "uuid": "5ecbdf2d-70fe-5c65-a7c9-39e0d7156ceb",
+  "version": "0.3.0",
+  "name": "DC Barrel Jack",
+  "description": "DC power barrel jack, horizontal THT, with normally-closed switch pin (center pin 1 = tip, 2 = sleeve, 3 = switch).",
+  "category": "connector",
+  "subcategory": "power-jack",
+  "tags": [
+    "connector",
+    "power-jack",
+    "barrel",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "barrel jack",
+    "DC jack",
+    "power connector",
+    "5.5mm",
+    "2.1mm"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.connector.dc-barrel-jack",
+  "defaultFootprint": "openpcb.core.footprint.connector.dc-barrel-jack-horizontal",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.dc-barrel-jack-horizontal",
+      "label": "Horizontal THT",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Barrel_Jack_Switch.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "DC Barrel Jack",
+    "sourceHash": "2d384594af501f5e048b7108711f35999462d18f8e78adcec526e3b48d809686",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

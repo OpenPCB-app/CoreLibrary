@@ -1,0 +1,165 @@
+{
+  "id": "openpcb.core.symbol.mechanical.fiducial",
+  "uuid": "0d0cccb6-e618-5148-b5bc-0803dce5d8ea",
+  "version": "0.3.0",
+  "name": "Fiducial 1mm",
+  "referencePrefix": "FID",
+  "description": "Fiducial Marker",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Fiducial.kicad_sym",
+    "sourceLibrary": "Mechanical",
+    "sourceItemName": "Fiducial",
+    "sourceHash": "38b1438f5339e72d47778ad20d04387906b666e4f1533a8d1f25feebb6d928c3",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:05:27.162Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "FID",
+      "Value": "Fiducial",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Fiducial Marker",
+      "ki_keywords": "fiducial marker",
+      "ki_fp_filters": "Fiducial*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Fiducial.kicad_sym",
+        "sourceItemName": "Fiducial",
+        "sha256": "4503c79b8206819b585e1d6bdff19919756d96cee2275451456ba819ddc7eb66"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_574790fd0a927e3c",
+    "name": "Fiducial",
+    "referencePrefix": "FID",
+    "description": "Fiducial Marker",
+    "sourceHash": "38b1438f5339e72d47778ad20d04387906b666e4f1533a8d1f25feebb6d928c3",
+    "pins": [],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Fiducial",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radiusMm": 1.27,
+          "fill": "solid",
+          "strokeWidthMm": 0.508
+        }
+      ],
+      "pins": [],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "FID",
+          "at": {
+            "x": 0,
+            "y": 2.794
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Fiducial",
+          "at": {
+            "x": 0,
+            "y": -2.794
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.1496,
+        "minY": -4.064,
+        "maxX": 3.1496,
+        "maxY": 4.064
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Fiducial",
+    "kicadId": null,
+    "pins": [],
+    "units": 1,
+    "properties": {
+      "Reference": "FID",
+      "Value": "Fiducial",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Fiducial Marker",
+      "ki_keywords": "fiducial marker",
+      "ki_fp_filters": "Fiducial*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            0
+          ],
+          [
+            "radius",
+            1.27
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Fiducial (exclude_from_sim no) (in_bom no) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference FID (at 0 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value Fiducial (at 0 3.175 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Fiducial Marker\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"fiducial marker\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters Fiducial* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Fiducial_0_1 (circle (center 0 0) (radius 1.27) (stroke (width 0.508) (type default)) (fill (type background)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

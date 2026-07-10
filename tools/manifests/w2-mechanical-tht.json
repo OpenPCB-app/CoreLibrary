@@ -1,0 +1,301 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.mechanical.mountinghole-m4",
+      "name": "Mounting Hole M4",
+      "description": "M4 mounting hole (4.3 mm drill, non-plated).",
+      "category": "mechanical",
+      "subcategory": "mounting-hole",
+      "tags": ["mechanical", "mounting-hole", "m4", "kicad-derived"],
+      "keywords": ["mounting hole", "M4", "screw", "NPTH"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.mechanical.mountinghole-m4",
+        "path": "kicad-symbols/Mechanical.kicad_symdir/MountingHole.kicad_sym",
+        "pinless": true
+      },
+      "defaultFootprint": "openpcb.core.footprint.mechanical.mountinghole-m4",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.mechanical.mountinghole-m4",
+          "path": "kicad-footprints/MountingHole.pretty/MountingHole_4.3mm_M4.kicad_mod",
+          "label": "M4 (4.3 mm)",
+          "no3d": true,
+          "pinMap": []
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.mechanical.mountinghole-m3-pad",
+      "name": "Mounting Hole M3 (Plated)",
+      "description": "M3 mounting hole (3.2 mm drill) with plated annular pad, connectable to a net.",
+      "category": "mechanical",
+      "subcategory": "mounting-hole",
+      "tags": ["mechanical", "mounting-hole", "m3", "plated", "kicad-derived"],
+      "keywords": ["mounting hole", "M3", "screw", "plated", "chassis", "earth"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.mechanical.mountinghole-m3-pad",
+        "path": "kicad-symbols/Mechanical.kicad_symdir/MountingHole_Pad.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.mechanical.mountinghole-m3-pad",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.mechanical.mountinghole-m3-pad",
+          "path": "kicad-footprints/MountingHole.pretty/MountingHole_3.2mm_M3_Pad.kicad_mod",
+          "label": "M3 plated (3.2 mm)",
+          "no3d": true,
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.mechanical.mountinghole-m4-pad",
+      "name": "Mounting Hole M4 (Plated)",
+      "description": "M4 mounting hole (4.3 mm drill) with plated annular pad, connectable to a net.",
+      "category": "mechanical",
+      "subcategory": "mounting-hole",
+      "tags": ["mechanical", "mounting-hole", "m4", "plated", "kicad-derived"],
+      "keywords": ["mounting hole", "M4", "screw", "plated", "chassis", "earth"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.mechanical.mountinghole-m4-pad",
+        "path": "kicad-symbols/Mechanical.kicad_symdir/MountingHole_Pad.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.mechanical.mountinghole-m4-pad",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.mechanical.mountinghole-m4-pad",
+          "path": "kicad-footprints/MountingHole.pretty/MountingHole_4.3mm_M4_Pad.kicad_mod",
+          "label": "M4 plated (4.3 mm)",
+          "no3d": true,
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.mechanical.fiducial-1-5mm",
+      "name": "Fiducial 1.5 mm",
+      "description": "1.5 mm copper fiducial with 3 mm mask opening for pick-and-place vision.",
+      "category": "mechanical",
+      "subcategory": "fiducial",
+      "tags": ["mechanical", "fiducial", "kicad-derived"],
+      "keywords": ["fiducial", "pick and place", "vision", "assembly"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.mechanical.fiducial-1-5mm",
+        "path": "kicad-symbols/Mechanical.kicad_symdir/Fiducial.kicad_sym",
+        "pinless": true
+      },
+      "defaultFootprint": "openpcb.core.footprint.mechanical.fiducial-1-5mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.mechanical.fiducial-1-5mm",
+          "path": "kicad-footprints/Fiducial.pretty/Fiducial_1.5mm_Mask3mm.kicad_mod",
+          "label": "1.5 mm (3 mm mask)",
+          "no3d": true,
+          "pinMap": []
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.screw-terminal-1x02-5-08mm",
+      "name": "Screw Terminal 1x02 5.08 mm",
+      "description": "2-position screw terminal block, 5.08 mm pitch (Phoenix MKDS 1,5/2-5.08).",
+      "category": "connector",
+      "subcategory": "terminal-block",
+      "tags": ["connector", "terminal-block", "screw", "kicad-derived"],
+      "keywords": ["screw terminal", "terminal block", "5.08mm", "power input", "MKDS"],
+      "parameters": { "positions": "2", "pitch": "5.08mm", "ratedCurrent": "13.5A", "wireGauge": "26-14 AWG" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.screw-terminal-1x02",
+        "path": "kicad-symbols/Connector.kicad_symdir/Screw_Terminal_01x02.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.screw-terminal-1x02-5-08mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.screw-terminal-1x02-5-08mm",
+          "path": "kicad-footprints/TerminalBlock_Phoenix.pretty/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.kicad_mod",
+          "label": "1x02 5.08 mm",
+          "model": {
+            "id": "openpcb.core.3d.connector.screw-terminal-1x02-5-08mm",
+            "path": "kicad-packages3D/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.screw-terminal-1x03-5-08mm",
+      "name": "Screw Terminal 1x03 5.08 mm",
+      "description": "3-position screw terminal block, 5.08 mm pitch (Phoenix MKDS 1,5/3-5.08).",
+      "category": "connector",
+      "subcategory": "terminal-block",
+      "tags": ["connector", "terminal-block", "screw", "kicad-derived"],
+      "keywords": ["screw terminal", "terminal block", "5.08mm", "power input", "MKDS"],
+      "parameters": { "positions": "3", "pitch": "5.08mm", "ratedCurrent": "13.5A", "wireGauge": "26-14 AWG" },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.screw-terminal-1x03",
+        "path": "kicad-symbols/Connector.kicad_symdir/Screw_Terminal_01x03.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.screw-terminal-1x03-5-08mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.screw-terminal-1x03-5-08mm",
+          "path": "kicad-footprints/TerminalBlock_Phoenix.pretty/TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal.kicad_mod",
+          "label": "1x03 5.08 mm",
+          "model": {
+            "id": "openpcb.core.3d.connector.screw-terminal-1x03-5-08mm",
+            "path": "kicad-packages3D/TerminalBlock_Phoenix.3dshapes/TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.dc-barrel-jack",
+      "name": "DC Barrel Jack",
+      "description": "DC power barrel jack, horizontal THT, with normally-closed switch pin (center pin 1 = tip, 2 = sleeve, 3 = switch).",
+      "category": "connector",
+      "subcategory": "power-jack",
+      "tags": ["connector", "power-jack", "barrel", "kicad-derived"],
+      "keywords": ["barrel jack", "DC jack", "power connector", "5.5mm", "2.1mm"],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.dc-barrel-jack",
+        "path": "kicad-symbols/Connector.kicad_symdir/Barrel_Jack_Switch.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.dc-barrel-jack-horizontal",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.dc-barrel-jack-horizontal",
+          "path": "kicad-footprints/Connector_BarrelJack.pretty/BarrelJack_Horizontal.kicad_mod",
+          "label": "Horizontal THT",
+          "model": {
+            "id": "openpcb.core.3d.connector.dc-barrel-jack-horizontal",
+            "path": "kicad-packages3D/Connector_BarrelJack.3dshapes/BarrelJack_Horizontal.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.passive.trimmer-3296w",
+      "name": "Trimmer Potentiometer 3296W",
+      "description": "25-turn cermet trimmer potentiometer, Bourns 3296W style, top adjust, vertical THT.",
+      "category": "passive",
+      "subcategory": "potentiometer",
+      "tags": ["passive", "potentiometer", "trimmer", "kicad-derived"],
+      "keywords": ["trimmer", "trimpot", "potentiometer", "3296W", "25-turn", "adjust"],
+      "parameters": { "turns": "25", "adjust": "top", "package": "3296W" },
+      "datasheet": "https://www.bourns.com/docs/Product-Datasheets/3296.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.passive.trimmer",
+        "path": "kicad-symbols/Device.kicad_symdir/R_Potentiometer_Trim.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.passive.trimmer-3296w-vertical",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.passive.trimmer-3296w-vertical",
+          "path": "kicad-footprints/Potentiometer_THT.pretty/Potentiometer_Bourns_3296W_Vertical.kicad_mod",
+          "label": "3296W vertical",
+          "model": {
+            "id": "openpcb.core.3d.passive.trimmer-3296w-vertical",
+            "path": "kicad-packages3D/Potentiometer_THT.3dshapes/Potentiometer_Bourns_3296W_Vertical.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.audio.buzzer-ps1240",
+      "name": "Piezo Buzzer PS1240",
+      "description": "TDK PS1240 piezoelectric buzzer, 12.2 mm diameter, 4 kHz, THT.",
+      "category": "audio",
+      "subcategory": "buzzer",
+      "tags": ["audio", "buzzer", "piezo", "kicad-derived"],
+      "keywords": ["buzzer", "piezo", "speaker", "beeper", "PS1240"],
+      "parameters": { "type": "piezo", "diameter": "12.2mm", "frequency": "4kHz" },
+      "datasheet": "https://product.tdk.com/system/files/dam/doc/product/sw_piezo/sw_piezo/piezo/catalog/piezoelectronic_buzzer_ps_en.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.audio.buzzer",
+        "path": "kicad-symbols/Device.kicad_symdir/Buzzer.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.audio.buzzer-ps1240",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.audio.buzzer-ps1240",
+          "path": "kicad-footprints/Buzzer_Beeper.pretty/Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm.kicad_mod",
+          "label": "PS1240 (D12.2 mm)",
+          "thtLeadBudgetMm": 16,
+          "model": {
+            "id": "openpcb.core.3d.audio.buzzer-ps1240",
+            "path": "kicad-packages3D/Buzzer_Beeper.3dshapes/Buzzer_TDK_PS1240P02BT_D12.2mm_H6.5mm.step"
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.sensor.dht11",
+      "name": "DHT11 Temperature/Humidity Sensor",
+      "description": "Aosong DHT11 digital temperature and humidity sensor, single-wire bus, THT (vertical).",
+      "category": "sensor",
+      "subcategory": "temperature-humidity",
+      "tags": ["sensor", "temperature", "humidity", "kicad-derived"],
+      "keywords": ["DHT11", "temperature", "humidity", "hygrometer", "Aosong"],
+      "parameters": {
+        "tempRange": "0..50C",
+        "humidityRange": "20..90%RH",
+        "interface": "1-wire (proprietary)",
+        "vcc": "3.3-5.5V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.sensor.dht11",
+        "path": "kicad-symbols/Sensor.kicad_symdir/DHT11.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.sensor.dht11",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.sensor.dht11",
+          "path": "kicad-footprints/Sensor.pretty/Aosong_DHT11_5.5x12.0_P2.54mm.kicad_mod",
+          "label": "DHT11 THT",
+          "orientationHint": "vertical",
+          "model": {
+            "id": "openpcb.core.3d.sensor.dht11",
+            "path": "kicad-packages3D/Sensor.3dshapes/Aosong_DHT11_5.5x12.0_P2.54mm.step",
+            "scaleMm": { "x": 1, "y": -1, "z": 1 }
+          },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "1" },
+            { "pinNumber": "2", "padNumber": "2" },
+            { "pinNumber": "3", "padNumber": "3" },
+            { "pinNumber": "4", "padNumber": "4" }
+          ]
+        }
+      ]
+    }
+  ]
+}

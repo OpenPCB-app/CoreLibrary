@@ -1,0 +1,76 @@
+{
+  "id": "openpcb.core.sensor.dht11",
+  "uuid": "94517544-13c2-5c4d-9153-10170346628f",
+  "version": "0.3.0",
+  "name": "DHT11 Temperature/Humidity Sensor",
+  "description": "Aosong DHT11 digital temperature and humidity sensor, single-wire bus, THT (vertical).",
+  "category": "sensor",
+  "subcategory": "temperature-humidity",
+  "tags": [
+    "sensor",
+    "temperature",
+    "humidity",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "DHT11",
+    "temperature",
+    "humidity",
+    "hygrometer",
+    "Aosong"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf",
+  "parameters": {
+    "tempRange": "0..50C",
+    "humidityRange": "20..90%RH",
+    "interface": "1-wire (proprietary)",
+    "vcc": "3.3-5.5V"
+  },
+  "symbol": "openpcb.core.symbol.sensor.dht11",
+  "defaultFootprint": "openpcb.core.footprint.sensor.dht11",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.sensor.dht11",
+      "label": "DHT11 THT",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "DHT11.kicad_sym",
+    "sourceLibrary": "Sensor",
+    "sourceItemName": "DHT11 Temperature/Humidity Sensor",
+    "sourceHash": "df505740a09b2153819da135ef0b34bef2a8b79aa75e721be5dbe7a9de2a5bf0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

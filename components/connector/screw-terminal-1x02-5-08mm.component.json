@@ -1,0 +1,67 @@
+{
+  "id": "openpcb.core.connector.screw-terminal-1x02-5-08mm",
+  "uuid": "f93e6a0d-481e-56b5-978a-8e89fde5bbf3",
+  "version": "0.3.0",
+  "name": "Screw Terminal 1x02 5.08 mm",
+  "description": "2-position screw terminal block, 5.08 mm pitch (Phoenix MKDS 1,5/2-5.08).",
+  "category": "connector",
+  "subcategory": "terminal-block",
+  "tags": [
+    "connector",
+    "terminal-block",
+    "screw",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "screw terminal",
+    "terminal block",
+    "5.08mm",
+    "power input",
+    "MKDS"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "positions": "2",
+    "pitch": "5.08mm",
+    "ratedCurrent": "13.5A",
+    "wireGauge": "26-14 AWG"
+  },
+  "symbol": "openpcb.core.symbol.connector.screw-terminal-1x02",
+  "defaultFootprint": "openpcb.core.footprint.connector.screw-terminal-1x02-5-08mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.screw-terminal-1x02-5-08mm",
+      "label": "1x02 5.08 mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Screw_Terminal_01x02.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "Screw Terminal 1x02 5.08 mm",
+    "sourceHash": "8671a3523e75d5dfc3eb8e4112938068924d522415c38f1aacf61275f3eafeb3",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

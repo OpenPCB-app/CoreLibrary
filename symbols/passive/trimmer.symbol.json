@@ -1,0 +1,459 @@
+{
+  "id": "openpcb.core.symbol.passive.trimmer",
+  "uuid": "c3cf66b4-fbc4-52ea-a832-7e1ab4c00125",
+  "version": "0.3.0",
+  "name": "Trimmer Potentiometer 3296W",
+  "referencePrefix": "RV",
+  "description": "Trim-potentiometer",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "R_Potentiometer_Trim.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "R_Potentiometer_Trim",
+    "sourceHash": "3d43ded50d3d23b82dad4f539aa67bd1c4e9e1c2779d95160d1a559bca065f23",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "RV",
+      "Value": "R_Potentiometer_Trim",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Trim-potentiometer",
+      "Sim.Device": "R",
+      "Sim.Type": "POT",
+      "Sim.Pins": "1=r0 2=wiper 3=r1",
+      "ki_keywords": "resistor variable trimpot trimmer",
+      "ki_fp_filters": "Potentiometer*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "R_Potentiometer_Trim.kicad_sym",
+        "sourceItemName": "R_Potentiometer_Trim",
+        "sha256": "f2dabe868abab187094e799f4eb64e9bbd0f14957054ac4a151cee5e65086074"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_9c86079d3b94af14",
+    "name": "R_Potentiometer_Trim",
+    "referencePrefix": "RV",
+    "description": "Trim-potentiometer",
+    "sourceHash": "3d43ded50d3d23b82dad4f539aa67bd1c4e9e1c2779d95160d1a559bca065f23",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "1",
+        "localPosition": {
+          "x": 0,
+          "y": 3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "2",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "3",
+        "localPosition": {
+          "x": 0,
+          "y": -3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "R_Potentiometer_Trim",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -1.016,
+          "y": -2.54,
+          "width": 2.032,
+          "height": 5.08,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.524,
+              "y": 0.762
+            },
+            {
+              "x": 1.524,
+              "y": -0.762
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": 0
+            },
+            {
+              "x": 1.524,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 3.81
+          },
+          "bodyEnd": {
+            "x": -2.3329521523757077e-16,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": 1.5553014349171386e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -3.81
+          },
+          "bodyEnd": {
+            "x": 7.776507174585693e-17,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 0.508,
+            "y": 3.7084
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 3.175,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 0.508,
+            "y": -3.7084
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "RV",
+          "at": {
+            "x": 1.3335,
+            "y": 5.3721
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "R_Potentiometer_Trim",
+          "at": {
+            "x": 1.3335,
+            "y": -5.3721
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -6.5405,
+        "minY": -6.642099999999999,
+        "maxX": 9.2075,
+        "maxY": 6.642099999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "R_Potentiometer_Trim",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "1",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 3.81
+        },
+        "length": 1.27,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "2",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 1.27,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "3",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -3.81
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "RV",
+      "Value": "R_Potentiometer_Trim",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Trim-potentiometer",
+      "Sim.Device": "R",
+      "Sim.Type": "POT",
+      "Sim.Pins": "1=r0 2=wiper 3=r1",
+      "ki_keywords": "resistor variable trimpot trimmer",
+      "ki_fp_filters": "Potentiometer*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            1.016,
+            2.54
+          ],
+          [
+            "end",
+            -1.016,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.524,
+              0.762
+            ],
+            [
+              "xy",
+              1.524,
+              -0.762
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              0
+            ],
+            [
+              "xy",
+              1.524,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol R_Potentiometer_Trim (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference RV (at -4.445 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value R_Potentiometer_Trim (at -2.54 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description Trim-potentiometer (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Device R (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Type POT (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Pins \"1=r0 2=wiper 3=r1\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"resistor variable trimpot trimmer\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters Potentiometer* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol R_Potentiometer_Trim_0_1 (rectangle (start 1.016 2.54) (end -1.016 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.524 0.762) (xy 1.524 -0.762)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 0) (xy 1.524 0)) (stroke (width 0) (type default)) (fill (type none)))) (symbol R_Potentiometer_Trim_1_1 (pin passive line (at 0 3.81 270) (length 1.27) (name 1 (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 1.27) (name 2 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name 3 (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

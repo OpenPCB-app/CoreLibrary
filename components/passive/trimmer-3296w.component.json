@@ -1,0 +1,71 @@
+{
+  "id": "openpcb.core.passive.trimmer-3296w",
+  "uuid": "fbd3ff8a-6c1d-53de-8039-a67eafafec41",
+  "version": "0.3.0",
+  "name": "Trimmer Potentiometer 3296W",
+  "description": "25-turn cermet trimmer potentiometer, Bourns 3296W style, top adjust, vertical THT.",
+  "category": "passive",
+  "subcategory": "potentiometer",
+  "tags": [
+    "passive",
+    "potentiometer",
+    "trimmer",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "trimmer",
+    "trimpot",
+    "potentiometer",
+    "3296W",
+    "25-turn",
+    "adjust"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.bourns.com/docs/Product-Datasheets/3296.pdf",
+  "parameters": {
+    "turns": "25",
+    "adjust": "top",
+    "package": "3296W"
+  },
+  "symbol": "openpcb.core.symbol.passive.trimmer",
+  "defaultFootprint": "openpcb.core.footprint.passive.trimmer-3296w-vertical",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.trimmer-3296w-vertical",
+      "label": "3296W vertical",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "R_Potentiometer_Trim.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Trimmer Potentiometer 3296W",
+    "sourceHash": "ed2b62c60432eafe2338481e6e195fc8e89df3920fa4c419a3ba0ba9e9e04b6f",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

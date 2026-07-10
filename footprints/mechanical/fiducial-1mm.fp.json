@@ -1,0 +1,354 @@
+{
+  "id": "openpcb.core.footprint.mechanical.fiducial-1mm",
+  "uuid": "195a1535-b9bf-5e16-8575-765757db8df3",
+  "version": "0.3.0",
+  "name": "Fiducial_1mm_Mask2mm",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [],
+  "no3d": true,
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Fiducial_1mm_Mask2mm.kicad_mod",
+    "sourceLibrary": "Fiducial",
+    "sourceItemName": "Fiducial_1mm_Mask2mm",
+    "sourceHash": "ef0adfb15b51d4657524802277f1f3703f6d1d0f06998df4ee7dda8179dd48bd",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:05:27.162Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_c2512b8af97879d4",
+    "fileName": "Fiducial_1mm_Mask2mm.kicad_mod",
+    "name": "Fiducial_1mm_Mask2mm",
+    "description": "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)",
+    "mountType": "smd",
+    "padCount": 1,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "fiducial",
+      "smd"
+    ],
+    "sourceHash": "ef0adfb15b51d4657524802277f1f3703f6d1d0f06998df4ee7dda8179dd48bd",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Fiducial_1mm_Mask2mm",
+      "pads": [
+        {
+          "id": "?:0",
+          "number": "",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1,
+          "heightMm": 1,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radiusMm": 1,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.5,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-1.95:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -1.95
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:1.95:Fiducial_1mm_Mask2mm",
+          "text": "Fiducial_1mm_Mask2mm",
+          "at": {
+            "x": 0,
+            "y": 1.95
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.06,
+        "minY": -1.06,
+        "maxX": 1.06,
+        "maxY": 1.06
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Fiducial_1mm_Mask2mm",
+    "description": "Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)",
+    "tags": [
+      "fiducial"
+    ],
+    "pads": [
+      {
+        "number": "",
+        "type": "smd",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 1
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask"
+        ]
+      }
+    ],
+    "graphics": [
+      {
+        "type": "circle",
+        "layer": "F.CrtYd",
+        "data": {
+          "center": [
+            0,
+            0
+          ],
+          "end": [
+            1.25,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "circle",
+        "layer": "F.Fab",
+        "data": {
+          "center": [
+            0,
+            0
+          ],
+          "end": [
+            1,
+            0
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.5,
+                0.5
+              ],
+              [
+                "thickness",
+                0.08
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.5,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -1.95,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -1.95
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            1.95,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Fiducial_1mm_Mask2mm"
+          ]
+        },
+        "text": {
+          "content": "Fiducial_1mm_Mask2mm",
+          "position": {
+            "x": 0,
+            "y": 1.95
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Fiducial_1mm_Mask2mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Fiducial, circular marking, 1mm bare copper, 2mm soldermask opening (Level A)\")\n\t(tags \"fiducial\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -1.95 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Fiducial_1mm_Mask2mm\"\n\t\t(at 0 1.95 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"fiducial\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd exclude_from_bom)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_circle\n\t\t(center 0 0)\n\t\t(end 1.25 0)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_circle\n\t\t(center 0 0)\n\t\t(end 1 0)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.5 0.5)\n\t\t\t\t(thickness 0.08)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"\" smd circle\n\t\t(at 0 0)\n\t\t(size 1 1)\n\t\t(layers \"F.Cu\" \"F.Mask\")\n\t\t(solder_mask_margin 0.5)\n\t\t(clearance 0.6)\n\t)\n\t(embedded_fonts no)\n)\n"
+  },
+  "sourceFileName": "Fiducial_1mm_Mask2mm.kicad_mod"
+}

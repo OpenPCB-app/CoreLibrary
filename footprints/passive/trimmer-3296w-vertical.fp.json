@@ -1,0 +1,713 @@
+{
+  "id": "openpcb.core.footprint.passive.trimmer-3296w-vertical",
+  "uuid": "a35b522f-7955-53f5-912f-9c48e1ca2c61",
+  "version": "0.3.0",
+  "name": "Potentiometer_Bourns_3296W_Vertical",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.passive.trimmer-3296w-vertical"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Potentiometer_Bourns_3296W_Vertical.kicad_mod",
+    "sourceLibrary": "Potentiometer_THT",
+    "sourceItemName": "Potentiometer_Bourns_3296W_Vertical",
+    "sourceHash": "6d2547bdf6885984bb561dd44a76b89e3e270d386debe2e385fe997ad316db11",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_2d279298f4110d63",
+    "fileName": "Potentiometer_Bourns_3296W_Vertical.kicad_mod",
+    "name": "Potentiometer_Bourns_3296W_Vertical",
+    "description": "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf",
+    "mountType": "through_hole",
+    "padCount": 3,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "potentiometer",
+      "vertical",
+      "bourns",
+      "3296w",
+      "through_hole"
+    ],
+    "sourceHash": "6d2547bdf6885984bb561dd44a76b89e3e270d386debe2e385fe997ad316db11",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Potentiometer_Bourns_3296W_Vertical",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.44,
+          "heightMm": 1.44,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": -2.54,
+            "y": 0
+          },
+          "widthMm": 1.44,
+          "heightMm": 1.44,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "circle",
+          "centerMm": {
+            "x": -5.08,
+            "y": 0
+          },
+          "widthMm": 1.44,
+          "heightMm": 1.44,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -7.415,
+            "y": -2.52
+          },
+          "b": {
+            "x": 2.335,
+            "y": -2.52
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -7.415,
+            "y": 2.53
+          },
+          "b": {
+            "x": -7.415,
+            "y": -2.52
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.335,
+            "y": -2.52
+          },
+          "b": {
+            "x": 2.335,
+            "y": 2.53
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.335,
+            "y": 2.53
+          },
+          "b": {
+            "x": -7.415,
+            "y": 2.53
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.652,
+            "y": 0.32
+          },
+          "b": {
+            "x": 0.125,
+            "y": 1.847
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.785,
+            "y": 0.453
+          },
+          "b": {
+            "x": 0.258,
+            "y": 1.98
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "rect",
+          "x": -7.305,
+          "y": -2.41,
+          "width": 9.53,
+          "height": 4.83,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0.955,
+            "y": 1.15
+          },
+          "radiusMm": 1.0949999999999998,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:-3.175:0.005:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": -3.175,
+            "y": 0.005
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:-2.54:-3.66:REF**",
+          "text": "REF**",
+          "at": {
+            "x": -2.54,
+            "y": -3.66
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:-2.54:3.67:Potentiometer_Bourns_3296W_Vertical",
+          "text": "Potentiometer_Bourns_3296W_Vertical",
+          "at": {
+            "x": -2.54,
+            "y": 3.67
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.475,
+        "minY": -2.58,
+        "maxX": 2.3949999999999996,
+        "maxY": 2.59
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Potentiometer_Bourns_3296W_Vertical",
+    "description": "Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf",
+    "tags": [
+      "Potentiometer",
+      "vertical",
+      "Bourns",
+      "3296W"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.44,
+          "height": 1.44
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -2.54,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.44,
+          "height": 1.44
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "3",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -5.08,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.44,
+          "height": 1.44
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -7.415,
+            -2.52
+          ],
+          "end": [
+            2.335,
+            -2.52
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -7.415,
+            2.53
+          ],
+          "end": [
+            -7.415,
+            -2.52
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.335,
+            -2.52
+          ],
+          "end": [
+            2.335,
+            2.53
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.335,
+            2.53
+          ],
+          "end": [
+            -7.415,
+            2.53
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.652,
+            0.32
+          ],
+          "end": [
+            0.125,
+            1.847
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.785,
+            0.453
+          ],
+          "end": [
+            0.258,
+            1.98
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -7.56,
+            -2.66
+          ],
+          "end": [
+            2.48,
+            2.67
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -7.305,
+            -2.41
+          ],
+          "end": [
+            2.225,
+            2.42
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "circle",
+        "layer": "F.Fab",
+        "data": {
+          "center": [
+            0.955,
+            1.15
+          ],
+          "end": [
+            2.05,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            -3.175,
+            0.005,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": -3.175,
+            "y": 0.005
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            -2.54,
+            -3.66,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": -2.54,
+            "y": -3.66
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            -2.54,
+            3.67,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Potentiometer_Bourns_3296W_Vertical"
+          ]
+        },
+        "text": {
+          "content": "Potentiometer_Bourns_3296W_Vertical",
+          "position": {
+            "x": -2.54,
+            "y": 3.67
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Bourns_3296W_Vertical.step",
+        "resolvedFileName": "Potentiometer_Bourns_3296W_Vertical.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Potentiometer_Bourns_3296W_Vertical\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Potentiometer, vertical, Bourns 3296W, https://www.bourns.com/pdfs/3296.pdf\")\n\t(tags \"Potentiometer vertical Bourns 3296W\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at -2.54 -3.66 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Potentiometer_Bourns_3296W_Vertical\"\n\t\t(at -2.54 3.67 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"potentiometer/THT\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -7.415 -2.52)\n\t\t(end 2.335 -2.52)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -7.415 2.53)\n\t\t(end -7.415 -2.52)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.335 -2.52)\n\t\t(end 2.335 2.53)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.335 2.53)\n\t\t(end -7.415 2.53)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -7.56 -2.66)\n\t\t(end 2.48 2.67)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 1.652 0.32)\n\t\t(end 0.125 1.847)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 1.785 0.453)\n\t\t(end 0.258 1.98)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_rect\n\t\t(start -7.305 -2.41)\n\t\t(end 2.225 2.42)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_circle\n\t\t(center 0.955 1.15)\n\t\t(end 2.05 1.15)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at -3.175 0.005 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole circle\n\t\t(at 0 0)\n\t\t(size 1.44 1.44)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at -2.54 0)\n\t\t(size 1.44 1.44)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"3\" thru_hole circle\n\t\t(at -5.08 0)\n\t\t(size 1.44 1.44)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Potentiometer_THT.3dshapes/Potentiometer_Bourns_3296W_Vertical.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Potentiometer_Bourns_3296W_Vertical.kicad_mod"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "openpcb.core.connector.screw-terminal-1x03-5-08mm",
+  "uuid": "4ea6c8df-c064-53fc-865b-c33e616a4c0a",
+  "version": "0.3.0",
+  "name": "Screw Terminal 1x03 5.08 mm",
+  "description": "3-position screw terminal block, 5.08 mm pitch (Phoenix MKDS 1,5/3-5.08).",
+  "category": "connector",
+  "subcategory": "terminal-block",
+  "tags": [
+    "connector",
+    "terminal-block",
+    "screw",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "screw terminal",
+    "terminal block",
+    "5.08mm",
+    "power input",
+    "MKDS"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "positions": "3",
+    "pitch": "5.08mm",
+    "ratedCurrent": "13.5A",
+    "wireGauge": "26-14 AWG"
+  },
+  "symbol": "openpcb.core.symbol.connector.screw-terminal-1x03",
+  "defaultFootprint": "openpcb.core.footprint.connector.screw-terminal-1x03-5-08mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.screw-terminal-1x03-5-08mm",
+      "label": "1x03 5.08 mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Screw_Terminal_01x03.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "Screw Terminal 1x03 5.08 mm",
+    "sourceHash": "8f9127e405374aea22455f33f6f8f0da1bb8f47d94edeae84ef40a3322bb5fcc",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:16:53.165Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
