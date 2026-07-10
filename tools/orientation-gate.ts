@@ -228,16 +228,20 @@ export function evaluateOrientation(input: GateInput): Finding[] {
     }
   }
 
-  // --- up-axis for tall THT: vertical must dominate --------------------------
+  // --- up-axis for tall THT: vertical must dominate the CROSS axis -----------
   // Only meaningful for parts that are SUPPOSED to stand vertical; horizontal
   // axial parts (and unknown postures) legitimately lie flat, so skip them.
+  // Compare z against the SMALLER horizontal axis: long pin rows (1x12 header,
+  // IDC shroud) are legitimately wider along the row than they are tall, but a
+  // tipped part always lands with z collapsed to the small cross-section while
+  // its former height becomes a horizontal axis — which this still catches.
   if (mountType === "tht" && input.orientationHint === "vertical") {
-    const horizMax = Math.max(bounds.size.x, bounds.size.y);
-    if (bounds.size.z < 0.8 * horizMax) {
+    const horizMin = Math.min(bounds.size.x, bounds.size.y);
+    if (bounds.size.z < 0.8 * horizMin) {
       findings.push({
         check: "up-axis",
         severity: "warning",
-        message: `vertical extent (${bounds.size.z.toFixed(2)}mm) is not dominant vs horizontal (${horizMax.toFixed(2)}mm) — vertical THT part may be tipped`,
+        message: `vertical extent (${bounds.size.z.toFixed(2)}mm) is smaller than the horizontal cross-section (${horizMin.toFixed(2)}mm) — vertical THT part may be tipped`,
       });
     }
   }
@@ -262,25 +266,39 @@ export function evaluateOrientation(input: GateInput): Finding[] {
     if (xOff || yOff) {
       // A vertical THT body legitimately sits behind the pad row (the tab/body
       // is offset along the posture axis while the leads land on the pads), so a
-      // drift along the *single* posture axis is expected geometry, not a fault.
-      // A drift on both axes — or on a non-vertical part — is still a hard error.
+      // drift along the *single* posture axis is expected geometry, not a fault —
+      // as long as it stays within the body's own depth. Beyond that budget, or
+      // drifting on both axes / on a non-vertical part, is still a hard error.
       const bodyBehindPads =
         mountType === "tht" &&
         input.orientationHint === "vertical" &&
         yOff &&
         !xOff;
-      findings.push({
-        check: "xy-center",
-        severity: bodyBehindPads ? "warning" : "error",
-        message: `model XY centre (${bounds.center.x.toFixed(2)}, ${bounds.center.y.toFixed(2)}) off footprint centre (${rc.x.toFixed(2)}, ${rc.y.toFixed(2)}) by (${dx.toFixed(2)}, ${dy.toFixed(2)})mm (tol ${tx.toFixed(2)}, ${ty.toFixed(2)})${bodyBehindPads ? " — vertical body behind pad row (expected)" : " — wrong offset / mirror / in-plane rotation"}`,
-      });
+      const behindPadsBudget = Math.max(ty, 0.6 * bounds.size.y);
+      if (bodyBehindPads && dy <= behindPadsBudget) {
+        // expected geometry — no finding
+      } else {
+        findings.push({
+          check: "xy-center",
+          severity: "error",
+          message: `model XY centre (${bounds.center.x.toFixed(2)}, ${bounds.center.y.toFixed(2)}) off footprint centre (${rc.x.toFixed(2)}, ${rc.y.toFixed(2)}) by (${dx.toFixed(2)}, ${dy.toFixed(2)})mm (tol ${tx.toFixed(2)}, ${ty.toFixed(2)})${bodyBehindPads ? ` — beyond the vertical-body budget (${behindPadsBudget.toFixed(2)}mm)` : " — wrong offset / mirror / in-plane rotation"}`,
+        });
+      }
     }
     // Coverage: body XY extent should be in the same ballpark as the footprint.
+    // A THT part that is thin on one axis but stands tall (test-point loop,
+    // vertical film cap) legitimately under-covers that axis — waive LOW ratios
+    // when the body height exceeds the footprint extent on the failing axis. A
+    // global scale error shrinks z too, so it still trips the waived condition.
     const ratioX = re.x > 0 ? bounds.size.x / re.x : Infinity;
     const ratioY = re.y > 0 ? bounds.size.y / re.y : Infinity;
     const lo = 0.4;
     const hi = 3.0;
-    if (ratioX < lo || ratioX > hi || ratioY < lo || ratioY > hi) {
+    const thinStanding = (refAxis: number): boolean =>
+      mountType === "tht" && bounds.size.z >= refAxis;
+    const lowX = ratioX < lo && !thinStanding(re.x);
+    const lowY = ratioY < lo && !thinStanding(re.y);
+    if (lowX || lowY || ratioX > hi || ratioY > hi) {
       findings.push({
         check: "xy-coverage",
         severity: "warning",

@@ -141,15 +141,14 @@ describe("evaluateOrientation — THT", () => {
     ).toBe(true);
   });
 
-  test("a vertical THT body offset ONLY in Y is a warning, but an X drift still errors", () => {
+  test("a vertical THT body offset ONLY in Y within its body depth passes; an X drift still errors", () => {
     const behind = evaluateOrientation({
       mountType: "tht",
-      bounds: bounds([-3.5, 2, -3], [3.5, 6, 9]), // centred in X, +4mm in Y
+      bounds: bounds([-3.5, 0, -3], [3.5, 4, 9]), // centred in X, +2mm in Y, 4mm deep body
       reference: TO220_REF,
       orientationHint: "vertical",
     });
-    const xy = behind.find((f) => f.check === "xy-center");
-    expect(xy?.severity).toBe("warning");
+    expect(behind.some((f) => f.check === "xy-center")).toBe(false);
 
     const drifted = evaluateOrientation({
       mountType: "tht",
@@ -160,6 +159,73 @@ describe("evaluateOrientation — THT", () => {
     expect(
       drifted.some((f) => f.check === "xy-center" && f.severity === "error"),
     ).toBe(true);
+  });
+
+  test("a vertical THT body offset in Y BEYOND its body depth hard-fails", () => {
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-3.5, 6, -3], [3.5, 10, 9]), // +8mm in Y, only 4mm deep
+      reference: TO220_REF,
+      orientationHint: "vertical",
+    });
+    expect(
+      findings.some((f) => f.check === "xy-center" && f.severity === "error"),
+    ).toBe(true);
+  });
+});
+
+describe("evaluateOrientation — vertical-THT calibration (real library geometry)", () => {
+  // PinHeader_1x08_P2.54mm_Vertical — long row along Y, small cross-section.
+  const HEADER_1X08_REF = { minX: -1.38, minY: -1.38, maxX: 1.38, maxY: 19.16 };
+
+  test("a long vertical pin header (row wider than tall) passes clean", () => {
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-1.27, -1.27, -3], [1.27, 19.05, 8.54]),
+      reference: HEADER_1X08_REF,
+      orientationHint: "vertical",
+    });
+    expect(findings).toEqual([]);
+  });
+
+  test("the same header tipped over (z collapsed to the cross-section) is flagged", () => {
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-5.77, -1.27, 0], [5.77, 19.05, 2.54]), // rotated about the row axis
+      reference: HEADER_1X08_REF,
+      orientationHint: "vertical",
+    });
+    expect(findings.some((f) => f.check === "up-axis")).toBe(true);
+  });
+
+  test("TO-220-3 vertical (body behind pad row, 9.75mm leads) passes clean", () => {
+    // Real audited bounds of package.to-220-3-vertical.
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-2.585, -1.295, -9.75], [7.665, 3.16, 18.775]),
+      reference: { minX: -2.54, minY: -1.88, maxX: 7.62, maxY: 0.0 },
+      orientationHint: "vertical",
+    });
+    expect(findings).toEqual([]);
+  });
+
+  test("a thin standing test-point loop under-covering one axis passes clean", () => {
+    // Real audited bounds of mechanical.testpoint-loop-d2-5mm on a 3x3 footprint.
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-1.25, -0.25, -3], [1.25, 0.25, 6.14]),
+      reference: { minX: -1.5, minY: -1.5, maxX: 1.5, maxY: 1.5 },
+    });
+    expect(findings).toEqual([]);
+  });
+
+  test("a squat under-scaled THT model still trips coverage (waiver needs height)", () => {
+    const findings = evaluateOrientation({
+      mountType: "tht",
+      bounds: bounds([-0.25, -0.25, 0], [0.25, 0.25, 0.9]), // 10x scale error, z too short
+      reference: { minX: -1.5, minY: -1.5, maxX: 1.5, maxY: 1.5 },
+    });
+    expect(findings.some((f) => f.check === "xy-coverage")).toBe(true);
   });
 });
 
