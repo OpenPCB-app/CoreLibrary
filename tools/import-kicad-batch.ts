@@ -37,9 +37,21 @@ interface PinMapEntry {
   pinName?: string;
 }
 
+interface Vec3Like {
+  x: number;
+  y: number;
+  z: number;
+}
+
 interface ManifestModel {
   id: string;
   path: string;
+  /** Sidecar transform overrides — declared here so hand-tuned placement
+   * fixes (e.g. the DIP/connector scaleMm.y:-1 mirror) survive re-imports
+   * with --allow-overwrite instead of being clobbered to KiCad defaults. */
+  offsetMm?: Vec3Like;
+  rotationDeg?: Vec3Like;
+  scaleMm?: Vec3Like;
 }
 
 interface ManifestFootprint {
@@ -48,6 +60,11 @@ interface ManifestFootprint {
   label: string;
   /** Required unless `no3d` — the footprint's STEP-backed 3D model. */
   model?: ManifestModel;
+  /** Posture override for the 3D orientation gate when the KiCad footprint
+   * name lacks _Vertical/_Horizontal (e.g. DHT11 stands vertical). */
+  orientationHint?: "vertical" | "horizontal";
+  /** THT lead budget override (mm below board) for STEPs with full uncut leads. */
+  thtLeadBudgetMm?: number;
   /**
    * Footprint legitimately ships without a 3D model (mechanical parts like
    * MountingHole/Fiducial that have no upstream STEP, or asm-only electrical
@@ -304,11 +321,27 @@ function readPinMap(
   });
 }
 
+function readVec3(value: unknown, pathName: string): Vec3Like | undefined {
+  if (value === undefined) return undefined;
+  if (!isObject(value)) throw new Error(`${pathName} must be an object`);
+  const { x, y, z } = value as Record<string, unknown>;
+  if (
+    typeof x !== "number" ||
+    typeof y !== "number" ||
+    typeof z !== "number"
+  )
+    throw new Error(`${pathName} must have numeric x/y/z`);
+  return { x, y, z };
+}
+
 function readManifestModel(value: unknown, pathName: string): ManifestModel {
   if (!isObject(value)) throw new Error(`${pathName} must be an object`);
   return {
     id: requireId(value.id, `${pathName}.id`),
     path: requireSourcePath(value.path, `${pathName}.path`, ".step"),
+    offsetMm: readVec3(value.offsetMm, `${pathName}.offsetMm`),
+    rotationDeg: readVec3(value.rotationDeg, `${pathName}.rotationDeg`),
+    scaleMm: readVec3(value.scaleMm, `${pathName}.scaleMm`),
   };
 }
 
@@ -329,6 +362,16 @@ function readManifestFootprint(
       throw new Error(`${pathName}: a no3d footprint must not declare a model`);
   } else {
     footprint.model = readManifestModel(value.model, `${pathName}.model`);
+  }
+  if (value.orientationHint !== undefined) {
+    if (value.orientationHint !== "vertical" && value.orientationHint !== "horizontal")
+      throw new Error(`${pathName}.orientationHint must be "vertical" or "horizontal"`);
+    footprint.orientationHint = value.orientationHint;
+  }
+  if (value.thtLeadBudgetMm !== undefined) {
+    if (typeof value.thtLeadBudgetMm !== "number" || value.thtLeadBudgetMm <= 0)
+      throw new Error(`${pathName}.thtLeadBudgetMm must be a positive number`);
+    footprint.thtLeadBudgetMm = value.thtLeadBudgetMm;
   }
   return footprint;
 }
@@ -551,6 +594,17 @@ function dedupeSymbolPins(symbol: ParsedKicadSymbol): ParsedKicadSymbol {
   return pins.length === symbol.pins.length ? symbol : { ...symbol, pins };
 }
 
+/** KiCad mechanical parts (mounting holes, fiducials) often carry no smd/tht
+ * attr — derive from pad geometry: any drilled pad → through_hole, else smd. */
+function deriveMountType(footprint: ParsedKicadFootprint): string {
+  const attr = footprint.attributes.type;
+  if (attr === "smd" || attr === "through_hole") return attr;
+  const drilled = footprint.pads.some(
+    (pad) => pad.type === "thru_hole" || pad.type === "np_thru_hole",
+  );
+  return drilled ? "through_hole" : "smd";
+}
+
 function normalizeFootprint(
   footprint: ParsedKicadFootprint,
   sourceHash: string,
@@ -558,7 +612,7 @@ function normalizeFootprint(
 ): NormalizedImportedFootprint {
   const preview = buildFootprintPreviewFromParsed(footprint);
   const pkg = extractPackageCode(footprint.name);
-  const mountType = footprint.attributes.type;
+  const mountType = deriveMountType(footprint);
   return {
     id: stableId("fp", `${sourceHash}:${fileName}:${footprint.name}`),
     fileName,
@@ -914,6 +968,12 @@ async function run(argv: string[]): Promise<void> {
               ? []
               : [manifestFootprint.model!.id],
             ...(manifestFootprint.no3d ? { no3d: true } : {}),
+            ...(manifestFootprint.orientationHint
+              ? { orientationHint: manifestFootprint.orientationHint }
+              : {}),
+            ...(manifestFootprint.thtLeadBudgetMm
+              ? { thtLeadBudgetMm: manifestFootprint.thtLeadBudgetMm }
+              : {}),
             provenance: provenance(
               "kicad-mod",
               footprint.source,
@@ -972,9 +1032,11 @@ async function run(argv: string[]): Promise<void> {
                 stepHash,
                 args.convertedAt,
               ),
-              offsetMm: modelRef?.offset ?? { x: 0, y: 0, z: 0 },
-              rotationDeg: modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
-              scaleMm: modelRef?.scale ?? { x: 1, y: 1, z: 1 },
+              offsetMm: model.offsetMm ??
+                modelRef?.offset ?? { x: 0, y: 0, z: 0 },
+              rotationDeg: model.rotationDeg ??
+                modelRef?.rotation ?? { x: 0, y: 0, z: 0 },
+              scaleMm: model.scaleMm ?? modelRef?.scale ?? { x: 1, y: 1, z: 1 },
             },
             args.dryRun,
           );

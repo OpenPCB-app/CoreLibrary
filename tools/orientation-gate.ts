@@ -83,6 +83,12 @@ export interface GateInput {
    * is required. "unknown" skips the posture heuristic.
    */
   orientationHint?: OrientationHint;
+  /**
+   * Explicit THT lead-protrusion budget (mm below board), overriding the
+   * posture-derived default. For parts whose KiCad STEP ships full uncut
+   * leads (e.g. PS1240 buzzer, 15mm pins). Keep to documented exceptions.
+   */
+  leadBudgetMm?: number;
 }
 
 /** Derive an {@link OrientationHint} from a KiCad-style footprint name. */
@@ -188,9 +194,10 @@ export function evaluateOrientation(input: GateInput): Finding[] {
   // --- on-board (z) ----------------------------------------------------------
   if (mountType === "tht") {
     const leadBudget =
-      input.orientationHint === "vertical"
+      input.leadBudgetMm ??
+      (input.orientationHint === "vertical"
         ? THT_LEAD_BELOW_VERTICAL
-        : THT_LEAD_BELOW_MAX;
+        : THT_LEAD_BELOW_MAX);
     if (bounds.min.z < -leadBudget) {
       findings.push({
         check: "on-board",
