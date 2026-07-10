@@ -1,35 +1,38 @@
 {
-  "id": "openpcb.core.ic.lm386",
-  "uuid": "c4c73456-ceb4-5de1-961a-5eb935b58ad8",
+  "id": "openpcb.core.power.ap63203",
+  "uuid": "c5cf504e-0b30-5253-b571-d006ef9b36f3",
   "version": "0.3.0",
-  "name": "LM386 Audio Amplifier",
-  "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
-  "category": "ic",
-  "subcategory": "amplifier-audio",
+  "name": "AP63203 3.3V 2A Buck Converter",
+  "description": "Diodes Inc. AP63203 synchronous buck converter, 3.8–32 V in, fixed 3.3 V 2 A out, TSOT-23-6.",
+  "category": "power",
+  "subcategory": "regulator-buck",
   "tags": [
-    "ic",
+    "power",
     "kicad-derived"
   ],
   "keywords": [
-    "LM386",
-    "audio",
-    "amplifier",
-    "speaker"
+    "buck",
+    "step-down",
+    "AP63203",
+    "3.3V",
+    "2A",
+    "switching"
   ],
   "aliases": [],
   "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm386.pdf",
+  "datasheetSource": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
   "parameters": {
-    "gain": "20-200",
-    "pout": "0.3-1W",
-    "vcc": "4-12V"
+    "vin": "3.8-32V",
+    "vout": "3.3V",
+    "iout": "2A",
+    "topology": "buck"
   },
-  "symbol": "openpcb.core.symbol.ic.lm386",
-  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "symbol": "openpcb.core.symbol.power.ap63203",
+  "defaultFootprint": "openpcb.core.footprint.power.tsot-23-6",
   "footprints": [
     {
-      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
-      "label": "SOIC-8",
+      "footprint": "openpcb.core.footprint.power.tsot-23-6",
+      "label": "TSOT-23-6",
       "pinMap": [
         {
           "pinNumber": "1",
@@ -54,14 +57,6 @@
         {
           "pinNumber": "6",
           "padNumber": "6"
-        },
-        {
-          "pinNumber": "7",
-          "padNumber": "7"
-        },
-        {
-          "pinNumber": "8",
-          "padNumber": "8"
         }
       ]
     }
@@ -73,10 +68,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "openpcb-component",
-    "sourceFileName": "LM386.kicad_sym",
-    "sourceLibrary": "Amplifier_Audio",
-    "sourceItemName": "LM386 Audio Amplifier",
-    "sourceHash": "f8b3d8b427743610430b975696aa211eddb53aa615b8f4b29117654b1f49d462",
+    "sourceFileName": "AP63203WU.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "AP63203 3.3V 2A Buck Converter",
+    "sourceHash": "b751f05697e722a36ef1b5624ca85fa87bc64be628290d16b553522dbe3080d1",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-07-10T18:48:42.901Z",

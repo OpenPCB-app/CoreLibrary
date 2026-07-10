@@ -1,30 +1,30 @@
 {
-  "id": "openpcb.core.ic.lm386",
-  "uuid": "c4c73456-ceb4-5de1-961a-5eb935b58ad8",
+  "id": "openpcb.core.ic.ina219",
+  "uuid": "159c0675-790c-538e-b5e1-2dc1de4e4d10",
   "version": "0.3.0",
-  "name": "LM386 Audio Amplifier",
-  "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
+  "name": "INA219 Current/Power Monitor",
+  "description": "TI INA219 high-side current/power monitor with I2C, SOIC-8.",
   "category": "ic",
-  "subcategory": "amplifier-audio",
+  "subcategory": "sensor-current",
   "tags": [
     "ic",
     "kicad-derived"
   ],
   "keywords": [
-    "LM386",
-    "audio",
-    "amplifier",
-    "speaker"
+    "INA219",
+    "current sense",
+    "power monitor",
+    "I2C",
+    "shunt"
   ],
   "aliases": [],
   "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm386.pdf",
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/ina219.pdf",
   "parameters": {
-    "gain": "20-200",
-    "pout": "0.3-1W",
-    "vcc": "4-12V"
+    "interface": "I2C",
+    "busVoltage": "0-26V"
   },
-  "symbol": "openpcb.core.symbol.ic.lm386",
+  "symbol": "openpcb.core.symbol.ic.ina219",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
   "footprints": [
     {
@@ -73,10 +73,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "openpcb-component",
-    "sourceFileName": "LM386.kicad_sym",
-    "sourceLibrary": "Amplifier_Audio",
-    "sourceItemName": "LM386 Audio Amplifier",
-    "sourceHash": "f8b3d8b427743610430b975696aa211eddb53aa615b8f4b29117654b1f49d462",
+    "sourceFileName": "INA219BxD.kicad_sym",
+    "sourceLibrary": "Sensor_Energy",
+    "sourceItemName": "INA219 Current/Power Monitor",
+    "sourceHash": "72b6631daab8082c509d2248aeb4cfc12a996586b5a45dcaf0ab1816627ded4e",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-07-10T18:48:42.901Z",

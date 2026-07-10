@@ -1,0 +1,1392 @@
+{
+  "id": "openpcb.core.symbol.ic.drv8833",
+  "uuid": "4af849a7-15e4-5ad9-96a1-74dfb7feefe8",
+  "version": "0.3.0",
+  "name": "DRV8833 Dual H-Bridge Motor Driver",
+  "referencePrefix": "U",
+  "description": "Dual H-Bridge Motor Driver, HTSSOP-16",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "DRV8833PWP.kicad_sym",
+    "sourceLibrary": "Driver_Motor",
+    "sourceItemName": "DRV8833PWP",
+    "sourceHash": "d4cc3859da3949e84500ea2eba410c20e49b45f8fe14bf70b997cc14e82c2407",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "DRV8833PWP",
+      "Footprint": "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/drv8833.pdf",
+      "Description": "Dual H-Bridge Motor Driver, HTSSOP-16",
+      "ki_keywords": "H-bridge motor driver",
+      "ki_fp_filters": "HTSSOP*1EP*4.4x5mm*P0.65mm*EP3.4x5mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "DRV8833PWP.kicad_sym",
+        "sourceItemName": "DRV8833PWP",
+        "sha256": "cc34d1aa537bf1dcf77c4bda43873c96bdf6b97f0e518869b6ff90402aa3f2fc"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_86b633cb70c13f28",
+    "name": "DRV8833PWP",
+    "referencePrefix": "U",
+    "description": "Dual H-Bridge Motor Driver, HTSSOP-16",
+    "sourceHash": "d4cc3859da3949e84500ea2eba410c20e49b45f8fe14bf70b997cc14e82c2407",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "~{SLEEP}",
+        "localPosition": {
+          "x": -12.7,
+          "y": 10.16
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "AOUT1",
+        "localPosition": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "AISEN",
+        "localPosition": {
+          "x": -12.7,
+          "y": 5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "AOUT2",
+        "localPosition": {
+          "x": 12.7,
+          "y": -5.08
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "BOUT2",
+        "localPosition": {
+          "x": 12.7,
+          "y": -10.16
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "BISEN",
+        "localPosition": {
+          "x": -12.7,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "BOUT1",
+        "localPosition": {
+          "x": 12.7,
+          "y": -7.62
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "~{FAULT}",
+        "localPosition": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "electricalType": "open_collector",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "BIN1",
+        "localPosition": {
+          "x": -12.7,
+          "y": -7.62
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "BIN2",
+        "localPosition": {
+          "x": -12.7,
+          "y": -10.16
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "VCP",
+        "localPosition": {
+          "x": -12.7,
+          "y": 7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "VM",
+        "localPosition": {
+          "x": 7.62,
+          "y": 15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "VINT",
+        "localPosition": {
+          "x": 5.08,
+          "y": 15.24
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "AIN2",
+        "localPosition": {
+          "x": -12.7,
+          "y": -5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "AIN1",
+        "localPosition": {
+          "x": -12.7,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:17",
+        "number": "17",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -15.24
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "DRV8833PWP",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -10.16,
+          "y": -12.7,
+          "width": 20.32,
+          "height": 25.4,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "~{SLEEP}",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "AOUT1",
+          "number": "2",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "AISEN",
+          "number": "3",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "AOUT2",
+          "number": "4",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:5",
+          "name": "BOUT2",
+          "number": "5",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "BISEN",
+          "number": "6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:7",
+          "name": "BOUT1",
+          "number": "7",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:8",
+          "name": "~{FAULT}",
+          "number": "8",
+          "electricalType": "open_collector",
+          "unit": 1,
+          "anchor": {
+            "x": 12.7,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:9",
+          "name": "BIN1",
+          "number": "9",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:10",
+          "name": "BIN2",
+          "number": "10",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:11",
+          "name": "VCP",
+          "number": "11",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:12",
+          "name": "VM",
+          "number": "12",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 12.7
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:13",
+          "name": "GND",
+          "number": "13",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -12.7
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:14",
+          "name": "VINT",
+          "number": "14",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 5.08,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 5.079999999999999,
+            "y": 12.7
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:15",
+          "name": "AIN2",
+          "number": "15",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:16",
+          "name": "AIN1",
+          "number": "16",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -12.7,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:17",
+          "name": "GND",
+          "number": "17",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -12.7
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "~{SLEEP}",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -11.43,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "AOUT1",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 11.43,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "AISEN",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -11.43,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "AOUT2",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 11.43,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "BOUT2",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 11.43,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "BISEN",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -11.43,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "BOUT1",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 11.43,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "~{FAULT}",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 11.43,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "BIN1",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": -11.43,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "BIN2",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": -11.43,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "VCP",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": -11.43,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "VM",
+          "at": {
+            "x": 7.619999999999999,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": 8.128,
+            "y": 15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": 0.508,
+            "y": -15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "VINT",
+          "at": {
+            "x": 5.079999999999999,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": 5.588,
+            "y": 15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "AIN2",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": -11.43,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "AIN1",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": -11.43,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:17:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:17:number",
+          "text": "17",
+          "at": {
+            "x": 0.508,
+            "y": -15.0368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 17.627599999999997
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "DRV8833PWP",
+          "at": {
+            "x": 0,
+            "y": -17.094199999999997
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -12.7,
+        "minY": -18.364199999999997,
+        "maxX": 12.7,
+        "maxY": 18.897599999999997
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "DRV8833PWP",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "~{SLEEP}",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "AOUT1",
+        "number": "2",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "AISEN",
+        "number": "3",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "AOUT2",
+        "number": "4",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BOUT2",
+        "number": "5",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BISEN",
+        "number": "6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BOUT1",
+        "number": "7",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{FAULT}",
+        "number": "8",
+        "electricalType": "open_collector",
+        "direction": "line",
+        "position": {
+          "x": 12.7,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BIN1",
+        "number": "9",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BIN2",
+        "number": "10",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCP",
+        "number": "11",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VM",
+        "number": "12",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "13",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VINT",
+        "number": "14",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 5.08,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "AIN2",
+        "number": "15",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "AIN1",
+        "number": "16",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -12.7,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "17",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "DRV8833PWP",
+      "Footprint": "Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias",
+      "Datasheet": "http://www.ti.com/lit/ds/symlink/drv8833.pdf",
+      "Description": "Dual H-Bridge Motor Driver, HTSSOP-16",
+      "ki_keywords": "H-bridge motor driver",
+      "ki_fp_filters": "HTSSOP*1EP*4.4x5mm*P0.65mm*EP3.4x5mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -10.16,
+            12.7
+          ],
+          [
+            "end",
+            10.16,
+            -12.7
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol DRV8833PWP (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -3.81 16.51 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value DRV8833PWP (at -3.81 13.97 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Package_SO:HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.46x2.31mm_ThermalVias (at 5.08 -15.24 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Datasheet http://www.ti.com/lit/ds/symlink/drv8833.pdf (at 5.08 -17.78 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify left))) (property Description \"Dual H-Bridge Motor Driver, HTSSOP-16\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"H-bridge motor driver\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters HTSSOP*1EP*4.4x5mm*P0.65mm*EP3.4x5mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol DRV8833PWP_0_1 (rectangle (start -10.16 12.7) (end 10.16 -12.7) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol DRV8833PWP_1_1 (pin input line (at -12.7 10.16 0) (length 2.54) (name ~{SLEEP} (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin power_out line (at 12.7 -2.54 180) (length 2.54) (name AOUT1 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -12.7 5.08 0) (length 2.54) (name AISEN (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_out line (at 12.7 -5.08 180) (length 2.54) (name AOUT2 (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin power_out line (at 12.7 -10.16 180) (length 2.54) (name BOUT2 (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -12.7 2.54 0) (length 2.54) (name BISEN (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin power_out line (at 12.7 -7.62 180) (length 2.54) (name BOUT1 (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin open_collector line (at 12.7 2.54 180) (length 2.54) (name ~{FAULT} (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 -7.62 0) (length 2.54) (name BIN1 (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 -10.16 0) (length 2.54) (name BIN2 (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -12.7 7.62 0) (length 2.54) (name VCP (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27))))) (pin power_in line (at 7.62 15.24 270) (length 2.54) (name VM (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -15.24 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27))))) (pin power_in line (at 5.08 15.24 270) (length 2.54) (name VINT (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 -5.08 0) (length 2.54) (name AIN2 (effects (font (size 1.27 1.27)))) (number 15 (effects (font (size 1.27 1.27))))) (pin input line (at -12.7 -2.54 0) (length 2.54) (name AIN1 (effects (font (size 1.27 1.27)))) (number 16 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -15.24 90) (length 2.54) (hide yes) (name GND (effects (font (size 1.27 1.27)))) (number 17 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

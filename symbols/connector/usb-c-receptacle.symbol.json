@@ -1,0 +1,2704 @@
+{
+  "id": "openpcb.core.symbol.connector.usb-c-receptacle",
+  "uuid": "f34e7e12-4734-5945-9160-92f6b0467ed1",
+  "version": "0.3.0",
+  "name": "USB-C Receptacle (USB 2.0, 16P)",
+  "referencePrefix": "J",
+  "description": "USB 2.0-only 16P Type-C Receptacle connector",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "USB_C_Receptacle_USB2.0_16P.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "USB_C_Receptacle_USB2.0_16P",
+    "sourceHash": "202092e0637b53e4f5a00c8d08689ae124e4df5217fb07ea71a1d1cbe7ac7f0a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "J",
+      "Value": "USB_C_Receptacle_USB2.0_16P",
+      "Footprint": "",
+      "Datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+      "Description": "USB 2.0-only 16P Type-C Receptacle connector",
+      "ki_keywords": "usb universal serial bus type-C USB2.0",
+      "ki_fp_filters": "USB*C*Receptacle*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "USB_C_Receptacle_USB2.0_16P.kicad_sym",
+        "sourceItemName": "USB_C_Receptacle_USB2.0_16P",
+        "sha256": "9dde8768c0c18e1f51262864fcd0fdb361ef3c76e26a905a225223bf4eac1f84"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_f15849a35360542a",
+    "name": "USB_C_Receptacle_USB2.0_16P",
+    "referencePrefix": "J",
+    "description": "USB 2.0-only 16P Type-C Receptacle connector",
+    "sourceHash": "202092e0637b53e4f5a00c8d08689ae124e4df5217fb07ea71a1d1cbe7ac7f0a",
+    "pins": [
+      {
+        "originPinKey": "u1:A1",
+        "number": "A1",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -22.86
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:A4",
+        "number": "A4",
+        "name": "VBUS",
+        "localPosition": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:A5",
+        "number": "A5",
+        "name": "CC1",
+        "localPosition": {
+          "x": 15.24,
+          "y": 10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:A6",
+        "number": "A6",
+        "name": "D+",
+        "localPosition": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:A7",
+        "number": "A7",
+        "name": "D-",
+        "localPosition": {
+          "x": 15.24,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:A8",
+        "number": "A8",
+        "name": "SBU1",
+        "localPosition": {
+          "x": 15.24,
+          "y": -12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:A9",
+        "number": "A9",
+        "name": "VBUS",
+        "localPosition": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:A12",
+        "number": "A12",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -22.86
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B1",
+        "number": "B1",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -22.86
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B4",
+        "number": "B4",
+        "name": "VBUS",
+        "localPosition": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B5",
+        "number": "B5",
+        "name": "CC2",
+        "localPosition": {
+          "x": 15.24,
+          "y": 7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B6",
+        "number": "B6",
+        "name": "D+",
+        "localPosition": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B7",
+        "number": "B7",
+        "name": "D-",
+        "localPosition": {
+          "x": 15.24,
+          "y": 0
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B8",
+        "number": "B8",
+        "name": "SBU2",
+        "localPosition": {
+          "x": 15.24,
+          "y": -15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B9",
+        "number": "B9",
+        "name": "VBUS",
+        "localPosition": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:B12",
+        "number": "B12",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -22.86
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:SH",
+        "number": "SH",
+        "name": "SHIELD",
+        "localPosition": {
+          "x": -7.62,
+          "y": -22.86
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "USB_C_Receptacle_USB2.0_16P",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -0.254,
+          "y": -17.78,
+          "width": 0.508,
+          "height": 1.0160000000000018,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": 14.986,
+          "width": 1.016,
+          "height": 0.5079999999999991,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": 9.906,
+          "width": 1.016,
+          "height": 0.5079999999999991,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": 7.366,
+          "width": 1.016,
+          "height": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": 2.286,
+          "width": 1.016,
+          "height": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": -0.254,
+          "width": 1.016,
+          "height": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": -2.794,
+          "width": 1.016,
+          "height": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": -5.334,
+          "width": 1.016,
+          "height": 0.508,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": -12.954,
+          "width": 1.016,
+          "height": 0.5080000000000009,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 9.144,
+          "y": -15.494,
+          "width": 1.016,
+          "height": 0.5079999999999991,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -10.16,
+          "y": -17.78,
+          "width": 20.32,
+          "height": 35.56,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -8.89,
+              "y": -3.81
+            },
+            {
+              "x": -8.89,
+              "y": 3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -3.81,
+          "width": 1.2700000000000005,
+          "height": 7.62,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -7.62,
+            "y": 3.81
+          },
+          "mid": {
+            "x": -6.985,
+            "y": 4.4423
+          },
+          "end": {
+            "x": -6.35,
+            "y": 3.81
+          },
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -7.62,
+            "y": 3.81
+          },
+          "mid": {
+            "x": -6.985,
+            "y": 4.4423
+          },
+          "end": {
+            "x": -6.35,
+            "y": 3.81
+          },
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -8.89,
+            "y": 3.81
+          },
+          "mid": {
+            "x": -6.985,
+            "y": 5.7067
+          },
+          "end": {
+            "x": -5.08,
+            "y": 3.81
+          },
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -5.08,
+            "y": -3.81
+          },
+          "mid": {
+            "x": -6.985,
+            "y": -5.7067
+          },
+          "end": {
+            "x": -8.89,
+            "y": -3.81
+          },
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -6.35,
+            "y": -3.81
+          },
+          "mid": {
+            "x": -6.985,
+            "y": -4.4423
+          },
+          "end": {
+            "x": -7.62,
+            "y": -3.81
+          },
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -6.35,
+            "y": -3.81
+          },
+          "mid": {
+            "x": -6.985,
+            "y": -4.4423
+          },
+          "end": {
+            "x": -7.62,
+            "y": -3.81
+          },
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -5.08,
+              "y": 3.81
+            },
+            {
+              "x": -5.08,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -2.54,
+            "y": 1.143
+          },
+          "radiusMm": 0.635,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": 4.318
+            },
+            {
+              "x": 0,
+              "y": 6.858
+            },
+            {
+              "x": 1.27,
+              "y": 4.318
+            },
+            {
+              "x": -1.27,
+              "y": 4.318
+            }
+          ],
+          "closed": true,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": -2.032
+            },
+            {
+              "x": 2.54,
+              "y": 0.508
+            },
+            {
+              "x": 2.54,
+              "y": 1.778
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": -3.302
+            },
+            {
+              "x": -2.54,
+              "y": -0.762
+            },
+            {
+              "x": -2.54,
+              "y": 0.508
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": -5.842
+            },
+            {
+              "x": 0,
+              "y": 4.318
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.508
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": -5.842
+          },
+          "radiusMm": 1.27,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 1.905,
+          "y": 1.778,
+          "width": 1.2699999999999998,
+          "height": 1.27,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:A1",
+          "name": "GND",
+          "number": "A1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": 3.110602869834277e-16,
+            "y": -17.78
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:A4",
+          "name": "VBUS",
+          "number": "A4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:A5",
+          "name": "CC1",
+          "number": "A5",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:A6",
+          "name": "D+",
+          "number": "A6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:A7",
+          "name": "D-",
+          "number": "A7",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:A8",
+          "name": "SBU1",
+          "number": "A8",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:A9",
+          "name": "VBUS",
+          "number": "A9",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:A12",
+          "name": "GND",
+          "number": "A12",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": 3.110602869834277e-16,
+            "y": -17.78
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:B1",
+          "name": "GND",
+          "number": "B1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": 3.110602869834277e-16,
+            "y": -17.78
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:B4",
+          "name": "VBUS",
+          "number": "B4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:B5",
+          "name": "CC2",
+          "number": "B5",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 7.620000000000001
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:B6",
+          "name": "D+",
+          "number": "B6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -5.079999999999999
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:B7",
+          "name": "D-",
+          "number": "B7",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 6.221205739668554e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:B8",
+          "name": "SBU2",
+          "number": "B8",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": -15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:B9",
+          "name": "VBUS",
+          "number": "B9",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 10.16,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:B12",
+          "name": "GND",
+          "number": "B12",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": 3.110602869834277e-16,
+            "y": -17.78
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:SH",
+          "name": "SHIELD",
+          "number": "SH",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -17.78
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:A1:name",
+          "text": "GND",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A1:number",
+          "text": "A1",
+          "at": {
+            "x": 0.508,
+            "y": -22.4536
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:A4:name",
+          "text": "VBUS",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A4:number",
+          "text": "A4",
+          "at": {
+            "x": 12.7,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:A5:name",
+          "text": "CC1",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A5:number",
+          "text": "A5",
+          "at": {
+            "x": 12.7,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:A6:name",
+          "text": "D+",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A6:number",
+          "text": "A6",
+          "at": {
+            "x": 12.7,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:A7:name",
+          "text": "D-",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A7:number",
+          "text": "A7",
+          "at": {
+            "x": 12.7,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:A8:name",
+          "text": "SBU1",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A8:number",
+          "text": "A8",
+          "at": {
+            "x": 12.7,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:A9:name",
+          "text": "VBUS",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A9:number",
+          "text": "A9",
+          "at": {
+            "x": 12.7,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:A12:name",
+          "text": "GND",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:A12:number",
+          "text": "A12",
+          "at": {
+            "x": 0.508,
+            "y": -22.4536
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B1:name",
+          "text": "GND",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B1:number",
+          "text": "B1",
+          "at": {
+            "x": 0.508,
+            "y": -22.4536
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B4:name",
+          "text": "VBUS",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B4:number",
+          "text": "B4",
+          "at": {
+            "x": 12.7,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B5:name",
+          "text": "CC2",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 7.620000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B5:number",
+          "text": "B5",
+          "at": {
+            "x": 12.7,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B6:name",
+          "text": "D+",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -5.079999999999999
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B6:number",
+          "text": "B6",
+          "at": {
+            "x": 12.7,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B7:name",
+          "text": "D-",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 6.221205739668554e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B7:number",
+          "text": "B7",
+          "at": {
+            "x": 12.7,
+            "y": 0.5080000000000003
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B8:name",
+          "text": "SBU2",
+          "at": {
+            "x": 9.652000000000001,
+            "y": -15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B8:number",
+          "text": "B8",
+          "at": {
+            "x": 12.7,
+            "y": -14.732
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B9:name",
+          "text": "VBUS",
+          "at": {
+            "x": 9.652000000000001,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B9:number",
+          "text": "B9",
+          "at": {
+            "x": 12.7,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:B12:name",
+          "text": "GND",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:B12:number",
+          "text": "B12",
+          "at": {
+            "x": 0.508,
+            "y": -22.4536
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:SH:name",
+          "text": "SHIELD",
+          "at": {
+            "x": -7.62,
+            "y": -18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:SH:number",
+          "text": "SH",
+          "at": {
+            "x": -7.112,
+            "y": -22.4536
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "J",
+          "at": {
+            "x": 2.4764999999999997,
+            "y": 19.177000000000003
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "USB_C_Receptacle_USB2.0_16P",
+          "at": {
+            "x": 2.4764999999999997,
+            "y": -24.904700000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.287,
+        "minY": -26.1747,
+        "maxX": 15.24,
+        "maxY": 20.447000000000003
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "USB_C_Receptacle_USB2.0_16P",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "GND",
+        "number": "A1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -22.86
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VBUS",
+        "number": "A4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CC1",
+        "number": "A5",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 10.16
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D+",
+        "number": "A6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D-",
+        "number": "A7",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 2.54
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SBU1",
+        "number": "A8",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -12.7
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VBUS",
+        "number": "A9",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "A12",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -22.86
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "B1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -22.86
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VBUS",
+        "number": "B4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CC2",
+        "number": "B5",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 7.62
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D+",
+        "number": "B6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "D-",
+        "number": "B7",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 0
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SBU2",
+        "number": "B8",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -15.24
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VBUS",
+        "number": "B9",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "length": 5.08,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "B12",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -22.86
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SHIELD",
+        "number": "SH",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": -22.86
+        },
+        "length": 5.08,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "J",
+      "Value": "USB_C_Receptacle_USB2.0_16P",
+      "Footprint": "",
+      "Datasheet": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+      "Description": "USB 2.0-only 16P Type-C Receptacle connector",
+      "ki_keywords": "usb universal serial bus type-C USB2.0",
+      "ki_fp_filters": "USB*C*Receptacle*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -0.254,
+            -17.78
+          ],
+          [
+            "end",
+            0.254,
+            -16.764
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            15.494
+          ],
+          [
+            "end",
+            9.144,
+            14.986
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            10.414
+          ],
+          [
+            "end",
+            9.144,
+            9.906
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            7.874
+          ],
+          [
+            "end",
+            9.144,
+            7.366
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            2.794
+          ],
+          [
+            "end",
+            9.144,
+            2.286
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            0.254
+          ],
+          [
+            "end",
+            9.144,
+            -0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            -2.286
+          ],
+          [
+            "end",
+            9.144,
+            -2.794
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            -4.826
+          ],
+          [
+            "end",
+            9.144,
+            -5.334
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            -12.446
+          ],
+          [
+            "end",
+            9.144,
+            -12.954
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            10.16,
+            -14.986
+          ],
+          [
+            "end",
+            9.144,
+            -15.494
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -10.16,
+            17.78
+          ],
+          [
+            "end",
+            10.16,
+            -17.78
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -8.89,
+              -3.81
+            ],
+            [
+              "xy",
+              -8.89,
+              3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            -3.81
+          ],
+          [
+            "end",
+            -6.35,
+            3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -7.62,
+            3.81
+          ],
+          [
+            "mid",
+            -6.985,
+            4.4423
+          ],
+          [
+            "end",
+            -6.35,
+            3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -7.62,
+            3.81
+          ],
+          [
+            "mid",
+            -6.985,
+            4.4423
+          ],
+          [
+            "end",
+            -6.35,
+            3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -8.89,
+            3.81
+          ],
+          [
+            "mid",
+            -6.985,
+            5.7067
+          ],
+          [
+            "end",
+            -5.08,
+            3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -5.08,
+            -3.81
+          ],
+          [
+            "mid",
+            -6.985,
+            -5.7067
+          ],
+          [
+            "end",
+            -8.89,
+            -3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -6.35,
+            -3.81
+          ],
+          [
+            "mid",
+            -6.985,
+            -4.4423
+          ],
+          [
+            "end",
+            -7.62,
+            -3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "arc",
+          [
+            "start",
+            -6.35,
+            -3.81
+          ],
+          [
+            "mid",
+            -6.985,
+            -4.4423
+          ],
+          [
+            "end",
+            -7.62,
+            -3.81
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -5.08,
+              3.81
+            ],
+            [
+              "xy",
+              -5.08,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -2.54,
+            1.143
+          ],
+          [
+            "radius",
+            0.635
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              4.318
+            ],
+            [
+              "xy",
+              0,
+              6.858
+            ],
+            [
+              "xy",
+              1.27,
+              4.318
+            ],
+            [
+              "xy",
+              -1.27,
+              4.318
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              -2.032
+            ],
+            [
+              "xy",
+              2.54,
+              0.508
+            ],
+            [
+              "xy",
+              2.54,
+              1.778
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              -3.302
+            ],
+            [
+              "xy",
+              -2.54,
+              -0.762
+            ],
+            [
+              "xy",
+              -2.54,
+              0.508
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              -5.842
+            ],
+            [
+              "xy",
+              0,
+              4.318
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.508
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            -5.842
+          ],
+          [
+            "radius",
+            1.27
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            1.905,
+            1.778
+          ],
+          [
+            "end",
+            3.175,
+            3.048
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol USB_C_Receptacle_USB2.0_16P (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference J (at 0 22.225 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value USB_C_Receptacle_USB2.0_16P (at 0 19.685 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 3.81 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://www.usb.org/sites/default/files/documents/usb_type-c.zip (at 3.81 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"USB 2.0-only 16P Type-C Receptacle connector\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"usb universal serial bus type-C USB2.0\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters USB*C*Receptacle* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol USB_C_Receptacle_USB2.0_16P_0_0 (rectangle (start -0.254 -17.78) (end 0.254 -16.764) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 15.494) (end 9.144 14.986) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 10.414) (end 9.144 9.906) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 7.874) (end 9.144 7.366) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 2.794) (end 9.144 2.286) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 0.254) (end 9.144 -0.254) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 -2.286) (end 9.144 -2.794) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 -4.826) (end 9.144 -5.334) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 -12.446) (end 9.144 -12.954) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 10.16 -14.986) (end 9.144 -15.494) (stroke (width 0) (type default)) (fill (type none)))) (symbol USB_C_Receptacle_USB2.0_16P_0_1 (rectangle (start -10.16 17.78) (end 10.16 -17.78) (stroke (width 0.254) (type default)) (fill (type background))) (polyline (pts (xy -8.89 -3.81) (xy -8.89 3.81)) (stroke (width 0.508) (type default)) (fill (type none))) (rectangle (start -7.62 -3.81) (end -6.35 3.81) (stroke (width 0.254) (type default)) (fill (type outline))) (arc (start -7.62 3.81) (mid -6.985 4.4423) (end -6.35 3.81) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start -7.62 3.81) (mid -6.985 4.4423) (end -6.35 3.81) (stroke (width 0.254) (type default)) (fill (type outline))) (arc (start -8.89 3.81) (mid -6.985 5.7067) (end -5.08 3.81) (stroke (width 0.508) (type default)) (fill (type none))) (arc (start -5.08 -3.81) (mid -6.985 -5.7067) (end -8.89 -3.81) (stroke (width 0.508) (type default)) (fill (type none))) (arc (start -6.35 -3.81) (mid -6.985 -4.4423) (end -7.62 -3.81) (stroke (width 0.254) (type default)) (fill (type none))) (arc (start -6.35 -3.81) (mid -6.985 -4.4423) (end -7.62 -3.81) (stroke (width 0.254) (type default)) (fill (type outline))) (polyline (pts (xy -5.08 3.81) (xy -5.08 -3.81)) (stroke (width 0.508) (type default)) (fill (type none))) (circle (center -2.54 1.143) (radius 0.635) (stroke (width 0.254) (type default)) (fill (type outline))) (polyline (pts (xy -1.27 4.318) (xy 0 6.858) (xy 1.27 4.318) (xy -1.27 4.318)) (stroke (width 0.254) (type default)) (fill (type outline))) (polyline (pts (xy 0 -2.032) (xy 2.54 0.508) (xy 2.54 1.778)) (stroke (width 0.508) (type default)) (fill (type none))) (polyline (pts (xy 0 -3.302) (xy -2.54 -0.762) (xy -2.54 0.508)) (stroke (width 0.508) (type default)) (fill (type none))) (polyline (pts (xy 0 -5.842) (xy 0 4.318)) (stroke (width 0.508) (type default)) (fill (type none))) (circle (center 0 -5.842) (radius 1.27) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start 1.905 1.778) (end 3.175 3.048) (stroke (width 0.254) (type default)) (fill (type outline)))) (symbol USB_C_Receptacle_USB2.0_16P_1_1 (pin passive line (at 0 -22.86 90) (length 5.08) (name GND (effects (font (size 1.27 1.27)))) (number A1 (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (name VBUS (effects (font (size 1.27 1.27)))) (number A4 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 10.16 180) (length 5.08) (name CC1 (effects (font (size 1.27 1.27)))) (number A5 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -2.54 180) (length 5.08) (name D+ (effects (font (size 1.27 1.27)))) (number A6 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 2.54 180) (length 5.08) (name D- (effects (font (size 1.27 1.27)))) (number A7 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -12.7 180) (length 5.08) (name SBU1 (effects (font (size 1.27 1.27)))) (number A8 (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (hide yes) (name VBUS (effects (font (size 1.27 1.27)))) (number A9 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -22.86 90) (length 5.08) (hide yes) (name GND (effects (font (size 1.27 1.27)))) (number A12 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -22.86 90) (length 5.08) (hide yes) (name GND (effects (font (size 1.27 1.27)))) (number B1 (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (hide yes) (name VBUS (effects (font (size 1.27 1.27)))) (number B4 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 7.62 180) (length 5.08) (name CC2 (effects (font (size 1.27 1.27)))) (number B5 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -5.08 180) (length 5.08) (name D+ (effects (font (size 1.27 1.27)))) (number B6 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 0 180) (length 5.08) (name D- (effects (font (size 1.27 1.27)))) (number B7 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -15.24 180) (length 5.08) (name SBU2 (effects (font (size 1.27 1.27)))) (number B8 (effects (font (size 1.27 1.27))))) (pin passive line (at 15.24 15.24 180) (length 5.08) (hide yes) (name VBUS (effects (font (size 1.27 1.27)))) (number B9 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -22.86 90) (length 5.08) (hide yes) (name GND (effects (font (size 1.27 1.27)))) (number B12 (effects (font (size 1.27 1.27))))) (pin passive line (at -7.62 -22.86 90) (length 5.08) (name SHIELD (effects (font (size 1.27 1.27)))) (number SH (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "id": "openpcb.core.relay.relay-srd-spdt",
+  "uuid": "b69e6464-2809-5f9d-a387-537e9ee994be",
+  "version": "0.3.0",
+  "name": "Relay SPDT SRD (Songle)",
+  "description": "SPDT power relay, Sanyou/Songle SRD series THT (10A form C).",
+  "category": "relay",
+  "subcategory": "power-relay",
+  "tags": [
+    "relay",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "relay",
+    "SPDT",
+    "SRD-05VDC",
+    "songle",
+    "10A"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf",
+  "parameters": {
+    "contacts": "SPDT",
+    "contactRating": "10A"
+  },
+  "symbol": "openpcb.core.symbol.relay.relay-srd-spdt",
+  "defaultFootprint": "openpcb.core.footprint.relay.relay-srd-form-c",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.relay.relay-srd-form-c",
+      "label": "SRD THT",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SANYOU_SRD_Form_C.kicad_sym",
+    "sourceLibrary": "Relay",
+    "sourceItemName": "Relay SPDT SRD (Songle)",
+    "sourceHash": "70e9ad0ebaf2363c66ec5c56e10d802f1ed6b3e7cfdff2cd6b96cd219e57989d",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

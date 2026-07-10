@@ -84,9 +84,10 @@ export interface GateInput {
    */
   orientationHint?: OrientationHint;
   /**
-   * Explicit THT lead-protrusion budget (mm below board), overriding the
-   * posture-derived default. For parts whose KiCad STEP ships full uncut
-   * leads (e.g. PS1240 buzzer, 15mm pins). Keep to documented exceptions.
+   * Explicit below-board protrusion budget (mm), overriding the
+   * posture-derived default. For parts whose STEP ships full uncut leads
+   * (PS1240 buzzer, 15mm pins) or SMT parts with locating posts (18650
+   * holder). Keep to documented exceptions.
    */
   leadBudgetMm?: number;
 }
@@ -213,11 +214,14 @@ export function evaluateOrientation(input: GateInput): Finding[] {
       });
     }
   } else {
-    if (bounds.min.z < -SMD_BASE_BELOW_TOL) {
+    // SMT parts with locating posts (battery holders, some connectors) may
+    // legitimately protrude below the board — honor the explicit budget.
+    const smdBelowTol = input.leadBudgetMm ?? SMD_BASE_BELOW_TOL;
+    if (bounds.min.z < -smdBelowTol) {
       findings.push({
         check: "on-board",
         severity: "error",
-        message: `body sinks ${(-bounds.min.z).toFixed(2)}mm below board plane (min.z<${-SMD_BASE_BELOW_TOL}) — classic mis-rotation (e.g. baked rotationDeg.x=±90)`,
+        message: `body sinks ${(-bounds.min.z).toFixed(2)}mm below board plane (min.z<${-smdBelowTol}) — classic mis-rotation (e.g. baked rotationDeg.x=±90)`,
       });
     } else if (bounds.min.z > SMD_BASE_ABOVE_TOL) {
       findings.push({

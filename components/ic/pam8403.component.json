@@ -1,0 +1,121 @@
+{
+  "id": "openpcb.core.ic.pam8403",
+  "uuid": "552e96e1-3cf9-5f65-b26e-0b6152c6cfe2",
+  "version": "0.3.0",
+  "name": "PAM8403 Class-D Audio Amplifier",
+  "description": "Diodes PAM8403 3 W stereo filterless class-D audio amplifier, SOIC-16.",
+  "category": "ic",
+  "subcategory": "amplifier-audio",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "PAM8403",
+    "class-D",
+    "audio",
+    "amplifier",
+    "3W",
+    "stereo"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.diodes.com/assets/Datasheets/products_inactive_data/PAM8403.pdf",
+  "parameters": {
+    "channels": "2",
+    "pout": "3W @ 5V/4Ω"
+  },
+  "symbol": "openpcb.core.symbol.ic.pam8403",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "label": "SOIC-16",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "PAM8403D.kicad_sym",
+    "sourceLibrary": "Amplifier_Audio",
+    "sourceItemName": "PAM8403 Class-D Audio Amplifier",
+    "sourceHash": "91b277bda826adccbf82b8dbc25adcba177f326597594d3553de84129424f002",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

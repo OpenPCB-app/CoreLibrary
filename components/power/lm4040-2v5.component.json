@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.power.lm4040-2v5",
+  "uuid": "c3515c05-71cc-51f4-952d-790ac838a5e0",
+  "version": "0.3.0",
+  "name": "LM4040 2.5V Voltage Reference",
+  "description": "LM4040 precision micropower shunt voltage reference, 2.5 V, SOT-23.",
+  "category": "power",
+  "subcategory": "reference",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "LM4040",
+    "voltage reference",
+    "2.5V",
+    "shunt",
+    "precision"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf",
+  "parameters": {
+    "vref": "2.5V",
+    "type": "shunt"
+  },
+  "symbol": "openpcb.core.symbol.power.lm4040-2v5",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LM4040DBZ-2.5.kicad_sym",
+    "sourceLibrary": "Reference_Voltage",
+    "sourceItemName": "LM4040 2.5V Voltage Reference",
+    "sourceHash": "11d8d58f6c179ba367fe1d696f3dcbc0a109be27607dda2844454d57db46b42c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

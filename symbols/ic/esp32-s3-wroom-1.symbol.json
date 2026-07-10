@@ -1,0 +1,3229 @@
+{
+  "id": "openpcb.core.symbol.ic.esp32-s3-wroom-1",
+  "uuid": "318ddacd-16f2-5b9c-873b-1e43f0570c96",
+  "version": "0.3.0",
+  "name": "ESP32-S3-WROOM-1 Module",
+  "referencePrefix": "U",
+  "description": "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "ESP32-S3-WROOM-1.kicad_sym",
+    "sourceLibrary": "RF_Module",
+    "sourceItemName": "ESP32-S3-WROOM-1",
+    "sourceHash": "4fa9bf5780c118af8b3b30e29fcc178a9e2de2ce9598a12d851a2b8b40dff19f",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "ESP32-S3-WROOM-1",
+      "Footprint": "RF_Module:ESP32-S3-WROOM-1",
+      "Datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "Description": "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD",
+      "ki_keywords": "RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna",
+      "ki_fp_filters": "ESP32?S3?WROOM?1*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "ESP32-S3-WROOM-1.kicad_sym",
+        "sourceItemName": "ESP32-S3-WROOM-1",
+        "sha256": "ad427c46f8d046f47595edd16128520b75d9b386cc36a14e4d8f75ae036ab23d"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_cfae81c1e8c987bb",
+    "name": "ESP32-S3-WROOM-1",
+    "referencePrefix": "U",
+    "description": "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD",
+    "sourceHash": "4fa9bf5780c118af8b3b30e29fcc178a9e2de2ce9598a12d851a2b8b40dff19f",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -27.94
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "3V3",
+        "localPosition": {
+          "x": 0,
+          "y": 27.94
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "EN",
+        "localPosition": {
+          "x": -15.24,
+          "y": 22.86
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "IO4",
+        "localPosition": {
+          "x": -15.24,
+          "y": 7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "IO5",
+        "localPosition": {
+          "x": -15.24,
+          "y": 5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "IO6",
+        "localPosition": {
+          "x": -15.24,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "IO7",
+        "localPosition": {
+          "x": -15.24,
+          "y": 0
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "IO15",
+        "localPosition": {
+          "x": -15.24,
+          "y": -20.32
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "IO16",
+        "localPosition": {
+          "x": -15.24,
+          "y": -22.86
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "IO17",
+        "localPosition": {
+          "x": 15.24,
+          "y": 17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "IO18",
+        "localPosition": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "IO8",
+        "localPosition": {
+          "x": -15.24,
+          "y": -2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "USB_D-",
+        "localPosition": {
+          "x": 15.24,
+          "y": 12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "USB_D+",
+        "localPosition": {
+          "x": 15.24,
+          "y": 10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "IO3",
+        "localPosition": {
+          "x": -15.24,
+          "y": 10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "IO46",
+        "localPosition": {
+          "x": 15.24,
+          "y": -17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:17",
+        "number": "17",
+        "name": "IO9",
+        "localPosition": {
+          "x": -15.24,
+          "y": -5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:18",
+        "number": "18",
+        "name": "IO10",
+        "localPosition": {
+          "x": -15.24,
+          "y": -7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:19",
+        "number": "19",
+        "name": "IO11",
+        "localPosition": {
+          "x": -15.24,
+          "y": -10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:20",
+        "number": "20",
+        "name": "IO12",
+        "localPosition": {
+          "x": -15.24,
+          "y": -12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:21",
+        "number": "21",
+        "name": "IO13",
+        "localPosition": {
+          "x": -15.24,
+          "y": -15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:22",
+        "number": "22",
+        "name": "IO14",
+        "localPosition": {
+          "x": -15.24,
+          "y": -17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:23",
+        "number": "23",
+        "name": "IO21",
+        "localPosition": {
+          "x": 15.24,
+          "y": 7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:24",
+        "number": "24",
+        "name": "IO47",
+        "localPosition": {
+          "x": 15.24,
+          "y": -20.32
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:25",
+        "number": "25",
+        "name": "IO48",
+        "localPosition": {
+          "x": 15.24,
+          "y": -22.86
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:26",
+        "number": "26",
+        "name": "IO45",
+        "localPosition": {
+          "x": 15.24,
+          "y": -15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:27",
+        "number": "27",
+        "name": "IO0",
+        "localPosition": {
+          "x": -15.24,
+          "y": 17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:28",
+        "number": "28",
+        "name": "IO35",
+        "localPosition": {
+          "x": 15.24,
+          "y": 5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:29",
+        "number": "29",
+        "name": "IO36",
+        "localPosition": {
+          "x": 15.24,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:30",
+        "number": "30",
+        "name": "IO37",
+        "localPosition": {
+          "x": 15.24,
+          "y": 0
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:31",
+        "number": "31",
+        "name": "IO38",
+        "localPosition": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:32",
+        "number": "32",
+        "name": "IO39",
+        "localPosition": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:33",
+        "number": "33",
+        "name": "IO40",
+        "localPosition": {
+          "x": 15.24,
+          "y": -7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:34",
+        "number": "34",
+        "name": "IO41",
+        "localPosition": {
+          "x": 15.24,
+          "y": -10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:35",
+        "number": "35",
+        "name": "IO42",
+        "localPosition": {
+          "x": 15.24,
+          "y": -12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:36",
+        "number": "36",
+        "name": "RXD0",
+        "localPosition": {
+          "x": 15.24,
+          "y": 20.32
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:37",
+        "number": "37",
+        "name": "TXD0",
+        "localPosition": {
+          "x": 15.24,
+          "y": 22.86
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:38",
+        "number": "38",
+        "name": "IO2",
+        "localPosition": {
+          "x": -15.24,
+          "y": 12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:39",
+        "number": "39",
+        "name": "IO1",
+        "localPosition": {
+          "x": -15.24,
+          "y": 15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:40",
+        "number": "40",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -27.94
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:41",
+        "number": "41",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -27.94
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "ESP32-S3-WROOM-1",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -12.7,
+          "y": -25.4,
+          "width": 25.4,
+          "height": 50.8,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 7.62,
+              "y": -1.27
+            },
+            {
+              "x": 6.35,
+              "y": -1.27
+            },
+            {
+              "x": 6.35,
+              "y": 6.35
+            },
+            {
+              "x": 7.62,
+              "y": 6.35
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "GND",
+          "number": "1",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -27.94
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -25.400000000000002
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:2",
+          "name": "3V3",
+          "number": "2",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 27.94
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 25.400000000000002
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:3",
+          "name": "EN",
+          "number": "3",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 22.86
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 22.86
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "IO4",
+          "number": "4",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "IO5",
+          "number": "5",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "IO6",
+          "number": "6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:7",
+          "name": "IO7",
+          "number": "7",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:8",
+          "name": "IO15",
+          "number": "8",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -20.32
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -20.32
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:9",
+          "name": "IO16",
+          "number": "9",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -22.86
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:10",
+          "name": "IO17",
+          "number": "10",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 17.78
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 17.78
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:11",
+          "name": "IO18",
+          "number": "11",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:12",
+          "name": "IO8",
+          "number": "12",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:13",
+          "name": "USB_D-",
+          "number": "13",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:14",
+          "name": "USB_D+",
+          "number": "14",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:15",
+          "name": "IO3",
+          "number": "15",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:16",
+          "name": "IO46",
+          "number": "16",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -17.78
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -17.78
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:17",
+          "name": "IO9",
+          "number": "17",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:18",
+          "name": "IO10",
+          "number": "18",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:19",
+          "name": "IO11",
+          "number": "19",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:20",
+          "name": "IO12",
+          "number": "20",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -12.7
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:21",
+          "name": "IO13",
+          "number": "21",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -15.24
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:22",
+          "name": "IO14",
+          "number": "22",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": -17.78
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": -17.78
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:23",
+          "name": "IO21",
+          "number": "23",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:24",
+          "name": "IO47",
+          "number": "24",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -20.32
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -20.32
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:25",
+          "name": "IO48",
+          "number": "25",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -22.86
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:26",
+          "name": "IO45",
+          "number": "26",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:27",
+          "name": "IO0",
+          "number": "27",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 17.78
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 17.78
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:28",
+          "name": "IO35",
+          "number": "28",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:29",
+          "name": "IO36",
+          "number": "29",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:30",
+          "name": "IO37",
+          "number": "30",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:31",
+          "name": "IO38",
+          "number": "31",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:32",
+          "name": "IO39",
+          "number": "32",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:33",
+          "name": "IO40",
+          "number": "33",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:34",
+          "name": "IO41",
+          "number": "34",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:35",
+          "name": "IO42",
+          "number": "35",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": -12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:36",
+          "name": "RXD0",
+          "number": "36",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 20.32
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 20.32
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:37",
+          "name": "TXD0",
+          "number": "37",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 15.24,
+            "y": 22.86
+          },
+          "bodyEnd": {
+            "x": 12.7,
+            "y": 22.86
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:38",
+          "name": "IO2",
+          "number": "38",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 12.7
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:39",
+          "name": "IO1",
+          "number": "39",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -15.24,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -12.7,
+            "y": 15.24
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:40",
+          "name": "GND",
+          "number": "40",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -27.94
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -25.400000000000002
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:41",
+          "name": "GND",
+          "number": "41",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -27.94
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -25.400000000000002
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -25.908
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 0.508,
+            "y": -27.736800000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "3V3",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 25.908
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 0.508,
+            "y": 27.736800000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "EN",
+          "at": {
+            "x": -12.192,
+            "y": 22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 23.368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "IO4",
+          "at": {
+            "x": -12.192,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "IO5",
+          "at": {
+            "x": -12.192,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "IO6",
+          "at": {
+            "x": -12.192,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "IO7",
+          "at": {
+            "x": -12.192,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "IO15",
+          "at": {
+            "x": -12.192,
+            "y": -20.32
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -19.812
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "IO16",
+          "at": {
+            "x": -12.192,
+            "y": -22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -22.352
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "IO17",
+          "at": {
+            "x": 12.192,
+            "y": 17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "IO18",
+          "at": {
+            "x": 12.192,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "IO8",
+          "at": {
+            "x": -12.192,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "USB_D-",
+          "at": {
+            "x": 12.192,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "USB_D+",
+          "at": {
+            "x": 12.192,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "IO3",
+          "at": {
+            "x": -12.192,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "IO46",
+          "at": {
+            "x": 12.192,
+            "y": -17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -17.272000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:17:name",
+          "text": "IO9",
+          "at": {
+            "x": -12.192,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:17:number",
+          "text": "17",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:18:name",
+          "text": "IO10",
+          "at": {
+            "x": -12.192,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:18:number",
+          "text": "18",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:19:name",
+          "text": "IO11",
+          "at": {
+            "x": -12.192,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:19:number",
+          "text": "19",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:20:name",
+          "text": "IO12",
+          "at": {
+            "x": -12.192,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:20:number",
+          "text": "20",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:21:name",
+          "text": "IO13",
+          "at": {
+            "x": -12.192,
+            "y": -15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:21:number",
+          "text": "21",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -14.732
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:22:name",
+          "text": "IO14",
+          "at": {
+            "x": -12.192,
+            "y": -17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:22:number",
+          "text": "22",
+          "at": {
+            "x": -13.969999999999999,
+            "y": -17.272000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:23:name",
+          "text": "IO21",
+          "at": {
+            "x": 12.192,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:23:number",
+          "text": "23",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:24:name",
+          "text": "IO47",
+          "at": {
+            "x": 12.192,
+            "y": -20.32
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:24:number",
+          "text": "24",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -19.812
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:25:name",
+          "text": "IO48",
+          "at": {
+            "x": 12.192,
+            "y": -22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:25:number",
+          "text": "25",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -22.352
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:26:name",
+          "text": "IO45",
+          "at": {
+            "x": 12.192,
+            "y": -15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:26:number",
+          "text": "26",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -14.732
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:27:name",
+          "text": "IO0",
+          "at": {
+            "x": -12.192,
+            "y": 17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:27:number",
+          "text": "27",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:28:name",
+          "text": "IO35",
+          "at": {
+            "x": 12.192,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:28:number",
+          "text": "28",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:29:name",
+          "text": "IO36",
+          "at": {
+            "x": 12.192,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:29:number",
+          "text": "29",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:30:name",
+          "text": "IO37",
+          "at": {
+            "x": 12.192,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:30:number",
+          "text": "30",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:31:name",
+          "text": "IO38",
+          "at": {
+            "x": 12.192,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:31:number",
+          "text": "31",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:32:name",
+          "text": "IO39",
+          "at": {
+            "x": 12.192,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:32:number",
+          "text": "32",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:33:name",
+          "text": "IO40",
+          "at": {
+            "x": 12.192,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:33:number",
+          "text": "33",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:34:name",
+          "text": "IO41",
+          "at": {
+            "x": 12.192,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:34:number",
+          "text": "34",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:35:name",
+          "text": "IO42",
+          "at": {
+            "x": 12.192,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:35:number",
+          "text": "35",
+          "at": {
+            "x": 13.969999999999999,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:36:name",
+          "text": "RXD0",
+          "at": {
+            "x": 12.192,
+            "y": 20.32
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:36:number",
+          "text": "36",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 20.828
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:37:name",
+          "text": "TXD0",
+          "at": {
+            "x": 12.192,
+            "y": 22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:37:number",
+          "text": "37",
+          "at": {
+            "x": 13.969999999999999,
+            "y": 23.368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:38:name",
+          "text": "IO2",
+          "at": {
+            "x": -12.192,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:38:number",
+          "text": "38",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:39:name",
+          "text": "IO1",
+          "at": {
+            "x": -12.192,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:39:number",
+          "text": "39",
+          "at": {
+            "x": -13.969999999999999,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:40:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -25.908
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:40:number",
+          "text": "40",
+          "at": {
+            "x": 0.508,
+            "y": -27.736800000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:41:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -25.908
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:41:number",
+          "text": "41",
+          "at": {
+            "x": 0.508,
+            "y": -27.736800000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol-text:0:5.08:2.54:PSRAM",
+          "text": "PSRAM",
+          "at": {
+            "x": 5.08,
+            "y": 2.54
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 900,
+          "anchorX": "center",
+          "anchorY": "middle"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 29.540200000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "ESP32-S3-WROOM-1",
+          "at": {
+            "x": 0,
+            "y": -29.794200000000007
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -15.24,
+        "minY": -31.064200000000007,
+        "maxX": 15.24,
+        "maxY": 30.810200000000002
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "ESP32-S3-WROOM-1",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "GND",
+        "number": "1",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -27.94
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "3V3",
+        "number": "2",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 27.94
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "EN",
+        "number": "3",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 22.86
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO4",
+        "number": "4",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO5",
+        "number": "5",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO6",
+        "number": "6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO7",
+        "number": "7",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO15",
+        "number": "8",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -20.32
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO16",
+        "number": "9",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -22.86
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO17",
+        "number": "10",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 17.78
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO18",
+        "number": "11",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO8",
+        "number": "12",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "USB_D-",
+        "number": "13",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "USB_D+",
+        "number": "14",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO3",
+        "number": "15",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO46",
+        "number": "16",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -17.78
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO9",
+        "number": "17",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO10",
+        "number": "18",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO11",
+        "number": "19",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO12",
+        "number": "20",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO13",
+        "number": "21",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO14",
+        "number": "22",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": -17.78
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO21",
+        "number": "23",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO47",
+        "number": "24",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -20.32
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO48",
+        "number": "25",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -22.86
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO45",
+        "number": "26",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO0",
+        "number": "27",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 17.78
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO35",
+        "number": "28",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO36",
+        "number": "29",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO37",
+        "number": "30",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO38",
+        "number": "31",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO39",
+        "number": "32",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO40",
+        "number": "33",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO41",
+        "number": "34",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO42",
+        "number": "35",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "RXD0",
+        "number": "36",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 20.32
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "TXD0",
+        "number": "37",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 15.24,
+          "y": 22.86
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO2",
+        "number": "38",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IO1",
+        "number": "39",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -15.24,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "40",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -27.94
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "41",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -27.94
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "ESP32-S3-WROOM-1",
+      "Footprint": "RF_Module:ESP32-S3-WROOM-1",
+      "Datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf",
+      "Description": "RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD",
+      "ki_keywords": "RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna",
+      "ki_fp_filters": "ESP32?S3?WROOM?1*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -12.7,
+            25.4
+          ],
+          [
+            "end",
+            12.7,
+            -25.4
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "text",
+          "PSRAM",
+          [
+            "at",
+            5.08,
+            2.54,
+            900
+          ],
+          [
+            "effects",
+            [
+              "font",
+              [
+                "size",
+                1.27,
+                1.27
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              7.62,
+              -1.27
+            ],
+            [
+              "xy",
+              6.35,
+              -1.27
+            ],
+            [
+              "xy",
+              6.35,
+              6.35
+            ],
+            [
+              "xy",
+              7.62,
+              6.35
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol ESP32-S3-WROOM-1 (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -12.7 26.67 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value ESP32-S3-WROOM-1 (at 12.7 26.67 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint RF_Module:ESP32-S3-WROOM-1 (at 0 2.54 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"RF Module, ESP32-S3 SoC, Wi-Fi 802.11b/g/n, Bluetooth, BLE, 32-bit, 3.3V, onboard antenna, SMD\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"RF Radio BT ESP ESP32-S3 Espressif onboard PCB antenna\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters ESP32?S3?WROOM?1* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol ESP32-S3-WROOM-1_0_0 (rectangle (start -12.7 25.4) (end 12.7 -25.4) (stroke (width 0.254) (type default)) (fill (type background))) (text PSRAM (at 5.08 2.54 900) (effects (font (size 1.27 1.27))))) (symbol ESP32-S3-WROOM-1_0_1 (polyline (pts (xy 7.62 -1.27) (xy 6.35 -1.27) (xy 6.35 6.35) (xy 7.62 6.35)) (stroke (width 0) (type default)) (fill (type none)))) (symbol ESP32-S3-WROOM-1_1_1 (pin power_in line (at 0 -27.94 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 27.94 270) (length 2.54) (name 3V3 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin input line (at -15.24 22.86 0) (length 2.54) (name EN (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 7.62 0) (length 2.54) (name IO4 (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 5.08 0) (length 2.54) (name IO5 (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 2.54 0) (length 2.54) (name IO6 (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 0 0) (length 2.54) (name IO7 (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -20.32 0) (length 2.54) (name IO15 (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -22.86 0) (length 2.54) (name IO16 (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 17.78 180) (length 2.54) (name IO17 (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 15.24 180) (length 2.54) (name IO18 (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -2.54 0) (length 2.54) (name IO8 (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 12.7 180) (length 2.54) (name USB_D- (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27)))) (alternate IO19 bidirectional line)) (pin bidirectional line (at 15.24 10.16 180) (length 2.54) (name USB_D+ (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27)))) (alternate IO20 bidirectional line)) (pin bidirectional line (at -15.24 10.16 0) (length 2.54) (name IO3 (effects (font (size 1.27 1.27)))) (number 15 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -17.78 180) (length 2.54) (name IO46 (effects (font (size 1.27 1.27)))) (number 16 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -5.08 0) (length 2.54) (name IO9 (effects (font (size 1.27 1.27)))) (number 17 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -7.62 0) (length 2.54) (name IO10 (effects (font (size 1.27 1.27)))) (number 18 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -10.16 0) (length 2.54) (name IO11 (effects (font (size 1.27 1.27)))) (number 19 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -12.7 0) (length 2.54) (name IO12 (effects (font (size 1.27 1.27)))) (number 20 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -15.24 0) (length 2.54) (name IO13 (effects (font (size 1.27 1.27)))) (number 21 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 -17.78 0) (length 2.54) (name IO14 (effects (font (size 1.27 1.27)))) (number 22 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 7.62 180) (length 2.54) (name IO21 (effects (font (size 1.27 1.27)))) (number 23 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -20.32 180) (length 2.54) (name IO47 (effects (font (size 1.27 1.27)))) (number 24 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -22.86 180) (length 2.54) (name IO48 (effects (font (size 1.27 1.27)))) (number 25 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -15.24 180) (length 2.54) (name IO45 (effects (font (size 1.27 1.27)))) (number 26 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 17.78 0) (length 2.54) (name IO0 (effects (font (size 1.27 1.27)))) (number 27 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 5.08 180) (length 2.54) (name IO35 (effects (font (size 1.27 1.27)))) (number 28 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 2.54 180) (length 2.54) (name IO36 (effects (font (size 1.27 1.27)))) (number 29 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 0 180) (length 2.54) (name IO37 (effects (font (size 1.27 1.27)))) (number 30 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -2.54 180) (length 2.54) (name IO38 (effects (font (size 1.27 1.27)))) (number 31 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -5.08 180) (length 2.54) (name IO39 (effects (font (size 1.27 1.27)))) (number 32 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -7.62 180) (length 2.54) (name IO40 (effects (font (size 1.27 1.27)))) (number 33 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -10.16 180) (length 2.54) (name IO41 (effects (font (size 1.27 1.27)))) (number 34 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 -12.7 180) (length 2.54) (name IO42 (effects (font (size 1.27 1.27)))) (number 35 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 20.32 180) (length 2.54) (name RXD0 (effects (font (size 1.27 1.27)))) (number 36 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 15.24 22.86 180) (length 2.54) (name TXD0 (effects (font (size 1.27 1.27)))) (number 37 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 12.7 0) (length 2.54) (name IO2 (effects (font (size 1.27 1.27)))) (number 38 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -15.24 15.24 0) (length 2.54) (name IO1 (effects (font (size 1.27 1.27)))) (number 39 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -27.94 90) (length 2.54) (hide yes) (name GND (effects (font (size 1.27 1.27)))) (number 40 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -27.94 90) (length 2.54) (hide yes) (name GND (effects (font (size 1.27 1.27)))) (number 41 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

@@ -1,0 +1,314 @@
+{
+  "id": "openpcb.core.symbol.passive.fuse",
+  "uuid": "863ace6f-70d5-58ba-9c18-f8000f84daec",
+  "version": "0.3.0",
+  "name": "Fuse Holder 5x20 mm",
+  "referencePrefix": "F",
+  "description": "Fuse",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Fuse.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Fuse",
+    "sourceHash": "28609bb56f88c7f55ae5f7f6fea49624d971c245e82761c6aeb18f68b3a0a3e0",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "F",
+      "Value": "Fuse",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Fuse",
+      "ki_keywords": "fuse",
+      "ki_fp_filters": "*Fuse*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Fuse.kicad_sym",
+        "sourceItemName": "Fuse",
+        "sha256": "08d01d9946b9d571c9860b3ca3151a6b36d39516d4b9ec9edc3820046c75dfd2"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_f956fa2b4f9c4c83",
+    "name": "Fuse",
+    "referencePrefix": "F",
+    "description": "Fuse",
+    "sourceHash": "28609bb56f88c7f55ae5f7f6fea49624d971c245e82761c6aeb18f68b3a0a3e0",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": 3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": -3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Fuse",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -0.762,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 5.08,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": 2.54
+            },
+            {
+              "x": 0,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 3.81
+          },
+          "bodyEnd": {
+            "x": -2.3329521523757077e-16,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -3.81
+          },
+          "bodyEnd": {
+            "x": 7.776507174585693e-17,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "F",
+          "at": {
+            "x": 0,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Fuse",
+          "at": {
+            "x": 0,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.5748,
+        "minY": -6.35,
+        "maxX": 1.5748,
+        "maxY": 6.35
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Fuse",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 3.81
+        },
+        "length": 1.27,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -3.81
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "F",
+      "Value": "Fuse",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Fuse",
+      "ki_keywords": "fuse",
+      "ki_fp_filters": "*Fuse*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -0.762,
+            -2.54
+          ],
+          [
+            "end",
+            0.762,
+            2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              2.54
+            ],
+            [
+              "xy",
+              0,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Fuse (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference F (at 2.032 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value Fuse (at -1.905 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at -1.778 0 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description Fuse (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords fuse (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters *Fuse* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Fuse_0_1 (rectangle (start -0.762 -2.54) (end 0.762 2.54) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 0 2.54) (xy 0 -2.54)) (stroke (width 0) (type default)) (fill (type none)))) (symbol Fuse_1_1 (pin passive line (at 0 3.81 270) (length 1.27) (name \"\" (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name \"\" (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": false,
+    "hidePinNumbers": true
+  }
+}

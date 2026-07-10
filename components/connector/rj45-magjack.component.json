@@ -1,35 +1,30 @@
 {
-  "id": "openpcb.core.ic.lm386",
-  "uuid": "c4c73456-ceb4-5de1-961a-5eb935b58ad8",
+  "id": "openpcb.core.connector.rj45-magjack",
+  "uuid": "4d3a1ff7-6287-5e9f-ab5e-a191a9356b55",
   "version": "0.3.0",
-  "name": "LM386 Audio Amplifier",
-  "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
-  "category": "ic",
-  "subcategory": "amplifier-audio",
+  "name": "RJ45 MagJack (LEDs, Shielded)",
+  "description": "RJ45 Ethernet jack with integrated magnetics and LEDs, shielded THT (Amphenol RJHSE538X style).",
+  "category": "connector",
+  "subcategory": "ethernet",
   "tags": [
-    "ic",
+    "connector",
     "kicad-derived"
   ],
   "keywords": [
-    "LM386",
-    "audio",
-    "amplifier",
-    "speaker"
+    "RJ45",
+    "ethernet",
+    "magjack",
+    "magnetics",
+    "network"
   ],
   "aliases": [],
   "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm386.pdf",
-  "parameters": {
-    "gain": "20-200",
-    "pout": "0.3-1W",
-    "vcc": "4-12V"
-  },
-  "symbol": "openpcb.core.symbol.ic.lm386",
-  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "symbol": "openpcb.core.symbol.connector.rj45-magjack",
+  "defaultFootprint": "openpcb.core.footprint.connector.rj45-amphenol-rjhse538x",
   "footprints": [
     {
-      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
-      "label": "SOIC-8",
+      "footprint": "openpcb.core.footprint.connector.rj45-amphenol-rjhse538x",
+      "label": "RJHSE538X",
       "pinMap": [
         {
           "pinNumber": "1",
@@ -62,6 +57,26 @@
         {
           "pinNumber": "8",
           "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "SH",
+          "padNumber": "SH"
         }
       ]
     }
@@ -73,10 +88,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "openpcb-component",
-    "sourceFileName": "LM386.kicad_sym",
-    "sourceLibrary": "Amplifier_Audio",
-    "sourceItemName": "LM386 Audio Amplifier",
-    "sourceHash": "f8b3d8b427743610430b975696aa211eddb53aa615b8f4b29117654b1f49d462",
+    "sourceFileName": "RJ45_LED_Shielded.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "RJ45 MagJack (LEDs, Shielded)",
+    "sourceHash": "467b84661aae19765fb4c3239cca2ec03165124bfa3a60c4653b178270a4b36b",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-07-10T18:48:42.901Z",

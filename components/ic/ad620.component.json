@@ -1,30 +1,30 @@
 {
-  "id": "openpcb.core.ic.lm386",
-  "uuid": "c4c73456-ceb4-5de1-961a-5eb935b58ad8",
+  "id": "openpcb.core.ic.ad620",
+  "uuid": "37eaff38-662b-5031-8b9b-d96ce2e46ce8",
   "version": "0.3.0",
-  "name": "LM386 Audio Amplifier",
-  "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
+  "name": "AD620 Instrumentation Amplifier",
+  "description": "Analog Devices AD620 low-power instrumentation amplifier, gain 1–10000, SOIC-8.",
   "category": "ic",
-  "subcategory": "amplifier-audio",
+  "subcategory": "amplifier-instrumentation",
   "tags": [
     "ic",
     "kicad-derived"
   ],
   "keywords": [
-    "LM386",
-    "audio",
-    "amplifier",
-    "speaker"
+    "AD620",
+    "instrumentation amplifier",
+    "in-amp",
+    "sensor"
   ],
   "aliases": [],
   "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm386.pdf",
+  "datasheetSource": "https://www.analog.com/media/en/technical-documentation/data-sheets/AD620.pdf",
   "parameters": {
-    "gain": "20-200",
-    "pout": "0.3-1W",
-    "vcc": "4-12V"
+    "gain": "1-10000 (RG)",
+    "vos": "50µV max",
+    "supply": "±2.3-18V"
   },
-  "symbol": "openpcb.core.symbol.ic.lm386",
+  "symbol": "openpcb.core.symbol.ic.ad620",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
   "footprints": [
     {
@@ -73,10 +73,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "openpcb-component",
-    "sourceFileName": "LM386.kicad_sym",
-    "sourceLibrary": "Amplifier_Audio",
-    "sourceItemName": "LM386 Audio Amplifier",
-    "sourceHash": "f8b3d8b427743610430b975696aa211eddb53aa615b8f4b29117654b1f49d462",
+    "sourceFileName": "AD620.kicad_sym",
+    "sourceLibrary": "Amplifier_Instrumentation",
+    "sourceItemName": "AD620 Instrumentation Amplifier",
+    "sourceHash": "190534be3ce38182e4c74f6167328819057211516c589490c7e303d4c1068953",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-07-10T18:48:42.901Z",

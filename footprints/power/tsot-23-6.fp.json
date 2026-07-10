@@ -1,0 +1,1145 @@
+{
+  "id": "openpcb.core.footprint.power.tsot-23-6",
+  "uuid": "b5a780a9-71ef-5035-87a6-d07ccf1ad9cb",
+  "version": "0.3.0",
+  "name": "TSOT-23-6",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.power.tsot-23-6"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "TSOT-23-6.kicad_mod",
+    "sourceLibrary": "Package_TO_SOT_SMD",
+    "sourceItemName": "TSOT-23-6",
+    "sourceHash": "2b3e097508a6979b828ca1125470c9edb557dced151630c94ad579b9b0e83442",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_3db4da12bc095b04",
+    "fileName": "TSOT-23-6.kicad_mod",
+    "name": "TSOT-23-6",
+    "description": "TSOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AA)",
+    "mountType": "smd",
+    "padCount": 6,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "tsot",
+      "to_sot_smd",
+      "smd"
+    ],
+    "sourceHash": "2b3e097508a6979b828ca1125470c9edb557dced151630c94ad579b9b0e83442",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "TSOT-23-6",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.1375,
+            "y": -0.95
+          },
+          "widthMm": 1.325,
+          "heightMm": 0.6,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.1375,
+            "y": 0
+          },
+          "widthMm": 1.325,
+          "heightMm": 0.6,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.1375,
+            "y": 0.95
+          },
+          "widthMm": 1.325,
+          "heightMm": 0.6,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.1375,
+            "y": 0.95
+          },
+          "widthMm": 1.325,
+          "heightMm": 0.6,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "5:4",
+          "number": "5",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.1375,
+            "y": 0
+          },
+          "widthMm": 1.325,
+          "heightMm": 0.6,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "6:5",
+          "number": "6",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.1375,
+            "y": -0.95
+          },
+          "widthMm": 1.325,
+          "heightMm": 0.6,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.91,
+            "y": -1.56
+          },
+          "b": {
+            "x": 0.91,
+            "y": -1.56
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.91,
+            "y": -1.51
+          },
+          "b": {
+            "x": -0.91,
+            "y": -1.56
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.91,
+            "y": 1.56
+          },
+          "b": {
+            "x": -0.91,
+            "y": 1.51
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.91,
+            "y": -1.56
+          },
+          "b": {
+            "x": 0.91,
+            "y": -1.51
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.91,
+            "y": 1.51
+          },
+          "b": {
+            "x": 0.91,
+            "y": 1.56
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.91,
+            "y": 1.56
+          },
+          "b": {
+            "x": -0.91,
+            "y": 1.56
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.45,
+              "y": -1.51
+            },
+            {
+              "x": -1.69,
+              "y": -1.84
+            },
+            {
+              "x": -1.21,
+              "y": -1.84
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -0.4,
+              "y": -1.45
+            },
+            {
+              "x": 0.8,
+              "y": -1.45
+            },
+            {
+              "x": 0.8,
+              "y": 1.45
+            },
+            {
+              "x": -0.8,
+              "y": 1.45
+            },
+            {
+              "x": -0.8,
+              "y": -1.05
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 0.72,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2.4:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.4
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:2.4:TSOT-23-6",
+          "text": "TSOT-23-6",
+          "at": {
+            "x": 0,
+            "y": 2.4
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.7999999999999998,
+        "minY": -1.9000000000000004,
+        "maxX": 1.7999999999999998,
+        "maxY": 1.62
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "TSOT-23-6",
+    "description": "TSOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AA)",
+    "tags": [
+      "TSOT",
+      "TO_SOT_SMD"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.1375,
+          "y": -0.95
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.325,
+          "height": 0.6
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.1375,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.325,
+          "height": 0.6
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.1375,
+          "y": 0.95
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.325,
+          "height": 0.6
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.1375,
+          "y": 0.95
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.325,
+          "height": 0.6
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "5",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.1375,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.325,
+          "height": 0.6
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "6",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.1375,
+          "y": -0.95
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.325,
+          "height": 0.6
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.91,
+            -1.56
+          ],
+          "end": [
+            0.91,
+            -1.56
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.91,
+            -1.51
+          ],
+          "end": [
+            -0.91,
+            -1.56
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.91,
+            1.56
+          ],
+          "end": [
+            -0.91,
+            1.51
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.91,
+            -1.56
+          ],
+          "end": [
+            0.91,
+            -1.51
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.91,
+            1.51
+          ],
+          "end": [
+            0.91,
+            1.56
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.91,
+            1.56
+          ],
+          "end": [
+            -0.91,
+            1.56
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.05,
+            -1.5
+          ],
+          "end": [
+            -1.05,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.05,
+            1.5
+          ],
+          "end": [
+            -2.05,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.05,
+            -1.7
+          ],
+          "end": [
+            1.05,
+            -1.7
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.05,
+            -1.5
+          ],
+          "end": [
+            -1.05,
+            -1.7
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.05,
+            1.5
+          ],
+          "end": [
+            -2.05,
+            1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.05,
+            1.7
+          ],
+          "end": [
+            -1.05,
+            1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            1.05,
+            -1.7
+          ],
+          "end": [
+            1.05,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            1.05,
+            -1.5
+          ],
+          "end": [
+            2.05,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            1.05,
+            1.5
+          ],
+          "end": [
+            1.05,
+            1.7
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            1.05,
+            1.7
+          ],
+          "end": [
+            -1.05,
+            1.7
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.05,
+            -1.5
+          ],
+          "end": [
+            2.05,
+            1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            2.05,
+            1.5
+          ],
+          "end": [
+            1.05,
+            1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.SilkS",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              -1.45,
+              -1.51
+            ],
+            [
+              "xy",
+              -1.69,
+              -1.84
+            ],
+            [
+              "xy",
+              -1.21,
+              -1.84
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "yes",
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.Fab",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              -0.4,
+              -1.45
+            ],
+            [
+              "xy",
+              0.8,
+              -1.45
+            ],
+            [
+              "xy",
+              0.8,
+              1.45
+            ],
+            [
+              "xy",
+              -0.8,
+              1.45
+            ],
+            [
+              "xy",
+              -0.8,
+              -1.05
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            90
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.72,
+                0.72
+              ],
+              [
+                "thickness",
+                0.11
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 90,
+          "fontSizeMm": 0.72,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -2.4,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -2.4
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            2.4,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "TSOT-23-6"
+          ]
+        },
+        "text": {
+          "content": "TSOT-23-6",
+          "position": {
+            "x": 0,
+            "y": 2.4
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step",
+        "resolvedFileName": "TSOT-23-6.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"TSOT-23-6\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"TSOT, 6 Pin (https://www.jedec.org/sites/default/files/docs/MO-193D.pdf variant AA)\")\n\t(tags \"TSOT TO_SOT_SMD\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2.4 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"TSOT-23-6\"\n\t\t(at 0 2.4 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"package/gullwing\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.91 -1.56)\n\t\t(end 0.91 -1.56)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.91 -1.51)\n\t\t(end -0.91 -1.56)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.91 1.56)\n\t\t(end -0.91 1.51)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 0.91 -1.56)\n\t\t(end 0.91 -1.51)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 0.91 1.51)\n\t\t(end 0.91 1.56)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 0.91 1.56)\n\t\t(end -0.91 1.56)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy -1.45 -1.51)\n\t\t\t(xy -1.69 -1.84)\n\t\t\t(xy -1.21 -1.84)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill yes)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -2.05 -1.5)\n\t\t(end -1.05 -1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -2.05 1.5)\n\t\t(end -2.05 -1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -1.05 -1.7)\n\t\t(end 1.05 -1.7)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -1.05 -1.5)\n\t\t(end -1.05 -1.7)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -1.05 1.5)\n\t\t(end -2.05 1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -1.05 1.7)\n\t\t(end -1.05 1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 1.05 -1.7)\n\t\t(end 1.05 -1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 1.05 -1.5)\n\t\t(end 2.05 -1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 1.05 1.5)\n\t\t(end 1.05 1.7)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 1.05 1.7)\n\t\t(end -1.05 1.7)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 2.05 -1.5)\n\t\t(end 2.05 1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start 2.05 1.5)\n\t\t(end 1.05 1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy -0.4 -1.45)\n\t\t\t(xy 0.8 -1.45)\n\t\t\t(xy 0.8 1.45)\n\t\t\t(xy -0.8 1.45)\n\t\t\t(xy -0.8 -1.05)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 90)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.72 0.72)\n\t\t\t\t(thickness 0.11)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -1.1375 -0.95)\n\t\t(size 1.325 0.6)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at -1.1375 0)\n\t\t(size 1.325 0.6)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"3\" smd roundrect\n\t\t(at -1.1375 0.95)\n\t\t(size 1.325 0.6)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"4\" smd roundrect\n\t\t(at 1.1375 0.95)\n\t\t(size 1.325 0.6)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"5\" smd roundrect\n\t\t(at 1.1375 0)\n\t\t(size 1.325 0.6)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"6\" smd roundrect\n\t\t(at 1.1375 -0.95)\n\t\t(size 1.325 0.6)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "TSOT-23-6.kicad_mod"
+}

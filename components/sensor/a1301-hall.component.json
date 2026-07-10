@@ -1,0 +1,67 @@
+{
+  "id": "openpcb.core.sensor.a1301-hall",
+  "uuid": "7889dfb5-2060-5027-987e-6c976078f52f",
+  "version": "0.3.0",
+  "name": "A1301 Linear Hall Sensor",
+  "description": "Allegro A1301 ratiometric linear Hall-effect sensor, TO-92.",
+  "category": "sensor",
+  "subcategory": "hall",
+  "tags": [
+    "sensor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "hall sensor",
+    "A1301",
+    "magnetic",
+    "linear"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx",
+  "parameters": {
+    "output": "ratiometric analog",
+    "sensitivity": "2.5mV/G"
+  },
+  "symbol": "openpcb.core.symbol.sensor.a1301-hall",
+  "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-92-inline",
+      "label": "TO-92",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "A1301xUA.kicad_sym",
+    "sourceLibrary": "Sensor_Magnetic",
+    "sourceItemName": "A1301 Linear Hall Sensor",
+    "sourceHash": "47645a2ad109e19cdc52d39584b058db33abb048b0262699e3e1a401f5c0ebcc",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

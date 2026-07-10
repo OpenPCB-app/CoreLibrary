@@ -1,0 +1,66 @@
+{
+  "id": "openpcb.core.diode.bridge-rectifier-dip",
+  "uuid": "0f7a02be-4fe5-577a-96cd-8e0547bc1f32",
+  "version": "0.3.0",
+  "name": "Bridge Rectifier DIP-4 (DB107)",
+  "description": "Single-phase bridge rectifier, DIP-4 THT (DB101–DB107 style).",
+  "category": "diode",
+  "subcategory": "bridge",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "bridge rectifier",
+    "DB107",
+    "DIP-4",
+    "AC-DC"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.diode.bridge-rectifier-dip",
+  "defaultFootprint": "openpcb.core.footprint.diode.bridge-dip-4-w7-62mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.bridge-dip-4-w7-62mm",
+      "label": "DIP-4",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "D_Bridge_+-AA.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Bridge Rectifier DIP-4 (DB107)",
+    "sourceHash": "f83048590b85134374b25ef385922de33b6d9a7ceb8b77fefb894429c72f0443",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "openpcb.core.diode.bridge-rectifier-abs",
+  "uuid": "1fa16861-eaa7-538b-8934-a1ed84ec03b3",
+  "version": "0.3.0",
+  "name": "Bridge Rectifier ABS (SMD)",
+  "description": "Single-phase bridge rectifier, Diotec ABS SMD package (e.g. ABS8/ABS10).",
+  "category": "diode",
+  "subcategory": "bridge",
+  "tags": [
+    "diode",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "bridge rectifier",
+    "ABS",
+    "SMD",
+    "AC-DC"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf",
+  "symbol": "openpcb.core.symbol.diode.bridge-rectifier-abs",
+  "defaultFootprint": "openpcb.core.footprint.diode.bridge-diotec-abs",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.diode.bridge-diotec-abs",
+      "label": "Diotec ABS",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "ABS8.kicad_sym",
+    "sourceLibrary": "Diode_Bridge",
+    "sourceItemName": "Bridge Rectifier ABS (SMD)",
+    "sourceHash": "b28f2ade54ce6f332bc27ad6386b83ceb3bb6120a3326019fc7d2bd9ec2195a7",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

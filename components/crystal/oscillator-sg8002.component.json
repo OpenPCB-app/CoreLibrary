@@ -1,0 +1,68 @@
+{
+  "id": "openpcb.core.crystal.oscillator-sg8002",
+  "uuid": "350f92d4-c8e3-5481-b317-cafea10af538",
+  "version": "0.3.0",
+  "name": "Crystal Oscillator SG-8002 (3.2x2.5)",
+  "description": "Seiko Epson SG-8002 programmable active crystal oscillator, 4-pin SMD 3.2x2.5 mm.",
+  "category": "crystal",
+  "subcategory": "oscillator",
+  "tags": [
+    "crystal",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "oscillator",
+    "XO",
+    "clock",
+    "SG-8002",
+    "active crystal"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC",
+  "symbol": "openpcb.core.symbol.crystal.oscillator-sg8002",
+  "defaultFootprint": "openpcb.core.footprint.crystal.osc-sg8002ce-3-2x2-5mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.crystal.osc-sg8002ce-3-2x2-5mm",
+      "label": "SMD 3.2x2.5",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SG-8002CE.kicad_sym",
+    "sourceLibrary": "Oscillator",
+    "sourceItemName": "Crystal Oscillator SG-8002 (3.2x2.5)",
+    "sourceHash": "04f6896632a7aeed94037570dc83a5687b53d38d73cc9e25811f10d698623fad",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

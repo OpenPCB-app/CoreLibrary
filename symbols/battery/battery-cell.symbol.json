@@ -1,0 +1,524 @@
+{
+  "id": "openpcb.core.symbol.battery.battery-cell",
+  "uuid": "f10d5b89-14f1-5615-9241-0748c8de0cd8",
+  "version": "0.3.0",
+  "name": "CR2032 Battery Holder",
+  "referencePrefix": "BT",
+  "description": "Single-cell battery",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Battery_Cell.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Battery_Cell",
+    "sourceHash": "05ff0b0685b7a50f556497d3f51d952bef9be08b73048a465b7c3abdc647a8a5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "BT",
+      "Value": "Battery_Cell",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Single-cell battery",
+      "Sim.Device": "V",
+      "Sim.Type": "DC",
+      "Sim.Pins": "1=+ 2=-",
+      "ki_keywords": "battery cell"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Battery_Cell.kicad_sym",
+        "sourceItemName": "Battery_Cell",
+        "sha256": "73a1110ac2ec61e4422a71ee57795305eb748b3c11797d914baf8c6d39923620"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_56a7bf06b0310769",
+    "name": "Battery_Cell",
+    "referencePrefix": "BT",
+    "description": "Single-cell battery",
+    "sourceHash": "05ff0b0685b7a50f556497d3f51d952bef9be08b73048a465b7c3abdc647a8a5",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "+",
+        "localPosition": {
+          "x": 0,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "-",
+        "localPosition": {
+          "x": 0,
+          "y": -2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Battery_Cell",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -2.286,
+          "y": 1.524,
+          "width": 4.572,
+          "height": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -1.524,
+          "y": 0.508,
+          "width": 3.048,
+          "height": 0.508,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": 1.778
+            },
+            {
+              "x": 0,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": 0.762
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0.762,
+              "y": 3.048
+            },
+            {
+              "x": 1.778,
+              "y": 3.048
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 3.556
+            },
+            {
+              "x": 1.27,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": 0
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "BT",
+          "at": {
+            "x": 0,
+            "y": 6.35
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Battery_Cell",
+          "at": {
+            "x": 0,
+            "y": -3.81
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.7244,
+        "minY": -5.08,
+        "maxX": 4.7244,
+        "maxY": 7.619999999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Battery_Cell",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "+",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "-",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "BT",
+      "Value": "Battery_Cell",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Single-cell battery",
+      "Sim.Device": "V",
+      "Sim.Type": "DC",
+      "Sim.Pins": "1=+ 2=-",
+      "ki_keywords": "battery cell"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -2.286,
+            1.778
+          ],
+          [
+            "end",
+            2.286,
+            1.524
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.524,
+            1.016
+          ],
+          [
+            "end",
+            1.524,
+            0.508
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              1.778
+            ],
+            [
+              "xy",
+              0,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              0.762
+            ],
+            [
+              "xy",
+              0,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0.762,
+              3.048
+            ],
+            [
+              "xy",
+              1.778,
+              3.048
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              3.556
+            ],
+            [
+              "xy",
+              1.27,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Battery_Cell (pin_numbers (hide yes)) (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference BT (at 2.54 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value Battery_Cell (at 2.54 0 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint \"\" (at 0 1.524 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 1.524 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Single-cell battery\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Device V (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Type DC (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Pins \"1=+ 2=-\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"battery cell\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Battery_Cell_0_1 (rectangle (start -2.286 1.778) (end 2.286 1.524) (stroke (width 0) (type default)) (fill (type outline))) (rectangle (start -1.524 1.016) (end 1.524 0.508) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 0 1.778) (xy 0 2.54)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 0.762) (xy 0 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0.762 3.048) (xy 1.778 3.048)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 3.556) (xy 1.27 2.54)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol Battery_Cell_1_1 (pin passive line (at 0 5.08 270) (length 2.54) (name + (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -2.54 90) (length 2.54) (name - (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

@@ -1,0 +1,887 @@
+{
+  "id": "openpcb.core.footprint.passive.fuseholder-5x20-schurter",
+  "uuid": "ef6bcdb7-16c3-53bc-928c-595644f85ed2",
+  "version": "0.3.0",
+  "name": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.passive.fuseholder-5x20-schurter"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.kicad_mod",
+    "sourceLibrary": "Fuse",
+    "sourceItemName": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+    "sourceHash": "618bc9793153994258bceac12210b9c29ac33cdbf7559742d8b9239c33e77496",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_66d00cf849c36bf2",
+    "fileName": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.kicad_mod",
+    "name": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+    "description": "Fuseholder horizontal open, 5x20mm, 500V, 16A, Schurter 0031.8201, https://us.schurter.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_OGN.pdf",
+    "mountType": "through_hole",
+    "padCount": 3,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "fuseholder",
+      "horizontal",
+      "open",
+      "5x20",
+      "schurter",
+      "0031.8201",
+      "through_hole"
+    ],
+    "sourceHash": "618bc9793153994258bceac12210b9c29ac33cdbf7559742d8b9239c33e77496",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+      "pads": [
+        {
+          "id": "?:0",
+          "number": "",
+          "shape": "circle",
+          "centerMm": {
+            "x": 11.25,
+            "y": 0
+          },
+          "widthMm": 2.7,
+          "heightMm": 2.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 2.7,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "1:1",
+          "number": "1",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 3,
+          "heightMm": 3,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.3,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:2",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 22.5,
+            "y": 0
+          },
+          "widthMm": 3,
+          "heightMm": 3,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.3,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.11,
+            "y": -4.91
+          },
+          "b": {
+            "x": 22.61,
+            "y": -4.91
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.11,
+            "y": -1.75
+          },
+          "b": {
+            "x": -0.11,
+            "y": -4.91
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.11,
+            "y": 4.91
+          },
+          "b": {
+            "x": -0.11,
+            "y": 1.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.11,
+            "y": 4.91
+          },
+          "b": {
+            "x": 22.61,
+            "y": 4.91
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 22.61,
+            "y": -1.75
+          },
+          "b": {
+            "x": 22.61,
+            "y": -4.91
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 22.61,
+            "y": 4.91
+          },
+          "b": {
+            "x": 22.61,
+            "y": 1.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": -4.8
+          },
+          "b": {
+            "x": 0,
+            "y": 4.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": 4.8
+          },
+          "b": {
+            "x": 22.5,
+            "y": 4.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 22.5,
+            "y": -4.8
+          },
+          "b": {
+            "x": 0,
+            "y": -4.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 22.5,
+            "y": 4.8
+          },
+          "b": {
+            "x": 22.5,
+            "y": -4.8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:11.25:4:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 11.25,
+            "y": 4
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:11.25:-6:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 11.25,
+            "y": -6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:11.25:6:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+          "text": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+          "at": {
+            "x": 11.25,
+            "y": 6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.5,
+        "minY": -4.97,
+        "maxX": 24,
+        "maxY": 4.97
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+    "description": "Fuseholder horizontal open, 5x20mm, 500V, 16A, Schurter 0031.8201, https://us.schurter.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_OGN.pdf",
+    "tags": [
+      "Fuseholder",
+      "horizontal",
+      "open",
+      "5x20",
+      "Schurter",
+      "0031.8201"
+    ],
+    "pads": [
+      {
+        "number": "",
+        "type": "np_thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 11.25,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.7,
+          "height": 2.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 2.7
+      },
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 3,
+          "height": 3
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1.3
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 22.5,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 3,
+          "height": 3
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1.3
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.11,
+            -4.91
+          ],
+          "end": [
+            22.61,
+            -4.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "e3e6a1a0-6c03-4fc1-80fe-034ce2c10ae9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.11,
+            -1.75
+          ],
+          "end": [
+            -0.11,
+            -4.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "1e62ce04-bd02-460d-95b5-6653cb7ce054"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.11,
+            4.91
+          ],
+          "end": [
+            -0.11,
+            1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "5342d8b1-062d-4e93-b7e9-3899918628fb"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.11,
+            4.91
+          ],
+          "end": [
+            22.61,
+            4.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "cdcdcdb9-d1f8-4fd6-aa42-0d2c07319b40"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            22.61,
+            -1.75
+          ],
+          "end": [
+            22.61,
+            -4.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "0a3771b5-ae45-454d-aa00-88d5f934d26e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            22.61,
+            4.91
+          ],
+          "end": [
+            22.61,
+            1.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "9993743b-990e-4e87-8cbb-7772e59f7230"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.75,
+            -5.05
+          ],
+          "end": [
+            24.25,
+            -5.05
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "11d5a765-1a96-455e-a26a-97859446de73"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.75,
+            5.05
+          ],
+          "end": [
+            -1.75,
+            -5.05
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "4d687135-7fef-43d7-af33-b9f1d3edf11a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            24.25,
+            -5.05
+          ],
+          "end": [
+            24.25,
+            5.05
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "cb1b107b-5c21-48c7-af30-e5a3860db173"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            24.25,
+            5.05
+          ],
+          "end": [
+            -1.75,
+            5.05
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "ab02941a-16be-4f6e-9247-ac2ca87901d9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0,
+            -4.8
+          ],
+          "end": [
+            0,
+            4.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c6c6c031-aa19-4e3e-a9d8-9fc10016c456"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0,
+            4.8
+          ],
+          "end": [
+            22.5,
+            4.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "652f243d-bc7c-417e-9688-b203ba5c7e05"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            22.5,
+            -4.8
+          ],
+          "end": [
+            0,
+            -4.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "e63bf54d-56f9-4f2e-a6ac-3a04cae33208"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            22.5,
+            4.8
+          ],
+          "end": [
+            22.5,
+            -4.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "4d2d7983-f6b9-4222-b9b6-d71ebfa06899"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            11.25,
+            4,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "23c61306-ffe3-4508-aa5a-23a116aa7177",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 11.25,
+            "y": 4
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            11.25,
+            -6,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "c1fe2bb4-8d87-4480-bff2-4d0179534ded",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 11.25,
+            "y": -6
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            11.25,
+            6,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "528b8033-8e94-4f9d-8d89-0d17eada1888",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open"
+          ]
+        },
+        "text": {
+          "content": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open",
+          "position": {
+            "x": 11.25,
+            "y": 6
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.step",
+        "resolvedFileName": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"Fuseholder horizontal open, 5x20mm, 500V, 16A, Schurter 0031.8201, https://us.schurter.com/bundles/snceschurter/epim/_ProdPool_/newDS/en/typ_OGN.pdf\")\n\t(tags \"Fuseholder horizontal open 5x20 Schurter 0031.8201\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 11.25 -6 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"c1fe2bb4-8d87-4480-bff2-4d0179534ded\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open\"\n\t\t(at 11.25 6 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"528b8033-8e94-4f9d-8d89-0d17eada1888\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"caa2dbcf-72a8-4759-a908-fa7c69f2ce89\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"24bce007-2dd5-4ac7-8a91-c8af5422cacb\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.11 -4.91)\n\t\t(end 22.61 -4.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"e3e6a1a0-6c03-4fc1-80fe-034ce2c10ae9\")\n\t)\n\t(fp_line\n\t\t(start -0.11 -1.75)\n\t\t(end -0.11 -4.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1e62ce04-bd02-460d-95b5-6653cb7ce054\")\n\t)\n\t(fp_line\n\t\t(start -0.11 4.91)\n\t\t(end -0.11 1.75)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"5342d8b1-062d-4e93-b7e9-3899918628fb\")\n\t)\n\t(fp_line\n\t\t(start -0.11 4.91)\n\t\t(end 22.61 4.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"cdcdcdb9-d1f8-4fd6-aa42-0d2c07319b40\")\n\t)\n\t(fp_line\n\t\t(start 22.61 -1.75)\n\t\t(end 22.61 -4.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"0a3771b5-ae45-454d-aa00-88d5f934d26e\")\n\t)\n\t(fp_line\n\t\t(start 22.61 4.91)\n\t\t(end 22.61 1.75)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"9993743b-990e-4e87-8cbb-7772e59f7230\")\n\t)\n\t(fp_line\n\t\t(start -1.75 -5.05)\n\t\t(end 24.25 -5.05)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"11d5a765-1a96-455e-a26a-97859446de73\")\n\t)\n\t(fp_line\n\t\t(start -1.75 5.05)\n\t\t(end -1.75 -5.05)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"4d687135-7fef-43d7-af33-b9f1d3edf11a\")\n\t)\n\t(fp_line\n\t\t(start 24.25 -5.05)\n\t\t(end 24.25 5.05)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"cb1b107b-5c21-48c7-af30-e5a3860db173\")\n\t)\n\t(fp_line\n\t\t(start 24.25 5.05)\n\t\t(end -1.75 5.05)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"ab02941a-16be-4f6e-9247-ac2ca87901d9\")\n\t)\n\t(fp_line\n\t\t(start 0 -4.8)\n\t\t(end 0 4.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c6c6c031-aa19-4e3e-a9d8-9fc10016c456\")\n\t)\n\t(fp_line\n\t\t(start 0 4.8)\n\t\t(end 22.5 4.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"652f243d-bc7c-417e-9688-b203ba5c7e05\")\n\t)\n\t(fp_line\n\t\t(start 22.5 -4.8)\n\t\t(end 0 -4.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e63bf54d-56f9-4f2e-a6ac-3a04cae33208\")\n\t)\n\t(fp_line\n\t\t(start 22.5 4.8)\n\t\t(end 22.5 -4.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4d2d7983-f6b9-4222-b9b6-d71ebfa06899\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 11.25 4 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"23c61306-ffe3-4508-aa5a-23a116aa7177\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"\" np_thru_hole circle\n\t\t(at 11.25 0)\n\t\t(size 2.7 2.7)\n\t\t(drill 2.7)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(uuid \"62b50ec1-76ac-4393-bf13-9d259648ee91\")\n\t)\n\t(pad \"1\" thru_hole circle\n\t\t(at 0 0)\n\t\t(size 3 3)\n\t\t(drill 1.3)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"7211d299-60a0-42fd-a723-80524bf479e5\")\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 22.5 0)\n\t\t(size 3 3)\n\t\t(drill 1.3)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"979ab777-8efe-4e1f-8330-ee9d62118be8\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Fuse.3dshapes/Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.kicad_mod"
+}

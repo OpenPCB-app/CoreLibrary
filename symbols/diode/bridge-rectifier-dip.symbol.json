@@ -1,0 +1,1147 @@
+{
+  "id": "openpcb.core.symbol.diode.bridge-rectifier-dip",
+  "uuid": "fe0816df-9f9d-5540-9809-a2be57c33748",
+  "version": "0.3.0",
+  "name": "Bridge Rectifier DIP-4 (DB107)",
+  "referencePrefix": "D",
+  "description": "Diode bridge, +ve/-ve/AC/AC",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "D_Bridge_+-AA.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "D_Bridge_+-AA",
+    "sourceHash": "3bd257a17eb8a4e5baa95e8e15d2aa7b27e4eeffef3d73c025c51d92f3a3437c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "D",
+      "Value": "D_Bridge_+-AA",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Diode bridge, +ve/-ve/AC/AC",
+      "ki_keywords": "rectifier ACDC",
+      "ki_fp_filters": "D*Bridge* D*Rectifier*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "D_Bridge_+-AA.kicad_sym",
+        "sourceItemName": "D_Bridge_+-AA",
+        "sha256": "0a3a8a69e43baa237118d9247fdcd09a1e57ccf81887bd50e0d07c9ac75d5021"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_9b8195dd663e4c98",
+    "name": "D_Bridge_+-AA",
+    "referencePrefix": "D",
+    "description": "Diode bridge, +ve/-ve/AC/AC",
+    "sourceHash": "3bd257a17eb8a4e5baa95e8e15d2aa7b27e4eeffef3d73c025c51d92f3a3437c",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "+",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "-",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": 7.62
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "D_Bridge_+-AA",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": -5.08,
+            "y": 0
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -5.08,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": -5.08
+            },
+            {
+              "x": 5.08,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 5.08
+            },
+            {
+              "x": -5.08,
+              "y": 0
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.81,
+              "y": 2.54
+            },
+            {
+              "x": -2.54,
+              "y": 1.27
+            },
+            {
+              "x": -1.905,
+              "y": 3.175
+            },
+            {
+              "x": -3.81,
+              "y": 2.54
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 3.81
+            },
+            {
+              "x": -1.27,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": -1.27
+            },
+            {
+              "x": -3.81,
+              "y": -2.54
+            },
+            {
+              "x": -1.905,
+              "y": -3.175
+            },
+            {
+              "x": -2.54,
+              "y": -1.27
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": -2.54
+            },
+            {
+              "x": -2.54,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 5.08
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": -5.08
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": 2.54
+            },
+            {
+              "x": 2.54,
+              "y": 3.81
+            },
+            {
+              "x": 3.175,
+              "y": 1.905
+            },
+            {
+              "x": 1.27,
+              "y": 2.54
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": 1.27
+            },
+            {
+              "x": 3.81,
+              "y": 2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": -1.27
+            },
+            {
+              "x": 3.81,
+              "y": -2.54
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 3.175,
+              "y": -1.905
+            },
+            {
+              "x": 1.27,
+              "y": -2.54
+            },
+            {
+              "x": 2.54,
+              "y": -3.81
+            },
+            {
+              "x": 3.175,
+              "y": -1.905
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 5.08,
+            "y": 0
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "+",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "-",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.08
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:4",
+          "name": "",
+          "number": "4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "+",
+          "at": {
+            "x": 4.572,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 6.35,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "-",
+          "at": {
+            "x": -4.572,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -6.35,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 0.508,
+            "y": 7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "D",
+          "at": {
+            "x": 0,
+            "y": 9.0805
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "D_Bridge_+-AA",
+          "at": {
+            "x": 0,
+            "y": -9.0805
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.62,
+        "minY": -10.3505,
+        "maxX": 7.62,
+        "maxY": 10.3505
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "D_Bridge_+-AA",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "+",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "-",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "D",
+      "Value": "D_Bridge_+-AA",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Diode bridge, +ve/-ve/AC/AC",
+      "ki_keywords": "rectifier ACDC",
+      "ki_fp_filters": "D*Bridge* D*Rectifier*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -5.08,
+            0
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -5.08,
+              0
+            ],
+            [
+              "xy",
+              0,
+              -5.08
+            ],
+            [
+              "xy",
+              5.08,
+              0
+            ],
+            [
+              "xy",
+              0,
+              5.08
+            ],
+            [
+              "xy",
+              -5.08,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.81,
+              2.54
+            ],
+            [
+              "xy",
+              -2.54,
+              1.27
+            ],
+            [
+              "xy",
+              -1.905,
+              3.175
+            ],
+            [
+              "xy",
+              -3.81,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              3.81
+            ],
+            [
+              "xy",
+              -1.27,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              -1.27
+            ],
+            [
+              "xy",
+              -3.81,
+              -2.54
+            ],
+            [
+              "xy",
+              -1.905,
+              -3.175
+            ],
+            [
+              "xy",
+              -2.54,
+              -1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              -2.54
+            ],
+            [
+              "xy",
+              -2.54,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            5.08
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            -5.08
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              2.54
+            ],
+            [
+              "xy",
+              2.54,
+              3.81
+            ],
+            [
+              "xy",
+              3.175,
+              1.905
+            ],
+            [
+              "xy",
+              1.27,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              1.27
+            ],
+            [
+              "xy",
+              3.81,
+              2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              -1.27
+            ],
+            [
+              "xy",
+              3.81,
+              -2.54
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              3.175,
+              -1.905
+            ],
+            [
+              "xy",
+              1.27,
+              -2.54
+            ],
+            [
+              "xy",
+              2.54,
+              -3.81
+            ],
+            [
+              "xy",
+              3.175,
+              -1.905
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            5.08,
+            0
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol D_Bridge_+-AA (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference D (at 2.54 6.985 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value D_Bridge_+-AA (at 2.54 5.08 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Diode bridge, +ve/-ve/AC/AC\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"rectifier ACDC\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"D*Bridge* D*Rectifier*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol D_Bridge_+-AA_0_1 (circle (center -5.08 0) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy -5.08 0) (xy 0 -5.08) (xy 5.08 0) (xy 0 5.08) (xy -5.08 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -3.81 2.54) (xy -2.54 1.27) (xy -1.905 3.175) (xy -3.81 2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.54 3.81) (xy -1.27 2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -2.54 -1.27) (xy -3.81 -2.54) (xy -1.905 -3.175) (xy -2.54 -1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy -1.27 -2.54) (xy -2.54 -3.81)) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center 0 5.08) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (circle (center 0 -5.08) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 1.27 2.54) (xy 2.54 3.81) (xy 3.175 1.905) (xy 1.27 2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 2.54 1.27) (xy 3.81 2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 2.54 -1.27) (xy 3.81 -2.54)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 3.175 -1.905) (xy 1.27 -2.54) (xy 2.54 -3.81) (xy 3.175 -1.905)) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center 5.08 0) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline)))) (symbol D_Bridge_+-AA_1_1 (pin passive line (at 7.62 0 180) (length 2.54) (name + (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at -7.62 0 0) (length 2.54) (name - (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 7.62 270) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -7.62 90) (length 2.54) (name \"\" (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

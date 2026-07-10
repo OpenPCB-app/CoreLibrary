@@ -1,0 +1,80 @@
+{
+  "id": "openpcb.core.relay.relay-g5v1-spdt",
+  "uuid": "70431403-c920-5fb0-9ec6-ebdb57352672",
+  "version": "0.3.0",
+  "name": "Relay SPDT G5V-1 (Signal)",
+  "description": "SPDT signal relay, Omron G5V-1 THT (1A).",
+  "category": "relay",
+  "subcategory": "signal-relay",
+  "tags": [
+    "relay",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "relay",
+    "SPDT",
+    "G5V-1",
+    "omron",
+    "signal"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf",
+  "parameters": {
+    "contacts": "SPDT",
+    "contactRating": "1A"
+  },
+  "symbol": "openpcb.core.symbol.relay.relay-g5v1-spdt",
+  "defaultFootprint": "openpcb.core.footprint.relay.relay-omron-g5v-1",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.relay.relay-omron-g5v-1",
+      "label": "G5V-1 THT",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "G5V-1.kicad_sym",
+    "sourceLibrary": "Relay",
+    "sourceItemName": "Relay SPDT G5V-1 (Signal)",
+    "sourceHash": "0fdc5dd773cd505f7f53be56e2450dfddfb387122df64cf684041441027451da",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

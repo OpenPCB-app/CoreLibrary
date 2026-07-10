@@ -1,0 +1,1468 @@
+{
+  "id": "openpcb.core.footprint.connector.rj45-amphenol-rjhse538x",
+  "uuid": "21665ec1-bbfb-5553-b694-fe86a8a27fd7",
+  "version": "0.3.0",
+  "name": "RJ45_Amphenol_RJHSE538X",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.connector.rj45-amphenol-rjhse538x"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "RJ45_Amphenol_RJHSE538X.kicad_mod",
+    "sourceLibrary": "Connector_RJ",
+    "sourceItemName": "RJ45_Amphenol_RJHSE538X",
+    "sourceHash": "7021211b65c116fb0dfffb58d9516d808385c6bd711fea4bbd4f2874194278e5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_874028b2f86798cf",
+    "fileName": "RJ45_Amphenol_RJHSE538X.kicad_mod",
+    "name": "RJ45_Amphenol_RJHSE538X",
+    "description": "Shielded, 2 LED, https://www.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf",
+    "mountType": "through_hole",
+    "padCount": 16,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "rj45",
+      "8p8c",
+      "ethernet",
+      "cat5",
+      "through_hole"
+    ],
+    "sourceHash": "7021211b65c116fb0dfffb58d9516d808385c6bd711fea4bbd4f2874194278e5",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "RJ45_Amphenol_RJHSE538X",
+      "pads": [
+        {
+          "id": "?:0",
+          "number": "",
+          "shape": "circle",
+          "centerMm": {
+            "x": -2.79,
+            "y": -2.54
+          },
+          "widthMm": 3.25,
+          "heightMm": 3.25,
+          "rotationDeg": 0,
+          "drillDiameterMm": 3.25,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "?:1",
+          "number": "",
+          "shape": "circle",
+          "centerMm": {
+            "x": 9.91,
+            "y": -2.54
+          },
+          "widthMm": 3.25,
+          "heightMm": 3.25,
+          "rotationDeg": 0,
+          "drillDiameterMm": 3.25,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "1:2",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:3",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 1.016,
+            "y": 1.78
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "3:4",
+          "number": "3",
+          "shape": "circle",
+          "centerMm": {
+            "x": 2.032,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "4:5",
+          "number": "4",
+          "shape": "circle",
+          "centerMm": {
+            "x": 3.048,
+            "y": 1.78
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "5:6",
+          "number": "5",
+          "shape": "circle",
+          "centerMm": {
+            "x": 4.064,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "6:7",
+          "number": "6",
+          "shape": "circle",
+          "centerMm": {
+            "x": 5.08,
+            "y": 1.78
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "7:8",
+          "number": "7",
+          "shape": "circle",
+          "centerMm": {
+            "x": 6.096,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "8:9",
+          "number": "8",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.112,
+            "y": 1.78
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "9:10",
+          "number": "9",
+          "shape": "circle",
+          "centerMm": {
+            "x": -3.3,
+            "y": 6.6
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "10:11",
+          "number": "10",
+          "shape": "circle",
+          "centerMm": {
+            "x": -1.01,
+            "y": 6.6
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "11:12",
+          "number": "11",
+          "shape": "circle",
+          "centerMm": {
+            "x": 8.13,
+            "y": 6.6
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "12:13",
+          "number": "12",
+          "shape": "circle",
+          "centerMm": {
+            "x": 10.42,
+            "y": 6.6
+          },
+          "widthMm": 1.5,
+          "heightMm": 1.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.89,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "SH:14",
+          "number": "SH",
+          "shape": "circle",
+          "centerMm": {
+            "x": -4.57,
+            "y": 0.89
+          },
+          "widthMm": 2.3,
+          "heightMm": 2.3,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.57,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "SH:15",
+          "number": "SH",
+          "shape": "circle",
+          "centerMm": {
+            "x": 11.69,
+            "y": 0.89
+          },
+          "widthMm": 2.3,
+          "heightMm": 2.3,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.57,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -5.5,
+            "y": -1.2
+          },
+          "b": {
+            "x": -5,
+            "y": -0.7
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -5.5,
+            "y": -0.2
+          },
+          "b": {
+            "x": -5.5,
+            "y": -1.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -5,
+            "y": -0.7
+          },
+          "b": {
+            "x": -5.5,
+            "y": -0.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.805,
+            "y": -8.11
+          },
+          "b": {
+            "x": -4.805,
+            "y": -0.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.805,
+            "y": -8.11
+          },
+          "b": {
+            "x": 11.925,
+            "y": -8.11
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.805,
+            "y": 7.86
+          },
+          "b": {
+            "x": -4.805,
+            "y": 2.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.805,
+            "y": 7.86
+          },
+          "b": {
+            "x": 11.925,
+            "y": 7.86
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 11.925,
+            "y": -8.11
+          },
+          "b": {
+            "x": 11.925,
+            "y": -0.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 11.925,
+            "y": 7.86
+          },
+          "b": {
+            "x": 11.925,
+            "y": 2.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.695,
+            "y": -7
+          },
+          "b": {
+            "x": -4.695,
+            "y": 7.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.695,
+            "y": -7
+          },
+          "b": {
+            "x": -3.695,
+            "y": -8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.695,
+            "y": 7.75
+          },
+          "b": {
+            "x": 11.815,
+            "y": 7.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.695,
+            "y": -8
+          },
+          "b": {
+            "x": 11.815,
+            "y": -8
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 11.815,
+            "y": -8
+          },
+          "b": {
+            "x": 11.815,
+            "y": 7.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:3.56:-6:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 3.56,
+            "y": -6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:3.56:-9.5:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 3.56,
+            "y": -9.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:3.56:9.5:RJ45_Amphenol_RJHSE538X",
+          "text": "RJ45_Amphenol_RJHSE538X",
+          "at": {
+            "x": 3.56,
+            "y": 9.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -5.7200000000000015,
+        "minY": -8.17,
+        "maxX": 12.84,
+        "maxY": 7.92
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "RJ45_Amphenol_RJHSE538X",
+    "description": "Shielded, 2 LED, https://www.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf",
+    "tags": [
+      "RJ45",
+      "8p8c",
+      "ethernet",
+      "cat5"
+    ],
+    "pads": [
+      {
+        "number": "",
+        "type": "np_thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -2.79,
+          "y": -2.54
+        },
+        "rotation": 0,
+        "size": {
+          "width": 3.25,
+          "height": 3.25
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 3.25
+      },
+      {
+        "number": "",
+        "type": "np_thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 9.91,
+          "y": -2.54
+        },
+        "rotation": 0,
+        "size": {
+          "width": 3.25,
+          "height": 3.25
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 3.25
+      },
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "rect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 1.016,
+          "y": 1.78
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "3",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 2.032,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "4",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 3.048,
+          "y": 1.78
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "5",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 4.064,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "6",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 5.08,
+          "y": 1.78
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "7",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 6.096,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "8",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 7.112,
+          "y": 1.78
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "9",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -3.3,
+          "y": 6.6
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "10",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -1.01,
+          "y": 6.6
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "11",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 8.13,
+          "y": 6.6
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "12",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 10.42,
+          "y": 6.6
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 1.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.89
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -4.57,
+          "y": 0.89
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.3,
+          "height": 2.3
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1.57
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 11.69,
+          "y": 0.89
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.3,
+          "height": 2.3
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1.57
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -5.5,
+            -1.2
+          ],
+          "end": [
+            -5,
+            -0.7
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "a708e541-9c13-4e2b-8f36-b943bb5d2e9b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -5.5,
+            -0.2
+          ],
+          "end": [
+            -5.5,
+            -1.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "d5389201-0dc7-4dbe-8080-6b240eb5d94e"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -5,
+            -0.7
+          ],
+          "end": [
+            -5.5,
+            -0.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b3ed8163-51d0-489c-bdc6-07fc2122a50c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.805,
+            -8.11
+          ],
+          "end": [
+            -4.805,
+            -0.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "f27403b6-27a7-46d7-827b-282c51ec8293"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.805,
+            -8.11
+          ],
+          "end": [
+            11.925,
+            -8.11
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "4d90ada0-9ea8-4e0c-86e2-3bbe9f0867ad"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.805,
+            7.86
+          ],
+          "end": [
+            -4.805,
+            2.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "c25a911e-86d2-41ee-8337-f0d3e0f4a315"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.805,
+            7.86
+          ],
+          "end": [
+            11.925,
+            7.86
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "26a353e7-5229-4bef-8089-1d75ccf53a96"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            11.925,
+            -8.11
+          ],
+          "end": [
+            11.925,
+            -0.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "8c4e6aaf-6266-4a8c-bfcc-20afce175349"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            11.925,
+            7.86
+          ],
+          "end": [
+            11.925,
+            2.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "de76df82-608a-42ed-981b-71ec94761eb3"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -6.22,
+            -8.5
+          ],
+          "end": [
+            -6.22,
+            8.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "46111364-95d9-4bcd-91c1-5f71575237af"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -6.22,
+            -8.5
+          ],
+          "end": [
+            13.34,
+            -8.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "5abd249d-97a4-4af7-b2af-919fa386d375"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -6.22,
+            8.25
+          ],
+          "end": [
+            13.34,
+            8.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "408b78a1-470e-49af-9801-12799cf3cbeb"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            13.34,
+            -8.5
+          ],
+          "end": [
+            13.34,
+            8.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "62d75584-17df-43ae-979c-b3626e4bec14"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -4.695,
+            -7
+          ],
+          "end": [
+            -4.695,
+            7.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "9110cf1b-86cc-4700-b44c-b41a48836866"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -4.695,
+            -7
+          ],
+          "end": [
+            -3.695,
+            -8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "03521e42-96e4-430a-b77a-060597b1d551"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -4.695,
+            7.75
+          ],
+          "end": [
+            11.815,
+            7.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "3328fcd3-6c73-4fa7-8893-88cf6adccf40"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3.695,
+            -8
+          ],
+          "end": [
+            11.815,
+            -8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c357f903-25cd-4bf8-b5a7-c15b95816f5b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            11.815,
+            -8
+          ],
+          "end": [
+            11.815,
+            7.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "6d9ef0af-fe0e-40c7-998c-bce6b7c95ab9"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            3.56,
+            -6,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "10729996-7d90-434c-b57c-7876234c08f9",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 3.56,
+            "y": -6
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            3.56,
+            -9.5,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "13c81d42-f262-40dc-9f85-1bb1b4b4f442",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 3.56,
+            "y": -9.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            3.56,
+            9.5,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "59471766-49db-4528-9faa-6760d9facbf8",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "RJ45_Amphenol_RJHSE538X"
+          ]
+        },
+        "text": {
+          "content": "RJ45_Amphenol_RJHSE538X",
+          "position": {
+            "x": 3.56,
+            "y": 9.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_RJHSE538X.step",
+        "resolvedFileName": "RJ45_Amphenol_RJHSE538X.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"RJ45_Amphenol_RJHSE538X\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"Shielded, 2 LED, https://www.amphenolcanada.com/ProductSearch/drawings/AC/RJHSE538X.pdf\")\n\t(tags \"RJ45 8p8c ethernet cat5\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 3.56 -9.5 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"13c81d42-f262-40dc-9f85-1bb1b4b4f442\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"RJ45_Amphenol_RJHSE538X\"\n\t\t(at 3.56 9.5 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"59471766-49db-4528-9faa-6760d9facbf8\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"f1907e37-fd35-4877-90e5-6ffc7d1f140d\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"09f2a25d-4757-464e-965e-ad6e47cee71b\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -5.5 -1.2)\n\t\t(end -5 -0.7)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"a708e541-9c13-4e2b-8f36-b943bb5d2e9b\")\n\t)\n\t(fp_line\n\t\t(start -5.5 -0.2)\n\t\t(end -5.5 -1.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"d5389201-0dc7-4dbe-8080-6b240eb5d94e\")\n\t)\n\t(fp_line\n\t\t(start -5 -0.7)\n\t\t(end -5.5 -0.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b3ed8163-51d0-489c-bdc6-07fc2122a50c\")\n\t)\n\t(fp_line\n\t\t(start -4.805 -8.11)\n\t\t(end -4.805 -0.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f27403b6-27a7-46d7-827b-282c51ec8293\")\n\t)\n\t(fp_line\n\t\t(start -4.805 -8.11)\n\t\t(end 11.925 -8.11)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"4d90ada0-9ea8-4e0c-86e2-3bbe9f0867ad\")\n\t)\n\t(fp_line\n\t\t(start -4.805 7.86)\n\t\t(end -4.805 2.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"c25a911e-86d2-41ee-8337-f0d3e0f4a315\")\n\t)\n\t(fp_line\n\t\t(start -4.805 7.86)\n\t\t(end 11.925 7.86)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"26a353e7-5229-4bef-8089-1d75ccf53a96\")\n\t)\n\t(fp_line\n\t\t(start 11.925 -8.11)\n\t\t(end 11.925 -0.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"8c4e6aaf-6266-4a8c-bfcc-20afce175349\")\n\t)\n\t(fp_line\n\t\t(start 11.925 7.86)\n\t\t(end 11.925 2.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"de76df82-608a-42ed-981b-71ec94761eb3\")\n\t)\n\t(fp_line\n\t\t(start -6.22 -8.5)\n\t\t(end -6.22 8.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"46111364-95d9-4bcd-91c1-5f71575237af\")\n\t)\n\t(fp_line\n\t\t(start -6.22 -8.5)\n\t\t(end 13.34 -8.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"5abd249d-97a4-4af7-b2af-919fa386d375\")\n\t)\n\t(fp_line\n\t\t(start -6.22 8.25)\n\t\t(end 13.34 8.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"408b78a1-470e-49af-9801-12799cf3cbeb\")\n\t)\n\t(fp_line\n\t\t(start 13.34 -8.5)\n\t\t(end 13.34 8.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"62d75584-17df-43ae-979c-b3626e4bec14\")\n\t)\n\t(fp_line\n\t\t(start -4.695 -7)\n\t\t(end -4.695 7.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"9110cf1b-86cc-4700-b44c-b41a48836866\")\n\t)\n\t(fp_line\n\t\t(start -4.695 -7)\n\t\t(end -3.695 -8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"03521e42-96e4-430a-b77a-060597b1d551\")\n\t)\n\t(fp_line\n\t\t(start -4.695 7.75)\n\t\t(end 11.815 7.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"3328fcd3-6c73-4fa7-8893-88cf6adccf40\")\n\t)\n\t(fp_line\n\t\t(start -3.695 -8)\n\t\t(end 11.815 -8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c357f903-25cd-4bf8-b5a7-c15b95816f5b\")\n\t)\n\t(fp_line\n\t\t(start 11.815 -8)\n\t\t(end 11.815 7.75)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"6d9ef0af-fe0e-40c7-998c-bce6b7c95ab9\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 3.56 -6 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"10729996-7d90-434c-b57c-7876234c08f9\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"\" np_thru_hole circle\n\t\t(at -2.79 -2.54)\n\t\t(size 3.25 3.25)\n\t\t(drill 3.25)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(uuid \"3974a725-eddb-4831-b769-7e37de38e836\")\n\t)\n\t(pad \"\" np_thru_hole circle\n\t\t(at 9.91 -2.54)\n\t\t(size 3.25 3.25)\n\t\t(drill 3.25)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(uuid \"143ee3c9-5e78-4b6e-b8d0-5c9ea2eeecd5\")\n\t)\n\t(pad \"1\" thru_hole rect\n\t\t(at 0 0)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"4cf6c3e4-f39c-4d78-98ac-4f76742cdd87\")\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 1.016 1.78)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"e962525d-f8fe-4e0d-8720-570e38165a66\")\n\t)\n\t(pad \"3\" thru_hole circle\n\t\t(at 2.032 0)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"6e1ca5a2-30cb-4c66-8ae3-2f8042a0adb2\")\n\t)\n\t(pad \"4\" thru_hole circle\n\t\t(at 3.048 1.78)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"3e51b1ae-c9f4-46ba-8e3a-3fbc3347f364\")\n\t)\n\t(pad \"5\" thru_hole circle\n\t\t(at 4.064 0)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"9b25d743-d864-44b9-becb-9d606a4d5833\")\n\t)\n\t(pad \"6\" thru_hole circle\n\t\t(at 5.08 1.78)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"222a7cb1-a7aa-44d4-bc03-b867290fa966\")\n\t)\n\t(pad \"7\" thru_hole circle\n\t\t(at 6.096 0)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"0e72bde1-33ed-42dc-93a0-9e3b156b9053\")\n\t)\n\t(pad \"8\" thru_hole circle\n\t\t(at 7.112 1.78)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"83baf52f-5173-4db0-8b46-729fc67304bc\")\n\t)\n\t(pad \"9\" thru_hole circle\n\t\t(at -3.3 6.6)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"d4755931-b170-4690-9641-07aa8b9cdb73\")\n\t)\n\t(pad \"10\" thru_hole circle\n\t\t(at -1.01 6.6)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"6e5c169c-4e81-43e9-bea6-05e4cb3fb3af\")\n\t)\n\t(pad \"11\" thru_hole circle\n\t\t(at 8.13 6.6)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"1edffe82-c9de-42bd-b9fc-b72571c28c81\")\n\t)\n\t(pad \"12\" thru_hole circle\n\t\t(at 10.42 6.6)\n\t\t(size 1.5 1.5)\n\t\t(drill 0.89)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"814cc633-f443-4325-b00e-201d5ba933d9\")\n\t)\n\t(pad \"SH\" thru_hole circle\n\t\t(at -4.57 0.89)\n\t\t(size 2.3 2.3)\n\t\t(drill 1.57)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"35ea5947-1971-4635-9136-e62252c7ec39\")\n\t)\n\t(pad \"SH\" thru_hole circle\n\t\t(at 11.69 0.89)\n\t\t(size 2.3 2.3)\n\t\t(drill 1.57)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"552d06d5-8661-41df-a55c-7b8f1102c983\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ45_Amphenol_RJHSE538X.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "RJ45_Amphenol_RJHSE538X.kicad_mod"
+}

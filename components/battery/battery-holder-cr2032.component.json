@@ -1,0 +1,58 @@
+{
+  "id": "openpcb.core.battery.battery-holder-cr2032",
+  "uuid": "e9e5aca4-c8b9-53ff-ae35-6a790fa6b68d",
+  "version": "0.3.0",
+  "name": "CR2032 Battery Holder",
+  "description": "CR2032/20 mm coin-cell holder, THT (Keystone 3034 style).",
+  "category": "battery",
+  "subcategory": "holder",
+  "tags": [
+    "battery",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "CR2032",
+    "coin cell",
+    "battery holder",
+    "RTC backup"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.battery.battery-cell",
+  "defaultFootprint": "openpcb.core.footprint.battery.battery-cr2032-keystone-3034",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.battery.battery-cr2032-keystone-3034",
+      "label": "Keystone 3034",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Battery_Cell.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "CR2032 Battery Holder",
+    "sourceHash": "e5dd5c4b48a8665d815cfbaddb06596869f8ca4dedeba9a6c2230a70fcc7af41",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

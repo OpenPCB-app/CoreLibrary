@@ -1,0 +1,135 @@
+{
+  "id": "openpcb.core.ic.stm32g030f6",
+  "uuid": "adeeaad2-91bf-580b-be94-02da0ee4c584",
+  "version": "0.3.0",
+  "name": "STM32G030F6 MCU",
+  "description": "ST STM32G030F6 Cortex-M0+ MCU, 32 KB flash, TSSOP-20.",
+  "category": "ic",
+  "subcategory": "mcu",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "STM32G030",
+    "cortex-m0+",
+    "MCU",
+    "ARM"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.st.com/resource/en/datasheet/stm32g030f6.pdf",
+  "parameters": {
+    "core": "Cortex-M0+ @64MHz",
+    "flash": "32KB"
+  },
+  "symbol": "openpcb.core.symbol.ic.stm32g030f6",
+  "defaultFootprint": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+      "label": "TSSOP-20",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "17",
+          "padNumber": "17"
+        },
+        {
+          "pinNumber": "18",
+          "padNumber": "18"
+        },
+        {
+          "pinNumber": "19",
+          "padNumber": "19"
+        },
+        {
+          "pinNumber": "20",
+          "padNumber": "20"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "STM32G030F6Px.kicad_sym",
+    "sourceLibrary": "MCU_ST_STM32G0",
+    "sourceItemName": "STM32G030F6 MCU",
+    "sourceHash": "294edc5d95d6d7ff8768d88714a1d95774f2116853458afc51d7fe9c817f4d54",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

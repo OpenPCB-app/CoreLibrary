@@ -1,0 +1,58 @@
+{
+  "id": "openpcb.core.battery.battery-holder-18650",
+  "uuid": "5a1abeed-1ac8-5b30-a052-81c8e9fd0a92",
+  "version": "0.3.0",
+  "name": "18650 Battery Holder",
+  "description": "Single 18650 Li-Ion cell holder, THT (Keystone 1042 style).",
+  "category": "battery",
+  "subcategory": "holder",
+  "tags": [
+    "battery",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "18650",
+    "battery holder",
+    "li-ion",
+    "cell"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.battery.battery-cell",
+  "defaultFootprint": "openpcb.core.footprint.battery.battery-18650-keystone-1042",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.battery.battery-18650-keystone-1042",
+      "label": "Keystone 1042",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Battery_Cell.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "18650 Battery Holder",
+    "sourceHash": "a993f48ae3af050546659cacfdc94bb94321c6a67c898d4356cc46a8b9a7daad",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

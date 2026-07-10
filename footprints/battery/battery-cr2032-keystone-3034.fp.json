@@ -1,0 +1,1850 @@
+{
+  "id": "openpcb.core.footprint.battery.battery-cr2032-keystone-3034",
+  "uuid": "4ed437e6-6c27-5068-ac1a-7fa1de01ee83",
+  "version": "0.3.0",
+  "name": "BatteryHolder_Keystone_3034_1x20mm",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.battery.battery-cr2032-keystone-3034"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "BatteryHolder_Keystone_3034_1x20mm.kicad_mod",
+    "sourceLibrary": "Battery",
+    "sourceItemName": "BatteryHolder_Keystone_3034_1x20mm",
+    "sourceHash": "b55d2e1c3f17c18d5c9c6d0949c4565236558d8141d4f5b40176a9ae4f05b646",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_197c659df55dabc5",
+    "fileName": "BatteryHolder_Keystone_3034_1x20mm.kicad_mod",
+    "name": "BatteryHolder_Keystone_3034_1x20mm",
+    "description": "Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798",
+    "mountType": "smd",
+    "padCount": 3,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "keystone",
+      "type",
+      "3034",
+      "coin",
+      "cell",
+      "retainer",
+      "smd"
+    ],
+    "sourceHash": "b55d2e1c3f17c18d5c9c6d0949c4565236558d8141d4f5b40176a9ae4f05b646",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "BatteryHolder_Keystone_3034_1x20mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": -10.985,
+            "y": 0
+          },
+          "widthMm": 1.27,
+          "heightMm": 5.08,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "1:1",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": 10.985,
+            "y": 0
+          },
+          "widthMm": 1.27,
+          "heightMm": 5.08,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:2",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 17.8,
+          "heightMm": 17.8,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -10.78,
+            "y": -5.46
+          },
+          "b": {
+            "x": -10.78,
+            "y": -3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -10.78,
+            "y": 3
+          },
+          "b": {
+            "x": -10.78,
+            "y": 3.63
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -10.78,
+            "y": 3.63
+          },
+          "b": {
+            "x": -9.34,
+            "y": 7.58
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -8.7,
+            "y": -7.54
+          },
+          "b": {
+            "x": -10.78,
+            "y": -5.46
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -5.2,
+            "y": -7.54
+          },
+          "b": {
+            "x": -8.7,
+            "y": -7.54
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 8.7,
+            "y": -7.54
+          },
+          "b": {
+            "x": 5.2,
+            "y": -7.54
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 8.7,
+            "y": -7.54
+          },
+          "b": {
+            "x": 10.78,
+            "y": -5.46
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.78,
+            "y": -5.46
+          },
+          "b": {
+            "x": 10.78,
+            "y": -3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.78,
+            "y": 3
+          },
+          "b": {
+            "x": 10.78,
+            "y": 3.63
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.78,
+            "y": 3.63
+          },
+          "b": {
+            "x": 9.34,
+            "y": 7.58
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -10.63,
+            "y": -5.4
+          },
+          "b": {
+            "x": -8.64,
+            "y": -7.39
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -10.63,
+            "y": 3.6
+          },
+          "b": {
+            "x": -10.63,
+            "y": -5.4
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -9.19,
+            "y": 7.53
+          },
+          "b": {
+            "x": -10.63,
+            "y": 3.6
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -8.64,
+            "y": -7.39
+          },
+          "b": {
+            "x": 8.64,
+            "y": -7.39
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 8.64,
+            "y": -7.39
+          },
+          "b": {
+            "x": 10.63,
+            "y": -5.4
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.63,
+            "y": -5.4
+          },
+          "b": {
+            "x": 10.63,
+            "y": 3.6
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.63,
+            "y": 3.6
+          },
+          "b": {
+            "x": 9.19,
+            "y": 7.53
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -6.003354,
+            "y": 8.56653
+          },
+          "mid": {
+            "x": -7.921654,
+            "y": 8.918738
+          },
+          "end": {
+            "x": -9.34,
+            "y": 7.58
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 9.325243,
+            "y": 7.588169
+          },
+          "mid": {
+            "x": 7.90634,
+            "y": 8.911668
+          },
+          "end": {
+            "x": 6,
+            "y": 8.55
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -6.096146,
+            "y": 8.438508
+          },
+          "mid": {
+            "x": -7.87328,
+            "y": 8.768206
+          },
+          "end": {
+            "x": -9.19,
+            "y": 7.53
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -6.094852,
+            "y": 8.426043
+          },
+          "mid": {
+            "x": 0.003247,
+            "y": 6.355257
+          },
+          "end": {
+            "x": 6.1,
+            "y": 8.43
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 9.180727,
+            "y": 7.528882
+          },
+          "mid": {
+            "x": 7.868698,
+            "y": 8.760067
+          },
+          "end": {
+            "x": 6.1,
+            "y": 8.43
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:-2.9:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.9
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-11.5:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -11.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:11.5:BatteryHolder_Keystone_3034_1x20mm",
+          "text": "BatteryHolder_Keystone_3034_1x20mm",
+          "at": {
+            "x": 0,
+            "y": 11.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -11.62,
+        "minY": -8.900000000000002,
+        "maxX": 11.62,
+        "maxY": 26.424745577769205
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "BatteryHolder_Keystone_3034_1x20mm",
+    "description": "Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798",
+    "tags": [
+      "Keystone",
+      "type",
+      "3034",
+      "coin",
+      "cell",
+      "retainer"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -10.985,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.27,
+          "height": 5.08
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 10.985,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.27,
+          "height": 5.08
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 17.8,
+          "height": 17.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask"
+        ]
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -10.78,
+            -5.46
+          ],
+          "end": [
+            -10.78,
+            -3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "3f14b5f4-5fee-46bd-8a20-6c92b8b11a14"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -10.78,
+            3
+          ],
+          "end": [
+            -10.78,
+            3.63
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "3f82f6dc-98e2-436d-bf9b-01030d57d9db"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -10.78,
+            3.63
+          ],
+          "end": [
+            -9.34,
+            7.58
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "d9d2d592-a8dc-4cda-bc27-059b9448c8f4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -8.7,
+            -7.54
+          ],
+          "end": [
+            -10.78,
+            -5.46
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "ea6e543f-7dc3-41b1-9b21-ed04a7bec852"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -5.2,
+            -7.54
+          ],
+          "end": [
+            -8.7,
+            -7.54
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "003624ec-3910-469e-b739-9767cea2c0b6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            8.7,
+            -7.54
+          ],
+          "end": [
+            5.2,
+            -7.54
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "5ad9757c-9b03-43ce-b004-2ebca9b0a0c8"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            8.7,
+            -7.54
+          ],
+          "end": [
+            10.78,
+            -5.46
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "1e2a45ad-886d-4475-a2a9-db983844227f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            10.78,
+            -5.46
+          ],
+          "end": [
+            10.78,
+            -3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "2c0c7cb2-505d-4760-b627-355f54afd818"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            10.78,
+            3
+          ],
+          "end": [
+            10.78,
+            3.63
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "0498b2c6-0463-4d21-9c8b-5cf266eba27a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            10.78,
+            3.63
+          ],
+          "end": [
+            9.34,
+            7.58
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "cc58bf2f-f46e-46d9-87e2-3e805185d70f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -11.87,
+            -2.79
+          ],
+          "end": [
+            -11.87,
+            2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "05066034-47a5-47f9-b32f-b05feaada692"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -11.87,
+            2.79
+          ],
+          "end": [
+            -10.88,
+            2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "da65b333-9ce5-42cc-acd2-d4eb012f1da0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -10.88,
+            -5.5
+          ],
+          "end": [
+            -10.88,
+            -2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "43bddbf5-bcb7-437c-828c-00b5c91297bb"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -10.88,
+            -2.79
+          ],
+          "end": [
+            -11.87,
+            -2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "00122618-0ebe-4541-ac88-d4e125113a41"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -10.88,
+            2.79
+          ],
+          "end": [
+            -10.88,
+            3.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "0c4cecc7-f2b0-40d4-839f-42c6896e8f55"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -10.88,
+            3.64
+          ],
+          "end": [
+            -9.44,
+            7.62
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "737f6b3c-feb8-4c53-99c5-019698acc02f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -8.74,
+            -7.64
+          ],
+          "end": [
+            -10.88,
+            -5.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "6ebe5426-cd35-4720-a242-e2a3078a86fe"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -7.2,
+            -7.64
+          ],
+          "end": [
+            -8.74,
+            -7.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "19aba50e-dae9-46f5-b8d9-d362f2d20cd7"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            8.74,
+            -7.64
+          ],
+          "end": [
+            7.2,
+            -7.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "ac534a95-a6b8-469b-bf90-f032f87352a6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            9.43,
+            7.63
+          ],
+          "end": [
+            10.88,
+            3.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "ec5ab6ba-e770-451d-9beb-4ca84fd23395"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10.88,
+            -5.5
+          ],
+          "end": [
+            8.74,
+            -7.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "9c574eae-81a3-4099-9e3a-8fc614e87cd9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10.88,
+            -2.79
+          ],
+          "end": [
+            10.88,
+            -5.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "e08f9771-7ee2-454f-b2a3-b06c1a4056f6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10.88,
+            2.79
+          ],
+          "end": [
+            11.87,
+            2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "7802eb5f-e757-4e45-a44c-926a64a29749"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10.88,
+            3.64
+          ],
+          "end": [
+            10.88,
+            2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "56bd7537-e4be-44ac-9920-0b0020d07229"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            11.87,
+            -2.79
+          ],
+          "end": [
+            10.88,
+            -2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "c29bc791-564d-4edf-b731-12152a936396"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            11.87,
+            2.79
+          ],
+          "end": [
+            11.87,
+            -2.79
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "9301d971-4564-4407-8fb6-af89786245b6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -10.63,
+            -5.4
+          ],
+          "end": [
+            -8.64,
+            -7.39
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "235c272d-6c4d-42fb-b436-8269a2c85120"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -10.63,
+            3.6
+          ],
+          "end": [
+            -10.63,
+            -5.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "28ea703a-20c3-4f0c-b42b-488ef0b6ebf5"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -9.19,
+            7.53
+          ],
+          "end": [
+            -10.63,
+            3.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "e4b150e4-634e-4e5e-9b20-a8c1b45c5194"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -8.64,
+            -7.39
+          ],
+          "end": [
+            8.64,
+            -7.39
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "28c11b8d-d5d6-4a6d-bc93-078ab6b257f9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            8.64,
+            -7.39
+          ],
+          "end": [
+            10.63,
+            -5.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "6a8f3c44-ef15-4c54-a59a-3df246146c43"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            10.63,
+            -5.4
+          ],
+          "end": [
+            10.63,
+            3.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "3f2b03cf-565f-4716-b05f-e0bb1cd35cbc"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            10.63,
+            3.6
+          ],
+          "end": [
+            9.19,
+            7.53
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "cb201cf9-78b6-47b2-816e-270bc5f16931"
+        }
+      },
+      {
+        "type": "circle",
+        "layer": "Dwgs.User",
+        "data": {
+          "center": [
+            0,
+            0
+          ],
+          "end": [
+            0,
+            10.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.15
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "Dwgs.User",
+          "uuid": "0fb91d9d-65a6-4f21-ac94-de5e36250b71"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -6.003354,
+            8.56653
+          ],
+          "mid": [
+            -7.921654,
+            8.918738
+          ],
+          "end": [
+            -9.34,
+            7.58
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "f15a5dde-8d71-4dd9-803f-f51014db8e05"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            9.325243,
+            7.588169
+          ],
+          "mid": [
+            7.90634,
+            8.911668
+          ],
+          "end": [
+            6,
+            8.55
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "1cc420a9-e960-46a1-9d5f-c1e339b3bf43"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -7.199546,
+            -7.640427
+          ],
+          "mid": [
+            0.000312,
+            -10.498075
+          ],
+          "end": [
+            7.2,
+            -7.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "37f1be21-3058-43b5-baf8-c1e3daa97c11"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -5.956965,
+            8.654604
+          ],
+          "mid": [
+            -7.953941,
+            9.011629
+          ],
+          "end": [
+            -9.43,
+            7.62
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "b9c3997c-0b42-44d5-abba-c5e64bf8f241"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            5.945368,
+            8.650075
+          ],
+          "mid": [
+            -0.008883,
+            10.496243
+          ],
+          "end": [
+            -5.96,
+            8.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "75943fd8-a8a3-4752-a210-f582f3512ef9"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            9.415144,
+            7.621341
+          ],
+          "mid": [
+            7.944017,
+            9.000493
+          ],
+          "end": [
+            5.96,
+            8.64
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "3ec6f2e1-e609-4223-941f-fdcb52c911d6"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -6.096146,
+            8.438508
+          ],
+          "mid": [
+            -7.87328,
+            8.768206
+          ],
+          "end": [
+            -9.19,
+            7.53
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "1d4d5144-a6d5-46af-bcb3-9956b05c3144"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -6.094852,
+            8.426043
+          ],
+          "mid": [
+            0.003247,
+            6.355257
+          ],
+          "end": [
+            6.1,
+            8.43
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "4cf883da-9a29-4ccc-af0c-157676d65fbf"
+        }
+      },
+      {
+        "type": "arc",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            9.180727,
+            7.528882
+          ],
+          "mid": [
+            7.868698,
+            8.760067
+          ],
+          "end": [
+            6.1,
+            8.43
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "b12f615f-544e-4bc5-910c-5bfd6de7561e"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            -2.9,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "e86e97e6-c312-41b4-91e3-bf243ce24c4f",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": -2.9
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -11.5,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "7f4fce36-65d5-4725-a9c8-2e95dffe23c4",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -11.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            11.5,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "1e3057dc-3f72-49a1-aedf-6093aa935886",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "BatteryHolder_Keystone_3034_1x20mm"
+          ]
+        },
+        "text": {
+          "content": "BatteryHolder_Keystone_3034_1x20mm",
+          "position": {
+            "x": 0,
+            "y": 11.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_3034_1x20mm.step",
+        "resolvedFileName": "BatteryHolder_Keystone_3034_1x20mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"BatteryHolder_Keystone_3034_1x20mm\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"Keystone 3034 SMD battery holder for 2020, 2025 and 2032 coincell batteries. http://www.keyelco.com/product-pdf.cfm?p=798\")\n\t(tags \"Keystone type 3034 coin cell retainer\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -11.5 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"7f4fce36-65d5-4725-a9c8-2e95dffe23c4\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"BatteryHolder_Keystone_3034_1x20mm\"\n\t\t(at 0 11.5 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1e3057dc-3f72-49a1-aedf-6093aa935886\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"7ebcc5d9-4306-48d3-9bc6-22a537fe5740\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"031748ae-34d8-4efc-8db5-32788ad18d06\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -10.78 -5.46)\n\t\t(end -10.78 -3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"3f14b5f4-5fee-46bd-8a20-6c92b8b11a14\")\n\t)\n\t(fp_line\n\t\t(start -10.78 3)\n\t\t(end -10.78 3.63)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"3f82f6dc-98e2-436d-bf9b-01030d57d9db\")\n\t)\n\t(fp_line\n\t\t(start -10.78 3.63)\n\t\t(end -9.34 7.58)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"d9d2d592-a8dc-4cda-bc27-059b9448c8f4\")\n\t)\n\t(fp_line\n\t\t(start -8.7 -7.54)\n\t\t(end -10.78 -5.46)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"ea6e543f-7dc3-41b1-9b21-ed04a7bec852\")\n\t)\n\t(fp_line\n\t\t(start -5.2 -7.54)\n\t\t(end -8.7 -7.54)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"003624ec-3910-469e-b739-9767cea2c0b6\")\n\t)\n\t(fp_line\n\t\t(start 8.7 -7.54)\n\t\t(end 5.2 -7.54)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"5ad9757c-9b03-43ce-b004-2ebca9b0a0c8\")\n\t)\n\t(fp_line\n\t\t(start 8.7 -7.54)\n\t\t(end 10.78 -5.46)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1e2a45ad-886d-4475-a2a9-db983844227f\")\n\t)\n\t(fp_line\n\t\t(start 10.78 -5.46)\n\t\t(end 10.78 -3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"2c0c7cb2-505d-4760-b627-355f54afd818\")\n\t)\n\t(fp_line\n\t\t(start 10.78 3)\n\t\t(end 10.78 3.63)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"0498b2c6-0463-4d21-9c8b-5cf266eba27a\")\n\t)\n\t(fp_line\n\t\t(start 10.78 3.63)\n\t\t(end 9.34 7.58)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"cc58bf2f-f46e-46d9-87e2-3e805185d70f\")\n\t)\n\t(fp_arc\n\t\t(start -6.003354 8.56653)\n\t\t(mid -7.921654 8.918738)\n\t\t(end -9.34 7.58)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f15a5dde-8d71-4dd9-803f-f51014db8e05\")\n\t)\n\t(fp_arc\n\t\t(start 9.325243 7.588169)\n\t\t(mid 7.90634 8.911668)\n\t\t(end 6 8.55)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1cc420a9-e960-46a1-9d5f-c1e339b3bf43\")\n\t)\n\t(fp_circle\n\t\t(center 0 0)\n\t\t(end 0 10.25)\n\t\t(stroke\n\t\t\t(width 0.15)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"Dwgs.User\")\n\t\t(uuid \"0fb91d9d-65a6-4f21-ac94-de5e36250b71\")\n\t)\n\t(fp_line\n\t\t(start -11.87 -2.79)\n\t\t(end -11.87 2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"05066034-47a5-47f9-b32f-b05feaada692\")\n\t)\n\t(fp_line\n\t\t(start -11.87 2.79)\n\t\t(end -10.88 2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"da65b333-9ce5-42cc-acd2-d4eb012f1da0\")\n\t)\n\t(fp_line\n\t\t(start -10.88 -5.5)\n\t\t(end -10.88 -2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"43bddbf5-bcb7-437c-828c-00b5c91297bb\")\n\t)\n\t(fp_line\n\t\t(start -10.88 -2.79)\n\t\t(end -11.87 -2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"00122618-0ebe-4541-ac88-d4e125113a41\")\n\t)\n\t(fp_line\n\t\t(start -10.88 2.79)\n\t\t(end -10.88 3.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"0c4cecc7-f2b0-40d4-839f-42c6896e8f55\")\n\t)\n\t(fp_line\n\t\t(start -10.88 3.64)\n\t\t(end -9.44 7.62)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"737f6b3c-feb8-4c53-99c5-019698acc02f\")\n\t)\n\t(fp_line\n\t\t(start -8.74 -7.64)\n\t\t(end -10.88 -5.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"6ebe5426-cd35-4720-a242-e2a3078a86fe\")\n\t)\n\t(fp_line\n\t\t(start -7.2 -7.64)\n\t\t(end -8.74 -7.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"19aba50e-dae9-46f5-b8d9-d362f2d20cd7\")\n\t)\n\t(fp_line\n\t\t(start 8.74 -7.64)\n\t\t(end 7.2 -7.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"ac534a95-a6b8-469b-bf90-f032f87352a6\")\n\t)\n\t(fp_line\n\t\t(start 9.43 7.63)\n\t\t(end 10.88 3.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"ec5ab6ba-e770-451d-9beb-4ca84fd23395\")\n\t)\n\t(fp_line\n\t\t(start 10.88 -5.5)\n\t\t(end 8.74 -7.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"9c574eae-81a3-4099-9e3a-8fc614e87cd9\")\n\t)\n\t(fp_line\n\t\t(start 10.88 -2.79)\n\t\t(end 10.88 -5.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"e08f9771-7ee2-454f-b2a3-b06c1a4056f6\")\n\t)\n\t(fp_line\n\t\t(start 10.88 2.79)\n\t\t(end 11.87 2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"7802eb5f-e757-4e45-a44c-926a64a29749\")\n\t)\n\t(fp_line\n\t\t(start 10.88 3.64)\n\t\t(end 10.88 2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"56bd7537-e4be-44ac-9920-0b0020d07229\")\n\t)\n\t(fp_line\n\t\t(start 11.87 -2.79)\n\t\t(end 10.88 -2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"c29bc791-564d-4edf-b731-12152a936396\")\n\t)\n\t(fp_line\n\t\t(start 11.87 2.79)\n\t\t(end 11.87 -2.79)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"9301d971-4564-4407-8fb6-af89786245b6\")\n\t)\n\t(fp_arc\n\t\t(start -7.199546 -7.640427)\n\t\t(mid 0.000312 -10.498075)\n\t\t(end 7.2 -7.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"37f1be21-3058-43b5-baf8-c1e3daa97c11\")\n\t)\n\t(fp_arc\n\t\t(start -5.956965 8.654604)\n\t\t(mid -7.953941 9.011629)\n\t\t(end -9.43 7.62)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"b9c3997c-0b42-44d5-abba-c5e64bf8f241\")\n\t)\n\t(fp_arc\n\t\t(start 5.945368 8.650075)\n\t\t(mid -0.008883 10.496243)\n\t\t(end -5.96 8.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"75943fd8-a8a3-4752-a210-f582f3512ef9\")\n\t)\n\t(fp_arc\n\t\t(start 9.415144 7.621341)\n\t\t(mid 7.944017 9.000493)\n\t\t(end 5.96 8.64)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"3ec6f2e1-e609-4223-941f-fdcb52c911d6\")\n\t)\n\t(fp_line\n\t\t(start -10.63 -5.4)\n\t\t(end -8.64 -7.39)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"235c272d-6c4d-42fb-b436-8269a2c85120\")\n\t)\n\t(fp_line\n\t\t(start -10.63 3.6)\n\t\t(end -10.63 -5.4)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"28ea703a-20c3-4f0c-b42b-488ef0b6ebf5\")\n\t)\n\t(fp_line\n\t\t(start -9.19 7.53)\n\t\t(end -10.63 3.6)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e4b150e4-634e-4e5e-9b20-a8c1b45c5194\")\n\t)\n\t(fp_line\n\t\t(start -8.64 -7.39)\n\t\t(end 8.64 -7.39)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"28c11b8d-d5d6-4a6d-bc93-078ab6b257f9\")\n\t)\n\t(fp_line\n\t\t(start 8.64 -7.39)\n\t\t(end 10.63 -5.4)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"6a8f3c44-ef15-4c54-a59a-3df246146c43\")\n\t)\n\t(fp_line\n\t\t(start 10.63 -5.4)\n\t\t(end 10.63 3.6)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"3f2b03cf-565f-4716-b05f-e0bb1cd35cbc\")\n\t)\n\t(fp_line\n\t\t(start 10.63 3.6)\n\t\t(end 9.19 7.53)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"cb201cf9-78b6-47b2-816e-270bc5f16931\")\n\t)\n\t(fp_arc\n\t\t(start -6.096146 8.438508)\n\t\t(mid -7.87328 8.768206)\n\t\t(end -9.19 7.53)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1d4d5144-a6d5-46af-bcb3-9956b05c3144\")\n\t)\n\t(fp_arc\n\t\t(start -6.094852 8.426043)\n\t\t(mid 0.003247 6.355257)\n\t\t(end 6.1 8.43)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4cf883da-9a29-4ccc-af0c-157676d65fbf\")\n\t)\n\t(fp_arc\n\t\t(start 9.180727 7.528882)\n\t\t(mid 7.868698 8.760067)\n\t\t(end 6.1 8.43)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"b12f615f-544e-4bc5-910c-5bfd6de7561e\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 -2.9 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e86e97e6-c312-41b4-91e3-bf243ce24c4f\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd rect\n\t\t(at -10.985 0)\n\t\t(size 1.27 5.08)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"a378d747-29cc-440a-bf7b-c8c3abeba343\")\n\t)\n\t(pad \"1\" smd rect\n\t\t(at 10.985 0)\n\t\t(size 1.27 5.08)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"2c6bb5b5-cbe9-4165-aaf4-0c1ef8cbeaf0\")\n\t)\n\t(pad \"2\" smd circle\n\t\t(at 0 0)\n\t\t(size 17.8 17.8)\n\t\t(layers \"F.Cu\" \"F.Mask\")\n\t\t(uuid \"fe10758f-f843-45c9-81f4-37d94d7ea2f3\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Battery.3dshapes/BatteryHolder_Keystone_3034_1x20mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "BatteryHolder_Keystone_3034_1x20mm.kicad_mod"
+}

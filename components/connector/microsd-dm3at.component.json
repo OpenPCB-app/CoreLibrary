@@ -1,0 +1,96 @@
+{
+  "id": "openpcb.core.connector.microsd-dm3at",
+  "uuid": "0692ba5a-fbce-5149-92b0-004dacb18638",
+  "version": "0.3.0",
+  "name": "microSD Card Socket (Hirose DM3AT)",
+  "description": "microSD card socket with card-detect switch, Hirose DM3AT-SF-PEJM5, push-push SMD.",
+  "category": "connector",
+  "subcategory": "card",
+  "tags": [
+    "connector",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "microSD",
+    "SD card",
+    "socket",
+    "DM3AT",
+    "storage"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1",
+  "symbol": "openpcb.core.symbol.connector.microsd-dm3at",
+  "defaultFootprint": "openpcb.core.footprint.connector.microsd-hirose-dm3at",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.microsd-hirose-dm3at",
+      "label": "DM3AT push-push",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "SH",
+          "padNumber": "SH"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Micro_SD_Card_Det_Hirose_DM3AT.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "microSD Card Socket (Hirose DM3AT)",
+    "sourceHash": "39b6965b0b25c09ef264d0eccbe4ff249a9c9dad12d78c49b30571691aa908b9",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

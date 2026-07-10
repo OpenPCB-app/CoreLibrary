@@ -29,7 +29,7 @@
       "enum": ["vertical", "horizontal"],
       "description": "Posture override for the 3D orientation gate when the footprint name lacks _Vertical/_Horizontal (e.g. DHT11 stands vertical)."
     },
-    "thtLeadBudgetMm": {
+    "belowBoardBudgetMm": {
       "type": "number",
       "exclusiveMinimum": 0,
       "description": "THT lead-protrusion budget override (mm below board) for STEPs shipping full uncut leads (e.g. PS1240 buzzer). Keep to documented exceptions."

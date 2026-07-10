@@ -1,0 +1,625 @@
+{
+  "id": "openpcb.core.symbol.power.ap63203",
+  "uuid": "27bd162d-df8a-515b-884e-1fd36526295d",
+  "version": "0.3.0",
+  "name": "AP63203 3.3V 2A Buck Converter",
+  "referencePrefix": "U",
+  "description": "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "AP63203WU.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "AP63203WU",
+    "sourceHash": "0b5db9875faeacc6575fd643efd181069e100942c95a48c2a4ec1ecf0acc1b1e",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from AP63200WU"
+      }
+    ],
+    "properties": {
+      "Reference": "U",
+      "Value": "AP63203WU",
+      "Footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "Datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+      "Description": "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6",
+      "ki_keywords": "2A Buck DC/DC",
+      "ki_fp_filters": "TSOT?23*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "AP63203WU.kicad_sym",
+        "sourceItemName": "AP63203WU",
+        "sha256": "832708971044b53a2e4d391759cec895b4de38250dee19901e7156f99a92aea7"
+      },
+      {
+        "fileName": "AP63200WU.kicad_sym",
+        "sourceItemName": "AP63200WU",
+        "sha256": "6699cde5571105c2f18d7218c6e29785de30af37b5b61d6910fa14250426ee98"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_38a9f4356b3d62c0",
+    "name": "AP63203WU",
+    "referencePrefix": "U",
+    "description": "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6",
+    "sourceHash": "0b5db9875faeacc6575fd643efd181069e100942c95a48c2a4ec1ecf0acc1b1e",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "FB",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "EN",
+        "localPosition": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "IN",
+        "localPosition": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "SW",
+        "localPosition": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "BST",
+        "localPosition": {
+          "x": 10.16,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from AP63200WU"
+      }
+    ],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "AP63203WU",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -5.08,
+          "width": 15.24,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "FB",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "EN",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "IN",
+          "number": "3",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "GND",
+          "number": "4",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:5",
+          "name": "SW",
+          "number": "5",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "BST",
+          "number": "6",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "FB",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "EN",
+          "at": {
+            "x": -7.112,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "IN",
+          "at": {
+            "x": -7.112,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "SW",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "BST",
+          "at": {
+            "x": 7.112,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 8.89,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 6.4769999999999985
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "AP63203WU",
+          "at": {
+            "x": 0,
+            "y": -9.2202
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -10.4902,
+        "maxX": 10.16,
+        "maxY": 7.746999999999998
+      },
+      "warnings": [
+        {
+          "code": "symbol_extends_resolved",
+          "message": "Resolved pins from AP63200WU"
+        }
+      ]
+    }
+  },
+  "raw": {
+    "name": "AP63203WU",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "FB",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "EN",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IN",
+        "number": "3",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "4",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SW",
+        "number": "5",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BST",
+        "number": "6",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "AP63203WU",
+      "Footprint": "Package_TO_SOT_SMD:TSOT-23-6",
+      "Datasheet": "https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf",
+      "Description": "2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6",
+      "ki_keywords": "2A Buck DC/DC",
+      "ki_fp_filters": "TSOT?23*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            5.08
+          ],
+          [
+            "end",
+            7.62,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [
+      {
+        "code": "symbol_extends_resolved",
+        "message": "Resolved pins from AP63200WU"
+      }
+    ],
+    "rawSource": "(symbol AP63203WU (extends AP63200WU) (property Reference U (at -7.62 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value AP63203WU (at 2.54 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Package_TO_SOT_SMD:TSOT-23-6 (at 0 -22.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://www.diodes.com/assets/Datasheets/AP63200-AP63201-AP63203-AP63205.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"2A, 1.1MHz Buck DC/DC Converter, fixed 3.3V output voltage, TSOT-23-6\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"2A Buck DC/DC\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters TSOT?23* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

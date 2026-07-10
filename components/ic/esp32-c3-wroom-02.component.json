@@ -1,0 +1,132 @@
+{
+  "id": "openpcb.core.ic.esp32-c3-wroom-02",
+  "uuid": "96529b2b-cda8-5c37-86d1-caed1a38aeab",
+  "version": "0.3.0",
+  "name": "ESP32-C3-WROOM-02 Module",
+  "description": "Espressif ESP32-C3-WROOM-02 Wi-Fi + BLE module (RISC-V single core).",
+  "category": "ic",
+  "subcategory": "mcu-module",
+  "tags": [
+    "ic",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "ESP32-C3",
+    "wifi",
+    "bluetooth",
+    "module",
+    "RISC-V"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.espressif.com/sites/default/files/documentation/esp32-c3-wroom-02_datasheet_en.pdf",
+  "parameters": {
+    "core": "RISC-V @160MHz",
+    "radio": "WiFi4 + BLE5"
+  },
+  "symbol": "openpcb.core.symbol.ic.esp32-c3-wroom-02",
+  "defaultFootprint": "openpcb.core.footprint.ic.esp32-c3-wroom-02",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.ic.esp32-c3-wroom-02",
+      "label": "WROOM-02",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "17",
+          "padNumber": "17"
+        },
+        {
+          "pinNumber": "18",
+          "padNumber": "18"
+        },
+        {
+          "pinNumber": "19",
+          "padNumber": "19"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "ESP32-C3-WROOM-02.kicad_sym",
+    "sourceLibrary": "RF_Module",
+    "sourceItemName": "ESP32-C3-WROOM-02 Module",
+    "sourceHash": "5d269dc2f214ceb5d1ef7ebdcb22dc4582ac838dc106848a0efcbae0e5b839d5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

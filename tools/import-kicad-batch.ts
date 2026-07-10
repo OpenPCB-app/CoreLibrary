@@ -69,7 +69,7 @@ interface ManifestFootprint {
    * name lacks _Vertical/_Horizontal (e.g. DHT11 stands vertical). */
   orientationHint?: "vertical" | "horizontal";
   /** THT lead budget override (mm below board) for STEPs with full uncut leads. */
-  thtLeadBudgetMm?: number;
+  belowBoardBudgetMm?: number;
   /**
    * Footprint legitimately ships without a 3D model (mechanical parts like
    * MountingHole/Fiducial that have no upstream STEP, or asm-only electrical
@@ -356,7 +356,7 @@ function readManifestFootprint(
 ): ManifestFootprint {
   if (!isObject(value)) throw new Error(`${pathName} must be an object`);
   if (value.existing === true) {
-    for (const forbidden of ["path", "model", "no3d", "orientationHint", "thtLeadBudgetMm"])
+    for (const forbidden of ["path", "model", "no3d", "orientationHint", "belowBoardBudgetMm"])
       if (value[forbidden] !== undefined)
         throw new Error(
           `${pathName}: an existing footprint reference must not declare ${forbidden}`,
@@ -386,10 +386,10 @@ function readManifestFootprint(
       throw new Error(`${pathName}.orientationHint must be "vertical" or "horizontal"`);
     footprint.orientationHint = value.orientationHint;
   }
-  if (value.thtLeadBudgetMm !== undefined) {
-    if (typeof value.thtLeadBudgetMm !== "number" || value.thtLeadBudgetMm <= 0)
-      throw new Error(`${pathName}.thtLeadBudgetMm must be a positive number`);
-    footprint.thtLeadBudgetMm = value.thtLeadBudgetMm;
+  if (value.belowBoardBudgetMm !== undefined) {
+    if (typeof value.belowBoardBudgetMm !== "number" || value.belowBoardBudgetMm <= 0)
+      throw new Error(`${pathName}.belowBoardBudgetMm must be a positive number`);
+    footprint.belowBoardBudgetMm = value.belowBoardBudgetMm;
   }
   return footprint;
 }
@@ -1027,8 +1027,8 @@ async function run(argv: string[]): Promise<void> {
             ...(manifestFootprint.orientationHint
               ? { orientationHint: manifestFootprint.orientationHint }
               : {}),
-            ...(manifestFootprint.thtLeadBudgetMm
-              ? { thtLeadBudgetMm: manifestFootprint.thtLeadBudgetMm }
+            ...(manifestFootprint.belowBoardBudgetMm
+              ? { belowBoardBudgetMm: manifestFootprint.belowBoardBudgetMm }
               : {}),
             provenance: provenance(
               "kicad-mod",

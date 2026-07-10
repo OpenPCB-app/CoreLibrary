@@ -1,0 +1,78 @@
+{
+  "id": "openpcb.core.power.xl4015",
+  "uuid": "135e123f-d14e-5bea-a2a3-e1e7a61ea86d",
+  "version": "0.3.0",
+  "name": "XL4015 5A Buck Converter",
+  "description": "XLSEMI XL4015 180 kHz 36 V 5 A buck converter, TO-263-5.",
+  "category": "power",
+  "subcategory": "regulator-buck",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "buck",
+    "step-down",
+    "XL4015",
+    "5A",
+    "switching",
+    "CC-CV"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.xlsemi.net/datasheet/XL4015%20datasheet-English.pdf",
+  "parameters": {
+    "vin": "8-36V",
+    "iout": "5A",
+    "topology": "buck"
+  },
+  "symbol": "openpcb.core.symbol.power.xl4015",
+  "defaultFootprint": "openpcb.core.footprint.package.to-263-5-tabpin3",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.to-263-5-tabpin3",
+      "label": "TO-263-5",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "XL4015.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "XL4015 5A Buck Converter",
+    "sourceHash": "567e2143cbed474650d2132bf673975b6e360f9b8b7bd956d8e48bbb9fff378b",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

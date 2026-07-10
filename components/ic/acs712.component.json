@@ -1,30 +1,29 @@
 {
-  "id": "openpcb.core.ic.lm386",
-  "uuid": "c4c73456-ceb4-5de1-961a-5eb935b58ad8",
+  "id": "openpcb.core.ic.acs712",
+  "uuid": "1b0c51b2-20a8-5519-85d9-9023c13f34cd",
   "version": "0.3.0",
-  "name": "LM386 Audio Amplifier",
-  "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
+  "name": "ACS712 Hall Current Sensor",
+  "description": "Allegro ACS712 Hall-effect linear current sensor (±5/±20/±30 A variants), SOIC-8.",
   "category": "ic",
-  "subcategory": "amplifier-audio",
+  "subcategory": "sensor-current",
   "tags": [
     "ic",
     "kicad-derived"
   ],
   "keywords": [
-    "LM386",
-    "audio",
-    "amplifier",
-    "speaker"
+    "ACS712",
+    "current sense",
+    "hall",
+    "isolated"
   ],
   "aliases": [],
   "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm386.pdf",
+  "datasheetSource": "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en",
   "parameters": {
-    "gain": "20-200",
-    "pout": "0.3-1W",
-    "vcc": "4-12V"
+    "range": "±5/±20/±30A",
+    "output": "analog"
   },
-  "symbol": "openpcb.core.symbol.ic.lm386",
+  "symbol": "openpcb.core.symbol.ic.acs712",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
   "footprints": [
     {
@@ -73,10 +72,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "openpcb-component",
-    "sourceFileName": "LM386.kicad_sym",
-    "sourceLibrary": "Amplifier_Audio",
-    "sourceItemName": "LM386 Audio Amplifier",
-    "sourceHash": "f8b3d8b427743610430b975696aa211eddb53aa615b8f4b29117654b1f49d462",
+    "sourceFileName": "ACS712xLCTR-05B.kicad_sym",
+    "sourceLibrary": "Sensor_Current",
+    "sourceItemName": "ACS712 Hall Current Sensor",
+    "sourceHash": "61bd9eb3190128524770ff405a7f155457ac2a0e8cd02007ab53af6936c111c8",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-07-10T18:48:42.901Z",

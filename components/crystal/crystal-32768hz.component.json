@@ -1,0 +1,63 @@
+{
+  "id": "openpcb.core.crystal.crystal-32768hz",
+  "uuid": "b65e202e-533a-5584-b296-76f9815b8005",
+  "version": "0.3.0",
+  "name": "Crystal 32.768 kHz (SMD 3215)",
+  "description": "32.768 kHz watch crystal, SMD 3215 (3.2x1.5 mm), for RTCs.",
+  "category": "crystal",
+  "subcategory": "crystal",
+  "tags": [
+    "crystal",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "crystal",
+    "32.768kHz",
+    "watch",
+    "RTC",
+    "3215"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "frequency": "32.768kHz",
+    "loadCapacitance": "12.5pF (typ)"
+  },
+  "symbol": "openpcb.core.symbol.crystal.crystal-32768hz",
+  "defaultFootprint": "openpcb.core.footprint.crystal.crystal-smd-3215-2pin",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.crystal.crystal-smd-3215-2pin",
+      "label": "SMD 3215",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Crystal.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Crystal 32.768 kHz (SMD 3215)",
+    "sourceHash": "8464acaf15e67947a47f6f71b331d7ddc1b12dca471538ba0925122949b5168b",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

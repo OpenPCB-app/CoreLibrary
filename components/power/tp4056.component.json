@@ -1,35 +1,37 @@
 {
-  "id": "openpcb.core.ic.lm386",
-  "uuid": "c4c73456-ceb4-5de1-961a-5eb935b58ad8",
+  "id": "openpcb.core.power.tp4056",
+  "uuid": "c37cb72b-7255-5393-a9d0-27950730a8d0",
   "version": "0.3.0",
-  "name": "LM386 Audio Amplifier",
-  "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
-  "category": "ic",
-  "subcategory": "amplifier-audio",
+  "name": "TP4056 Li-Ion Charger 1A",
+  "description": "NanJing TP4056 single-cell Li-Ion linear charger, 1 A programmable, ESOP-8.",
+  "category": "power",
+  "subcategory": "battery-charger",
   "tags": [
-    "ic",
+    "power",
     "kicad-derived"
   ],
   "keywords": [
-    "LM386",
-    "audio",
-    "amplifier",
-    "speaker"
+    "TP4056",
+    "lithium",
+    "charger",
+    "li-ion",
+    "1A",
+    "battery"
   ],
   "aliases": [],
   "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm386.pdf",
+  "datasheetSource": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf",
   "parameters": {
-    "gain": "20-200",
-    "pout": "0.3-1W",
-    "vcc": "4-12V"
+    "vbat": "4.2V",
+    "ichg": "1A (prog)",
+    "cell": "1S Li-Ion"
   },
-  "symbol": "openpcb.core.symbol.ic.lm386",
-  "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+  "symbol": "openpcb.core.symbol.power.tp4056",
+  "defaultFootprint": "openpcb.core.footprint.power.soic-8-1ep-ep2-29x3mm",
   "footprints": [
     {
-      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
-      "label": "SOIC-8",
+      "footprint": "openpcb.core.footprint.power.soic-8-1ep-ep2-29x3mm",
+      "label": "ESOP-8",
       "pinMap": [
         {
           "pinNumber": "1",
@@ -62,6 +64,10 @@
         {
           "pinNumber": "8",
           "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
         }
       ]
     }
@@ -73,10 +79,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "openpcb-component",
-    "sourceFileName": "LM386.kicad_sym",
-    "sourceLibrary": "Amplifier_Audio",
-    "sourceItemName": "LM386 Audio Amplifier",
-    "sourceHash": "f8b3d8b427743610430b975696aa211eddb53aa615b8f4b29117654b1f49d462",
+    "sourceFileName": "TP4056-42-ESOP8.kicad_sym",
+    "sourceLibrary": "Battery_Management",
+    "sourceItemName": "TP4056 Li-Ion Charger 1A",
+    "sourceHash": "ef5ccbda76de5e5c3c69f1798ba55d314aac34770614d703fdaac219094b9ffb",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-07-10T18:48:42.901Z",

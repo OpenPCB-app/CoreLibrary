@@ -1,0 +1,528 @@
+{
+  "id": "openpcb.core.symbol.power.mcp73831",
+  "uuid": "391fe139-9440-51d8-82bd-e02116206345",
+  "version": "0.3.0",
+  "name": "MCP73831 Li-Ion Charger 500mA",
+  "referencePrefix": "U",
+  "description": "Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "MCP73831-2-OT.kicad_sym",
+    "sourceLibrary": "Battery_Management",
+    "sourceItemName": "MCP73831-2-OT",
+    "sourceHash": "97e7249e03e5392e7f75d55567da6684deea95324d5332fc48f37447835b00e9",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP73831-2-OT",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf",
+      "Description": "Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package",
+      "ki_keywords": "battery charger lithium",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "MCP73831-2-OT.kicad_sym",
+        "sourceItemName": "MCP73831-2-OT",
+        "sha256": "5244d81e9bafc83edb2f2f94b8e73092254b70bc767e7511ffabeb7a371df4ad"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_6c34c30da8790289",
+    "name": "MCP73831-2-OT",
+    "referencePrefix": "U",
+    "description": "Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package",
+    "sourceHash": "97e7249e03e5392e7f75d55567da6684deea95324d5332fc48f37447835b00e9",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "STAT",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "tri_state",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "V_{SS}",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "V_{BAT}",
+        "localPosition": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "V_{DD}",
+        "localPosition": {
+          "x": 0,
+          "y": 7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "PROG",
+        "localPosition": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "MCP73831-2-OT",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -5.08,
+          "width": 15.24,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "STAT",
+          "number": "1",
+          "electricalType": "tri_state",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "V_{SS}",
+          "number": "2",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "V_{BAT}",
+          "number": "3",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:4",
+          "name": "V_{DD}",
+          "number": "4",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.08
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:5",
+          "name": "PROG",
+          "number": "5",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "STAT",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "V_{SS}",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "V_{BAT}",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "V_{DD}",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": 7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "PROG",
+          "at": {
+            "x": -7.112,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 11.5824
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "MCP73831-2-OT",
+          "at": {
+            "x": 0,
+            "y": -11.5824
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -12.8524,
+        "maxX": 10.16,
+        "maxY": 12.8524
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "MCP73831-2-OT",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "STAT",
+        "number": "1",
+        "electricalType": "tri_state",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V_{SS}",
+        "number": "2",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V_{BAT}",
+        "number": "3",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V_{DD}",
+        "number": "4",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PROG",
+        "number": "5",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "MCP73831-2-OT",
+      "Footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "Datasheet": "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf",
+      "Description": "Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package",
+      "ki_keywords": "battery charger lithium",
+      "ki_fp_filters": "SOT?23*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            5.08
+          ],
+          [
+            "end",
+            7.62,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol MCP73831-2-OT (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -7.62 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value MCP73831-2-OT (at 1.27 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_TO_SOT_SMD:SOT-23-5 (at 1.27 -6.35 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)) (justify left))) (property Datasheet http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf (at 0 -18.288 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Single cell, Li-Ion/Li-Po charge management controller, 4.20V, Tri-State Status Output, in SOT23-5 package\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"battery charger lithium\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOT?23* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol MCP73831-2-OT_0_1 (rectangle (start -7.62 5.08) (end 7.62 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol MCP73831-2-OT_1_1 (pin tri_state line (at 10.16 -2.54 180) (length 2.54) (name STAT (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -7.62 90) (length 2.54) (name V_{SS} (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin power_out line (at 10.16 2.54 180) (length 2.54) (name V_{BAT} (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 7.62 270) (length 2.54) (name V_{DD} (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -2.54 0) (length 2.54) (name PROG (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

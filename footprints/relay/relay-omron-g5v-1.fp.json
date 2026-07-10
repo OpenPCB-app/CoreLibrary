@@ -1,0 +1,1370 @@
+{
+  "id": "openpcb.core.footprint.relay.relay-omron-g5v-1",
+  "uuid": "f92905ec-cdcc-572a-8470-239ce2c0a574",
+  "version": "0.3.0",
+  "name": "Relay_SPDT_Omron_G5V-1",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.relay.relay-omron-g5v-1"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Relay_SPDT_Omron_G5V-1.kicad_mod",
+    "sourceLibrary": "Relay_THT",
+    "sourceItemName": "Relay_SPDT_Omron_G5V-1",
+    "sourceHash": "615d9b704640cb1a7cc2c71fcdc056d7e25f3806226b4066720480593a781deb",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_9433a7f11c1d59d6",
+    "fileName": "Relay_SPDT_Omron_G5V-1.kicad_mod",
+    "name": "Relay_SPDT_Omron_G5V-1",
+    "description": "Relay Omron G5V-1, see http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf",
+    "mountType": "through_hole",
+    "padCount": 6,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "relay",
+      "omron",
+      "g5v-1",
+      "through_hole"
+    ],
+    "sourceHash": "615d9b704640cb1a7cc2c71fcdc056d7e25f3806226b4066720480593a781deb",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Relay_SPDT_Omron_G5V-1",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 2.54
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "5:2",
+          "number": "5",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 10.16
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "6:3",
+          "number": "6",
+          "shape": "circle",
+          "centerMm": {
+            "x": 5.08,
+            "y": 10.16
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "9:4",
+          "number": "9",
+          "shape": "circle",
+          "centerMm": {
+            "x": 5.08,
+            "y": 2.54
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "10:5",
+          "number": "10",
+          "shape": "circle",
+          "centerMm": {
+            "x": 5.08,
+            "y": 0
+          },
+          "widthMm": 2,
+          "heightMm": 2,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.6,
+            "y": -1.5
+          },
+          "b": {
+            "x": 0.6,
+            "y": -1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.6,
+            "y": 0.6
+          },
+          "b": {
+            "x": -1.6,
+            "y": -1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.4,
+            "y": -1.3
+          },
+          "b": {
+            "x": 6.4,
+            "y": -1.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.4,
+            "y": 11.4
+          },
+          "b": {
+            "x": -1.4,
+            "y": -1.3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.762,
+            "y": 3.683
+          },
+          "b": {
+            "x": 0.762,
+            "y": 4.318
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.762,
+            "y": 4.318
+          },
+          "b": {
+            "x": 1.422,
+            "y": 4.318
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.422,
+            "y": 3.81
+          },
+          "b": {
+            "x": 1.422,
+            "y": 4.826
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.422,
+            "y": 4.826
+          },
+          "b": {
+            "x": 3.327,
+            "y": 4.826
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.946,
+            "y": 3.81
+          },
+          "b": {
+            "x": 2.311,
+            "y": 4.826
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.327,
+            "y": 3.81
+          },
+          "b": {
+            "x": 1.422,
+            "y": 3.81
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.327,
+            "y": 3.81
+          },
+          "b": {
+            "x": 3.327,
+            "y": 4.826
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.962,
+            "y": 3.683
+          },
+          "b": {
+            "x": 3.962,
+            "y": 4.318
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.962,
+            "y": 4.318
+          },
+          "b": {
+            "x": 3.327,
+            "y": 4.318
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.4,
+            "y": -1.3
+          },
+          "b": {
+            "x": 6.4,
+            "y": 11.4
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.4,
+            "y": 11.4
+          },
+          "b": {
+            "x": -1.4,
+            "y": 11.4
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.2,
+            "y": -0.1
+          },
+          "b": {
+            "x": -0.1,
+            "y": -1.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.2,
+            "y": 11.2
+          },
+          "b": {
+            "x": -1.2,
+            "y": -0.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.1,
+            "y": -1.1
+          },
+          "b": {
+            "x": 6.2,
+            "y": -1.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.2,
+            "y": -1.1
+          },
+          "b": {
+            "x": 6.2,
+            "y": 11.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.2,
+            "y": 11.2
+          },
+          "b": {
+            "x": -1.2,
+            "y": 11.2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:2.54:6.35:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 2.54,
+            "y": 6.35
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:2.5:-2.2:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 2.5,
+            "y": -2.2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:2.5:12.5:Relay_SPDT_Omron_G5V-1",
+          "text": "Relay_SPDT_Omron_G5V-1",
+          "at": {
+            "x": 2.5,
+            "y": 12.5
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.6600000000000006,
+        "minY": -1.5600000000000005,
+        "maxX": 6.460000000000001,
+        "maxY": 11.46
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Relay_SPDT_Omron_G5V-1",
+    "description": "Relay Omron G5V-1, see http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf",
+    "tags": [
+      "Relay",
+      "Omron",
+      "G5V-1"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "rect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 2.54
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "5",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 10.16
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "6",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 5.08,
+          "y": 10.16
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "9",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 5.08,
+          "y": 2.54
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "10",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 5.08,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2,
+          "height": 2
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.6,
+            -1.5
+          ],
+          "end": [
+            0.6,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "0364f17b-5969-44bd-868f-17a8c5e8f617"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.6,
+            0.6
+          ],
+          "end": [
+            -1.6,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b1029820-3a6f-4574-8e37-3b0354191593"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.4,
+            -1.3
+          ],
+          "end": [
+            6.4,
+            -1.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "d8c990fa-6f27-4878-bff4-20fa18441519"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.4,
+            11.4
+          ],
+          "end": [
+            -1.4,
+            -1.3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "ab2c76a7-7134-4326-a8f8-8dd0e460e63a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.762,
+            3.683
+          ],
+          "end": [
+            0.762,
+            4.318
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "dd68f9b8-9b45-4749-a5c1-822f6f03d511"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.762,
+            4.318
+          ],
+          "end": [
+            1.422,
+            4.318
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "7bf1ec7b-f5a8-48a7-b34c-b94abea9872a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.422,
+            3.81
+          ],
+          "end": [
+            1.422,
+            4.826
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "0d2a5deb-2823-4aea-9955-351c9a32a010"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.422,
+            4.826
+          ],
+          "end": [
+            3.327,
+            4.826
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "4f2dd7e6-6723-4f97-af9a-df4690bb9f25"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.946,
+            3.81
+          ],
+          "end": [
+            2.311,
+            4.826
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "1417230d-cb97-44e1-a6e2-0a559055036b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.327,
+            3.81
+          ],
+          "end": [
+            1.422,
+            3.81
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "006bb884-c467-4e79-9370-96062ce6e659"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.327,
+            3.81
+          ],
+          "end": [
+            3.327,
+            4.826
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "8f61eb37-31bb-48ad-b706-9f6c668aaf28"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.962,
+            3.683
+          ],
+          "end": [
+            3.962,
+            4.318
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b35cfe1f-8638-4584-945e-533a4bbf86df"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.962,
+            4.318
+          ],
+          "end": [
+            3.327,
+            4.318
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "87a3220d-3969-42b4-b903-b57d4ce8b4c2"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.4,
+            -1.3
+          ],
+          "end": [
+            6.4,
+            11.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "0337e8a4-1543-4941-ac24-aa7cade91166"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.4,
+            11.4
+          ],
+          "end": [
+            -1.4,
+            11.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "3127aa5a-0731-41a8-bc4d-e5489ea122b7"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.45,
+            -1.35
+          ],
+          "end": [
+            -1.45,
+            11.45
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "62d37f91-2007-4874-a1fd-d710f5952760"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.45,
+            -1.35
+          ],
+          "end": [
+            6.45,
+            -1.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "5b33c0ee-ce2a-41da-b154-fb6d065ba471"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            6.45,
+            11.45
+          ],
+          "end": [
+            -1.45,
+            11.45
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "1faf2284-9f47-4066-a6f6-5b408830a576"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            6.45,
+            11.45
+          ],
+          "end": [
+            6.45,
+            -1.35
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "78383f8a-d4eb-4d3c-b52d-442a531d74ab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.2,
+            -0.1
+          ],
+          "end": [
+            -0.1,
+            -1.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "5dc4b71a-10c6-4008-ba96-d6efd41ab7d5"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.2,
+            11.2
+          ],
+          "end": [
+            -1.2,
+            -0.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "5c75d7f9-6ca7-4e13-a455-ea3484aa3bcc"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.1,
+            -1.1
+          ],
+          "end": [
+            6.2,
+            -1.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "dc99b7b9-2977-47ad-a01f-373c701f9bc0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            6.2,
+            -1.1
+          ],
+          "end": [
+            6.2,
+            11.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "1d075b1a-f09c-473d-b5c2-b9fd4cedc803"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            6.2,
+            11.2
+          ],
+          "end": [
+            -1.2,
+            11.2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "8083652f-e266-44af-9cca-2cfee627dd2c"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2.54,
+            6.35,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "a1646c17-be7d-413a-96c2-845265982121",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 2.54,
+            "y": 6.35
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            2.5,
+            -2.2,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b70a7406-d10f-4bf8-8ee3-a9297750cad5",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 2.5,
+            "y": -2.2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2.5,
+            12.5,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "cba316ac-dca3-4bab-be60-728468352070",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Relay_SPDT_Omron_G5V-1"
+          ]
+        },
+        "text": {
+          "content": "Relay_SPDT_Omron_G5V-1",
+          "position": {
+            "x": 2.5,
+            "y": 12.5
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPDT_Omron_G5V-1.step",
+        "resolvedFileName": "Relay_SPDT_Omron_G5V-1.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Relay_SPDT_Omron_G5V-1\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"Relay Omron G5V-1, see http://omronfs.omron.com/en_US/ecb/products/pdf/en-g5v_1.pdf\")\n\t(tags \"Relay Omron G5V-1\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 2.5 -2.2 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b70a7406-d10f-4bf8-8ee3-a9297750cad5\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Relay_SPDT_Omron_G5V-1\"\n\t\t(at 2.5 12.5 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"cba316ac-dca3-4bab-be60-728468352070\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"ef75fee9-18f8-4a2f-9af9-332835b3670e\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"ea7fc97e-6d15-4f62-bfce-9690ef36b5c3\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -1.6 -1.5)\n\t\t(end 0.6 -1.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"0364f17b-5969-44bd-868f-17a8c5e8f617\")\n\t)\n\t(fp_line\n\t\t(start -1.6 0.6)\n\t\t(end -1.6 -1.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b1029820-3a6f-4574-8e37-3b0354191593\")\n\t)\n\t(fp_line\n\t\t(start -1.4 -1.3)\n\t\t(end 6.4 -1.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"d8c990fa-6f27-4878-bff4-20fa18441519\")\n\t)\n\t(fp_line\n\t\t(start -1.4 11.4)\n\t\t(end -1.4 -1.3)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"ab2c76a7-7134-4326-a8f8-8dd0e460e63a\")\n\t)\n\t(fp_line\n\t\t(start 0.762 3.683)\n\t\t(end 0.762 4.318)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"dd68f9b8-9b45-4749-a5c1-822f6f03d511\")\n\t)\n\t(fp_line\n\t\t(start 0.762 4.318)\n\t\t(end 1.422 4.318)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"7bf1ec7b-f5a8-48a7-b34c-b94abea9872a\")\n\t)\n\t(fp_line\n\t\t(start 1.422 3.81)\n\t\t(end 1.422 4.826)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"0d2a5deb-2823-4aea-9955-351c9a32a010\")\n\t)\n\t(fp_line\n\t\t(start 1.422 4.826)\n\t\t(end 3.327 4.826)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"4f2dd7e6-6723-4f97-af9a-df4690bb9f25\")\n\t)\n\t(fp_line\n\t\t(start 2.946 3.81)\n\t\t(end 2.311 4.826)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1417230d-cb97-44e1-a6e2-0a559055036b\")\n\t)\n\t(fp_line\n\t\t(start 3.327 3.81)\n\t\t(end 1.422 3.81)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"006bb884-c467-4e79-9370-96062ce6e659\")\n\t)\n\t(fp_line\n\t\t(start 3.327 3.81)\n\t\t(end 3.327 4.826)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"8f61eb37-31bb-48ad-b706-9f6c668aaf28\")\n\t)\n\t(fp_line\n\t\t(start 3.962 3.683)\n\t\t(end 3.962 4.318)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b35cfe1f-8638-4584-945e-533a4bbf86df\")\n\t)\n\t(fp_line\n\t\t(start 3.962 4.318)\n\t\t(end 3.327 4.318)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"87a3220d-3969-42b4-b903-b57d4ce8b4c2\")\n\t)\n\t(fp_line\n\t\t(start 6.4 -1.3)\n\t\t(end 6.4 11.4)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"0337e8a4-1543-4941-ac24-aa7cade91166\")\n\t)\n\t(fp_line\n\t\t(start 6.4 11.4)\n\t\t(end -1.4 11.4)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"3127aa5a-0731-41a8-bc4d-e5489ea122b7\")\n\t)\n\t(fp_line\n\t\t(start -1.45 -1.35)\n\t\t(end -1.45 11.45)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"62d37f91-2007-4874-a1fd-d710f5952760\")\n\t)\n\t(fp_line\n\t\t(start -1.45 -1.35)\n\t\t(end 6.45 -1.35)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"5b33c0ee-ce2a-41da-b154-fb6d065ba471\")\n\t)\n\t(fp_line\n\t\t(start 6.45 11.45)\n\t\t(end -1.45 11.45)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"1faf2284-9f47-4066-a6f6-5b408830a576\")\n\t)\n\t(fp_line\n\t\t(start 6.45 11.45)\n\t\t(end 6.45 -1.35)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"78383f8a-d4eb-4d3c-b52d-442a531d74ab\")\n\t)\n\t(fp_line\n\t\t(start -1.2 -0.1)\n\t\t(end -0.1 -1.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"5dc4b71a-10c6-4008-ba96-d6efd41ab7d5\")\n\t)\n\t(fp_line\n\t\t(start -1.2 11.2)\n\t\t(end -1.2 -0.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"5c75d7f9-6ca7-4e13-a455-ea3484aa3bcc\")\n\t)\n\t(fp_line\n\t\t(start -0.1 -1.1)\n\t\t(end 6.2 -1.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"dc99b7b9-2977-47ad-a01f-373c701f9bc0\")\n\t)\n\t(fp_line\n\t\t(start 6.2 -1.1)\n\t\t(end 6.2 11.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1d075b1a-f09c-473d-b5c2-b9fd4cedc803\")\n\t)\n\t(fp_line\n\t\t(start 6.2 11.2)\n\t\t(end -1.2 11.2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"8083652f-e266-44af-9cca-2cfee627dd2c\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 2.54 6.35 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"a1646c17-be7d-413a-96c2-845265982121\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole rect\n\t\t(at 0 0)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"10f8453e-85bd-43c0-928f-28e0e31b3495\")\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 0 2.54)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"ef32e2ae-f84e-4fca-ba81-72501a693282\")\n\t)\n\t(pad \"5\" thru_hole circle\n\t\t(at 0 10.16)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"16c7b498-eeff-4408-af3c-02317ac181d2\")\n\t)\n\t(pad \"6\" thru_hole circle\n\t\t(at 5.08 10.16)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"5dc0d09d-ce29-474b-99bd-120ba4ea6fe3\")\n\t)\n\t(pad \"9\" thru_hole circle\n\t\t(at 5.08 2.54)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"5e3556db-f926-402b-9de8-c108471c9742\")\n\t)\n\t(pad \"10\" thru_hole circle\n\t\t(at 5.08 0)\n\t\t(size 2 2)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"cf83eb7b-7e21-44a3-a1bf-cd7189b4789e\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Relay_THT.3dshapes/Relay_SPDT_Omron_G5V-1.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Relay_SPDT_Omron_G5V-1.kicad_mod"
+}

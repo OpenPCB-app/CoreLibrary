@@ -1,0 +1,77 @@
+{
+  "id": "openpcb.core.power.mcp73831",
+  "uuid": "d81c4241-5957-5750-8eaa-398b1552a56d",
+  "version": "0.3.0",
+  "name": "MCP73831 Li-Ion Charger 500mA",
+  "description": "Microchip MCP73831-2 single-cell Li-Ion linear charge controller, 500 mA, SOT-23-5.",
+  "category": "power",
+  "subcategory": "battery-charger",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "MCP73831",
+    "lithium",
+    "charger",
+    "li-ion",
+    "battery"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://ww1.microchip.com/downloads/en/DeviceDoc/20001984g.pdf",
+  "parameters": {
+    "vbat": "4.2V",
+    "ichg": "15-500mA (prog)",
+    "cell": "1S Li-Ion"
+  },
+  "symbol": "openpcb.core.symbol.power.mcp73831",
+  "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23-5",
+      "label": "SOT-23-5",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "MCP73831-2-OT.kicad_sym",
+    "sourceLibrary": "Battery_Management",
+    "sourceItemName": "MCP73831 Li-Ion Charger 500mA",
+    "sourceHash": "1be531eed98cc4793b5a422776311f66ee8f4e21b52e918939089b58a51cb1ad",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

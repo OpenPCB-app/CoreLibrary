@@ -1,0 +1,816 @@
+{
+  "id": "openpcb.core.symbol.power.tp4056",
+  "uuid": "b429fc67-baab-50e2-b944-6d7d54bbe7b0",
+  "version": "0.3.0",
+  "name": "TP4056 Li-Ion Charger 1A",
+  "referencePrefix": "U",
+  "description": "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "TP4056-42-ESOP8.kicad_sym",
+    "sourceLibrary": "Battery_Management",
+    "sourceItemName": "TP4056-42-ESOP8",
+    "sourceHash": "51b6ce19c4bd94d52e52ef8854542d913c4a3fc51df8bed76d898d6cd2b60f3a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "TP4056-42-ESOP8",
+      "Footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf",
+      "Description": "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)",
+      "ki_keywords": "lithium-ion lithium-polymer Li-Poly",
+      "ki_fp_filters": "*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "TP4056-42-ESOP8.kicad_sym",
+        "sourceItemName": "TP4056-42-ESOP8",
+        "sha256": "c0d361e6b57d3619df9a5afecd71f2ffa111e68ed5b413a94c21faa79ffc71b7"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_4a523847722d8fb5",
+    "name": "TP4056-42-ESOP8",
+    "referencePrefix": "U",
+    "description": "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)",
+    "sourceHash": "51b6ce19c4bd94d52e52ef8854542d913c4a3fc51df8bed76d898d6cd2b60f3a",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "TEMP",
+        "localPosition": {
+          "x": 10.16,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "PROG",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -12.7
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "V_{CC}",
+        "localPosition": {
+          "x": 0,
+          "y": 12.7
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "BAT",
+        "localPosition": {
+          "x": 10.16,
+          "y": 5.08
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "~{STDBY}",
+        "localPosition": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "electricalType": "open_collector",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "~{CHRG}",
+        "localPosition": {
+          "x": -10.16,
+          "y": 0
+        },
+        "electricalType": "open_collector",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "CE",
+        "localPosition": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "EPAD",
+        "localPosition": {
+          "x": -2.54,
+          "y": -12.7
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "TP4056-42-ESOP8",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -10.16,
+          "width": 15.24,
+          "height": 20.32,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "TEMP",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:2",
+          "name": "PROG",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "GND",
+          "number": "3",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -10.16
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:4",
+          "name": "V_{CC}",
+          "number": "4",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 10.16
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:5",
+          "name": "BAT",
+          "number": "5",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:6",
+          "name": "~{STDBY}",
+          "number": "6",
+          "electricalType": "open_collector",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:7",
+          "name": "~{CHRG}",
+          "number": "7",
+          "electricalType": "open_collector",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:8",
+          "name": "CE",
+          "number": "8",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:9",
+          "name": "EPAD",
+          "number": "9",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": -10.16
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "TEMP",
+          "at": {
+            "x": 7.112,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 8.89,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "PROG",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 0.508,
+            "y": -12.4968
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "V_{CC}",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": 12.4968
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "BAT",
+          "at": {
+            "x": 7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "~{STDBY}",
+          "at": {
+            "x": -7.112,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "~{CHRG}",
+          "at": {
+            "x": -7.112,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -8.89,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "CE",
+          "at": {
+            "x": -7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": -8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "EPAD",
+          "at": {
+            "x": -2.54,
+            "y": -10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": -2.032,
+            "y": -12.4968
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 16.662399999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "TP4056-42-ESOP8",
+          "at": {
+            "x": 0,
+            "y": -15.087599999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -16.357599999999998,
+        "maxX": 10.16,
+        "maxY": 17.932399999999994
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "TP4056-42-ESOP8",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "TEMP",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PROG",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "3",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "V_{CC}",
+        "number": "4",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BAT",
+        "number": "5",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{STDBY}",
+        "number": "6",
+        "electricalType": "open_collector",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "~{CHRG}",
+        "number": "7",
+        "electricalType": "open_collector",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "CE",
+        "number": "8",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "EPAD",
+        "number": "9",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 0,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "TP4056-42-ESOP8",
+      "Footprint": "Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias",
+      "Datasheet": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf",
+      "Description": "1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)",
+      "ki_keywords": "lithium-ion lithium-polymer Li-Poly",
+      "ki_fp_filters": "*SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 1,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            10.16
+          ],
+          [
+            "end",
+            7.62,
+            -10.16
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol TP4056-42-ESOP8 (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -6.604 11.684 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value TP4056-42-ESOP8 (at 10.16 11.684 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Package_SO:SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.3mm_ThermalVias (at 0.508 -22.86 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf (at 0 -25.4 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"1A Standalone Linear Li-ion/LiPo single-cell battery charger, 4.2V ±1% charge voltage, VCC = 4.0..8.0V, SOIC-8 (SOP-8)\" (at 0.508 -20.32 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"lithium-ion lithium-polymer Li-Poly\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters *SO*3.9x4.*P1.27mm*EP2.4*x3.3*mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol TP4056-42-ESOP8_1_0 (pin input line (at 10.16 0 180) (length 2.54) (name TEMP (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 10.16 -2.54 180) (length 2.54) (name PROG (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -12.7 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 12.7 270) (length 2.54) (name V_{CC} (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin power_out line (at 10.16 5.08 180) (length 2.54) (name BAT (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin open_collector line (at -10.16 -2.54 0) (length 2.54) (name ~{STDBY} (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin open_collector line (at -10.16 0 0) (length 2.54) (name ~{CHRG} (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 5.08 0) (length 2.54) (name CE (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin passive line (at -2.54 -12.7 90) (length 2.54) (name EPAD (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27)))))) (symbol TP4056-42-ESOP8_1_1 (rectangle (start -7.62 10.16) (end 7.62 -10.16) (stroke (width 0.254) (type default)) (fill (type background)))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

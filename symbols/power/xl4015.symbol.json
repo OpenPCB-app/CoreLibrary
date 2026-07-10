@@ -1,0 +1,528 @@
+{
+  "id": "openpcb.core.symbol.power.xl4015",
+  "uuid": "73bcc75c-08d0-5e82-b0ff-b645083bc0ed",
+  "version": "0.3.0",
+  "name": "XL4015 5A Buck Converter",
+  "referencePrefix": "U",
+  "description": "5A 180kHz 36V Buck DC to DC Converter",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "XL4015.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "XL4015",
+    "sourceHash": "a8a615a3680d01cb21d56a5a9ecc0a49ee464d9d5fef14939e328040b4285eea",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U?",
+      "Value": "XL4015",
+      "Footprint": "Package_TO_SOT_SMD:TO-263-5_TabPin3",
+      "Datasheet": "http://www.xlsemi.net/datasheet/XL4015%20datasheet-English.pdf",
+      "Description": "5A 180kHz 36V Buck DC to DC Converter",
+      "ki_keywords": "Buck DC-DC",
+      "ki_fp_filters": "TO?263*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "XL4015.kicad_sym",
+        "sourceItemName": "XL4015",
+        "sha256": "8471ff244a07036b08271c3e982168d119b03764a49cc6cf38be512eae82b2eb"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_046899fb09ffef7d",
+    "name": "XL4015",
+    "referencePrefix": "U",
+    "description": "5A 180kHz 36V Buck DC to DC Converter",
+    "sourceHash": "a8a615a3680d01cb21d56a5a9ecc0a49ee464d9d5fef14939e328040b4285eea",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "FB",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "SW",
+        "localPosition": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "VC",
+        "localPosition": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "VIN",
+        "localPosition": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "XL4015",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -5.08,
+          "width": 15.24,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "GND",
+          "number": "1",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:2",
+          "name": "FB",
+          "number": "2",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:3",
+          "name": "SW",
+          "number": "3",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:4",
+          "name": "VC",
+          "number": "4",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "VIN",
+          "number": "5",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "FB",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "SW",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "VC",
+          "at": {
+            "x": -7.112,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "VIN",
+          "at": {
+            "x": -7.112,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -8.89,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U?",
+          "at": {
+            "x": 0,
+            "y": 6.4769999999999985
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "XL4015",
+          "at": {
+            "x": 0,
+            "y": -9.2202
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -10.4902,
+        "maxX": 10.16,
+        "maxY": 7.746999999999998
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "XL4015",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "GND",
+        "number": "1",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "FB",
+        "number": "2",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "SW",
+        "number": "3",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VC",
+        "number": "4",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VIN",
+        "number": "5",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U?",
+      "Value": "XL4015",
+      "Footprint": "Package_TO_SOT_SMD:TO-263-5_TabPin3",
+      "Datasheet": "http://www.xlsemi.net/datasheet/XL4015%20datasheet-English.pdf",
+      "Description": "5A 180kHz 36V Buck DC to DC Converter",
+      "ki_keywords": "Buck DC-DC",
+      "ki_fp_filters": "TO?263*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            5.08
+          ],
+          [
+            "end",
+            7.62,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol XL4015 (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U? (at -6.35 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value XL4015 (at 6.35 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Package_TO_SOT_SMD:TO-263-5_TabPin3 (at 21.59 -7.62 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.xlsemi.net/datasheet/XL4015%20datasheet-English.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"5A 180kHz 36V Buck DC to DC Converter\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"Buck DC-DC\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters TO?263* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol XL4015_0_1 (rectangle (start -7.62 5.08) (end 7.62 -5.08) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol XL4015_1_1 (pin power_in line (at 0 -7.62 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin input line (at 10.16 -2.54 180) (length 2.54) (name FB (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin power_out line (at 10.16 2.54 180) (length 2.54) (name SW (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin input line (at -10.16 -2.54 0) (length 2.54) (name VC (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin power_in line (at -10.16 2.54 0) (length 2.54) (name VIN (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

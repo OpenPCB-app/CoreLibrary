@@ -1,0 +1,744 @@
+{
+  "id": "openpcb.core.symbol.ic.acs712",
+  "uuid": "98359450-039e-534f-a4e0-3c7bb8962ecd",
+  "version": "0.3.0",
+  "name": "ACS712 Hall Current Sensor",
+  "referencePrefix": "U",
+  "description": "±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 185mV/A, SOIC-8",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "ACS712xLCTR-05B.kicad_sym",
+    "sourceLibrary": "Sensor_Current",
+    "sourceItemName": "ACS712xLCTR-05B",
+    "sourceHash": "14d717dfc0aba6f71856cdf5d9ae55ce5b7a469c35fec7462dfb936a241c360a",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "ACS712xLCTR-05B",
+      "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "Datasheet": "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en",
+      "Description": "±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 185mV/A, SOIC-8",
+      "ki_keywords": "hall effect current monitor sensor isolated",
+      "ki_fp_filters": "SOIC*3.9x4.9m*P1.27mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "ACS712xLCTR-05B.kicad_sym",
+        "sourceItemName": "ACS712xLCTR-05B",
+        "sha256": "440ae95dfd9c1130d6800ebabf31fb4ddfcd058fbda19bfd391fe0da252184f6"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_a1b5ef90adfbf2ad",
+    "name": "ACS712xLCTR-05B",
+    "referencePrefix": "U",
+    "description": "±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 185mV/A, SOIC-8",
+    "sourceHash": "14d717dfc0aba6f71856cdf5d9ae55ce5b7a469c35fec7462dfb936a241c360a",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "IP+",
+        "localPosition": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "IP+",
+        "localPosition": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "IP-",
+        "localPosition": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "IP-",
+        "localPosition": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -10.16
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "FILTER",
+        "localPosition": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "VIOUT",
+        "localPosition": {
+          "x": 10.16,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "VCC",
+        "localPosition": {
+          "x": 0,
+          "y": 10.16
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "ACS712xLCTR-05B",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -7.62,
+          "y": -7.62,
+          "width": 15.24,
+          "height": 15.24,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "IP+",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "IP+",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "IP-",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "IP-",
+          "number": "4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "GND",
+          "number": "5",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -7.62
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:6",
+          "name": "FILTER",
+          "number": "6",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:7",
+          "name": "VIOUT",
+          "number": "7",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 10.16,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:8",
+          "name": "VCC",
+          "number": "8",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 7.62
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "IP+",
+          "at": {
+            "x": -7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "IP+",
+          "at": {
+            "x": -7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -8.89,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "IP-",
+          "at": {
+            "x": -7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "IP-",
+          "at": {
+            "x": -7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -8.89,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": 0.508,
+            "y": -9.956800000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "FILTER",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 8.89,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "VIOUT",
+          "at": {
+            "x": 7.112,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 8.89,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "VCC",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 0.508,
+            "y": 9.956800000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 11.7602
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "ACS712xLCTR-05B",
+          "at": {
+            "x": 0,
+            "y": -11.7602
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -10.16,
+        "minY": -13.030199999999999,
+        "maxX": 10.16,
+        "maxY": 13.030199999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "ACS712xLCTR-05B",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "IP+",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IP+",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IP-",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "IP-",
+        "number": "4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "5",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "FILTER",
+        "number": "6",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VIOUT",
+        "number": "7",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 10.16,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCC",
+        "number": "8",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "ACS712xLCTR-05B",
+      "Footprint": "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm",
+      "Datasheet": "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en",
+      "Description": "±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 185mV/A, SOIC-8",
+      "ki_keywords": "hall effect current monitor sensor isolated",
+      "ki_fp_filters": "SOIC*3.9x4.9m*P1.27mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -7.62,
+            7.62
+          ],
+          [
+            "end",
+            7.62,
+            -7.62
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol ACS712xLCTR-05B (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at 2.54 11.43 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value ACS712xLCTR-05B (at 2.54 8.89 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_SO:SOIC-8_3.9x4.9mm_P1.27mm (at 2.54 -8.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27) (italic yes)) (justify left))) (property Datasheet http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"±5A Bidirectional Hall-Effect Current Sensor, +5.0V supply, 185mV/A, SOIC-8\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"hall effect current monitor sensor isolated\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters SOIC*3.9x4.9m*P1.27mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol ACS712xLCTR-05B_0_1 (rectangle (start -7.62 7.62) (end 7.62 -7.62) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol ACS712xLCTR-05B_1_1 (pin passive line (at -10.16 5.08 0) (length 2.54) (name IP+ (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at -10.16 5.08 0) (length 2.54) (hide yes) (name IP+ (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at -10.16 -5.08 0) (length 2.54) (name IP- (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin passive line (at -10.16 -5.08 0) (length 2.54) (hide yes) (name IP- (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -10.16 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin passive line (at 10.16 -2.54 180) (length 2.54) (name FILTER (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin output line (at 10.16 0 180) (length 2.54) (name VIOUT (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 10.16 270) (length 2.54) (name VCC (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

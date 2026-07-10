@@ -1,0 +1,2551 @@
+{
+  "version": "0.3.0",
+  "components": [
+    {
+      "id": "openpcb.core.connector.usb-c-receptacle",
+      "name": "USB-C Receptacle (USB 2.0, 16P)",
+      "description": "USB Type-C receptacle, USB 2.0 subset, 16 pins + shield (HRO TYPE-C-31-M-12 style).",
+      "category": "connector",
+      "subcategory": "usb",
+      "tags": [
+        "connector",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "USB-C",
+        "type-c",
+        "receptacle",
+        "USB 2.0",
+        "TYPE-C-31-M-12"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.usb-c-receptacle",
+        "path": "kicad-symbols/Connector.kicad_symdir/USB_C_Receptacle_USB2.0_16P.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.usb-c-hro-type-c-31-m-12",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.usb-c-hro-type-c-31-m-12",
+          "path": "kicad-footprints/Connector_USB.pretty/USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+          "label": "HRO TYPE-C-31-M-12",
+          "no3d": true,
+          "pinMap": [
+            {
+              "pinNumber": "A1",
+              "padNumber": "A1"
+            },
+            {
+              "pinNumber": "A4",
+              "padNumber": "A4"
+            },
+            {
+              "pinNumber": "A5",
+              "padNumber": "A5"
+            },
+            {
+              "pinNumber": "A6",
+              "padNumber": "A6"
+            },
+            {
+              "pinNumber": "A7",
+              "padNumber": "A7"
+            },
+            {
+              "pinNumber": "A8",
+              "padNumber": "A8"
+            },
+            {
+              "pinNumber": "A9",
+              "padNumber": "A9"
+            },
+            {
+              "pinNumber": "A12",
+              "padNumber": "A12"
+            },
+            {
+              "pinNumber": "B1",
+              "padNumber": "B1"
+            },
+            {
+              "pinNumber": "B4",
+              "padNumber": "B4"
+            },
+            {
+              "pinNumber": "B5",
+              "padNumber": "B5"
+            },
+            {
+              "pinNumber": "B6",
+              "padNumber": "B6"
+            },
+            {
+              "pinNumber": "B7",
+              "padNumber": "B7"
+            },
+            {
+              "pinNumber": "B8",
+              "padNumber": "B8"
+            },
+            {
+              "pinNumber": "B9",
+              "padNumber": "B9"
+            },
+            {
+              "pinNumber": "B12",
+              "padNumber": "B12"
+            },
+            {
+              "pinNumber": "SH",
+              "padNumber": "SH"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.bridge-rectifier-abs",
+      "name": "Bridge Rectifier ABS (SMD)",
+      "description": "Single-phase bridge rectifier, Diotec ABS SMD package (e.g. ABS8/ABS10).",
+      "category": "diode",
+      "subcategory": "bridge",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "bridge rectifier",
+        "ABS",
+        "SMD",
+        "AC-DC"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.bridge-rectifier-abs",
+        "path": "kicad-symbols/Diode_Bridge.kicad_symdir/ABS8.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.bridge-diotec-abs",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.bridge-diotec-abs",
+          "path": "kicad-footprints/Diode_SMD.pretty/Diode_Bridge_Diotec_ABS.kicad_mod",
+          "label": "Diotec ABS",
+          "model": {
+            "id": "openpcb.core.3d.diode.bridge-diotec-abs",
+            "path": "kicad-packages3D/Diode_SMD.3dshapes/Diode_Bridge_Diotec_ABS.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.diode.bridge-rectifier-dip",
+      "name": "Bridge Rectifier DIP-4 (DB107)",
+      "description": "Single-phase bridge rectifier, DIP-4 THT (DB101–DB107 style).",
+      "category": "diode",
+      "subcategory": "bridge",
+      "tags": [
+        "diode",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "bridge rectifier",
+        "DB107",
+        "DIP-4",
+        "AC-DC"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.diode.bridge-rectifier-dip",
+        "path": "kicad-symbols/Device.kicad_symdir/D_Bridge_+-AA.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.diode.bridge-dip-4-w7-62mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.diode.bridge-dip-4-w7-62mm",
+          "path": "kicad-footprints/Diode_THT.pretty/Diode_Bridge_DIP-4_W7.62mm_P5.08mm.kicad_mod",
+          "label": "DIP-4",
+          "model": {
+            "id": "openpcb.core.3d.diode.bridge-dip-4-w7-62mm",
+            "path": "kicad-packages3D/Diode_THT.3dshapes/Diode_Bridge_DIP-4_W7.62mm_P5.08mm.step",
+            "scaleMm": {
+              "x": 1,
+              "y": -1,
+              "z": 1
+            }
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.relay.relay-srd-spdt",
+      "name": "Relay SPDT SRD (Songle)",
+      "description": "SPDT power relay, Sanyou/Songle SRD series THT (10A form C).",
+      "category": "relay",
+      "subcategory": "power-relay",
+      "tags": [
+        "relay",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "relay",
+        "SPDT",
+        "SRD-05VDC",
+        "songle",
+        "10A"
+      ],
+      "parameters": {
+        "contacts": "SPDT",
+        "contactRating": "10A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.relay.relay-srd-spdt",
+        "path": "kicad-symbols/Relay.kicad_symdir/SANYOU_SRD_Form_C.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.relay.relay-srd-form-c",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.relay.relay-srd-form-c",
+          "path": "kicad-footprints/Relay_THT.pretty/Relay_SPDT_SANYOU_SRD_Series_Form_C.kicad_mod",
+          "label": "SRD THT",
+          "model": {
+            "id": "openpcb.core.3d.relay.relay-srd-form-c",
+            "path": "kicad-packages3D/Relay_THT.3dshapes/Relay_SPDT_SANYOU_SRD_Series_Form_C.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.relay.relay-g5v1-spdt",
+      "name": "Relay SPDT G5V-1 (Signal)",
+      "description": "SPDT signal relay, Omron G5V-1 THT (1A).",
+      "category": "relay",
+      "subcategory": "signal-relay",
+      "tags": [
+        "relay",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "relay",
+        "SPDT",
+        "G5V-1",
+        "omron",
+        "signal"
+      ],
+      "parameters": {
+        "contacts": "SPDT",
+        "contactRating": "1A"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.relay.relay-g5v1-spdt",
+        "path": "kicad-symbols/Relay.kicad_symdir/G5V-1.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.relay.relay-omron-g5v-1",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.relay.relay-omron-g5v-1",
+          "path": "kicad-footprints/Relay_THT.pretty/Relay_SPDT_Omron_G5V-1.kicad_mod",
+          "label": "G5V-1 THT",
+          "model": {
+            "id": "openpcb.core.3d.relay.relay-omron-g5v-1",
+            "path": "kicad-packages3D/Relay_THT.3dshapes/Relay_SPDT_Omron_G5V-1.step",
+            "scaleMm": {
+              "x": 1,
+              "y": -1,
+              "z": 1
+            }
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.ap63203",
+      "name": "AP63203 3.3V 2A Buck Converter",
+      "description": "Diodes Inc. AP63203 synchronous buck converter, 3.8–32 V in, fixed 3.3 V 2 A out, TSOT-23-6.",
+      "category": "power",
+      "subcategory": "regulator-buck",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "buck",
+        "step-down",
+        "AP63203",
+        "3.3V",
+        "2A",
+        "switching"
+      ],
+      "parameters": {
+        "vin": "3.8-32V",
+        "vout": "3.3V",
+        "iout": "2A",
+        "topology": "buck"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.ap63203",
+        "path": "kicad-symbols/Regulator_Switching.kicad_symdir/AP63203WU.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.power.tsot-23-6",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.power.tsot-23-6",
+          "path": "kicad-footprints/Package_TO_SOT_SMD.pretty/TSOT-23-6.kicad_mod",
+          "label": "TSOT-23-6",
+          "model": {
+            "id": "openpcb.core.3d.power.tsot-23-6",
+            "path": "kicad-packages3D/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.xl4015",
+      "name": "XL4015 5A Buck Converter",
+      "description": "XLSEMI XL4015 180 kHz 36 V 5 A buck converter, TO-263-5.",
+      "category": "power",
+      "subcategory": "regulator-buck",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "buck",
+        "step-down",
+        "XL4015",
+        "5A",
+        "switching",
+        "CC-CV"
+      ],
+      "parameters": {
+        "vin": "8-36V",
+        "iout": "5A",
+        "topology": "buck"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.xl4015",
+        "path": "kicad-symbols/Regulator_Switching.kicad_symdir/XL4015.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-263-5-tabpin3",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-263-5-tabpin3",
+          "label": "TO-263-5",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.tp4056",
+      "name": "TP4056 Li-Ion Charger 1A",
+      "description": "NanJing TP4056 single-cell Li-Ion linear charger, 1 A programmable, ESOP-8.",
+      "category": "power",
+      "subcategory": "battery-charger",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TP4056",
+        "lithium",
+        "charger",
+        "li-ion",
+        "1A",
+        "battery"
+      ],
+      "parameters": {
+        "vbat": "4.2V",
+        "ichg": "1A (prog)",
+        "cell": "1S Li-Ion"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.tp4056",
+        "path": "kicad-symbols/Battery_Management.kicad_symdir/TP4056-42-ESOP8.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.power.soic-8-1ep-ep2-29x3mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.power.soic-8-1ep-ep2-29x3mm",
+          "path": "kicad-footprints/Package_SO.pretty/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm.kicad_mod",
+          "label": "ESOP-8",
+          "model": {
+            "id": "openpcb.core.3d.power.soic-8-1ep-ep2-29x3mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.29x3mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.mcp73831",
+      "name": "MCP73831 Li-Ion Charger 500mA",
+      "description": "Microchip MCP73831-2 single-cell Li-Ion linear charge controller, 500 mA, SOT-23-5.",
+      "category": "power",
+      "subcategory": "battery-charger",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "MCP73831",
+        "lithium",
+        "charger",
+        "li-ion",
+        "battery"
+      ],
+      "parameters": {
+        "vbat": "4.2V",
+        "ichg": "15-500mA (prog)",
+        "cell": "1S Li-Ion"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.mcp73831",
+        "path": "kicad-symbols/Battery_Management.kicad_symdir/MCP73831-2-OT.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23-5",
+          "label": "SOT-23-5",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.battery.battery-holder-cr2032",
+      "name": "CR2032 Battery Holder",
+      "description": "CR2032/20 mm coin-cell holder, THT (Keystone 3034 style).",
+      "category": "battery",
+      "subcategory": "holder",
+      "tags": [
+        "battery",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "CR2032",
+        "coin cell",
+        "battery holder",
+        "RTC backup"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.battery.battery-cell",
+        "path": "kicad-symbols/Device.kicad_symdir/Battery_Cell.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.battery.battery-cr2032-keystone-3034",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.battery.battery-cr2032-keystone-3034",
+          "path": "kicad-footprints/Battery.pretty/BatteryHolder_Keystone_3034_1x20mm.kicad_mod",
+          "label": "Keystone 3034",
+          "model": {
+            "id": "openpcb.core.3d.battery.battery-cr2032-keystone-3034",
+            "path": "kicad-packages3D/Battery.3dshapes/BatteryHolder_Keystone_3034_1x20mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.battery.battery-holder-18650",
+      "name": "18650 Battery Holder",
+      "description": "Single 18650 Li-Ion cell holder, THT (Keystone 1042 style).",
+      "category": "battery",
+      "subcategory": "holder",
+      "tags": [
+        "battery",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "18650",
+        "battery holder",
+        "li-ion",
+        "cell"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.battery.battery-cell",
+        "path": "kicad-symbols/Device.kicad_symdir/Battery_Cell.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.battery.battery-18650-keystone-1042",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.battery.battery-18650-keystone-1042",
+          "path": "kicad-footprints/Battery.pretty/BatteryHolder_Keystone_1042_1x18650.kicad_mod",
+          "label": "Keystone 1042",
+          "belowBoardBudgetMm": 4,
+          "model": {
+            "id": "openpcb.core.3d.battery.battery-18650-keystone-1042",
+            "path": "kicad-packages3D/Battery.3dshapes/BatteryHolder_Keystone_1042_1x18650.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.ina219",
+      "name": "INA219 Current/Power Monitor",
+      "description": "TI INA219 high-side current/power monitor with I2C, SOIC-8.",
+      "category": "ic",
+      "subcategory": "sensor-current",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "INA219",
+        "current sense",
+        "power monitor",
+        "I2C",
+        "shunt"
+      ],
+      "parameters": {
+        "interface": "I2C",
+        "busVoltage": "0-26V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.ina219",
+        "path": "kicad-symbols/Sensor_Energy.kicad_symdir/INA219BxD.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "label": "SOIC-8",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.acs712",
+      "name": "ACS712 Hall Current Sensor",
+      "description": "Allegro ACS712 Hall-effect linear current sensor (±5/±20/±30 A variants), SOIC-8.",
+      "category": "ic",
+      "subcategory": "sensor-current",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ACS712",
+        "current sense",
+        "hall",
+        "isolated"
+      ],
+      "parameters": {
+        "range": "±5/±20/±30A",
+        "output": "analog"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.acs712",
+        "path": "kicad-symbols/Sensor_Current.kicad_symdir/ACS712xLCTR-05B.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "label": "SOIC-8",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.crystal.oscillator-sg8002",
+      "name": "Crystal Oscillator SG-8002 (3.2x2.5)",
+      "description": "Seiko Epson SG-8002 programmable active crystal oscillator, 4-pin SMD 3.2x2.5 mm.",
+      "category": "crystal",
+      "subcategory": "oscillator",
+      "tags": [
+        "crystal",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "oscillator",
+        "XO",
+        "clock",
+        "SG-8002",
+        "active crystal"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.crystal.oscillator-sg8002",
+        "path": "kicad-symbols/Oscillator.kicad_symdir/SG-8002CE.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.crystal.osc-sg8002ce-3-2x2-5mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.crystal.osc-sg8002ce-3-2x2-5mm",
+          "path": "kicad-footprints/Oscillator.pretty/Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm.kicad_mod",
+          "label": "SMD 3.2x2.5",
+          "no3d": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.crystal.crystal-32768hz",
+      "name": "Crystal 32.768 kHz (SMD 3215)",
+      "description": "32.768 kHz watch crystal, SMD 3215 (3.2x1.5 mm), for RTCs.",
+      "category": "crystal",
+      "subcategory": "crystal",
+      "tags": [
+        "crystal",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "crystal",
+        "32.768kHz",
+        "watch",
+        "RTC",
+        "3215"
+      ],
+      "parameters": {
+        "frequency": "32.768kHz",
+        "loadCapacitance": "12.5pF (typ)"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.crystal.crystal-32768hz",
+        "path": "kicad-symbols/Device.kicad_symdir/Crystal.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.crystal.crystal-smd-3215-2pin",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.crystal.crystal-smd-3215-2pin",
+          "label": "SMD 3215",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.microsd-dm3at",
+      "name": "microSD Card Socket (Hirose DM3AT)",
+      "description": "microSD card socket with card-detect switch, Hirose DM3AT-SF-PEJM5, push-push SMD.",
+      "category": "connector",
+      "subcategory": "card",
+      "tags": [
+        "connector",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "microSD",
+        "SD card",
+        "socket",
+        "DM3AT",
+        "storage"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.microsd-dm3at",
+        "path": "kicad-symbols/Connector.kicad_symdir/Micro_SD_Card_Det_Hirose_DM3AT.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.microsd-hirose-dm3at",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.microsd-hirose-dm3at",
+          "path": "kicad-footprints/Connector_Card.pretty/microSD_HC_Hirose_DM3AT-SF-PEJM5.kicad_mod",
+          "label": "DM3AT push-push",
+          "model": {
+            "id": "openpcb.core.3d.connector.microsd-hirose-dm3at",
+            "path": "kicad-packages3D/Connector_Card.3dshapes/microSD_HC_Hirose_DM3AT-SF-PEJM5.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "SH",
+              "padNumber": "SH"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.passive.fuseholder-5x20",
+      "name": "Fuse Holder 5x20 mm",
+      "description": "Open fuse holder for 5x20 mm cartridge fuses, THT (Schurter 0031.8201).",
+      "category": "passive",
+      "subcategory": "fuse-holder",
+      "tags": [
+        "passive",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "fuse",
+        "fuse holder",
+        "5x20",
+        "protection"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.passive.fuse",
+        "path": "kicad-symbols/Device.kicad_symdir/Fuse.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.passive.fuseholder-5x20-schurter",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.passive.fuseholder-5x20-schurter",
+          "path": "kicad-footprints/Fuse.pretty/Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.kicad_mod",
+          "label": "5x20 horizontal",
+          "model": {
+            "id": "openpcb.core.3d.passive.fuseholder-5x20-schurter",
+            "path": "kicad-packages3D/Fuse.3dshapes/Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.drv8833",
+      "name": "DRV8833 Dual H-Bridge Motor Driver",
+      "description": "TI DRV8833 dual H-bridge DC motor driver, 1.5 A/bridge, HTSSOP-16.",
+      "category": "ic",
+      "subcategory": "driver-motor",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "DRV8833",
+        "motor driver",
+        "H-bridge",
+        "DC motor",
+        "stepper"
+      ],
+      "parameters": {
+        "channels": "2",
+        "ioutPerBridge": "1.5A",
+        "vm": "2.7-10.8V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.drv8833",
+        "path": "kicad-symbols/Driver_Motor.kicad_symdir/DRV8833PWP.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.ic.htssop-16-1ep",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.ic.htssop-16-1ep",
+          "path": "kicad-footprints/Package_SO.pretty/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm.kicad_mod",
+          "label": "HTSSOP-16",
+          "model": {
+            "id": "openpcb.core.3d.ic.htssop-16-1ep",
+            "path": "kicad-packages3D/Package_SO.3dshapes/HTSSOP-16-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask2.66x2.46mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.w5500",
+      "name": "W5500 Ethernet Controller",
+      "description": "WIZnet W5500 hardwired TCP/IP Ethernet controller, SPI, LQFP-48.",
+      "category": "ic",
+      "subcategory": "interface-ethernet",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "W5500",
+        "ethernet",
+        "TCP/IP",
+        "SPI",
+        "network"
+      ],
+      "parameters": {
+        "interface": "SPI",
+        "phy": "10/100"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.w5500",
+        "path": "kicad-symbols/Interface_Ethernet.kicad_symdir/W5500.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.lqfp-48-7x7mm-p0-5mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.lqfp-48-7x7mm-p0-5mm",
+          "label": "LQFP-48",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            },
+            {
+              "pinNumber": "21",
+              "padNumber": "21"
+            },
+            {
+              "pinNumber": "22",
+              "padNumber": "22"
+            },
+            {
+              "pinNumber": "23",
+              "padNumber": "23"
+            },
+            {
+              "pinNumber": "24",
+              "padNumber": "24"
+            },
+            {
+              "pinNumber": "25",
+              "padNumber": "25"
+            },
+            {
+              "pinNumber": "26",
+              "padNumber": "26"
+            },
+            {
+              "pinNumber": "27",
+              "padNumber": "27"
+            },
+            {
+              "pinNumber": "28",
+              "padNumber": "28"
+            },
+            {
+              "pinNumber": "29",
+              "padNumber": "29"
+            },
+            {
+              "pinNumber": "30",
+              "padNumber": "30"
+            },
+            {
+              "pinNumber": "31",
+              "padNumber": "31"
+            },
+            {
+              "pinNumber": "32",
+              "padNumber": "32"
+            },
+            {
+              "pinNumber": "33",
+              "padNumber": "33"
+            },
+            {
+              "pinNumber": "34",
+              "padNumber": "34"
+            },
+            {
+              "pinNumber": "35",
+              "padNumber": "35"
+            },
+            {
+              "pinNumber": "36",
+              "padNumber": "36"
+            },
+            {
+              "pinNumber": "37",
+              "padNumber": "37"
+            },
+            {
+              "pinNumber": "38",
+              "padNumber": "38"
+            },
+            {
+              "pinNumber": "39",
+              "padNumber": "39"
+            },
+            {
+              "pinNumber": "40",
+              "padNumber": "40"
+            },
+            {
+              "pinNumber": "41",
+              "padNumber": "41"
+            },
+            {
+              "pinNumber": "42",
+              "padNumber": "42"
+            },
+            {
+              "pinNumber": "43",
+              "padNumber": "43"
+            },
+            {
+              "pinNumber": "44",
+              "padNumber": "44"
+            },
+            {
+              "pinNumber": "45",
+              "padNumber": "45"
+            },
+            {
+              "pinNumber": "46",
+              "padNumber": "46"
+            },
+            {
+              "pinNumber": "47",
+              "padNumber": "47"
+            },
+            {
+              "pinNumber": "48",
+              "padNumber": "48"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.connector.rj45-magjack",
+      "name": "RJ45 MagJack (LEDs, Shielded)",
+      "description": "RJ45 Ethernet jack with integrated magnetics and LEDs, shielded THT (Amphenol RJHSE538X style).",
+      "category": "connector",
+      "subcategory": "ethernet",
+      "tags": [
+        "connector",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "RJ45",
+        "ethernet",
+        "magjack",
+        "magnetics",
+        "network"
+      ],
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.connector.rj45-magjack",
+        "path": "kicad-symbols/Connector.kicad_symdir/RJ45_LED_Shielded.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.connector.rj45-amphenol-rjhse538x",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.connector.rj45-amphenol-rjhse538x",
+          "path": "kicad-footprints/Connector_RJ.pretty/RJ45_Amphenol_RJHSE538X.kicad_mod",
+          "label": "RJHSE538X",
+          "model": {
+            "id": "openpcb.core.3d.connector.rj45-amphenol-rjhse538x",
+            "path": "kicad-packages3D/Connector_RJ.3dshapes/RJ45_Amphenol_RJHSE538X.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "SH",
+              "padNumber": "SH"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.lm386",
+      "name": "LM386 Audio Amplifier",
+      "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
+      "category": "ic",
+      "subcategory": "amplifier-audio",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM386",
+        "audio",
+        "amplifier",
+        "speaker"
+      ],
+      "parameters": {
+        "gain": "20-200",
+        "pout": "0.3-1W",
+        "vcc": "4-12V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.lm386",
+        "path": "kicad-symbols/Amplifier_Audio.kicad_symdir/LM386.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "label": "SOIC-8",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.pam8403",
+      "name": "PAM8403 Class-D Audio Amplifier",
+      "description": "Diodes PAM8403 3 W stereo filterless class-D audio amplifier, SOIC-16.",
+      "category": "ic",
+      "subcategory": "amplifier-audio",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "PAM8403",
+        "class-D",
+        "audio",
+        "amplifier",
+        "3W",
+        "stereo"
+      ],
+      "parameters": {
+        "channels": "2",
+        "pout": "3W @ 5V/4Ω"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.pam8403",
+        "path": "kicad-symbols/Amplifier_Audio.kicad_symdir/PAM8403D.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+          "label": "SOIC-16",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.power.lm4040-2v5",
+      "name": "LM4040 2.5V Voltage Reference",
+      "description": "LM4040 precision micropower shunt voltage reference, 2.5 V, SOT-23.",
+      "category": "power",
+      "subcategory": "reference",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "LM4040",
+        "voltage reference",
+        "2.5V",
+        "shunt",
+        "precision"
+      ],
+      "parameters": {
+        "vref": "2.5V",
+        "type": "shunt"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.power.lm4040-2v5",
+        "path": "kicad-symbols/Reference_Voltage.kicad_symdir/LM4040DBZ-2.5.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.sot-23",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "label": "SOT-23",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.ad620",
+      "name": "AD620 Instrumentation Amplifier",
+      "description": "Analog Devices AD620 low-power instrumentation amplifier, gain 1–10000, SOIC-8.",
+      "category": "ic",
+      "subcategory": "amplifier-instrumentation",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "AD620",
+        "instrumentation amplifier",
+        "in-amp",
+        "sensor"
+      ],
+      "parameters": {
+        "gain": "1-10000 (RG)",
+        "vos": "50µV max",
+        "supply": "±2.3-18V"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.ad620",
+        "path": "kicad-symbols/Amplifier_Instrumentation.kicad_symdir/AD620.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "label": "SOIC-8",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.adum1201",
+      "name": "ADuM1201 Dual Digital Isolator",
+      "description": "Analog Devices ADuM1201 dual-channel digital isolator (1 in / 1 out), SOIC-8.",
+      "category": "ic",
+      "subcategory": "isolator",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ADuM1201",
+        "digital isolator",
+        "isolation",
+        "UART"
+      ],
+      "parameters": {
+        "channels": "2 (1/1)",
+        "isolation": "2.5kVrms"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.adum1201",
+        "path": "kicad-symbols/Isolator.kicad_symdir/ADUM1201AR.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "label": "SOIC-8",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.sensor.a1301-hall",
+      "name": "A1301 Linear Hall Sensor",
+      "description": "Allegro A1301 ratiometric linear Hall-effect sensor, TO-92.",
+      "category": "sensor",
+      "subcategory": "hall",
+      "tags": [
+        "sensor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "hall sensor",
+        "A1301",
+        "magnetic",
+        "linear"
+      ],
+      "parameters": {
+        "output": "ratiometric analog",
+        "sensitivity": "2.5mV/G"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.sensor.a1301-hall",
+        "path": "kicad-symbols/Sensor_Magnetic.kicad_symdir/A1301xUA.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.to-92-inline",
+          "label": "TO-92",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.esp32-c3-wroom-02",
+      "name": "ESP32-C3-WROOM-02 Module",
+      "description": "Espressif ESP32-C3-WROOM-02 Wi-Fi + BLE module (RISC-V single core).",
+      "category": "ic",
+      "subcategory": "mcu-module",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ESP32-C3",
+        "wifi",
+        "bluetooth",
+        "module",
+        "RISC-V"
+      ],
+      "parameters": {
+        "core": "RISC-V @160MHz",
+        "radio": "WiFi4 + BLE5"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.esp32-c3-wroom-02",
+        "path": "kicad-symbols/RF_Module.kicad_symdir/ESP32-C3-WROOM-02.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.ic.esp32-c3-wroom-02",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.ic.esp32-c3-wroom-02",
+          "path": "kicad-footprints/RF_Module.pretty/ESP32-C3-WROOM-02.kicad_mod",
+          "label": "WROOM-02",
+          "model": {
+            "id": "openpcb.core.3d.ic.esp32-c3-wroom-02",
+            "path": "kicad-packages3D/RF_Module.3dshapes/ESP32-C3-WROOM-02.step",
+            "scaleMm": {
+              "x": 1,
+              "y": -1,
+              "z": 1
+            }
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.esp32-s3-wroom-1",
+      "name": "ESP32-S3-WROOM-1 Module",
+      "description": "Espressif ESP32-S3-WROOM-1 Wi-Fi + BLE module (dual-core LX7, USB OTG).",
+      "category": "ic",
+      "subcategory": "mcu-module",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ESP32-S3",
+        "wifi",
+        "bluetooth",
+        "module",
+        "USB OTG"
+      ],
+      "parameters": {
+        "core": "2x LX7 @240MHz",
+        "radio": "WiFi4 + BLE5"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.esp32-s3-wroom-1",
+        "path": "kicad-symbols/RF_Module.kicad_symdir/ESP32-S3-WROOM-1.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.ic.esp32-s3-wroom-1",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.ic.esp32-s3-wroom-1",
+          "path": "kicad-footprints/RF_Module.pretty/ESP32-S3-WROOM-1.kicad_mod",
+          "label": "WROOM-1",
+          "model": {
+            "id": "openpcb.core.3d.ic.esp32-s3-wroom-1",
+            "path": "kicad-packages3D/RF_Module.3dshapes/ESP32-S3-WROOM-1.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            },
+            {
+              "pinNumber": "21",
+              "padNumber": "21"
+            },
+            {
+              "pinNumber": "22",
+              "padNumber": "22"
+            },
+            {
+              "pinNumber": "23",
+              "padNumber": "23"
+            },
+            {
+              "pinNumber": "24",
+              "padNumber": "24"
+            },
+            {
+              "pinNumber": "25",
+              "padNumber": "25"
+            },
+            {
+              "pinNumber": "26",
+              "padNumber": "26"
+            },
+            {
+              "pinNumber": "27",
+              "padNumber": "27"
+            },
+            {
+              "pinNumber": "28",
+              "padNumber": "28"
+            },
+            {
+              "pinNumber": "29",
+              "padNumber": "29"
+            },
+            {
+              "pinNumber": "30",
+              "padNumber": "30"
+            },
+            {
+              "pinNumber": "31",
+              "padNumber": "31"
+            },
+            {
+              "pinNumber": "32",
+              "padNumber": "32"
+            },
+            {
+              "pinNumber": "33",
+              "padNumber": "33"
+            },
+            {
+              "pinNumber": "34",
+              "padNumber": "34"
+            },
+            {
+              "pinNumber": "35",
+              "padNumber": "35"
+            },
+            {
+              "pinNumber": "36",
+              "padNumber": "36"
+            },
+            {
+              "pinNumber": "37",
+              "padNumber": "37"
+            },
+            {
+              "pinNumber": "38",
+              "padNumber": "38"
+            },
+            {
+              "pinNumber": "39",
+              "padNumber": "39"
+            },
+            {
+              "pinNumber": "40",
+              "padNumber": "40"
+            },
+            {
+              "pinNumber": "41",
+              "padNumber": "41"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.atmega32u4",
+      "name": "ATmega32U4 MCU",
+      "description": "Microchip ATmega32U4 8-bit AVR MCU with native USB, 32 KB flash, TQFP-44.",
+      "category": "ic",
+      "subcategory": "mcu",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ATmega32U4",
+        "AVR",
+        "USB",
+        "arduino leonardo",
+        "pro micro"
+      ],
+      "parameters": {
+        "core": "AVR @16MHz",
+        "flash": "32KB",
+        "usb": "native FS"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.atmega32u4",
+        "path": "kicad-symbols/MCU_Microchip_ATmega.kicad_symdir/ATmega32U4-A.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.ic.tqfp-44-10x10mm-p0-8mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.ic.tqfp-44-10x10mm-p0-8mm",
+          "path": "kicad-footprints/Package_QFP.pretty/TQFP-44_10x10mm_P0.8mm.kicad_mod",
+          "label": "TQFP-44",
+          "model": {
+            "id": "openpcb.core.3d.ic.tqfp-44-10x10mm-p0-8mm",
+            "path": "kicad-packages3D/Package_QFP.3dshapes/TQFP-44_10x10mm_P0.8mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            },
+            {
+              "pinNumber": "21",
+              "padNumber": "21"
+            },
+            {
+              "pinNumber": "22",
+              "padNumber": "22"
+            },
+            {
+              "pinNumber": "23",
+              "padNumber": "23"
+            },
+            {
+              "pinNumber": "24",
+              "padNumber": "24"
+            },
+            {
+              "pinNumber": "25",
+              "padNumber": "25"
+            },
+            {
+              "pinNumber": "26",
+              "padNumber": "26"
+            },
+            {
+              "pinNumber": "27",
+              "padNumber": "27"
+            },
+            {
+              "pinNumber": "28",
+              "padNumber": "28"
+            },
+            {
+              "pinNumber": "29",
+              "padNumber": "29"
+            },
+            {
+              "pinNumber": "30",
+              "padNumber": "30"
+            },
+            {
+              "pinNumber": "31",
+              "padNumber": "31"
+            },
+            {
+              "pinNumber": "32",
+              "padNumber": "32"
+            },
+            {
+              "pinNumber": "33",
+              "padNumber": "33"
+            },
+            {
+              "pinNumber": "34",
+              "padNumber": "34"
+            },
+            {
+              "pinNumber": "35",
+              "padNumber": "35"
+            },
+            {
+              "pinNumber": "36",
+              "padNumber": "36"
+            },
+            {
+              "pinNumber": "37",
+              "padNumber": "37"
+            },
+            {
+              "pinNumber": "38",
+              "padNumber": "38"
+            },
+            {
+              "pinNumber": "39",
+              "padNumber": "39"
+            },
+            {
+              "pinNumber": "40",
+              "padNumber": "40"
+            },
+            {
+              "pinNumber": "41",
+              "padNumber": "41"
+            },
+            {
+              "pinNumber": "42",
+              "padNumber": "42"
+            },
+            {
+              "pinNumber": "43",
+              "padNumber": "43"
+            },
+            {
+              "pinNumber": "44",
+              "padNumber": "44"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "openpcb.core.ic.stm32g030f6",
+      "name": "STM32G030F6 MCU",
+      "description": "ST STM32G030F6 Cortex-M0+ MCU, 32 KB flash, TSSOP-20.",
+      "category": "ic",
+      "subcategory": "mcu",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "STM32G030",
+        "cortex-m0+",
+        "MCU",
+        "ARM"
+      ],
+      "parameters": {
+        "core": "Cortex-M0+ @64MHz",
+        "flash": "32KB"
+      },
+      "datasheet": null,
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.stm32g030f6",
+        "path": "kicad-symbols/MCU_ST_STM32G0.kicad_symdir/STM32G030F6Px.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",
+          "label": "TSSOP-20",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

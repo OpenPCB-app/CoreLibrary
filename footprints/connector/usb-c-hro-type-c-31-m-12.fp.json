@@ -1,0 +1,1478 @@
+{
+  "id": "openpcb.core.footprint.connector.usb-c-hro-type-c-31-m-12",
+  "uuid": "7244f452-5dd8-52ab-8e21-b23029f0731f",
+  "version": "0.3.0",
+  "name": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [],
+  "no3d": true,
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+    "sourceLibrary": "Connector_USB",
+    "sourceItemName": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+    "sourceHash": "c562a7f9713a8b754c4d2305a2ea15453469a1c8c48a9b17973383e8993fc750",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_b389262b4f8f607f",
+    "fileName": "USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
+    "name": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+    "description": "USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf",
+    "mountType": "smd",
+    "padCount": 22,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "usb",
+      "usb-c",
+      "2.0",
+      "pd",
+      "smd"
+    ],
+    "sourceHash": "c562a7f9713a8b754c4d2305a2ea15453469a1c8c48a9b17973383e8993fc750",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+      "pads": [
+        {
+          "id": "?:0",
+          "number": "",
+          "shape": "circle",
+          "centerMm": {
+            "x": -2.89,
+            "y": -2.6
+          },
+          "widthMm": 0.65,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.65,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "?:1",
+          "number": "",
+          "shape": "circle",
+          "centerMm": {
+            "x": 2.89,
+            "y": -2.6
+          },
+          "widthMm": 0.65,
+          "heightMm": 0.65,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.65,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "A1:2",
+          "number": "A1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.25,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "A4:3",
+          "number": "A4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -2.45,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "A5:4",
+          "number": "A5",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.25,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "A6:5",
+          "number": "A6",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -0.25,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "A7:6",
+          "number": "A7",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0.25,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "A8:7",
+          "number": "A8",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.25,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "A9:8",
+          "number": "A9",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 2.45,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "A12:9",
+          "number": "A12",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.25,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B1:10",
+          "number": "B1",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 3.25,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B4:11",
+          "number": "B4",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 2.45,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B5:12",
+          "number": "B5",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 1.75,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B6:13",
+          "number": "B6",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": 0.75,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B7:14",
+          "number": "B7",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -0.75,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B8:15",
+          "number": "B8",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -1.75,
+            "y": -4.045
+          },
+          "widthMm": 0.3,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B9:16",
+          "number": "B9",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -2.45,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "B12:17",
+          "number": "B12",
+          "shape": "roundrect",
+          "centerMm": {
+            "x": -3.25,
+            "y": -4.045
+          },
+          "widthMm": 0.6,
+          "heightMm": 1.45,
+          "rotationDeg": 0,
+          "roundrectRatio": 0.25,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "SH:18",
+          "number": "SH",
+          "shape": "oval",
+          "centerMm": {
+            "x": -4.32,
+            "y": -3.13
+          },
+          "widthMm": 1,
+          "heightMm": 2.1,
+          "rotationDeg": 0,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "SH:19",
+          "number": "SH",
+          "shape": "oval",
+          "centerMm": {
+            "x": -4.32,
+            "y": 1.05
+          },
+          "widthMm": 1,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "SH:20",
+          "number": "SH",
+          "shape": "oval",
+          "centerMm": {
+            "x": 4.32,
+            "y": -3.13
+          },
+          "widthMm": 1,
+          "heightMm": 2.1,
+          "rotationDeg": 0,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "SH:21",
+          "number": "SH",
+          "shape": "oval",
+          "centerMm": {
+            "x": 4.32,
+            "y": 1.05
+          },
+          "widthMm": 1,
+          "heightMm": 1.6,
+          "rotationDeg": 0,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.7,
+            "y": -1.9
+          },
+          "b": {
+            "x": -4.7,
+            "y": 0.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.7,
+            "y": 2
+          },
+          "b": {
+            "x": -4.7,
+            "y": 3.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.7,
+            "y": 3.9
+          },
+          "b": {
+            "x": 4.7,
+            "y": 3.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.7,
+            "y": -1.9
+          },
+          "b": {
+            "x": 4.7,
+            "y": 0.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.7,
+            "y": 2
+          },
+          "b": {
+            "x": 4.7,
+            "y": 3.9
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.47,
+            "y": -3.65
+          },
+          "b": {
+            "x": -4.47,
+            "y": 3.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.47,
+            "y": -3.65
+          },
+          "b": {
+            "x": 4.47,
+            "y": -3.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.47,
+            "y": 3.65
+          },
+          "b": {
+            "x": 4.47,
+            "y": 3.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4.47,
+            "y": -3.65
+          },
+          "b": {
+            "x": 4.47,
+            "y": 3.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-5.645:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -5.645
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:5.1:USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+          "text": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+          "at": {
+            "x": 0,
+            "y": 5.1
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.82,
+        "minY": -4.77,
+        "maxX": 4.82,
+        "maxY": 3.9600000000000004
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+    "description": "USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf",
+    "tags": [
+      "usb",
+      "usb-c",
+      "2.0",
+      "pd"
+    ],
+    "pads": [
+      {
+        "number": "",
+        "type": "np_thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": -2.89,
+          "y": -2.6
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.65,
+          "height": 0.65
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.65
+      },
+      {
+        "number": "",
+        "type": "np_thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 2.89,
+          "y": -2.6
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.65,
+          "height": 0.65
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.65
+      },
+      {
+        "number": "A1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "A4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -2.45,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "A5",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "A6",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -0.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "A7",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 0.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "A8",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "A9",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 2.45,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "A12",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 3.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B4",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 2.45,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B5",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.75,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B6",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 0.75,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B7",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -0.75,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B8",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.75,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.3,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B9",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -2.45,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "B12",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -3.25,
+          "y": -4.045
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.6,
+          "height": 1.45
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": -4.32,
+          "y": -3.13
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 2.1
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ]
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": -4.32,
+          "y": 1.05
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ]
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 4.32,
+          "y": -3.13
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 2.1
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ]
+      },
+      {
+        "number": "SH",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 4.32,
+          "y": 1.05
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ]
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.7,
+            -1.9
+          ],
+          "end": [
+            -4.7,
+            0.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "9513b845-7495-41b4-99da-c8a12a5f4b76"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.7,
+            2
+          ],
+          "end": [
+            -4.7,
+            3.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "7abeef8d-db92-4e88-b3d6-7c7e4efa4938"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -4.7,
+            3.9
+          ],
+          "end": [
+            4.7,
+            3.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "f40329f5-4d09-479c-8f81-97fdcd13c5cd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.7,
+            -1.9
+          ],
+          "end": [
+            4.7,
+            0.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "177e7db1-b916-4e65-ace8-532e6e1f85db"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            4.7,
+            2
+          ],
+          "end": [
+            4.7,
+            3.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "bd122681-67e3-4c23-b564-57e345c7c818"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -5.32,
+            -5.27
+          ],
+          "end": [
+            -5.32,
+            4.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "d939342c-cab3-429e-ad71-738d34173267"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -5.32,
+            -5.27
+          ],
+          "end": [
+            5.32,
+            -5.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "3215d7dd-650e-4c6a-86e5-bc970c8d9c6c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -5.32,
+            4.15
+          ],
+          "end": [
+            5.32,
+            4.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "c38cb6a1-740b-49d2-b49e-f8ce3382fe48"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            5.32,
+            -5.27
+          ],
+          "end": [
+            5.32,
+            4.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "3b610068-7f90-495b-a772-9a6b7e6a55c9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -4.47,
+            -3.65
+          ],
+          "end": [
+            -4.47,
+            3.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "47095738-bb75-4e91-802c-f92840c443b3"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -4.47,
+            -3.65
+          ],
+          "end": [
+            4.47,
+            -3.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "6142486d-ba8a-4b38-a6ca-d52b6a020ef2"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -4.47,
+            3.65
+          ],
+          "end": [
+            4.47,
+            3.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "84966fee-864e-4cdc-8345-c62bca33694f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            4.47,
+            -3.65
+          ],
+          "end": [
+            4.47,
+            3.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "f6b3cf35-21be-4e1f-8c99-3404cfc41d3f"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "9189a13a-f353-4ddb-8257-370c54398cd0",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -5.645,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "a144ce76-cc23-44fb-8108-bf18e64a4c3d",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -5.645
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            5.1,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "0ca5cf76-e951-4e58-a402-14dc42a864b3",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "USB_C_Receptacle_HRO_TYPE-C-31-M-12"
+          ]
+        },
+        "text": {
+          "content": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
+          "position": {
+            "x": 0,
+            "y": 5.1
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step",
+        "resolvedFileName": "USB_C_Receptacle_HRO_TYPE-C-31-M-12.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"USB_C_Receptacle_HRO_TYPE-C-31-M-12\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf\")\n\t(tags \"usb usb-c 2.0 pd\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -5.645 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"a144ce76-cc23-44fb-8108-bf18e64a4c3d\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"USB_C_Receptacle_HRO_TYPE-C-31-M-12\"\n\t\t(at 0 5.1 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"0ca5cf76-e951-4e58-a402-14dc42a864b3\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"2b954944-56ad-4032-bee5-bd7186324aef\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"9d55800b-f601-4afa-9fad-eee332310ae0\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -4.7 -1.9)\n\t\t(end -4.7 0.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"9513b845-7495-41b4-99da-c8a12a5f4b76\")\n\t)\n\t(fp_line\n\t\t(start -4.7 2)\n\t\t(end -4.7 3.9)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"7abeef8d-db92-4e88-b3d6-7c7e4efa4938\")\n\t)\n\t(fp_line\n\t\t(start -4.7 3.9)\n\t\t(end 4.7 3.9)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f40329f5-4d09-479c-8f81-97fdcd13c5cd\")\n\t)\n\t(fp_line\n\t\t(start 4.7 -1.9)\n\t\t(end 4.7 0.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"177e7db1-b916-4e65-ace8-532e6e1f85db\")\n\t)\n\t(fp_line\n\t\t(start 4.7 2)\n\t\t(end 4.7 3.9)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"bd122681-67e3-4c23-b564-57e345c7c818\")\n\t)\n\t(fp_line\n\t\t(start -5.32 -5.27)\n\t\t(end -5.32 4.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"d939342c-cab3-429e-ad71-738d34173267\")\n\t)\n\t(fp_line\n\t\t(start -5.32 -5.27)\n\t\t(end 5.32 -5.27)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"3215d7dd-650e-4c6a-86e5-bc970c8d9c6c\")\n\t)\n\t(fp_line\n\t\t(start -5.32 4.15)\n\t\t(end 5.32 4.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"c38cb6a1-740b-49d2-b49e-f8ce3382fe48\")\n\t)\n\t(fp_line\n\t\t(start 5.32 -5.27)\n\t\t(end 5.32 4.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"3b610068-7f90-495b-a772-9a6b7e6a55c9\")\n\t)\n\t(fp_line\n\t\t(start -4.47 -3.65)\n\t\t(end -4.47 3.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"47095738-bb75-4e91-802c-f92840c443b3\")\n\t)\n\t(fp_line\n\t\t(start -4.47 -3.65)\n\t\t(end 4.47 -3.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"6142486d-ba8a-4b38-a6ca-d52b6a020ef2\")\n\t)\n\t(fp_line\n\t\t(start -4.47 3.65)\n\t\t(end 4.47 3.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"84966fee-864e-4cdc-8345-c62bca33694f\")\n\t)\n\t(fp_line\n\t\t(start 4.47 -3.65)\n\t\t(end 4.47 3.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"f6b3cf35-21be-4e1f-8c99-3404cfc41d3f\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"9189a13a-f353-4ddb-8257-370c54398cd0\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"\" np_thru_hole circle\n\t\t(at -2.89 -2.6)\n\t\t(size 0.65 0.65)\n\t\t(drill 0.65)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(uuid \"e13b4b37-788a-41d5-87ca-c66be43ee32d\")\n\t)\n\t(pad \"\" np_thru_hole circle\n\t\t(at 2.89 -2.6)\n\t\t(size 0.65 0.65)\n\t\t(drill 0.65)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(uuid \"4558f1f0-2fa3-46e1-a220-284fa2707bb5\")\n\t)\n\t(pad \"A1\" smd roundrect\n\t\t(at -3.25 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"245fae56-8b58-4bd8-bbf1-36624dc3fa3e\")\n\t)\n\t(pad \"A4\" smd roundrect\n\t\t(at -2.45 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"412cd3c1-0d89-4ca6-be0e-1b17d8471f5a\")\n\t)\n\t(pad \"A5\" smd roundrect\n\t\t(at -1.25 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"93953890-acba-456b-bb6d-b1e79179ffa0\")\n\t)\n\t(pad \"A6\" smd roundrect\n\t\t(at -0.25 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"6a642da3-3122-4031-a6e9-68498b0f5bb9\")\n\t)\n\t(pad \"A7\" smd roundrect\n\t\t(at 0.25 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"01b9b129-063c-4bae-b620-9610006254cb\")\n\t)\n\t(pad \"A8\" smd roundrect\n\t\t(at 1.25 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"46ecdf8a-0917-4257-a388-b77e7451dc23\")\n\t)\n\t(pad \"A9\" smd roundrect\n\t\t(at 2.45 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"a35f3da7-7460-43f1-99b7-9ed521817778\")\n\t)\n\t(pad \"A12\" smd roundrect\n\t\t(at 3.25 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"3795b0f1-50f9-473e-9d26-381fc08b3c2d\")\n\t)\n\t(pad \"B1\" smd roundrect\n\t\t(at 3.25 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"c9e8a0db-2a60-41d9-b783-6c4e64a8fb5d\")\n\t)\n\t(pad \"B4\" smd roundrect\n\t\t(at 2.45 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"51b193ee-c8c2-4ee6-8d8c-14b79a2c1520\")\n\t)\n\t(pad \"B5\" smd roundrect\n\t\t(at 1.75 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"45f8f791-f545-4341-9848-fb81a03703a6\")\n\t)\n\t(pad \"B6\" smd roundrect\n\t\t(at 0.75 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"efc27675-62a0-44de-8210-29c2190dd309\")\n\t)\n\t(pad \"B7\" smd roundrect\n\t\t(at -0.75 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"96622dcb-c1cc-4b7d-8455-8cd0ce1e5c34\")\n\t)\n\t(pad \"B8\" smd roundrect\n\t\t(at -1.75 -4.045)\n\t\t(size 0.3 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"09bb6e12-e7e5-4788-b43e-4cc6c50a557a\")\n\t)\n\t(pad \"B9\" smd roundrect\n\t\t(at -2.45 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"70539c09-2020-4a42-a156-43d1513170d0\")\n\t)\n\t(pad \"B12\" smd roundrect\n\t\t(at -3.25 -4.045)\n\t\t(size 0.6 1.45)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t\t(uuid \"eda87c04-3a59-4e2c-a9bd-f59ed31672aa\")\n\t)\n\t(pad \"SH\" thru_hole oval\n\t\t(at -4.32 -3.13)\n\t\t(size 1 2.1)\n\t\t(drill oval 0.6 1.7)\n\t\t(property pad_prop_mechanical)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"69c3dc88-a37e-49ef-ae4d-497d3191ad5b\")\n\t)\n\t(pad \"SH\" thru_hole oval\n\t\t(at -4.32 1.05)\n\t\t(size 1 1.6)\n\t\t(drill oval 0.6 1.2)\n\t\t(property pad_prop_mechanical)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"5991ca6f-c5c1-4692-8fe9-cf4b7ca50c4b\")\n\t)\n\t(pad \"SH\" thru_hole oval\n\t\t(at 4.32 -3.13)\n\t\t(size 1 2.1)\n\t\t(drill oval 0.6 1.7)\n\t\t(property pad_prop_mechanical)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"af5ae63f-ef36-487e-a6b8-831b84890f25\")\n\t)\n\t(pad \"SH\" thru_hole oval\n\t\t(at 4.32 1.05)\n\t\t(size 1 1.6)\n\t\t(drill oval 0.6 1.2)\n\t\t(property pad_prop_mechanical)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"e783dde5-f762-4528-9b55-9220820b0b1c\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Connector_USB.3dshapes/USB_C_Receptacle_HRO_TYPE-C-31-M-12.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod"
+}

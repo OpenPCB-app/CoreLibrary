@@ -1,0 +1,582 @@
+{
+  "id": "openpcb.core.symbol.crystal.oscillator-sg8002",
+  "uuid": "2d619097-1e01-55dc-bdba-1f9be0d8ef6e",
+  "version": "0.3.0",
+  "name": "Crystal Oscillator SG-8002 (3.2x2.5)",
+  "referencePrefix": "Y",
+  "description": "CMOS Clock Oscillator",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "SG-8002CE.kicad_sym",
+    "sourceLibrary": "Oscillator",
+    "sourceItemName": "SG-8002CE",
+    "sourceHash": "a498d15a144ccf36e620d6ee5b89acb83e890245b95722b29c2a8bd023b08814",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "Y",
+      "Value": "SG-8002CE",
+      "Footprint": "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm",
+      "Datasheet": "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC",
+      "Description": "CMOS Clock Oscillator",
+      "ki_keywords": "Crystal Clock Oscillator",
+      "ki_fp_filters": "Oscillator*SMD*SeikoEpson*SG8002CE*3.2x2.5mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "SG-8002CE.kicad_sym",
+        "sourceItemName": "SG-8002CE",
+        "sha256": "9a105a4fe7dc6b51d7be688cc59563b6dbf1a7320a54bd166fdb5831d169cde5"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_40136ffdca4a9f2b",
+    "name": "SG-8002CE",
+    "referencePrefix": "Y",
+    "description": "CMOS Clock Oscillator",
+    "sourceHash": "a498d15a144ccf36e620d6ee5b89acb83e890245b95722b29c2a8bd023b08814",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "OE",
+        "localPosition": {
+          "x": -7.62,
+          "y": 0
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "GND",
+        "localPosition": {
+          "x": 0,
+          "y": -7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "OUT",
+        "localPosition": {
+          "x": 7.62,
+          "y": 0
+        },
+        "electricalType": "output",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "Vcc",
+        "localPosition": {
+          "x": 0,
+          "y": 7.62
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "SG-8002CE",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -5.08,
+          "y": -5.08,
+          "width": 10.16,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": -0.762
+            },
+            {
+              "x": -1.016,
+              "y": -0.762
+            },
+            {
+              "x": -1.016,
+              "y": 0.762
+            },
+            {
+              "x": -0.508,
+              "y": 0.762
+            },
+            {
+              "x": -0.508,
+              "y": -0.762
+            },
+            {
+              "x": 0,
+              "y": -0.762
+            },
+            {
+              "x": 0,
+              "y": 0.762
+            },
+            {
+              "x": 0.508,
+              "y": 0.762
+            },
+            {
+              "x": 0.508,
+              "y": -0.762
+            },
+            {
+              "x": 0.762,
+              "y": -0.762
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "OE",
+          "number": "1",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "GND",
+          "number": "2",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "OUT",
+          "number": "3",
+          "electricalType": "output",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:4",
+          "name": "Vcc",
+          "number": "4",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.08
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "OE",
+          "at": {
+            "x": -4.572,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -6.35,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "GND",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": 0.508,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "OUT",
+          "at": {
+            "x": 4.572,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": 6.35,
+            "y": 0.5080000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "Vcc",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": 0.508,
+            "y": 7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "Y",
+          "at": {
+            "x": 0,
+            "y": 9.2202
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "SG-8002CE",
+          "at": {
+            "x": 0,
+            "y": -9.2202
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -7.62,
+        "minY": -10.4902,
+        "maxX": 7.62,
+        "maxY": 10.4902
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "SG-8002CE",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "OE",
+        "number": "1",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "GND",
+        "number": "2",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "OUT",
+        "number": "3",
+        "electricalType": "output",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "Vcc",
+        "number": "4",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "Y",
+      "Value": "SG-8002CE",
+      "Footprint": "Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm",
+      "Datasheet": "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC",
+      "Description": "CMOS Clock Oscillator",
+      "ki_keywords": "Crystal Clock Oscillator",
+      "ki_fp_filters": "Oscillator*SMD*SeikoEpson*SG8002CE*3.2x2.5mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.08,
+            5.08
+          ],
+          [
+            "end",
+            5.08,
+            -5.08
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              -0.762
+            ],
+            [
+              "xy",
+              -1.016,
+              -0.762
+            ],
+            [
+              "xy",
+              -1.016,
+              0.762
+            ],
+            [
+              "xy",
+              -0.508,
+              0.762
+            ],
+            [
+              "xy",
+              -0.508,
+              -0.762
+            ],
+            [
+              "xy",
+              0,
+              -0.762
+            ],
+            [
+              "xy",
+              0,
+              0.762
+            ],
+            [
+              "xy",
+              0.508,
+              0.762
+            ],
+            [
+              "xy",
+              0.508,
+              -0.762
+            ],
+            [
+              "xy",
+              0.762,
+              -0.762
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol SG-8002CE (pin_names (offset 0.254)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference Y (at -5.08 6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value SG-8002CE (at 1.27 -6.35 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Oscillator:Oscillator_SMD_SeikoEpson_SG8002CE-4Pin_3.2x2.5mm (at 17.78 -8.89 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC (at -2.54 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"CMOS Clock Oscillator\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"Crystal Clock Oscillator\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters Oscillator*SMD*SeikoEpson*SG8002CE*3.2x2.5mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol SG-8002CE_0_1 (rectangle (start -5.08 5.08) (end 5.08 -5.08) (stroke (width 0.254) (type default)) (fill (type background))) (polyline (pts (xy -1.27 -0.762) (xy -1.016 -0.762) (xy -1.016 0.762) (xy -0.508 0.762) (xy -0.508 -0.762) (xy 0 -0.762) (xy 0 0.762) (xy 0.508 0.762) (xy 0.508 -0.762) (xy 0.762 -0.762)) (stroke (width 0) (type default)) (fill (type none)))) (symbol SG-8002CE_1_1 (pin input line (at -7.62 0 0) (length 2.54) (name OE (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 -7.62 90) (length 2.54) (name GND (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin output line (at 7.62 0 180) (length 2.54) (name OUT (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 7.62 270) (length 2.54) (name Vcc (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.254,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

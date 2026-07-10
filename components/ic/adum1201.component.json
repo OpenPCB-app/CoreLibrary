@@ -1,30 +1,29 @@
 {
-  "id": "openpcb.core.ic.lm386",
-  "uuid": "c4c73456-ceb4-5de1-961a-5eb935b58ad8",
+  "id": "openpcb.core.ic.adum1201",
+  "uuid": "065b41f8-8648-52d5-a63d-adf1a1e79aff",
   "version": "0.3.0",
-  "name": "LM386 Audio Amplifier",
-  "description": "LM386 low-voltage audio power amplifier, 0.3–1 W, SOIC-8.",
+  "name": "ADuM1201 Dual Digital Isolator",
+  "description": "Analog Devices ADuM1201 dual-channel digital isolator (1 in / 1 out), SOIC-8.",
   "category": "ic",
-  "subcategory": "amplifier-audio",
+  "subcategory": "isolator",
   "tags": [
     "ic",
     "kicad-derived"
   ],
   "keywords": [
-    "LM386",
-    "audio",
-    "amplifier",
-    "speaker"
+    "ADuM1201",
+    "digital isolator",
+    "isolation",
+    "UART"
   ],
   "aliases": [],
   "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm386.pdf",
+  "datasheetSource": "https://www.analog.com/media/en/technical-documentation/data-sheets/ADuM1200_1201.pdf",
   "parameters": {
-    "gain": "20-200",
-    "pout": "0.3-1W",
-    "vcc": "4-12V"
+    "channels": "2 (1/1)",
+    "isolation": "2.5kVrms"
   },
-  "symbol": "openpcb.core.symbol.ic.lm386",
+  "symbol": "openpcb.core.symbol.ic.adum1201",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
   "footprints": [
     {
@@ -73,10 +72,10 @@
       "Derived from KiCad official libraries."
     ],
     "sourceFormat": "openpcb-component",
-    "sourceFileName": "LM386.kicad_sym",
-    "sourceLibrary": "Amplifier_Audio",
-    "sourceItemName": "LM386 Audio Amplifier",
-    "sourceHash": "f8b3d8b427743610430b975696aa211eddb53aa615b8f4b29117654b1f49d462",
+    "sourceFileName": "ADUM1201AR.kicad_sym",
+    "sourceLibrary": "Isolator",
+    "sourceItemName": "ADuM1201 Dual Digital Isolator",
+    "sourceHash": "2d34b60727fe64aa855a86c254f4a6acb04a0564ba9ec305784218d5d56f9aa1",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-07-10T18:48:42.901Z",

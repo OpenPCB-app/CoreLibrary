@@ -49,7 +49,7 @@ export interface FootprintSidecar {
   /** Explicit posture override for parts whose KiCad name lacks _Vertical/_Horizontal (e.g. DHT11). */
   orientationHint?: "vertical" | "horizontal";
   /** THT lead budget override (mm below board) for STEPs with full uncut leads. */
-  thtLeadBudgetMm?: number;
+  belowBoardBudgetMm?: number;
   models3d?: string[];
   normalized?: {
     preview?: {
@@ -133,7 +133,7 @@ export function evaluatePlacement(
     reference: referenceBounds(footprint.normalized?.preview),
     orientationHint:
       footprint.orientationHint ?? orientationHintFromName(footprint.name),
-    leadBudgetMm: footprint.thtLeadBudgetMm,
+    leadBudgetMm: footprint.belowBoardBudgetMm,
   });
   return { findings, verdict: worstSeverity(findings) ?? "ok" };
 }

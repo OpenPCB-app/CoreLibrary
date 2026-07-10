@@ -1,0 +1,857 @@
+{
+  "id": "openpcb.core.footprint.diode.bridge-diotec-abs",
+  "uuid": "fd17e74b-ddd1-5697-b4a7-795ef54f9b55",
+  "version": "0.3.0",
+  "name": "Diode_Bridge_Diotec_ABS",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.diode.bridge-diotec-abs"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "Diode_Bridge_Diotec_ABS.kicad_mod",
+    "sourceLibrary": "Diode_SMD",
+    "sourceItemName": "Diode_Bridge_Diotec_ABS",
+    "sourceHash": "cc83db9b59a53d82d2bbc58770ae5290247651780668041277a6ccfb9b002bdd",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_e4980be7e9fe1173",
+    "fileName": "Diode_Bridge_Diotec_ABS.kicad_mod",
+    "name": "Diode_Bridge_Diotec_ABS",
+    "description": "SMD diode bridge ABS (Diotec), see https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf",
+    "mountType": "smd",
+    "padCount": 4,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "abs",
+      "mbls",
+      "smd"
+    ],
+    "sourceHash": "cc83db9b59a53d82d2bbc58770ae5290247651780668041277a6ccfb9b002bdd",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "Diode_Bridge_Diotec_ABS",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": -2.975,
+            "y": -2
+          },
+          "widthMm": 1,
+          "heightMm": 0.7,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "rect",
+          "centerMm": {
+            "x": -2.975,
+            "y": 2
+          },
+          "widthMm": 1,
+          "heightMm": 0.7,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "rect",
+          "centerMm": {
+            "x": 2.975,
+            "y": 2
+          },
+          "widthMm": 1,
+          "heightMm": 0.7,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "rect",
+          "centerMm": {
+            "x": 2.975,
+            "y": -2
+          },
+          "widthMm": 1,
+          "heightMm": 0.7,
+          "rotationDeg": 0,
+          "layer": "F.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.3,
+            "y": -2.61
+          },
+          "b": {
+            "x": -3,
+            "y": -2.61
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.3,
+            "y": 2.6
+          },
+          "b": {
+            "x": -2.3,
+            "y": 2.6
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.2,
+            "y": -2
+          },
+          "b": {
+            "x": -2.2,
+            "y": 2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.2,
+            "y": 2.5
+          },
+          "b": {
+            "x": 2.2,
+            "y": 2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.8,
+            "y": -2.5
+          },
+          "b": {
+            "x": -2.2,
+            "y": -2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.2,
+            "y": -2.5
+          },
+          "b": {
+            "x": -1.8,
+            "y": -2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.2,
+            "y": 2.5
+          },
+          "b": {
+            "x": 2.2,
+            "y": -2.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.5,
+              "y": -2.61
+            },
+            {
+              "x": -3.78,
+              "y": -2.61
+            },
+            {
+              "x": -3.5,
+              "y": -2.89
+            },
+            {
+              "x": -3.5,
+              "y": -2.61
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:-0.065:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -0.065
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-3.7:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -3.7
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:3.7:Diode_Bridge_Diotec_ABS",
+          "text": "Diode_Bridge_Diotec_ABS",
+          "at": {
+            "x": 0,
+            "y": 3.7
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.84,
+        "minY": -2.95,
+        "maxX": 3.4749999999999996,
+        "maxY": 2.66
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Diode_Bridge_Diotec_ABS",
+    "description": "SMD diode bridge ABS (Diotec), see https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf",
+    "tags": [
+      "ABS",
+      "MBLS"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -2.975,
+          "y": -2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 0.7
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -2.975,
+          "y": 2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 0.7
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "3",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 2.975,
+          "y": 2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 0.7
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "4",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 2.975,
+          "y": -2
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1,
+          "height": 0.7
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.3,
+            -2.61
+          ],
+          "end": [
+            -3,
+            -2.61
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "79320dba-c053-4c87-887d-3c8c196dcb22"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.3,
+            2.6
+          ],
+          "end": [
+            -2.3,
+            2.6
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "8e154b34-a1a3-4c64-b6f5-c4376d3c148d"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.72,
+            -2.75
+          ],
+          "end": [
+            -3.72,
+            2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "1b52b34c-70c5-4df4-a346-4efa70a41828"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.72,
+            -2.75
+          ],
+          "end": [
+            3.73,
+            -2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "7ea64cb9-06ea-47b7-8903-3072ef7a0a72"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.73,
+            2.75
+          ],
+          "end": [
+            -3.72,
+            2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "98e63563-34d3-4407-ba1d-d7f7fd11dc04"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.73,
+            2.75
+          ],
+          "end": [
+            3.73,
+            -2.75
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "3e17615d-3f76-41b7-923b-ccff0735bfe0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.2,
+            -2
+          ],
+          "end": [
+            -2.2,
+            2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "40fa8a89-ac6f-40c6-8fa0-f23e05e04537"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.2,
+            2.5
+          ],
+          "end": [
+            2.2,
+            2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "5389273c-e324-4e10-a655-1e7cfbfcacea"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.8,
+            -2.5
+          ],
+          "end": [
+            -2.2,
+            -2
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "3de16392-ebc1-4b28-a4d2-ac19127bc4aa"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.2,
+            -2.5
+          ],
+          "end": [
+            -1.8,
+            -2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "00ac7e81-7a99-40b9-b930-8f821f414fd6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2.2,
+            2.5
+          ],
+          "end": [
+            2.2,
+            -2.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "e61f491f-85af-4d6a-a693-cfb040e3ea22"
+        }
+      },
+      {
+        "type": "poly",
+        "layer": "F.SilkS",
+        "data": {
+          "pts": [
+            [
+              "xy",
+              -3.5,
+              -2.61
+            ],
+            [
+              "xy",
+              -3.78,
+              -2.61
+            ],
+            [
+              "xy",
+              -3.5,
+              -2.89
+            ],
+            [
+              "xy",
+              -3.5,
+              -2.61
+            ]
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "yes",
+          "layer": "F.SilkS",
+          "uuid": "eeed9408-c716-40c1-8925-02ba7e2cbf08"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            -0.065,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "ea79ba02-7776-4b1d-98b2-09fcaee8ce40",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": -0.065
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -3.7,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "09835d43-6bc0-46e9-9266-aa17fe30241c",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -3.7
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            3.7,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "73c4ee5a-ce0c-4ef4-998d-8270255f33a7",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "Diode_Bridge_Diotec_ABS"
+          ]
+        },
+        "text": {
+          "content": "Diode_Bridge_Diotec_ABS",
+          "position": {
+            "x": 0,
+            "y": 3.7
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Diode_Bridge_Diotec_ABS.step",
+        "resolvedFileName": "Diode_Bridge_Diotec_ABS.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"Diode_Bridge_Diotec_ABS\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"SMD diode bridge ABS (Diotec), see https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf\")\n\t(tags \"ABS MBLS\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -3.7 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"09835d43-6bc0-46e9-9266-aa17fe30241c\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"Diode_Bridge_Diotec_ABS\"\n\t\t(at 0 3.7 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"73c4ee5a-ce0c-4ef4-998d-8270255f33a7\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"7d389286-ad2e-4eb2-bce4-839bf48a5745\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"a9a97472-87a6-4189-afc8-175265606c82\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start 2.3 -2.61)\n\t\t(end -3 -2.61)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"79320dba-c053-4c87-887d-3c8c196dcb22\")\n\t)\n\t(fp_line\n\t\t(start 2.3 2.6)\n\t\t(end -2.3 2.6)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"8e154b34-a1a3-4c64-b6f5-c4376d3c148d\")\n\t)\n\t(fp_poly\n\t\t(pts\n\t\t\t(xy -3.5 -2.61) (xy -3.78 -2.61) (xy -3.5 -2.89) (xy -3.5 -2.61)\n\t\t)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill yes)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"eeed9408-c716-40c1-8925-02ba7e2cbf08\")\n\t)\n\t(fp_line\n\t\t(start -3.72 -2.75)\n\t\t(end -3.72 2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"1b52b34c-70c5-4df4-a346-4efa70a41828\")\n\t)\n\t(fp_line\n\t\t(start -3.72 -2.75)\n\t\t(end 3.73 -2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"7ea64cb9-06ea-47b7-8903-3072ef7a0a72\")\n\t)\n\t(fp_line\n\t\t(start 3.73 2.75)\n\t\t(end -3.72 2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"98e63563-34d3-4407-ba1d-d7f7fd11dc04\")\n\t)\n\t(fp_line\n\t\t(start 3.73 2.75)\n\t\t(end 3.73 -2.75)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"3e17615d-3f76-41b7-923b-ccff0735bfe0\")\n\t)\n\t(fp_line\n\t\t(start -2.2 -2)\n\t\t(end -2.2 2.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"40fa8a89-ac6f-40c6-8fa0-f23e05e04537\")\n\t)\n\t(fp_line\n\t\t(start -2.2 2.5)\n\t\t(end 2.2 2.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"5389273c-e324-4e10-a655-1e7cfbfcacea\")\n\t)\n\t(fp_line\n\t\t(start -1.8 -2.5)\n\t\t(end -2.2 -2)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"3de16392-ebc1-4b28-a4d2-ac19127bc4aa\")\n\t)\n\t(fp_line\n\t\t(start 2.2 -2.5)\n\t\t(end -1.8 -2.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"00ac7e81-7a99-40b9-b930-8f821f414fd6\")\n\t)\n\t(fp_line\n\t\t(start 2.2 2.5)\n\t\t(end 2.2 -2.5)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e61f491f-85af-4d6a-a693-cfb040e3ea22\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 -0.065 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"ea79ba02-7776-4b1d-98b2-09fcaee8ce40\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd rect\n\t\t(at -2.975 -2)\n\t\t(size 1 0.7)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"d99f4910-7ebe-43ca-a155-1be55bb0c180\")\n\t)\n\t(pad \"2\" smd rect\n\t\t(at -2.975 2)\n\t\t(size 1 0.7)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"71a80d5b-f732-4ce8-99e2-a1f4a40eb0c6\")\n\t)\n\t(pad \"3\" smd rect\n\t\t(at 2.975 2)\n\t\t(size 1 0.7)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"84c6d600-2b5f-420d-a568-96a8383b7172\")\n\t)\n\t(pad \"4\" smd rect\n\t\t(at 2.975 -2)\n\t\t(size 1 0.7)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"1590c8f9-0c8d-4f50-9f8a-1ee2f799cc06\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Diode_SMD.3dshapes/Diode_Bridge_Diotec_ABS.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "Diode_Bridge_Diotec_ABS.kicad_mod"
+}

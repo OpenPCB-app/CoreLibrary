@@ -1,0 +1,120 @@
+{
+  "id": "openpcb.core.connector.usb-c-receptacle",
+  "uuid": "82c6250a-5d57-500b-887d-6b6cf0cc5f74",
+  "version": "0.3.0",
+  "name": "USB-C Receptacle (USB 2.0, 16P)",
+  "description": "USB Type-C receptacle, USB 2.0 subset, 16 pins + shield (HRO TYPE-C-31-M-12 style).",
+  "category": "connector",
+  "subcategory": "usb",
+  "tags": [
+    "connector",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "USB-C",
+    "type-c",
+    "receptacle",
+    "USB 2.0",
+    "TYPE-C-31-M-12"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
+  "symbol": "openpcb.core.symbol.connector.usb-c-receptacle",
+  "defaultFootprint": "openpcb.core.footprint.connector.usb-c-hro-type-c-31-m-12",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.usb-c-hro-type-c-31-m-12",
+      "label": "HRO TYPE-C-31-M-12",
+      "pinMap": [
+        {
+          "pinNumber": "A1",
+          "padNumber": "A1"
+        },
+        {
+          "pinNumber": "A4",
+          "padNumber": "A4"
+        },
+        {
+          "pinNumber": "A5",
+          "padNumber": "A5"
+        },
+        {
+          "pinNumber": "A6",
+          "padNumber": "A6"
+        },
+        {
+          "pinNumber": "A7",
+          "padNumber": "A7"
+        },
+        {
+          "pinNumber": "A8",
+          "padNumber": "A8"
+        },
+        {
+          "pinNumber": "A9",
+          "padNumber": "A9"
+        },
+        {
+          "pinNumber": "A12",
+          "padNumber": "A12"
+        },
+        {
+          "pinNumber": "B1",
+          "padNumber": "B1"
+        },
+        {
+          "pinNumber": "B4",
+          "padNumber": "B4"
+        },
+        {
+          "pinNumber": "B5",
+          "padNumber": "B5"
+        },
+        {
+          "pinNumber": "B6",
+          "padNumber": "B6"
+        },
+        {
+          "pinNumber": "B7",
+          "padNumber": "B7"
+        },
+        {
+          "pinNumber": "B8",
+          "padNumber": "B8"
+        },
+        {
+          "pinNumber": "B9",
+          "padNumber": "B9"
+        },
+        {
+          "pinNumber": "B12",
+          "padNumber": "B12"
+        },
+        {
+          "pinNumber": "SH",
+          "padNumber": "SH"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "USB_C_Receptacle_USB2.0_16P.kicad_sym",
+    "sourceLibrary": "Connector",
+    "sourceItemName": "USB-C Receptacle (USB 2.0, 16P)",
+    "sourceHash": "ad0e574cf6bee84d699145c7c61bd9a15634234127632d5ed466f4f5523cb7ba",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:48:42.901Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
