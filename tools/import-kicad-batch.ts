@@ -1,7 +1,7 @@
 #!/usr/bin/env bun
 import { createHash } from "node:crypto";
 import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import {
   parseKicadFootprint,
@@ -56,8 +56,13 @@ interface ManifestModel {
 
 interface ManifestFootprint {
   id: string;
-  path: string;
+  /** KiCad source path. Absent when `existing` — the asset is already in the library. */
+  path?: string;
   label: string;
+  /** Reference an already-imported footprint asset by id without re-importing
+   * (footprints are shared package-oriented assets). No writes happen for this
+   * entry; pads for pinMap validation load from the on-disk fp sidecar. */
+  existing?: boolean;
   /** Required unless `no3d` — the footprint's STEP-backed 3D model. */
   model?: ManifestModel;
   /** Posture override for the 3D orientation gate when the KiCad footprint
@@ -350,6 +355,19 @@ function readManifestFootprint(
   pathName: string,
 ): ManifestFootprint {
   if (!isObject(value)) throw new Error(`${pathName} must be an object`);
+  if (value.existing === true) {
+    for (const forbidden of ["path", "model", "no3d", "orientationHint", "thtLeadBudgetMm"])
+      if (value[forbidden] !== undefined)
+        throw new Error(
+          `${pathName}: an existing footprint reference must not declare ${forbidden}`,
+        );
+    return {
+      id: requireId(value.id, `${pathName}.id`),
+      label: requireString(value.label, `${pathName}.label`),
+      existing: true,
+      pinMap: readPinMap(value.pinMap, `${pathName}.pinMap`),
+    };
+  }
   const footprint: ManifestFootprint = {
     id: requireId(value.id, `${pathName}.id`),
     path: requireSourcePath(value.path, `${pathName}.path`, ".kicad_mod"),
@@ -469,7 +487,12 @@ function validateManifestShape(manifest: ImportManifest): void {
     const footprintIdsForComponent = new Set<string>();
     for (const footprint of component.footprints) {
       footprintIdsForComponent.add(footprint.id);
-      rememberId(footprintIds, footprint.id, footprint.path, "footprint");
+      rememberId(
+        footprintIds,
+        footprint.id,
+        footprint.path ?? "<existing>",
+        "footprint",
+      );
       if (footprint.model)
         rememberId(modelIds, footprint.model.id, footprint.model.path, "model");
     }
@@ -716,11 +739,44 @@ async function resolveSymbol(
   };
 }
 
+/** Load an already-imported footprint's pads from its on-disk sidecar so an
+ * `existing` manifest reference can validate pinMaps without re-importing. */
+function resolveExistingFootprint(
+  outRoot: string,
+  manifestFootprint: ManifestFootprint,
+): ResolvedFootprint {
+  const part = idPart(manifestFootprint.id, "openpcb.core.footprint.");
+  const file = path.join(
+    outRoot,
+    "footprints",
+    part.category,
+    `${part.slug}.fp.json`,
+  );
+  if (!existsSync(file))
+    throw new Error(
+      `existing footprint ${manifestFootprint.id} not found at ${file}`,
+    );
+  const sidecar = JSON.parse(readFileSync(file, "utf8")) as {
+    normalized?: { preview?: { pads?: Array<{ number?: string }> } };
+  };
+  const pads = sidecar.normalized?.preview?.pads;
+  if (!pads)
+    throw new Error(
+      `existing footprint ${manifestFootprint.id} sidecar has no normalized.preview.pads`,
+    );
+  // Only `source` + `normalized.preview.pads` are consumed on the existing
+  // path (pinMapFor / validateStrictPinMap); asset writes are skipped.
+  return {
+    source: file,
+    normalized: { preview: { pads } },
+  } as unknown as ResolvedFootprint;
+}
+
 async function resolveFootprint(
   kicadRoot: string,
   manifestFootprint: ManifestFootprint,
 ): Promise<ResolvedFootprint> {
-  const source = sourcePath(kicadRoot, manifestFootprint.path);
+  const source = sourcePath(kicadRoot, manifestFootprint.path!);
   if (!existsSync(source))
     throw new Error(`missing footprint source: ${source}`);
   const content = await readFile(source, "utf8");
@@ -920,10 +976,9 @@ async function run(argv: string[]): Promise<void> {
       pinMap: PinMapEntry[];
     }> = [];
     for (const manifestFootprint of component.footprints) {
-      const footprint = await resolveFootprint(
-        args.kicadRoot,
-        manifestFootprint,
-      );
+      const footprint = manifestFootprint.existing
+        ? resolveExistingFootprint(args.out, manifestFootprint)
+        : await resolveFootprint(args.kicadRoot, manifestFootprint);
       const pinMap = pinMapFor(symbol, footprint, manifestFootprint.pinMap);
       if (args.strict)
         validateStrictPinMap(
@@ -937,6 +992,7 @@ async function run(argv: string[]): Promise<void> {
         label: manifestFootprint.label,
         pinMap,
       });
+      if (manifestFootprint.existing) continue;
 
       const footprintPart = idPart(
         manifestFootprint.id,
@@ -951,7 +1007,7 @@ async function run(argv: string[]): Promise<void> {
       rememberPath(
         outputPaths,
         footprintPath,
-        manifestFootprint.path,
+        manifestFootprint.path!,
         args.allowOverwrite,
       );
       if (!footprintIds.has(manifestFootprint.id)) {
