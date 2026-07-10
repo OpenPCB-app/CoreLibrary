@@ -673,7 +673,9 @@ async function resolveFootprint(
   const hash = sha256(content);
   const parsed = parseKicadFootprint(content);
   const normalized = normalizeFootprint(parsed, hash, path.basename(source));
-  validateFootprintPads(normalized.preview);
+  // Unnumbered pads are NPTH/mechanical (mounting holes, fiducials, connector
+  // pegs) — electrical integrity is still enforced by pinMapFor/strict pinMap.
+  validateFootprintPads(normalized.preview, { allowUnnumberedPads: true });
   return { source, parsed, normalized, hash };
 }
 

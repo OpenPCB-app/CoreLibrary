@@ -129,7 +129,7 @@ async function run(argv: string[]): Promise<void> {
   const footprint = bundle.normalizedFootprints[0];
   if (!symbol || !footprint || !parsedSymbols.symbols[0])
     throw new Error("Import produced no symbol or footprint");
-  validateFootprintPads(footprint.preview);
+  validateFootprintPads(footprint.preview, { allowUnnumberedPads: true });
   validateSymbolPinsCoverFootprintPads(symbol, footprint.preview);
 
   const config = COMPONENTS[args.component];
