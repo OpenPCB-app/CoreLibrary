@@ -1,0 +1,1269 @@
+{
+  "id": "openpcb.core.footprint.connector.pin-header-1x16-vertical",
+  "uuid": "b40a4f54-f6c1-542e-8cdf-47f8ac0a3472",
+  "version": "0.3.0",
+  "name": "PinHeader_1x16_P2.54mm_Vertical",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.connector.pin-header-1x16-vertical"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "PinHeader_1x16_P2.54mm_Vertical.kicad_mod",
+    "sourceLibrary": "Connector_PinHeader_2.54mm",
+    "sourceItemName": "PinHeader_1x16_P2.54mm_Vertical",
+    "sourceHash": "5b7277494aa466f8e8fa40a273a9143de94066fd841e75ecdf6967d6eec63f96",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_3535fc74a08f5059",
+    "fileName": "PinHeader_1x16_P2.54mm_Vertical.kicad_mod",
+    "name": "PinHeader_1x16_P2.54mm_Vertical",
+    "description": "Through hole straight pin header, 1x16, 2.54mm pitch, single row",
+    "mountType": "through_hole",
+    "padCount": 16,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "through",
+      "hole",
+      "pin",
+      "header",
+      "tht",
+      "1x16",
+      "2.54mm",
+      "single",
+      "row",
+      "through_hole"
+    ],
+    "sourceHash": "5b7277494aa466f8e8fa40a273a9143de94066fd841e75ecdf6967d6eec63f96",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "PinHeader_1x16_P2.54mm_Vertical",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 2.54
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "3:2",
+          "number": "3",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 5.08
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "4:3",
+          "number": "4",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 7.62
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "5:4",
+          "number": "5",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 10.16
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "6:5",
+          "number": "6",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 12.7
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "7:6",
+          "number": "7",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 15.24
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "8:7",
+          "number": "8",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 17.78
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "9:8",
+          "number": "9",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 20.32
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "10:9",
+          "number": "10",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 22.86
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "11:10",
+          "number": "11",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 25.4
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "12:11",
+          "number": "12",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 27.94
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "13:12",
+          "number": "13",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 30.48
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "14:13",
+          "number": "14",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 33.02
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "15:14",
+          "number": "15",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 35.56
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "16:15",
+          "number": "16",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 38.1
+          },
+          "widthMm": 1.7,
+          "heightMm": 1.7,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.38,
+            "y": -1.38
+          },
+          "b": {
+            "x": 0,
+            "y": -1.38
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.38,
+            "y": 0
+          },
+          "b": {
+            "x": -1.38,
+            "y": -1.38
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.38,
+            "y": 1.27
+          },
+          "b": {
+            "x": -1.38,
+            "y": 39.48
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.38,
+            "y": 1.27
+          },
+          "b": {
+            "x": 1.38,
+            "y": 1.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.38,
+            "y": 39.48
+          },
+          "b": {
+            "x": 1.38,
+            "y": 39.48
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.38,
+            "y": 1.27
+          },
+          "b": {
+            "x": 1.38,
+            "y": 39.48
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.27,
+            "y": -0.635
+          },
+          "b": {
+            "x": -0.635,
+            "y": -1.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.27,
+            "y": 39.37
+          },
+          "b": {
+            "x": -1.27,
+            "y": -0.635
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.635,
+            "y": -1.27
+          },
+          "b": {
+            "x": 1.27,
+            "y": -1.27
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.27,
+            "y": -1.27
+          },
+          "b": {
+            "x": 1.27,
+            "y": 39.37
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.27,
+            "y": 39.37
+          },
+          "b": {
+            "x": -1.27,
+            "y": 39.37
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:19.05:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 19.05
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-2.38:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -2.38
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:40.48:PinHeader_1x16_P2.54mm_Vertical",
+          "text": "PinHeader_1x16_P2.54mm_Vertical",
+          "at": {
+            "x": 0,
+            "y": 40.48
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -1.44,
+        "minY": -1.4399999999999977,
+        "maxX": 1.44,
+        "maxY": 39.54
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "PinHeader_1x16_P2.54mm_Vertical",
+    "description": "Through hole straight pin header, 1x16, 2.54mm pitch, single row",
+    "tags": [
+      "Through",
+      "hole",
+      "pin",
+      "header",
+      "THT",
+      "1x16",
+      "2.54mm",
+      "single",
+      "row"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "rect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 2.54
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "3",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 5.08
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "4",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 7.62
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "5",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 10.16
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "6",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 12.7
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "7",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 15.24
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "8",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 17.78
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "9",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 20.32
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "10",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 22.86
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "11",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 25.4
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "12",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 27.94
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "13",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 30.48
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "14",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 33.02
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "15",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 35.56
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      },
+      {
+        "number": "16",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 38.1
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.7,
+          "height": 1.7
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.38,
+            -1.38
+          ],
+          "end": [
+            0,
+            -1.38
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.38,
+            0
+          ],
+          "end": [
+            -1.38,
+            -1.38
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.38,
+            1.27
+          ],
+          "end": [
+            -1.38,
+            39.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.38,
+            1.27
+          ],
+          "end": [
+            1.38,
+            1.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -1.38,
+            39.48
+          ],
+          "end": [
+            1.38,
+            39.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            1.38,
+            1.27
+          ],
+          "end": [
+            1.38,
+            39.48
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.27,
+            -0.635
+          ],
+          "end": [
+            -0.635,
+            -1.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.27,
+            39.37
+          ],
+          "end": [
+            -1.27,
+            -0.635
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.635,
+            -1.27
+          ],
+          "end": [
+            1.27,
+            -1.27
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.27,
+            -1.27
+          ],
+          "end": [
+            1.27,
+            39.37
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.27,
+            39.37
+          ],
+          "end": [
+            -1.27,
+            39.37
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.77,
+            -1.78
+          ],
+          "end": [
+            1.77,
+            39.88
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            19.05,
+            90
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 19.05
+          },
+          "rotation": 90,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -2.38,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -2.38
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            40.48,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "PinHeader_1x16_P2.54mm_Vertical"
+          ]
+        },
+        "text": {
+          "content": "PinHeader_1x16_P2.54mm_Vertical",
+          "position": {
+            "x": 0,
+            "y": 40.48
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.step",
+        "resolvedFileName": "PinHeader_1x16_P2.54mm_Vertical.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"PinHeader_1x16_P2.54mm_Vertical\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Through hole straight pin header, 1x16, 2.54mm pitch, single row\")\n\t(tags \"Through hole pin header THT 1x16 2.54mm single row\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -2.38 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"PinHeader_1x16_P2.54mm_Vertical\"\n\t\t(at 0 40.48 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"connector/pin_header_socket\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -1.38 -1.38)\n\t\t(end 0 -1.38)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -1.38 0)\n\t\t(end -1.38 -1.38)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -1.38 1.27)\n\t\t(end -1.38 39.48)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -1.38 1.27)\n\t\t(end 1.38 1.27)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -1.38 39.48)\n\t\t(end 1.38 39.48)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 1.38 1.27)\n\t\t(end 1.38 39.48)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -1.77 -1.78)\n\t\t(end 1.77 39.88)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_line\n\t\t(start -1.27 -0.635)\n\t\t(end -0.635 -1.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start -1.27 39.37)\n\t\t(end -1.27 -0.635)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start -0.635 -1.27)\n\t\t(end 1.27 -1.27)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 1.27 -1.27)\n\t\t(end 1.27 39.37)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_line\n\t\t(start 1.27 39.37)\n\t\t(end -1.27 39.37)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 19.05 90)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole rect\n\t\t(at 0 0)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 0 2.54)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"3\" thru_hole circle\n\t\t(at 0 5.08)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"4\" thru_hole circle\n\t\t(at 0 7.62)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"5\" thru_hole circle\n\t\t(at 0 10.16)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"6\" thru_hole circle\n\t\t(at 0 12.7)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"7\" thru_hole circle\n\t\t(at 0 15.24)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"8\" thru_hole circle\n\t\t(at 0 17.78)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"9\" thru_hole circle\n\t\t(at 0 20.32)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"10\" thru_hole circle\n\t\t(at 0 22.86)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"11\" thru_hole circle\n\t\t(at 0 25.4)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"12\" thru_hole circle\n\t\t(at 0 27.94)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"13\" thru_hole circle\n\t\t(at 0 30.48)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"14\" thru_hole circle\n\t\t(at 0 33.02)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"15\" thru_hole circle\n\t\t(at 0 35.56)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"16\" thru_hole circle\n\t\t(at 0 38.1)\n\t\t(size 1.7 1.7)\n\t\t(drill 1)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x16_P2.54mm_Vertical.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "PinHeader_1x16_P2.54mm_Vertical.kicad_mod"
+}

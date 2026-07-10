@@ -1,0 +1,98 @@
+{
+  "id": "openpcb.core.opto.seven-segment-kcsc02",
+  "uuid": "6b6b262c-80bc-5554-b5a5-0e6bb5a9aca6",
+  "version": "0.3.0",
+  "name": "7-Segment Display KCSC02 (0.2\", SMD)",
+  "description": "Kingbright KCSC02-105 single-digit 7-segment LED display, 0.2 inch, SMD, common cathode.",
+  "category": "opto",
+  "subcategory": "display-7segment",
+  "tags": [
+    "opto",
+    "display",
+    "7-segment",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "7-segment",
+    "display",
+    "LED",
+    "digit",
+    "KCSC02"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.kingbright.com/attachments/file/psearch/000/00/00/KCSC02-105(Ver.9A).pdf",
+  "parameters": {
+    "digits": "1",
+    "polarity": "common-cathode"
+  },
+  "symbol": "openpcb.core.symbol.opto.seven-segment-kcsc02",
+  "defaultFootprint": "openpcb.core.footprint.opto.seven-segment-kcsc02",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.opto.seven-segment-kcsc02",
+      "label": "KCSC02 SMD",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "KCSC02-105.kicad_sym",
+    "sourceLibrary": "Display_Character",
+    "sourceItemName": "7-Segment Display KCSC02 (0.2\", SMD)",
+    "sourceHash": "0ba0b13bc5dafee6f757ba8290a4b99ed75dedef9066acd47009e6f08ae05c77",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

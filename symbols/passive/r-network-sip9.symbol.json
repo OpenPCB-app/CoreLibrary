@@ -1,0 +1,2295 @@
+{
+  "id": "openpcb.core.symbol.passive.r-network-sip9",
+  "uuid": "923981b9-c52e-5afd-aad4-242041c53472",
+  "version": "0.3.0",
+  "name": "Resistor Network SIP-9 (8 bussed)",
+  "referencePrefix": "RN",
+  "description": "8 resistor network, star topology, bussed resistors, small symbol",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "R_Network08.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "R_Network08",
+    "sourceHash": "11758dd9654dede7dcaf06a68cbdd63f9ade20efa01c68be310dbca296ddabd2",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "RN",
+      "Value": "R_Network08",
+      "Footprint": "Resistor_THT:R_Array_SIP9",
+      "Datasheet": "http://www.vishay.com/docs/31509/csc.pdf",
+      "Description": "8 resistor network, star topology, bussed resistors, small symbol",
+      "ki_keywords": "R network star-topology",
+      "ki_fp_filters": "R?Array?SIP*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "R_Network08.kicad_sym",
+        "sourceItemName": "R_Network08",
+        "sha256": "7b05544a0a2daafb7756b60a0754e08a49af2bfffef7b3f5b6ee3eefb1b04e7f"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_9bc09067354bd190",
+    "name": "R_Network08",
+    "referencePrefix": "RN",
+    "description": "8 resistor network, star topology, bussed resistors, small symbol",
+    "sourceHash": "11758dd9654dede7dcaf06a68cbdd63f9ade20efa01c68be310dbca296ddabd2",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "common",
+        "localPosition": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "R1",
+        "localPosition": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "R2",
+        "localPosition": {
+          "x": -7.62,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "R3",
+        "localPosition": {
+          "x": -5.08,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "R4",
+        "localPosition": {
+          "x": -2.54,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "R5",
+        "localPosition": {
+          "x": 0,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "R6",
+        "localPosition": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "R7",
+        "localPosition": {
+          "x": 5.08,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "R8",
+        "localPosition": {
+          "x": 7.62,
+          "y": -5.08
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "R_Network08",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -11.43,
+          "y": -3.175,
+          "width": 20.32,
+          "height": 6.35,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "rect",
+          "x": -10.922,
+          "y": -2.54,
+          "width": 1.524000000000001,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -10.16,
+            "y": 2.286
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -10.16,
+              "y": 1.524
+            },
+            {
+              "x": -10.16,
+              "y": 2.286
+            },
+            {
+              "x": -7.62,
+              "y": 2.286
+            },
+            {
+              "x": -7.62,
+              "y": 1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -10.16,
+              "y": -2.54
+            },
+            {
+              "x": -10.16,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -8.382,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -7.62,
+            "y": 2.286
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -7.62,
+              "y": 1.524
+            },
+            {
+              "x": -7.62,
+              "y": 2.286
+            },
+            {
+              "x": -5.08,
+              "y": 2.286
+            },
+            {
+              "x": -5.08,
+              "y": 1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -7.62,
+              "y": -2.54
+            },
+            {
+              "x": -7.62,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -5.842,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -5.08,
+            "y": 2.286
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -5.08,
+              "y": 1.524
+            },
+            {
+              "x": -5.08,
+              "y": 2.286
+            },
+            {
+              "x": -2.54,
+              "y": 2.286
+            },
+            {
+              "x": -2.54,
+              "y": 1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -5.08,
+              "y": -2.54
+            },
+            {
+              "x": -5.08,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -3.302,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": -2.54,
+            "y": 2.286
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": 1.524
+            },
+            {
+              "x": -2.54,
+              "y": 2.286
+            },
+            {
+              "x": 0,
+              "y": 2.286
+            },
+            {
+              "x": 0,
+              "y": 1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -2.54,
+              "y": -2.54
+            },
+            {
+              "x": -2.54,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -0.762,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 2.286
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": 1.524
+            },
+            {
+              "x": 0,
+              "y": 2.286
+            },
+            {
+              "x": 2.54,
+              "y": 2.286
+            },
+            {
+              "x": 2.54,
+              "y": 1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 0,
+              "y": -2.54
+            },
+            {
+              "x": 0,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 1.778,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 2.54,
+            "y": 2.286
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": 1.524
+            },
+            {
+              "x": 2.54,
+              "y": 2.286
+            },
+            {
+              "x": 5.08,
+              "y": 2.286
+            },
+            {
+              "x": 5.08,
+              "y": 1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 2.54,
+              "y": -2.54
+            },
+            {
+              "x": 2.54,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 4.318,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "circle",
+          "center": {
+            "x": 5.08,
+            "y": 2.286
+          },
+          "radiusMm": 0.254,
+          "fill": "solid",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 5.08,
+              "y": 1.524
+            },
+            {
+              "x": 5.08,
+              "y": 2.286
+            },
+            {
+              "x": 7.62,
+              "y": 2.286
+            },
+            {
+              "x": 7.62,
+              "y": 1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 5.08,
+              "y": -2.54
+            },
+            {
+              "x": 5.08,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": 6.858,
+          "y": -2.54,
+          "width": 1.524,
+          "height": 4.064,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 7.62,
+              "y": -2.54
+            },
+            {
+              "x": 7.62,
+              "y": -3.81
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": "1",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": "2",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -10.16,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -10.16,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:3",
+          "name": "",
+          "number": "3",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -7.62,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -7.62,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:4",
+          "name": "",
+          "number": "4",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -5.08,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:5",
+          "name": "",
+          "number": "5",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -2.54,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:6",
+          "name": "",
+          "number": "6",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 7.776507174585693e-17,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:7",
+          "name": "",
+          "number": "7",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:8",
+          "name": "",
+          "number": "8",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 5.08,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 5.08,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:9",
+          "name": "",
+          "number": "9",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 7.62,
+            "y": -3.81
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -9.652000000000001,
+            "y": 4.8768
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -9.652000000000001,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -7.112,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -4.572,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -2.032,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": 0.508,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": 3.048,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": 5.588,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": 8.128,
+            "y": -4.978400000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "RN",
+          "at": {
+            "x": -1.2699999999999996,
+            "y": 6.5405
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "R_Network08",
+          "at": {
+            "x": -1.2699999999999996,
+            "y": -6.642100000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -11.557,
+        "minY": -7.912100000000001,
+        "maxX": 9.017000000000001,
+        "maxY": 7.810499999999999
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "R_Network08",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "common",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R1",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -10.16,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R2",
+        "number": "3",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -7.62,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R3",
+        "number": "4",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R4",
+        "number": "5",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R5",
+        "number": "6",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R6",
+        "number": "7",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R7",
+        "number": "8",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 5.08,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "R8",
+        "number": "9",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": -5.08
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "RN",
+      "Value": "R_Network08",
+      "Footprint": "Resistor_THT:R_Array_SIP9",
+      "Datasheet": "http://www.vishay.com/docs/31509/csc.pdf",
+      "Description": "8 resistor network, star topology, bussed resistors, small symbol",
+      "ki_keywords": "R network star-topology",
+      "ki_fp_filters": "R?Array?SIP*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -11.43,
+            -3.175
+          ],
+          [
+            "end",
+            8.89,
+            3.175
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -10.922,
+            1.524
+          ],
+          [
+            "end",
+            -9.398,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -10.16,
+            2.286
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -10.16,
+              1.524
+            ],
+            [
+              "xy",
+              -10.16,
+              2.286
+            ],
+            [
+              "xy",
+              -7.62,
+              2.286
+            ],
+            [
+              "xy",
+              -7.62,
+              1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -10.16,
+              -2.54
+            ],
+            [
+              "xy",
+              -10.16,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -8.382,
+            1.524
+          ],
+          [
+            "end",
+            -6.858,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -7.62,
+            2.286
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -7.62,
+              1.524
+            ],
+            [
+              "xy",
+              -7.62,
+              2.286
+            ],
+            [
+              "xy",
+              -5.08,
+              2.286
+            ],
+            [
+              "xy",
+              -5.08,
+              1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -7.62,
+              -2.54
+            ],
+            [
+              "xy",
+              -7.62,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -5.842,
+            1.524
+          ],
+          [
+            "end",
+            -4.318,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -5.08,
+            2.286
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -5.08,
+              1.524
+            ],
+            [
+              "xy",
+              -5.08,
+              2.286
+            ],
+            [
+              "xy",
+              -2.54,
+              2.286
+            ],
+            [
+              "xy",
+              -2.54,
+              1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -5.08,
+              -2.54
+            ],
+            [
+              "xy",
+              -5.08,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -3.302,
+            1.524
+          ],
+          [
+            "end",
+            -1.778,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            -2.54,
+            2.286
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              1.524
+            ],
+            [
+              "xy",
+              -2.54,
+              2.286
+            ],
+            [
+              "xy",
+              0,
+              2.286
+            ],
+            [
+              "xy",
+              0,
+              1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -2.54,
+              -2.54
+            ],
+            [
+              "xy",
+              -2.54,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -0.762,
+            1.524
+          ],
+          [
+            "end",
+            0.762,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            0,
+            2.286
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              1.524
+            ],
+            [
+              "xy",
+              0,
+              2.286
+            ],
+            [
+              "xy",
+              2.54,
+              2.286
+            ],
+            [
+              "xy",
+              2.54,
+              1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              0,
+              -2.54
+            ],
+            [
+              "xy",
+              0,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            1.778,
+            1.524
+          ],
+          [
+            "end",
+            3.302,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            2.54,
+            2.286
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              1.524
+            ],
+            [
+              "xy",
+              2.54,
+              2.286
+            ],
+            [
+              "xy",
+              5.08,
+              2.286
+            ],
+            [
+              "xy",
+              5.08,
+              1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              2.54,
+              -2.54
+            ],
+            [
+              "xy",
+              2.54,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            4.318,
+            1.524
+          ],
+          [
+            "end",
+            5.842,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "circle",
+          [
+            "center",
+            5.08,
+            2.286
+          ],
+          [
+            "radius",
+            0.254
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "outline"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              5.08,
+              1.524
+            ],
+            [
+              "xy",
+              5.08,
+              2.286
+            ],
+            [
+              "xy",
+              7.62,
+              2.286
+            ],
+            [
+              "xy",
+              7.62,
+              1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              5.08,
+              -2.54
+            ],
+            [
+              "xy",
+              5.08,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            6.858,
+            1.524
+          ],
+          [
+            "end",
+            8.382,
+            -2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              7.62,
+              -2.54
+            ],
+            [
+              "xy",
+              7.62,
+              -3.81
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol R_Network08 (pin_names (offset 0) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference RN (at -12.7 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value R_Network08 (at 10.16 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint Resistor_THT:R_Array_SIP9 (at 12.065 0 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet http://www.vishay.com/docs/31509/csc.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"8 resistor network, star topology, bussed resistors, small symbol\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"R network star-topology\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters R?Array?SIP* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol R_Network08_0_1 (rectangle (start -11.43 -3.175) (end 8.89 3.175) (stroke (width 0.254) (type default)) (fill (type background))) (rectangle (start -10.922 1.524) (end -9.398 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center -10.16 2.286) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy -10.16 1.524) (xy -10.16 2.286) (xy -7.62 2.286) (xy -7.62 1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -10.16 -2.54) (xy -10.16 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -8.382 1.524) (end -6.858 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center -7.62 2.286) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy -7.62 1.524) (xy -7.62 2.286) (xy -5.08 2.286) (xy -5.08 1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -7.62 -2.54) (xy -7.62 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -5.842 1.524) (end -4.318 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center -5.08 2.286) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy -5.08 1.524) (xy -5.08 2.286) (xy -2.54 2.286) (xy -2.54 1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -5.08 -2.54) (xy -5.08 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -3.302 1.524) (end -1.778 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center -2.54 2.286) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy -2.54 1.524) (xy -2.54 2.286) (xy 0 2.286) (xy 0 1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -2.54 -2.54) (xy -2.54 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -0.762 1.524) (end 0.762 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center 0 2.286) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 0 1.524) (xy 0 2.286) (xy 2.54 2.286) (xy 2.54 1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 0 -2.54) (xy 0 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 1.778 1.524) (end 3.302 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center 2.54 2.286) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 2.54 1.524) (xy 2.54 2.286) (xy 5.08 2.286) (xy 5.08 1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 2.54 -2.54) (xy 2.54 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 4.318 1.524) (end 5.842 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (circle (center 5.08 2.286) (radius 0.254) (stroke (width 0) (type default)) (fill (type outline))) (polyline (pts (xy 5.08 1.524) (xy 5.08 2.286) (xy 7.62 2.286) (xy 7.62 1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy 5.08 -2.54) (xy 5.08 -3.81)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start 6.858 1.524) (end 8.382 -2.54) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 7.62 -2.54) (xy 7.62 -3.81)) (stroke (width 0) (type default)) (fill (type none)))) (symbol R_Network08_1_1 (pin passive line (at -10.16 5.08 270) (length 2.54) (name common (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at -10.16 -5.08 90) (length 1.27) (name R1 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27))))) (pin passive line (at -7.62 -5.08 90) (length 1.27) (name R2 (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27))))) (pin passive line (at -5.08 -5.08 90) (length 1.27) (name R3 (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27))))) (pin passive line (at -2.54 -5.08 90) (length 1.27) (name R4 (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -5.08 90) (length 1.27) (name R5 (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27))))) (pin passive line (at 2.54 -5.08 90) (length 1.27) (name R6 (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin passive line (at 5.08 -5.08 90) (length 1.27) (name R7 (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27))))) (pin passive line (at 7.62 -5.08 90) (length 1.27) (name R8 (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": true,
+    "hidePinNumbers": false
+  }
+}

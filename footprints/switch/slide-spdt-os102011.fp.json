@@ -1,0 +1,1452 @@
+{
+  "id": "openpcb.core.footprint.switch.slide-spdt-os102011",
+  "uuid": "ac2bff21-0ade-51e9-b615-1cdd2c7c87ba",
+  "version": "0.3.0",
+  "name": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.switch.slide-spdt-os102011"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q.kicad_mod",
+    "sourceLibrary": "Button_Switch_THT",
+    "sourceItemName": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+    "sourceHash": "2540e4ebbf3bb49d9910fe3e61d307ef64d09626b14369f59d747229c561a3b5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_e918368b78c5272a",
+    "fileName": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q.kicad_mod",
+    "name": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+    "description": "CuK miniature slide switch, OS series, SPDT, https://www.ckswitches.com/media/1428/os.pdf",
+    "mountType": "through_hole",
+    "padCount": 5,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "switch",
+      "spdt",
+      "through_hole"
+    ],
+    "sourceHash": "2540e4ebbf3bb49d9910fe3e61d307ef64d09626b14369f59d747229c561a3b5",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+      "pads": [
+        {
+          "id": "?:0",
+          "number": "",
+          "shape": "oval",
+          "centerMm": {
+            "x": -2.1,
+            "y": 0
+          },
+          "widthMm": 2.2,
+          "heightMm": 3.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.5,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "?:1",
+          "number": "",
+          "shape": "oval",
+          "centerMm": {
+            "x": 6.1,
+            "y": 0
+          },
+          "widthMm": 2.2,
+          "heightMm": 3.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 1.5,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "1:2",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 2.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:3",
+          "number": "2",
+          "shape": "oval",
+          "centerMm": {
+            "x": 2,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 2.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "3:4",
+          "number": "3",
+          "shape": "oval",
+          "centerMm": {
+            "x": 4,
+            "y": 0
+          },
+          "widthMm": 1.5,
+          "heightMm": 2.5,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.41,
+            "y": -2.26
+          },
+          "b": {
+            "x": 6.41,
+            "y": -2.26
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.41,
+            "y": -1.95
+          },
+          "b": {
+            "x": -2.41,
+            "y": -2.26
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.41,
+            "y": 2.26
+          },
+          "b": {
+            "x": -2.41,
+            "y": 1.95
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.5,
+            "y": -2.96
+          },
+          "b": {
+            "x": 0,
+            "y": -2.46
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": -2.46
+          },
+          "b": {
+            "x": 0.5,
+            "y": -2.96
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.5,
+            "y": -2.96
+          },
+          "b": {
+            "x": -0.5,
+            "y": -2.96
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.41,
+            "y": -2.26
+          },
+          "b": {
+            "x": 6.41,
+            "y": -1.95
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.41,
+            "y": 2.26
+          },
+          "b": {
+            "x": -2.41,
+            "y": 2.26
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.41,
+            "y": 2.26
+          },
+          "b": {
+            "x": 6.41,
+            "y": 1.95
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.3,
+            "y": -2.15
+          },
+          "b": {
+            "x": -0.5,
+            "y": -2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.3,
+            "y": 2.15
+          },
+          "b": {
+            "x": -2.3,
+            "y": -2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.5,
+            "y": -2.15
+          },
+          "b": {
+            "x": 0,
+            "y": -1.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": -1.65
+          },
+          "b": {
+            "x": 0.5,
+            "y": -2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": -1
+          },
+          "b": {
+            "x": 0,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": -1
+          },
+          "b": {
+            "x": 4,
+            "y": -1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0,
+            "y": 1
+          },
+          "b": {
+            "x": 4,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.5,
+            "y": -2.15
+          },
+          "b": {
+            "x": 6.3,
+            "y": -2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.66,
+            "y": -1
+          },
+          "b": {
+            "x": 0.66,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.34,
+            "y": -1
+          },
+          "b": {
+            "x": 1.34,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2,
+            "y": -1
+          },
+          "b": {
+            "x": 2,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4,
+            "y": -1
+          },
+          "b": {
+            "x": 4,
+            "y": 1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.3,
+            "y": -2.15
+          },
+          "b": {
+            "x": 6.3,
+            "y": 2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 6.3,
+            "y": 2.15
+          },
+          "b": {
+            "x": -2.3,
+            "y": 2.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:3.99:-2.99:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 3.99,
+            "y": -2.99
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:3.99:-2.99:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 3.99,
+            "y": -2.99
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:2:3:SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+          "text": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+          "at": {
+            "x": 2,
+            "y": 3
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.1999999999999997,
+        "minY": -3.02,
+        "maxX": 7.199999999999999,
+        "maxY": 2.32
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+    "description": "CuK miniature slide switch, OS series, SPDT, https://www.ckswitches.com/media/1428/os.pdf",
+    "tags": [
+      "switch",
+      "SPDT"
+    ],
+    "pads": [
+      {
+        "number": "",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": -2.1,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.2,
+          "height": 3.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1.5
+      },
+      {
+        "number": "",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 6.1,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.2,
+          "height": 3.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 1.5
+      },
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "rect",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 2.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 2,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 2.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "3",
+        "type": "thru_hole",
+        "shape": "oval",
+        "position": {
+          "x": 4,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.5,
+          "height": 2.5
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.41,
+            -2.26
+          ],
+          "end": [
+            6.41,
+            -2.26
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "d2313f1a-739d-4b25-9735-3bf73275d773"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.41,
+            -1.95
+          ],
+          "end": [
+            -2.41,
+            -2.26
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "07e1b922-ffab-432b-8fda-43edb4ace141"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.41,
+            2.26
+          ],
+          "end": [
+            -2.41,
+            1.95
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "853c1d8e-b6f3-477a-ad75-47cce9288a98"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.5,
+            -2.96
+          ],
+          "end": [
+            0,
+            -2.46
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "96f4df63-e1d7-4ec3-9859-5fe40632d89f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0,
+            -2.46
+          ],
+          "end": [
+            0.5,
+            -2.96
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "1a39a2b3-b335-4988-a902-8b5f71a95b54"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            0.5,
+            -2.96
+          ],
+          "end": [
+            -0.5,
+            -2.96
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "74db9539-25d8-48b7-b5f9-43aa344b555a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.41,
+            -2.26
+          ],
+          "end": [
+            6.41,
+            -1.95
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "a4d603c1-3ab1-4bd0-95b9-3e80dce68e22"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.41,
+            2.26
+          ],
+          "end": [
+            -2.41,
+            2.26
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "a8c45fe4-470d-4244-963d-850eee772e48"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            6.41,
+            2.26
+          ],
+          "end": [
+            6.41,
+            1.95
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "9dc4e674-bda4-44ec-95af-d7c468373593"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "B.CrtYd",
+        "data": {
+          "start": [
+            -3.45,
+            -2.4
+          ],
+          "end": [
+            7.45,
+            -2.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "B.CrtYd",
+          "uuid": "33905eaf-d62d-4748-82d7-2377368159ca"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "B.CrtYd",
+        "data": {
+          "start": [
+            -3.45,
+            2.4
+          ],
+          "end": [
+            -3.45,
+            -2.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "B.CrtYd",
+          "uuid": "63d6ff45-a707-4019-9829-f5f8bb89410f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "B.CrtYd",
+        "data": {
+          "start": [
+            7.45,
+            -2.4
+          ],
+          "end": [
+            7.45,
+            2.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "B.CrtYd",
+          "uuid": "ed6ecda8-7a48-49b1-a4a3-313ffd51ecd5"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "B.CrtYd",
+        "data": {
+          "start": [
+            7.45,
+            2.4
+          ],
+          "end": [
+            -3.45,
+            2.4
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "B.CrtYd",
+          "uuid": "768b09f2-f99b-456d-8ae9-1d573b4993bd"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.3,
+            -2.15
+          ],
+          "end": [
+            -0.5,
+            -2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "482ada5e-cd2a-4927-9c06-0b7d5121b68a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.3,
+            2.15
+          ],
+          "end": [
+            -2.3,
+            -2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "1bb581c1-37c3-4690-a443-f0e91e4515fa"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.5,
+            -2.15
+          ],
+          "end": [
+            0,
+            -1.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "ec9c8a97-e071-49bb-9799-5d1da70cf124"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0,
+            -1.65
+          ],
+          "end": [
+            0.5,
+            -2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "1ce1ec22-bfaa-4a8d-8d1b-89e0ffcb3a13"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0,
+            -1
+          ],
+          "end": [
+            0,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "d59c668c-3669-4b31-b2f0-6acb47f502c6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0,
+            -1
+          ],
+          "end": [
+            4,
+            -1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "8cfec944-edb5-4294-a30d-2068422b59d0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0,
+            1
+          ],
+          "end": [
+            4,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "73b3aae4-9b41-4f2e-9852-7d7e936febf9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0.5,
+            -2.15
+          ],
+          "end": [
+            6.3,
+            -2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "e00aa794-0617-4e3a-a2ce-ebe7fda39459"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            0.66,
+            -1
+          ],
+          "end": [
+            0.66,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "4af95867-1d9c-438f-8957-59a3909de902"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            1.34,
+            -1
+          ],
+          "end": [
+            1.34,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "fb258371-284b-4af7-9b87-bb7c00dad88f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            2,
+            -1
+          ],
+          "end": [
+            2,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "827d6451-8c68-479d-864d-1b448f01f024"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            4,
+            -1
+          ],
+          "end": [
+            4,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "7ce7983d-6271-4f57-8a0e-4bd150046c28"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            6.3,
+            -2.15
+          ],
+          "end": [
+            6.3,
+            2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "c111b3f1-792e-443f-a86a-1b5a894363ee"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            6.3,
+            2.15
+          ],
+          "end": [
+            -2.3,
+            2.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "5fb6a260-b22b-43a0-926f-0026908a836c"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            3.99,
+            -2.99,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "5eba2759-54d2-4834-9984-50a19a3434d7",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 3.99,
+            "y": -2.99
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            3.99,
+            -2.99,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "606f3cd6-dbda-4f5a-b26c-ecef61e67de6",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 3.99,
+            "y": -2.99
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            2,
+            3,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "8dca21e1-83f5-4634-b631-06f7d4d9b56f",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "SW_Slide_SPDT_Straight_CK_OS102011MS2Q"
+          ]
+        },
+        "text": {
+          "content": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q",
+          "position": {
+            "x": 2,
+            "y": 3
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_Slide_SPDT_Straight_CK_OS102011MS2Q.step",
+        "resolvedFileName": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"SW_Slide_SPDT_Straight_CK_OS102011MS2Q\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"CuK miniature slide switch, OS series, SPDT, https://www.ckswitches.com/media/1428/os.pdf\")\n\t(tags \"switch SPDT\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 3.99 -2.99 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"606f3cd6-dbda-4f5a-b26c-ecef61e67de6\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"SW_Slide_SPDT_Straight_CK_OS102011MS2Q\"\n\t\t(at 2 3 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"8dca21e1-83f5-4634-b631-06f7d4d9b56f\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"d3ee1677-8ce7-4fd7-a3b7-79cff44dca19\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"7f9ddb74-a902-4e2f-b9f8-4081efdda891\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.41 -2.26)\n\t\t(end 6.41 -2.26)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"d2313f1a-739d-4b25-9735-3bf73275d773\")\n\t)\n\t(fp_line\n\t\t(start -2.41 -1.95)\n\t\t(end -2.41 -2.26)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"07e1b922-ffab-432b-8fda-43edb4ace141\")\n\t)\n\t(fp_line\n\t\t(start -2.41 2.26)\n\t\t(end -2.41 1.95)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"853c1d8e-b6f3-477a-ad75-47cce9288a98\")\n\t)\n\t(fp_line\n\t\t(start -0.5 -2.96)\n\t\t(end 0 -2.46)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"96f4df63-e1d7-4ec3-9859-5fe40632d89f\")\n\t)\n\t(fp_line\n\t\t(start 0 -2.46)\n\t\t(end 0.5 -2.96)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"1a39a2b3-b335-4988-a902-8b5f71a95b54\")\n\t)\n\t(fp_line\n\t\t(start 0.5 -2.96)\n\t\t(end -0.5 -2.96)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"74db9539-25d8-48b7-b5f9-43aa344b555a\")\n\t)\n\t(fp_line\n\t\t(start 6.41 -2.26)\n\t\t(end 6.41 -1.95)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"a4d603c1-3ab1-4bd0-95b9-3e80dce68e22\")\n\t)\n\t(fp_line\n\t\t(start 6.41 2.26)\n\t\t(end -2.41 2.26)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"a8c45fe4-470d-4244-963d-850eee772e48\")\n\t)\n\t(fp_line\n\t\t(start 6.41 2.26)\n\t\t(end 6.41 1.95)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"9dc4e674-bda4-44ec-95af-d7c468373593\")\n\t)\n\t(fp_line\n\t\t(start -3.45 -2.4)\n\t\t(end 7.45 -2.4)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"B.CrtYd\")\n\t\t(uuid \"33905eaf-d62d-4748-82d7-2377368159ca\")\n\t)\n\t(fp_line\n\t\t(start -3.45 2.4)\n\t\t(end -3.45 -2.4)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"B.CrtYd\")\n\t\t(uuid \"63d6ff45-a707-4019-9829-f5f8bb89410f\")\n\t)\n\t(fp_line\n\t\t(start 7.45 -2.4)\n\t\t(end 7.45 2.4)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"B.CrtYd\")\n\t\t(uuid \"ed6ecda8-7a48-49b1-a4a3-313ffd51ecd5\")\n\t)\n\t(fp_line\n\t\t(start 7.45 2.4)\n\t\t(end -3.45 2.4)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"B.CrtYd\")\n\t\t(uuid \"768b09f2-f99b-456d-8ae9-1d573b4993bd\")\n\t)\n\t(fp_line\n\t\t(start -2.3 -2.15)\n\t\t(end -0.5 -2.15)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"482ada5e-cd2a-4927-9c06-0b7d5121b68a\")\n\t)\n\t(fp_line\n\t\t(start -2.3 2.15)\n\t\t(end -2.3 -2.15)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1bb581c1-37c3-4690-a443-f0e91e4515fa\")\n\t)\n\t(fp_line\n\t\t(start -0.5 -2.15)\n\t\t(end 0 -1.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"ec9c8a97-e071-49bb-9799-5d1da70cf124\")\n\t)\n\t(fp_line\n\t\t(start 0 -1.65)\n\t\t(end 0.5 -2.15)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"1ce1ec22-bfaa-4a8d-8d1b-89e0ffcb3a13\")\n\t)\n\t(fp_line\n\t\t(start 0 -1)\n\t\t(end 0 1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"d59c668c-3669-4b31-b2f0-6acb47f502c6\")\n\t)\n\t(fp_line\n\t\t(start 0 -1)\n\t\t(end 4 -1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"8cfec944-edb5-4294-a30d-2068422b59d0\")\n\t)\n\t(fp_line\n\t\t(start 0 1)\n\t\t(end 4 1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"73b3aae4-9b41-4f2e-9852-7d7e936febf9\")\n\t)\n\t(fp_line\n\t\t(start 0.5 -2.15)\n\t\t(end 6.3 -2.15)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"e00aa794-0617-4e3a-a2ce-ebe7fda39459\")\n\t)\n\t(fp_line\n\t\t(start 0.66 -1)\n\t\t(end 0.66 1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4af95867-1d9c-438f-8957-59a3909de902\")\n\t)\n\t(fp_line\n\t\t(start 1.34 -1)\n\t\t(end 1.34 1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"fb258371-284b-4af7-9b87-bb7c00dad88f\")\n\t)\n\t(fp_line\n\t\t(start 2 -1)\n\t\t(end 2 1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"827d6451-8c68-479d-864d-1b448f01f024\")\n\t)\n\t(fp_line\n\t\t(start 4 -1)\n\t\t(end 4 1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"7ce7983d-6271-4f57-8a0e-4bd150046c28\")\n\t)\n\t(fp_line\n\t\t(start 6.3 -2.15)\n\t\t(end 6.3 2.15)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"c111b3f1-792e-443f-a86a-1b5a894363ee\")\n\t)\n\t(fp_line\n\t\t(start 6.3 2.15)\n\t\t(end -2.3 2.15)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"5fb6a260-b22b-43a0-926f-0026908a836c\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 3.99 -2.99 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"5eba2759-54d2-4834-9984-50a19a3434d7\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"\" thru_hole oval\n\t\t(at -2.1 0)\n\t\t(size 2.2 3.5)\n\t\t(drill 1.5)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"5ef3a1ae-a001-44df-b40b-ca9cd79171b2\")\n\t)\n\t(pad \"\" thru_hole oval\n\t\t(at 6.1 0)\n\t\t(size 2.2 3.5)\n\t\t(drill 1.5)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"d83eedc9-d620-4511-8a8e-f2b95d1d52ad\")\n\t)\n\t(pad \"1\" thru_hole rect\n\t\t(at 0 0)\n\t\t(size 1.5 2.5)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"41a92880-1ef1-4c6a-9311-4faac38a2b34\")\n\t)\n\t(pad \"2\" thru_hole oval\n\t\t(at 2 0)\n\t\t(size 1.5 2.5)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"28412994-374f-4c4b-af3b-5663d2ccfb0e\")\n\t)\n\t(pad \"3\" thru_hole oval\n\t\t(at 4 0)\n\t\t(size 1.5 2.5)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"60976e7f-7185-4aff-a7f7-93717d909370\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Button_Switch_THT.3dshapes/SW_Slide_SPDT_Straight_CK_OS102011MS2Q.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "SW_Slide_SPDT_Straight_CK_OS102011MS2Q.kicad_mod"
+}

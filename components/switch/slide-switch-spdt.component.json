@@ -1,0 +1,64 @@
+{
+  "id": "openpcb.core.switch.slide-switch-spdt",
+  "uuid": "a585d362-ba7c-56f6-8760-4b6a5761a5d8",
+  "version": "0.3.0",
+  "name": "Slide Switch SPDT",
+  "description": "SPDT slide switch, THT (C&K OS102011MS2Q style).",
+  "category": "switch",
+  "subcategory": "slide",
+  "tags": [
+    "switch",
+    "slide",
+    "spdt",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "slide switch",
+    "SPDT",
+    "power switch",
+    "OS102011"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "symbol": "openpcb.core.symbol.switch.slide-switch-spdt",
+  "defaultFootprint": "openpcb.core.footprint.switch.slide-spdt-os102011",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.switch.slide-spdt-os102011",
+      "label": "OS102011 straight",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "SW_SPDT.kicad_sym",
+    "sourceLibrary": "Switch",
+    "sourceItemName": "Slide Switch SPDT",
+    "sourceHash": "eb794701565c1be2245b1ae50a926a71fbf31a46cc53bace805cbb1fb3a0d639",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

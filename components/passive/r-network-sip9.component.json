@@ -1,0 +1,94 @@
+{
+  "id": "openpcb.core.passive.r-network-sip9",
+  "uuid": "93d65cc3-ffb2-5e7a-8612-ea7429c3d401",
+  "version": "0.3.0",
+  "name": "Resistor Network SIP-9 (8 bussed)",
+  "description": "8-resistor bussed network, SIP-9 THT (pin 1 common). Value set per instance.",
+  "category": "passive",
+  "subcategory": "resistor-network",
+  "tags": [
+    "passive",
+    "resistor",
+    "network",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "resistor network",
+    "SIP9",
+    "bussed",
+    "pull-up",
+    "array"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "datasheetSource": "http://www.vishay.com/docs/31509/csc.pdf",
+  "parameters": {
+    "resistors": "8",
+    "topology": "bussed"
+  },
+  "symbol": "openpcb.core.symbol.passive.r-network-sip9",
+  "defaultFootprint": "openpcb.core.footprint.passive.r-array-sip9",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.r-array-sip9",
+      "label": "SIP-9",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "R_Network08.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Resistor Network SIP-9 (8 bussed)",
+    "sourceHash": "e418dc1bdc41e8fa6e1f9b803e31a6c3492137a228b53ab322895476fc55c369",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

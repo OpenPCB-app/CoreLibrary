@@ -1,0 +1,560 @@
+{
+  "id": "openpcb.core.symbol.opto.led-ir",
+  "uuid": "152093be-21a4-5891-8c78-cc7c314b609f",
+  "version": "0.3.0",
+  "name": "IR LED 5 mm",
+  "referencePrefix": "D",
+  "description": "Light emitting diode",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "LED.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "LED",
+    "sourceHash": "f9517c2af455b01f29b22d51020e68b8da73e9c0ff040ed0fcf5cfa0c1394300",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "D",
+      "Value": "LED",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Light emitting diode",
+      "Sim.Pins": "1=K 2=A",
+      "ki_keywords": "LED diode",
+      "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "LED.kicad_sym",
+        "sourceItemName": "LED",
+        "sha256": "e85b6faf1f41fab98385fbaf44f9cbb87ca7f79c4948d6dba92c73a733db5982"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_aafa0b5714fd2cea",
+    "name": "LED",
+    "referencePrefix": "D",
+    "description": "Light emitting diode",
+    "sourceHash": "f9517c2af455b01f29b22d51020e68b8da73e9c0ff040ed0fcf5cfa0c1394300",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "K",
+        "localPosition": {
+          "x": -3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "A",
+        "localPosition": {
+          "x": 3.81,
+          "y": 0
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "LED",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -3.048,
+              "y": -0.762
+            },
+            {
+              "x": -4.572,
+              "y": -2.286
+            },
+            {
+              "x": -3.81,
+              "y": -2.286
+            },
+            {
+              "x": -4.572,
+              "y": -2.286
+            },
+            {
+              "x": -4.572,
+              "y": -1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.778,
+              "y": -0.762
+            },
+            {
+              "x": -3.302,
+              "y": -2.286
+            },
+            {
+              "x": -2.54,
+              "y": -2.286
+            },
+            {
+              "x": -3.302,
+              "y": -2.286
+            },
+            {
+              "x": -3.302,
+              "y": -1.524
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": 0
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.27,
+              "y": -1.27
+            },
+            {
+              "x": -1.27,
+              "y": 1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": 1.27,
+              "y": -1.27
+            },
+            {
+              "x": 1.27,
+              "y": 1.27
+            },
+            {
+              "x": -1.27,
+              "y": 0
+            },
+            {
+              "x": 1.27,
+              "y": -1.27
+            }
+          ],
+          "closed": true,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": -3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -1.27,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 3.81,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 1.27,
+            "y": 3.110602869834277e-16
+          },
+          "rotationDeg": 180
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol:reference",
+          "text": "D",
+          "at": {
+            "x": -0.3810000000000002,
+            "y": 2.667
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "LED",
+          "at": {
+            "x": -0.3810000000000002,
+            "y": -3.556
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -4.572,
+        "minY": -4.8260000000000005,
+        "maxX": 3.8099999999999996,
+        "maxY": 3.9369999999999994
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "LED",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "K",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": -3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "A",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 3.81,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "D",
+      "Value": "LED",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Light emitting diode",
+      "Sim.Pins": "1=K 2=A",
+      "ki_keywords": "LED diode",
+      "ki_fp_filters": "LED* LED_SMD:* LED_THT:*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -3.048,
+              -0.762
+            ],
+            [
+              "xy",
+              -4.572,
+              -2.286
+            ],
+            [
+              "xy",
+              -3.81,
+              -2.286
+            ],
+            [
+              "xy",
+              -4.572,
+              -2.286
+            ],
+            [
+              "xy",
+              -4.572,
+              -1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.778,
+              -0.762
+            ],
+            [
+              "xy",
+              -3.302,
+              -2.286
+            ],
+            [
+              "xy",
+              -2.54,
+              -2.286
+            ],
+            [
+              "xy",
+              -3.302,
+              -2.286
+            ],
+            [
+              "xy",
+              -3.302,
+              -1.524
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              0
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              1.27,
+              -1.27
+            ],
+            [
+              "xy",
+              1.27,
+              1.27
+            ],
+            [
+              "xy",
+              -1.27,
+              0
+            ],
+            [
+              "xy",
+              1.27,
+              -1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol LED (pin_numbers (hide yes)) (pin_names (offset 1.016) (hide yes)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference D (at 0 2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value LED (at 0 -2.54 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Light emitting diode\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Pins \"1=K 2=A\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"LED diode\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"LED* LED_SMD:* LED_THT:*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol LED_0_1 (polyline (pts (xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.27 0) (xy 1.27 0)) (stroke (width 0) (type default)) (fill (type none))) (polyline (pts (xy -1.27 -1.27) (xy -1.27 1.27)) (stroke (width 0.254) (type default)) (fill (type none))) (polyline (pts (xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol LED_1_1 (pin passive line (at -3.81 0 0) (length 2.54) (name K (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 3.81 0 180) (length 2.54) (name A (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 1.016,
+    "hidePinNames": true,
+    "hidePinNumbers": true
+  }
+}

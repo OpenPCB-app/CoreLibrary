@@ -1,0 +1,370 @@
+{
+  "id": "openpcb.core.symbol.passive.varistor",
+  "uuid": "eef66098-1e78-53a9-929b-9eca629d7656",
+  "version": "0.3.0",
+  "name": "MOV Varistor",
+  "referencePrefix": "RV",
+  "description": "Voltage dependent resistor",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "Varistor.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Varistor",
+    "sourceHash": "c79542fa799b7513a1277500742c5a2f47a3a4dba4ddbf86656de35eb8593770",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "RV",
+      "Value": "Varistor",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Voltage dependent resistor",
+      "Sim.Name": "kicad_builtin_varistor",
+      "Sim.Device": "SUBCKT",
+      "Sim.Pins": "1=A 2=B",
+      "Sim.Params": "threshold=1k",
+      "Sim.Library": "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp",
+      "ki_keywords": "VDR resistance",
+      "ki_fp_filters": "RV_* Varistor*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "Varistor.kicad_sym",
+        "sourceItemName": "Varistor",
+        "sha256": "e928767c6347467b3fc018949ebbeffde7374e6a85d044525805ae736725ec0b"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_84c992bccc5a5169",
+    "name": "Varistor",
+    "referencePrefix": "RV",
+    "description": "Voltage dependent resistor",
+    "sourceHash": "c79542fa799b7513a1277500742c5a2f47a3a4dba4ddbf86656de35eb8593770",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": 3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "",
+        "localPosition": {
+          "x": 0,
+          "y": -3.81
+        },
+        "electricalType": "passive",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "Varistor",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "polyline",
+          "points": [
+            {
+              "x": -1.905,
+              "y": 2.54
+            },
+            {
+              "x": -1.905,
+              "y": 1.27
+            },
+            {
+              "x": 1.905,
+              "y": -1.27
+            }
+          ],
+          "closed": false,
+          "fill": "none",
+          "strokeWidthMm": 0
+        },
+        {
+          "kind": "rect",
+          "x": -1.016,
+          "y": -2.54,
+          "width": 2.032,
+          "height": 5.08,
+          "fill": "none",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 3.81
+          },
+          "bodyEnd": {
+            "x": -2.3329521523757077e-16,
+            "y": 2.54
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "",
+          "number": null,
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -3.81
+          },
+          "bodyEnd": {
+            "x": 7.776507174585693e-17,
+            "y": -2.54
+          },
+          "rotationDeg": 90
+        }
+      ],
+      "labels": [
+        {
+          "id": "symbol-text:0:-1.778:-2.032:U",
+          "text": "U",
+          "at": {
+            "x": -1.778,
+            "y": -2.032
+          },
+          "fontSizeMm": 0.8,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "RV",
+          "at": {
+            "x": -0.060499999999999776,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "Varistor",
+          "at": {
+            "x": -0.060499999999999776,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.2100999999999997,
+        "minY": -6.35,
+        "maxX": 3.0891,
+        "maxY": 6.35
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "Varistor",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "",
+        "number": "1",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 3.81
+        },
+        "length": 1.27,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "",
+        "number": "2",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -3.81
+        },
+        "length": 1.27,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "RV",
+      "Value": "Varistor",
+      "Footprint": "",
+      "Datasheet": "",
+      "Description": "Voltage dependent resistor",
+      "Sim.Name": "kicad_builtin_varistor",
+      "Sim.Device": "SUBCKT",
+      "Sim.Pins": "1=A 2=B",
+      "Sim.Params": "threshold=1k",
+      "Sim.Library": "${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp",
+      "ki_keywords": "VDR resistance",
+      "ki_fp_filters": "RV_* Varistor*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 0,
+        "node": [
+          "text",
+          "U",
+          [
+            "at",
+            -1.778,
+            -2.032,
+            0
+          ],
+          [
+            "effects",
+            [
+              "font",
+              [
+                "size",
+                1.27,
+                1.27
+              ]
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "polyline",
+          [
+            "pts",
+            [
+              "xy",
+              -1.905,
+              2.54
+            ],
+            [
+              "xy",
+              -1.905,
+              1.27
+            ],
+            [
+              "xy",
+              1.905,
+              -1.27
+            ]
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      },
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -1.016,
+            -2.54
+          ],
+          [
+            "end",
+            1.016,
+            2.54
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "none"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol Varistor (pin_numbers (hide yes)) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference RV (at 3.175 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Value Varistor (at -3.175 0 90) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)))) (property Footprint \"\" (at -1.778 0 90) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Datasheet \"\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"Voltage dependent resistor\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Name kicad_builtin_varistor (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Device SUBCKT (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Pins \"1=A 2=B\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Params threshold=1k (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Sim.Library ${KICAD9_SYMBOL_DIR}/Simulation_SPICE.sp (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"VDR resistance\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters \"RV_* Varistor*\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol Varistor_0_0 (text U (at -1.778 -2.032 0) (effects (font (size 1.27 1.27))))) (symbol Varistor_0_1 (polyline (pts (xy -1.905 2.54) (xy -1.905 1.27) (xy 1.905 -1.27)) (stroke (width 0) (type default)) (fill (type none))) (rectangle (start -1.016 -2.54) (end 1.016 2.54) (stroke (width 0.254) (type default)) (fill (type none)))) (symbol Varistor_1_1 (pin passive line (at 0 3.81 270) (length 1.27) (name \"\" (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin passive line (at 0 -3.81 90) (length 1.27) (name \"\" (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0,
+    "hidePinNames": false,
+    "hidePinNumbers": true
+  }
+}

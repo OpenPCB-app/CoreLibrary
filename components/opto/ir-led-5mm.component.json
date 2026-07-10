@@ -1,0 +1,64 @@
+{
+  "id": "openpcb.core.opto.ir-led-5mm",
+  "uuid": "5750c14e-5db0-5878-9298-65ec5d4245fb",
+  "version": "0.3.0",
+  "name": "IR LED 5 mm",
+  "description": "Infrared emitter LED, 5 mm round THT (typ. 940 nm).",
+  "category": "opto",
+  "subcategory": "led-ir",
+  "tags": [
+    "opto",
+    "led",
+    "infrared",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "IR LED",
+    "infrared",
+    "940nm",
+    "emitter",
+    "remote"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "wavelength": "940nm"
+  },
+  "symbol": "openpcb.core.symbol.opto.led-ir",
+  "defaultFootprint": "openpcb.core.footprint.opto.led-d5-0mm-ir",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.opto.led-d5-0mm-ir",
+      "label": "5 mm IR (black)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "LED.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "IR LED 5 mm",
+    "sourceHash": "0c1f6f99b5895cbb5b0c03cfef031eb8f69d2b8a29ff235df1819451dba42509",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

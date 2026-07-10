@@ -1,0 +1,768 @@
+{
+  "id": "openpcb.core.footprint.passive.rv-disc-d12-p7-5",
+  "uuid": "d4d51ae6-174d-5369-9ece-0b4d225ef9f9",
+  "version": "0.3.0",
+  "name": "RV_Disc_D12mm_W3.9mm_P7.5mm",
+  "mountType": "through_hole",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.passive.rv-disc-d12-p7-5"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "RV_Disc_D12mm_W3.9mm_P7.5mm.kicad_mod",
+    "sourceLibrary": "Varistor",
+    "sourceItemName": "RV_Disc_D12mm_W3.9mm_P7.5mm",
+    "sourceHash": "eaf2792a9e918e25d6ee0a70516bfc1f6fa642b9ddfbc2aedaf544757d571e75",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_deb2a818fa3f0126",
+    "fileName": "RV_Disc_D12mm_W3.9mm_P7.5mm.kicad_mod",
+    "name": "RV_Disc_D12mm_W3.9mm_P7.5mm",
+    "description": "Varistor, diameter 12mm, width 3.9mm, pitch 7.5mm",
+    "mountType": "through_hole",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "varistor",
+      "siov",
+      "through_hole"
+    ],
+    "sourceHash": "eaf2792a9e918e25d6ee0a70516bfc1f6fa642b9ddfbc2aedaf544757d571e75",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "RV_Disc_D12mm_W3.9mm_P7.5mm",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "circle",
+          "centerMm": {
+            "x": 0,
+            "y": 0
+          },
+          "widthMm": 1.8,
+          "heightMm": 1.8,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "circle",
+          "centerMm": {
+            "x": 7.5,
+            "y": 1.4
+          },
+          "widthMm": 1.8,
+          "heightMm": 1.8,
+          "rotationDeg": 0,
+          "drillDiameterMm": 0.8,
+          "layer": "*.Cu"
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.25,
+            "y": -1.25
+          },
+          "b": {
+            "x": -2.25,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.25,
+            "y": -1.25
+          },
+          "b": {
+            "x": 9.75,
+            "y": -1.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.25,
+            "y": 2.65
+          },
+          "b": {
+            "x": 9.75,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 9.75,
+            "y": -1.25
+          },
+          "b": {
+            "x": 9.75,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.25,
+            "y": -1.25
+          },
+          "b": {
+            "x": -2.25,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.25,
+            "y": -1.25
+          },
+          "b": {
+            "x": 9.75,
+            "y": -1.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.25,
+            "y": 2.65
+          },
+          "b": {
+            "x": 9.75,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 9.75,
+            "y": -1.25
+          },
+          "b": {
+            "x": 9.75,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:3.75:0.7:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 3.75,
+            "y": 0.7
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:3.75:3.65:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 3.75,
+            "y": 3.65
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:3.75:-2.25:RV_Disc_D12mm_W3.9mm_P7.5mm",
+          "text": "RV_Disc_D12mm_W3.9mm_P7.5mm",
+          "at": {
+            "x": 3.75,
+            "y": -2.25
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -2.3100000000000005,
+        "minY": -1.3099999999999998,
+        "maxX": 9.81,
+        "maxY": 2.71
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "RV_Disc_D12mm_W3.9mm_P7.5mm",
+    "description": "Varistor, diameter 12mm, width 3.9mm, pitch 7.5mm",
+    "tags": [
+      "varistor",
+      "SIOV"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.8,
+          "height": 1.8
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 7.5,
+          "y": 1.4
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.8,
+          "height": 1.8
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.25,
+            -1.25
+          ],
+          "end": [
+            -2.25,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.15
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "b27613b6-eaea-4f67-ba32-218b878420dc"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.25,
+            -1.25
+          ],
+          "end": [
+            9.75,
+            -1.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.15
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "3850b183-790b-4279-87e2-6fc1dc656152"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -2.25,
+            2.65
+          ],
+          "end": [
+            9.75,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.15
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "03346d9d-d4bd-4dfc-8af1-9465b9c71663"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            9.75,
+            -1.25
+          ],
+          "end": [
+            9.75,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.15
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "2050e325-65de-42a2-9ea7-739e88ce5d9f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.5,
+            -1.5
+          ],
+          "end": [
+            -2.5,
+            2.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "1b59acf3-164e-46df-af8d-879da86ab15f"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.5,
+            -1.5
+          ],
+          "end": [
+            10,
+            -1.5
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "c4474426-dd10-41a2-9676-7156c48879b0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.5,
+            2.9
+          ],
+          "end": [
+            10,
+            2.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "038ddbed-b77e-4a2a-a6ea-53e7dc5cbc60"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            10,
+            -1.5
+          ],
+          "end": [
+            10,
+            2.9
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "01576260-8270-449e-9feb-2a3c7bbc0f11"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.25,
+            -1.25
+          ],
+          "end": [
+            -2.25,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "a1e66ae6-ca74-4e16-a6b3-830471e071a4"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.25,
+            -1.25
+          ],
+          "end": [
+            9.75,
+            -1.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "2a114028-1c7e-44f9-9a34-ccd8e2d6142b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -2.25,
+            2.65
+          ],
+          "end": [
+            9.75,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "bb2c9a58-e8f1-4a16-8201-a96ef7032c1c"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            9.75,
+            -1.25
+          ],
+          "end": [
+            9.75,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "6da4f96a-b1ba-4a2e-9fbd-da6e5191c9f2"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            3.75,
+            0.7,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "9599fe13-577d-4840-89cf-99bd36ccf44e",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 3.75,
+            "y": 0.7
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            3.75,
+            3.65,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "f0da655f-92dd-450f-bf25-b98714c2445b",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 3.75,
+            "y": 3.65
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            3.75,
+            -2.25,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "4ed5b62d-7556-48bd-9502-0e1f1a536194",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "RV_Disc_D12mm_W3.9mm_P7.5mm"
+          ]
+        },
+        "text": {
+          "content": "RV_Disc_D12mm_W3.9mm_P7.5mm",
+          "position": {
+            "x": 3.75,
+            "y": -2.25
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Varistor.3dshapes/RV_Disc_D12mm_W3.9mm_P7.5mm.step",
+        "resolvedFileName": "RV_Disc_D12mm_W3.9mm_P7.5mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"RV_Disc_D12mm_W3.9mm_P7.5mm\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"Varistor, diameter 12mm, width 3.9mm, pitch 7.5mm\")\n\t(tags \"varistor SIOV\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 3.75 3.65 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"f0da655f-92dd-450f-bf25-b98714c2445b\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"RV_Disc_D12mm_W3.9mm_P7.5mm\"\n\t\t(at 3.75 -2.25 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"4ed5b62d-7556-48bd-9502-0e1f1a536194\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"8d3ab8da-524b-4d84-a459-cba88818f1c4\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"95ce6f09-ef71-4f0f-bd00-5dc8df3c9e54\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -2.25 -1.25)\n\t\t(end -2.25 2.65)\n\t\t(stroke\n\t\t\t(width 0.15)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"b27613b6-eaea-4f67-ba32-218b878420dc\")\n\t)\n\t(fp_line\n\t\t(start -2.25 -1.25)\n\t\t(end 9.75 -1.25)\n\t\t(stroke\n\t\t\t(width 0.15)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"3850b183-790b-4279-87e2-6fc1dc656152\")\n\t)\n\t(fp_line\n\t\t(start -2.25 2.65)\n\t\t(end 9.75 2.65)\n\t\t(stroke\n\t\t\t(width 0.15)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"03346d9d-d4bd-4dfc-8af1-9465b9c71663\")\n\t)\n\t(fp_line\n\t\t(start 9.75 -1.25)\n\t\t(end 9.75 2.65)\n\t\t(stroke\n\t\t\t(width 0.15)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"2050e325-65de-42a2-9ea7-739e88ce5d9f\")\n\t)\n\t(fp_line\n\t\t(start -2.5 -1.5)\n\t\t(end -2.5 2.9)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"1b59acf3-164e-46df-af8d-879da86ab15f\")\n\t)\n\t(fp_line\n\t\t(start -2.5 -1.5)\n\t\t(end 10 -1.5)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"c4474426-dd10-41a2-9676-7156c48879b0\")\n\t)\n\t(fp_line\n\t\t(start -2.5 2.9)\n\t\t(end 10 2.9)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"038ddbed-b77e-4a2a-a6ea-53e7dc5cbc60\")\n\t)\n\t(fp_line\n\t\t(start 10 -1.5)\n\t\t(end 10 2.9)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"01576260-8270-449e-9feb-2a3c7bbc0f11\")\n\t)\n\t(fp_line\n\t\t(start -2.25 -1.25)\n\t\t(end -2.25 2.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"a1e66ae6-ca74-4e16-a6b3-830471e071a4\")\n\t)\n\t(fp_line\n\t\t(start -2.25 -1.25)\n\t\t(end 9.75 -1.25)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"2a114028-1c7e-44f9-9a34-ccd8e2d6142b\")\n\t)\n\t(fp_line\n\t\t(start -2.25 2.65)\n\t\t(end 9.75 2.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"bb2c9a58-e8f1-4a16-8201-a96ef7032c1c\")\n\t)\n\t(fp_line\n\t\t(start 9.75 -1.25)\n\t\t(end 9.75 2.65)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"6da4f96a-b1ba-4a2e-9fbd-da6e5191c9f2\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 3.75 0.7 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"9599fe13-577d-4840-89cf-99bd36ccf44e\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole circle\n\t\t(at 0 0)\n\t\t(size 1.8 1.8)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"b7024213-5a64-4aec-9d66-d5ddbdb30ae6\")\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 7.5 1.4)\n\t\t(size 1.8 1.8)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t\t(uuid \"9a148006-32d6-4978-bd5c-e6ea66026174\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Varistor.3dshapes/RV_Disc_D12mm_W3.9mm_P7.5mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "RV_Disc_D12mm_W3.9mm_P7.5mm.kicad_mod"
+}

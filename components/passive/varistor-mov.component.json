@@ -1,0 +1,65 @@
+{
+  "id": "openpcb.core.passive.varistor-mov",
+  "uuid": "4550f4c1-a459-5b1f-8f6e-baa0739f668b",
+  "version": "0.3.0",
+  "name": "MOV Varistor",
+  "description": "Metal-oxide varistor, disc THT D12 mm, 7.5 mm pitch. Voltage rating per instance (e.g. S14K275).",
+  "category": "passive",
+  "subcategory": "varistor",
+  "tags": [
+    "passive",
+    "varistor",
+    "mov",
+    "protection",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "varistor",
+    "MOV",
+    "surge",
+    "transient",
+    "S14K275"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "type": "MOV"
+  },
+  "symbol": "openpcb.core.symbol.passive.varistor",
+  "defaultFootprint": "openpcb.core.footprint.passive.rv-disc-d12-p7-5",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.rv-disc-d12-p7-5",
+      "label": "Disc D12 P7.5",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Varistor.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "MOV Varistor",
+    "sourceHash": "0f802aa15ed2f52f0ea8dcf56ec9f6c5f0c52da80aeb42f3eeea6aa7cee3e54c",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

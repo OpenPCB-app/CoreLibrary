@@ -1,0 +1,65 @@
+{
+  "id": "openpcb.core.passive.capacitor-film",
+  "uuid": "0b08ee1d-a5b2-5756-801a-71af1b4d4f38",
+  "version": "0.3.0",
+  "name": "Film Capacitor",
+  "description": "Box film capacitor, THT 5 mm pitch (L7.0 W2.5). Value set per instance.",
+  "category": "passive",
+  "subcategory": "capacitor-film",
+  "tags": [
+    "passive",
+    "capacitor",
+    "film",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "capacitor",
+    "film",
+    "box",
+    "MKT",
+    "MKP",
+    "X2"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "dielectric": "film"
+  },
+  "symbol": "openpcb.core.symbol.passive.capacitor-film",
+  "defaultFootprint": "openpcb.core.footprint.passive.c-rect-l7-p5",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.c-rect-l7-p5",
+      "label": "Box L7.0 P5.00",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "C.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "Film Capacitor",
+    "sourceHash": "7b52562ecf138b297abe598dcf444c38b15bb1f4f3b0c37fe4f77366b67a32b5",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "openpcb.core.passive.ntc-thermistor",
+  "uuid": "35294b5a-8f8d-53fe-bfe2-65b391416d40",
+  "version": "0.3.0",
+  "name": "NTC Thermistor",
+  "description": "NTC thermistor, disc THT (5 mm pitch). Value set per instance (e.g. 10k B3950).",
+  "category": "passive",
+  "subcategory": "thermistor",
+  "tags": [
+    "passive",
+    "thermistor",
+    "ntc",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "NTC",
+    "thermistor",
+    "temperature",
+    "10k",
+    "B3950"
+  ],
+  "aliases": [],
+  "datasheet": null,
+  "parameters": {
+    "type": "NTC"
+  },
+  "symbol": "openpcb.core.symbol.passive.ntc-thermistor",
+  "defaultFootprint": "openpcb.core.footprint.passive.c-disc-d5-p5",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.passive.c-disc-d5-p5",
+      "label": "Disc D5.0 P5.00",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Thermistor_NTC.kicad_sym",
+    "sourceLibrary": "Device",
+    "sourceItemName": "NTC Thermistor",
+    "sourceHash": "7b08e764f7f28f97bfe2ee1023447e0124411af85307f248a4d3dff862f73fff",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-10T18:31:53.926Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
