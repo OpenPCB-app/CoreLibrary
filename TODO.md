@@ -1,5 +1,7 @@
 # CoreLibrary Expansion — TODO
 
+> **Unmerged local branch (S1 note, 2026-07-12):** `feat/corelib-npth-pending` — 1 docs commit (NPTH shared-changes archive + publish checklist), unpushed. Likely superseded by the 2026-07-10 NPTH landing below; push for backup, then verify supersession and delete. Do not delete unpushed.
+
 Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](CURRENT_STATE.md) for what's done and [HANDOFF.md](HANDOFF.md) for the per-phase workflow + gotchas.
 
 **Source docs:** spec `../Corelibrary expansion plan.md` (§7.4 master parts table, Appendix D checklist); corrected plan `~/.claude/plans/act-as-senior-software-snazzy-lantern.md`.
