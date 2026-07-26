@@ -14,13 +14,18 @@ function makeTempDir(): string {
   return dir;
 }
 
-async function runPack(version: string, outDir: string): Promise<string> {
+async function runPack(
+  version: string,
+  outDir: string,
+  extraArgs: string[] = [],
+): Promise<string> {
   const proc = Bun.spawn({
     cmd: [
       "bun",
       "tools/pack.ts",
       `--version=${version}`,
       `--out=${outDir}`,
+      ...extraArgs,
     ],
     cwd: repoRoot,
     stdout: "pipe",
@@ -74,6 +79,46 @@ describe("CoreLibrary pack shared compatibility", () => {
 
     expect(referencedModels).toBeGreaterThan(0);
   }, 120_000);
+
+  // The core pack ships GLB only — the app renders GLB, and STEP was over half
+  // the payload. STEP is still read as the GLB source; --no-step only drops it
+  // from the archive and emits it as a companion zip.
+  test("--no-step yields a GLB-complete package with no STEP", async () => {
+    const dir = makeTempDir();
+    const artifactPath = await runPack("0.0.0-nostep", dir, ["--no-step"]);
+    const pkg = await readOpclibFromPath(artifactPath);
+
+    let referencedModels = 0;
+    const modelsById = new Map(
+      pkg.manifest.models3d.map((model) => [model.id, model]),
+    );
+    for (const footprint of pkg.manifest.footprints) {
+      for (const modelId of footprint.models3d ?? []) {
+        referencedModels += 1;
+        const model = modelsById.get(modelId);
+        expect(model, `missing model ${modelId}`).toBeDefined();
+        // Still fully renderable...
+        expect(model!.formats.glb, `missing GLB for ${modelId}`).toBeDefined();
+        expect(
+          pkg.assets.has(model!.formats.glb!.path.toLowerCase()),
+        ).toBe(true);
+        // ...but carries no STEP.
+        expect(model!.formats.step, `unexpected STEP for ${modelId}`).toBeUndefined();
+      }
+    }
+    expect(referencedModels).toBeGreaterThan(0);
+
+    for (const assetPath of pkg.assets.keys()) {
+      expect(assetPath.endsWith(".step")).toBe(false);
+    }
+
+    // Companion archive carries the STEP models plus their digests.
+    const companion = path.join(dir, "openpcb-core-library-0.0.0-nostep-step.zip");
+    const entries = unzipSync(readFileSync(companion));
+    const stepEntries = Object.keys(entries).filter((k) => k.endsWith(".step"));
+    expect(stepEntries.length).toBe(referencedModels);
+    expect(entries["SHA256SUMS"]).toBeInstanceOf(Uint8Array);
+  }, 240_000);
 
   test("shared reader rejects a tampered package asset", async () => {
     const dir = makeTempDir();

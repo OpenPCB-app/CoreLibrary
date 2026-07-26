@@ -40,12 +40,28 @@ jobs:
       - name: Validate library source (strict / release)
         run: bun tools/validate.ts --release --strict
 
+      # Documented as a hard release gate but never actually run in CI, so a
+      # bad 3D orientation could land unnoticed. --release exits non-zero on
+      # any error finding.
+      - name: 3D orientation gate
+        run: bun tools/audit-3d-placement.ts --release
+
+      # Symbol text-overlap, 3D orientation across every footprint variant, and
+      # cross-reference checks. --no-render skips the Playwright contact sheet
+      # (that stays a local command) so CI needs no browser.
+      - name: Component audit (headless)
+        run: bun tools/audit-components.ts --no-render
+
       - name: Check datasheet links
         run: bun tools/check-datasheet-links.ts
 
       - name: Pack release candidate
         # Tags `ci-<run_id>` so artifact filenames don't collide with real releases.
         run: bun tools/pack.ts --version=0.0.0-ci.${{ github.run_id }}
+
+      # Verifies the GLB-only core pack and the STEP companion stay buildable.
+      - name: Pack GLB-only variant
+        run: bun tools/pack.ts --version=0.0.0-ci.${{ github.run_id }} --no-step --out=dist/glb-only
 
       - name: Upload .opclib artifact
         uses: actions/upload-artifact@v4

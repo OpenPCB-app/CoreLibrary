@@ -71,11 +71,34 @@ jobs:
           fi
           bun tools/pack.ts --version="${VERSION}" $SIGN_ARGS
 
+      # GLB-only core pack (the app renders GLB; STEP is MCAD-export only and
+      # was over half the payload) plus the STEP companion archive. Written to
+      # a separate directory so it does not overwrite the full pack above,
+      # which keeps STEP embedded for consumers that want a single artifact.
+      - name: Pack GLB-only core + STEP companion
+        env:
+          OPCLIB_SIGN_KEY_PATH: ${{ env.OPCLIB_SIGN_KEY_PATH }}
+          OPCLIB_KEY_ID: ${{ vars.OPCLIB_KEY_ID }}
+        run: |
+          VERSION="${GITHUB_REF_NAME#v}"
+          SIGN_ARGS=""
+          if [ -n "${OPCLIB_SIGN_KEY_PATH:-}" ] && [ -n "${OPCLIB_KEY_ID:-}" ]; then
+            SIGN_ARGS="--sign-key=${OPCLIB_SIGN_KEY_PATH} --key-id=${OPCLIB_KEY_ID}"
+          fi
+          bun tools/pack.ts --version="${VERSION}" --no-step --out=dist/glb-only $SIGN_ARGS
+          mv "dist/glb-only/openpcb-core-library-${VERSION}.opclib" \
+             "dist/openpcb-core-library-${VERSION}-glb.opclib"
+          mv "dist/glb-only/openpcb-core-library-${VERSION}-step.zip" dist/
+          rmdir dist/glb-only
+
       - name: Generate SHA256SUMS
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
           cd dist
-          sha256sum "openpcb-core-library-${VERSION}.opclib" > SHA256SUMS
+          sha256sum \
+            "openpcb-core-library-${VERSION}.opclib" \
+            "openpcb-core-library-${VERSION}-glb.opclib" \
+            "openpcb-core-library-${VERSION}-step.zip" > SHA256SUMS
           cat SHA256SUMS
 
       - name: Verify package
@@ -116,7 +139,12 @@ jobs:
           VERSION="${GITHUB_REF_NAME#v}"
           ARTIFACT="dist/openpcb-core-library-${VERSION}.opclib"
           SUMS="dist/SHA256SUMS"
-          ASSETS=("$ARTIFACT" "$SUMS")
+          ASSETS=(
+            "$ARTIFACT"
+            "dist/openpcb-core-library-${VERSION}-glb.opclib"
+            "dist/openpcb-core-library-${VERSION}-step.zip"
+            "$SUMS"
+          )
           if [ -f keys/openpcb-core.pub ]; then
             ASSETS+=("keys/openpcb-core.pub")
           fi

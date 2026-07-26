@@ -50,6 +50,8 @@ export interface FootprintSidecar {
   orientationHint?: "vertical" | "horizontal";
   /** THT lead budget override (mm below board) for STEPs with full uncut leads. */
   belowBoardBudgetMm?: number;
+  /** Footprint legitimately ships without a 3D model (mounting holes, fiducials). */
+  no3d?: boolean;
   models3d?: string[];
   normalized?: {
     preview?: {

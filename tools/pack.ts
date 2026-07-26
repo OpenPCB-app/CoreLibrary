@@ -12,6 +12,7 @@ import {
   type PackedModel3d,
   type PackOpclibInput,
 } from "@openpcb/opclib-pack";
+import { zipSync } from "fflate";
 import { convertStepToGlbNode } from "@openpcb/step-to-glb/node";
 import type { Model3DRef } from "@openpcb/step-to-glb";
 import { REPO_ROOT, relPath, sha256Bytes, walkFiles } from "./lib";
@@ -53,6 +54,13 @@ const keyId =
   args["key-id"] && args["key-id"] !== "true" ? args["key-id"] : undefined;
 /** When set, write computed GLB bounds back into the source `.model.json`. */
 const writeBounds = args["write-bounds"] === "true";
+/**
+ * Exclude STEP from the archive. The app renders GLB; STEP only matters for
+ * MCAD export, and it is over half the payload. The STEP files are still READ
+ * (they are the GLB source) — this only drops them from the zip, and ships
+ * them as a separate companion archive instead.
+ */
+const noStep = args["no-step"] === "true";
 const STEP_TO_GLB_PARAMS = {
   linearUnit: "millimeter" as const,
   linearDeflectionType: "absolute_value" as const,
@@ -235,20 +243,29 @@ async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
     }
   }
 
+  // Drop STEP only AFTER it has served as the GLB source and the bounds are
+  // measured, so a --no-step pack is byte-identical to a full one minus the
+  // STEP entries.
+  const packedFormats = { ...formats };
+  const packedAssets = noStep
+    ? assets.filter((asset) => asset.format !== "step")
+    : assets;
+  if (noStep) delete packedFormats.step;
+
   return {
     entry: {
       id: data.id,
       uuid: data.uuid,
       version: data.version,
       name: data.name,
-      formats,
+      formats: packedFormats,
       boundsMm: bounds ? roundVec3(bounds.size) : data.boundsMm,
       offsetMm: data.offsetMm,
       rotationDeg: data.rotationDeg,
       scaleMm: data.scaleMm,
-      transformBaked: Boolean(formats.glb),
+      transformBaked: Boolean(packedFormats.glb),
     },
-    assets,
+    assets: packedAssets,
   };
 }
 
@@ -341,3 +358,30 @@ console.log(
       ? `\n       signed: keyId=${manifest.signature.keyId} alg=${manifest.signature.algorithm}`
       : "\n       (unsigned)"),
 );
+
+// STEP companion. Not an .opclib — a STEP-only archive carries no symbols,
+// footprints or components and so could never satisfy the library manifest
+// schema. A plain zip keyed on the same repo-relative paths is what an MCAD
+// consumer actually wants.
+if (noStep) {
+  const stepFiles = walkFiles(path.join(REPO_ROOT, "3d"), ".step");
+  const entries: Record<string, Uint8Array> = {};
+  const digests: string[] = [];
+  for (const abs of stepFiles) {
+    const rel = relPath(abs);
+    const bytes = readBytes(abs);
+    entries[rel] = bytes;
+    digests.push(`${sha256Bytes(bytes)}  ${rel}`);
+  }
+  entries["SHA256SUMS"] = new TextEncoder().encode(`${digests.join("\n")}\n`);
+
+  const stepZip = zipSync(entries, { level: 9 });
+  const stepPath = path.join(
+    outDir,
+    `openpcb-core-library-${version}-step.zip`,
+  );
+  writeFileSync(stepPath, stepZip);
+  console.log(
+    `[pack] wrote ${stepPath}\n       ${stepFiles.length} STEP model(s) + SHA256SUMS`,
+  );
+}

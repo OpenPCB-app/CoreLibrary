@@ -10,7 +10,10 @@
  *
  * Output: dist/audit-components/component-audit.png (+ report.json, viewer.html).
  *
- *   bun tools/audit-components.ts [--only=<substr>]
+ *   bun tools/audit-components.ts [--only=<substr>] [--no-render]
+ *
+ * --no-render skips the Playwright contact sheet and runs only the headless
+ * gate logic (symbol overlap, orientation, cross-refs) — the CI path.
  */
 import { mkdirSync, rmSync, writeFileSync } from "node:fs";
 import path from "node:path";
@@ -30,6 +33,7 @@ const args = new Set(process.argv.slice(2));
 const onlyArg = [...args]
   .find((a) => a.startsWith("--only="))
   ?.slice("--only=".length);
+const noRender = args.has("--no-render");
 const OUT_DIR = path.join(REPO_ROOT, "dist", "audit-components");
 const GLB_DIR = path.join(OUT_DIR, "glb");
 const THREE_ROOT = path.join(REPO_ROOT, "node_modules", "three");
@@ -156,6 +160,7 @@ async function build(): Promise<Row[]> {
     const symbolOverlaps = symbolModel
       ? findSymbolTextOverlaps(
           ((symbolModel as { labels?: [] }).labels ?? []) as never,
+          ((symbolModel as { pins?: [] }).pins ?? []) as never,
         )
       : [];
 
@@ -175,8 +180,10 @@ async function build(): Promise<Row[]> {
     if (defFp) {
       const modelId = defFp.models3d?.[0];
       const model = modelId ? models.get(modelId) : undefined;
-      if (!modelId) xref.push(`footprint ${defFp.id} has no 3D model`);
-      else if (!model) xref.push(`missing 3D model ${modelId}`);
+      // `no3d` footprints (mounting holes, fiducials) legitimately have none.
+      if (!modelId && !defFp.no3d)
+        xref.push(`footprint ${defFp.id} has no 3D model`);
+      else if (modelId && !model) xref.push(`missing 3D model ${modelId}`);
       const md = await modelData(model);
       if (model && !md) xref.push(`3D conversion failed for ${model.id}`);
       if (md) {
@@ -209,6 +216,8 @@ async function build(): Promise<Row[]> {
           verdict: p.verdict,
           findings: p.findings,
         });
+      } else if (fp.no3d) {
+        variants.push({ footprintId: v.footprint, verdict: "no3d", findings: [] });
       } else {
         variants.push({
           footprintId: v.footprint,
@@ -371,6 +380,16 @@ async function main(): Promise<void> {
     console.error("[components] nothing to audit");
     process.exit(1);
   }
+  if (!noRender) await renderContactSheet(rows);
+  await report(rows);
+}
+
+/**
+ * Playwright contact sheet. Split out so CI can run the gate logic headless:
+ * the symbol-overlap, orientation and cross-reference checks are what catch
+ * regressions, and they need no browser.
+ */
+async function renderContactSheet(rows: Row[]): Promise<void> {
   const server = Bun.serve({
     port: 0,
     fetch(req) {
@@ -405,7 +424,10 @@ async function main(): Promise<void> {
     await pw(["close"]);
     server.stop(true);
   }
+}
 
+async function report(rows: Row[]): Promise<void> {
+  const pngPath = path.join(OUT_DIR, "component-audit.png");
   // report.json + console summary
   const report = rows.map((r) => ({
     component: r.componentId,
@@ -430,7 +452,8 @@ async function main(): Promise<void> {
       r.variants.some((v) => v.verdict === "error"),
   );
   console.log(
-    `[components] ${rows.length} components, ${bad.length} with issues → ${pngPath}`,
+    `[components] ${rows.length} components, ${bad.length} with issues` +
+      (noRender ? "" : ` → ${pngPath}`),
   );
   for (const r of bad) {
     const parts: string[] = [];
@@ -451,6 +474,10 @@ async function main(): Promise<void> {
       );
     console.log(`  ✗ ${r.name}: ${parts.join(" | ")}`);
   }
+
+  // Exit non-zero so this can actually gate. It previously always exited 0,
+  // which made it a report rather than a check.
+  if (bad.length > 0) process.exitCode = 1;
 }
 
 await main();
