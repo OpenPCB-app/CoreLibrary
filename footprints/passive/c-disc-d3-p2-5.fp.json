@@ -31,7 +31,7 @@
     "padCount": 2,
     "packageCode": {
       "imperial": null,
-      "metric": "Disc-D3.0mm"
+      "metric": null
     },
     "tags": [
       "builtin",
@@ -58,7 +58,11 @@
           "heightMm": 1.6,
           "rotationDeg": 0,
           "drillDiameterMm": 0.8,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -72,7 +76,11 @@
           "heightMm": 1.6,
           "rotationDeg": 0,
           "drillDiameterMm": 0.8,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -156,6 +164,16 @@
         },
         {
           "kind": "rect",
+          "x": -1.05,
+          "y": -1.25,
+          "width": 4.6,
+          "height": 2.5,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "rect",
           "x": -0.25,
           "y": -1,
           "width": 3,
@@ -210,17 +228,433 @@
         }
       ],
       "bounds": {
-        "minX": -0.7999999999999998,
-        "minY": -1.5400000000000005,
-        "maxX": 3.3,
-        "maxY": 1.4200000000000004
+        "minX": -1.1099999999999999,
+        "minY": -1.31,
+        "maxX": 3.61,
+        "maxY": 1.31
       },
       "warnings": []
     }
   },
   "raw": {
-    "kind": "kicad-footprint",
-    "name": "C_Disc_D3.0mm_W2.0mm_P2.50mm"
+    "name": "C_Disc_D3.0mm_W2.0mm_P2.50mm",
+    "description": "C, Disc series, Radial, pin pitch=2.50mm, diameter*width=3*2mm^2, Capacitor",
+    "tags": [
+      "C",
+      "Disc",
+      "series",
+      "Radial",
+      "pin",
+      "pitch",
+      "2.50mm",
+      "diameter",
+      "3mm",
+      "width",
+      "2mm",
+      "Capacitor"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      },
+      {
+        "number": "2",
+        "type": "thru_hole",
+        "shape": "circle",
+        "position": {
+          "x": 2.5,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.6,
+          "height": 1.6
+        },
+        "layers": [
+          "*.Cu",
+          "*.Mask"
+        ],
+        "drillDiameter": 0.8
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.37,
+            -1.12
+          ],
+          "end": [
+            2.87,
+            -1.12
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.37,
+            -0.972
+          ],
+          "end": [
+            -0.37,
+            -1.12
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.37,
+            1.12
+          ],
+          "end": [
+            -0.37,
+            0.972
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.87,
+            -1.12
+          ],
+          "end": [
+            2.87,
+            -0.972
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.87,
+            0.972
+          ],
+          "end": [
+            2.87,
+            1.12
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            2.87,
+            1.12
+          ],
+          "end": [
+            -0.37,
+            1.12
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -1.05,
+            -1.25
+          ],
+          "end": [
+            3.55,
+            1.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.25,
+            -1
+          ],
+          "end": [
+            2.75,
+            1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            1.25,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.6,
+                0.6
+              ],
+              [
+                "thickness",
+                0.09
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 1.25,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.6,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            1.25,
+            -2.25,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 1.25,
+            "y": -2.25
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            1.25,
+            2.25,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "C_Disc_D3.0mm_W2.0mm_P2.50mm"
+          ]
+        },
+        "text": {
+          "content": "C_Disc_D3.0mm_W2.0mm_P2.50mm",
+          "position": {
+            "x": 1.25,
+            "y": 2.25
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W2.0mm_P2.50mm.step",
+        "resolvedFileName": "C_Disc_D3.0mm_W2.0mm_P2.50mm.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "through_hole"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"C_Disc_D3.0mm_W2.0mm_P2.50mm\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"C, Disc series, Radial, pin pitch=2.50mm, diameter*width=3*2mm^2, Capacitor\")\n\t(tags \"C Disc series Radial pin pitch 2.50mm diameter 3mm width 2mm Capacitor\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 1.25 -2.25 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"C_Disc_D3.0mm_W2.0mm_P2.50mm\"\n\t\t(at 1.25 2.25 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"capacitor/THT/other\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr through_hole)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.37 -1.12)\n\t\t(end 2.87 -1.12)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.37 -0.972)\n\t\t(end -0.37 -1.12)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.37 1.12)\n\t\t(end -0.37 0.972)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.87 -1.12)\n\t\t(end 2.87 -0.972)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.87 0.972)\n\t\t(end 2.87 1.12)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start 2.87 1.12)\n\t\t(end -0.37 1.12)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -1.05 -1.25)\n\t\t(end 3.55 1.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_rect\n\t\t(start -0.25 -1)\n\t\t(end 2.75 1)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 1.25 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.6 0.6)\n\t\t\t\t(thickness 0.09)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" thru_hole circle\n\t\t(at 0 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(pad \"2\" thru_hole circle\n\t\t(at 2.5 0)\n\t\t(size 1.6 1.6)\n\t\t(drill 0.8)\n\t\t(layers \"*.Cu\" \"*.Mask\")\n\t\t(remove_unused_layers no)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Capacitor_THT.3dshapes/C_Disc_D3.0mm_W2.0mm_P2.50mm.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
   },
   "aliases": [
     "builtin:fp:c-disc-d3-p2.5"
@@ -228,5 +662,9 @@
   "sourceFileName": "C_Disc_D3.0mm_W2.0mm_P2.50mm.kicad_mod",
   "models3d": [
     "openpcb.core.3d.passive.c-disc-d3-p2-5"
-  ]
+  ],
+  "package": {
+    "imperial": null,
+    "metric": null
+  }
 }

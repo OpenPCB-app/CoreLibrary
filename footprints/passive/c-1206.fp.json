@@ -30,6 +30,7 @@
     "mountType": "smd",
     "padCount": 2,
     "packageCode": {
+      "code": "1206",
       "imperial": "1206",
       "metric": "3216"
     },
@@ -59,7 +60,12 @@
           "heightMm": 1.8,
           "rotationDeg": 0,
           "roundrectRatio": 0.217391,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -73,7 +79,12 @@
           "heightMm": 1.8,
           "rotationDeg": 0,
           "roundrectRatio": 0.217391,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -102,6 +113,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -2.3,
+          "y": -1.15,
+          "width": 4.6,
+          "height": 2.3,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "rect",
@@ -159,17 +180,324 @@
         }
       ],
       "bounds": {
-        "minX": -2.05,
-        "minY": -1.09,
-        "maxX": 2.05,
-        "maxY": 1.03
+        "minX": -2.36,
+        "minY": -1.21,
+        "maxX": 2.36,
+        "maxY": 1.21
       },
       "warnings": []
     }
   },
   "raw": {
-    "kind": "kicad-footprint",
-    "name": "C_1206_3216Metric"
+    "name": "C_1206_3216Metric",
+    "description": "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)",
+    "tags": [
+      "capacitor"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -1.475,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.15,
+          "height": 1.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.217391
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 1.475,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 1.15,
+          "height": 1.8
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.217391
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.711252,
+            -0.91
+          ],
+          "end": [
+            0.711252,
+            -0.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.711252,
+            0.91
+          ],
+          "end": [
+            0.711252,
+            0.91
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -2.3,
+            -1.15
+          ],
+          "end": [
+            2.3,
+            1.15
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -1.6,
+            -0.8
+          ],
+          "end": [
+            1.6,
+            0.8
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.8,
+                0.8
+              ],
+              [
+                "thickness",
+                0.12
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.8,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -1.85,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -1.85
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            1.85,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "C_1206_3216Metric"
+          ]
+        },
+        "text": {
+          "content": "C_1206_3216Metric",
+          "position": {
+            "x": 0,
+            "y": 1.85
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step",
+        "resolvedFileName": "C_1206_3216Metric.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"C_1206_3216Metric\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)\")\n\t(tags \"capacitor\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -1.85 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"C_1206_3216Metric\"\n\t\t(at 0 1.85 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"SMD_2terminal_chip_molded\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.711252 -0.91)\n\t\t(end 0.711252 -0.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.711252 0.91)\n\t\t(end 0.711252 0.91)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -2.3 -1.15)\n\t\t(end 2.3 1.15)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_rect\n\t\t(start -1.6 -0.8)\n\t\t(end 1.6 0.8)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.8 0.8)\n\t\t\t\t(thickness 0.12)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -1.475 0)\n\t\t(size 1.15 1.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.217391)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 1.475 0)\n\t\t(size 1.15 1.8)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.217391)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_1206_3216Metric.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
   },
   "aliases": [
     "builtin:fp:c-1206-3216m"
@@ -177,5 +505,10 @@
   "sourceFileName": "C_1206_3216Metric.kicad_mod",
   "models3d": [
     "openpcb.core.3d.passive.c-1206"
-  ]
+  ],
+  "package": {
+    "code": "1206",
+    "imperial": "1206",
+    "metric": "3216"
+  }
 }

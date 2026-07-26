@@ -30,6 +30,7 @@
     "mountType": "smd",
     "padCount": 2,
     "packageCode": {
+      "code": "0402",
       "imperial": "0402",
       "metric": "1005"
     },
@@ -59,7 +60,12 @@
           "heightMm": 0.62,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -73,7 +79,12 @@
           "heightMm": 0.62,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -102,6 +113,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -0.91,
+          "y": -0.46,
+          "width": 1.82,
+          "height": 0.92,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "rect",
@@ -160,16 +181,323 @@
       ],
       "bounds": {
         "minX": -1,
-        "minY": -1.03,
+        "minY": -1,
         "maxX": 1,
-        "maxY": 0.97
+        "maxY": 1
       },
       "warnings": []
     }
   },
   "raw": {
-    "kind": "kicad-footprint",
-    "name": "C_0402_1005Metric"
+    "name": "C_0402_1005Metric",
+    "description": "Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)",
+    "tags": [
+      "capacitor"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": -0.48,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.56,
+          "height": 0.62
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "roundrect",
+        "position": {
+          "x": 0.48,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 0.56,
+          "height": 0.62
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ],
+        "roundrectRatio": 0.25
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.107836,
+            -0.36
+          ],
+          "end": [
+            0.107836,
+            -0.36
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -0.107836,
+            0.36
+          ],
+          "end": [
+            0.107836,
+            0.36
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -0.91,
+            -0.46
+          ],
+          "end": [
+            0.91,
+            0.46
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.CrtYd"
+        }
+      },
+      {
+        "type": "rect",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -0.5,
+            -0.25
+          ],
+          "end": [
+            0.5,
+            0.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "fill": "no",
+          "layer": "F.Fab"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                0.25,
+                0.25
+              ],
+              [
+                "thickness",
+                0.04
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 0,
+          "fontSizeMm": 0.25,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -1.16,
+            0
+          ],
+          "layer": "F.SilkS",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -1.16
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            1.16,
+            0
+          ],
+          "layer": "F.Fab",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "C_0402_1005Metric"
+          ]
+        },
+        "text": {
+          "content": "C_0402_1005Metric",
+          "position": {
+            "x": 0,
+            "y": 1.16
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step",
+        "resolvedFileName": "C_0402_1005Metric.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"C_0402_1005Metric\"\n\t(version 20260206)\n\t(generator \"kicad-footprint-generator\")\n\t(layer \"F.Cu\")\n\t(descr \"Capacitor SMD 0402 (1005 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf)\")\n\t(tags \"capacitor\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -1.16 0)\n\t\t(layer \"F.SilkS\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"C_0402_1005Metric\"\n\t\t(at 0 1.16 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"KiLib_Generator\" \"SMD_2terminal_chip_molded\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.SilkS\")\n\t\t(hide yes)\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -0.107836 -0.36)\n\t\t(end 0.107836 -0.36)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_line\n\t\t(start -0.107836 0.36)\n\t\t(end 0.107836 0.36)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t)\n\t(fp_rect\n\t\t(start -0.91 -0.46)\n\t\t(end 0.91 0.46)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.CrtYd\")\n\t)\n\t(fp_rect\n\t\t(start -0.5 -0.25)\n\t\t(end 0.5 0.25)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(fill no)\n\t\t(layer \"F.Fab\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 0)\n\t\t(layer \"F.Fab\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 0.25 0.25)\n\t\t\t\t(thickness 0.04)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd roundrect\n\t\t(at -0.48 0)\n\t\t(size 0.56 0.62)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(pad \"2\" smd roundrect\n\t\t(at 0.48 0)\n\t\t(size 0.56 0.62)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(roundrect_rratio 0.25)\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Capacitor_SMD.3dshapes/C_0402_1005Metric.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
   },
   "aliases": [
     "builtin:fp:c-0402-1005m"
@@ -177,5 +505,10 @@
   "sourceFileName": "C_0402_1005Metric.kicad_mod",
   "models3d": [
     "openpcb.core.3d.passive.c-0402"
-  ]
+  ],
+  "package": {
+    "code": "0402",
+    "imperial": "0402",
+    "metric": "1005"
+  }
 }
