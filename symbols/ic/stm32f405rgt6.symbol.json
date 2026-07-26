@@ -1,0 +1,4776 @@
+{
+  "id": "openpcb.core.symbol.ic.stm32f405rgt6",
+  "uuid": "f99eb3ba-f613-550c-a175-0188943ebca2",
+  "version": "0.4.0",
+  "name": "STM32F405RGT6",
+  "referencePrefix": "U",
+  "description": "STMicroelectronics Arm Cortex-M4 MCU, 1024KB flash, 192KB RAM, 168 MHz, 1.8-3.6V, 51 GPIO, LQFP64",
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-sym",
+    "sourceFileName": "STM32F405RGTx.kicad_sym",
+    "sourceLibrary": "MCU_ST_STM32F4",
+    "sourceItemName": "STM32F405RGTx",
+    "sourceHash": "d7198d13bf3f618e5264f463fda6d893e8488f52f5196c69da76a5b0894bf197",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-26T10:13:55.136Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": [],
+    "properties": {
+      "Reference": "U",
+      "Value": "STM32F405RGTx",
+      "Footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm",
+      "Datasheet": "https://www.st.com/resource/en/datasheet/stm32f405rg.pdf",
+      "Description": "STMicroelectronics Arm Cortex-M4 MCU, 1024KB flash, 192KB RAM, 168 MHz, 1.8-3.6V, 51 GPIO, LQFP64",
+      "ki_keywords": "Arm Cortex-M4 STM32F4 STM32F405/415",
+      "ki_fp_filters": "LQFP*10x10mm*P0.5mm*"
+    },
+    "units": 1,
+    "sourceFiles": [
+      {
+        "fileName": "STM32F405RGTx.kicad_sym",
+        "sourceItemName": "STM32F405RGTx",
+        "sha256": "ac363a6cfe640af407ba05f2d6461d665c9a16a96984038b40dfadd9bbb032a5"
+      }
+    ]
+  },
+  "normalized": {
+    "id": "sym_d3b2a141a3493a1e",
+    "name": "STM32F405RGTx",
+    "referencePrefix": "U",
+    "description": "STMicroelectronics Arm Cortex-M4 MCU, 1024KB flash, 192KB RAM, 168 MHz, 1.8-3.6V, 51 GPIO, LQFP64",
+    "sourceHash": "d7198d13bf3f618e5264f463fda6d893e8488f52f5196c69da76a5b0894bf197",
+    "pins": [
+      {
+        "originPinKey": "u1:1",
+        "number": "1",
+        "name": "VBAT",
+        "localPosition": {
+          "x": -5.08,
+          "y": 48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:2",
+        "number": "2",
+        "name": "PC13",
+        "localPosition": {
+          "x": -20.32,
+          "y": -15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:3",
+        "number": "3",
+        "name": "PC14",
+        "localPosition": {
+          "x": -20.32,
+          "y": -17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:4",
+        "number": "4",
+        "name": "PC15",
+        "localPosition": {
+          "x": -20.32,
+          "y": -20.32
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:5",
+        "number": "5",
+        "name": "PH0",
+        "localPosition": {
+          "x": -20.32,
+          "y": 30.48
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:6",
+        "number": "6",
+        "name": "PH1",
+        "localPosition": {
+          "x": -20.32,
+          "y": 27.94
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:7",
+        "number": "7",
+        "name": "NRST",
+        "localPosition": {
+          "x": -20.32,
+          "y": 40.64
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:8",
+        "number": "8",
+        "name": "PC0",
+        "localPosition": {
+          "x": -20.32,
+          "y": 17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:9",
+        "number": "9",
+        "name": "PC1",
+        "localPosition": {
+          "x": -20.32,
+          "y": 15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:10",
+        "number": "10",
+        "name": "PC2",
+        "localPosition": {
+          "x": -20.32,
+          "y": 12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:11",
+        "number": "11",
+        "name": "PC3",
+        "localPosition": {
+          "x": -20.32,
+          "y": 10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:12",
+        "number": "12",
+        "name": "VSSA",
+        "localPosition": {
+          "x": 2.54,
+          "y": -48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:13",
+        "number": "13",
+        "name": "VDDA",
+        "localPosition": {
+          "x": 7.62,
+          "y": 48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:14",
+        "number": "14",
+        "name": "PA0",
+        "localPosition": {
+          "x": 20.32,
+          "y": 40.64
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:15",
+        "number": "15",
+        "name": "PA1",
+        "localPosition": {
+          "x": 20.32,
+          "y": 38.1
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:16",
+        "number": "16",
+        "name": "PA2",
+        "localPosition": {
+          "x": 20.32,
+          "y": 35.56
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:17",
+        "number": "17",
+        "name": "PA3",
+        "localPosition": {
+          "x": 20.32,
+          "y": 33.02
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:18",
+        "number": "18",
+        "name": "VSS",
+        "localPosition": {
+          "x": 0,
+          "y": -48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:19",
+        "number": "19",
+        "name": "VDD",
+        "localPosition": {
+          "x": -2.54,
+          "y": 48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:20",
+        "number": "20",
+        "name": "PA4",
+        "localPosition": {
+          "x": 20.32,
+          "y": 30.48
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:21",
+        "number": "21",
+        "name": "PA5",
+        "localPosition": {
+          "x": 20.32,
+          "y": 27.94
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:22",
+        "number": "22",
+        "name": "PA6",
+        "localPosition": {
+          "x": 20.32,
+          "y": 25.4
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:23",
+        "number": "23",
+        "name": "PA7",
+        "localPosition": {
+          "x": 20.32,
+          "y": 22.86
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:24",
+        "number": "24",
+        "name": "PC4",
+        "localPosition": {
+          "x": -20.32,
+          "y": 7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:25",
+        "number": "25",
+        "name": "PC5",
+        "localPosition": {
+          "x": -20.32,
+          "y": 5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:26",
+        "number": "26",
+        "name": "PB0",
+        "localPosition": {
+          "x": 20.32,
+          "y": -2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:27",
+        "number": "27",
+        "name": "PB1",
+        "localPosition": {
+          "x": 20.32,
+          "y": -5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:28",
+        "number": "28",
+        "name": "PB2",
+        "localPosition": {
+          "x": 20.32,
+          "y": -7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:29",
+        "number": "29",
+        "name": "PB10",
+        "localPosition": {
+          "x": 20.32,
+          "y": -27.94
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:30",
+        "number": "30",
+        "name": "PB11",
+        "localPosition": {
+          "x": 20.32,
+          "y": -30.48
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:31",
+        "number": "31",
+        "name": "VCAP_1",
+        "localPosition": {
+          "x": -20.32,
+          "y": -25.4
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:32",
+        "number": "32",
+        "name": "VDD",
+        "localPosition": {
+          "x": 0,
+          "y": 48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:33",
+        "number": "33",
+        "name": "PB12",
+        "localPosition": {
+          "x": 20.32,
+          "y": -33.02
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:34",
+        "number": "34",
+        "name": "PB13",
+        "localPosition": {
+          "x": 20.32,
+          "y": -35.56
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:35",
+        "number": "35",
+        "name": "PB14",
+        "localPosition": {
+          "x": 20.32,
+          "y": -38.1
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:36",
+        "number": "36",
+        "name": "PB15",
+        "localPosition": {
+          "x": 20.32,
+          "y": -40.64
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:37",
+        "number": "37",
+        "name": "PC6",
+        "localPosition": {
+          "x": -20.32,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:38",
+        "number": "38",
+        "name": "PC7",
+        "localPosition": {
+          "x": -20.32,
+          "y": 0
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:39",
+        "number": "39",
+        "name": "PC8",
+        "localPosition": {
+          "x": -20.32,
+          "y": -2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:40",
+        "number": "40",
+        "name": "PC9",
+        "localPosition": {
+          "x": -20.32,
+          "y": -5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:41",
+        "number": "41",
+        "name": "PA8",
+        "localPosition": {
+          "x": 20.32,
+          "y": 20.32
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:42",
+        "number": "42",
+        "name": "PA9",
+        "localPosition": {
+          "x": 20.32,
+          "y": 17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:43",
+        "number": "43",
+        "name": "PA10",
+        "localPosition": {
+          "x": 20.32,
+          "y": 15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:44",
+        "number": "44",
+        "name": "PA11",
+        "localPosition": {
+          "x": 20.32,
+          "y": 12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:45",
+        "number": "45",
+        "name": "PA12",
+        "localPosition": {
+          "x": 20.32,
+          "y": 10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:46",
+        "number": "46",
+        "name": "PA13",
+        "localPosition": {
+          "x": 20.32,
+          "y": 7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:47",
+        "number": "47",
+        "name": "VCAP_2",
+        "localPosition": {
+          "x": -20.32,
+          "y": -27.94
+        },
+        "electricalType": "power_out",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:48",
+        "number": "48",
+        "name": "VDD",
+        "localPosition": {
+          "x": 2.54,
+          "y": 48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:49",
+        "number": "49",
+        "name": "PA14",
+        "localPosition": {
+          "x": 20.32,
+          "y": 5.08
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:50",
+        "number": "50",
+        "name": "PA15",
+        "localPosition": {
+          "x": 20.32,
+          "y": 2.54
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:51",
+        "number": "51",
+        "name": "PC10",
+        "localPosition": {
+          "x": -20.32,
+          "y": -7.62
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:52",
+        "number": "52",
+        "name": "PC11",
+        "localPosition": {
+          "x": -20.32,
+          "y": -10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:53",
+        "number": "53",
+        "name": "PC12",
+        "localPosition": {
+          "x": -20.32,
+          "y": -12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:54",
+        "number": "54",
+        "name": "PD2",
+        "localPosition": {
+          "x": -20.32,
+          "y": 22.86
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:55",
+        "number": "55",
+        "name": "PB3",
+        "localPosition": {
+          "x": 20.32,
+          "y": -10.16
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:56",
+        "number": "56",
+        "name": "PB4",
+        "localPosition": {
+          "x": 20.32,
+          "y": -12.7
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:57",
+        "number": "57",
+        "name": "PB5",
+        "localPosition": {
+          "x": 20.32,
+          "y": -15.24
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:58",
+        "number": "58",
+        "name": "PB6",
+        "localPosition": {
+          "x": 20.32,
+          "y": -17.78
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:59",
+        "number": "59",
+        "name": "PB7",
+        "localPosition": {
+          "x": 20.32,
+          "y": -20.32
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:60",
+        "number": "60",
+        "name": "BOOT0",
+        "localPosition": {
+          "x": -20.32,
+          "y": 35.56
+        },
+        "electricalType": "input",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:61",
+        "number": "61",
+        "name": "PB8",
+        "localPosition": {
+          "x": 20.32,
+          "y": -22.86
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:62",
+        "number": "62",
+        "name": "PB9",
+        "localPosition": {
+          "x": 20.32,
+          "y": -25.4
+        },
+        "electricalType": "bidirectional",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:63",
+        "number": "63",
+        "name": "VSS",
+        "localPosition": {
+          "x": 0,
+          "y": -48.26
+        },
+        "electricalType": "passive",
+        "unit": 1
+      },
+      {
+        "originPinKey": "u1:64",
+        "number": "64",
+        "name": "VDD",
+        "localPosition": {
+          "x": 5.08,
+          "y": 48.26
+        },
+        "electricalType": "power_in",
+        "unit": 1
+      }
+    ],
+    "warnings": [],
+    "preview": {
+      "kind": "symbol",
+      "units": "mm",
+      "name": "STM32F405RGTx",
+      "unitCount": 1,
+      "graphics": [
+        {
+          "kind": "rect",
+          "x": -17.78,
+          "y": -45.72,
+          "width": 35.56,
+          "height": 91.44,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        }
+      ],
+      "pins": [
+        {
+          "id": "u1:1",
+          "name": "VBAT",
+          "number": "1",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -5.08,
+            "y": 48.26
+          },
+          "bodyEnd": {
+            "x": -5.080000000000001,
+            "y": 45.72
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:2",
+          "name": "PC13",
+          "number": "2",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -15.24
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:3",
+          "name": "PC14",
+          "number": "3",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -17.78
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -17.78
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:4",
+          "name": "PC15",
+          "number": "4",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -20.32
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -20.32
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:5",
+          "name": "PH0",
+          "number": "5",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 30.48
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 30.48
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:6",
+          "name": "PH1",
+          "number": "6",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 27.94
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 27.94
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:7",
+          "name": "NRST",
+          "number": "7",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 40.64
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 40.64
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:8",
+          "name": "PC0",
+          "number": "8",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 17.78
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 17.78
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:9",
+          "name": "PC1",
+          "number": "9",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 15.24
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:10",
+          "name": "PC2",
+          "number": "10",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 12.7
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:11",
+          "name": "PC3",
+          "number": "11",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:12",
+          "name": "VSSA",
+          "number": "12",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": -48.26
+          },
+          "bodyEnd": {
+            "x": 2.54,
+            "y": -45.72
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:13",
+          "name": "VDDA",
+          "number": "13",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 7.62,
+            "y": 48.26
+          },
+          "bodyEnd": {
+            "x": 7.619999999999999,
+            "y": 45.72
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:14",
+          "name": "PA0",
+          "number": "14",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 40.64
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 40.64
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:15",
+          "name": "PA1",
+          "number": "15",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 38.1
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 38.1
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:16",
+          "name": "PA2",
+          "number": "16",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 35.56
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 35.56
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:17",
+          "name": "PA3",
+          "number": "17",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 33.02
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 33.02
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:18",
+          "name": "VSS",
+          "number": "18",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -48.26
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -45.72
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:19",
+          "name": "VDD",
+          "number": "19",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": -2.54,
+            "y": 48.26
+          },
+          "bodyEnd": {
+            "x": -2.5400000000000005,
+            "y": 45.72
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:20",
+          "name": "PA4",
+          "number": "20",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 30.48
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 30.48
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:21",
+          "name": "PA5",
+          "number": "21",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 27.94
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 27.94
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:22",
+          "name": "PA6",
+          "number": "22",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 25.4
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 25.4
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:23",
+          "name": "PA7",
+          "number": "23",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 22.86
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 22.86
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:24",
+          "name": "PC4",
+          "number": "24",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:25",
+          "name": "PC5",
+          "number": "25",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:26",
+          "name": "PB0",
+          "number": "26",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:27",
+          "name": "PB1",
+          "number": "27",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:28",
+          "name": "PB2",
+          "number": "28",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:29",
+          "name": "PB10",
+          "number": "29",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -27.94
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -27.94
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:30",
+          "name": "PB11",
+          "number": "30",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -30.48
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -30.48
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:31",
+          "name": "VCAP_1",
+          "number": "31",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -25.4
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -25.4
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:32",
+          "name": "VDD",
+          "number": "32",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": 48.26
+          },
+          "bodyEnd": {
+            "x": -4.6659043047514155e-16,
+            "y": 45.72
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:33",
+          "name": "PB12",
+          "number": "33",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -33.02
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -33.02
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:34",
+          "name": "PB13",
+          "number": "34",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -35.56
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -35.56
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:35",
+          "name": "PB14",
+          "number": "35",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -38.1
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -38.1
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:36",
+          "name": "PB15",
+          "number": "36",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -40.64
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -40.64
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:37",
+          "name": "PC6",
+          "number": "37",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:38",
+          "name": "PC7",
+          "number": "38",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:39",
+          "name": "PC8",
+          "number": "39",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:40",
+          "name": "PC9",
+          "number": "40",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -5.08
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -5.08
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:41",
+          "name": "PA8",
+          "number": "41",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 20.32
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 20.32
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:42",
+          "name": "PA9",
+          "number": "42",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 17.78
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 17.78
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:43",
+          "name": "PA10",
+          "number": "43",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 15.24
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:44",
+          "name": "PA11",
+          "number": "44",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 12.7
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:45",
+          "name": "PA12",
+          "number": "45",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:46",
+          "name": "PA13",
+          "number": "46",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 7.62
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:47",
+          "name": "VCAP_2",
+          "number": "47",
+          "electricalType": "power_out",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -27.94
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -27.94
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:48",
+          "name": "VDD",
+          "number": "48",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 2.54,
+            "y": 48.26
+          },
+          "bodyEnd": {
+            "x": 2.5399999999999996,
+            "y": 45.72
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u1:49",
+          "name": "PA14",
+          "number": "49",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 5.08
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 5.08
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:50",
+          "name": "PA15",
+          "number": "50",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:51",
+          "name": "PC10",
+          "number": "51",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -7.62
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:52",
+          "name": "PC11",
+          "number": "52",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -10.16
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:53",
+          "name": "PC12",
+          "number": "53",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": -12.7
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:54",
+          "name": "PD2",
+          "number": "54",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 22.86
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 22.86
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:55",
+          "name": "PB3",
+          "number": "55",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -10.16
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:56",
+          "name": "PB4",
+          "number": "56",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -12.7
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -12.7
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:57",
+          "name": "PB5",
+          "number": "57",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -15.24
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -15.24
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:58",
+          "name": "PB6",
+          "number": "58",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -17.78
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -17.78
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:59",
+          "name": "PB7",
+          "number": "59",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -20.32
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -20.32
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:60",
+          "name": "BOOT0",
+          "number": "60",
+          "electricalType": "input",
+          "unit": 1,
+          "anchor": {
+            "x": -20.32,
+            "y": 35.56
+          },
+          "bodyEnd": {
+            "x": -17.78,
+            "y": 35.56
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u1:61",
+          "name": "PB8",
+          "number": "61",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -22.86
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -22.86
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:62",
+          "name": "PB9",
+          "number": "62",
+          "electricalType": "bidirectional",
+          "unit": 1,
+          "anchor": {
+            "x": 20.32,
+            "y": -25.4
+          },
+          "bodyEnd": {
+            "x": 17.78,
+            "y": -25.4
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u1:63",
+          "name": "VSS",
+          "number": "63",
+          "electricalType": "passive",
+          "unit": 1,
+          "anchor": {
+            "x": 0,
+            "y": -48.26
+          },
+          "bodyEnd": {
+            "x": 1.5553014349171386e-16,
+            "y": -45.72
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u1:64",
+          "name": "VDD",
+          "number": "64",
+          "electricalType": "power_in",
+          "unit": 1,
+          "anchor": {
+            "x": 5.08,
+            "y": 48.26
+          },
+          "bodyEnd": {
+            "x": 5.079999999999999,
+            "y": 45.72
+          },
+          "rotationDeg": 270
+        }
+      ],
+      "labels": [
+        {
+          "id": "u1:1:name",
+          "text": "VBAT",
+          "at": {
+            "x": -5.080000000000001,
+            "y": 46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:1:number",
+          "text": "1",
+          "at": {
+            "x": -4.572,
+            "y": 48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "PC13",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:2:number",
+          "text": "2",
+          "at": {
+            "x": -19.05,
+            "y": -14.732
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "PC14",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:3:number",
+          "text": "3",
+          "at": {
+            "x": -19.05,
+            "y": -17.272000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "PC15",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -20.32
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:4:number",
+          "text": "4",
+          "at": {
+            "x": -19.05,
+            "y": -19.812
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "PH0",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 30.48
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:5:number",
+          "text": "5",
+          "at": {
+            "x": -19.05,
+            "y": 30.988
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "PH1",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 27.94
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:6:number",
+          "text": "6",
+          "at": {
+            "x": -19.05,
+            "y": 28.448
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:7:name",
+          "text": "NRST",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 40.64
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:7:number",
+          "text": "7",
+          "at": {
+            "x": -19.05,
+            "y": 41.148
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "PC0",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:8:number",
+          "text": "8",
+          "at": {
+            "x": -19.05,
+            "y": 18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:9:name",
+          "text": "PC1",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:9:number",
+          "text": "9",
+          "at": {
+            "x": -19.05,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "PC2",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:10:number",
+          "text": "10",
+          "at": {
+            "x": -19.05,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:11:name",
+          "text": "PC3",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:11:number",
+          "text": "11",
+          "at": {
+            "x": -19.05,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:12:name",
+          "text": "VSSA",
+          "at": {
+            "x": 2.54,
+            "y": -46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:12:number",
+          "text": "12",
+          "at": {
+            "x": 3.048,
+            "y": -48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:13:name",
+          "text": "VDDA",
+          "at": {
+            "x": 7.619999999999999,
+            "y": 46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:13:number",
+          "text": "13",
+          "at": {
+            "x": 8.128,
+            "y": 48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:14:name",
+          "text": "PA0",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 40.64
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:14:number",
+          "text": "14",
+          "at": {
+            "x": 19.05,
+            "y": 41.148
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:15:name",
+          "text": "PA1",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 38.1
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:15:number",
+          "text": "15",
+          "at": {
+            "x": 19.05,
+            "y": 38.608000000000004
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:16:name",
+          "text": "PA2",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 35.56
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:16:number",
+          "text": "16",
+          "at": {
+            "x": 19.05,
+            "y": 36.068000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:17:name",
+          "text": "PA3",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 33.02
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:17:number",
+          "text": "17",
+          "at": {
+            "x": 19.05,
+            "y": 33.528000000000006
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:18:name",
+          "text": "VSS",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:18:number",
+          "text": "18",
+          "at": {
+            "x": 0.508,
+            "y": -48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:19:name",
+          "text": "VDD",
+          "at": {
+            "x": -2.5400000000000005,
+            "y": 46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:19:number",
+          "text": "19",
+          "at": {
+            "x": -2.032,
+            "y": 48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:20:name",
+          "text": "PA4",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 30.48
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:20:number",
+          "text": "20",
+          "at": {
+            "x": 19.05,
+            "y": 30.988
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:21:name",
+          "text": "PA5",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 27.94
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:21:number",
+          "text": "21",
+          "at": {
+            "x": 19.05,
+            "y": 28.448
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:22:name",
+          "text": "PA6",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 25.4
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:22:number",
+          "text": "22",
+          "at": {
+            "x": 19.05,
+            "y": 25.907999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:23:name",
+          "text": "PA7",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:23:number",
+          "text": "23",
+          "at": {
+            "x": 19.05,
+            "y": 23.368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:24:name",
+          "text": "PC4",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:24:number",
+          "text": "24",
+          "at": {
+            "x": -19.05,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:25:name",
+          "text": "PC5",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:25:number",
+          "text": "25",
+          "at": {
+            "x": -19.05,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:26:name",
+          "text": "PB0",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:26:number",
+          "text": "26",
+          "at": {
+            "x": 19.05,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:27:name",
+          "text": "PB1",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:27:number",
+          "text": "27",
+          "at": {
+            "x": 19.05,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:28:name",
+          "text": "PB2",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:28:number",
+          "text": "28",
+          "at": {
+            "x": 19.05,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:29:name",
+          "text": "PB10",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -27.94
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:29:number",
+          "text": "29",
+          "at": {
+            "x": 19.05,
+            "y": -27.432000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:30:name",
+          "text": "PB11",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -30.48
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:30:number",
+          "text": "30",
+          "at": {
+            "x": 19.05,
+            "y": -29.972
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:31:name",
+          "text": "VCAP_1",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -25.4
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:31:number",
+          "text": "31",
+          "at": {
+            "x": -19.05,
+            "y": -24.892
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:32:name",
+          "text": "VDD",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:32:number",
+          "text": "32",
+          "at": {
+            "x": 0.508,
+            "y": 48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:33:name",
+          "text": "PB12",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -33.02
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:33:number",
+          "text": "33",
+          "at": {
+            "x": 19.05,
+            "y": -32.512
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:34:name",
+          "text": "PB13",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -35.56
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:34:number",
+          "text": "34",
+          "at": {
+            "x": 19.05,
+            "y": -35.052
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:35:name",
+          "text": "PB14",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -38.1
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:35:number",
+          "text": "35",
+          "at": {
+            "x": 19.05,
+            "y": -37.592
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:36:name",
+          "text": "PB15",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -40.64
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:36:number",
+          "text": "36",
+          "at": {
+            "x": 19.05,
+            "y": -40.132
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:37:name",
+          "text": "PC6",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:37:number",
+          "text": "37",
+          "at": {
+            "x": -19.05,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:38:name",
+          "text": "PC7",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:38:number",
+          "text": "38",
+          "at": {
+            "x": -19.05,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:39:name",
+          "text": "PC8",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:39:number",
+          "text": "39",
+          "at": {
+            "x": -19.05,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:40:name",
+          "text": "PC9",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:40:number",
+          "text": "40",
+          "at": {
+            "x": -19.05,
+            "y": -4.572
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:41:name",
+          "text": "PA8",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 20.32
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:41:number",
+          "text": "41",
+          "at": {
+            "x": 19.05,
+            "y": 20.828
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:42:name",
+          "text": "PA9",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:42:number",
+          "text": "42",
+          "at": {
+            "x": 19.05,
+            "y": 18.288
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:43:name",
+          "text": "PA10",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:43:number",
+          "text": "43",
+          "at": {
+            "x": 19.05,
+            "y": 15.748000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:44:name",
+          "text": "PA11",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:44:number",
+          "text": "44",
+          "at": {
+            "x": 19.05,
+            "y": 13.207999999999998
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:45:name",
+          "text": "PA12",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:45:number",
+          "text": "45",
+          "at": {
+            "x": 19.05,
+            "y": 10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:46:name",
+          "text": "PA13",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:46:number",
+          "text": "46",
+          "at": {
+            "x": 19.05,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:47:name",
+          "text": "VCAP_2",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -27.94
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:47:number",
+          "text": "47",
+          "at": {
+            "x": -19.05,
+            "y": -27.432000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:48:name",
+          "text": "VDD",
+          "at": {
+            "x": 2.5399999999999996,
+            "y": 46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:48:number",
+          "text": "48",
+          "at": {
+            "x": 3.048,
+            "y": 48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:49:name",
+          "text": "PA14",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:49:number",
+          "text": "49",
+          "at": {
+            "x": 19.05,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:50:name",
+          "text": "PA15",
+          "at": {
+            "x": 17.272000000000002,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:50:number",
+          "text": "50",
+          "at": {
+            "x": 19.05,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:51:name",
+          "text": "PC10",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:51:number",
+          "text": "51",
+          "at": {
+            "x": -19.05,
+            "y": -7.112
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:52:name",
+          "text": "PC11",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:52:number",
+          "text": "52",
+          "at": {
+            "x": -19.05,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:53:name",
+          "text": "PC12",
+          "at": {
+            "x": -17.272000000000002,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:53:number",
+          "text": "53",
+          "at": {
+            "x": -19.05,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:54:name",
+          "text": "PD2",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:54:number",
+          "text": "54",
+          "at": {
+            "x": -19.05,
+            "y": 23.368
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:55:name",
+          "text": "PB3",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:55:number",
+          "text": "55",
+          "at": {
+            "x": 19.05,
+            "y": -9.652000000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:56:name",
+          "text": "PB4",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -12.7
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:56:number",
+          "text": "56",
+          "at": {
+            "x": 19.05,
+            "y": -12.192
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:57:name",
+          "text": "PB5",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -15.24
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:57:number",
+          "text": "57",
+          "at": {
+            "x": 19.05,
+            "y": -14.732
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:58:name",
+          "text": "PB6",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -17.78
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:58:number",
+          "text": "58",
+          "at": {
+            "x": 19.05,
+            "y": -17.272000000000002
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:59:name",
+          "text": "PB7",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -20.32
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:59:number",
+          "text": "59",
+          "at": {
+            "x": 19.05,
+            "y": -19.812
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:60:name",
+          "text": "BOOT0",
+          "at": {
+            "x": -17.272000000000002,
+            "y": 35.56
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:60:number",
+          "text": "60",
+          "at": {
+            "x": -19.05,
+            "y": 36.068000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:61:name",
+          "text": "PB8",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -22.86
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:61:number",
+          "text": "61",
+          "at": {
+            "x": 19.05,
+            "y": -22.352
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:62:name",
+          "text": "PB9",
+          "at": {
+            "x": 17.272000000000002,
+            "y": -25.4
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:62:number",
+          "text": "62",
+          "at": {
+            "x": 19.05,
+            "y": -24.892
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:63:name",
+          "text": "VSS",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:63:number",
+          "text": "63",
+          "at": {
+            "x": 0.508,
+            "y": -48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u1:64:name",
+          "text": "VDD",
+          "at": {
+            "x": 5.079999999999999,
+            "y": 46.228
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u1:64:number",
+          "text": "64",
+          "at": {
+            "x": 5.588,
+            "y": 48.056799999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "symbol:reference",
+          "text": "U",
+          "at": {
+            "x": 0,
+            "y": 50.647600000000004
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "reference"
+        },
+        {
+          "id": "symbol:value",
+          "text": "STM32F405RGTx",
+          "at": {
+            "x": 0,
+            "y": -50.647600000000004
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "top",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -20.32,
+        "minY": -51.91760000000001,
+        "maxX": 20.32,
+        "maxY": 51.91760000000001
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "STM32F405RGTx",
+    "kicadId": null,
+    "pins": [
+      {
+        "name": "VBAT",
+        "number": "1",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -5.08,
+          "y": 48.26
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC13",
+        "number": "2",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC14",
+        "number": "3",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -17.78
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC15",
+        "number": "4",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -20.32
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PH0",
+        "number": "5",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 30.48
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PH1",
+        "number": "6",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 27.94
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "NRST",
+        "number": "7",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 40.64
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC0",
+        "number": "8",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 17.78
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC1",
+        "number": "9",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC2",
+        "number": "10",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC3",
+        "number": "11",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VSSA",
+        "number": "12",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": -48.26
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDDA",
+        "number": "13",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 7.62,
+          "y": 48.26
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA0",
+        "number": "14",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 40.64
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA1",
+        "number": "15",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 38.1
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA2",
+        "number": "16",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 35.56
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA3",
+        "number": "17",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 33.02
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VSS",
+        "number": "18",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -48.26
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "19",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": -2.54,
+          "y": 48.26
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA4",
+        "number": "20",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 30.48
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA5",
+        "number": "21",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 27.94
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA6",
+        "number": "22",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 25.4
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA7",
+        "number": "23",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 22.86
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC4",
+        "number": "24",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC5",
+        "number": "25",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB0",
+        "number": "26",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB1",
+        "number": "27",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB2",
+        "number": "28",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB10",
+        "number": "29",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -27.94
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB11",
+        "number": "30",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -30.48
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCAP_1",
+        "number": "31",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -25.4
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "32",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": 48.26
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB12",
+        "number": "33",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -33.02
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB13",
+        "number": "34",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -35.56
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB14",
+        "number": "35",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -38.1
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB15",
+        "number": "36",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -40.64
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC6",
+        "number": "37",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC7",
+        "number": "38",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 0
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC8",
+        "number": "39",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -2.54
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC9",
+        "number": "40",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -5.08
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA8",
+        "number": "41",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 20.32
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA9",
+        "number": "42",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 17.78
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA10",
+        "number": "43",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 15.24
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA11",
+        "number": "44",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 12.7
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA12",
+        "number": "45",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA13",
+        "number": "46",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 7.62
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VCAP_2",
+        "number": "47",
+        "electricalType": "power_out",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -27.94
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "48",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 2.54,
+          "y": 48.26
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA14",
+        "number": "49",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 5.08
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PA15",
+        "number": "50",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": 2.54
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC10",
+        "number": "51",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -7.62
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC11",
+        "number": "52",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PC12",
+        "number": "53",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PD2",
+        "number": "54",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 22.86
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB3",
+        "number": "55",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -10.16
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB4",
+        "number": "56",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -12.7
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB5",
+        "number": "57",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -15.24
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB6",
+        "number": "58",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -17.78
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB7",
+        "number": "59",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -20.32
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "BOOT0",
+        "number": "60",
+        "electricalType": "input",
+        "direction": "line",
+        "position": {
+          "x": -20.32,
+          "y": 35.56
+        },
+        "length": 2.54,
+        "rotation": 0,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB8",
+        "number": "61",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -22.86
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "PB9",
+        "number": "62",
+        "electricalType": "bidirectional",
+        "direction": "line",
+        "position": {
+          "x": 20.32,
+          "y": -25.4
+        },
+        "length": 2.54,
+        "rotation": 180,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VSS",
+        "number": "63",
+        "electricalType": "passive",
+        "direction": "line",
+        "position": {
+          "x": 0,
+          "y": -48.26
+        },
+        "length": 2.54,
+        "rotation": 90,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      },
+      {
+        "name": "VDD",
+        "number": "64",
+        "electricalType": "power_in",
+        "direction": "line",
+        "position": {
+          "x": 5.08,
+          "y": 48.26
+        },
+        "length": 2.54,
+        "rotation": 270,
+        "unit": 1,
+        "convert": 1,
+        "hidden": false,
+        "nameHidden": false,
+        "numberHidden": false,
+        "nameFontSizeMm": 1.27,
+        "numberFontSizeMm": 1.27
+      }
+    ],
+    "units": 1,
+    "properties": {
+      "Reference": "U",
+      "Value": "STM32F405RGTx",
+      "Footprint": "Package_QFP:LQFP-64_10x10mm_P0.5mm",
+      "Datasheet": "https://www.st.com/resource/en/datasheet/stm32f405rg.pdf",
+      "Description": "STMicroelectronics Arm Cortex-M4 MCU, 1024KB flash, 192KB RAM, 168 MHz, 1.8-3.6V, 51 GPIO, LQFP64",
+      "ki_keywords": "Arm Cortex-M4 STM32F4 STM32F405/415",
+      "ki_fp_filters": "LQFP*10x10mm*P0.5mm*"
+    },
+    "bodyGraphics": [
+      {
+        "unit": 0,
+        "convert": 1,
+        "node": [
+          "rectangle",
+          [
+            "start",
+            -17.78,
+            -45.72
+          ],
+          [
+            "end",
+            17.78,
+            45.72
+          ],
+          [
+            "stroke",
+            [
+              "width",
+              0.254
+            ],
+            [
+              "type",
+              "default"
+            ]
+          ],
+          [
+            "fill",
+            [
+              "type",
+              "background"
+            ]
+          ]
+        ]
+      }
+    ],
+    "warnings": [],
+    "rawSource": "(symbol STM32F405RGTx (exclude_from_sim no) (in_bom yes) (on_board yes) (in_pos_files yes) (duplicate_pin_numbers_are_jumpers no) (property Reference U (at -17.78 46.99 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Value STM32F405RGTx (at 10.16 46.99 0) (show_name no) (do_not_autoplace no) (effects (font (size 1.27 1.27)) (justify left))) (property Footprint Package_QFP:LQFP-64_10x10mm_P0.5mm (at -17.78 -45.72 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)) (justify right))) (property Datasheet https://www.st.com/resource/en/datasheet/stm32f405rg.pdf (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property Description \"STMicroelectronics Arm Cortex-M4 MCU, 1024KB flash, 192KB RAM, 168 MHz, 1.8-3.6V, 51 GPIO, LQFP64\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_keywords \"Arm Cortex-M4 STM32F4 STM32F405/415\" (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (property ki_fp_filters LQFP*10x10mm*P0.5mm* (at 0 0 0) (show_name no) (do_not_autoplace no) (hide yes) (effects (font (size 1.27 1.27)))) (symbol STM32F405RGTx_0_1 (rectangle (start -17.78 -45.72) (end 17.78 45.72) (stroke (width 0.254) (type default)) (fill (type background)))) (symbol STM32F405RGTx_1_1 (pin power_in line (at -5.08 48.26 270) (length 2.54) (name VBAT (effects (font (size 1.27 1.27)))) (number 1 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -20.32 -15.24 0) (length 2.54) (name PC13 (effects (font (size 1.27 1.27)))) (number 2 (effects (font (size 1.27 1.27)))) (alternate RTC_AF1 bidirectional line)) (pin bidirectional line (at -20.32 -17.78 0) (length 2.54) (name PC14 (effects (font (size 1.27 1.27)))) (number 3 (effects (font (size 1.27 1.27)))) (alternate RCC_OSC32_IN bidirectional line)) (pin bidirectional line (at -20.32 -20.32 0) (length 2.54) (name PC15 (effects (font (size 1.27 1.27)))) (number 4 (effects (font (size 1.27 1.27)))) (alternate ADC1_EXTI15 bidirectional line) (alternate ADC2_EXTI15 bidirectional line) (alternate ADC3_EXTI15 bidirectional line) (alternate RCC_OSC32_OUT bidirectional line)) (pin bidirectional line (at -20.32 30.48 0) (length 2.54) (name PH0 (effects (font (size 1.27 1.27)))) (number 5 (effects (font (size 1.27 1.27)))) (alternate RCC_OSC_IN bidirectional line)) (pin bidirectional line (at -20.32 27.94 0) (length 2.54) (name PH1 (effects (font (size 1.27 1.27)))) (number 6 (effects (font (size 1.27 1.27)))) (alternate RCC_OSC_OUT bidirectional line)) (pin input line (at -20.32 40.64 0) (length 2.54) (name NRST (effects (font (size 1.27 1.27)))) (number 7 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at -20.32 17.78 0) (length 2.54) (name PC0 (effects (font (size 1.27 1.27)))) (number 8 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN10 bidirectional line) (alternate ADC2_IN10 bidirectional line) (alternate ADC3_IN10 bidirectional line) (alternate USB_OTG_HS_ULPI_STP bidirectional line)) (pin bidirectional line (at -20.32 15.24 0) (length 2.54) (name PC1 (effects (font (size 1.27 1.27)))) (number 9 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN11 bidirectional line) (alternate ADC2_IN11 bidirectional line) (alternate ADC3_IN11 bidirectional line)) (pin bidirectional line (at -20.32 12.7 0) (length 2.54) (name PC2 (effects (font (size 1.27 1.27)))) (number 10 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN12 bidirectional line) (alternate ADC2_IN12 bidirectional line) (alternate ADC3_IN12 bidirectional line) (alternate I2S2_ext_SD bidirectional line) (alternate SPI2_MISO bidirectional line) (alternate USB_OTG_HS_ULPI_DIR bidirectional line)) (pin bidirectional line (at -20.32 10.16 0) (length 2.54) (name PC3 (effects (font (size 1.27 1.27)))) (number 11 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN13 bidirectional line) (alternate ADC2_IN13 bidirectional line) (alternate ADC3_IN13 bidirectional line) (alternate I2S2_SD bidirectional line) (alternate SPI2_MOSI bidirectional line) (alternate USB_OTG_HS_ULPI_NXT bidirectional line)) (pin power_in line (at 2.54 -48.26 90) (length 2.54) (name VSSA (effects (font (size 1.27 1.27)))) (number 12 (effects (font (size 1.27 1.27))))) (pin power_in line (at 7.62 48.26 270) (length 2.54) (name VDDA (effects (font (size 1.27 1.27)))) (number 13 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 20.32 40.64 180) (length 2.54) (name PA0 (effects (font (size 1.27 1.27)))) (number 14 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN0 bidirectional line) (alternate ADC2_IN0 bidirectional line) (alternate ADC3_IN0 bidirectional line) (alternate SYS_WKUP bidirectional line) (alternate TIM2_CH1 bidirectional line) (alternate TIM2_ETR bidirectional line) (alternate TIM5_CH1 bidirectional line) (alternate TIM8_ETR bidirectional line) (alternate UART4_TX bidirectional line) (alternate USART2_CTS bidirectional line)) (pin bidirectional line (at 20.32 38.1 180) (length 2.54) (name PA1 (effects (font (size 1.27 1.27)))) (number 15 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN1 bidirectional line) (alternate ADC2_IN1 bidirectional line) (alternate ADC3_IN1 bidirectional line) (alternate TIM2_CH2 bidirectional line) (alternate TIM5_CH2 bidirectional line) (alternate UART4_RX bidirectional line) (alternate USART2_RTS bidirectional line)) (pin bidirectional line (at 20.32 35.56 180) (length 2.54) (name PA2 (effects (font (size 1.27 1.27)))) (number 16 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN2 bidirectional line) (alternate ADC2_IN2 bidirectional line) (alternate ADC3_IN2 bidirectional line) (alternate TIM2_CH3 bidirectional line) (alternate TIM5_CH3 bidirectional line) (alternate TIM9_CH1 bidirectional line) (alternate USART2_TX bidirectional line)) (pin bidirectional line (at 20.32 33.02 180) (length 2.54) (name PA3 (effects (font (size 1.27 1.27)))) (number 17 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN3 bidirectional line) (alternate ADC2_IN3 bidirectional line) (alternate ADC3_IN3 bidirectional line) (alternate TIM2_CH4 bidirectional line) (alternate TIM5_CH4 bidirectional line) (alternate TIM9_CH2 bidirectional line) (alternate USART2_RX bidirectional line) (alternate USB_OTG_HS_ULPI_D0 bidirectional line)) (pin power_in line (at 0 -48.26 90) (length 2.54) (name VSS (effects (font (size 1.27 1.27)))) (number 18 (effects (font (size 1.27 1.27))))) (pin power_in line (at -2.54 48.26 270) (length 2.54) (name VDD (effects (font (size 1.27 1.27)))) (number 19 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 20.32 30.48 180) (length 2.54) (name PA4 (effects (font (size 1.27 1.27)))) (number 20 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN4 bidirectional line) (alternate ADC2_IN4 bidirectional line) (alternate DAC_OUT1 bidirectional line) (alternate I2S3_WS bidirectional line) (alternate SPI1_NSS bidirectional line) (alternate SPI3_NSS bidirectional line) (alternate USART2_CK bidirectional line) (alternate USB_OTG_HS_SOF bidirectional line)) (pin bidirectional line (at 20.32 27.94 180) (length 2.54) (name PA5 (effects (font (size 1.27 1.27)))) (number 21 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN5 bidirectional line) (alternate ADC2_IN5 bidirectional line) (alternate DAC_OUT2 bidirectional line) (alternate SPI1_SCK bidirectional line) (alternate TIM2_CH1 bidirectional line) (alternate TIM2_ETR bidirectional line) (alternate TIM8_CH1N bidirectional line) (alternate USB_OTG_HS_ULPI_CK bidirectional line)) (pin bidirectional line (at 20.32 25.4 180) (length 2.54) (name PA6 (effects (font (size 1.27 1.27)))) (number 22 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN6 bidirectional line) (alternate ADC2_IN6 bidirectional line) (alternate SPI1_MISO bidirectional line) (alternate TIM13_CH1 bidirectional line) (alternate TIM1_BKIN bidirectional line) (alternate TIM3_CH1 bidirectional line) (alternate TIM8_BKIN bidirectional line)) (pin bidirectional line (at 20.32 22.86 180) (length 2.54) (name PA7 (effects (font (size 1.27 1.27)))) (number 23 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN7 bidirectional line) (alternate ADC2_IN7 bidirectional line) (alternate SPI1_MOSI bidirectional line) (alternate TIM14_CH1 bidirectional line) (alternate TIM1_CH1N bidirectional line) (alternate TIM3_CH2 bidirectional line) (alternate TIM8_CH1N bidirectional line)) (pin bidirectional line (at -20.32 7.62 0) (length 2.54) (name PC4 (effects (font (size 1.27 1.27)))) (number 24 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN14 bidirectional line) (alternate ADC2_IN14 bidirectional line)) (pin bidirectional line (at -20.32 5.08 0) (length 2.54) (name PC5 (effects (font (size 1.27 1.27)))) (number 25 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN15 bidirectional line) (alternate ADC2_IN15 bidirectional line)) (pin bidirectional line (at 20.32 -2.54 180) (length 2.54) (name PB0 (effects (font (size 1.27 1.27)))) (number 26 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN8 bidirectional line) (alternate ADC2_IN8 bidirectional line) (alternate TIM1_CH2N bidirectional line) (alternate TIM3_CH3 bidirectional line) (alternate TIM8_CH2N bidirectional line) (alternate USB_OTG_HS_ULPI_D1 bidirectional line)) (pin bidirectional line (at 20.32 -5.08 180) (length 2.54) (name PB1 (effects (font (size 1.27 1.27)))) (number 27 (effects (font (size 1.27 1.27)))) (alternate ADC1_IN9 bidirectional line) (alternate ADC2_IN9 bidirectional line) (alternate TIM1_CH3N bidirectional line) (alternate TIM3_CH4 bidirectional line) (alternate TIM8_CH3N bidirectional line) (alternate USB_OTG_HS_ULPI_D2 bidirectional line)) (pin bidirectional line (at 20.32 -7.62 180) (length 2.54) (name PB2 (effects (font (size 1.27 1.27)))) (number 28 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 20.32 -27.94 180) (length 2.54) (name PB10 (effects (font (size 1.27 1.27)))) (number 29 (effects (font (size 1.27 1.27)))) (alternate I2C2_SCL bidirectional line) (alternate I2S2_CK bidirectional line) (alternate SPI2_SCK bidirectional line) (alternate TIM2_CH3 bidirectional line) (alternate USART3_TX bidirectional line) (alternate USB_OTG_HS_ULPI_D3 bidirectional line)) (pin bidirectional line (at 20.32 -30.48 180) (length 2.54) (name PB11 (effects (font (size 1.27 1.27)))) (number 30 (effects (font (size 1.27 1.27)))) (alternate ADC1_EXTI11 bidirectional line) (alternate ADC2_EXTI11 bidirectional line) (alternate ADC3_EXTI11 bidirectional line) (alternate I2C2_SDA bidirectional line) (alternate TIM2_CH4 bidirectional line) (alternate USART3_RX bidirectional line) (alternate USB_OTG_HS_ULPI_D4 bidirectional line)) (pin power_out line (at -20.32 -25.4 0) (length 2.54) (name VCAP_1 (effects (font (size 1.27 1.27)))) (number 31 (effects (font (size 1.27 1.27))))) (pin power_in line (at 0 48.26 270) (length 2.54) (name VDD (effects (font (size 1.27 1.27)))) (number 32 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 20.32 -33.02 180) (length 2.54) (name PB12 (effects (font (size 1.27 1.27)))) (number 33 (effects (font (size 1.27 1.27)))) (alternate CAN2_RX bidirectional line) (alternate I2C2_SMBA bidirectional line) (alternate I2S2_WS bidirectional line) (alternate SPI2_NSS bidirectional line) (alternate TIM1_BKIN bidirectional line) (alternate USART3_CK bidirectional line) (alternate USB_OTG_HS_ID bidirectional line) (alternate USB_OTG_HS_ULPI_D5 bidirectional line)) (pin bidirectional line (at 20.32 -35.56 180) (length 2.54) (name PB13 (effects (font (size 1.27 1.27)))) (number 34 (effects (font (size 1.27 1.27)))) (alternate CAN2_TX bidirectional line) (alternate I2S2_CK bidirectional line) (alternate SPI2_SCK bidirectional line) (alternate TIM1_CH1N bidirectional line) (alternate USART3_CTS bidirectional line) (alternate USB_OTG_HS_ULPI_D6 bidirectional line) (alternate USB_OTG_HS_VBUS bidirectional line)) (pin bidirectional line (at 20.32 -38.1 180) (length 2.54) (name PB14 (effects (font (size 1.27 1.27)))) (number 35 (effects (font (size 1.27 1.27)))) (alternate I2S2_ext_SD bidirectional line) (alternate SPI2_MISO bidirectional line) (alternate TIM12_CH1 bidirectional line) (alternate TIM1_CH2N bidirectional line) (alternate TIM8_CH2N bidirectional line) (alternate USART3_RTS bidirectional line) (alternate USB_OTG_HS_DM bidirectional line)) (pin bidirectional line (at 20.32 -40.64 180) (length 2.54) (name PB15 (effects (font (size 1.27 1.27)))) (number 36 (effects (font (size 1.27 1.27)))) (alternate ADC1_EXTI15 bidirectional line) (alternate ADC2_EXTI15 bidirectional line) (alternate ADC3_EXTI15 bidirectional line) (alternate I2S2_SD bidirectional line) (alternate RTC_REFIN bidirectional line) (alternate SPI2_MOSI bidirectional line) (alternate TIM12_CH2 bidirectional line) (alternate TIM1_CH3N bidirectional line) (alternate TIM8_CH3N bidirectional line) (alternate USB_OTG_HS_DP bidirectional line)) (pin bidirectional line (at -20.32 2.54 0) (length 2.54) (name PC6 (effects (font (size 1.27 1.27)))) (number 37 (effects (font (size 1.27 1.27)))) (alternate I2S2_MCK bidirectional line) (alternate SDIO_D6 bidirectional line) (alternate TIM3_CH1 bidirectional line) (alternate TIM8_CH1 bidirectional line) (alternate USART6_TX bidirectional line)) (pin bidirectional line (at -20.32 0 0) (length 2.54) (name PC7 (effects (font (size 1.27 1.27)))) (number 38 (effects (font (size 1.27 1.27)))) (alternate I2S3_MCK bidirectional line) (alternate SDIO_D7 bidirectional line) (alternate TIM3_CH2 bidirectional line) (alternate TIM8_CH2 bidirectional line) (alternate USART6_RX bidirectional line)) (pin bidirectional line (at -20.32 -2.54 0) (length 2.54) (name PC8 (effects (font (size 1.27 1.27)))) (number 39 (effects (font (size 1.27 1.27)))) (alternate SDIO_D0 bidirectional line) (alternate TIM3_CH3 bidirectional line) (alternate TIM8_CH3 bidirectional line) (alternate USART6_CK bidirectional line)) (pin bidirectional line (at -20.32 -5.08 0) (length 2.54) (name PC9 (effects (font (size 1.27 1.27)))) (number 40 (effects (font (size 1.27 1.27)))) (alternate DAC_EXTI9 bidirectional line) (alternate I2C3_SDA bidirectional line) (alternate I2S_CKIN bidirectional line) (alternate RCC_MCO_2 bidirectional line) (alternate SDIO_D1 bidirectional line) (alternate TIM3_CH4 bidirectional line) (alternate TIM8_CH4 bidirectional line)) (pin bidirectional line (at 20.32 20.32 180) (length 2.54) (name PA8 (effects (font (size 1.27 1.27)))) (number 41 (effects (font (size 1.27 1.27)))) (alternate I2C3_SCL bidirectional line) (alternate RCC_MCO_1 bidirectional line) (alternate TIM1_CH1 bidirectional line) (alternate USART1_CK bidirectional line) (alternate USB_OTG_FS_SOF bidirectional line)) (pin bidirectional line (at 20.32 17.78 180) (length 2.54) (name PA9 (effects (font (size 1.27 1.27)))) (number 42 (effects (font (size 1.27 1.27)))) (alternate DAC_EXTI9 bidirectional line) (alternate I2C3_SMBA bidirectional line) (alternate TIM1_CH2 bidirectional line) (alternate USART1_TX bidirectional line) (alternate USB_OTG_FS_VBUS bidirectional line)) (pin bidirectional line (at 20.32 15.24 180) (length 2.54) (name PA10 (effects (font (size 1.27 1.27)))) (number 43 (effects (font (size 1.27 1.27)))) (alternate TIM1_CH3 bidirectional line) (alternate USART1_RX bidirectional line) (alternate USB_OTG_FS_ID bidirectional line)) (pin bidirectional line (at 20.32 12.7 180) (length 2.54) (name PA11 (effects (font (size 1.27 1.27)))) (number 44 (effects (font (size 1.27 1.27)))) (alternate ADC1_EXTI11 bidirectional line) (alternate ADC2_EXTI11 bidirectional line) (alternate ADC3_EXTI11 bidirectional line) (alternate CAN1_RX bidirectional line) (alternate TIM1_CH4 bidirectional line) (alternate USART1_CTS bidirectional line) (alternate USB_OTG_FS_DM bidirectional line)) (pin bidirectional line (at 20.32 10.16 180) (length 2.54) (name PA12 (effects (font (size 1.27 1.27)))) (number 45 (effects (font (size 1.27 1.27)))) (alternate CAN1_TX bidirectional line) (alternate TIM1_ETR bidirectional line) (alternate USART1_RTS bidirectional line) (alternate USB_OTG_FS_DP bidirectional line)) (pin bidirectional line (at 20.32 7.62 180) (length 2.54) (name PA13 (effects (font (size 1.27 1.27)))) (number 46 (effects (font (size 1.27 1.27)))) (alternate SYS_JTMS-SWDIO bidirectional line)) (pin power_out line (at -20.32 -27.94 0) (length 2.54) (name VCAP_2 (effects (font (size 1.27 1.27)))) (number 47 (effects (font (size 1.27 1.27))))) (pin power_in line (at 2.54 48.26 270) (length 2.54) (name VDD (effects (font (size 1.27 1.27)))) (number 48 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 20.32 5.08 180) (length 2.54) (name PA14 (effects (font (size 1.27 1.27)))) (number 49 (effects (font (size 1.27 1.27)))) (alternate SYS_JTCK-SWCLK bidirectional line)) (pin bidirectional line (at 20.32 2.54 180) (length 2.54) (name PA15 (effects (font (size 1.27 1.27)))) (number 50 (effects (font (size 1.27 1.27)))) (alternate ADC1_EXTI15 bidirectional line) (alternate ADC2_EXTI15 bidirectional line) (alternate ADC3_EXTI15 bidirectional line) (alternate I2S3_WS bidirectional line) (alternate SPI1_NSS bidirectional line) (alternate SPI3_NSS bidirectional line) (alternate SYS_JTDI bidirectional line) (alternate TIM2_CH1 bidirectional line) (alternate TIM2_ETR bidirectional line)) (pin bidirectional line (at -20.32 -7.62 0) (length 2.54) (name PC10 (effects (font (size 1.27 1.27)))) (number 51 (effects (font (size 1.27 1.27)))) (alternate I2S3_CK bidirectional line) (alternate SDIO_D2 bidirectional line) (alternate SPI3_SCK bidirectional line) (alternate UART4_TX bidirectional line) (alternate USART3_TX bidirectional line)) (pin bidirectional line (at -20.32 -10.16 0) (length 2.54) (name PC11 (effects (font (size 1.27 1.27)))) (number 52 (effects (font (size 1.27 1.27)))) (alternate ADC1_EXTI11 bidirectional line) (alternate ADC2_EXTI11 bidirectional line) (alternate ADC3_EXTI11 bidirectional line) (alternate I2S3_ext_SD bidirectional line) (alternate SDIO_D3 bidirectional line) (alternate SPI3_MISO bidirectional line) (alternate UART4_RX bidirectional line) (alternate USART3_RX bidirectional line)) (pin bidirectional line (at -20.32 -12.7 0) (length 2.54) (name PC12 (effects (font (size 1.27 1.27)))) (number 53 (effects (font (size 1.27 1.27)))) (alternate I2S3_SD bidirectional line) (alternate SDIO_CK bidirectional line) (alternate SPI3_MOSI bidirectional line) (alternate UART5_TX bidirectional line) (alternate USART3_CK bidirectional line)) (pin bidirectional line (at -20.32 22.86 0) (length 2.54) (name PD2 (effects (font (size 1.27 1.27)))) (number 54 (effects (font (size 1.27 1.27)))) (alternate SDIO_CMD bidirectional line) (alternate TIM3_ETR bidirectional line) (alternate UART5_RX bidirectional line)) (pin bidirectional line (at 20.32 -10.16 180) (length 2.54) (name PB3 (effects (font (size 1.27 1.27)))) (number 55 (effects (font (size 1.27 1.27)))) (alternate I2S3_CK bidirectional line) (alternate SPI1_SCK bidirectional line) (alternate SPI3_SCK bidirectional line) (alternate SYS_JTDO-SWO bidirectional line) (alternate TIM2_CH2 bidirectional line)) (pin bidirectional line (at 20.32 -12.7 180) (length 2.54) (name PB4 (effects (font (size 1.27 1.27)))) (number 56 (effects (font (size 1.27 1.27)))) (alternate I2S3_ext_SD bidirectional line) (alternate SPI1_MISO bidirectional line) (alternate SPI3_MISO bidirectional line) (alternate SYS_JTRST bidirectional line) (alternate TIM3_CH1 bidirectional line)) (pin bidirectional line (at 20.32 -15.24 180) (length 2.54) (name PB5 (effects (font (size 1.27 1.27)))) (number 57 (effects (font (size 1.27 1.27)))) (alternate CAN2_RX bidirectional line) (alternate I2C1_SMBA bidirectional line) (alternate I2S3_SD bidirectional line) (alternate SPI1_MOSI bidirectional line) (alternate SPI3_MOSI bidirectional line) (alternate TIM3_CH2 bidirectional line) (alternate USB_OTG_HS_ULPI_D7 bidirectional line)) (pin bidirectional line (at 20.32 -17.78 180) (length 2.54) (name PB6 (effects (font (size 1.27 1.27)))) (number 58 (effects (font (size 1.27 1.27)))) (alternate CAN2_TX bidirectional line) (alternate I2C1_SCL bidirectional line) (alternate TIM4_CH1 bidirectional line) (alternate USART1_TX bidirectional line)) (pin bidirectional line (at 20.32 -20.32 180) (length 2.54) (name PB7 (effects (font (size 1.27 1.27)))) (number 59 (effects (font (size 1.27 1.27)))) (alternate I2C1_SDA bidirectional line) (alternate TIM4_CH2 bidirectional line) (alternate USART1_RX bidirectional line)) (pin input line (at -20.32 35.56 0) (length 2.54) (name BOOT0 (effects (font (size 1.27 1.27)))) (number 60 (effects (font (size 1.27 1.27))))) (pin bidirectional line (at 20.32 -22.86 180) (length 2.54) (name PB8 (effects (font (size 1.27 1.27)))) (number 61 (effects (font (size 1.27 1.27)))) (alternate CAN1_RX bidirectional line) (alternate I2C1_SCL bidirectional line) (alternate SDIO_D4 bidirectional line) (alternate TIM10_CH1 bidirectional line) (alternate TIM4_CH3 bidirectional line)) (pin bidirectional line (at 20.32 -25.4 180) (length 2.54) (name PB9 (effects (font (size 1.27 1.27)))) (number 62 (effects (font (size 1.27 1.27)))) (alternate CAN1_TX bidirectional line) (alternate DAC_EXTI9 bidirectional line) (alternate I2C1_SDA bidirectional line) (alternate I2S2_WS bidirectional line) (alternate SDIO_D5 bidirectional line) (alternate SPI2_NSS bidirectional line) (alternate TIM11_CH1 bidirectional line) (alternate TIM4_CH4 bidirectional line)) (pin passive line (at 0 -48.26 90) (length 2.54) (hide yes) (name VSS (effects (font (size 1.27 1.27)))) (number 63 (effects (font (size 1.27 1.27))))) (pin power_in line (at 5.08 48.26 270) (length 2.54) (name VDD (effects (font (size 1.27 1.27)))) (number 64 (effects (font (size 1.27 1.27)))))) (embedded_fonts no))",
+    "referenceFontSizeMm": 1.27,
+    "valueFontSizeMm": 1.27,
+    "pinNameOffsetMm": 0.508,
+    "hidePinNames": false,
+    "hidePinNumbers": false
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "id": "openpcb.core.ic.stm32f405rgt6",
+  "uuid": "0596d103-9a2a-5c71-b25d-7d726d4fa1db",
+  "version": "0.4.0",
+  "name": "STM32F405RGT6",
+  "description": "STM32F405RG — Arm Cortex-M4F MCU, 1 MB flash, 192 KB RAM, 168 MHz, LQFP-64.",
+  "category": "ic",
+  "subcategory": "mcu",
+  "tags": [
+    "ic",
+    "mcu",
+    "stm32",
+    "arm",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "STM32F405",
+    "STM32F405RG",
+    "Cortex-M4",
+    "FPU",
+    "LQFP-64"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.st.com/resource/en/datasheet/stm32f405rg.pdf",
+  "datasheetSource": "https://www.st.com/resource/en/datasheet/stm32f405rg.pdf",
+  "parameters": {
+    "core": "Arm Cortex-M4F",
+    "flash": "1MB",
+    "ram": "192KB",
+    "clock": "168MHz",
+    "io": "51 GPIO",
+    "supply": "1.8-3.6V"
+  },
+  "manufacturerParts": [
+    {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "STM32F405RGT6"
+    }
+  ],
+  "symbol": "openpcb.core.symbol.ic.stm32f405rgt6",
+  "defaultFootprint": "openpcb.core.footprint.package.lqfp-64-10x10mm-p0-5mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.lqfp-64-10x10mm-p0-5mm",
+      "label": "LQFP-64 10x10mm P0.5mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "17",
+          "padNumber": "17"
+        },
+        {
+          "pinNumber": "18",
+          "padNumber": "18"
+        },
+        {
+          "pinNumber": "19",
+          "padNumber": "19"
+        },
+        {
+          "pinNumber": "20",
+          "padNumber": "20"
+        },
+        {
+          "pinNumber": "21",
+          "padNumber": "21"
+        },
+        {
+          "pinNumber": "22",
+          "padNumber": "22"
+        },
+        {
+          "pinNumber": "23",
+          "padNumber": "23"
+        },
+        {
+          "pinNumber": "24",
+          "padNumber": "24"
+        },
+        {
+          "pinNumber": "25",
+          "padNumber": "25"
+        },
+        {
+          "pinNumber": "26",
+          "padNumber": "26"
+        },
+        {
+          "pinNumber": "27",
+          "padNumber": "27"
+        },
+        {
+          "pinNumber": "28",
+          "padNumber": "28"
+        },
+        {
+          "pinNumber": "29",
+          "padNumber": "29"
+        },
+        {
+          "pinNumber": "30",
+          "padNumber": "30"
+        },
+        {
+          "pinNumber": "31",
+          "padNumber": "31"
+        },
+        {
+          "pinNumber": "32",
+          "padNumber": "32"
+        },
+        {
+          "pinNumber": "33",
+          "padNumber": "33"
+        },
+        {
+          "pinNumber": "34",
+          "padNumber": "34"
+        },
+        {
+          "pinNumber": "35",
+          "padNumber": "35"
+        },
+        {
+          "pinNumber": "36",
+          "padNumber": "36"
+        },
+        {
+          "pinNumber": "37",
+          "padNumber": "37"
+        },
+        {
+          "pinNumber": "38",
+          "padNumber": "38"
+        },
+        {
+          "pinNumber": "39",
+          "padNumber": "39"
+        },
+        {
+          "pinNumber": "40",
+          "padNumber": "40"
+        },
+        {
+          "pinNumber": "41",
+          "padNumber": "41"
+        },
+        {
+          "pinNumber": "42",
+          "padNumber": "42"
+        },
+        {
+          "pinNumber": "43",
+          "padNumber": "43"
+        },
+        {
+          "pinNumber": "44",
+          "padNumber": "44"
+        },
+        {
+          "pinNumber": "45",
+          "padNumber": "45"
+        },
+        {
+          "pinNumber": "46",
+          "padNumber": "46"
+        },
+        {
+          "pinNumber": "47",
+          "padNumber": "47"
+        },
+        {
+          "pinNumber": "48",
+          "padNumber": "48"
+        },
+        {
+          "pinNumber": "49",
+          "padNumber": "49"
+        },
+        {
+          "pinNumber": "50",
+          "padNumber": "50"
+        },
+        {
+          "pinNumber": "51",
+          "padNumber": "51"
+        },
+        {
+          "pinNumber": "52",
+          "padNumber": "52"
+        },
+        {
+          "pinNumber": "53",
+          "padNumber": "53"
+        },
+        {
+          "pinNumber": "54",
+          "padNumber": "54"
+        },
+        {
+          "pinNumber": "55",
+          "padNumber": "55"
+        },
+        {
+          "pinNumber": "56",
+          "padNumber": "56"
+        },
+        {
+          "pinNumber": "57",
+          "padNumber": "57"
+        },
+        {
+          "pinNumber": "58",
+          "padNumber": "58"
+        },
+        {
+          "pinNumber": "59",
+          "padNumber": "59"
+        },
+        {
+          "pinNumber": "60",
+          "padNumber": "60"
+        },
+        {
+          "pinNumber": "61",
+          "padNumber": "61"
+        },
+        {
+          "pinNumber": "62",
+          "padNumber": "62"
+        },
+        {
+          "pinNumber": "63",
+          "padNumber": "63"
+        },
+        {
+          "pinNumber": "64",
+          "padNumber": "64"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "STM32F405RGTx.kicad_sym",
+    "sourceLibrary": "MCU_ST_STM32F4",
+    "sourceItemName": "STM32F405RGT6",
+    "sourceHash": "061fc97afc08f671b0704c7957f27e293968fe1435e13c5d96c1c0efb929f605",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-07-26T10:13:55.136Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}
