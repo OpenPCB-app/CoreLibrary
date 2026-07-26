@@ -1,6 +1,40 @@
 # CoreLibrary Expansion — TODO
 
-> **Unmerged local branch (S1 note, 2026-07-12):** `feat/corelib-npth-pending` — 1 docs commit (NPTH shared-changes archive + publish checklist), unpushed. Likely superseded by the 2026-07-10 NPTH landing below; push for backup, then verify supersession and delete. Do not delete unpushed.
+> **~~Unmerged local branch~~ RESOLVED (2026-07-26):** `feat/corelib-npth-pending` held 2 commits, not
+> 1. All 14 content files, the 4 mechanical components and the `allowUnnumberedPads` importer change
+> were already on master via the 2026-07-10 NPTH landing; its `mountType: "unknown"` schema change was
+> abandoned (master resolves `through_hole`/`smd` via `deriveMountType`, and no footprint uses
+> `unknown`). Only `docs/NPTH-SHARED-CHANGES.md` was unique, and it is stale — its shared change
+> shipped as `kicad-import-v0.1.2`. Archived as tag `archive/corelib-npth-pending`, branch deleted.
+
+## 2026-07-26 — hardening round (see [CURRENT_STATE.md](CURRENT_STATE.md) for the full record)
+
+Fixed two correctness defects that shipped green, and added the gates that catch them:
+**multi-unit pin collisions** (21 symbols; LM324's four op-amp outputs shared one coordinate and
+shorted) and **missing courtyard** (0/146 footprints). Plus: 19 seed-imported assets repaired,
+`parameters` normalized onto an enforced dictionary, `packageCode` populated, LQFP-64/100/144 +
+4 STM32 MCUs (+4 → 231), a GLB-only pack (−62%) with STEP companion, and `audit:3d` +
+`audit-components` finally running in CI.
+
+**Next:**
+
+1. **Push, in order** — `shared` main → tags (`rendering-core-v0.1.4`, `kicad-import-v0.2.0`,
+   `contracts-v0.3.1`) → re-pin `CoreLibrary/package.json` → push CoreLibrary `master`. CI cannot
+   resolve the new tags until the shared tags exist. Note `shared` also has unrelated `nav-shell`
+   WIP uncommitted and 2 pre-existing unpushed commits on main.
+2. **App smoke test** — import the dev pack, place an LM324, confirm four separate op-amps with
+   distinct pins and **no** `OUTPUT_OUTPUT_SHORT`; enable the assembly view preset and confirm
+   courtyards render.
+3. **App follow-ups (out of scope this round):** per-unit placement UX (`U1A`/`U1B` + physical-part
+   grouping for ERC/PCB/BOM — the compose fix makes the 21 parts correct and usable, not
+   full-EDA); the `courtyardPolygon` producer in `board-snapshot.ts`, now that footprints carry
+   courtyard; and the stale data-model section in `OpenPCB/src/modules/library/AGENTS.md`.
+4. **Breadth** — QFN/DFN/SON/BGA, 0201/1812/2010, FFC/FPC, 1.27/2.00 mm headers. Every new footprint
+   needs a component: `validate.ts` flags unreferenced footprints and `--strict` makes that fatal.
+5. **Typed parameter values** (`{value, unit, min, typ, max}`) for real parametric filtering — needs
+   a `component.schema.json` change (it is `additionalProperties: false`) plus opclib-pack and app work.
+6. **P9 release** — tag `vX.Y.Z`; `release.yml` now publishes the full pack, the GLB-only pack and
+   the STEP companion.
 
 Roadmap to the v1 jellybean set (~250–300 components). See [CURRENT_STATE.md](CURRENT_STATE.md) for what's done and [HANDOFF.md](HANDOFF.md) for the per-phase workflow + gotchas.
 
