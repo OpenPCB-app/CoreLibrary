@@ -37,13 +37,29 @@ interface PinMapEntry {
   pinName?: string;
 }
 
+interface PointMm {
+  x: number;
+  y: number;
+}
+
 interface SymbolSource {
   id: string;
   uuid: string;
   provenance: Provenance;
+  raw?: unknown;
   normalized?: {
-    pins?: Array<{ number?: string; unit?: number }>;
-    preview?: { pins?: Array<{ number?: string; unit?: number }> };
+    pins?: Array<{
+      number?: string;
+      unit?: number;
+      name?: string;
+      originPinKey?: string;
+      localPosition?: PointMm;
+    }>;
+    preview?: {
+      unitCount?: number;
+      pins?: Array<{ number?: string; unit?: number; id?: string; anchor?: PointMm }>;
+      labels?: Array<{ fontSizeMm?: number; text?: string }>;
+    };
   };
 }
 
@@ -54,8 +70,12 @@ interface FootprintSource {
   provenance: Provenance;
   models3d?: string[];
   no3d?: boolean;
+  raw?: unknown;
   normalized?: {
-    preview?: { pads?: Array<{ number?: string }> };
+    preview?: {
+      pads?: Array<{ number?: string }>;
+      graphics?: Array<{ layer?: string }>;
+    };
   };
 }
 
@@ -265,6 +285,177 @@ function footprintPadNumbers(data: FootprintSource): Set<string> {
   return stringSet(data.normalized?.preview?.pads?.map((pad) => pad.number));
 }
 
+/**
+ * Symbols whose `raw` legitimately predates the KiCad importer. These are
+ * OpenPCB-original 2-pin generics, not KiCad-derived, so there is no upstream
+ * source to re-parse. Their previews are valid; they simply cannot be rebuilt
+ * offline. Keep this list closed — everything else must carry a real parse.
+ */
+const RAW_EXEMPT_SYMBOLS = new Set([
+  "openpcb.core.symbol.passive.resistor",
+  "openpcb.core.symbol.passive.capacitor",
+]);
+
+/** KLC pin/label text is 1.27 mm. Anything smaller is a pre-KLC leftover. */
+const MIN_LABEL_FONT_MM = 1.0;
+
+function coordKey(p: PointMm): string {
+  return `${p.x},${p.y}`;
+}
+
+/**
+ * G1 — the electrical pin array and the preview must describe the same symbol.
+ *
+ * The app wires from `normalized.pins`, not from the preview, so the two
+ * drifting apart is invisible until parts short in a real schematic. KiCad
+ * draws every unit of a multi-unit symbol at identical local coordinates, so
+ * a preview that only carried unit 1 left the other units' pins coincident —
+ * all four LM324 op-amp outputs on (7.62, 0), merged into one net by any
+ * coordinate-based net derivation.
+ */
+function checkPinIntegrity(file: string, data: SymbolSource): void {
+  const pins = data.normalized?.pins ?? [];
+  const preview = data.normalized?.preview;
+  if (pins.length === 0 || !preview?.pins) return;
+
+  // G1a — parity.
+  if (pins.length !== preview.pins.length) {
+    fail(
+      file,
+      `symbol preview has ${preview.pins.length} pin(s) but normalized.pins has ${pins.length} — every pin must be represented`,
+    );
+    return;
+  }
+
+  // G1b — the electrical coordinate must equal the drawn anchor.
+  const anchors = new Map(
+    preview.pins.map((pin) => [pin.id ?? "", pin.anchor]),
+  );
+  for (const pin of pins) {
+    const anchor = anchors.get(pin.originPinKey ?? "");
+    if (!anchor || !pin.localPosition) continue;
+    if (anchor.x !== pin.localPosition.x || anchor.y !== pin.localPosition.y) {
+      fail(
+        file,
+        `pin ${pin.originPinKey} sits at (${pin.localPosition.x}, ${pin.localPosition.y}) but is drawn at (${anchor.x}, ${anchor.y}) — preview and normalized.pins disagree`,
+      );
+    }
+  }
+
+  const byCoord = new Map<string, typeof pins>();
+  for (const pin of pins) {
+    if (!pin.localPosition) continue;
+    const key = coordKey(pin.localPosition);
+    byCoord.set(key, [...(byCoord.get(key) ?? []), pin]);
+  }
+
+  for (const [key, stacked] of byCoord) {
+    if (stacked.length < 2) continue;
+
+    // G1c — pins of different units sharing a coordinate is the short.
+    const units = new Set(stacked.map((pin) => pin.unit ?? 1));
+    if (units.size > 1) {
+      fail(
+        file,
+        `pins of different units share coordinate (${key}): ${stacked.map((p) => p.originPinKey).join(", ")} — units must not overlap`,
+      );
+      continue;
+    }
+
+    // G1d — stacking WITHIN a unit is a legitimate KiCad idiom (every GND pad
+    // drawn at one point as a single power_in plus N passive duplicates), but
+    // only when the pins are the same signal. Differing names would be a real
+    // short.
+    const names = new Set(stacked.map((pin) => (pin.name ?? "").trim()));
+    if (names.size > 1) {
+      fail(
+        file,
+        `pins with different names share coordinate (${key}): ${stacked.map((p) => `${p.originPinKey}=${p.name}`).join(", ")}`,
+      );
+    }
+  }
+}
+
+/**
+ * G2 — `raw` must be a real parse, not the 2-key placeholder the retired seed
+ * importer wrote. Without it an asset cannot be re-normalized offline and
+ * silently misses every future preview-builder fix.
+ */
+function checkRawIntegrity(
+  file: string,
+  id: string,
+  raw: unknown,
+  kind: "footprint" | "symbol",
+): void {
+  if (kind === "symbol" && RAW_EXEMPT_SYMBOLS.has(id)) return;
+  const record =
+    typeof raw === "object" && raw !== null && !Array.isArray(raw)
+      ? (raw as Record<string, unknown>)
+      : null;
+  const usable =
+    record !== null &&
+    (kind === "footprint"
+      ? Array.isArray(record.pads) && Array.isArray(record.graphics)
+      : Array.isArray(record.pins) && Array.isArray(record.bodyGraphics));
+  if (!usable) {
+    fail(
+      file,
+      `${kind} has no rebuildable raw parse — run tools/backfill-raw.ts (asset cannot be re-normalized offline)`,
+    );
+  }
+}
+
+/**
+ * G3 — courtyard is the keep-out envelope the PCB renderer, the assembly view
+ * and the auto-placer's overlap gate all read. `no3d` mechanical parts are
+ * exempt only when they genuinely have no body.
+ */
+function checkCourtyard(file: string, data: FootprintSource): void {
+  const graphics = data.normalized?.preview?.graphics ?? [];
+  const hasCourtyard = graphics.some((g) =>
+    /^[FB]\.(CrtYd|Courtyard)$/.test(g.layer ?? ""),
+  );
+  if (!hasCourtyard) {
+    fail(
+      file,
+      `footprint preview carries no courtyard geometry (F.CrtYd/B.CrtYd) — required for placement clearance`,
+    );
+  }
+}
+
+/**
+ * G4 — protect composed multi-unit symbols from the app's boot-time preview
+ * migration.
+ *
+ * `rebuildPreviewModelsIfStale` (OpenPCB library module) treats ANY preview
+ * label with `fontSizeMm < 1.0` as a stale pre-KLC preview and rebuilds it via
+ * a source that hardcodes `unitCount: 1` — which would collapse a composed
+ * multi-unit symbol back onto a single unit and reintroduce the pin
+ * collisions.
+ *
+ * Sub-1 mm text is NOT stale in itself: KiCad sources legitimately specify
+ * smaller per-pin name fonts (LM386 "GAIN", TL081 "NULL") and free body text,
+ * and the importer preserves them faithfully. So the gate is scoped to the
+ * only case where it does damage — a symbol with more than one unit.
+ */
+function checkLabelFontSizes(file: string, data: SymbolSource): void {
+  const preview = data.normalized?.preview;
+  if (!preview || (preview.unitCount ?? 1) <= 1) return;
+
+  for (const label of preview.labels ?? []) {
+    if (
+      typeof label.fontSizeMm === "number" &&
+      label.fontSizeMm < MIN_LABEL_FONT_MM
+    ) {
+      fail(
+        file,
+        `multi-unit symbol has preview label "${label.text ?? ""}" at fontSizeMm ${label.fontSizeMm} (< ${MIN_LABEL_FONT_MM}) — the app's stale-preview migration would rebuild it as a single unit and re-stack the pins`,
+      );
+      return;
+    }
+  }
+}
+
 function setDifference(left: Set<string>, right: Set<string>): string[] {
   return [...left].filter((value) => !right.has(value)).sort();
 }
@@ -325,6 +516,9 @@ for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
   checkCategoryMatchesFile(file, data.id, "openpcb.core.symbol.");
   rememberName(symbolNames, file, data.name, "symbol");
   checkDuplicateSymbolPins(file, data);
+  checkRawIntegrity(file, data.id, data.raw, "symbol");
+  checkPinIntegrity(file, data);
+  checkLabelFontSizes(file, data);
   symbolIds.add(data.id);
   symbolPinsById.set(data.id, symbolPinNumbers(data));
 }
@@ -353,6 +547,8 @@ for (const file of walkFiles(footprintsRoot, ".fp.json")) {
   checkUniqueness(file, data.id, data.uuid);
   checkCategoryMatchesFile(file, data.id, "openpcb.core.footprint.");
   rememberName(footprintNames, file, data.name, "footprint");
+  checkRawIntegrity(file, data.id, data.raw, "footprint");
+  checkCourtyard(file, data);
   footprintIds.add(data.id);
   footprintPadsById.set(data.id, footprintPadNumbers(data));
   const no3d = data.no3d === true;

@@ -123,6 +123,8 @@ const footprintFixture = `(footprint "D_SOD-123"
   (attr smd)
   (fp_rect (start -1 -0.6) (end 1 0.6)
     (stroke (width 0.1) (type solid)) (fill no) (layer "F.Fab"))
+  (fp_rect (start -2.1 -1.1) (end 2.1 1.1)
+    (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd"))
   (pad "1" smd roundrect (at -1.5 0) (size 1 1)
     (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25))
   (pad "2" smd roundrect (at 1.5 0) (size 1 1)

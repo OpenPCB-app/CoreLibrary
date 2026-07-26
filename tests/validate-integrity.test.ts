@@ -168,3 +168,170 @@ describe("source-tree integrity validation", () => {
     expect(result.stderr).toContain("duplicate symbol pin number");
   });
 });
+
+// These gates exist because the library shipped 21 multi-unit symbols whose
+// pins were stacked on top of each other — every quad/hex logic gate and
+// multi-channel op-amp. A gate that cannot fail is not a gate, so each one is
+// exercised against a deliberately broken copy of the real tree.
+describe("preview / pin integrity gates", () => {
+  type FullSymbol = {
+    raw?: unknown;
+    normalized?: {
+      pins?: Array<{
+        number?: string;
+        unit?: number;
+        name?: string;
+        originPinKey?: string;
+        localPosition?: { x: number; y: number };
+      }>;
+      preview?: {
+        unitCount?: number;
+        pins?: Array<{ id?: string; anchor?: { x: number; y: number } }>;
+        labels?: Array<{ fontSizeMm?: number; text?: string }>;
+        graphics?: Array<{ layer?: string }>;
+      };
+    };
+  };
+  type FullFootprint = {
+    raw?: unknown;
+    normalized?: { preview?: { graphics?: Array<{ layer?: string }> } };
+  };
+
+  const MULTI_UNIT = "symbols/ic/lm324.symbol.json";
+
+  test("G1a — rejects a preview that drops pins", async () => {
+    const root = makeTempLibrary();
+    const symbol = readJson<FullSymbol>(root, MULTI_UNIT);
+    symbol.normalized!.preview!.pins = symbol.normalized!.preview!.pins!.slice(0, 3);
+    writeJson(root, MULTI_UNIT, symbol);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("every pin must be represented");
+  });
+
+  test("G1b — rejects an electrical pin drawn somewhere else", async () => {
+    const root = makeTempLibrary();
+    const symbol = readJson<FullSymbol>(root, MULTI_UNIT);
+    symbol.normalized!.pins![0]!.localPosition = { x: 999, y: 999 };
+    writeJson(root, MULTI_UNIT, symbol);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("preview and normalized.pins disagree");
+  });
+
+  // The original defect: re-stack two units onto one coordinate.
+  test("G1c — rejects pins of different units sharing a coordinate", async () => {
+    const root = makeTempLibrary();
+    const symbol = readJson<FullSymbol>(root, MULTI_UNIT);
+    const pins = symbol.normalized!.pins!;
+    const u1 = pins.find((p) => p.unit === 1)!;
+    const u2 = pins.find((p) => p.unit === 2)!;
+    u2.localPosition = { ...u1.localPosition! };
+    // Keep the anchors in step so G1b does not mask the collision.
+    const anchors = symbol.normalized!.preview!.pins!;
+    anchors.find((a) => a.id === u2.originPinKey)!.anchor = {
+      ...u1.localPosition!,
+    };
+    writeJson(root, MULTI_UNIT, symbol);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("units must not overlap");
+  });
+
+  // Stacking within one unit is a legitimate KiCad idiom (every GND pad drawn
+  // at one point), but only for the same signal.
+  test("G1d — rejects differently-named pins stacked within a unit", async () => {
+    const root = makeTempLibrary();
+    const rel = "symbols/ic/esp32-wroom-32.symbol.json";
+    const symbol = readJson<FullSymbol>(root, rel);
+    const pins = symbol.normalized!.pins!;
+    const gnd = pins.filter(
+      (p) =>
+        p.localPosition &&
+        pins.filter(
+          (q) =>
+            q.localPosition!.x === p.localPosition!.x &&
+            q.localPosition!.y === p.localPosition!.y,
+        ).length > 1,
+    );
+    if (gnd.length < 2) throw new Error("fixture has no stacked pins");
+    gnd[1]!.name = "NOT_GND";
+    writeJson(root, rel, symbol);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("pins with different names share coordinate");
+  });
+
+  test("G2 — rejects a stub raw blob", async () => {
+    const root = makeTempLibrary();
+    const rel = "footprints/passive/r-0603.fp.json";
+    const footprint = readJson<FullFootprint>(root, rel);
+    footprint.raw = { kind: "kicad-footprint", name: "R_0603_1608Metric" };
+    writeJson(root, rel, footprint);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("no rebuildable raw parse");
+  });
+
+  test("G2 — still allows the two OpenPCB-original generic symbols", async () => {
+    const root = makeTempLibrary();
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode, `${result.stdout}\n${result.stderr}`).toBe(0);
+  });
+
+  test("G3 — rejects a footprint with no courtyard", async () => {
+    const root = makeTempLibrary();
+    const rel = "footprints/passive/r-0603.fp.json";
+    const footprint = readJson<FullFootprint>(root, rel);
+    footprint.normalized!.preview!.graphics =
+      footprint.normalized!.preview!.graphics!.filter(
+        (g) => !/CrtYd|Courtyard/.test(g.layer ?? ""),
+      );
+    writeJson(root, rel, footprint);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("no courtyard geometry");
+  });
+
+  test("G4 — rejects sub-KLC label text on a multi-unit symbol", async () => {
+    const root = makeTempLibrary();
+    const symbol = readJson<FullSymbol>(root, MULTI_UNIT);
+    symbol.normalized!.preview!.labels![0]!.fontSizeMm = 0.508;
+    writeJson(root, MULTI_UNIT, symbol);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("re-stack the pins");
+  });
+
+  // Small text is faithful KiCad data on single-unit parts (LM386 "GAIN",
+  // TL081 "NULL"), so the gate must not fire there.
+  test("G4 — allows sub-KLC label text on a single-unit symbol", async () => {
+    const root = makeTempLibrary();
+    const rel = "symbols/ic/lm386.symbol.json";
+    const symbol = readJson<FullSymbol>(root, rel);
+    const small = symbol.normalized!.preview!.labels!.filter(
+      (l) => typeof l.fontSizeMm === "number" && l.fontSizeMm < 1,
+    );
+    expect(small.length).toBeGreaterThan(0);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode, `${result.stdout}\n${result.stderr}`).toBe(0);
+  });
+});

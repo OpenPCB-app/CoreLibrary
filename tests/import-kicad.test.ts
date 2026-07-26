@@ -57,6 +57,8 @@ const footprintFixture = `(footprint "R_0603_1608Metric"
   (attr smd)
   (fp_rect (start -0.8 -0.4) (end 0.8 0.4)
     (stroke (width 0.1) (type solid)) (fill no) (layer "F.Fab"))
+  (fp_rect (start -1.48 -0.73) (end 1.48 0.73)
+    (stroke (width 0.05) (type solid)) (fill no) (layer "F.CrtYd"))
   (pad "1" smd roundrect (at -0.775 0) (size 0.9 0.95)
     (layers "F.Cu" "F.Mask" "F.Paste") (roundrect_rratio 0.25))
   (pad "2" smd roundrect (at 0.775 0) (size 0.9 0.95)
