@@ -10,6 +10,7 @@ import {
   sha256File,
   walkFiles,
 } from "./lib";
+import { unknownParameterKeys } from "./parameter-dictionary";
 
 interface Issue {
   file: string;
@@ -676,6 +677,19 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
       file,
       `datasheetSource must be an http(s) URL: ${data.datasheetSource}`,
     );
+  // G5 — parameters must use the canonical vocabulary. Free-form keys made the
+  // field unusable for search or filtering: 95 distinct spellings across 155
+  // components, with vrrm/reverse_voltage and vce/vce_max both in play.
+  if (data.category && data.parameters) {
+    const unknown = unknownParameterKeys(data.category, data.parameters);
+    if (unknown.length > 0) {
+      fail(
+        file,
+        `unknown parameter key(s) for category '${data.category}': ${unknown.join(", ")} — see docs/PARAMETERS.md (add to tools/parameter-dictionary.ts if legitimate)`,
+      );
+    }
+  }
+
   if (data.category && SPEC_CATEGORIES.has(data.category)) {
     if (!data.parameters || Object.keys(data.parameters).length === 0)
       note(

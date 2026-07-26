@@ -1,35 +1,49 @@
 # Component parameters dictionary
 
 `component.parameters` is an optional, per-category key→value map of **headline electrical specs**.
-Values are SI-suffixed strings (e.g. `"40V"`, `"100nF"`, `"16MHz"`) unless a number is more natural.
+Values are SI-suffixed strings (e.g. `"40V"`, `"100nF"`, `"16MHz"`).
 
-**Parameters are not instance values.** The per-instance `Value` (e.g. the actual resistance or
+**Parameters are not instance values.** The per-instance `Value` (the actual resistance or
 capacitance) is set by the user on each placed part in the OpenPCB designer (PartInspectorPanel →
-`update_part_properties`). `parameters` carries the _applicable spec keys_ for a generic part
-(e.g. a resistor's `tolerance`/`power_rating`) and the _headline specs_ for a function-standard part.
+`update_part_properties`). `parameters` carries the _applicable spec keys_ for a generic part and the
+_headline specs_ for a function-standard part.
 
-Keys are advisory — the validator only **soft-warns** (never fails) when an `ic`/`power`/`sensor`
-component ships empty `parameters` or `keywords`.
+## This dictionary is enforced
+
+`tools/parameter-dictionary.ts` is the single source of truth, consumed by both
+`tools/normalize-parameters.ts` (the codemod) and the **G5** gate in `tools/validate.ts`. A key
+outside its category's list is a hard validation failure — keep this file and the module in step.
+
+To add a key: extend `PARAMETER_KEYS` in the module, then document it here. To rename one: add the
+old spelling to `PARAMETER_ALIASES` and run `bun tools/normalize-parameters.ts`.
+
+Two soft checks remain advisory (notes, never failures): an `ic`/`power`/`sensor` component shipping
+empty `parameters` or `keywords`.
+
+## Naming convention
+
+Short **datasheet-native snake_case** — `vrrm`, `if`, `vce`, `ic`, `rds_on`, `gbw`. These are the
+symbols printed on the datasheets the specs are transcribed from, and they stay compact in UI
+columns. Prefer the plain symbol over a `_max` suffix (`vds`, not `vds_max`).
 
 ## Dictionary (by category)
 
-| Category                 | Keys                                                                                         |
-| ------------------------ | -------------------------------------------------------------------------------------------- |
-| `passive` → resistor     | `tolerance`, `power_rating`, `temp_coeff`                                                    |
-| `passive` → capacitor    | `voltage_rating`, `dielectric` (X7R/X5R/C0G), `tolerance`                                    |
-| `passive` → inductor     | `current_rating`, `dcr`, `saturation_current`                                                |
-| `passive` → ferrite bead | `impedance_at_freq`, `rated_current`, `dcr`                                                  |
-| `passive` → fuse         | `hold_current`, `rating`                                                                     |
-| `crystal`                | `frequency`, `load_capacitance`, `frequency_tolerance`                                       |
-| `diode`                  | `reverse_voltage`, `forward_current`, `vf_typ`, `type` (signal/rectifier/schottky/zener/tvs) |
-| `transistor` (bjt)       | `vce_max`, `ic_max`, `hfe_typ`, `polarity`                                                   |
-| `transistor` (mosfet)    | `vds_max`, `id_max`, `rds_on`, `vgs_th`, `channel`                                           |
-| `opto` → led             | `color`, `vf_typ`, `if_typ`, `wavelength`                                                    |
-| `power` (regulator)      | `output_voltage`, `input_voltage_max`, `output_current`, `type` (ldo/buck/boost), `dropout`  |
-| `ic` (opamp/comparator)  | `gbw`, `supply_min`, `supply_max`, `rail_to_rail`, `channels`                                |
-| `ic` (mcu)               | `core`, `flash`, `ram`, `max_freq`, `vcc_min`, `vcc_max`, `io_count`                         |
-| `connector`              | `pitch`, `positions`, `current_per_contact`, `gender`, `mount`                               |
-| `sensor`                 | `interface` (i2c/spi/1-wire), `supply`, plus sensor-specific (`range`, `accuracy`)           |
+| Category      | Keys                                                                                                                                                                                                                                                                                                            |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `audio`       | `type`, `diameter`, `frequency`, `impedance`, `spl`                                                                                                                                                                                                                                                             |
+| `battery`     | `type`, `voltage`, `capacity`, `chemistry`                                                                                                                                                                                                                                                                      |
+| `connector`   | `type`, `pitch`, `positions`, `mount`, `rated_current`, `wire_gauge`, `orientation`, `shielded`                                                                                                                                                                                                                 |
+| `crystal`     | `type`, `frequency`, `load_capacitance`, `tolerance`, `integrated_caps`, `pads`                                                                                                                                                                                                                                 |
+| `diode`       | `type` (signal/rectifier/schottky/zener/tvs), `vrrm`, `if`, `vf`, `trr`, `vz`, `capacitance`                                                                                                                                                                                                                    |
+| `ic`          | `type`, `function`, `family`, `channels`, `supply`, `supply_min`, `supply_max`, `interface`, `bus`, `bus_voltage`, `core`, `clock`, `flash`, `ram`, `io`, `gbw`, `vos`, `gain`, `rail_to_rail`, `iout`, `iout_per_bridge`, `vout`, `vm`, `pout`, `resolution`, `bits`, `rate`, `data_rate`, `freq_max`, `gates`, `size`, `range`, `output`, `radio`, `phy`, `usb`, `isolation` |
+| `mechanical`  | `type`, `size`, `mount`                                                                                                                                                                                                                                                                                         |
+| `opto`        | `type`, `color`, `wavelength`, `voltage`, `channels`, `interface`, `data_rate`, `isolation`, `digits`, `polarity`, `ctr`                                                                                                                                                                                        |
+| `passive`     | `type`, `dielectric` (X7R/X5R/C0G), `polarized`, `topology`, `resistors`, `turns`, `adjust`, `tolerance`                                                                                                                                                                                                        |
+| `power`       | `type` (ldo/buck/boost), `topology`, `vin`, `vin_max`, `vout`, `iout`, `dropout`, `vref`, `vbat`, `ichg`, `cell`, `vka`, `switching_freq`                                                                                                                                                                       |
+| `relay`       | `type`, `contacts`, `contact_rating`, `coil_voltage`                                                                                                                                                                                                                                                            |
+| `sensor`      | `type`, `measures`, `interface` (i2c/spi/1-wire), `supply`, `range`, `output`, `sensitivity`, `accuracy`, `temp_range`, `humidity_range`                                                                                                                                                                        |
+| `switch`      | `type`, `contacts`, `rated_current`, `travel`                                                                                                                                                                                                                                                                   |
+| `transistor`  | `type`, `channel`, BJT: `vce`, `ic`, `hfe`, `pd` · MOSFET: `vds`, `id`, `rds_on`, `vgs_th`, `logic_level`                                                                                                                                                                                                       |
 
 ## Standard value ladders (defaults; the actual value is per-instance)
 

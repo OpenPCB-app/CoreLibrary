@@ -321,6 +321,22 @@ describe("preview / pin integrity gates", () => {
 
   // Small text is faithful KiCad data on single-unit parts (LM386 "GAIN",
   // TL081 "NULL"), so the gate must not fire there.
+  test("G5 — rejects a parameter key outside the category dictionary", async () => {
+    const root = makeTempLibrary();
+    const rel = "components/diode/1n4001.component.json";
+    const component = readJson<{ parameters?: Record<string, unknown> }>(
+      root,
+      rel,
+    );
+    component.parameters = { ...component.parameters, reverse_voltage: "50V" };
+    writeJson(root, rel, component);
+
+    const result = await runValidate(root);
+
+    expect(result.exitCode).not.toBe(0);
+    expect(result.stderr).toContain("unknown parameter key(s)");
+  });
+
   test("G4 — allows sub-KLC label text on a single-unit symbol", async () => {
     const root = makeTempLibrary();
     const rel = "symbols/ic/lm386.symbol.json";
