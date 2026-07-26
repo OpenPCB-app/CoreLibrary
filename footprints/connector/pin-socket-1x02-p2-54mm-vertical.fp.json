@@ -71,7 +71,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -85,7 +89,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -166,6 +174,58 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.77,
+            "y": -1.77
+          },
+          "b": {
+            "x": 1.77,
+            "y": -1.77
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.77,
+            "y": 4.31
+          },
+          "b": {
+            "x": -1.77,
+            "y": -1.77
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.77,
+            "y": -1.77
+          },
+          "b": {
+            "x": 1.77,
+            "y": 4.31
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.77,
+            "y": 4.31
+          },
+          "b": {
+            "x": -1.77,
+            "y": 4.31
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "line",
@@ -278,10 +338,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.3900000000000001,
-        "minY": -1.3900000000000001,
-        "maxX": 1.3900000000000001,
-        "maxY": 3.93
+        "minX": -1.83,
+        "minY": -1.83,
+        "maxX": 1.83,
+        "maxY": 4.369999999999999
       },
       "warnings": []
     }

@@ -5,8 +5,9 @@
   "name": "Fuse_0805_2012Metric",
   "mountType": "smd",
   "package": {
-    "imperial": null,
-    "metric": null
+    "code": "0805",
+    "imperial": "0805",
+    "metric": "2012"
   },
   "models3d": [
     "openpcb.core.3d.passive.fuse-0805-2012metric"
@@ -38,8 +39,9 @@
     "mountType": "smd",
     "padCount": 2,
     "packageCode": {
-      "imperial": null,
-      "metric": null
+      "code": "0805",
+      "imperial": "0805",
+      "metric": "2012"
     },
     "tags": [
       "fuse",
@@ -64,7 +66,12 @@
           "heightMm": 1.4,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -78,7 +85,12 @@
           "heightMm": 1.4,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -107,6 +119,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -1.68,
+          "y": -0.95,
+          "width": 3.36,
+          "height": 1.9,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "rect",
@@ -164,10 +186,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.425,
-        "minY": -1,
-        "maxX": 1.425,
-        "maxY": 1
+        "minX": -1.74,
+        "minY": -1.01,
+        "maxX": 1.74,
+        "maxY": 1.01
       },
       "warnings": []
     }

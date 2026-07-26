@@ -69,7 +69,12 @@
           "heightMm": 1.1,
           "rotationDeg": 0,
           "roundrectRatio": 0.227273,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:5",
@@ -83,7 +88,12 @@
           "heightMm": 1.1,
           "rotationDeg": 0,
           "roundrectRatio": 0.227273,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "3:6",
@@ -97,7 +107,12 @@
           "heightMm": 1.1,
           "rotationDeg": 0,
           "roundrectRatio": 0.227273,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "3:7",
@@ -111,7 +126,11 @@
           "heightMm": 10.8,
           "rotationDeg": 0,
           "roundrectRatio": 0.026596,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
         },
         {
           "id": "4:8",
@@ -125,7 +144,12 @@
           "heightMm": 1.1,
           "rotationDeg": 0,
           "roundrectRatio": 0.227273,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "5:9",
@@ -139,7 +163,12 @@
           "heightMm": 1.1,
           "rotationDeg": 0,
           "roundrectRatio": 0.227273,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -430,6 +459,16 @@
           "layer": "F.Fab"
         },
         {
+          "kind": "rect",
+          "x": -10.2,
+          "y": -5.65,
+          "width": 16.65,
+          "height": 11.3,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
           "kind": "polyline",
           "points": [
             {
@@ -525,10 +564,10 @@
         }
       ],
       "bounds": {
-        "minX": -9.95,
-        "minY": -5.4,
-        "maxX": 6.199999999999999,
-        "maxY": 5.4
+        "minX": -10.26,
+        "minY": -5.71,
+        "maxX": 6.51,
+        "maxY": 5.71
       },
       "warnings": []
     }

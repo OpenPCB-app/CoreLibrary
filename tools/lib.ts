@@ -2,6 +2,7 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import path from "node:path";
 import Ajv, { type AnySchema } from "ajv/dist/2020";
 import addFormats from "ajv-formats";
+import { extractPackageCode } from "@openpcb/kicad-import";
 export { canonicalize, sha256Bytes, sha256File } from "@openpcb/opclib-pack";
 
 export const REPO_ROOT = path.resolve(import.meta.dir, "..");
@@ -48,4 +49,20 @@ export function makeAjv(): InstanceType<typeof Ajv> {
 
 export function relPath(absPath: string): string {
   return path.relative(REPO_ROOT, absPath).split(path.sep).join("/");
+}
+
+/**
+ * `extractPackageCode` echoes the whole footprint name when it recognizes no
+ * package pattern. Emitting that as `code` would just duplicate `name` in the
+ * packed manifest, so only claim a code when one was actually identified.
+ */
+export function packageCodeFor(name: string): {
+  code?: string;
+  imperial: string | null;
+  metric: string | null;
+} {
+  const pkg = extractPackageCode(name);
+  return pkg.code === name
+    ? { imperial: pkg.imperial, metric: pkg.metric }
+    : pkg;
 }

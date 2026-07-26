@@ -68,7 +68,11 @@
           "rotationDeg": 0,
           "roundrectRatio": 0.1666666667,
           "drillDiameterMm": 0.95,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -82,7 +86,11 @@
           "heightMm": 1.6,
           "rotationDeg": 0,
           "drillDiameterMm": 0.95,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "3:2",
@@ -96,7 +104,11 @@
           "heightMm": 1.6,
           "rotationDeg": 0,
           "drillDiameterMm": 0.95,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "4:3",
@@ -110,7 +122,11 @@
           "heightMm": 1.6,
           "rotationDeg": 0,
           "drillDiameterMm": 0.95,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "SH:4",
@@ -124,7 +140,11 @@
           "heightMm": 3,
           "rotationDeg": 0,
           "drillDiameterMm": 2.3,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "SH:5",
@@ -138,7 +158,11 @@
           "heightMm": 3,
           "rotationDeg": 0,
           "drillDiameterMm": 2.3,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -288,6 +312,136 @@
         {
           "kind": "line",
           "a": {
+            "x": -4.2,
+            "y": 12.19
+          },
+          "b": {
+            "x": -3.55,
+            "y": 12.19
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.2,
+            "y": 13.49
+          },
+          "b": {
+            "x": -4.2,
+            "y": 12.19
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -4.2,
+            "y": 13.49
+          },
+          "b": {
+            "x": 11.2,
+            "y": 13.49
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.55,
+            "y": -2.77
+          },
+          "b": {
+            "x": -3.55,
+            "y": 0.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.55,
+            "y": -2.77
+          },
+          "b": {
+            "x": 10.55,
+            "y": -2.77
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.55,
+            "y": 12.19
+          },
+          "b": {
+            "x": -3.55,
+            "y": 4.66
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.55,
+            "y": -2.77
+          },
+          "b": {
+            "x": 10.55,
+            "y": 0.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 10.55,
+            "y": 12.19
+          },
+          "b": {
+            "x": 10.55,
+            "y": 4.66
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 11.2,
+            "y": 12.19
+          },
+          "b": {
+            "x": 10.55,
+            "y": 12.19
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 11.2,
+            "y": 13.49
+          },
+          "b": {
+            "x": 11.2,
+            "y": 12.19
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
             "x": -3.7,
             "y": 12.69
           },
@@ -427,6 +581,40 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": -3.55,
+            "y": 4.66
+          },
+          "mid": {
+            "x": -5.078208,
+            "y": 2.71
+          },
+          "end": {
+            "x": -3.55,
+            "y": 0.76
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "arc3",
+          "start": {
+            "x": 10.55,
+            "y": 0.76
+          },
+          "mid": {
+            "x": 12.078208,
+            "y": 2.71
+          },
+          "end": {
+            "x": 10.55,
+            "y": 4.66
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         }
       ],
       "labels": [
@@ -474,10 +662,10 @@
         }
       ],
       "bounds": {
-        "minX": -4.57,
-        "minY": -2.66,
-        "maxX": 11.57,
-        "maxY": 13.16
+        "minX": -5.1382080000000006,
+        "minY": -2.830000000000001,
+        "maxX": 12.138208,
+        "maxY": 13.55
       },
       "warnings": []
     }

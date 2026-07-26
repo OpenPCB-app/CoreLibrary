@@ -68,7 +68,11 @@
           "heightMm": 1.5,
           "rotationDeg": 0,
           "drillDiameterMm": 0.8,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -82,7 +86,11 @@
           "heightMm": 1.5,
           "rotationDeg": 0,
           "drillDiameterMm": 0.8,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "3:2",
@@ -96,7 +104,11 @@
           "heightMm": 1.5,
           "rotationDeg": 0,
           "drillDiameterMm": 0.8,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "4:3",
@@ -110,7 +122,11 @@
           "heightMm": 1.5,
           "rotationDeg": 0,
           "drillDiameterMm": 0.8,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -191,6 +207,58 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3,
+            "y": -2.44
+          },
+          "b": {
+            "x": 3,
+            "y": -2.44
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3,
+            "y": 10.06
+          },
+          "b": {
+            "x": -3,
+            "y": -2.44
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3,
+            "y": -2.44
+          },
+          "b": {
+            "x": 3,
+            "y": 10.06
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3,
+            "y": 10.06
+          },
+          "b": {
+            "x": -3,
+            "y": 10.06
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "line",
@@ -305,8 +373,8 @@
       "bounds": {
         "minX": -3.22,
         "minY": -2.66,
-        "maxX": 2.94,
-        "maxY": 10
+        "maxX": 3.06,
+        "maxY": 10.120000000000001
       },
       "warnings": []
     }

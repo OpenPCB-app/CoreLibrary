@@ -76,7 +76,11 @@
           "rotationDeg": 0,
           "roundrectRatio": 0.078125,
           "drillDiameterMm": 1.6,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -90,7 +94,11 @@
           "heightMm": 3.2,
           "rotationDeg": 0,
           "drillDiameterMm": 1.6,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -278,6 +286,16 @@
         },
         {
           "kind": "rect",
+          "x": -1.85,
+          "y": -2.85,
+          "width": 16.400000000000002,
+          "height": 5.7,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "rect",
           "x": 1.6,
           "y": -2.6,
           "width": 9.5,
@@ -360,10 +378,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.5999999999999996,
-        "minY": -2.7800000000000002,
-        "maxX": 14.299999999999999,
-        "maxY": 2.7800000000000002
+        "minX": -1.9100000000000001,
+        "minY": -2.91,
+        "maxX": 14.610000000000003,
+        "maxY": 2.91
       },
       "warnings": []
     }

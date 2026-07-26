@@ -64,10 +64,26 @@
           "heightMm": 2.2,
           "rotationDeg": 0,
           "drillDiameterMm": 2.2,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
-      "graphics": [],
+      "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radiusMm": 2.45,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        }
+      ],
       "labels": [
         {
           "id": "fp-text:F.Fab:0:0:${REFERENCE}",
@@ -113,10 +129,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.1,
-        "minY": -1.1,
-        "maxX": 1.1,
-        "maxY": 1.1
+        "minX": -2.5100000000000002,
+        "minY": -2.5100000000000002,
+        "maxX": 2.5100000000000002,
+        "maxY": 2.5100000000000002
       },
       "warnings": []
     }

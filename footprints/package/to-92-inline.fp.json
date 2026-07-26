@@ -69,7 +69,11 @@
           "heightMm": 1.5,
           "rotationDeg": 0,
           "drillDiameterMm": 0.75,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -83,7 +87,11 @@
           "heightMm": 1.5,
           "rotationDeg": 0,
           "drillDiameterMm": 0.75,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "3:2",
@@ -97,7 +105,11 @@
           "heightMm": 1.5,
           "rotationDeg": 0,
           "drillDiameterMm": 0.75,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -113,6 +125,58 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.46,
+            "y": -2.73
+          },
+          "b": {
+            "x": -1.46,
+            "y": 2.01
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.46,
+            "y": -2.73
+          },
+          "b": {
+            "x": 4,
+            "y": -2.73
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4,
+            "y": 2.01
+          },
+          "b": {
+            "x": -1.46,
+            "y": 2.01
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 4,
+            "y": 2.01
+          },
+          "b": {
+            "x": 4,
+            "y": -2.73
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "line",
@@ -241,9 +305,9 @@
         }
       ],
       "bounds": {
-        "minX": -1.1920870000000003,
-        "minY": -2.660000000000001,
-        "maxX": 3.930000340188863,
+        "minX": -1.5200000000000002,
+        "minY": -2.79,
+        "maxX": 4.06,
         "maxY": 2.660000562349432
       },
       "warnings": []

@@ -54,7 +54,7 @@
         "number": "1",
         "name": "Q",
         "localPosition": {
-          "x": 7.62,
+          "x": 15.24,
           "y": 2.54
         },
         "electricalType": "output",
@@ -65,7 +65,7 @@
         "number": "2",
         "name": "~{Q}",
         "localPosition": {
-          "x": 7.62,
+          "x": 15.24,
           "y": -2.54
         },
         "electricalType": "output",
@@ -76,7 +76,7 @@
         "number": "3",
         "name": "C",
         "localPosition": {
-          "x": -7.62,
+          "x": 0,
           "y": 0
         },
         "electricalType": "input",
@@ -87,7 +87,7 @@
         "number": "4",
         "name": "R",
         "localPosition": {
-          "x": 0,
+          "x": 7.62,
           "y": -7.62
         },
         "electricalType": "input",
@@ -98,7 +98,7 @@
         "number": "5",
         "name": "D",
         "localPosition": {
-          "x": -7.62,
+          "x": 0,
           "y": 2.54
         },
         "electricalType": "input",
@@ -109,7 +109,7 @@
         "number": "6",
         "name": "S",
         "localPosition": {
-          "x": 0,
+          "x": 7.62,
           "y": 7.62
         },
         "electricalType": "input",
@@ -120,7 +120,7 @@
         "number": "8",
         "name": "S",
         "localPosition": {
-          "x": 0,
+          "x": 24.86,
           "y": 7.62
         },
         "electricalType": "input",
@@ -131,7 +131,7 @@
         "number": "9",
         "name": "D",
         "localPosition": {
-          "x": -7.62,
+          "x": 17.24,
           "y": 2.54
         },
         "electricalType": "input",
@@ -142,7 +142,7 @@
         "number": "10",
         "name": "R",
         "localPosition": {
-          "x": 0,
+          "x": 24.86,
           "y": -7.62
         },
         "electricalType": "input",
@@ -153,7 +153,7 @@
         "number": "11",
         "name": "C",
         "localPosition": {
-          "x": -7.62,
+          "x": 17.24,
           "y": 0
         },
         "electricalType": "input",
@@ -164,7 +164,7 @@
         "number": "12",
         "name": "~{Q}",
         "localPosition": {
-          "x": 7.62,
+          "x": 32.48,
           "y": -2.54
         },
         "electricalType": "output",
@@ -175,7 +175,7 @@
         "number": "13",
         "name": "Q",
         "localPosition": {
-          "x": 7.62,
+          "x": 32.48,
           "y": 2.54
         },
         "electricalType": "output",
@@ -186,7 +186,7 @@
         "number": "7",
         "name": "VSS",
         "localPosition": {
-          "x": 0,
+          "x": 39.687,
           "y": -10.16
         },
         "electricalType": "power_in",
@@ -197,7 +197,7 @@
         "number": "14",
         "name": "VDD",
         "localPosition": {
-          "x": 0,
+          "x": 39.687,
           "y": 10.16
         },
         "electricalType": "power_in",
@@ -213,10 +213,28 @@
       "graphics": [
         {
           "kind": "rect",
-          "x": -5.08,
+          "x": 2.54,
           "y": -5.08,
           "width": 10.16,
           "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "rect",
+          "x": 19.78,
+          "y": -5.08,
+          "width": 10.16,
+          "height": 10.16,
+          "fill": "solid",
+          "strokeWidthMm": 0.254
+        },
+        {
+          "kind": "rect",
+          "x": 34.607,
+          "y": -7.62,
+          "width": 10.16,
+          "height": 15.24,
           "fill": "solid",
           "strokeWidthMm": 0.254
         }
@@ -229,11 +247,11 @@
           "electricalType": "output",
           "unit": 1,
           "anchor": {
-            "x": 7.62,
+            "x": 15.24,
             "y": 2.54
           },
           "bodyEnd": {
-            "x": 5.08,
+            "x": 12.7,
             "y": 2.5400000000000005
           },
           "rotationDeg": 180
@@ -245,11 +263,11 @@
           "electricalType": "output",
           "unit": 1,
           "anchor": {
-            "x": 7.62,
+            "x": 15.24,
             "y": -2.54
           },
           "bodyEnd": {
-            "x": 5.08,
+            "x": 12.7,
             "y": -2.5399999999999996
           },
           "rotationDeg": 180
@@ -261,11 +279,11 @@
           "electricalType": "input",
           "unit": 1,
           "anchor": {
-            "x": -7.62,
+            "x": 0,
             "y": 0
           },
           "bodyEnd": {
-            "x": -5.08,
+            "x": 2.54,
             "y": 0
           },
           "rotationDeg": 0
@@ -277,11 +295,11 @@
           "electricalType": "input",
           "unit": 1,
           "anchor": {
-            "x": 0,
+            "x": 7.62,
             "y": -7.62
           },
           "bodyEnd": {
-            "x": 1.5553014349171386e-16,
+            "x": 7.62,
             "y": -5.08
           },
           "rotationDeg": 90
@@ -293,11 +311,11 @@
           "electricalType": "input",
           "unit": 1,
           "anchor": {
-            "x": -7.62,
+            "x": 0,
             "y": 2.54
           },
           "bodyEnd": {
-            "x": -5.08,
+            "x": 2.54,
             "y": 2.54
           },
           "rotationDeg": 0
@@ -309,12 +327,140 @@
           "electricalType": "input",
           "unit": 1,
           "anchor": {
-            "x": 0,
+            "x": 7.62,
             "y": 7.62
           },
           "bodyEnd": {
-            "x": -4.6659043047514155e-16,
+            "x": 7.619999999999999,
             "y": 5.08
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u2:8",
+          "name": "S",
+          "number": "8",
+          "electricalType": "input",
+          "unit": 2,
+          "anchor": {
+            "x": 24.86,
+            "y": 7.62
+          },
+          "bodyEnd": {
+            "x": 24.86,
+            "y": 5.08
+          },
+          "rotationDeg": 270
+        },
+        {
+          "id": "u2:9",
+          "name": "D",
+          "number": "9",
+          "electricalType": "input",
+          "unit": 2,
+          "anchor": {
+            "x": 17.24,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 19.78,
+            "y": 2.54
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u2:10",
+          "name": "R",
+          "number": "10",
+          "electricalType": "input",
+          "unit": 2,
+          "anchor": {
+            "x": 24.86,
+            "y": -7.62
+          },
+          "bodyEnd": {
+            "x": 24.86,
+            "y": -5.08
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u2:11",
+          "name": "C",
+          "number": "11",
+          "electricalType": "input",
+          "unit": 2,
+          "anchor": {
+            "x": 17.24,
+            "y": 0
+          },
+          "bodyEnd": {
+            "x": 19.78,
+            "y": 0
+          },
+          "rotationDeg": 0
+        },
+        {
+          "id": "u2:12",
+          "name": "~{Q}",
+          "number": "12",
+          "electricalType": "output",
+          "unit": 2,
+          "anchor": {
+            "x": 32.48,
+            "y": -2.54
+          },
+          "bodyEnd": {
+            "x": 29.939999999999998,
+            "y": -2.5399999999999996
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u2:13",
+          "name": "Q",
+          "number": "13",
+          "electricalType": "output",
+          "unit": 2,
+          "anchor": {
+            "x": 32.48,
+            "y": 2.54
+          },
+          "bodyEnd": {
+            "x": 29.939999999999998,
+            "y": 2.5400000000000005
+          },
+          "rotationDeg": 180
+        },
+        {
+          "id": "u3:7",
+          "name": "VSS",
+          "number": "7",
+          "electricalType": "power_in",
+          "unit": 3,
+          "anchor": {
+            "x": 39.687,
+            "y": -10.16
+          },
+          "bodyEnd": {
+            "x": 39.687,
+            "y": -7.62
+          },
+          "rotationDeg": 90
+        },
+        {
+          "id": "u3:14",
+          "name": "VDD",
+          "number": "14",
+          "electricalType": "power_in",
+          "unit": 3,
+          "anchor": {
+            "x": 39.687,
+            "y": 10.16
+          },
+          "bodyEnd": {
+            "x": 39.687,
+            "y": 7.62
           },
           "rotationDeg": 270
         }
@@ -324,7 +470,7 @@
           "id": "u1:1:name",
           "text": "Q",
           "at": {
-            "x": 4.572,
+            "x": 12.192,
             "y": 2.5400000000000005
           },
           "fontSizeMm": 1.27,
@@ -337,7 +483,7 @@
           "id": "u1:1:number",
           "text": "1",
           "at": {
-            "x": 6.35,
+            "x": 13.969999999999999,
             "y": 3.048
           },
           "fontSizeMm": 1.27,
@@ -350,7 +496,7 @@
           "id": "u1:2:name",
           "text": "~{Q}",
           "at": {
-            "x": 4.572,
+            "x": 12.192,
             "y": -2.5399999999999996
           },
           "fontSizeMm": 1.27,
@@ -363,7 +509,7 @@
           "id": "u1:2:number",
           "text": "2",
           "at": {
-            "x": 6.35,
+            "x": 13.969999999999999,
             "y": -2.032
           },
           "fontSizeMm": 1.27,
@@ -376,7 +522,7 @@
           "id": "u1:3:name",
           "text": "C",
           "at": {
-            "x": -4.572,
+            "x": 3.048,
             "y": 0
           },
           "fontSizeMm": 1.27,
@@ -389,7 +535,7 @@
           "id": "u1:3:number",
           "text": "3",
           "at": {
-            "x": -6.35,
+            "x": 1.2700000000000005,
             "y": 0.508
           },
           "fontSizeMm": 1.27,
@@ -402,7 +548,7 @@
           "id": "u1:4:name",
           "text": "R",
           "at": {
-            "x": 1.5553014349171386e-16,
+            "x": 7.62,
             "y": -5.588
           },
           "fontSizeMm": 1.27,
@@ -415,7 +561,7 @@
           "id": "u1:4:number",
           "text": "4",
           "at": {
-            "x": 0.508,
+            "x": 8.128,
             "y": -7.4168
           },
           "fontSizeMm": 1.27,
@@ -428,7 +574,7 @@
           "id": "u1:5:name",
           "text": "D",
           "at": {
-            "x": -4.572,
+            "x": 3.048,
             "y": 2.54
           },
           "fontSizeMm": 1.27,
@@ -441,7 +587,7 @@
           "id": "u1:5:number",
           "text": "5",
           "at": {
-            "x": -6.35,
+            "x": 1.2700000000000005,
             "y": 3.048
           },
           "fontSizeMm": 1.27,
@@ -454,7 +600,7 @@
           "id": "u1:6:name",
           "text": "S",
           "at": {
-            "x": -4.6659043047514155e-16,
+            "x": 7.619999999999999,
             "y": 5.588
           },
           "fontSizeMm": 1.27,
@@ -467,8 +613,216 @@
           "id": "u1:6:number",
           "text": "6",
           "at": {
-            "x": 0.508,
+            "x": 8.128,
             "y": 7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u2:8:name",
+          "text": "S",
+          "at": {
+            "x": 24.86,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u2:8:number",
+          "text": "8",
+          "at": {
+            "x": 25.368,
+            "y": 7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u2:9:name",
+          "text": "D",
+          "at": {
+            "x": 20.288,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u2:9:number",
+          "text": "9",
+          "at": {
+            "x": 18.509999999999998,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u2:10:name",
+          "text": "R",
+          "at": {
+            "x": 24.86,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u2:10:number",
+          "text": "10",
+          "at": {
+            "x": 25.368,
+            "y": -7.4168
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u2:11:name",
+          "text": "C",
+          "at": {
+            "x": 20.288,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u2:11:number",
+          "text": "11",
+          "at": {
+            "x": 18.509999999999998,
+            "y": 0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u2:12:name",
+          "text": "~{Q}",
+          "at": {
+            "x": 29.432,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u2:12:number",
+          "text": "12",
+          "at": {
+            "x": 31.21,
+            "y": -2.032
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u2:13:name",
+          "text": "Q",
+          "at": {
+            "x": 29.432,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u2:13:number",
+          "text": "13",
+          "at": {
+            "x": 31.21,
+            "y": 3.048
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "bottom",
+          "role": "pin-number"
+        },
+        {
+          "id": "u3:7:name",
+          "text": "VSS",
+          "at": {
+            "x": 39.687,
+            "y": -8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u3:7:number",
+          "text": "7",
+          "at": {
+            "x": 40.195,
+            "y": -9.956800000000001
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "role": "pin-number"
+        },
+        {
+          "id": "u3:14:name",
+          "text": "VDD",
+          "at": {
+            "x": 39.687,
+            "y": 8.128
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
+          "id": "u3:14:number",
+          "text": "14",
+          "at": {
+            "x": 40.195,
+            "y": 9.956800000000001
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 90,
@@ -480,8 +834,8 @@
           "id": "symbol:reference",
           "text": "U",
           "at": {
-            "x": 0,
-            "y": 9.0805
+            "x": 22.447,
+            "y": 12.0142
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -493,8 +847,8 @@
           "id": "symbol:value",
           "text": "4013",
           "at": {
-            "x": 0,
-            "y": -9.0805
+            "x": 22.447,
+            "y": -11.7602
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -504,10 +858,10 @@
         }
       ],
       "bounds": {
-        "minX": -7.62,
-        "minY": -10.3505,
-        "maxX": 7.62,
-        "maxY": 10.3505
+        "minX": 0,
+        "minY": -13.030199999999999,
+        "maxX": 44.894,
+        "maxY": 13.2842
       },
       "warnings": []
     }

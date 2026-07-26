@@ -5,8 +5,9 @@
   "name": "L_0603_1608Metric",
   "mountType": "smd",
   "package": {
-    "imperial": null,
-    "metric": null
+    "code": "0603",
+    "imperial": "0603",
+    "metric": "1608"
   },
   "models3d": [
     "openpcb.core.3d.passive.l-0603-1608metric"
@@ -38,8 +39,9 @@
     "mountType": "smd",
     "padCount": 2,
     "packageCode": {
-      "imperial": null,
-      "metric": null
+      "code": "0603",
+      "imperial": "0603",
+      "metric": "1608"
     },
     "tags": [
       "inductor",
@@ -64,7 +66,12 @@
           "heightMm": 0.95,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -78,7 +85,12 @@
           "heightMm": 0.95,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -107,6 +119,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -1.48,
+          "y": -0.73,
+          "width": 2.96,
+          "height": 1.46,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "rect",
@@ -164,9 +186,9 @@
         }
       ],
       "bounds": {
-        "minX": -1.225,
+        "minX": -1.54,
         "minY": -1,
-        "maxX": 1.225,
+        "maxX": 1.54,
         "maxY": 1
       },
       "warnings": []

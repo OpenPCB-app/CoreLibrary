@@ -5,8 +5,9 @@
   "name": "L_0402_1005Metric",
   "mountType": "smd",
   "package": {
-    "imperial": null,
-    "metric": null
+    "code": "0402",
+    "imperial": "0402",
+    "metric": "1005"
   },
   "models3d": [
     "openpcb.core.3d.passive.l-0402-1005metric"
@@ -38,8 +39,9 @@
     "mountType": "smd",
     "padCount": 2,
     "packageCode": {
-      "imperial": null,
-      "metric": null
+      "code": "0402",
+      "imperial": "0402",
+      "metric": "1005"
     },
     "tags": [
       "inductor",
@@ -64,7 +66,12 @@
           "heightMm": 0.64,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -78,10 +85,25 @@
           "heightMm": 0.64,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
+        {
+          "kind": "rect",
+          "x": -0.93,
+          "y": -0.47,
+          "width": 1.86,
+          "height": 0.94,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
         {
           "kind": "rect",
           "x": -0.5,

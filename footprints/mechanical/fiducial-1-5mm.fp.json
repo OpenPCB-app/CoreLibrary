@@ -62,10 +62,25 @@
           "widthMm": 1.5,
           "heightMm": 1.5,
           "rotationDeg": 0,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask"
+          ]
         }
       ],
       "graphics": [
+        {
+          "kind": "circle",
+          "center": {
+            "x": 0,
+            "y": 0
+          },
+          "radiusMm": 1.75,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
         {
           "kind": "circle",
           "center": {
@@ -123,10 +138,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.56,
-        "minY": -1.56,
-        "maxX": 1.56,
-        "maxY": 1.56
+        "minX": -1.81,
+        "minY": -1.81,
+        "maxX": 1.81,
+        "maxY": 1.81
       },
       "warnings": []
     }

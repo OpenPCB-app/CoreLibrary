@@ -64,7 +64,11 @@
           "widthMm": 3.5,
           "heightMm": 3.5,
           "rotationDeg": 0,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -78,7 +82,11 @@
           "heightMm": 3.5,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "3:2",
@@ -92,7 +100,11 @@
           "heightMm": 3.5,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -199,6 +211,175 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -14,
+            "y": 4.75
+          },
+          "b": {
+            "x": -14,
+            "y": -4.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -5,
+            "y": 4.75
+          },
+          "b": {
+            "x": -14,
+            "y": 4.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -5,
+            "y": 6.75
+          },
+          "b": {
+            "x": -5,
+            "y": 4.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1,
+            "y": 4.75
+          },
+          "b": {
+            "x": -1,
+            "y": 6.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1,
+            "y": 6.75
+          },
+          "b": {
+            "x": -5,
+            "y": 6.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1,
+            "y": -4.75
+          },
+          "b": {
+            "x": -14,
+            "y": -4.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1,
+            "y": -4.5
+          },
+          "b": {
+            "x": 1,
+            "y": -4.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1,
+            "y": -4.5
+          },
+          "b": {
+            "x": 1,
+            "y": -2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1,
+            "y": -2
+          },
+          "b": {
+            "x": 2,
+            "y": -2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1,
+            "y": 2
+          },
+          "b": {
+            "x": 1,
+            "y": 4.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1,
+            "y": 4.75
+          },
+          "b": {
+            "x": -1,
+            "y": 4.75
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2,
+            "y": -2
+          },
+          "b": {
+            "x": 2,
+            "y": 2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2,
+            "y": 2
+          },
+          "b": {
+            "x": 1,
+            "y": 2
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "line",
@@ -324,10 +505,10 @@
         }
       ],
       "bounds": {
-        "minX": -13.860000000000001,
+        "minX": -14.06,
         "minY": -4.859999999999999,
-        "maxX": 1.75,
-        "maxY": 6.449999999999999
+        "maxX": 2.0600000000000005,
+        "maxY": 6.809999999999999
       },
       "warnings": []
     }

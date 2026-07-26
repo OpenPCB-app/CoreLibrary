@@ -65,7 +65,12 @@
           "heightMm": 0.6,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -79,7 +84,12 @@
           "heightMm": 0.6,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "3:2",
@@ -93,7 +103,12 @@
           "heightMm": 0.6,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -187,6 +202,214 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.93,
+            "y": -1.5
+          },
+          "b": {
+            "x": -0.9,
+            "y": -1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.93,
+            "y": -0.39
+          },
+          "b": {
+            "x": -1.93,
+            "y": -1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.93,
+            "y": 0.39
+          },
+          "b": {
+            "x": -0.9,
+            "y": 0.39
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -1.93,
+            "y": 1.5
+          },
+          "b": {
+            "x": -1.93,
+            "y": 0.39
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.9,
+            "y": -1.7
+          },
+          "b": {
+            "x": 0.9,
+            "y": -1.7
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.9,
+            "y": -1.5
+          },
+          "b": {
+            "x": -0.9,
+            "y": -1.7
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.9,
+            "y": -0.39
+          },
+          "b": {
+            "x": -1.93,
+            "y": -0.39
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.9,
+            "y": 0.39
+          },
+          "b": {
+            "x": -0.9,
+            "y": -0.39
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.9,
+            "y": 1.5
+          },
+          "b": {
+            "x": -1.93,
+            "y": 1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -0.9,
+            "y": 1.7
+          },
+          "b": {
+            "x": -0.9,
+            "y": 1.5
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.9,
+            "y": -1.7
+          },
+          "b": {
+            "x": 0.9,
+            "y": -0.55
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.9,
+            "y": -0.55
+          },
+          "b": {
+            "x": 1.93,
+            "y": -0.55
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.9,
+            "y": 0.55
+          },
+          "b": {
+            "x": 0.9,
+            "y": 1.7
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 0.9,
+            "y": 1.7
+          },
+          "b": {
+            "x": -0.9,
+            "y": 1.7
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.93,
+            "y": -0.55
+          },
+          "b": {
+            "x": 1.93,
+            "y": 0.55
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 1.93,
+            "y": 0.55
+          },
+          "b": {
+            "x": 0.9,
+            "y": 0.55
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "polyline",
@@ -284,10 +507,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.675,
-        "minY": -1.62,
-        "maxX": 1.675,
-        "maxY": 1.62
+        "minX": -1.99,
+        "minY": -1.76,
+        "maxX": 1.99,
+        "maxY": 1.76
       },
       "warnings": []
     }

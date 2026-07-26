@@ -63,7 +63,12 @@
           "heightMm": 1.2,
           "rotationDeg": 0,
           "roundrectRatio": 0.208333,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -77,7 +82,12 @@
           "heightMm": 1.2,
           "rotationDeg": 0,
           "roundrectRatio": 0.208333,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "3:2",
@@ -91,7 +101,12 @@
           "heightMm": 1.2,
           "rotationDeg": 0,
           "roundrectRatio": 0.208333,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "4:3",
@@ -105,7 +120,12 @@
           "heightMm": 1.2,
           "rotationDeg": 0,
           "roundrectRatio": 0.208333,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -134,6 +154,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "rect",
+          "x": -2.1,
+          "y": -1.75,
+          "width": 4.2,
+          "height": 3.5,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "polyline",
@@ -210,10 +240,10 @@
         }
       ],
       "bounds": {
-        "minX": -2.12,
-        "minY": -1.77,
-        "maxX": 2.12,
-        "maxY": 1.77
+        "minX": -2.16,
+        "minY": -1.81,
+        "maxX": 2.16,
+        "maxY": 1.81
       },
       "warnings": []
     }

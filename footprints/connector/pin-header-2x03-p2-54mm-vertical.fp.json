@@ -71,7 +71,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -85,7 +89,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "3:2",
@@ -99,7 +107,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "4:3",
@@ -113,7 +125,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "5:4",
@@ -127,7 +143,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "6:5",
@@ -141,7 +161,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -313,6 +337,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
+        },
+        {
+          "kind": "rect",
+          "x": -1.77,
+          "y": -1.77,
+          "width": 6.09,
+          "height": 8.62,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         }
       ],
       "labels": [
@@ -360,10 +394,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.44,
-        "minY": -1.4399999999999995,
-        "maxX": 3.98,
-        "maxY": 6.52
+        "minX": -1.83,
+        "minY": -1.8299999999999996,
+        "maxX": 4.38,
+        "maxY": 6.909999999999998
       },
       "warnings": []
     }

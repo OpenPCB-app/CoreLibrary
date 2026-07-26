@@ -72,7 +72,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "2:1",
@@ -86,7 +90,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "3:2",
@@ -100,7 +108,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "4:3",
@@ -114,7 +126,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "5:4",
@@ -128,7 +144,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "6:5",
@@ -142,7 +162,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         },
         {
           "id": "7:6",
@@ -156,7 +180,11 @@
           "heightMm": 1.7,
           "rotationDeg": 0,
           "drillDiameterMm": 1,
-          "layer": "*.Cu"
+          "layer": "*.Cu",
+          "layers": [
+            "*.Cu",
+            "*.Mask"
+          ]
         }
       ],
       "graphics": [
@@ -302,6 +330,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
+        },
+        {
+          "kind": "rect",
+          "x": -1.77,
+          "y": -1.78,
+          "width": 3.54,
+          "height": 18.8,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         }
       ],
       "labels": [
@@ -349,10 +387,10 @@
         }
       ],
       "bounds": {
-        "minX": -1.44,
-        "minY": -1.4400000000000004,
-        "maxX": 1.44,
-        "maxY": 16.68
+        "minX": -1.83,
+        "minY": -1.8399999999999999,
+        "maxX": 1.83,
+        "maxY": 17.08
       },
       "warnings": []
     }

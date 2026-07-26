@@ -59,6 +59,7 @@ export interface FootprintPreview {
     b?: { x: number; y: number };
     center?: { x: number; y: number };
     radiusMm?: number;
+    layer?: string;
   }>;
 }
 
@@ -139,7 +140,20 @@ function centerTol(refExtentAxis: number): number {
   return Math.max(0.4, 0.3 * refExtentAxis);
 }
 
-/** Build the XY reference bounds (pads ∪ silk graphics) from a footprint preview. */
+/**
+ * Layers that describe clearance rather than the physical part. Courtyard is a
+ * keep-out envelope and can be far larger than the body — an ESP32 module's
+ * courtyard spans its antenna keep-out — so including it would make the model
+ * look far too small under the xy-coverage check.
+ */
+const NON_BODY_LAYERS = new Set([
+  "F.CrtYd",
+  "B.CrtYd",
+  "F.Courtyard",
+  "B.Courtyard",
+]);
+
+/** Build the XY reference bounds (pads ∪ silk/fab graphics) from a footprint preview. */
 export function referenceBounds(
   preview: FootprintPreview | undefined,
 ): Bounds2D | null {
@@ -159,6 +173,7 @@ export function referenceBounds(
     grow(pad.centerMm.x + pad.widthMm / 2, pad.centerMm.y + pad.heightMm / 2);
   }
   for (const g of preview?.graphics ?? []) {
+    if (g.layer && NON_BODY_LAYERS.has(g.layer)) continue;
     if (g.a) grow(g.a.x, g.a.y);
     if (g.b) grow(g.b.x, g.b.y);
     if (g.center && g.radiusMm != null) {

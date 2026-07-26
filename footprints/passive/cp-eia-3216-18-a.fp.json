@@ -65,7 +65,12 @@
           "heightMm": 1.39,
           "rotationDeg": 0,
           "roundrectRatio": 0.179856,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -79,7 +84,12 @@
           "heightMm": 1.39,
           "rotationDeg": 0,
           "roundrectRatio": 0.179856,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -186,6 +196,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
+        },
+        {
+          "kind": "rect",
+          "x": -2.31,
+          "y": -1.05,
+          "width": 4.62,
+          "height": 2.1,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         }
       ],
       "labels": [
@@ -234,9 +254,9 @@
       ],
       "bounds": {
         "minX": -2.38,
-        "minY": -1.015,
-        "maxX": 2.0599999999999996,
-        "maxY": 1.015
+        "minY": -1.11,
+        "maxX": 2.37,
+        "maxY": 1.11
       },
       "warnings": []
     }

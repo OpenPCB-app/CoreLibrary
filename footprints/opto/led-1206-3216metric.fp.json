@@ -5,8 +5,9 @@
   "name": "LED_1206_3216Metric",
   "mountType": "smd",
   "package": {
-    "imperial": null,
-    "metric": null
+    "code": "1206",
+    "imperial": "1206",
+    "metric": "3216"
   },
   "models3d": [
     "openpcb.core.3d.opto.led-1206-3216metric"
@@ -37,8 +38,9 @@
     "mountType": "smd",
     "padCount": 2,
     "packageCode": {
-      "imperial": null,
-      "metric": null
+      "code": "1206",
+      "imperial": "1206",
+      "metric": "3216"
     },
     "tags": [
       "led",
@@ -63,7 +65,12 @@
           "heightMm": 1.75,
           "rotationDeg": 0,
           "roundrectRatio": 0.2,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -77,7 +84,12 @@
           "heightMm": 1.75,
           "rotationDeg": 0,
           "roundrectRatio": 0.2,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -184,6 +196,16 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.Fab"
+        },
+        {
+          "kind": "rect",
+          "x": -2.28,
+          "y": -1.13,
+          "width": 4.56,
+          "height": 2.26,
+          "fill": "none",
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         }
       ],
       "labels": [
@@ -231,9 +253,9 @@
         }
       ],
       "bounds": {
-        "minX": -2.345,
+        "minX": -2.3450000000000006,
         "minY": -1.195,
-        "maxX": 2.025,
+        "maxX": 2.34,
         "maxY": 1.195
       },
       "warnings": []

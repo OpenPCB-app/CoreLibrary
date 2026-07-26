@@ -64,7 +64,12 @@
           "heightMm": 1.2,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         },
         {
           "id": "2:1",
@@ -78,7 +83,12 @@
           "heightMm": 1.2,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
-          "layer": "F.Cu"
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
         }
       ],
       "graphics": [
@@ -120,6 +130,58 @@
           },
           "strokeWidthMm": 0.12,
           "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.35,
+            "y": -1.15
+          },
+          "b": {
+            "x": -2.35,
+            "y": 1.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -2.35,
+            "y": -1.15
+          },
+          "b": {
+            "x": 2.35,
+            "y": -1.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.35,
+            "y": -1.15
+          },
+          "b": {
+            "x": 2.35,
+            "y": 1.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 2.35,
+            "y": 1.15
+          },
+          "b": {
+            "x": -2.35,
+            "y": 1.15
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
         },
         {
           "kind": "line",
@@ -311,9 +373,9 @@
       ],
       "bounds": {
         "minX": -2.42,
-        "minY": -1.06,
-        "maxX": 2.0999999999999996,
-        "maxY": 1.06
+        "minY": -1.21,
+        "maxX": 2.41,
+        "maxY": 1.21
       },
       "warnings": []
     }

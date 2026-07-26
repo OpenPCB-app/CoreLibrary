@@ -17,7 +17,13 @@ import {
   type NormalizedImportedFootprint,
   type NormalizedImportedSymbol,
 } from "@openpcb/kicad-import";
-import { ID_REGEX, REPO_ROOT, SEMVER_REGEX, sha256File } from "./lib";
+import {
+  ID_REGEX,
+  REPO_ROOT,
+  SEMVER_REGEX,
+  packageCodeFor,
+  sha256File,
+} from "./lib";
 
 const LICENSE = "CC-BY-SA-4.0+KiCad-Libraries-Exception";
 const TOOL = "CoreLibrary tools/import-kicad-batch.ts";
@@ -580,23 +586,45 @@ function normalizeSymbol(
   const referencePrefix = (symbol.properties.Reference ?? symbol.name)
     .replace(/[^A-Za-z#]/g, "")
     .slice(0, 8);
+
+  // The app wires from `normalized.pins`, not from the preview, so the two must
+  // agree. KiCad draws every unit of a multi-unit symbol at the SAME local
+  // coordinates and the preview builder spreads them apart — copying
+  // `pin.position` verbatim here would leave the electrical pins coincident and
+  // short every unit together (all four LM324 outputs onto one net).
+  const anchorByKey = new Map(preview.pins.map((p) => [p.id, p.anchor]));
+
   return {
     id: stableId("sym", `${sourceHash}:${symbol.name}`),
     name: symbol.name,
     referencePrefix: referencePrefix.length > 0 ? referencePrefix : "U",
     description: symbol.properties.Description ?? null,
     sourceHash,
-    pins: symbol.pins.map((pin, index) => ({
-      originPinKey:
+    pins: symbol.pins.map((pin, index) => {
+      const originPinKey =
         pin.number.trim().length > 0
           ? `u${pin.unit}:${pin.number}`
-          : `u${pin.unit}:idx${index + 1}`,
-      number: pin.number.trim().length > 0 ? pin.number : null,
-      name: pin.name,
-      localPosition: { x: pin.position.x, y: pin.position.y },
-      electricalType: pin.electricalType,
-      unit: pin.unit,
-    })),
+          : `u${pin.unit}:idx${index + 1}`;
+      const anchor = anchorByKey.get(originPinKey);
+      if (!anchor && !pin.hidden) {
+        throw new Error(
+          `symbol ${symbol.name}: visible pin ${originPinKey} has no preview anchor — preview and pins are out of sync`,
+        );
+      }
+      return {
+        originPinKey,
+        number: pin.number.trim().length > 0 ? pin.number : null,
+        name: pin.name,
+        // Hidden pins are excluded from the preview (includeHiddenPins:false),
+        // so they keep their source coordinate. Any collision that introduces
+        // is caught by the cross-unit gate in validate.ts.
+        localPosition: anchor
+          ? { x: anchor.x, y: anchor.y }
+          : { x: pin.position.x, y: pin.position.y },
+        electricalType: pin.electricalType,
+        unit: pin.unit,
+      };
+    }),
     warnings: preview.warnings.map((warning) => ({
       code: warning.code,
       message: warning.message,
@@ -643,7 +671,11 @@ function normalizeFootprint(
     description: footprint.description,
     mountType,
     padCount: footprint.pads.length,
-    packageCode: { imperial: pkg.imperial, metric: pkg.metric },
+    // `code` was previously dropped, which left package.code undefined for
+    // every footprint in the packed manifest (pack.ts prefers it over the
+    // imperial/metric fallbacks). extractPackageCode echoes the footprint name
+    // when it recognizes nothing, so only persist a code that means something.
+    packageCode: packageCodeFor(footprint.name),
     tags: uniqueTags([
       ...footprint.tags,
       mountType,

@@ -239,4 +239,30 @@ describe("referenceBounds", () => {
     expect(ref?.maxY).toBeCloseTo(3.92, 5);
     expect(ref?.minX).toBeCloseTo(-1.38, 5);
   });
+
+  // Courtyard is a keep-out envelope, not the part. An ESP32 module's courtyard
+  // spans its antenna clearance, so counting it would shrink the model/footprint
+  // ratio below the xy-coverage floor and flag a correct model as misplaced.
+  test("ignores courtyard geometry", () => {
+    const silkOnly = referenceBounds({
+      pads: [{ centerMm: { x: 0, y: 0 }, widthMm: 2, heightMm: 2 }],
+      graphics: [{ a: { x: -3, y: -3 }, b: { x: 3, y: 3 }, layer: "F.SilkS" }],
+    });
+    const withCourtyard = referenceBounds({
+      pads: [{ centerMm: { x: 0, y: 0 }, widthMm: 2, heightMm: 2 }],
+      graphics: [
+        { a: { x: -3, y: -3 }, b: { x: 3, y: 3 }, layer: "F.SilkS" },
+        { a: { x: -24, y: -20 }, b: { x: 24, y: 20 }, layer: "F.CrtYd" },
+      ],
+    });
+    expect(withCourtyard).toEqual(silkOnly);
+  });
+
+  test("still counts graphics that carry no layer", () => {
+    const ref = referenceBounds({
+      pads: [],
+      graphics: [{ a: { x: -5, y: -5 }, b: { x: 5, y: 5 } }],
+    });
+    expect(ref?.maxX).toBeCloseTo(5, 5);
+  });
 });
