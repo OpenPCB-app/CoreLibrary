@@ -34,7 +34,12 @@ jobs:
       - name: Typecheck tools/
         run: bun run typecheck
 
+      # Verbose STEP→GLB tracing: a WASM abort takes the process down without a
+      # catchable error, so the last traced model is the only clue to which one
+      # failed.
       - name: Run tests
+        env:
+          OPCLIB_PACK_VERBOSE: "1"
         run: bun test
 
       - name: Validate library source (strict / release)

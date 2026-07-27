@@ -201,11 +201,25 @@ async function mapWithConcurrency<T, R>(
   return results;
 }
 
-/** Override for local runs on machines with headroom; CI keeps the default. */
+/**
+ * Deliberately low. STEP→GLB is dominated by the OCCT tessellation inside each
+ * WASM instance rather than by the event loop, so raising this buys no wall
+ * time (139 models: 36s at 2, 37s at 4, 44s at 16) while every extra lane costs
+ * another heap. A CI runner that survives one full pack has aborted with SIGILL
+ * on a second one, so trade the headroom, not the speed.
+ */
 const MODEL_CONVERT_CONCURRENCY = Math.max(
   1,
-  Number(process.env.OPCLIB_PACK_CONCURRENCY) || 4,
+  Number(process.env.OPCLIB_PACK_CONCURRENCY) || 2,
 );
+
+/**
+ * A WASM abort kills the process outright, so a failing model cannot be caught
+ * and named after the fact. Setting OPCLIB_PACK_VERBOSE (CI does) traces each
+ * conversion to stderr, leaving the last line before a crash pointing at the
+ * culprit.
+ */
+const VERBOSE = Boolean(process.env.OPCLIB_PACK_VERBOSE);
 
 async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
   const data = parseJsonBytes<
@@ -246,6 +260,9 @@ async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
         `[pack] cannot generate GLB for ${relPath(absPath)}: missing STEP asset`,
       );
       process.exit(1);
+    }
+    if (VERBOSE) {
+      console.error(`[pack] STEP→GLB ${formats.step.path}`);
     }
     const result = await convertStepToGlbNode(
       arrayBufferFrom(stepAsset.bytes),
