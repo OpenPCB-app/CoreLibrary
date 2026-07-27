@@ -173,6 +173,40 @@ function modelRefForStep(
   };
 }
 
+/**
+ * STEP→GLB instantiates a fresh OCCT WebAssembly module per conversion, each
+ * with its own multi-hundred-MB heap. Mapping the 3D tree with `Promise.all`
+ * started all of them at once, which a dev machine absorbs but a CI runner does
+ * not: past ~40 models the runner exhausts memory and Emscripten aborts with
+ * "access to a null reference (evaluating 'invoker(...)')". Bounding the
+ * in-flight count keeps peak memory flat as the library grows.
+ *
+ * Order-preserving, and the first rejection propagates (callers exit non-zero).
+ */
+async function mapWithConcurrency<T, R>(
+  items: readonly T[],
+  limit: number,
+  fn: (item: T) => Promise<R>,
+): Promise<R[]> {
+  const results = new Array<R>(items.length);
+  let next = 0;
+  const workers = Array.from({ length: Math.min(limit, items.length) }, () =>
+    (async () => {
+      for (let i = next++; i < items.length; i = next++) {
+        results[i] = await fn(items[i]!);
+      }
+    })(),
+  );
+  await Promise.all(workers);
+  return results;
+}
+
+/** Override for local runs on machines with headroom; CI keeps the default. */
+const MODEL_CONVERT_CONCURRENCY = Math.max(
+  1,
+  Number(process.env.OPCLIB_PACK_CONCURRENCY) || 4,
+);
+
 async function packedModel3dFor(absPath: string): Promise<PackedModel3d> {
   const data = parseJsonBytes<
     OpclibModel3dEntry & {
@@ -333,8 +367,10 @@ const input: PackOpclibInput = {
   footprints: walkFiles(path.join(REPO_ROOT, "footprints"), ".fp.json").map(
     packedFootprintFor,
   ),
-  models3d: await Promise.all(
-    walkFiles(path.join(REPO_ROOT, "3d"), ".model.json").map(packedModel3dFor),
+  models3d: await mapWithConcurrency(
+    walkFiles(path.join(REPO_ROOT, "3d"), ".model.json"),
+    MODEL_CONVERT_CONCURRENCY,
+    packedModel3dFor,
   ),
   components: walkFiles(
     path.join(REPO_ROOT, "components"),
