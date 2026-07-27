@@ -16,6 +16,14 @@ jobs:
   release:
     name: build + publish opclib
     runs-on: ubuntu-latest
+    # Job-level so the signing material is visible to step-level `if:`
+    # expressions. The `secrets` context is NOT available in `steps.*.if`, and a
+    # step cannot read its own `env:` block there either — the previous
+    # `if: env.OPCLIB_SIGNING_KEY != ''` on the restore step therefore always
+    # evaluated false and signing could never run.
+    env:
+      OPCLIB_SIGNING_KEY: ${{ secrets.OPCLIB_SIGNING_KEY }}
+      OPCLIB_KEY_ID: ${{ vars.OPCLIB_KEY_ID }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -41,13 +49,40 @@ jobs:
       - name: Test
         run: bun test
 
-      - name: Validate source
-        run: bun run validate --release
+      - name: Validate library source (strict / release)
+        run: bun tools/validate.ts --release --strict
+
+      # The three gates below run on every PR via validate.yml. They were absent
+      # here, which made the release path weaker than the PR path — a bad 3D
+      # orientation or a dead datasheet link could ship in a tagged release
+      # while being blocked on the PR that introduced it.
+      - name: 3D orientation gate
+        run: bun tools/audit-3d-placement.ts --release
+
+      - name: Component audit (headless)
+        run: bun tools/audit-components.ts --no-render
+
+      # Structural only — no network. Manufacturer WAFs block datacenter egress,
+      # so reachability cannot be a gate. Run `--network` locally for link rot.
+      - name: Check datasheet links (structural)
+        run: bun tools/check-datasheet-links.ts
+
+      # A tagged release MUST be signed: OpenPCB/scripts/fetch-core-library.ts
+      # verifies the Ed25519 signature against resources/keys/*.pub before it
+      # will install a pack. Publishing unsigned silently breaks that path, so
+      # fail loudly here instead of degrading.
+      - name: Require signing material
+        run: |
+          MISSING=""
+          [ -n "${OPCLIB_SIGNING_KEY:-}" ] || MISSING="${MISSING} secrets.OPCLIB_SIGNING_KEY"
+          [ -n "${OPCLIB_KEY_ID:-}" ] || MISSING="${MISSING} vars.OPCLIB_KEY_ID"
+          if [ -n "$MISSING" ]; then
+            echo "::error::Cannot publish an unsigned release. Missing:${MISSING}"
+            exit 1
+          fi
+          echo "Signing material present (keyId=${OPCLIB_KEY_ID})"
 
       - name: Restore signing key
-        if: ${{ env.OPCLIB_SIGNING_KEY != '' }}
-        env:
-          OPCLIB_SIGNING_KEY: ${{ secrets.OPCLIB_SIGNING_KEY }}
         run: |
           install -m 700 -d "$RUNNER_TEMP/keys"
           KEY_PATH="$RUNNER_TEMP/keys/opclib-signing.pem"
@@ -56,36 +91,21 @@ jobs:
           echo "OPCLIB_SIGN_KEY_PATH=$KEY_PATH" >> "$GITHUB_ENV"
 
       - name: Pack release
-        env:
-          OPCLIB_SIGNING_KEY: ${{ secrets.OPCLIB_SIGNING_KEY }}
-          OPCLIB_KEY_ID: ${{ vars.OPCLIB_KEY_ID }}
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          echo "Packing version ${VERSION}"
-          SIGN_ARGS=""
-          if [ -n "${OPCLIB_SIGN_KEY_PATH:-}" ] && [ -n "${OPCLIB_KEY_ID:-}" ]; then
-            SIGN_ARGS="--sign-key=${OPCLIB_SIGN_KEY_PATH} --key-id=${OPCLIB_KEY_ID}"
-            echo "Signing enabled (keyId=${OPCLIB_KEY_ID})"
-          else
-            echo "Signing disabled (no key/keyId configured)"
-          fi
-          bun tools/pack.ts --version="${VERSION}" $SIGN_ARGS
+          echo "Packing version ${VERSION} (keyId=${OPCLIB_KEY_ID})"
+          bun tools/pack.ts --version="${VERSION}" \
+            --sign-key="${OPCLIB_SIGN_KEY_PATH}" --key-id="${OPCLIB_KEY_ID}"
 
       # GLB-only core pack (the app renders GLB; STEP is MCAD-export only and
       # was over half the payload) plus the STEP companion archive. Written to
       # a separate directory so it does not overwrite the full pack above,
       # which keeps STEP embedded for consumers that want a single artifact.
       - name: Pack GLB-only core + STEP companion
-        env:
-          OPCLIB_SIGN_KEY_PATH: ${{ env.OPCLIB_SIGN_KEY_PATH }}
-          OPCLIB_KEY_ID: ${{ vars.OPCLIB_KEY_ID }}
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          SIGN_ARGS=""
-          if [ -n "${OPCLIB_SIGN_KEY_PATH:-}" ] && [ -n "${OPCLIB_KEY_ID:-}" ]; then
-            SIGN_ARGS="--sign-key=${OPCLIB_SIGN_KEY_PATH} --key-id=${OPCLIB_KEY_ID}"
-          fi
-          bun tools/pack.ts --version="${VERSION}" --no-step --out=dist/glb-only $SIGN_ARGS
+          bun tools/pack.ts --version="${VERSION}" --no-step --out=dist/glb-only \
+            --sign-key="${OPCLIB_SIGN_KEY_PATH}" --key-id="${OPCLIB_KEY_ID}"
           mv "dist/glb-only/openpcb-core-library-${VERSION}.opclib" \
              "dist/openpcb-core-library-${VERSION}-glb.opclib"
           mv "dist/glb-only/openpcb-core-library-${VERSION}-step.zip" dist/
@@ -101,36 +121,62 @@ jobs:
             "openpcb-core-library-${VERSION}-step.zip" > SHA256SUMS
           cat SHA256SUMS
 
-      - name: Verify package
+      # Verifies BOTH published packs, and checks the Ed25519 signature against
+      # the committed keys/openpcb-core.pub — the same key the desktop app ships
+      # in resources/keys/. That catches a CI signing key that has drifted from
+      # the published public key BEFORE the release goes out, rather than as an
+      # install failure on every user's machine.
+      - name: Verify packages
         run: |
           VERSION="${GITHUB_REF_NAME#v}"
-          ARTIFACT="dist/openpcb-core-library-${VERSION}.opclib"
-          test -f "$ARTIFACT"
           VERIFY_SCRIPT="$(mktemp ./verify-opclib.XXXXXX.mjs)"
           trap 'rm -f "$VERIFY_SCRIPT"' EXIT
           cat > "$VERIFY_SCRIPT" <<'EOF'
-          import { readOpclibFromPath } from "@openpcb/opclib-pack";
+          import { readOpclibFromPath, verifyManifest } from "@openpcb/opclib-pack";
           import { unzipSync } from "fflate";
+          import { readFileSync } from "node:fs";
 
-          const artifact = process.env.ARTIFACT;
           const version = process.env.VERSION;
-          if (!artifact || !version) throw new Error("missing env");
+          const keyId = process.env.OPCLIB_KEY_ID;
+          if (!version || !keyId) throw new Error("missing env");
 
-          const pkg = await readOpclibFromPath(artifact);
-          const manifest = pkg.manifest;
-          if (manifest.library.id !== "openpcb.core") throw new Error("invalid library id");
-          if (manifest.library.version !== version) throw new Error("version mismatch");
-          if (!/^[a-f0-9]{64}$/.test(manifest.integrity.packageSha256)) throw new Error("invalid package sha");
-
-          const bytes = new Uint8Array(await Bun.file(artifact).arrayBuffer());
-          const entries = Object.keys(unzipSync(bytes));
+          const publicKey = readFileSync("keys/openpcb-core.pub", "utf8");
           const forbidden = [/^apps\//, /^packages\//, /\.kicad_sym$/, /\.kicad_mod$/, /^node_modules\//, /^\.playwright-cli\//, /^\.github\/workflows\//];
-          const matches = entries.filter((entry) => forbidden.some((pattern) => pattern.test(entry)));
-          if (matches.length > 0) throw new Error("forbidden package entries: " + matches.join(", "));
 
-          console.log("verified", manifest.library.id, manifest.library.version, entries.length, "entries");
+          for (const [label, artifact] of [
+            ["full", `dist/openpcb-core-library-${version}.opclib`],
+            ["glb-only", `dist/openpcb-core-library-${version}-glb.opclib`],
+          ]) {
+            const pkg = await readOpclibFromPath(artifact);
+            const manifest = pkg.manifest;
+            if (manifest.library.id !== "openpcb.core") throw new Error(`${label}: invalid library id`);
+            if (manifest.library.version !== version) throw new Error(`${label}: version mismatch`);
+            if (!/^[a-f0-9]{64}$/.test(manifest.integrity.packageSha256)) throw new Error(`${label}: invalid package sha`);
+
+            if (!manifest.signature) throw new Error(`${label}: pack is unsigned`);
+            if (manifest.signature.keyId !== keyId) {
+              throw new Error(`${label}: signed with keyId ${manifest.signature.keyId}, expected ${keyId}`);
+            }
+            const verdict = verifyManifest(manifest, {
+              resolveKey: (id) => (id === manifest.signature.keyId ? publicKey : undefined),
+            });
+            if (!verdict.valid) {
+              throw new Error(`${label}: signature does not verify against keys/openpcb-core.pub (${verdict.reason ?? "unknown"})`);
+            }
+
+            const bytes = new Uint8Array(await Bun.file(artifact).arrayBuffer());
+            const entries = Object.keys(unzipSync(bytes));
+            const matches = entries.filter((entry) => forbidden.some((pattern) => pattern.test(entry)));
+            if (matches.length > 0) throw new Error(`${label}: forbidden package entries: ${matches.join(", ")}`);
+
+            console.log(
+              `verified ${label}:`, manifest.library.id, manifest.library.version,
+              `${manifest.components.length} components,`, `${entries.length} entries,`,
+              `signed by ${manifest.signature.keyId}`,
+            );
+          }
           EOF
-          ARTIFACT="$ARTIFACT" VERSION="$VERSION" bun "$VERIFY_SCRIPT"
+          VERSION="$VERSION" bun "$VERIFY_SCRIPT"
 
       - name: Publish GitHub release
         env:
@@ -139,15 +185,16 @@ jobs:
           VERSION="${GITHUB_REF_NAME#v}"
           ARTIFACT="dist/openpcb-core-library-${VERSION}.opclib"
           SUMS="dist/SHA256SUMS"
+          # The public key is not optional: consumers verify the signature with
+          # it, and the verify step above already proved it matches the signer.
+          test -f keys/openpcb-core.pub
           ASSETS=(
             "$ARTIFACT"
             "dist/openpcb-core-library-${VERSION}-glb.opclib"
             "dist/openpcb-core-library-${VERSION}-step.zip"
             "$SUMS"
+            "keys/openpcb-core.pub"
           )
-          if [ -f keys/openpcb-core.pub ]; then
-            ASSETS+=("keys/openpcb-core.pub")
-          fi
           if gh release view "${GITHUB_REF_NAME}" >/dev/null 2>&1; then
             gh release upload "${GITHUB_REF_NAME}" "${ASSETS[@]}" --clobber
           else
