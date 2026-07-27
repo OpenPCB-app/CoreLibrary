@@ -38,6 +38,17 @@ bun tools/validate.ts --release --strict     # schema, provenance, pins, courtya
 bun tools/audit-3d-placement.ts --release    # 3D orientation
 bun tools/audit-components.ts --no-render    # symbol overlap + orientation + cross-refs (headless)
 bun tools/audit-components.ts                # ...plus a Playwright contact sheet (local only)
+bun tools/check-datasheet-links.ts           # curated datasheet URLs: https, direct PDF, no mirrors
+```
+
+`check-datasheet-links` is **structural by default and does no network I/O** — manufacturer
+WAFs block automated probes (st.com and analog.com time out; onsemi, microchip, tdk and
+phoenixcontact answer 403), so reachability cannot gate a build without going red on correct
+URLs. Run the opt-in probe locally to hunt link rot:
+
+```sh
+bun tools/check-datasheet-links.ts --network                   # advisory; WAF hosts report `blocked`
+bun tools/check-datasheet-links.ts --network --strict-network  # 404/410 on a probeable host is fatal
 ```
 
 Maintenance tools:

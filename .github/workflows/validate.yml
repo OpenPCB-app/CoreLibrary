@@ -52,7 +52,10 @@ jobs:
       - name: Component audit (headless)
         run: bun tools/audit-components.ts --no-render
 
-      - name: Check datasheet links
+      # Structural only — no network. Manufacturer WAFs (st.com, analog.com,
+      # onsemi, microchip, tdk) block datacenter egress, so reachability would
+      # fail the build for correct URLs. Run `--network` locally for link rot.
+      - name: Check datasheet links (structural)
         run: bun tools/check-datasheet-links.ts
 
       - name: Pack release candidate

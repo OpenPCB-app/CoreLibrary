@@ -1,5 +1,49 @@
 # CoreLibrary — Current State (2026-07-26)
 
+## 2026-07-26 — datasheet round (curated links, link-rot sweep, structural gate)
+
+Sourced official manufacturer datasheets for every non-generic part via the pcbparts MCP
+(DigiKey's `datasheet_url` is the manufacturer's own URL; Mouser serves `mouser.com` mirrors and
+the JLC DB carries no datasheet field at all), then swept the links already in the tree.
+
+**Curated `datasheet` 13 → 151.** Packed coverage 150/227 → **167/231** (151 curated + 16 still
+resolving through the `datasheetSource` fallback).
+
+**The existing links were in worse shape than the count suggested.** Probing all 154 found only 92
+live PDFs. 27 were genuinely rotten — `datasheets.maximintegrated.com` (5, retired to analog.com),
+`intersil.com` (2, now Renesas HTML), six ST `/internet/com/` + `/content/ccc/` legacy paths,
+`lcsc.com` product pages (3), plus `wizwiki.net`, `icbase.com`, `datasheet5.com`, `xlsemi.net`,
+`akizukidenshi.com`, `hirose.com`, `kingbright.com`, a `usb.org` **zip**, and an Epson
+`doc_check.php` HTML gate. Several more pointed at the **wrong part or vendor**:
+`transistor.2n3904` linked 2N3903; `mmbt3904`/`mmbt3906` linked the SOT-223 PZT parts; `lm339`
+(TI) pointed at st.com; `cd4013` (TI) at onsemi. Microchip's legacy `DeviceDoc` names have been
+renamed upstream, so the ATmega328P and MCP600x links were dead too.
+
+**Reachability cannot be a CI gate.** The other 35 "failures" are live URLs behind vendor WAFs:
+st.com and analog.com time out entirely from CLI/CI, and onsemi, microchip, tdk, irf,
+phoenixcontact and littelfuse answer 403 to anything that is not a real browser. DigiKey
+independently confirmed the captured URL was already correct for AD620, ADuM1201, PCF8574 and the
+onsemi 2N-series — they simply cannot be probed. `check-datasheet-links.ts` was therefore rebuilt:
+
+| | before | after |
+| --- | --- | --- |
+| default check | HTTP 200 + PDF content-type | structural: https, direct-PDF shape, no mirror/dead host |
+| network I/O in CI | yes, serial | none (`--network` is opt-in, concurrent, 15 s timeout) |
+| timeout | **none — hung forever on st.com** | 15 s per URL |
+| WAF 403/timeout | hard failure | reported `blocked`, never fatal |
+
+The old gate had no fetch timeout at all: with only 13 links it already hung indefinitely on
+st.com, so the CI step could never have completed once ST links landed.
+
+**Deliberately left uncurated (22 parts with an MPN).** `advanced-monolithic.com` (AMS1117 ×3)
+serves no working https. WCH (CH340C/G), TP4056, ME6211, XL4015 and SS8550 publish no stable
+official PDF — only HTML pages or distributor mirrors, and a mirror is not a datasheet. TI no
+longer hosts a ULN2803A document under any `lit/` path. The rest (Keystone holders, Kingbright
+seven-segment, Aosong DHT11, Hirose DM3AT, Epson SG-8002/FC-135, Schurter fuseholder, DB107,
+USB-C receptacle) need a lookup DigiKey's daily quota cut short. Their `datasheetSource`
+provenance is untouched, so the pack still falls back to it where one exists.
+
+
 Snapshot at **231 components** on **`master`** — verified green (typecheck · `bun test` 60 pass ·
 `validate --release --strict` 231 OK · `audit:3d` 139 ok / 0 errors / 0 warnings · `audit-components`
 231 / **0 issues** · pack builds full + GLB-only + STEP companion). For the roadmap see
@@ -80,7 +124,7 @@ sensor 6 · crystal 5 · switch 3 · relay 2 · battery 2 · audio 1
 | Release validation   | `bun tools/validate.ts --release --strict`     | OK (231 comp)                  |
 | 3D orientation gate  | `bun tools/audit-3d-placement.ts --release`    | 139 ok / 0 err / 0 warn        |
 | Component audit      | `bun tools/audit-components.ts --no-render`    | 231 / 0 issues                 |
-| Datasheet links      | `bun tools/check-datasheet-links.ts`           | active                         |
+| Datasheet links      | `bun tools/check-datasheet-links.ts`           | structural, 151/151 OK         |
 | Tests                | `bun test`                                     | 60 pass                        |
 | Typecheck            | `bun run typecheck`                            | clean                          |
 | Pack (full)          | `bun tools/pack.ts --version=0.0.0-dev`        | 10.74 MB                       |

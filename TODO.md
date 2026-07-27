@@ -16,6 +16,22 @@ shorted) and **missing courtyard** (0/146 footprints). Plus: 19 seed-imported as
 4 STM32 MCUs (+4 → 231), a GLB-only pack (−62%) with STEP companion, and `audit:3d` +
 `audit-components` finally running in CI.
 
+## 2026-07-26 — datasheet round
+
+Curated `datasheet` 13 → 151 (packed coverage 150/227 → 167/231) via pcbparts MCP. Fixed 27 rotten
+links plus several wrong-part/wrong-vendor ones; rebuilt `check-datasheet-links.ts` as a structural
+gate (the old one had no fetch timeout and hung on st.com). See [CURRENT_STATE.md](CURRENT_STATE.md).
+
+**Datasheet follow-ups:**
+
+- 22 parts with an MPN still have no curated link. Seven need a sourcing decision rather than a
+  lookup: AMS1117 (host has no working https), CH340C/G, TP4056, ME6211, XL4015, SS8550 (vendors
+  publish HTML only, no official PDF), and ULN2803A (gone from TI's `lit/` entirely). The rest —
+  Keystone 1042/3034, Kingbright KCSC02-105, DHT11, Hirose DM3AT, Epson SG-8002 + FC-135, Schurter
+  0031.8201, DB107, USB-C receptacle — were cut short by DigiKey's daily quota; just retry.
+- Consider a **scheduled** (not per-push) `--network --strict-network` job for link rot. It must
+  stay non-blocking for WAF hosts, which is why it is not in `validate.yml`.
+
 **Next:**
 
 1. **Push, in order** — `shared` main → tags (`rendering-core-v0.1.4`, `kicad-import-v0.2.0`,
