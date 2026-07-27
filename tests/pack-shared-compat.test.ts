@@ -41,6 +41,19 @@ async function runPack(
   return path.join(outDir, `openpcb-core-library-${version}.opclib`);
 }
 
+/**
+ * A full pack bakes every STEP model to GLB, so these budgets scale with the
+ * size of `3d/`, not with the assertions below. They were set when the tree had
+ * ~36 models; at 139 a CI runner needs well over the old 120s and the suite had
+ * been failing as a timeout (surfacing as an Emscripten "null reference
+ * (invoker...)" abort when Bun tore the in-flight pack down). Locally a full
+ * pack is ~37s; the runner is several times slower, so budget generously — a
+ * real regression fails on assertions, not on the clock.
+ */
+const PACK_TEST_TIMEOUT_MS = 600_000;
+
+// Module-level: this single pack is shared by the tests that only read it, so
+// its cost lands on whichever test awaits first.
 const sharedArtifactPath = runPack("0.0.0-test", makeTempDir());
 
 afterAll(() => {
@@ -59,7 +72,7 @@ describe("CoreLibrary pack shared compatibility", () => {
     expect(pkg.manifest.symbols.length).toBeGreaterThan(0);
     expect(pkg.manifest.footprints.length).toBeGreaterThan(0);
     expect(pkg.manifest.components.length).toBeGreaterThan(0);
-  }, 120_000);
+  }, PACK_TEST_TIMEOUT_MS);
 
   test("packed referenced 3D models include renderable GLB assets", async () => {
     const pkg = await readOpclibFromPath(await sharedArtifactPath);
@@ -78,7 +91,7 @@ describe("CoreLibrary pack shared compatibility", () => {
     }
 
     expect(referencedModels).toBeGreaterThan(0);
-  }, 120_000);
+  }, PACK_TEST_TIMEOUT_MS);
 
   // The core pack ships GLB only — the app renders GLB, and STEP was over half
   // the payload. STEP is still read as the GLB source; --no-step only drops it
@@ -118,7 +131,7 @@ describe("CoreLibrary pack shared compatibility", () => {
     const stepEntries = Object.keys(entries).filter((k) => k.endsWith(".step"));
     expect(stepEntries.length).toBe(referencedModels);
     expect(entries["SHA256SUMS"]).toBeInstanceOf(Uint8Array);
-  }, 240_000);
+  }, PACK_TEST_TIMEOUT_MS);
 
   test("shared reader rejects a tampered package asset", async () => {
     const dir = makeTempDir();
@@ -139,5 +152,5 @@ describe("CoreLibrary pack shared compatibility", () => {
     await expect(readOpclibFromPath(tamperedPath)).rejects.toThrow(
       OpclibFormatError,
     );
-  }, 120_000);
+  }, PACK_TEST_TIMEOUT_MS);
 });
