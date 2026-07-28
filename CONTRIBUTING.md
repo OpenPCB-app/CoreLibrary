@@ -17,20 +17,33 @@ Requirements: Bun ≥1.3.
 
 ## ID convention
 
-Every symbol, footprint, component, and 3D model has a dotted ID:
+Every symbol, footprint, component, and 3D model has a dotted ID. **Components carry no kind
+segment; the three asset kinds do:**
 
 ```
-openpcb.core.<kind>.<category>.<slug>
+openpcb.core.<category>.<slug>                 # component
+openpcb.core.symbol.<category>.<slug>          # symbol
+openpcb.core.footprint.<category>.<slug>       # footprint
+openpcb.core.3d.<category>.<slug>              # 3D model
 ```
 
-Examples:
+Examples, as they actually exist in the tree:
 
-- `openpcb.core.symbol.passive.resistor_iec`
-- `openpcb.core.footprint.passive.R_0603_1608Metric`
-- `openpcb.core.component.passive.resistor.r0603`
-- `openpcb.core.3d.passive.r0603`
+- `openpcb.core.passive.resistor`
+- `openpcb.core.symbol.passive.resistor`
+- `openpcb.core.footprint.passive.r-0603`
+- `openpcb.core.3d.passive.r-0603`
+- `openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm`
 
-Slugs are lowercase, words separated by `_`. Use IPC-7351B names for footprints (`R_0603_1608Metric`, not `0603`).
+`<category>` must equal the containing folder — `checkCategoryMatchesFile` in `tools/validate.ts`
+enforces it. Shared package footprints live under the `package` category rather than a functional
+one, which is why an SOIC-14 is `footprint.package.…` and not `footprint.ic.…`.
+
+Slugs are lowercase and **hyphenated**. Underscores are not merely discouraged, they fail
+validation — `ID_REGEX` is `/^[a-z][a-z0-9]*(\.[a-z0-9][a-z0-9-]*)+$/`. Derive footprint slugs
+from the KiCad name by lowercasing and replacing `_` and `.` with `-`
+(`SOIC-14_3.9x8.7mm_P1.27mm` → `soic-14-3-9x8-7mm-p1-27mm`), which keeps the IPC-style dimensions
+without the illegal characters.
 
 ## Adding a component from KiCad
 

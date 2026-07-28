@@ -2,14 +2,28 @@
 
 How to continue growing CoreLibrary in a fresh session. Pair with [CURRENT_STATE.md](CURRENT_STATE.md) (what's done) and [TODO.md](TODO.md) (what's next).
 
-> **Status (resume point):** the **P2–P6 content sweep is DONE and on `master` (`6b114e4`)** — **80 components**, all gates green. What remains: recover the deferred parts (needs an `orientation-gate.ts` calibration), build the no-STEP mechanical path (MountingHole/Fiducial), and the cross-repo P7 + release P9. **Start at the [Resume here](#resume-here-next-clean-session) section below.**
+> **Status (2026-07-28):** **231 components on `master`, pushed.** The P2–P6 sweep, the deferred-part
+> recovery, the `orientation-gate.ts` calibration and the no-STEP mechanical path (MountingHole /
+> Fiducial / TestPoint) are all long since done — this file's old resume point described the tree
+> as it stood at 80 components.
+>
+> **The live blocker is not content, it is the release.** CI has been red since 2026-05-27 and the
+> desktop app still bundles a 17-component pack from 2026-06-02. Read
+> [CURRENT_STATE.md](CURRENT_STATE.md) 2026-07-28 first — it has the root cause and the exact
+> unblock sequence. **Before trusting any green local gate run, check `bun run shared:status`**:
+> `shared:link` leaves every `@openpcb/*` package symlinked to the sibling working copy, which is
+> precisely how a red CI went unnoticed for two months.
 
 ## Orientation (read first, in order)
 
-1. `CURRENT_STATE.md` — inventory, gates, what changed vs the spec, gotchas.
-2. `TODO.md` — phase roadmap (**P2–P6 done**; remaining = deferred recoveries + P7/P8/P9) + Wave-2 blockers.
-3. Spec `../Corelibrary expansion plan.md` — §7.4 master parts table, §9 per-part playbook, Appendix B (parameters), Appendix D (checklist). **Treat its symbol-library names + manifest paths as KiCad-9 era — correct them per the rules below.**
-4. Corrected plan `~/.claude/plans/act-as-senior-software-snazzy-lantern.md` — the verified deltas.
+1. `CURRENT_STATE.md` — inventory, gates, what changed, gotchas. **Start with the newest section.**
+2. `TODO.md` — the held release sequence, then the content roadmap.
+3. `TARGETS.md` — the v1 parts target, reconstructed 2026-07-07.
+4. `docs/PARAMETERS.md` — the canonical `parameters` vocabulary that gate G5 enforces.
+
+> The original spec `../Corelibrary expansion plan.md` and the plan
+> `~/.claude/plans/act-as-senior-software-snazzy-lantern.md` are **both gone from disk**;
+> `TARGETS.md` is the surviving reconstruction. Don't go looking for them.
 
 ## Ground truth (do not re-derive)
 
@@ -84,15 +98,28 @@ grep -oE '\(number "[^"]+"' ../references/kicad-libs/kicad-symbols/<Lib>.kicad_s
 
 ## Resume here (next clean session)
 
-The sweep is on `master` (`6b114e4`), gates green, **not pushed**. Suggested order (full detail in [TODO.md](TODO.md)):
+Content is **not** the bottleneck. Order (full detail in [TODO.md](TODO.md)):
 
-1. **(optional) Push** — `git push origin master` (5 commits ahead of `origin`; CI `validate.yml` runs `--release --strict`).
-2. **Recover deferred parts — highest value.** Calibrate `tools/orientation-gate.ts` for vertical / long-lead THT (raise the >6 mm `THT_LEAD_BELOW_MAX` budget for `orientationHint === "vertical"`, and skip/relax the `xy-center` check when the body legitimately sits behind the pad row). Re-validate the whole set, then re-add **LM7805 / LM317 / LM2596** (TO-220) + **DHT11** (and **buzzer** with a rotation, verified visually). Manifest entries + footprint names are in TODO.md.
-3. **No-STEP mechanical path** — add the `no3d` exemption (importer `import-kicad-batch.ts` ~L880/898-904/929 + validator `validate.ts` L352/358/447 + `schemas/component.schema.json`; exact sketch in TODO.md) to ship **MountingHole + Fiducial**.
-4. **More content** (Wave-2 in TODO.md) — `_HandSolder` variants, RGB/WS2812 LEDs, bridge rectifier, power MOSFETs (TO-220/263); USB-C/IDC once their 3D/pad issues resolve; externally sourced symbol/STEP for MP1584/MP2307/MPU-6050/74HC125.
-5. **P7 cross-repo + P9 release** — see below + TODO.md.
+1. **Unblock the release — everything else is downstream of this.** Four tags in `shared`
+   (`step-to-glb-v0.1.5`, `kicad-import-v0.2.0`, `rendering-core-v0.1.4`, `contracts-v0.3.1`),
+   then re-pin `CoreLibrary` + `OpenPCB`, then **confirm CI green**, then `v0.2.0`. Three CI
+   failures remain and all three clear with that re-pin. `release.yml` now fails closed without
+   `OPCLIB_SIGNING_KEY` / `OPCLIB_KEY_ID`. **Tagging is gated on an explicit go-ahead.**
+2. **Re-pin the app bundle** — `OpenPCB/resources/core-library/` still holds the 17-component
+   beta packs; `OpenPCB/scripts/fetch-core-library.ts` verifies SHA256SUMS + Ed25519 and installs.
+3. **Content breadth** — the gaps that block real designs, roughly in value order: SMD power
+   inductors (the five buck/boost regulators have nowhere to put one), FFC/FPC connectors (none
+   exist, so no display or camera design is possible), DFN/SON + SOP/SSOP, 0201/1812/2010,
+   1.27/2.00 mm headers. Then the power-electronics set: DPAK/D²PAK/TO-247, gate drivers,
+   magnetics, Kelvin shunts.
+4. **Data model** — typed parameter values, lifecycle, distributor part numbers. Wire the app up
+   to read `parameters` *first*: it is packed today but has no consumer, so enriching it before
+   that just produces more data nothing displays.
 
-**Reusable assets from this sweep:** the per-phase manifests `tools/manifests/p{2..6}-*.json` and the generators `scratchpad/gen-p4.ts` / `gen-p5.ts` (copy them for new high-pin/connector phases). Recon helper pattern: `grep -oE '\(pad "[^"]+"'` for pads, follow `extends` for pins.
+**Reusable assets:** per-phase manifests `tools/manifests/*.json` (29 of them; `TEMPLATE.jsonc`
+documents the shape). Recon helper pattern: `grep -oE '\(pad "[^"]+"'` for pads, follow `extends`
+for pins. Sparse-checkout each wave's `.3dshapes` before importing — `kicad-packages3D` is a
+partial clone, so a missing STEP usually means "not fetched yet", not "not upstream".
 
 ## Cross-repo touchpoints (only when reaching P7/P9)
 
@@ -101,4 +128,8 @@ The sweep is on `master` (`6b114e4`), gates green, **not pushed**. Suggested ord
 
 ## Git
 
-P2–P6 sweep is committed to `master` as **`6b114e4`** (`feat(lib): P2–P6 content sweep — 23→80 components`). **`master` is 5 commits ahead of `origin/master` — NOT pushed.** Working tree clean. New phases: branch off `master`, PR per phase (CI `validate.yml` must pass). Commit-message trailer: `Co-Authored-By: Claude …` + `Claude-Session: …` per the harness convention.
+`master` is pushed and level with `origin/master`. New phases: branch off `master`, one PR per
+phase (CI `validate.yml` must pass). Commit-message trailer: `Co-Authored-By: Claude …`.
+
+**Never tag or publish a release without an explicit go-ahead** — `release.yml` fires on `v*` and
+publishes a public GitHub release.

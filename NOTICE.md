@@ -1,6 +1,7 @@
 # Notice
 
 The OpenPCB CoreLibrary contains material converted or adapted from the KiCad
+official libraries.
 
 KiCad-derived symbols, footprints, 3D models, and related library metadata are
 provided under Creative Commons Attribution-ShareAlike 4.0 International
