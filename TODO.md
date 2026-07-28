@@ -7,6 +7,31 @@
 > `unknown`). Only `docs/NPTH-SHARED-CHANGES.md` was unique, and it is stale — its shared change
 > shipped as `kicad-import-v0.1.2`. Archived as tag `archive/corelib-npth-pending`, branch deleted.
 
+## 2026-07-28 — CI unblocked, release held (see [CURRENT_STATE.md](CURRENT_STATE.md))
+
+CI had been red since 2026-05-27 — 46 commits — because `shared:link` was left on, so local gate
+runs tested unreleased `shared` code. Root cause of the failure itself: `step-to-glb` leaked one
+OCCT WASM runtime per conversion and died around the 120th model. Fixed by memoising the module
+(36s → 16s, flat memory). Signing was also structurally impossible and is now repaired.
+
+**Before trusting a green local run: `bun run shared:status`.**
+
+### Blocked on a decision — do not tag without an explicit go-ahead
+
+- [ ] Cut 4 tags in `shared`: `step-to-glb-v0.1.5`, `kicad-import-v0.2.0`, `rendering-core-v0.1.4`,
+      `contracts-v0.3.1`. **`step-to-glb` is new to this batch** — the OCCT fix ships there.
+- [ ] Re-pin `CoreLibrary/package.json` (kicad-import → 0.2.0, step-to-glb → 0.1.5) and
+      `OpenPCB/package.json`; push; **confirm CI green**.
+- [ ] Upload signing material — `release.yml` now fails closed without it:
+      `gh secret set OPCLIB_SIGNING_KEY < keys/openpcb-core.priv.pem`,
+      `gh variable set OPCLIB_KEY_ID --body openpcb-core-2026`. Then delete the local `.priv.pem`.
+- [ ] Only then tag `v0.2.0` and re-pin the app bundle (currently 17 components from 2026-06-02).
+
+### Remaining CI failures (all clear with the re-pin above)
+
+- 2× importer tests — pinned `kicad-import v0.1.2` discards courtyard geometry that G3 requires.
+- 1× `pack-shared-compat` — pinned `step-to-glb v0.1.4` lacks the OCCT module reuse.
+
 ## 2026-07-26 — hardening round (see [CURRENT_STATE.md](CURRENT_STATE.md) for the full record)
 
 Fixed two correctness defects that shipped green, and added the gates that catch them:

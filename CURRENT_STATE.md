@@ -1,4 +1,73 @@
-# CoreLibrary — Current State (2026-07-26)
+# CoreLibrary — Current State (2026-07-28)
+
+## 2026-07-28 — CI had been red for two months; the tree only looked green locally
+
+**Every gate has passed locally since May while CI failed on every single run.** The last green
+CI run is `26517250902`, 2026-05-27 — the same day `v0.1.0-beta.1` shipped. **46 commits have
+landed on a red master since**, and the two beta packs the desktop app ships (17 components,
+built 2026-06-02) predate all of it. The 125 → 231 content grind has never reached a user.
+
+**Why nobody noticed.** `npm run shared:link` symlinks all 8 `@openpcb/*` packages to the sibling
+working copy, and it had been left on. Local runs therefore tested unreleased `shared` code, while
+CI installs the pinned git tags. `shared:status` is the only way to tell — and `shared:link`
+itself is unreliable, printing "✔ All 8" unconditionally. **Run `bun run shared:status` before
+trusting a green local gate run.**
+
+### Root cause: STEP→GLB leaked one WASM runtime per file
+
+`convertStepToGlbNode` called `initOcctImportJs()` on every invocation, standing up a fresh
+Emscripten module with its own heap and never releasing it. Converting a directory therefore
+leaked one OCCT runtime per model. Past roughly 120 conversions the process cannot instantiate
+another, and embind starts returning null function pointers:
+
+```
+RuntimeError: access to a null reference (evaluating 'invoker(fn,arg0Wired,arg1Wired)')
+```
+
+It reads like corrupt geometry — and it lands on whichever file happens to be next, not on a
+faulty one. At 36 models (May) the leak fit in a runner. At 139 it does not, while a dev machine
+has enough headroom to finish either way.
+
+Fixed in `shared` by memoising the module (`step-to-glb` 0.1.5). `ReadStepFile` is a synchronous
+WASM call, so one shared instance is safe for sequential and concurrent callers alike — no `await`
+splits a conversion. **Packing 139 models: 36s → 16s, and peak memory no longer scales with the
+model count.** Output is unchanged: the manifest minus `integrity` hashes identically before and
+after (`integrity.packageSha256` differs between *any* two runs — it covers `library.generatedAt`).
+
+Two wrong diagnoses on the way, both killed by evidence: it is not concurrency-driven OOM
+(bounding to 4 changed nothing), and it is not one bad STEP file (the first pack in a job
+succeeded on the very input the second died on — same input, different outcome). The bounded
+concurrency and the raised test budgets below are kept as genuine improvements, but neither was
+the fix.
+
+### Also repaired this round
+
+| Defect | Detail |
+|---|---|
+| **Signing could never run** | `release.yml` gated the key-restore step on `if: env.OPCLIB_SIGNING_KEY != ''`. A step cannot read its own `env:` block in its own `if:`, and the `secrets` context is unavailable there — so the condition was always false and both pack steps silently took their unsigned branch. Signing material now lives in job-level `env` and a missing key/keyId **fails the job**. |
+| **No key chain existed** | No `OPCLIB_SIGNING_KEY` secret, no `OPCLIB_KEY_ID` variable, no private key anywhere. The app trusted `resources/keys/test-2026.pub` (`trusted-keys.ts` derives the keyId from the filename) while this repo published its public half as `openpcb-core.pub` — the two could never line up. Minted `openpcb-core-2026`; `keys/*.priv.pem` is now gitignored. |
+| **Release path weaker than PR path** | `release.yml` ran neither the 3D orientation gate, the component audit, nor the datasheet check. All three now run, and both published packs are verified — including the Ed25519 signature against the committed `keys/openpcb-core.pub`, so a CI key that drifts from the published public key fails before release rather than on every user's install. |
+| **`packageCode.code` dropped** | `kicad-import`'s `normalizeFootprint` resolved `pkg.code` but forwarded only `imperial`/`metric`. 21 footprints carry a populated `package.code` today only because the hardening round ran through `shared:link`; tagging `kicad-import` v0.2.0 from committed HEAD would have silently regressed them. |
+| **Pack test budgets** | The four `pack-shared-compat` tests each drive a full pack, so their cost scales with `3d/`, not with what they assert. The 120s/240s budgets were sized at ~36 models. Now one `PACK_TEST_TIMEOUT_MS` of 600s. |
+
+`OPCLIB_PACK_VERBOSE` traces each conversion to stderr (set in `validate.yml`): a WASM abort kills
+the process outright and cannot be caught, so the last traced model is the only clue to where it
+died.
+
+### Held — no tags cut
+
+Tagging and the release are **deliberately deferred**. When resumed, the batch is four tags, not
+three: `step-to-glb-v0.1.5`, `kicad-import-v0.2.0`, `rendering-core-v0.1.4`, `contracts-v0.3.1` →
+re-pin `CoreLibrary` (kicad-import 0.2.0, step-to-glb 0.1.5) and `OpenPCB` → **confirm CI green**
+→ only then `v0.2.0`. Three CI failures remain and all three clear with that re-pin: two importer
+tests fail because the pinned `kicad-import v0.1.2` discards the courtyard geometry G3 now
+requires, and the pack test fails because the pinned `step-to-glb v0.1.4` lacks the module reuse.
+
+`release.yml` now fails closed, so `v0.2.0` will not build until
+`gh secret set OPCLIB_SIGNING_KEY < keys/openpcb-core.priv.pem` and
+`gh variable set OPCLIB_KEY_ID --body openpcb-core-2026`. Verified locally: a signed
+231-component pack verifies under `openpcb-core-2026` through both this repo's committed key and
+the app's trust store, and fails under the retired placeholder key.
 
 ## 2026-07-26 — datasheet round (curated links, link-rot sweep, structural gate)
 
