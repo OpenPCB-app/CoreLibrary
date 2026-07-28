@@ -287,10 +287,29 @@ function footprintPadNumbers(data: FootprintSource): Set<string> {
 }
 
 /**
- * Symbols whose `raw` legitimately predates the KiCad importer. These are
- * OpenPCB-original 2-pin generics, not KiCad-derived, so there is no upstream
- * source to re-parse. Their previews are valid; they simply cannot be rebuilt
- * offline. Keep this list closed — everything else must carry a real parse.
+ * Symbols whose `raw` legitimately predates the KiCad importer.
+ *
+ * These are OpenPCB-original 2-pin generics drawn ANSI-style (zig-zag body,
+ * pins at ±5.08mm, `originPinKey` `pin-1`/`pin-2`). KiCad does ship `Device:R`
+ * and `Device:C`, so an upstream parse is *available* — but adopting it is a
+ * breaking change, not a cleanup: those symbols are IEC rectangles with pins at
+ * ±3.81mm and `originPinKey` `u1:1`. `place-part` snapshots `originPinKey` and
+ * both pin coordinates into `designer_*` at placement time, `(partId,
+ * originPinKey)` is unique-indexed, and nets are unioned by world position — so
+ * re-sourcing these two would strand every already-placed resistor and
+ * capacitor and put newly placed ones on different coordinates than their
+ * neighbours in the same schematic.
+ *
+ * Hand-authoring a `raw` instead would fabricate the faithful upstream parse
+ * that G2 exists to guarantee, so that is worse than the exemption.
+ *
+ * The real cost is that `tools/rebuild-previews.ts` cannot regenerate these two
+ * if preview generation changes upstream. That is currently inert: every label
+ * on both sits at 1.27mm, above the app's `STALE_FONT_THRESHOLD_MM` of 1.0, so
+ * `migrate-preview-models.ts` never rebuilds them client-side either. Revisit
+ * only alongside a deliberate symbol-geometry migration.
+ *
+ * Keep this list closed — everything else must carry a real parse.
  */
 const RAW_EXEMPT_SYMBOLS = new Set([
   "openpcb.core.symbol.passive.resistor",
