@@ -1,25 +1,50 @@
 ---
 name: Bug report
-about: Report a wrong symbol/footprint/component, broken provenance, or validation failure
+about: Something in the library is wrong — a bad pin map, a misplaced 3D model, a failing gate
+title: "[bug] "
 labels: bug
+assignees: ""
 ---
 
-**Component ID**
+## What is wrong
 
-`openpcb.core....`
+<!-- One or two sentences. What did you expect, and what happened instead? -->
 
-**What is wrong**
+## Affected asset
 
-(e.g., footprint pad numbering does not match symbol pins, attribution missing, 3D model size off)
+Give the dotted id. Components carry no kind segment; symbols, footprints and 3D models do:
 
-**Expected**
+- Component: `openpcb.core.<category>.<slug>` — e.g. `openpcb.core.passive.resistor`
+- Symbol: `openpcb.core.symbol.<category>.<slug>` — e.g. `openpcb.core.symbol.passive.resistor`
+- Footprint: `openpcb.core.footprint.<category>.<slug>` — e.g. `openpcb.core.footprint.passive.r-0603`
+- 3D model: `openpcb.core.3d.<category>.<slug>` — e.g. `openpcb.core.3d.passive.r-0603`
 
-What it should be (link to upstream KiCad source if applicable).
+Id(s):
 
-**Output of `bun validate --release --strict`**
+## How to reproduce
+
+<!-- Steps, or the command you ran. If it shows up in the OpenPCB app rather than in this repo,
+     say which app version and which pack you had installed. -->
+
+## Gate output
+
+If a gate fails, paste the relevant output:
 
 ```
-paste here
+bun tools/validate.ts --release --strict
 ```
 
-**Additional context**
+Other gates, if relevant: `bun run audit:3d`, `bun tools/audit-components.ts --no-render`,
+`bun tools/check-datasheet-links.ts`, `bun test`.
+
+## Environment
+
+- CoreLibrary commit or release tag:
+- Bun version (`bun --version`), if you ran the tools locally:
+- OpenPCB app version, if the bug shows up there:
+
+---
+
+For contribution rules, the id convention and the gate semantics, see
+[CONTRIBUTING.md](../../CONTRIBUTING.md). Security issues go to
+[SECURITY.md](../../SECURITY.md), **not** here.
