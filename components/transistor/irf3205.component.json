@@ -22,13 +22,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Infineon",
-      "mpn": "IRF3205PBF"
+      "mpn": "IRF3205PBF",
+      "lcsc": "C2561",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220AB"
     }
   ],
   "parameters": {
     "type": "nmos",
     "vds": "55V",
-    "id": "110A"
+    "id": "110A",
+    "rds_on": "8mOhm",
+    "vgs_th": "2-4V"
   },
   "symbol": "openpcb.core.symbol.transistor.irf3205",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

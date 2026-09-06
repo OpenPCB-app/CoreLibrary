@@ -18,16 +18,32 @@
   ],
   "aliases": [],
   "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc245.pdf",
-  "datasheetSource": "http://www.ti.com/lit/gpn/sn74HC245",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/sn74hc245.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "SN74HC245DW"
+      "mpn": "SN74HC245DW",
+      "lcsc": "C354405",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-20W"
+    },
+    {
+      "manufacturer": "Nexperia",
+      "mpn": "74HC245D,653",
+      "package": "SOIC-20W",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC245PWR",
+      "package": "TSSOP-20",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "74HC",
-    "function": "octal transceiver"
+    "function": "octal transceiver",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc245",
   "defaultFootprint": "openpcb.core.footprint.package.soic-20w-7-5x12-8mm-p1-27mm",

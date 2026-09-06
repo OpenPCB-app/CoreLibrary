@@ -16,18 +16,22 @@
     "H-bridge"
   ],
   "aliases": [],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/l293.pdf",
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/l293.pdf",
+  "datasheet": "https://www.st.com/resource/en/datasheet/l293d.pdf",
+  "datasheetSource": "https://www.st.com/resource/en/datasheet/l293d.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "L293D"
+      "mpn": "L293D",
+      "lcsc": "C12340",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-16"
     }
   ],
   "parameters": {
     "channels": "4",
     "vout": "36V",
-    "iout": "600mA"
+    "iout": "600mA",
+    "type": "motor-driver"
   },
   "symbol": "openpcb.core.symbol.ic.l293d",
   "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",

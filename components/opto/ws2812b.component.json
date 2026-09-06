@@ -24,19 +24,31 @@
     "PLCC-4"
   ],
   "aliases": [],
-  "datasheet": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
+  "datasheet": "https://www.world-semi.com/web/userfiles/productfile/WS2812B_V5WDatasheet_V6.1_EN.pdf",
   "datasheetSource": "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Worldsemi",
-      "mpn": "WS2812B"
+      "mpn": "WS2812B-V5/W",
+      "lcsc": "C2874885",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMD5050-4P"
+    },
+    {
+      "manufacturer": "Worldsemi",
+      "mpn": "WS2812B-B/T",
+      "lcsc": "C2761795",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMD5050-4P",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "color": "rgb",
     "interface": "single-wire",
     "voltage": "5V",
-    "data_rate": "800kbps"
+    "data_rate": "800kbps",
+    "type": "addressable-led"
   },
   "symbol": "openpcb.core.symbol.opto.ws2812b",
   "defaultFootprint": "openpcb.core.footprint.opto.led-ws2812b-plcc4-5050",

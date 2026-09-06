@@ -23,14 +23,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "ATMEGA328P-AU"
+      "mpn": "ATMEGA328P-AU",
+      "lcsc": "C14877",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "TQFP-32"
     }
   ],
   "parameters": {
     "core": "AVR 8-bit",
     "flash": "32KB",
     "ram": "2KB",
-    "io": "23 GPIO"
+    "io": "23 GPIO",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.atmega328p-tqfp32",
   "defaultFootprint": "openpcb.core.footprint.package.tqfp-32-7x7mm-p0-8mm",

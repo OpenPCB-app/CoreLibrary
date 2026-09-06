@@ -23,13 +23,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "ATMEGA32U4-AU"
+      "mpn": "ATMEGA32U4-AU",
+      "lcsc": "C44854",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TQFP-44"
     }
   ],
   "parameters": {
     "core": "AVR @16MHz",
     "flash": "32KB",
-    "usb": "native FS"
+    "usb": "native FS",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.atmega32u4",
   "defaultFootprint": "openpcb.core.footprint.ic.tqfp-44-10x10mm-p0-8mm",

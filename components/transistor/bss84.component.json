@@ -22,13 +22,24 @@
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "BSS84,215"
+      "mpn": "BSS84,215",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "onsemi",
+      "mpn": "BSS84LT1G",
+      "lcsc": "C82079",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
   "parameters": {
-    "channel": "p",
     "vds": "-50V",
-    "id": "-130mA"
+    "id": "-130mA",
+    "type": "pmos",
+    "rds_on": "10Ohm",
+    "vgs_th": "-0.8 to -2V"
   },
   "symbol": "openpcb.core.symbol.transistor.bss84",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",

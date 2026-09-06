@@ -3,7 +3,7 @@
   "uuid": "5ecbdf2d-70fe-5c65-a7c9-39e0d7156ceb",
   "version": "0.3.0",
   "name": "DC Barrel Jack",
-  "description": "DC power barrel jack, horizontal THT, with normally-closed switch pin (center pin 1 = tip, 2 = sleeve, 3 = switch).",
+  "description": "DC power barrel jack, 5.5 x 2.0 mm, horizontal THT, with normally-closed switch pin (centre pin 1 = tip, 2 = sleeve, 3 = switch, normally closed to the sleeve). Land verified against the CUI PJ-002A recommended layout.",
   "category": "connector",
   "subcategory": "power-jack",
   "tags": [
@@ -20,7 +20,23 @@
     "2.1mm"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://www.cuidevices.com/product/resource/pj-002a.pdf",
+  "manufacturerParts": [
+    {
+      "manufacturer": "CUI Devices",
+      "mpn": "PJ-002A",
+      "lcsc": "C3096082",
+      "jlcpcbAssemblyType": "extended",
+      "package": "5.5x2.0mm THT right-angle"
+    }
+  ],
+  "parameters": {
+    "type": "dc-jack",
+    "positions": "3",
+    "mount": "tht",
+    "rated_current": "2.5A",
+    "orientation": "horizontal"
+  },
   "symbol": "openpcb.core.symbol.connector.dc-barrel-jack",
   "defaultFootprint": "openpcb.core.footprint.connector.dc-barrel-jack-horizontal",
   "footprints": [

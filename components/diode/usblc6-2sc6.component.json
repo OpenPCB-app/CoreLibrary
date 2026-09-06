@@ -27,9 +27,23 @@
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "USBLC6-2SC6"
+      "mpn": "USBLC6-2SC6",
+      "lcsc": "C7519",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-6"
+    },
+    {
+      "manufacturer": "UMW",
+      "mpn": "USBLC6-2SC6",
+      "lcsc": "C2687116",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-6",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "tvs"
+  },
   "symbol": "openpcb.core.symbol.diode.usblc6-2sc6",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",
   "footprints": [

@@ -3,7 +3,7 @@
   "uuid": "7244f452-5dd8-52ab-8e21-b23029f0731f",
   "version": "0.3.0",
   "name": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
-  "mountType": "smd",
+  "mountType": "mixed",
   "package": {
     "imperial": null,
     "metric": null
@@ -34,7 +34,7 @@
     "fileName": "USB_C_Receptacle_HRO_TYPE-C-31-M-12.kicad_mod",
     "name": "USB_C_Receptacle_HRO_TYPE-C-31-M-12",
     "description": "USB Type-C receptacle for USB 2.0 and PD, http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf",
-    "mountType": "smd",
+    "mountType": "mixed",
     "padCount": 22,
     "packageCode": {
       "imperial": null,
@@ -405,6 +405,11 @@
           "widthMm": 1,
           "heightMm": 2.1,
           "rotationDeg": 0,
+          "drillDiameterMm": 0.6,
+          "drillSlotMm": {
+            "widthMm": 0.6,
+            "heightMm": 1.7
+          },
           "layer": "*.Cu",
           "layers": [
             "*.Cu",
@@ -422,6 +427,11 @@
           "widthMm": 1,
           "heightMm": 1.6,
           "rotationDeg": 0,
+          "drillDiameterMm": 0.6,
+          "drillSlotMm": {
+            "widthMm": 0.6,
+            "heightMm": 1.2
+          },
           "layer": "*.Cu",
           "layers": [
             "*.Cu",
@@ -439,6 +449,11 @@
           "widthMm": 1,
           "heightMm": 2.1,
           "rotationDeg": 0,
+          "drillDiameterMm": 0.6,
+          "drillSlotMm": {
+            "widthMm": 0.6,
+            "heightMm": 1.7
+          },
           "layer": "*.Cu",
           "layers": [
             "*.Cu",
@@ -456,6 +471,11 @@
           "widthMm": 1,
           "heightMm": 1.6,
           "rotationDeg": 0,
+          "drillDiameterMm": 0.6,
+          "drillSlotMm": {
+            "widthMm": 0.6,
+            "heightMm": 1.2
+          },
           "layer": "*.Cu",
           "layers": [
             "*.Cu",
@@ -1071,7 +1091,12 @@
         "layers": [
           "*.Cu",
           "*.Mask"
-        ]
+        ],
+        "drillSlot": {
+          "width": 0.6,
+          "height": 1.7
+        },
+        "drillDiameter": 0.6
       },
       {
         "number": "SH",
@@ -1089,7 +1114,12 @@
         "layers": [
           "*.Cu",
           "*.Mask"
-        ]
+        ],
+        "drillSlot": {
+          "width": 0.6,
+          "height": 1.2
+        },
+        "drillDiameter": 0.6
       },
       {
         "number": "SH",
@@ -1107,7 +1137,12 @@
         "layers": [
           "*.Cu",
           "*.Mask"
-        ]
+        ],
+        "drillSlot": {
+          "width": 0.6,
+          "height": 1.7
+        },
+        "drillDiameter": 0.6
       },
       {
         "number": "SH",
@@ -1125,7 +1160,12 @@
         "layers": [
           "*.Cu",
           "*.Mask"
-        ]
+        ],
+        "drillSlot": {
+          "width": 0.6,
+          "height": 1.2
+        },
+        "drillDiameter": 0.6
       }
     ],
     "graphics": [

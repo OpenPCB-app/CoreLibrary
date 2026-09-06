@@ -23,12 +23,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "NE5534DR"
+      "mpn": "NE5534DR",
+      "lcsc": "C9916",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "NE5534P",
+      "package": "DIP-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "1",
-    "gbw": "10MHz"
+    "gbw": "10MHz",
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.ne5534",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

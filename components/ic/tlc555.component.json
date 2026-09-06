@@ -22,12 +22,16 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TLC555CDR"
+      "mpn": "TLC555CDR",
+      "lcsc": "C6986",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
     }
   ],
   "parameters": {
     "supply": "2-15V",
-    "freq_max": "2MHz"
+    "freq_max": "2MHz",
+    "type": "timer"
   },
   "symbol": "openpcb.core.symbol.ic.tlc555",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

@@ -1,9 +1,9 @@
 {
   "id": "openpcb.core.ic.w25q32",
   "uuid": "4be6a801-92cc-5e27-93bc-32a5312ec1cc",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "name": "W25Q32 SPI Flash",
-  "description": "W25Q32 32-Mbit SPI NOR flash memory (SOIC-8 208-mil).",
+  "description": "W25Q32 32-Mbit SPI NOR flash memory, SOIC-8 208-mil and WSON-8 6x5mm.",
   "category": "ic",
   "subcategory": "memory",
   "tags": [
@@ -16,22 +16,36 @@
     "SPI flash",
     "NOR flash",
     "32Mbit",
-    "Winbond"
+    "Winbond",
+    "WSON-8"
   ],
   "aliases": [],
   "datasheet": "https://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf",
   "datasheetSource": "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf",
-  "manufacturerParts": [
-    {
-      "manufacturer": "Winbond",
-      "mpn": "W25Q32JVSSIQ"
-    }
-  ],
   "parameters": {
-    "type": "NOR flash",
+    "type": "memory",
+    "function": "NOR flash",
     "interface": "SPI",
     "size": "32Mbit"
   },
+  "manufacturerParts": [
+    {
+      "manufacturer": "Winbond",
+      "mpn": "W25Q32JVSSIQ",
+      "lcsc": "C179173",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8 208-mil",
+      "role": "primary"
+    },
+    {
+      "manufacturer": "Winbond",
+      "mpn": "W25Q32JVZPIQ",
+      "lcsc": "C571260",
+      "jlcpcbAssemblyType": "extended",
+      "package": "WSON-8 6x5mm",
+      "role": "alternate"
+    }
+  ],
   "symbol": "openpcb.core.symbol.ic.w25q32",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-5-3x5-3mm-p1-27mm",
   "footprints": [
@@ -72,6 +86,48 @@
           "padNumber": "8"
         }
       ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.wson-8-1ep-6x5mm-p1-27mm-ep3-4x4-3mm",
+      "label": "WSON-8 6x5mm P1.27mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "9"
+        }
+      ]
     }
   ],
   "provenance": {
@@ -84,10 +140,10 @@
     "sourceFileName": "W25Q32JVSS.kicad_sym",
     "sourceLibrary": "Memory_Flash",
     "sourceItemName": "W25Q32 SPI Flash",
-    "sourceHash": "1caaf68dfdaa56e097825d082cc9034029660dd881babcb8651c3ed1ac31c9e5",
+    "sourceHash": "fb0e31a8f056f8bf06a14ad265a456e9a3d7c135616442afcecb75325a381d8c",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
-    "convertedAt": "2026-06-23T14:48:35.586Z",
+    "convertedAt": "2026-09-05T03:09:52.664Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "compatibility": {

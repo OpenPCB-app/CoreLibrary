@@ -17,17 +17,29 @@
     "logic"
   ],
   "aliases": [],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc02.pdf",
-  "datasheetSource": "http://www.ti.com/lit/gpn/sn74hc02",
+  "datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf",
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT02.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "74HC02D,653"
+      "mpn": "74HC02D,653",
+      "lcsc": "C5588",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC02DR",
+      "lcsc": "C350559",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "gates": "4",
-    "supply": "2-6V"
+    "supply": "2-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc02",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

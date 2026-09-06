@@ -18,16 +18,28 @@
   ],
   "aliases": [],
   "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS1307.pdf",
-  "datasheetSource": "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf",
+  "datasheetSource": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS1307.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Analog Devices",
-      "mpn": "DS1307+"
+      "mpn": "DS1307+",
+      "lcsc": "C59267",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-8"
+    },
+    {
+      "manufacturer": "Analog Devices",
+      "mpn": "DS1307Z+",
+      "lcsc": "C1520446",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SO-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "interface": "I2C",
-    "function": "RTC"
+    "function": "RTC",
+    "type": "rtc"
   },
   "symbol": "openpcb.core.symbol.ic.ds1307",
   "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",

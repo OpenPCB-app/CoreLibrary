@@ -3,7 +3,7 @@
   "uuid": "a585d362-ba7c-56f6-8760-4b6a5761a5d8",
   "version": "0.3.0",
   "name": "Slide Switch SPDT",
-  "description": "SPDT slide switch, THT (C&K OS102011MS2Q style).",
+  "description": "SPDT slide switch, THT, 2.0 mm pitch (C&K OS102011MS2QN1; C&K is a Littelfuse brand).",
   "category": "switch",
   "subcategory": "slide",
   "tags": [
@@ -16,15 +16,23 @@
     "slide switch",
     "SPDT",
     "power switch",
-    "OS102011"
+    "OS102011",
+    "C&K"
   ],
   "aliases": [],
   "manufacturerParts": [
     {
-      "manufacturer": "C&K",
-      "mpn": "OS102011MS2QN1"
+      "manufacturer": "Littelfuse",
+      "mpn": "OS102011MS2QN1",
+      "lcsc": "C221829",
+      "jlcpcbAssemblyType": "extended",
+      "package": "C&K OS10 SPDT THT"
     }
   ],
+  "parameters": {
+    "type": "slide",
+    "contacts": "SPDT"
+  },
   "symbol": "openpcb.core.symbol.switch.slide-switch-spdt",
   "defaultFootprint": "openpcb.core.footprint.switch.slide-spdt-os102011",
   "footprints": [

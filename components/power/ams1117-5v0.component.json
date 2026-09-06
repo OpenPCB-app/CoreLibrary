@@ -3,7 +3,7 @@
   "uuid": "eff59adf-2a25-5437-8854-207192cc5280",
   "version": "0.2.0",
   "name": "AMS1117-5.0 LDO Regulator",
-  "description": "AMS1117 fixed 5.0 V low-dropout linear regulator in SOT-223.",
+  "description": "AMS1117 fixed 5.0 V low-dropout linear regulator in SOT-223; the tab is strapped to VOUT, not ground.",
   "category": "power",
   "subcategory": "regulator-linear-ldo",
   "tags": [
@@ -22,19 +22,32 @@
     "linear regulator"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://www.umw-ic.com/static/pdf/b2e919b537132c8a7a35b159d67758d4.pdf",
   "datasheetSource": "http://www.advanced-monolithic.com/pdf/ds1117.pdf",
   "manufacturerParts": [
     {
+      "manufacturer": "UMW (Youtai Semiconductor)",
+      "mpn": "AMS1117-5.0",
+      "lcsc": "C347223",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-223"
+    },
+    {
       "manufacturer": "Advanced Monolithic Systems",
-      "mpn": "AMS1117-5.0"
+      "mpn": "AMS1117-5.0",
+      "lcsc": "C6187",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOT-223",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "vout": "5.0V",
     "iout": "1A",
     "dropout": "1.3V",
-    "topology": "linear-ldo"
+    "topology": "linear-ldo",
+    "type": "ldo",
+    "vin_max": "15V"
   },
   "symbol": "openpcb.core.symbol.power.ams1117-5v0",
   "defaultFootprint": "openpcb.core.footprint.package.sot-223",

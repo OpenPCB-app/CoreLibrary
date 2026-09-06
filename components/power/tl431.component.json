@@ -25,13 +25,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TL431AIDBZR"
+      "mpn": "TL431AIDBZR",
+      "lcsc": "C23892",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-3"
     }
   ],
   "parameters": {
     "vref": "2.5V",
     "vka": "2.5V-36V",
-    "topology": "shunt-reference"
+    "topology": "shunt-reference",
+    "type": "reference"
   },
   "symbol": "openpcb.core.symbol.power.tl431",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",

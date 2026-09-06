@@ -23,12 +23,16 @@
   "manufacturerParts": [
     {
       "manufacturer": "Espressif",
-      "mpn": "ESP32-S3-WROOM-1-N8"
+      "mpn": "ESP32-S3-WROOM-1-N8",
+      "lcsc": "C2913198",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMD 25.5x18mm"
     }
   ],
   "parameters": {
     "core": "2x LX7 @240MHz",
-    "radio": "WiFi4 + BLE5"
+    "radio": "WiFi4 + BLE5",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.esp32-s3-wroom-1",
   "defaultFootprint": "openpcb.core.footprint.ic.esp32-s3-wroom-1",

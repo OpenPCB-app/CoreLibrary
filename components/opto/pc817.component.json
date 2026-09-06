@@ -16,17 +16,27 @@
     "isolator"
   ],
   "aliases": [],
-  "datasheet": "https://www.soselectronic.cz/a_info/resource/d/pc817.pdf",
-  "datasheetSource": "http://www.soselectronic.cz/a_info/resource/d/pc817.pdf",
+  "datasheet": "https://global.sharp/products/device/lineup/data/pdf/datasheet/PC817XxNSZ1B_e.pdf",
+  "datasheetSource": "https://global.sharp/products/device/lineup/data/pdf/datasheet/PC817XxNSZ1B_e.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Sharp",
-      "mpn": "PC817X2NSZ9F"
+      "mpn": "PC817X2NSZ9F",
+      "lcsc": "C390734",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-4"
+    },
+    {
+      "manufacturer": "Sharp",
+      "mpn": "PC817X1NSZ9F",
+      "package": "DIP-4",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "1",
-    "isolation": "5kV"
+    "isolation": "5kV",
+    "type": "optocoupler"
   },
   "symbol": "openpcb.core.symbol.opto.pc817",
   "defaultFootprint": "openpcb.core.footprint.package.dip-4-w7-62mm",

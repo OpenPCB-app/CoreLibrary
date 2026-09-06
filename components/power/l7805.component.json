@@ -28,7 +28,10 @@
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "L7805CV"
+      "mpn": "L7805CV",
+      "lcsc": "C111887",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220"
     }
   ],
   "parameters": {
@@ -36,7 +39,8 @@
     "iout": "1.5A",
     "vin_max": "35V",
     "dropout": "2V",
-    "topology": "linear"
+    "topology": "linear",
+    "type": "linear"
   },
   "symbol": "openpcb.core.symbol.power.l7805",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

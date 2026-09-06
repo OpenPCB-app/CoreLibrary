@@ -23,12 +23,16 @@
   "manufacturerParts": [
     {
       "manufacturer": "Espressif",
-      "mpn": "ESP32-C3-WROOM-02-N4"
+      "mpn": "ESP32-C3-WROOM-02-N4",
+      "lcsc": "C2934560",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMD 20x18mm"
     }
   ],
   "parameters": {
     "core": "RISC-V @160MHz",
-    "radio": "WiFi4 + BLE5"
+    "radio": "WiFi4 + BLE5",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.esp32-c3-wroom-02",
   "defaultFootprint": "openpcb.core.footprint.ic.esp32-c3-wroom-02",

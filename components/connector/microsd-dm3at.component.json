@@ -18,14 +18,23 @@
     "storage"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://www.hirose.com/product/document?clcode=CL0609-0033-6-00&productname=DM3AT-SF-PEJ2M5&series=DM3&documenttype=Catalog&lang=en&documentid=D49662_en",
   "datasheetSource": "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catalog/doc_file_id/49662/?file_category_id=4&item_id=195&is_series=1",
   "manufacturerParts": [
     {
       "manufacturer": "Hirose",
-      "mpn": "DM3AT-SF-PEJM5"
+      "mpn": "DM3AT-SF-PEJM5",
+      "lcsc": "C114218",
+      "jlcpcbAssemblyType": "extended",
+      "package": "microSD push-push SMD"
     }
   ],
+  "parameters": {
+    "type": "microsd",
+    "pitch": "1.1mm",
+    "positions": "8",
+    "mount": "smd"
+  },
   "symbol": "openpcb.core.symbol.connector.microsd-dm3at",
   "defaultFootprint": "openpcb.core.footprint.connector.microsd-hirose-dm3at",
   "footprints": [

@@ -18,16 +18,26 @@
   ],
   "aliases": [],
   "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/max3222-max3241.pdf",
-  "datasheetSource": "https://datasheets.maximintegrated.com/en/ds/MAX3222-MAX3241.pdf",
+  "datasheetSource": "https://www.analog.com/media/en/technical-documentation/data-sheets/max3222-max3241.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "Analog Devices (Maxim)",
-      "mpn": "MAX3232ESE+"
+      "manufacturer": "Analog Devices",
+      "mpn": "MAX3232ESE+",
+      "lcsc": "C143435",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "MAX3232IDR",
+      "package": "SOIC-16",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "2",
-    "supply": "3-5.5V"
+    "supply": "3-5.5V",
+    "type": "transceiver"
   },
   "symbol": "openpcb.core.symbol.ic.max3232",
   "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",

@@ -22,11 +22,21 @@
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "74HC74D,653"
+      "mpn": "74HC74D,653",
+      "lcsc": "C27597",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC74DR",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
-    "supply": "2-6V"
+    "supply": "2-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc74",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

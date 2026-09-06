@@ -3,7 +3,7 @@
   "uuid": "53b41b29-a869-5fe8-823e-ef821f35dfcc",
   "version": "0.3.0",
   "name": "1N5819 Schottky Diode",
-  "description": "1N5819 40V 1A Schottky rectifier (SMA + DO-41).",
+  "description": "1N5819 40V 1A Schottky rectifier, DO-41 axial.",
   "category": "diode",
   "subcategory": "schottky",
   "tags": [
@@ -17,12 +17,31 @@
     "1A"
   ],
   "aliases": [],
-  "datasheet": "https://www.vishay.com/docs/88525/1n5817.pdf",
+  "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/1n5817-d.pdf",
   "datasheetSource": "http://www.vishay.com/docs/88525/1n5817.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "onsemi",
-      "mpn": "1N5819"
+      "mpn": "1N5819RLG",
+      "lcsc": "C88393",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DO-41"
+    },
+    {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "1N5819",
+      "lcsc": "C110032",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DO-41",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "MDD",
+      "mpn": "1N5819",
+      "lcsc": "C2474",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DO-41",
+      "role": "alternate"
     }
   ],
   "parameters": {
@@ -31,22 +50,8 @@
     "type": "schottky"
   },
   "symbol": "openpcb.core.symbol.diode.1n5819",
-  "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+  "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
   "footprints": [
-    {
-      "footprint": "openpcb.core.footprint.diode.d-sma",
-      "label": "SMA (DO-214AC)",
-      "pinMap": [
-        {
-          "pinNumber": "1",
-          "padNumber": "1"
-        },
-        {
-          "pinNumber": "2",
-          "padNumber": "2"
-        }
-      ]
-    },
     {
       "footprint": "openpcb.core.footprint.diode.d-do-41",
       "label": "DO-41 (THT)",

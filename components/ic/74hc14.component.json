@@ -19,17 +19,31 @@
   ],
   "aliases": [],
   "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc14.pdf",
-  "datasheetSource": "http://www.ti.com/lit/gpn/sn74HC14",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/sn74hc14.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "SN74HC14N"
+      "mpn": "SN74HC14N",
+      "package": "DIP-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC14DR",
+      "package": "SOIC-14",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Nexperia",
+      "mpn": "74HC14D,653",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "74HC",
     "function": "hex Schmitt inverter",
-    "supply": "2V-6V"
+    "supply": "2V-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc14",
   "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",

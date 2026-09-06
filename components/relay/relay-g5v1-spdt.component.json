@@ -23,12 +23,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "Omron",
-      "mpn": "G5V-1 DC5"
+      "mpn": "G5V-1 DC5",
+      "lcsc": "C28695",
+      "jlcpcbAssemblyType": "extended",
+      "package": "G5V-1 THT"
     }
   ],
   "parameters": {
     "contacts": "SPDT",
-    "contact_rating": "1A"
+    "contact_rating": "1A",
+    "type": "signal",
+    "coil_voltage": "5V"
   },
   "symbol": "openpcb.core.symbol.relay.relay-g5v1-spdt",
   "defaultFootprint": "openpcb.core.footprint.relay.relay-omron-g5v-1",

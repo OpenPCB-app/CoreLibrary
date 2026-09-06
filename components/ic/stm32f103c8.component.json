@@ -24,14 +24,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "STM32F103C8T6"
+      "mpn": "STM32F103C8T6",
+      "lcsc": "C8734",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "LQFP-48"
     }
   ],
   "parameters": {
     "core": "ARM Cortex-M3",
     "flash": "64KB",
     "ram": "20KB",
-    "clock": "72MHz"
+    "clock": "72MHz",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.stm32f103c8",
   "defaultFootprint": "openpcb.core.footprint.package.lqfp-48-7x7mm-p0-5mm",

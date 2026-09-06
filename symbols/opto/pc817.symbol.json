@@ -51,7 +51,7 @@
       {
         "originPinKey": "u1:1",
         "number": "1",
-        "name": "",
+        "name": "A",
         "localPosition": {
           "x": -7.62,
           "y": 2.54
@@ -62,7 +62,7 @@
       {
         "originPinKey": "u1:2",
         "number": "2",
-        "name": "",
+        "name": "K",
         "localPosition": {
           "x": -7.62,
           "y": -2.54
@@ -73,7 +73,7 @@
       {
         "originPinKey": "u1:3",
         "number": "3",
-        "name": "",
+        "name": "E",
         "localPosition": {
           "x": 7.62,
           "y": -2.54
@@ -84,7 +84,7 @@
       {
         "originPinKey": "u1:4",
         "number": "4",
-        "name": "",
+        "name": "C",
         "localPosition": {
           "x": 7.62,
           "y": 2.54
@@ -353,7 +353,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "",
+          "name": "A",
           "number": "1",
           "electricalType": "passive",
           "unit": 1,
@@ -369,7 +369,7 @@
         },
         {
           "id": "u1:2",
-          "name": "",
+          "name": "K",
           "number": "2",
           "electricalType": "passive",
           "unit": 1,
@@ -385,7 +385,7 @@
         },
         {
           "id": "u1:3",
-          "name": "",
+          "name": "E",
           "number": "3",
           "electricalType": "passive",
           "unit": 1,
@@ -401,7 +401,7 @@
         },
         {
           "id": "u1:4",
-          "name": "",
+          "name": "C",
           "number": "4",
           "electricalType": "passive",
           "unit": 1,
@@ -418,6 +418,19 @@
       ],
       "labels": [
         {
+          "id": "u1:1:name",
+          "text": "A",
+          "at": {
+            "x": -4.572,
+            "y": 2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:1:number",
           "text": "1",
           "at": {
@@ -429,6 +442,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "K",
+          "at": {
+            "x": -4.572,
+            "y": -2.54
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:2:number",
@@ -444,6 +470,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:3:name",
+          "text": "E",
+          "at": {
+            "x": 4.572,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:3:number",
           "text": "3",
           "at": {
@@ -455,6 +494,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "C",
+          "at": {
+            "x": 4.572,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:4:number",
@@ -510,7 +562,7 @@
     "kicadId": null,
     "pins": [
       {
-        "name": "",
+        "name": "A",
         "number": "1",
         "electricalType": "passive",
         "direction": "line",
@@ -529,7 +581,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "K",
         "number": "2",
         "electricalType": "passive",
         "direction": "line",
@@ -548,7 +600,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "E",
         "number": "3",
         "electricalType": "passive",
         "direction": "line",
@@ -567,7 +619,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "C",
         "number": "4",
         "electricalType": "passive",
         "direction": "line",

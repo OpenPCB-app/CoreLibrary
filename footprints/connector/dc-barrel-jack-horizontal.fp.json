@@ -64,6 +64,11 @@
           "widthMm": 3.5,
           "heightMm": 3.5,
           "rotationDeg": 0,
+          "drillDiameterMm": 1,
+          "drillSlotMm": {
+            "widthMm": 1,
+            "heightMm": 3
+          },
           "layer": "*.Cu",
           "layers": [
             "*.Cu",
@@ -82,6 +87,11 @@
           "heightMm": 3.5,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
+          "drillDiameterMm": 1,
+          "drillSlotMm": {
+            "widthMm": 1,
+            "heightMm": 3
+          },
           "layer": "*.Cu",
           "layers": [
             "*.Cu",
@@ -100,6 +110,11 @@
           "heightMm": 3.5,
           "rotationDeg": 0,
           "roundrectRatio": 0.25,
+          "drillDiameterMm": 1,
+          "drillSlotMm": {
+            "widthMm": 3,
+            "heightMm": 1
+          },
           "layer": "*.Cu",
           "layers": [
             "*.Cu",
@@ -537,7 +552,12 @@
         "layers": [
           "*.Cu",
           "*.Mask"
-        ]
+        ],
+        "drillSlot": {
+          "width": 1,
+          "height": 3
+        },
+        "drillDiameter": 1
       },
       {
         "number": "2",
@@ -556,7 +576,12 @@
           "*.Cu",
           "*.Mask"
         ],
-        "roundrectRatio": 0.25
+        "roundrectRatio": 0.25,
+        "drillSlot": {
+          "width": 1,
+          "height": 3
+        },
+        "drillDiameter": 1
       },
       {
         "number": "3",
@@ -575,7 +600,12 @@
           "*.Cu",
           "*.Mask"
         ],
-        "roundrectRatio": 0.25
+        "roundrectRatio": 0.25,
+        "drillSlot": {
+          "width": 3,
+          "height": 1
+        },
+        "drillDiameter": 1
       }
     ],
     "graphics": [

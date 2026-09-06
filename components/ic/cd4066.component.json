@@ -22,12 +22,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "CD4066BE"
+      "mpn": "CD4066BE",
+      "lcsc": "C5203",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "CD4066BM96",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "CD4000",
-    "function": "quad switch"
+    "function": "quad switch",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.cd4066",
   "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",

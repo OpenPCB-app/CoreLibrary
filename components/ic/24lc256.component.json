@@ -23,11 +23,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "24LC256-I/P"
+      "mpn": "24LC256-I/P",
+      "lcsc": "C411624",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-8"
+    },
+    {
+      "manufacturer": "Microchip",
+      "mpn": "24LC256-I/SN",
+      "lcsc": "C411625",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
-    "type": "EEPROM",
+    "type": "memory",
     "interface": "I2C",
     "size": "256kbit"
   },

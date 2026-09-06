@@ -3,7 +3,7 @@
   "uuid": "c34a88cf-ec82-5247-81ae-b65db085f28e",
   "version": "0.2.0",
   "name": "1N4148 Switching Diode",
-  "description": "1N4148 high-speed small-signal switching diode.",
+  "description": "1N4148 high-speed small-signal switching diode; 1N4148W in SOD-123, 1N4148WS in SOD-323, 1N4148 in DO-35 axial.",
   "category": "diode",
   "subcategory": "small-signal",
   "tags": [
@@ -19,14 +19,39 @@
     "100V"
   ],
   "aliases": [],
-  "datasheet": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
+  "datasheet": "https://www.diodes.com/assets/Datasheets/ds30086.pdf",
   "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "Vishay",
-      "mpn": "1N4148"
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "1N4148W-7-F",
+      "lcsc": "C83528",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOD-123"
+    },
+    {
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "1N4148WS-7-F",
+      "lcsc": "C60580",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOD-323",
+      "role": "alternate",
+      "datasheet": "https://www.diodes.com/assets/Datasheets/1N4148WS_BAV16WS.pdf"
+    },
+    {
+      "manufacturer": "Nexperia",
+      "mpn": "1N4148,133",
+      "package": "DO-35",
+      "role": "alternate",
+      "datasheet": "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
     }
   ],
+  "parameters": {
+    "type": "signal",
+    "vrrm": "100V",
+    "if": "200mA",
+    "vf": "1V"
+  },
   "symbol": "openpcb.core.symbol.diode.1n4148",
   "defaultFootprint": "openpcb.core.footprint.diode.d-sod-123",
   "footprints": [

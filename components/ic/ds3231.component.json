@@ -3,7 +3,7 @@
   "uuid": "eee0e8d1-0f76-5f50-a6eb-f13836e64f44",
   "version": "0.3.0",
   "name": "DS3231 RTC",
-  "description": "DS3231M I2C real-time clock with TCXO, SOIC-16.",
+  "description": "DS3231 I2C real-time clock with integrated TCXO, wide-body SOIC-16. On the DS3231S/SN the datasheet documents pins 5-12 as \"N.C. Must be connected to ground\", so the symbol names them GND.",
   "category": "ic",
   "subcategory": "rtc",
   "tags": [
@@ -19,23 +19,35 @@
   ],
   "aliases": [],
   "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf",
-  "datasheetSource": "http://datasheets.maximintegrated.com/en/ds/DS3231.pdf",
+  "datasheetSource": "https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Analog Devices",
-      "mpn": "DS3231SN#"
+      "mpn": "DS3231SN#",
+      "lcsc": "C722469",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16W"
+    },
+    {
+      "manufacturer": "Analog Devices",
+      "mpn": "DS3231SN#T&R",
+      "lcsc": "C9866",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16W",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "interface": "I2C",
-    "function": "RTC"
+    "function": "RTC",
+    "type": "rtc"
   },
   "symbol": "openpcb.core.symbol.ic.ds3231",
-  "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-16w-7-5x10-3mm-p1-27mm",
   "footprints": [
     {
-      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
-      "label": "SOIC-16",
+      "footprint": "openpcb.core.footprint.package.soic-16w-7-5x10-3mm-p1-27mm",
+      "label": "SOIC-16W",
       "pinMap": [
         {
           "pinNumber": "1",

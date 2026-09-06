@@ -2,7 +2,7 @@
   "id": "openpcb.core.symbol.connector.rj45-magjack",
   "uuid": "58c436d9-6fcf-5977-9f91-c470254d49c3",
   "version": "0.3.0",
-  "name": "RJ45 MagJack (LEDs, Shielded)",
+  "name": "RJ45 Jack (LEDs, Shielded)",
   "referencePrefix": "J",
   "description": "RJ connector, 8P8C (8 positions 8 connected), two LEDs, Shielded",
   "provenance": {
@@ -61,7 +61,7 @@
       {
         "originPinKey": "u1:1",
         "number": "1",
-        "name": "",
+        "name": "P1",
         "localPosition": {
           "x": 10.16,
           "y": -7.62
@@ -72,7 +72,7 @@
       {
         "originPinKey": "u1:2",
         "number": "2",
-        "name": "",
+        "name": "P2",
         "localPosition": {
           "x": 10.16,
           "y": -5.08
@@ -83,7 +83,7 @@
       {
         "originPinKey": "u1:3",
         "number": "3",
-        "name": "",
+        "name": "P3",
         "localPosition": {
           "x": 10.16,
           "y": -2.54
@@ -94,7 +94,7 @@
       {
         "originPinKey": "u1:4",
         "number": "4",
-        "name": "",
+        "name": "P4",
         "localPosition": {
           "x": 10.16,
           "y": 0
@@ -105,7 +105,7 @@
       {
         "originPinKey": "u1:5",
         "number": "5",
-        "name": "",
+        "name": "P5",
         "localPosition": {
           "x": 10.16,
           "y": 2.54
@@ -116,7 +116,7 @@
       {
         "originPinKey": "u1:6",
         "number": "6",
-        "name": "",
+        "name": "P6",
         "localPosition": {
           "x": 10.16,
           "y": 5.08
@@ -127,7 +127,7 @@
       {
         "originPinKey": "u1:7",
         "number": "7",
-        "name": "",
+        "name": "P7",
         "localPosition": {
           "x": 10.16,
           "y": 7.62
@@ -138,7 +138,7 @@
       {
         "originPinKey": "u1:8",
         "number": "8",
-        "name": "",
+        "name": "P8",
         "localPosition": {
           "x": 10.16,
           "y": 10.16
@@ -149,7 +149,7 @@
       {
         "originPinKey": "u1:9",
         "number": "9",
-        "name": "",
+        "name": "LED1K",
         "localPosition": {
           "x": -10.16,
           "y": 10.16
@@ -160,7 +160,7 @@
       {
         "originPinKey": "u1:10",
         "number": "10",
-        "name": "",
+        "name": "LED1A",
         "localPosition": {
           "x": -10.16,
           "y": 7.62
@@ -171,7 +171,7 @@
       {
         "originPinKey": "u1:11",
         "number": "11",
-        "name": "",
+        "name": "LED2K",
         "localPosition": {
           "x": -10.16,
           "y": -5.08
@@ -182,7 +182,7 @@
       {
         "originPinKey": "u1:12",
         "number": "12",
-        "name": "",
+        "name": "LED2A",
         "localPosition": {
           "x": -10.16,
           "y": -7.62
@@ -193,7 +193,7 @@
       {
         "originPinKey": "u1:SH",
         "number": "SH",
-        "name": "",
+        "name": "SHIELD",
         "localPosition": {
           "x": 0,
           "y": -12.7
@@ -795,7 +795,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "",
+          "name": "P1",
           "number": "1",
           "electricalType": "passive",
           "unit": 1,
@@ -811,7 +811,7 @@
         },
         {
           "id": "u1:2",
-          "name": "",
+          "name": "P2",
           "number": "2",
           "electricalType": "passive",
           "unit": 1,
@@ -827,7 +827,7 @@
         },
         {
           "id": "u1:3",
-          "name": "",
+          "name": "P3",
           "number": "3",
           "electricalType": "passive",
           "unit": 1,
@@ -843,7 +843,7 @@
         },
         {
           "id": "u1:4",
-          "name": "",
+          "name": "P4",
           "number": "4",
           "electricalType": "passive",
           "unit": 1,
@@ -859,7 +859,7 @@
         },
         {
           "id": "u1:5",
-          "name": "",
+          "name": "P5",
           "number": "5",
           "electricalType": "passive",
           "unit": 1,
@@ -875,7 +875,7 @@
         },
         {
           "id": "u1:6",
-          "name": "",
+          "name": "P6",
           "number": "6",
           "electricalType": "passive",
           "unit": 1,
@@ -891,7 +891,7 @@
         },
         {
           "id": "u1:7",
-          "name": "",
+          "name": "P7",
           "number": "7",
           "electricalType": "passive",
           "unit": 1,
@@ -907,7 +907,7 @@
         },
         {
           "id": "u1:8",
-          "name": "",
+          "name": "P8",
           "number": "8",
           "electricalType": "passive",
           "unit": 1,
@@ -923,7 +923,7 @@
         },
         {
           "id": "u1:9",
-          "name": "",
+          "name": "LED1K",
           "number": "9",
           "electricalType": "passive",
           "unit": 1,
@@ -939,7 +939,7 @@
         },
         {
           "id": "u1:10",
-          "name": "",
+          "name": "LED1A",
           "number": "10",
           "electricalType": "passive",
           "unit": 1,
@@ -955,7 +955,7 @@
         },
         {
           "id": "u1:11",
-          "name": "",
+          "name": "LED2K",
           "number": "11",
           "electricalType": "passive",
           "unit": 1,
@@ -971,7 +971,7 @@
         },
         {
           "id": "u1:12",
-          "name": "",
+          "name": "LED2A",
           "number": "12",
           "electricalType": "passive",
           "unit": 1,
@@ -987,7 +987,7 @@
         },
         {
           "id": "u1:SH",
-          "name": "",
+          "name": "SHIELD",
           "number": "SH",
           "electricalType": "passive",
           "unit": 1,
@@ -1004,6 +1004,19 @@
       ],
       "labels": [
         {
+          "id": "u1:1:name",
+          "text": "P1",
+          "at": {
+            "x": 7.112,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:1:number",
           "text": "1",
           "at": {
@@ -1015,6 +1028,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "P2",
+          "at": {
+            "x": 7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:2:number",
@@ -1030,6 +1056,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:3:name",
+          "text": "P3",
+          "at": {
+            "x": 7.112,
+            "y": -2.5399999999999996
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:3:number",
           "text": "3",
           "at": {
@@ -1041,6 +1080,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "P4",
+          "at": {
+            "x": 7.112,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:4:number",
@@ -1056,6 +1108,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:5:name",
+          "text": "P5",
+          "at": {
+            "x": 7.112,
+            "y": 2.5400000000000005
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:5:number",
           "text": "5",
           "at": {
@@ -1067,6 +1132,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "P6",
+          "at": {
+            "x": 7.112,
+            "y": 5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:6:number",
@@ -1082,6 +1160,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:7:name",
+          "text": "P7",
+          "at": {
+            "x": 7.112,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:7:number",
           "text": "7",
           "at": {
@@ -1093,6 +1184,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:8:name",
+          "text": "P8",
+          "at": {
+            "x": 7.112,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:8:number",
@@ -1108,6 +1212,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:9:name",
+          "text": "LED1K",
+          "at": {
+            "x": -7.112,
+            "y": 10.16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:9:number",
           "text": "9",
           "at": {
@@ -1119,6 +1236,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "LED1A",
+          "at": {
+            "x": -7.112,
+            "y": 7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:10:number",
@@ -1134,6 +1264,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:11:name",
+          "text": "LED2K",
+          "at": {
+            "x": -7.112,
+            "y": -5.08
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:11:number",
           "text": "11",
           "at": {
@@ -1147,6 +1290,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:12:name",
+          "text": "LED2A",
+          "at": {
+            "x": -7.112,
+            "y": -7.62
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:12:number",
           "text": "12",
           "at": {
@@ -1158,6 +1314,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:SH:name",
+          "text": "SHIELD",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -10.668
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:SH:number",
@@ -1177,7 +1346,7 @@
           "text": "J",
           "at": {
             "x": 0,
-            "y": 14.097
+            "y": 14.097000000000001
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -1190,7 +1359,7 @@
           "text": "RJ45_LED_Shielded",
           "at": {
             "x": 0,
-            "y": -14.5542
+            "y": -16.662399999999998
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -1201,9 +1370,9 @@
       ],
       "bounds": {
         "minX": -10.16,
-        "minY": -15.8242,
+        "minY": -17.932399999999998,
         "maxX": 10.16,
-        "maxY": 15.366999999999999
+        "maxY": 15.367
       },
       "warnings": [
         {
@@ -1218,7 +1387,7 @@
     "kicadId": null,
     "pins": [
       {
-        "name": "",
+        "name": "P1",
         "number": "1",
         "electricalType": "passive",
         "direction": "line",
@@ -1237,7 +1406,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "P2",
         "number": "2",
         "electricalType": "passive",
         "direction": "line",
@@ -1256,7 +1425,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "P3",
         "number": "3",
         "electricalType": "passive",
         "direction": "line",
@@ -1275,7 +1444,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "P4",
         "number": "4",
         "electricalType": "passive",
         "direction": "line",
@@ -1294,7 +1463,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "P5",
         "number": "5",
         "electricalType": "passive",
         "direction": "line",
@@ -1313,7 +1482,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "P6",
         "number": "6",
         "electricalType": "passive",
         "direction": "line",
@@ -1332,7 +1501,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "P7",
         "number": "7",
         "electricalType": "passive",
         "direction": "line",
@@ -1351,7 +1520,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "P8",
         "number": "8",
         "electricalType": "passive",
         "direction": "line",
@@ -1370,7 +1539,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "LED1K",
         "number": "9",
         "electricalType": "passive",
         "direction": "line",
@@ -1389,7 +1558,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "LED1A",
         "number": "10",
         "electricalType": "passive",
         "direction": "line",
@@ -1408,7 +1577,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "LED2K",
         "number": "11",
         "electricalType": "passive",
         "direction": "line",
@@ -1427,7 +1596,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "LED2A",
         "number": "12",
         "electricalType": "passive",
         "direction": "line",
@@ -1446,7 +1615,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "SHIELD",
         "number": "SH",
         "electricalType": "passive",
         "direction": "line",

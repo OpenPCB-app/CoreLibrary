@@ -28,7 +28,10 @@
   "manufacturerParts": [
     {
       "manufacturer": "Infineon",
-      "mpn": "IRF540NPBF"
+      "mpn": "IRF540NPBF",
+      "lcsc": "C2566",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220AB"
     }
   ],
   "parameters": {
@@ -36,7 +39,7 @@
     "id": "33A",
     "rds_on": "44mOhm",
     "vgs_th": "2-4V",
-    "channel": "n"
+    "type": "nmos"
   },
   "symbol": "openpcb.core.symbol.transistor.irf540n",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

@@ -24,13 +24,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "ULN2003ADR"
+      "mpn": "ULN2003ADR",
+      "lcsc": "C7512",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOIC-16"
     }
   ],
   "parameters": {
     "channels": "7",
     "iout": "500mA",
-    "supply_max": "50V"
+    "supply_max": "50V",
+    "type": "driver"
   },
   "symbol": "openpcb.core.symbol.ic.uln2003a",
   "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",

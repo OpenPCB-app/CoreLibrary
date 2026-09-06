@@ -3,7 +3,7 @@
   "uuid": "16bcdec2-15c0-588d-b9cc-20763d9a306c",
   "version": "0.3.0",
   "name": "PCF8574 I2C I/O Expander",
-  "description": "PCF8574 remote 8-bit I/O expander for I2C bus.",
+  "description": "PCF8574 remote 8-bit I/O expander for I2C bus. SO16 wide-body (7.5 mm) per NXP PCF8574T.",
   "category": "ic",
   "subcategory": "logic-io-expander",
   "tags": [
@@ -22,20 +22,24 @@
   "manufacturerParts": [
     {
       "manufacturer": "NXP",
-      "mpn": "PCF8574T/3,518"
+      "mpn": "PCF8574T/3,518",
+      "lcsc": "C7605",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16W 7.5mm"
     }
   ],
   "parameters": {
     "channels": "8",
     "interface": "i2c",
-    "supply": "2.5-6V"
+    "supply": "2.5-6V",
+    "type": "io-expander"
   },
   "symbol": "openpcb.core.symbol.ic.pcf8574",
-  "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
+  "defaultFootprint": "openpcb.core.footprint.package.soic-16w-7-5x10-3mm-p1-27mm",
   "footprints": [
     {
-      "footprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",
-      "label": "SOIC-16",
+      "footprint": "openpcb.core.footprint.package.soic-16w-7-5x10-3mm-p1-27mm",
+      "label": "SOIC-16W 7.5mm",
       "pinMap": [
         {
           "pinNumber": "1",

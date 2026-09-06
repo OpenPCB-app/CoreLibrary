@@ -20,14 +20,30 @@
     "general purpose"
   ],
   "aliases": [],
-  "datasheet": "https://www.onsemi.com/pub/Collateral/MMBT3904-D.pdf",
+  "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/pzt3904-d.pdf",
   "datasheetSource": "https://www.onsemi.com/pdf/datasheet/pzt3904-d.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "onsemi",
-      "mpn": "MMBT3904"
+      "mpn": "MMBT3904LT1G",
+      "lcsc": "C81464",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "Changjiang Electronics",
+      "mpn": "MMBT3904",
+      "lcsc": "C20526",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "npn",
+    "vce": "40V",
+    "ic": "200mA"
+  },
   "symbol": "openpcb.core.symbol.transistor.mmbt3904",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

@@ -23,13 +23,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "MCP73831T-2ACI/OT"
+      "mpn": "MCP73831T-2ACI/OT",
+      "lcsc": "C424093",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-5"
     }
   ],
   "parameters": {
     "vbat": "4.2V",
     "ichg": "15-500mA (prog)",
-    "cell": "1S Li-Ion"
+    "cell": "1S Li-Ion",
+    "type": "charger"
   },
   "symbol": "openpcb.core.symbol.power.mcp73831",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",

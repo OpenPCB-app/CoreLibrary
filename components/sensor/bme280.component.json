@@ -26,13 +26,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "Bosch Sensortec",
-      "mpn": "BME280"
+      "mpn": "BME280",
+      "lcsc": "C92489",
+      "jlcpcbAssemblyType": "extended",
+      "package": "LGA-8"
     }
   ],
   "parameters": {
     "measures": "temperature + humidity + pressure",
     "interface": "I2C / SPI",
-    "supply": "1.7V-3.6V"
+    "supply": "1.7V-3.6V",
+    "type": "environmental"
   },
   "symbol": "openpcb.core.symbol.sensor.bme280",
   "defaultFootprint": "openpcb.core.footprint.sensor.bme280-lga-8",

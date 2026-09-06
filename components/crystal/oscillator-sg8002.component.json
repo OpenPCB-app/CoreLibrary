@@ -18,14 +18,19 @@
     "active crystal"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://download.epsondevice.com/td/pdf/brief/SG-8002CE_en.pdf",
   "datasheetSource": "https://support.epson.biz/td/api/doc_check.php?mode=dl&lang=en&Parts=SG-8002DC",
   "manufacturerParts": [
     {
       "manufacturer": "Seiko Epson",
-      "mpn": "SG-8002CE"
+      "mpn": "SG-8002CE",
+      "package": "SMD 3.2x2.5mm 4-pin"
     }
   ],
+  "parameters": {
+    "type": "oscillator",
+    "frequency": "1-125MHz (programmable)"
+  },
   "symbol": "openpcb.core.symbol.crystal.oscillator-sg8002",
   "defaultFootprint": "openpcb.core.footprint.crystal.osc-sg8002ce-3-2x2-5mm",
   "footprints": [

@@ -22,13 +22,19 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM35DZ/NOPB"
+      "mpn": "LM35DZ/NOPB",
+      "lcsc": "C12165",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-92"
     }
   ],
   "parameters": {
     "measures": "temperature",
     "output": "analog",
-    "range": "-55C to +150C"
+    "range": "-55C to +150C",
+    "type": "temperature",
+    "interface": "analog",
+    "supply": "4-30V"
   },
   "symbol": "openpcb.core.symbol.sensor.lm35",
   "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",

@@ -3,7 +3,7 @@
   "uuid": "7d2dc0e9-902c-527c-9093-5537ff6575d3",
   "version": "0.3.0",
   "name": "ME6211C33 LDO 500mA",
-  "description": "ME6211C33M5 fixed 3.3V 500mA LDO, SOT-23-5, with shutdown.",
+  "description": "ME6211C33M5 fixed 3.3V 500mA LDO, SOT-23-5, with shutdown. MicrOne publishes no datasheet PDF on its own site; the pin-identical Diodes AP2112K-3.3 is listed as a second source and carries the linked datasheet.",
   "category": "power",
   "subcategory": "regulator-linear-ldo",
   "tags": [
@@ -21,14 +21,28 @@
   "datasheetSource": "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_MICRONE-Nanjing-Micro-One-Elec-ME6211C33R5G_C235316.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "MicrOne (Nanjing Micro One)",
-      "mpn": "ME6211C33M5G-N"
+      "manufacturer": "MICRONE (Nanjing Micro One Elec)",
+      "mpn": "ME6211C33M5G-N",
+      "lcsc": "C82942",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-5"
+    },
+    {
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "AP2112K-3.3TRG1",
+      "lcsc": "C51118",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-5",
+      "role": "alternate",
+      "datasheet": "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
     }
   ],
   "parameters": {
     "vout": "3.3V",
     "iout": "500mA",
-    "topology": "linear-ldo"
+    "topology": "linear-ldo",
+    "type": "ldo",
+    "vin_max": "6.5V"
   },
   "symbol": "openpcb.core.symbol.power.me6211-3v3",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",

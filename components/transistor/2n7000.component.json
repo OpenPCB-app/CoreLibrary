@@ -22,14 +22,25 @@
   "datasheetSource": "https://www.vishay.com/docs/70226/70226.pdf",
   "manufacturerParts": [
     {
+      "manufacturer": "Vishay",
+      "mpn": "2N7000",
+      "package": "TO-92"
+    },
+    {
       "manufacturer": "onsemi",
-      "mpn": "2N7000"
+      "mpn": "2N7000",
+      "lcsc": "C232838",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-92",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "type": "nmos",
     "vds": "60V",
-    "id": "200mA"
+    "id": "200mA",
+    "rds_on": "5Ohm",
+    "vgs_th": "0.8-3V"
   },
   "symbol": "openpcb.core.symbol.transistor.2n7000",
   "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",

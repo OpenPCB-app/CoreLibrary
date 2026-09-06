@@ -3,7 +3,7 @@
   "uuid": "298fc36f-7395-5797-a1f4-0a8192c6c7c2",
   "version": "0.2.0",
   "name": "Tactile Switch (THT)",
-  "description": "6 mm through-hole tactile push switch.",
+  "description": "6 mm through-hole tactile push switch, 5 mm actuator height (Omron B3F-1020, 0.98 N).",
   "category": "switch",
   "subcategory": "tactile",
   "tags": [
@@ -21,9 +21,16 @@
   "manufacturerParts": [
     {
       "manufacturer": "Omron",
-      "mpn": "B3F-1000"
+      "mpn": "B3F-1020",
+      "lcsc": "C722171",
+      "jlcpcbAssemblyType": "extended",
+      "package": "6x6mm THT 4-pin"
     }
   ],
+  "parameters": {
+    "type": "tactile",
+    "contacts": "SPST-NO"
+  },
   "symbol": "openpcb.core.symbol.switch.tactile-switch-tht",
   "defaultFootprint": "openpcb.core.footprint.switch.sw-push-6mm-h5mm",
   "footprints": [

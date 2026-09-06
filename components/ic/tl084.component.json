@@ -24,12 +24,30 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TL084CDR"
+      "mpn": "TL084CDR",
+      "lcsc": "C8956",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
+    },
+    {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "TL084CDT",
+      "lcsc": "C11130",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "TL084CN",
+      "package": "DIP-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "4",
-    "gbw": "3MHz"
+    "gbw": "3MHz",
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.tl084",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

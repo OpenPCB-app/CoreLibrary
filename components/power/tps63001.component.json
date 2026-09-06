@@ -1,0 +1,116 @@
+{
+  "id": "openpcb.core.power.tps63001",
+  "uuid": "a0fbe620-ce77-5e7e-878b-de820d93b9c0",
+  "version": "0.4.0",
+  "name": "TPS63001 Buck-Boost Converter",
+  "description": "TPS63001 single-inductor synchronous buck-boost converter, 1.8-5.5V in, fixed 3.3V out, up to 1.2A, VSON-10.",
+  "category": "power",
+  "subcategory": "regulator-buck-boost",
+  "tags": [
+    "power",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TPS63001",
+    "TPS6300x",
+    "buck-boost",
+    "DC-DC",
+    "3.3V",
+    "VSON-10",
+    "single inductor"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.ti.com/lit/ds/symlink/tps63000.pdf",
+  "datasheetSource": "http://www.ti.com/lit/ds/symlink/tps63000.pdf",
+  "parameters": {
+    "type": "buck-boost",
+    "vin": "1.8-5.5V",
+    "vin_max": "5.5V",
+    "vout": "3.3V",
+    "iout": "1.2A",
+    "switching_freq": "1.25-1.5MHz"
+  },
+  "manufacturerParts": [
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "TPS63001DRCR",
+      "lcsc": "C28060",
+      "jlcpcbAssemblyType": "extended",
+      "package": "VSON-10 (DRC)",
+      "role": "primary"
+    }
+  ],
+  "symbol": "openpcb.core.symbol.power.tps63001",
+  "defaultFootprint": "openpcb.core.footprint.package.vson-10-1ep-3x3mm-p0-5mm-ep1-65x2-4mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.vson-10-1ep-3x3mm-p0-5mm-ep1-65x2-4mm",
+      "label": "VSON-10 3x3mm P0.5mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TPS63001.kicad_sym",
+    "sourceLibrary": "Regulator_Switching",
+    "sourceItemName": "TPS63001 Buck-Boost Converter",
+    "sourceHash": "8d8754469bef097af3eb9ee2c2b340a83efc9941c9f2240729a938b73567d9e9",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-09-05T03:09:31.678Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

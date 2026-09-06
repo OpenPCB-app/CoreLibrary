@@ -83,7 +83,7 @@
       {
         "originPinKey": "u1:3",
         "number": "3",
-        "name": "",
+        "name": "AC",
         "localPosition": {
           "x": 0,
           "y": -7.62
@@ -94,7 +94,7 @@
       {
         "originPinKey": "u1:4",
         "number": "4",
-        "name": "",
+        "name": "AC",
         "localPosition": {
           "x": 0,
           "y": 7.62
@@ -339,7 +339,7 @@
         },
         {
           "id": "u1:3",
-          "name": "",
+          "name": "AC",
           "number": "3",
           "electricalType": "passive",
           "unit": 1,
@@ -355,7 +355,7 @@
         },
         {
           "id": "u1:4",
-          "name": "",
+          "name": "AC",
           "number": "4",
           "electricalType": "passive",
           "unit": 1,
@@ -424,6 +424,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:3:name",
+          "text": "AC",
+          "at": {
+            "x": 1.5553014349171386e-16,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:3:number",
           "text": "3",
           "at": {
@@ -435,6 +448,19 @@
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:4:name",
+          "text": "AC",
+          "at": {
+            "x": -4.6659043047514155e-16,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:4:number",
@@ -533,7 +559,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "AC",
         "number": "3",
         "electricalType": "passive",
         "direction": "line",
@@ -552,7 +578,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "AC",
         "number": "4",
         "electricalType": "passive",
         "direction": "line",

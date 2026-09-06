@@ -24,14 +24,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "ATMEGA328P-PU"
+      "mpn": "ATMEGA328P-PU",
+      "lcsc": "C33901",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-28"
     }
   ],
   "parameters": {
     "core": "AVR 8-bit",
     "flash": "32KB",
     "ram": "2KB",
-    "io": "23 GPIO"
+    "io": "23 GPIO",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.atmega328p-dip28",
   "defaultFootprint": "openpcb.core.footprint.package.dip-28-w7-62mm",

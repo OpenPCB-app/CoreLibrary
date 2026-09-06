@@ -22,13 +22,23 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "MCP3008-I/P"
+      "mpn": "MCP3008-I/P",
+      "package": "DIP-16"
+    },
+    {
+      "manufacturer": "Microchip",
+      "mpn": "MCP3008-I/SL",
+      "lcsc": "C1520159",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "8",
     "resolution": "10-bit",
-    "interface": "SPI"
+    "interface": "SPI",
+    "type": "adc"
   },
   "symbol": "openpcb.core.symbol.ic.mcp3008",
   "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",

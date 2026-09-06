@@ -23,9 +23,27 @@
   "manufacturerParts": [
     {
       "manufacturer": "Vishay",
-      "mpn": "SI2302CDS-T1-GE3"
+      "mpn": "SI2302CDS-T1-GE3",
+      "lcsc": "C10488",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "JSMSEMI",
+      "mpn": "SI2302-2.3A-JSM",
+      "lcsc": "C5296725",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "nmos",
+    "vds": "20V",
+    "id": "2.9A",
+    "rds_on": "57mOhm",
+    "vgs_th": "0.4-0.85V"
+  },
   "symbol": "openpcb.core.symbol.transistor.si2302",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

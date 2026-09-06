@@ -51,7 +51,7 @@
       {
         "originPinKey": "u1:1",
         "number": "1",
-        "name": "",
+        "name": "NC",
         "localPosition": {
           "x": 2.54,
           "y": 7.62
@@ -62,7 +62,7 @@
       {
         "originPinKey": "u1:2",
         "number": "2",
-        "name": "",
+        "name": "COIL1",
         "localPosition": {
           "x": -5.08,
           "y": 7.62
@@ -73,7 +73,7 @@
       {
         "originPinKey": "u1:5",
         "number": "5",
-        "name": "",
+        "name": "COM",
         "localPosition": {
           "x": 5.08,
           "y": -7.62
@@ -84,7 +84,7 @@
       {
         "originPinKey": "u1:6",
         "number": "6",
-        "name": "",
+        "name": "COM",
         "localPosition": {
           "x": 5.08,
           "y": -7.62
@@ -95,7 +95,7 @@
       {
         "originPinKey": "u1:9",
         "number": "9",
-        "name": "",
+        "name": "COIL2",
         "localPosition": {
           "x": -5.08,
           "y": -7.62
@@ -106,7 +106,7 @@
       {
         "originPinKey": "u1:10",
         "number": "10",
-        "name": "",
+        "name": "NO",
         "localPosition": {
           "x": 7.62,
           "y": 7.62
@@ -352,7 +352,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "",
+          "name": "NC",
           "number": "1",
           "electricalType": "passive",
           "unit": 1,
@@ -368,7 +368,7 @@
         },
         {
           "id": "u1:2",
-          "name": "",
+          "name": "COIL1",
           "number": "2",
           "electricalType": "passive",
           "unit": 1,
@@ -384,7 +384,7 @@
         },
         {
           "id": "u1:5",
-          "name": "",
+          "name": "COM",
           "number": "5",
           "electricalType": "passive",
           "unit": 1,
@@ -400,7 +400,7 @@
         },
         {
           "id": "u1:6",
-          "name": "",
+          "name": "COM",
           "number": "6",
           "electricalType": "passive",
           "unit": 1,
@@ -416,7 +416,7 @@
         },
         {
           "id": "u1:9",
-          "name": "",
+          "name": "COIL2",
           "number": "9",
           "electricalType": "passive",
           "unit": 1,
@@ -432,7 +432,7 @@
         },
         {
           "id": "u1:10",
-          "name": "",
+          "name": "NO",
           "number": "10",
           "electricalType": "passive",
           "unit": 1,
@@ -449,6 +449,19 @@
       ],
       "labels": [
         {
+          "id": "u1:1:name",
+          "text": "NC",
+          "at": {
+            "x": 2.5399999999999996,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:1:number",
           "text": "1",
           "at": {
@@ -460,6 +473,19 @@
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:2:name",
+          "text": "COIL1",
+          "at": {
+            "x": -5.080000000000001,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:2:number",
@@ -475,6 +501,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:5:name",
+          "text": "COM",
+          "at": {
+            "x": 5.08,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:5:number",
           "text": "5",
           "at": {
@@ -486,6 +525,19 @@
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "COM",
+          "at": {
+            "x": 5.08,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:6:number",
@@ -501,6 +553,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:9:name",
+          "text": "COIL2",
+          "at": {
+            "x": -5.08,
+            "y": -5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:9:number",
           "text": "9",
           "at": {
@@ -512,6 +577,19 @@
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:10:name",
+          "text": "NO",
+          "at": {
+            "x": 7.619999999999999,
+            "y": 5.588
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:10:number",
@@ -531,7 +609,7 @@
           "text": "K",
           "at": {
             "x": 0,
-            "y": 9.4742
+            "y": 10.795
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -544,7 +622,7 @@
           "text": "G5V-1",
           "at": {
             "x": 0,
-            "y": -9.0805
+            "y": -10.795
           },
           "fontSizeMm": 1.27,
           "rotationDeg": 0,
@@ -555,9 +633,9 @@
       ],
       "bounds": {
         "minX": -10.287,
-        "minY": -10.3505,
+        "minY": -12.065,
         "maxX": 10.287,
-        "maxY": 10.7442
+        "maxY": 12.065
       },
       "warnings": []
     }
@@ -567,7 +645,7 @@
     "kicadId": null,
     "pins": [
       {
-        "name": "",
+        "name": "NC",
         "number": "1",
         "electricalType": "passive",
         "direction": "line",
@@ -586,7 +664,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "COIL1",
         "number": "2",
         "electricalType": "passive",
         "direction": "line",
@@ -605,7 +683,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "COM",
         "number": "5",
         "electricalType": "passive",
         "direction": "line",
@@ -624,7 +702,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "COM",
         "number": "6",
         "electricalType": "passive",
         "direction": "line",
@@ -643,7 +721,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "COIL2",
         "number": "9",
         "electricalType": "passive",
         "direction": "line",
@@ -662,7 +740,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "NO",
         "number": "10",
         "electricalType": "passive",
         "direction": "line",

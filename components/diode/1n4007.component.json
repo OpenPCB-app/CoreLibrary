@@ -23,10 +23,33 @@
   "datasheetSource": "http://www.vishay.com/docs/88503/1n4001.pdf",
   "manufacturerParts": [
     {
+      "manufacturer": "Vishay",
+      "mpn": "1N4007-E3/54",
+      "package": "DO-41"
+    },
+    {
       "manufacturer": "onsemi",
-      "mpn": "1N4007"
+      "mpn": "1N4007RLG",
+      "lcsc": "C53568",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DO-41",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Vishay",
+      "mpn": "S1M-E3/61T",
+      "lcsc": "C144860",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMA",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "rectifier",
+    "vrrm": "1000V",
+    "if": "1A",
+    "vf": "1.1V"
+  },
   "symbol": "openpcb.core.symbol.diode.1n4007",
   "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
   "footprints": [

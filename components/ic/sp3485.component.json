@@ -18,17 +18,21 @@
     "3.3V"
   ],
   "aliases": [],
-  "datasheet": null,
-  "datasheetSource": "http://www.icbase.com/pdf/SPX/SPX00480106.pdf",
+  "datasheet": "https://www.maxlinear.com/ds/sp3485.pdf",
+  "datasheetSource": "https://www.maxlinear.com/ds/sp3485.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "MaxLinear",
-      "mpn": "SP3485EN-L/TR"
+      "mpn": "SP3485EN-L/TR",
+      "lcsc": "C8963",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOIC-8"
     }
   ],
   "parameters": {
     "function": "RS-485 transceiver",
-    "supply": "3.3V"
+    "supply": "3.3V",
+    "type": "transceiver"
   },
   "symbol": "openpcb.core.symbol.ic.sp3485",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

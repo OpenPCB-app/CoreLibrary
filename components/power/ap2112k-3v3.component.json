@@ -23,14 +23,19 @@
   "manufacturerParts": [
     {
       "manufacturer": "Diodes Incorporated",
-      "mpn": "AP2112K-3.3TRG1"
+      "mpn": "AP2112K-3.3TRG1",
+      "lcsc": "C51118",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-5"
     }
   ],
   "parameters": {
     "vout": "3.3V",
     "iout": "600mA",
     "dropout": "250mV",
-    "topology": "linear-ldo"
+    "topology": "linear-ldo",
+    "type": "ldo",
+    "vin_max": "6V"
   },
   "symbol": "openpcb.core.symbol.power.ap2112k-3v3",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23-5",

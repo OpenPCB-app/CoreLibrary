@@ -23,12 +23,20 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TL081CDR"
+      "mpn": "TL081CDR",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "TL081CP",
+      "package": "DIP-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "1",
-    "gbw": "3MHz"
+    "gbw": "3MHz",
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.tl081",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

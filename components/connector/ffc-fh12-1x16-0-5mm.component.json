@@ -1,0 +1,145 @@
+{
+  "id": "openpcb.core.connector.ffc-fh12-1x16-0-5mm",
+  "uuid": "05aa86fd-2b5c-5ed0-a58e-d0ac6a9cd8b8",
+  "version": "0.2.0",
+  "name": "FFC/FPC 1x16 0.5mm (Hirose FH12)",
+  "description": "Hirose FH12 series 0.5 mm pitch FFC/FPC ZIF connector, 16 positions, horizontal, bottom contact, back-flip lock, 2 mm height.",
+  "category": "connector",
+  "subcategory": "ffc-fpc",
+  "tags": [
+    "connector",
+    "ffc-fpc",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "FFC",
+    "FPC",
+    "flex",
+    "flat flexible cable",
+    "0.5mm",
+    "FH12",
+    "ZIF",
+    "display",
+    "camera"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.hirose.com/product/document?clcode=&productname=&series=FH12&documenttype=Catalog&lang=en&documentid=D31648_en",
+  "parameters": {
+    "type": "ffc-fpc",
+    "pitch": "0.5mm",
+    "positions": "16",
+    "mount": "smd",
+    "orientation": "horizontal"
+  },
+  "manufacturerParts": [
+    {
+      "manufacturer": "Hirose",
+      "mpn": "FH12-16S-0.5SH(55)",
+      "role": "primary"
+    },
+    {
+      "manufacturer": "JUSHUO",
+      "mpn": "AFC01-S16FCA-00",
+      "lcsc": "C262665",
+      "jlcpcbAssemblyType": "extended",
+      "role": "alternate"
+    }
+  ],
+  "symbol": "openpcb.core.symbol.connector.ffc-1x16-0-5mm",
+  "defaultFootprint": "openpcb.core.footprint.connector.hirose-fh12-16s-0-5sh-1x16-1mp-p0-50mm-horizontal",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.connector.hirose-fh12-16s-0-5sh-1x16-1mp-p0-50mm-horizontal",
+      "label": "Hirose FH12-16S-0.5SH, 1x16 + 1MP, 0.50 mm, horizontal",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        },
+        {
+          "pinNumber": "10",
+          "padNumber": "10"
+        },
+        {
+          "pinNumber": "11",
+          "padNumber": "11"
+        },
+        {
+          "pinNumber": "12",
+          "padNumber": "12"
+        },
+        {
+          "pinNumber": "13",
+          "padNumber": "13"
+        },
+        {
+          "pinNumber": "14",
+          "padNumber": "14"
+        },
+        {
+          "pinNumber": "15",
+          "padNumber": "15"
+        },
+        {
+          "pinNumber": "16",
+          "padNumber": "16"
+        },
+        {
+          "pinNumber": "MP",
+          "padNumber": "MP"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "Conn_01x16_MountingPin.kicad_sym",
+    "sourceLibrary": "Connector_Generic_MountingPin",
+    "sourceItemName": "FFC/FPC 1x16 0.5mm (Hirose FH12)",
+    "sourceHash": "fc27d44b023704249accf3753300e9398c7b38ea21197cf8a9972c219d1bb865",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-09-05T02:58:32.732Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

@@ -19,18 +19,22 @@
     "battery"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://www.toppwr.com/uploadfile/file/20240130/65b892bb04a3c.pdf",
   "datasheetSource": "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121619_TOPPOWER-Nanjing-Extension-Microelectronics-TP4056-42-ESOP8_C16581.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "NanJing Top Power",
-      "mpn": "TP4056"
+      "manufacturer": "TOPPOWER (Nanjing Extension Microelectronics)",
+      "mpn": "TP4056-42-ESOP8",
+      "lcsc": "C16581",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "ESOP-8"
     }
   ],
   "parameters": {
     "vbat": "4.2V",
     "ichg": "1A (prog)",
-    "cell": "1S Li-Ion"
+    "cell": "1S Li-Ion",
+    "type": "charger"
   },
   "symbol": "openpcb.core.symbol.power.tp4056",
   "defaultFootprint": "openpcb.core.footprint.power.soic-8-1ep-ep2-29x3mm",

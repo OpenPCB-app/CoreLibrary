@@ -18,14 +18,27 @@
     "BZX84C"
   ],
   "aliases": [],
-  "datasheet": "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf",
+  "datasheet": "https://assets.nexperia.com/documents/data-sheet/BZX84_SER.pdf",
   "datasheetSource": "https://diotec.com/tl_files/diotec/files/pdf/datasheets/bzx84c2v4.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "BZX84-C5V1,215"
+      "mpn": "BZX84-C5V1,215",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "onsemi",
+      "mpn": "BZX84C5V1LT1G",
+      "lcsc": "C47075",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "zener",
+    "vz": "5.1V"
+  },
   "symbol": "openpcb.core.symbol.diode.bzx84",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

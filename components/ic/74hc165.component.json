@@ -22,12 +22,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "74HC165D,653"
+      "mpn": "74HC165D,653",
+      "lcsc": "C5613",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SOIC-16"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC165DR",
+      "package": "SOIC-16",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "bits": "8",
-    "supply": "2-6V"
+    "supply": "2-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc165",
   "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",

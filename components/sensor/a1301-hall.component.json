@@ -17,17 +17,28 @@
     "linear"
   ],
   "aliases": [],
-  "datasheet": "https://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx",
-  "datasheetSource": "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx",
+  "datasheet": "https://www.allegromicro.com/-/media/files/datasheets/a1301-2-datasheet.pdf",
+  "datasheetSource": "https://www.allegromicro.com/-/media/files/datasheets/a1301-2-datasheet.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Allegro MicroSystems",
-      "mpn": "A1301KUA-T"
+      "mpn": "A1301KUA-T",
+      "package": "TO-92"
+    },
+    {
+      "manufacturer": "Allegro MicroSystems",
+      "mpn": "A1302KUA-T",
+      "package": "TO-92",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "output": "ratiometric analog",
-    "sensitivity": "2.5mV/G"
+    "sensitivity": "2.5mV/G",
+    "type": "hall-effect",
+    "measures": "magnetic field",
+    "interface": "analog",
+    "supply": "4.5-6V"
   },
   "symbol": "openpcb.core.symbol.sensor.a1301-hall",
   "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",

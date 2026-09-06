@@ -20,14 +20,30 @@
     "general purpose"
   ],
   "aliases": [],
-  "datasheet": "https://www.onsemi.com/pub/Collateral/MMBT3906-D.pdf",
+  "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/pzt3906-d.pdf",
   "datasheetSource": "https://www.onsemi.com/pdf/datasheet/pzt3906-d.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "onsemi",
-      "mpn": "MMBT3906"
+      "mpn": "MMBT3906LT1G",
+      "lcsc": "C53444",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "hongjiacheng",
+      "mpn": "MMBT3906",
+      "lcsc": "C7420354",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "pnp",
+    "vce": "40V",
+    "ic": "200mA"
+  },
   "symbol": "openpcb.core.symbol.transistor.mmbt3906",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

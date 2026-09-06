@@ -24,14 +24,19 @@
   "manufacturerParts": [
     {
       "manufacturer": "Diodes Incorporated",
-      "mpn": "AP63203WU-7"
+      "mpn": "AP63203WU-7",
+      "lcsc": "C780769",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TSOT-23-6"
     }
   ],
   "parameters": {
     "vin": "3.8-32V",
     "vout": "3.3V",
     "iout": "2A",
-    "topology": "buck"
+    "topology": "buck",
+    "type": "buck",
+    "vin_max": "32V"
   },
   "symbol": "openpcb.core.symbol.power.ap63203",
   "defaultFootprint": "openpcb.core.footprint.power.tsot-23-6",

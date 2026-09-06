@@ -51,7 +51,7 @@
       {
         "originPinKey": "u1:1",
         "number": "1",
-        "name": "Rg",
+        "name": "RG",
         "localPosition": {
           "x": -10.16,
           "y": 2.54
@@ -62,7 +62,7 @@
       {
         "originPinKey": "u1:2",
         "number": "2",
-        "name": "-",
+        "name": "-IN",
         "localPosition": {
           "x": -10.16,
           "y": 5.08
@@ -73,7 +73,7 @@
       {
         "originPinKey": "u1:3",
         "number": "3",
-        "name": "+",
+        "name": "+IN",
         "localPosition": {
           "x": -10.16,
           "y": -5.08
@@ -84,7 +84,7 @@
       {
         "originPinKey": "u1:4",
         "number": "4",
-        "name": "Vs-",
+        "name": "-VS",
         "localPosition": {
           "x": -2.54,
           "y": -7.62
@@ -95,7 +95,7 @@
       {
         "originPinKey": "u1:5",
         "number": "5",
-        "name": "Ref",
+        "name": "REF",
         "localPosition": {
           "x": 2.54,
           "y": -7.62
@@ -106,7 +106,7 @@
       {
         "originPinKey": "u1:6",
         "number": "6",
-        "name": "",
+        "name": "OUT",
         "localPosition": {
           "x": 10.16,
           "y": 0
@@ -117,7 +117,7 @@
       {
         "originPinKey": "u1:7",
         "number": "7",
-        "name": "Vs+",
+        "name": "+VS",
         "localPosition": {
           "x": -2.54,
           "y": 7.62
@@ -128,7 +128,7 @@
       {
         "originPinKey": "u1:8",
         "number": "8",
-        "name": "Rg",
+        "name": "RG",
         "localPosition": {
           "x": -10.16,
           "y": -2.54
@@ -172,7 +172,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "Rg",
+          "name": "RG",
           "number": "1",
           "electricalType": "passive",
           "unit": 1,
@@ -188,7 +188,7 @@
         },
         {
           "id": "u1:2",
-          "name": "-",
+          "name": "-IN",
           "number": "2",
           "electricalType": "input",
           "unit": 1,
@@ -204,7 +204,7 @@
         },
         {
           "id": "u1:3",
-          "name": "+",
+          "name": "+IN",
           "number": "3",
           "electricalType": "input",
           "unit": 1,
@@ -220,7 +220,7 @@
         },
         {
           "id": "u1:4",
-          "name": "Vs-",
+          "name": "-VS",
           "number": "4",
           "electricalType": "power_in",
           "unit": 1,
@@ -236,7 +236,7 @@
         },
         {
           "id": "u1:5",
-          "name": "Ref",
+          "name": "REF",
           "number": "5",
           "electricalType": "passive",
           "unit": 1,
@@ -252,7 +252,7 @@
         },
         {
           "id": "u1:6",
-          "name": "",
+          "name": "OUT",
           "number": "6",
           "electricalType": "output",
           "unit": 1,
@@ -268,7 +268,7 @@
         },
         {
           "id": "u1:7",
-          "name": "Vs+",
+          "name": "+VS",
           "number": "7",
           "electricalType": "power_in",
           "unit": 1,
@@ -284,7 +284,7 @@
         },
         {
           "id": "u1:8",
-          "name": "Rg",
+          "name": "RG",
           "number": "8",
           "electricalType": "passive",
           "unit": 1,
@@ -302,7 +302,7 @@
       "labels": [
         {
           "id": "u1:1:name",
-          "text": "Rg",
+          "text": "RG",
           "at": {
             "x": -7.112,
             "y": 2.54
@@ -328,7 +328,7 @@
         },
         {
           "id": "u1:2:name",
-          "text": "-",
+          "text": "-IN",
           "at": {
             "x": -7.112,
             "y": 5.08
@@ -354,7 +354,7 @@
         },
         {
           "id": "u1:3:name",
-          "text": "+",
+          "text": "+IN",
           "at": {
             "x": -7.112,
             "y": -5.08
@@ -380,7 +380,7 @@
         },
         {
           "id": "u1:4:name",
-          "text": "Vs-",
+          "text": "-VS",
           "at": {
             "x": -2.54,
             "y": -5.588
@@ -406,7 +406,7 @@
         },
         {
           "id": "u1:5:name",
-          "text": "Ref",
+          "text": "REF",
           "at": {
             "x": 2.5400000000000005,
             "y": -3.048
@@ -431,6 +431,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:6:name",
+          "text": "OUT",
+          "at": {
+            "x": 7.112,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:6:number",
           "text": "6",
           "at": {
@@ -445,7 +458,7 @@
         },
         {
           "id": "u1:7:name",
-          "text": "Vs+",
+          "text": "+VS",
           "at": {
             "x": -2.5400000000000005,
             "y": 5.588
@@ -471,7 +484,7 @@
         },
         {
           "id": "u1:8:name",
-          "text": "Rg",
+          "text": "RG",
           "at": {
             "x": -7.112,
             "y": -2.54
@@ -536,7 +549,7 @@
     "kicadId": null,
     "pins": [
       {
-        "name": "Rg",
+        "name": "RG",
         "number": "1",
         "electricalType": "passive",
         "direction": "line",
@@ -555,7 +568,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "-",
+        "name": "-IN",
         "number": "2",
         "electricalType": "input",
         "direction": "line",
@@ -574,7 +587,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "+",
+        "name": "+IN",
         "number": "3",
         "electricalType": "input",
         "direction": "line",
@@ -593,7 +606,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "Vs-",
+        "name": "-VS",
         "number": "4",
         "electricalType": "power_in",
         "direction": "line",
@@ -612,7 +625,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "Ref",
+        "name": "REF",
         "number": "5",
         "electricalType": "passive",
         "direction": "line",
@@ -631,7 +644,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "OUT",
         "number": "6",
         "electricalType": "output",
         "direction": "line",
@@ -650,7 +663,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "Vs+",
+        "name": "+VS",
         "number": "7",
         "electricalType": "power_in",
         "direction": "line",
@@ -669,7 +682,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "Rg",
+        "name": "RG",
         "number": "8",
         "electricalType": "passive",
         "direction": "line",

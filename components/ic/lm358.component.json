@@ -104,7 +104,8 @@
     "function": "dual op-amp",
     "gbw": "1.1MHz",
     "supply_min": "3V",
-    "supply_max": "32V"
+    "supply_max": "32V",
+    "type": "opamp"
   },
   "provenance": {
     "source": "kicad-derived",
@@ -127,8 +128,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM358DR"
+      "mpn": "LM358DR",
+      "lcsc": "C5423",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "LM358P",
+      "package": "DIP-8",
+      "role": "alternate"
     }
   ],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/lm358.pdf"
+  "datasheet": "https://www.ti.com/lit/ds/symlink/lm358.pdf",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/lm358.pdf"
 }

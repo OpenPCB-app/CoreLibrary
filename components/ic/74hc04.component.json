@@ -18,18 +18,34 @@
     "74HC"
   ],
   "aliases": [],
-  "datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf",
-  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT04.pdf",
+  "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/sn74hc04.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "SN74HC04N"
+      "mpn": "SN74HC04N",
+      "lcsc": "C2886",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC04DR",
+      "package": "SOIC-14",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Nexperia",
+      "mpn": "74HC04D,653",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "74HC",
     "function": "hex inverter",
-    "supply": "2V-6V"
+    "supply": "2V-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc04",
   "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",

@@ -3,7 +3,7 @@
   "uuid": "b2022277-0cbb-5aed-96a1-6486b144af18",
   "version": "0.3.0",
   "name": "Piezo Buzzer PS1240",
-  "description": "TDK PS1240 piezoelectric buzzer, 12.2 mm diameter, 4 kHz, THT.",
+  "description": "TDK PS1240 piezoelectric buzzer, 12.2 mm diameter, 4 kHz, THT, 5 mm lead pitch. Land pattern is correct; the KiCad footprint name says H6.5 mm while TDK specifies a 7.8 mm body height.",
   "category": "audio",
   "subcategory": "buzzer",
   "tags": [
@@ -24,7 +24,10 @@
   "manufacturerParts": [
     {
       "manufacturer": "TDK",
-      "mpn": "PS1240P02BT"
+      "mpn": "PS1240P02BT",
+      "lcsc": "C76871",
+      "jlcpcbAssemblyType": "extended",
+      "package": "THT D12.2mm P5.0mm"
     }
   ],
   "parameters": {

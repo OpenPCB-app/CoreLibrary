@@ -2,8 +2,8 @@
   "id": "openpcb.core.diode.ss34",
   "uuid": "7116486f-16fa-5f2a-b16f-eabce5f62f6b",
   "version": "0.3.0",
-  "name": "SS34 Schottky Diode",
-  "description": "SS34 40V 3A surface-mount Schottky rectifier, SMA.",
+  "name": "SS34 / B340A Schottky Diode",
+  "description": "40V 3A surface-mount Schottky rectifier in SMA (DO-214AC). Sourced as Diodes Inc B340A; the SS34 marking exists in SMA only from Chinese vendors (Vishay/onsemi/Diodes Inc build the 3A SS3x in SMC).",
   "category": "diode",
   "subcategory": "schottky",
   "tags": [
@@ -20,8 +20,27 @@
   "aliases": [],
   "manufacturerParts": [
     {
-      "manufacturer": "Vishay",
-      "mpn": "SS34-E3/57T"
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "B340A-13-F",
+      "lcsc": "C85098",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMA"
+    },
+    {
+      "manufacturer": "MDD",
+      "mpn": "SS34",
+      "lcsc": "C8678",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SMA",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "hongjiacheng",
+      "mpn": "SS34",
+      "lcsc": "C7420365",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SMA",
+      "role": "alternate"
     }
   ],
   "parameters": {
@@ -66,5 +85,5 @@
   "compatibility": {
     "minOpenPcbVersion": "0.1.0"
   },
-  "datasheet": "https://www.vishay.com/docs/88751/ss32.pdf"
+  "datasheet": "https://www.diodes.com/datasheet/download/B340A.pdf"
 }

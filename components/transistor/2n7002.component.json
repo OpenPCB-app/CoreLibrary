@@ -25,9 +25,27 @@
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "2N7002,215"
+      "mpn": "2N7002,215",
+      "lcsc": "C65189",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "Changjiang Electronics",
+      "mpn": "2N7002",
+      "lcsc": "C8545",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "nmos",
+    "vds": "60V",
+    "id": "300mA",
+    "rds_on": "5Ohm",
+    "vgs_th": "1-2.5V"
+  },
   "symbol": "openpcb.core.symbol.transistor.2n7002",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

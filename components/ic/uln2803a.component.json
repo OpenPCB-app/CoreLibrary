@@ -17,18 +17,30 @@
     "driver"
   ],
   "aliases": [],
-  "datasheet": null,
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/uln2803a.pdf",
+  "datasheet": "https://www.st.com/resource/en/datasheet/uln2803a.pdf",
+  "datasheetSource": "https://www.st.com/resource/en/datasheet/uln2803a.pdf",
   "manufacturerParts": [
     {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "ULN2803A",
+      "lcsc": "C73936",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-18"
+    },
+    {
       "manufacturer": "Texas Instruments",
-      "mpn": "ULN2803AN"
+      "mpn": "ULN2803ADWR",
+      "lcsc": "C9683",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SOIC-18W",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "8",
     "vout": "50V",
-    "iout": "500mA"
+    "iout": "500mA",
+    "type": "driver"
   },
   "symbol": "openpcb.core.symbol.ic.uln2803a",
   "defaultFootprint": "openpcb.core.footprint.package.dip-18-w7-62mm",

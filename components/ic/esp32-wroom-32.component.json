@@ -3,7 +3,7 @@
   "uuid": "2c053961-2819-54bc-b3d9-c2db207b8abb",
   "version": "0.2.0",
   "name": "ESP32-WROOM-32",
-  "description": "ESP32-WROOM-32 Wi-Fi + Bluetooth module.",
+  "description": "ESP32-WROOM-32E Wi-Fi + Bluetooth module. Symbol pins 17-22 are NC on the -32E (the SPI-flash pins of the original -32 are not brought out).",
   "category": "ic",
   "subcategory": "rf-module",
   "tags": [
@@ -19,18 +19,28 @@
     "module"
   ],
   "aliases": [],
-  "datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf",
-  "datasheetSource": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf",
+  "datasheet": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf",
+  "datasheetSource": "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Espressif",
-      "mpn": "ESP32-WROOM-32E-N4"
+      "mpn": "ESP32-WROOM-32E-N4",
+      "lcsc": "C701341",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMD 25.5x18mm"
+    },
+    {
+      "manufacturer": "Espressif",
+      "mpn": "ESP32-WROOM-32E-N8",
+      "package": "SMD 25.5x18mm",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "core": "Xtensa LX6 dual",
     "radio": "WiFi + BT",
-    "flash": "4MB"
+    "flash": "4MB",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.esp32-wroom-32",
   "defaultFootprint": "openpcb.core.footprint.module.esp32-wroom-32",

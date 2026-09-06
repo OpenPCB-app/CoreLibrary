@@ -3,7 +3,7 @@
   "uuid": "a3e95283-ff02-5fdf-b920-d1b777af56aa",
   "version": "0.2.0",
   "name": "SS8050 NPN Transistor",
-  "description": "SS8050 high-current NPN BJT in TO-92 (B-E-C).",
+  "description": "SS8050 high-current NPN BJT in TO-92 (E-B-C) or SOT-23 (B-E-C).",
   "category": "transistor",
   "subcategory": "bjt-npn",
   "tags": [
@@ -20,20 +20,54 @@
     "TO-92"
   ],
   "aliases": [],
-  "datasheet": "https://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf",
+  "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/ss8050-d.pdf",
   "datasheetSource": "http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "Changjiang Electronics (CJ)",
-      "mpn": "SS8050"
+      "manufacturer": "onsemi",
+      "mpn": "SS8050CTA",
+      "lcsc": "C327517",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-92"
+    },
+    {
+      "manufacturer": "hongjiacheng",
+      "mpn": "SS8050",
+      "lcsc": "C7420370",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "npn",
+    "vce": "25V",
+    "ic": "1.5A"
+  },
   "symbol": "openpcb.core.symbol.transistor.ss8050",
   "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",
   "footprints": [
     {
       "footprint": "openpcb.core.footprint.package.to-92-inline",
       "label": "TO-92 inline",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.package.sot-23",
+      "label": "SOT-23",
       "pinMap": [
         {
           "pinNumber": "1",

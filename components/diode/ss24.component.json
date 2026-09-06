@@ -2,8 +2,8 @@
   "id": "openpcb.core.diode.ss24",
   "uuid": "400bdb84-7a9e-5315-81be-073ea7cabacb",
   "version": "0.3.0",
-  "name": "SS24 Schottky Diode",
-  "description": "SS24 Schottky rectifier, 40V 2A, SMA.",
+  "name": "SS24 / B240A Schottky Diode",
+  "description": "40V 2A surface-mount Schottky rectifier in SMA (DO-214AC). Sourced as Diodes Inc B240A; the SS24 marking exists in SMA only from Chinese vendors (Vishay/onsemi/Diodes Inc build the 2A SS2x in SMB).",
   "category": "diode",
   "subcategory": "schottky",
   "tags": [
@@ -16,12 +16,31 @@
     "diode"
   ],
   "aliases": [],
-  "datasheet": "https://www.vishay.com/docs/88748/ss22.pdf",
+  "datasheet": "https://www.diodes.com/datasheet/download/B240A.pdf",
   "datasheetSource": "https://www.vishay.com/docs/88748/ss22.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "Vishay",
-      "mpn": "SS24-E3/52T"
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "B240A-13-F",
+      "lcsc": "C92506",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMA"
+    },
+    {
+      "manufacturer": "hongjiacheng",
+      "mpn": "SS24",
+      "lcsc": "C7420362",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SMA",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "MDD",
+      "mpn": "SS24",
+      "lcsc": "C50645",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMA",
+      "role": "alternate"
     }
   ],
   "parameters": {

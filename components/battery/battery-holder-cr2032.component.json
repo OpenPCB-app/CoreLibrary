@@ -3,7 +3,7 @@
   "uuid": "e9e5aca4-c8b9-53ff-ae35-6a790fa6b68d",
   "version": "0.3.0",
   "name": "CR2032 Battery Holder",
-  "description": "CR2032/20 mm coin-cell holder, THT (Keystone 3034 style).",
+  "description": "CR2032/20 mm coin-cell holder, SMT (Keystone 3034).",
   "category": "battery",
   "subcategory": "holder",
   "tags": [
@@ -17,13 +17,18 @@
     "RTC backup"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://www.keyelco.com/userAssets/file/K75p11.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Keystone",
-      "mpn": "3034"
+      "mpn": "3034",
+      "package": "SMT 20mm coin cell holder"
     }
   ],
+  "parameters": {
+    "type": "holder",
+    "chemistry": "lithium coin"
+  },
   "symbol": "openpcb.core.symbol.battery.battery-cell",
   "defaultFootprint": "openpcb.core.footprint.battery.battery-cr2032-keystone-3034",
   "footprints": [

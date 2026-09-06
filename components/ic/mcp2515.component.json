@@ -22,12 +22,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "MCP2515-I/SO"
+      "mpn": "MCP2515-I/SO",
+      "lcsc": "C12368",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-18W"
+    },
+    {
+      "manufacturer": "Microchip",
+      "mpn": "MCP2515-I/P",
+      "package": "DIP-18",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "bus": "CAN 2.0B",
-    "interface": "SPI"
+    "interface": "SPI",
+    "type": "can"
   },
   "symbol": "openpcb.core.symbol.ic.mcp2515",
   "defaultFootprint": "openpcb.core.footprint.package.soic-18w-7-5x11-6mm-p1-27mm",

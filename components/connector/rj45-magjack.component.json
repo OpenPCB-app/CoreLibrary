@@ -2,8 +2,8 @@
   "id": "openpcb.core.connector.rj45-magjack",
   "uuid": "4d3a1ff7-6287-5e9f-ab5e-a191a9356b55",
   "version": "0.3.0",
-  "name": "RJ45 MagJack (LEDs, Shielded)",
-  "description": "RJ45 Ethernet jack with integrated magnetics and LEDs, shielded THT (Amphenol RJHSE538X style).",
+  "name": "RJ45 Jack (LEDs, Shielded)",
+  "description": "RJ45 jack with LEDs, shielded THT (Amphenol RJHSE-538x). No integrated magnetics — an external LAN transformer is still required.",
   "category": "connector",
   "subcategory": "ethernet",
   "tags": [
@@ -13,12 +13,28 @@
   "keywords": [
     "RJ45",
     "ethernet",
-    "magjack",
-    "magnetics",
+    "8p8c",
+    "LED",
+    "shielded",
+    "RJHSE",
     "network"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io-modjack-rjhse.pdf",
+  "manufacturerParts": [
+    {
+      "manufacturer": "Amphenol ICC",
+      "mpn": "RJHSE-5384",
+      "package": "RJ45 THT shielded, 2 LED, right-angle"
+    }
+  ],
+  "parameters": {
+    "type": "rj45",
+    "positions": "8",
+    "mount": "tht",
+    "shielded": "true",
+    "orientation": "horizontal"
+  },
   "symbol": "openpcb.core.symbol.connector.rj45-magjack",
   "defaultFootprint": "openpcb.core.footprint.connector.rj45-amphenol-rjhse538x",
   "footprints": [

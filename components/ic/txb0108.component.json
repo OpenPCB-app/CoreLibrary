@@ -23,12 +23,16 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TXB0108PWR"
+      "mpn": "TXB0108PWR",
+      "lcsc": "C53406",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TSSOP-20"
     }
   ],
   "parameters": {
     "function": "8-bit level translator",
-    "channels": "8"
+    "channels": "8",
+    "type": "level-shifter"
   },
   "symbol": "openpcb.core.symbol.ic.txb0108",
   "defaultFootprint": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",

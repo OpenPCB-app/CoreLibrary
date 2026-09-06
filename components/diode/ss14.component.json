@@ -24,9 +24,26 @@
   "manufacturerParts": [
     {
       "manufacturer": "Vishay",
-      "mpn": "SS14-E3/61T"
+      "mpn": "SS14-E3/61T",
+      "lcsc": "C47460",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SMA"
+    },
+    {
+      "manufacturer": "MDD",
+      "mpn": "SS14",
+      "lcsc": "C2480",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SMA",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "schottky",
+    "vrrm": "40V",
+    "if": "1A",
+    "vf": "0.5V"
+  },
   "symbol": "openpcb.core.symbol.diode.ss14",
   "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
   "footprints": [

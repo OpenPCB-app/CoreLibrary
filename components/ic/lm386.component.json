@@ -22,13 +22,15 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM386M-1/NOPB"
+      "mpn": "LM386M-1/NOPB",
+      "package": "SOIC-8"
     }
   ],
   "parameters": {
     "gain": "20-200",
     "pout": "0.3-1W",
-    "supply": "4-12V"
+    "supply": "4-12V",
+    "type": "audio-amp"
   },
   "symbol": "openpcb.core.symbol.ic.lm386",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

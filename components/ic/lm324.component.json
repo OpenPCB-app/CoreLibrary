@@ -19,19 +19,28 @@
     "operational amplifier"
   ],
   "aliases": [],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/lm2902-n.pdf",
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf",
+  "datasheet": "https://www.ti.com/lit/ds/symlink/lm324.pdf",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/lm324.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM324DR"
+      "mpn": "LM324DR",
+      "lcsc": "C7943",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "LM324N",
+      "package": "DIP-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "4",
     "gbw": "1.2MHz",
     "supply": "3V-32V",
-    "type": "general-purpose"
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.lm324",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

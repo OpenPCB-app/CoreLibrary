@@ -18,16 +18,20 @@
   ],
   "aliases": [],
   "datasheet": "https://www.ti.com/lit/ds/symlink/lm339.pdf",
-  "datasheetSource": "https://www.st.com/resource/en/datasheet/lm139.pdf",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/lm339.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM339DR"
+      "mpn": "LM339DR",
+      "lcsc": "C7948",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
     }
   ],
   "parameters": {
     "channels": "4",
-    "supply": "2-36V"
+    "supply": "2-36V",
+    "type": "comparator"
   },
   "symbol": "openpcb.core.symbol.ic.lm339",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

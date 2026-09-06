@@ -22,10 +22,19 @@
   "datasheetSource": "https://www.usb.org/sites/default/files/documents/usb_type-c.zip",
   "manufacturerParts": [
     {
-      "manufacturer": "Korean Hroparts",
-      "mpn": "TYPE-C-31-M-12"
+      "manufacturer": "Korean Hroparts Elec",
+      "mpn": "TYPE-C-31-M-12",
+      "lcsc": "C165948",
+      "jlcpcbAssemblyType": "extended",
+      "package": "USB-C 16P SMD+THT"
     }
   ],
+  "parameters": {
+    "type": "usb-c",
+    "positions": "16",
+    "mount": "mixed",
+    "shielded": "true"
+  },
   "symbol": "openpcb.core.symbol.connector.usb-c-receptacle",
   "defaultFootprint": "openpcb.core.footprint.connector.usb-c-hro-type-c-31-m-12",
   "footprints": [

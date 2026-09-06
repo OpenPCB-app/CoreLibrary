@@ -322,7 +322,7 @@
     {
       "id": "openpcb.core.diode.1n5819",
       "name": "1N5819 Schottky Diode",
-      "description": "1N5819 40V 1A Schottky rectifier (SMA + DO-41).",
+      "description": "1N5819 40V 1A Schottky rectifier, DO-41 axial.",
       "category": "diode",
       "subcategory": "schottky",
       "tags": [
@@ -345,27 +345,8 @@
         "id": "openpcb.core.symbol.diode.1n5819",
         "path": "kicad-symbols/Diode.kicad_symdir/1N5819.kicad_sym"
       },
-      "defaultFootprint": "openpcb.core.footprint.diode.d-sma",
+      "defaultFootprint": "openpcb.core.footprint.diode.d-do-41",
       "footprints": [
-        {
-          "id": "openpcb.core.footprint.diode.d-sma",
-          "path": "kicad-footprints/Diode_SMD.pretty/D_SMA.kicad_mod",
-          "label": "SMA (DO-214AC)",
-          "model": {
-            "id": "openpcb.core.3d.diode.d-sma",
-            "path": "kicad-packages3D/Diode_SMD.3dshapes/D_SMA.step"
-          },
-          "pinMap": [
-            {
-              "pinNumber": "1",
-              "padNumber": "1"
-            },
-            {
-              "pinNumber": "2",
-              "padNumber": "2"
-            }
-          ]
-        },
         {
           "id": "openpcb.core.footprint.diode.d-do-41",
           "path": "kicad-footprints/Diode_THT.pretty/D_DO-41_SOD81_P7.62mm_Horizontal.kicad_mod",

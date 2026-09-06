@@ -20,14 +20,32 @@
     "level shifter"
   ],
   "aliases": [],
-  "datasheet": "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF",
+  "datasheet": "https://www.onsemi.com/download/data-sheet/pdf/bss138-d.pdf",
   "datasheetSource": "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF",
   "manufacturerParts": [
     {
       "manufacturer": "onsemi",
-      "mpn": "BSS138"
+      "mpn": "BSS138LT1G",
+      "lcsc": "C82045",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "hongjiacheng",
+      "mpn": "BSS138",
+      "lcsc": "C7420339",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "nmos",
+    "vds": "50V",
+    "id": "220mA",
+    "rds_on": "3.5Ohm",
+    "vgs_th": "0.8-1.5V"
+  },
   "symbol": "openpcb.core.symbol.transistor.bss138",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

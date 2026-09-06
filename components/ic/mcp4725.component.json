@@ -22,13 +22,23 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "MCP4725A0T-E/CH"
+      "mpn": "MCP4725A0T-E/CH",
+      "lcsc": "C144198",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-6"
+    },
+    {
+      "manufacturer": "Microchip",
+      "mpn": "MCP4725A1T-E/CH",
+      "package": "SOT-23-6",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "1",
     "resolution": "12-bit",
-    "interface": "I2C"
+    "interface": "I2C",
+    "type": "dac"
   },
   "symbol": "openpcb.core.symbol.ic.mcp4725",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",

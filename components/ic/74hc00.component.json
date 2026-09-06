@@ -22,12 +22,29 @@
   "aliases": [
     "openpcb.core.ic.74hc00-soic-14"
   ],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc00.pdf",
-  "datasheetSource": "http://www.ti.com/lit/gpn/sn74hc00",
+  "datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT00.pdf",
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT00.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "74HC00D,653"
+      "mpn": "74HC00D,653",
+      "lcsc": "C5586",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC00DR",
+      "lcsc": "C10090",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC00N",
+      "package": "DIP-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
@@ -35,7 +52,8 @@
     "function": "quad 2-input NAND",
     "channels": "4",
     "supply_min": "2V",
-    "supply_max": "6V"
+    "supply_max": "6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc00",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

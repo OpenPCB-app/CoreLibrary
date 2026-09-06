@@ -383,7 +383,7 @@
     {
       "id": "openpcb.core.transistor.ss8050",
       "name": "SS8050 NPN Transistor",
-      "description": "SS8050 high-current NPN BJT in TO-92 (B-E-C).",
+      "description": "SS8050 high-current NPN BJT in TO-92 (E-B-C) or SOT-23 (B-E-C).",
       "category": "transistor",
       "subcategory": "bjt-npn",
       "tags": ["transistor", "bjt", "npn", "to-92", "kicad-derived"],
@@ -404,6 +404,16 @@
             "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
           },
           "pinMap": [
+            { "pinNumber": "1", "padNumber": "2" },
+            { "pinNumber": "2", "padNumber": "1" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "label": "SOT-23",
+          "existing": true,
+          "pinMap": [
             { "pinNumber": "1", "padNumber": "1" },
             { "pinNumber": "2", "padNumber": "2" },
             { "pinNumber": "3", "padNumber": "3" }
@@ -414,7 +424,7 @@
     {
       "id": "openpcb.core.transistor.ss8550",
       "name": "SS8550 PNP Transistor",
-      "description": "SS8550 high-current PNP BJT in TO-92 (B-E-C).",
+      "description": "SS8550 high-current PNP BJT in TO-92 (E-B-C) or SOT-23 (B-E-C).",
       "category": "transistor",
       "subcategory": "bjt-pnp",
       "tags": ["transistor", "bjt", "pnp", "to-92", "kicad-derived"],
@@ -434,6 +444,16 @@
             "id": "openpcb.core.3d.package.to-92-inline",
             "path": "kicad-packages3D/Package_TO_SOT_THT.3dshapes/TO-92_Inline.step"
           },
+          "pinMap": [
+            { "pinNumber": "1", "padNumber": "2" },
+            { "pinNumber": "2", "padNumber": "1" },
+            { "pinNumber": "3", "padNumber": "3" }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.sot-23",
+          "label": "SOT-23",
+          "existing": true,
           "pinMap": [
             { "pinNumber": "1", "padNumber": "1" },
             { "pinNumber": "2", "padNumber": "2" },

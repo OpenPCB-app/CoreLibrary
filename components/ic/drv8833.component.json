@@ -23,13 +23,23 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "DRV8833PWPR"
+      "mpn": "DRV8833PWPR",
+      "lcsc": "C50506",
+      "jlcpcbAssemblyType": "extended",
+      "package": "HTSSOP-16"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "DRV8833PWP",
+      "package": "HTSSOP-16",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "2",
     "iout_per_bridge": "1.5A",
-    "vm": "2.7-10.8V"
+    "vm": "2.7-10.8V",
+    "type": "motor-driver"
   },
   "symbol": "openpcb.core.symbol.ic.drv8833",
   "defaultFootprint": "openpcb.core.footprint.ic.htssop-16-1ep",

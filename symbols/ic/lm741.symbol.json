@@ -51,12 +51,12 @@
       {
         "originPinKey": "u1:1",
         "number": "1",
-        "name": "NULL",
+        "name": "NC",
         "localPosition": {
           "x": 0,
           "y": -7.62
         },
-        "electricalType": "input",
+        "electricalType": "no_connect",
         "unit": 1
       },
       {
@@ -95,18 +95,18 @@
       {
         "originPinKey": "u1:5",
         "number": "5",
-        "name": "NULL",
+        "name": "NC",
         "localPosition": {
           "x": 2.54,
           "y": -7.62
         },
-        "electricalType": "input",
+        "electricalType": "no_connect",
         "unit": 1
       },
       {
         "originPinKey": "u1:6",
         "number": "6",
-        "name": "",
+        "name": "OUT",
         "localPosition": {
           "x": 7.62,
           "y": 0
@@ -172,9 +172,9 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "NULL",
+          "name": "NC",
           "number": "1",
-          "electricalType": "input",
+          "electricalType": "no_connect",
           "unit": 1,
           "anchor": {
             "x": 0,
@@ -236,9 +236,9 @@
         },
         {
           "id": "u1:5",
-          "name": "NULL",
+          "name": "NC",
           "number": "5",
-          "electricalType": "input",
+          "electricalType": "no_connect",
           "unit": 1,
           "anchor": {
             "x": 2.54,
@@ -252,7 +252,7 @@
         },
         {
           "id": "u1:6",
-          "name": "",
+          "name": "OUT",
           "number": "6",
           "electricalType": "output",
           "unit": 1,
@@ -302,7 +302,7 @@
       "labels": [
         {
           "id": "u1:1:name",
-          "text": "NULL",
+          "text": "NC",
           "at": {
             "x": 3.110602869834277e-16,
             "y": -3.048
@@ -406,7 +406,7 @@
         },
         {
           "id": "u1:5:name",
-          "text": "NULL",
+          "text": "NC",
           "at": {
             "x": 2.5400000000000005,
             "y": -1.7780000000000005
@@ -429,6 +429,19 @@
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:6:name",
+          "text": "OUT",
+          "at": {
+            "x": 4.572,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:6:number",
@@ -536,9 +549,9 @@
     "kicadId": null,
     "pins": [
       {
-        "name": "NULL",
+        "name": "NC",
         "number": "1",
-        "electricalType": "input",
+        "electricalType": "no_connect",
         "direction": "line",
         "position": {
           "x": 0,
@@ -612,9 +625,9 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "NULL",
+        "name": "NC",
         "number": "5",
-        "electricalType": "input",
+        "electricalType": "no_connect",
         "direction": "line",
         "position": {
           "x": 2.54,
@@ -631,7 +644,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "OUT",
         "number": "6",
         "electricalType": "output",
         "direction": "line",

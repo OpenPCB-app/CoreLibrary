@@ -18,17 +18,21 @@
     "bridge"
   ],
   "aliases": [],
-  "datasheet": null,
-  "datasheetSource": "http://www.datasheet5.com/pdf-local-2195953",
+  "datasheet": "https://www.wch-ic.com/downloads/CH340DS1_PDF.html",
+  "datasheetSource": "https://www.wch-ic.com/downloads/CH340DS1_PDF.html",
   "manufacturerParts": [
     {
-      "manufacturer": "WCH (Jiangsu Qinheng)",
-      "mpn": "CH340G"
+      "manufacturer": "WCH",
+      "mpn": "CH340G",
+      "lcsc": "C14267",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16"
     }
   ],
   "parameters": {
     "function": "USB-UART bridge",
-    "interface": "USB 2.0 FS"
+    "interface": "USB 2.0 FS",
+    "type": "usb-bridge"
   },
   "symbol": "openpcb.core.symbol.ic.ch340g",
   "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",

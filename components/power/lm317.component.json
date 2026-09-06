@@ -27,7 +27,16 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM317T"
+      "mpn": "LM317T",
+      "package": "TO-220"
+    },
+    {
+      "manufacturer": "UMW (Youtai Semiconductor)",
+      "mpn": "LM317T",
+      "lcsc": "C3014307",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220",
+      "role": "alternate"
     }
   ],
   "parameters": {
@@ -35,7 +44,8 @@
     "iout": "1.5A",
     "vin_max": "40V",
     "dropout": "2V",
-    "topology": "linear-adjustable"
+    "topology": "linear-adjustable",
+    "type": "linear"
   },
   "symbol": "openpcb.core.symbol.power.lm317",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

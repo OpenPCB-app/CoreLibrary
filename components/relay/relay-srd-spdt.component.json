@@ -2,8 +2,8 @@
   "id": "openpcb.core.relay.relay-srd-spdt",
   "uuid": "b69e6464-2809-5f9d-a387-537e9ee994be",
   "version": "0.3.0",
-  "name": "Relay SPDT SRD (Songle)",
-  "description": "SPDT power relay, Sanyou/Songle SRD series THT (10A form C).",
+  "name": "Relay SPDT SRD (Form C)",
+  "description": "SPDT power relay, SRD series THT (10 A form C). Pinout verified against the Sanyou SRD drawing; the Songle SRD-05VDC-SL-C is the LCSC-stocked equivalent.",
   "category": "relay",
   "subcategory": "power-relay",
   "tags": [
@@ -14,6 +14,7 @@
     "relay",
     "SPDT",
     "SRD-05VDC",
+    "sanyou",
     "songle",
     "10A"
   ],
@@ -22,13 +23,24 @@
   "datasheetSource": "http://www.sanyourelay.ca/public/products/pdf/SRD.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "Songle",
-      "mpn": "SRD-05VDC-SL-C"
+      "manufacturer": "Sanyou Relay",
+      "mpn": "SRD-S-105D",
+      "package": "SRD 1C THT"
+    },
+    {
+      "manufacturer": "Ningbo Songle Relay",
+      "mpn": "SRD-05VDC-SL-C",
+      "lcsc": "C35449",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SRD 1C THT",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "contacts": "SPDT",
-    "contact_rating": "10A"
+    "contact_rating": "10A",
+    "type": "power",
+    "coil_voltage": "5V"
   },
   "symbol": "openpcb.core.symbol.relay.relay-srd-spdt",
   "defaultFootprint": "openpcb.core.footprint.relay.relay-srd-form-c",

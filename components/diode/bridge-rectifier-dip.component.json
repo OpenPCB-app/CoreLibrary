@@ -20,10 +20,28 @@
   "datasheet": null,
   "manufacturerParts": [
     {
-      "manufacturer": "Rectron",
-      "mpn": "DB107"
+      "manufacturer": "MDD",
+      "mpn": "DB107",
+      "lcsc": "C2492",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DB",
+      "datasheet": "https://www.mdddiodes.com/wp-content/uploads/2022/08/DB10700000L10A.pdf"
+    },
+    {
+      "manufacturer": "Yangzhou Yangjie",
+      "mpn": "DB107",
+      "lcsc": "C698408",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DB",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "bridge",
+    "vrrm": "1000V",
+    "if": "1A",
+    "vf": "1.1V"
+  },
   "symbol": "openpcb.core.symbol.diode.bridge-rectifier-dip",
   "defaultFootprint": "openpcb.core.footprint.diode.bridge-dip-4-w7-62mm",
   "footprints": [

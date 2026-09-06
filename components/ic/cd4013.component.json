@@ -19,16 +19,26 @@
   ],
   "aliases": [],
   "datasheet": "https://www.ti.com/lit/ds/symlink/cd4013b.pdf",
-  "datasheetSource": "http://www.onsemi.com/pub/Collateral/MC14013B-D.PDF",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/cd4013b.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "CD4013BE"
+      "mpn": "CD4013BE",
+      "lcsc": "C5199",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "CD4013BM96",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "CD4000",
-    "function": "dual D-FF"
+    "function": "dual D-FF",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.cd4013",
   "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",

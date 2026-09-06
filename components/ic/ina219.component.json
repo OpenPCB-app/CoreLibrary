@@ -23,12 +23,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "INA219AIDR"
+      "mpn": "INA219AIDR",
+      "lcsc": "C138706",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "INA219BIDR",
+      "package": "SOIC-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "interface": "I2C",
-    "bus_voltage": "0-26V"
+    "bus_voltage": "0-26V",
+    "type": "power-monitor"
   },
   "symbol": "openpcb.core.symbol.ic.ina219",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

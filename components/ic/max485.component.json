@@ -19,16 +19,28 @@
   ],
   "aliases": [],
   "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/max1487-max491.pdf",
-  "datasheetSource": "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf",
+  "datasheetSource": "https://www.analog.com/media/en/technical-documentation/data-sheets/max1487-max491.pdf",
   "manufacturerParts": [
     {
-      "manufacturer": "Analog Devices (Maxim)",
-      "mpn": "MAX485EPA+"
+      "manufacturer": "Analog Devices",
+      "mpn": "MAX485EPA+",
+      "lcsc": "C45829",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-8"
+    },
+    {
+      "manufacturer": "Analog Devices",
+      "mpn": "MAX485ESA+T",
+      "lcsc": "C19738",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "function": "RS-485 transceiver",
-    "supply": "5V"
+    "supply": "5V",
+    "type": "transceiver"
   },
   "symbol": "openpcb.core.symbol.ic.max485",
   "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",

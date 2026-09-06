@@ -22,14 +22,26 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "ATTINY85-20PU"
+      "mpn": "ATTINY85-20PU",
+      "lcsc": "C965497",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-8"
+    },
+    {
+      "manufacturer": "Microchip",
+      "mpn": "ATTINY85-20SU",
+      "lcsc": "C31540447",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8-208mil",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "core": "AVR 8-bit",
     "flash": "8KB",
     "ram": "512B",
-    "io": "6 GPIO"
+    "io": "6 GPIO",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.attiny85",
   "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",
@@ -73,8 +85,8 @@
       ]
     },
     {
-      "footprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
-      "label": "SOIC-8 3.9x4.9mm P1.27mm",
+      "footprint": "openpcb.core.footprint.package.soic-8-5-3x5-3mm-p1-27mm",
+      "label": "SOIC-8 EIAJ 5.3mm",
       "pinMap": [
         {
           "pinNumber": "1",

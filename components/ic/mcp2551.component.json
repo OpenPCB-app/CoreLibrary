@@ -21,12 +21,24 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "MCP2551-I/P"
+      "mpn": "MCP2551-I/P",
+      "lcsc": "C411627",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-8"
+    },
+    {
+      "manufacturer": "Microchip",
+      "mpn": "MCP2551-I/SN",
+      "lcsc": "C7376",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "bus": "CAN",
-    "rate": "1Mbps"
+    "rate": "1Mbps",
+    "type": "can"
   },
   "symbol": "openpcb.core.symbol.ic.mcp2551",
   "defaultFootprint": "openpcb.core.footprint.package.dip-8-w7-62mm",

@@ -23,13 +23,33 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "SN74HC595N"
+      "mpn": "SN74HC595N",
+      "lcsc": "C78711",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-16"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC595DR",
+      "lcsc": "C10092",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Nexperia",
+      "mpn": "74HC595D,118",
+      "lcsc": "C5947",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOIC-16",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "74HC",
     "function": "8-bit shift register",
-    "supply": "2V-6V"
+    "supply": "2V-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc595",
   "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",

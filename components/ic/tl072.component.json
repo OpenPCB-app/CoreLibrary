@@ -23,13 +23,25 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TL072CDR"
+      "mpn": "TL072CDR",
+      "lcsc": "C67473",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "TL072CDT",
+      "lcsc": "C6961",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SO-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "2",
     "gbw": "3MHz",
-    "supply": "±18V"
+    "supply": "±18V",
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.tl072",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

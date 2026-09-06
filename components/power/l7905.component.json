@@ -3,7 +3,7 @@
   "uuid": "31c9a731-0397-5b9e-9f21-f9fcc58fdd4f",
   "version": "0.3.0",
   "name": "L7905 -5V Linear Regulator",
-  "description": "L7905 fixed -5V negative linear regulator, 1.5A, TO-220.",
+  "description": "L7905 fixed -5V negative linear regulator, 1.5A, TO-220. Note: on the 79xx the TO-220 tab = INPUT (not ground) — isolate the heatsink.",
   "category": "power",
   "subcategory": "regulator-linear",
   "tags": [
@@ -24,13 +24,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "L7905CV"
+      "mpn": "L7905CV",
+      "lcsc": "C111884",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220"
     }
   ],
   "parameters": {
     "vout": "-5V",
     "iout": "1.5A",
-    "type": "linear"
+    "type": "linear",
+    "vin_max": "-35V"
   },
   "symbol": "openpcb.core.symbol.power.l7905",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

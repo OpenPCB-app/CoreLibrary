@@ -25,9 +25,27 @@
   "manufacturerParts": [
     {
       "manufacturer": "Alpha & Omega",
-      "mpn": "AO3401A"
+      "mpn": "AO3401A",
+      "lcsc": "C15127",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "DMP3056L-7",
+      "lcsc": "C150724",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "pmos",
+    "vds": "-30V",
+    "id": "-4A",
+    "rds_on": "50mOhm",
+    "vgs_th": "-0.5 to -1.3V"
+  },
   "symbol": "openpcb.core.symbol.transistor.ao3401",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

@@ -28,7 +28,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Infineon",
-      "mpn": "IRLZ44NPBF"
+      "mpn": "IRLZ44NPBF",
+      "lcsc": "C38774",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220AB"
+    },
+    {
+      "manufacturer": "HXY MOSFET",
+      "mpn": "IRLZ44NPBF-HXY",
+      "lcsc": "C22367197",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220AB",
+      "role": "alternate"
     }
   ],
   "parameters": {
@@ -36,8 +47,8 @@
     "id": "47A",
     "rds_on": "22mOhm",
     "vgs_th": "1-2V",
-    "channel": "n",
-    "logic_level": "true"
+    "logic_level": "true",
+    "type": "nmos"
   },
   "symbol": "openpcb.core.symbol.transistor.irlz44n",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

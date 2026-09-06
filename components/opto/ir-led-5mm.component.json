@@ -23,11 +23,15 @@
   "manufacturerParts": [
     {
       "manufacturer": "Vishay",
-      "mpn": "TSAL6400"
+      "mpn": "TSAL6400",
+      "lcsc": "C94857",
+      "jlcpcbAssemblyType": "extended",
+      "package": "THT-5mm"
     }
   ],
   "parameters": {
-    "wavelength": "940nm"
+    "wavelength": "940nm",
+    "type": "ir-emitter"
   },
   "symbol": "openpcb.core.symbol.opto.led-ir",
   "defaultFootprint": "openpcb.core.footprint.opto.led-d5-0mm-ir",
@@ -66,5 +70,6 @@
   "compatibility": {
     "minOpenPcbVersion": "0.1.0"
   },
-  "datasheet": "https://www.vishay.com/docs/81011/tsal6400.pdf"
+  "datasheet": "https://www.vishay.com/docs/81011/tsal6400.pdf",
+  "datasheetSource": "https://www.vishay.com/docs/81011/tsal6400.pdf"
 }

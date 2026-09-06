@@ -3,7 +3,7 @@
   "uuid": "464331ac-77ea-5c15-bfbe-53fd659dcbc9",
   "version": "0.2.0",
   "name": "NE555 Timer",
-  "description": "NE555 single precision timer; SOIC-8 and DIP-8 variants. Generic — assign MPN per build.",
+  "description": "NE555 single precision timer (astable / monostable).",
   "category": "ic",
   "subcategory": "timer",
   "tags": [
@@ -26,13 +26,23 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "NE555DR"
+      "mpn": "NE555DR",
+      "lcsc": "C7593",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "NE555P",
+      "package": "DIP-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "function": "timer",
     "supply_min": "4.5V",
-    "supply_max": "16V"
+    "supply_max": "16V",
+    "type": "timer"
   },
   "symbol": "openpcb.core.symbol.ic.ne555d",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

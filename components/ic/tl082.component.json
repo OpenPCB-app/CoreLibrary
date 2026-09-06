@@ -24,12 +24,28 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TL082CDR"
+      "mpn": "TL082CDR",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "TL082CDT",
+      "lcsc": "C13460",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SO-8",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "TL082CP",
+      "package": "DIP-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "2",
-    "gbw": "3MHz"
+    "gbw": "3MHz",
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.tl082",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

@@ -1,0 +1,109 @@
+{
+  "id": "openpcb.core.sensor.tmp1075",
+  "uuid": "28e0af2f-14aa-52f8-94d6-d89045107cda",
+  "version": "0.4.0",
+  "name": "TMP1075 Digital Temperature Sensor",
+  "description": "TMP1075 I2C/SMBus digital temperature sensor, 12-bit, LM75 form factor and pinout, WSON-8 2x2mm.",
+  "category": "sensor",
+  "subcategory": "temperature",
+  "tags": [
+    "sensor",
+    "kicad-derived"
+  ],
+  "keywords": [
+    "TMP1075",
+    "temperature sensor",
+    "I2C",
+    "SMBus",
+    "LM75",
+    "digital thermometer",
+    "WSON-8"
+  ],
+  "aliases": [],
+  "datasheet": "https://www.ti.com/lit/ds/symlink/tmp1075.pdf",
+  "datasheetSource": "https://www.ti.com/lit/gpn/tmp1075",
+  "parameters": {
+    "type": "temperature",
+    "measures": "temperature",
+    "interface": "i2c",
+    "supply": "1.7-5.5V",
+    "range": "-55C to +125C",
+    "accuracy": "+/-1C max (-40C to 110C)",
+    "output": "12-bit digital"
+  },
+  "manufacturerParts": [
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "TMP1075DSGR",
+      "lcsc": "C2870250",
+      "jlcpcbAssemblyType": "extended",
+      "package": "WSON-8 (DSG)",
+      "role": "primary"
+    }
+  ],
+  "symbol": "openpcb.core.symbol.sensor.tmp1075",
+  "defaultFootprint": "openpcb.core.footprint.package.wson-8-1ep-2x2mm-p0-5mm-ep0-9x1-6mm",
+  "footprints": [
+    {
+      "footprint": "openpcb.core.footprint.package.wson-8-1ep-2x2mm-p0-5mm-ep0-9x1-6mm",
+      "label": "WSON-8 2x2mm P0.5mm",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        },
+        {
+          "pinNumber": "3",
+          "padNumber": "3"
+        },
+        {
+          "pinNumber": "4",
+          "padNumber": "4"
+        },
+        {
+          "pinNumber": "5",
+          "padNumber": "5"
+        },
+        {
+          "pinNumber": "6",
+          "padNumber": "6"
+        },
+        {
+          "pinNumber": "7",
+          "padNumber": "7"
+        },
+        {
+          "pinNumber": "8",
+          "padNumber": "8"
+        },
+        {
+          "pinNumber": "9",
+          "padNumber": "9"
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "openpcb-component",
+    "sourceFileName": "TMP1075DSG.kicad_sym",
+    "sourceLibrary": "Sensor_Temperature",
+    "sourceItemName": "TMP1075 Digital Temperature Sensor",
+    "sourceHash": "9e1961a39b13b9fca7a29e221781e736dfff27d731d4ca3084cc0786e99046d6",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-09-05T03:09:31.678Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "compatibility": {
+    "minOpenPcbVersion": "0.1.0"
+  }
+}

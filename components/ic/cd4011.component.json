@@ -19,16 +19,26 @@
   ],
   "aliases": [],
   "datasheet": "https://www.ti.com/lit/ds/symlink/cd4011b.pdf",
-  "datasheetSource": "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4011bms-12bms-23bms.pdf",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/cd4011b.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "CD4011BE"
+      "mpn": "CD4011BE",
+      "lcsc": "C5226",
+      "jlcpcbAssemblyType": "extended",
+      "package": "DIP-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "CD4011BM96",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "CD4000",
-    "function": "quad NAND"
+    "function": "quad NAND",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.cd4011",
   "defaultFootprint": "openpcb.core.footprint.package.dip-14-w7-62mm",

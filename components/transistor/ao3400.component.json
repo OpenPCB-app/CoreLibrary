@@ -25,9 +25,27 @@
   "manufacturerParts": [
     {
       "manufacturer": "Alpha & Omega",
-      "mpn": "AO3400A"
+      "mpn": "AO3400A",
+      "lcsc": "C20917",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "DMN3042L-7",
+      "lcsc": "C102621",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "nmos",
+    "vds": "30V",
+    "id": "5.7A",
+    "rds_on": "26.5mOhm",
+    "vgs_th": "0.65-1.45V"
+  },
   "symbol": "openpcb.core.symbol.transistor.ao3400",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [

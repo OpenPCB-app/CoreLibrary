@@ -3,12 +3,18 @@
   "uuid": "f79d78bb-53e5-5d9a-ac66-00382bc8ae11",
   "version": "1.0.0",
   "name": "Inductor",
-  "description": "Generic two-pin SMD inductor with common chip package variants.",
+  "description": "Generic two-pin SMD inductor: chip packages (0603–1210) plus shielded power-inductor packages (6–12.5 mm bodies) for buck/boost regulators.",
   "category": "passive",
   "tags": [
     "inductor",
     "passive",
     "kicad-derived"
+  ],
+  "keywords": [
+    "power inductor",
+    "shielded",
+    "buck",
+    "boost"
   ],
   "aliases": [],
   "symbol": "openpcb.core.symbol.passive.inductor",
@@ -69,6 +75,90 @@
           "padNumber": "2"
         }
       ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-coilcraft-xal6030-xxx",
+      "label": "Coilcraft XAL6030 (6.6x6.8mm H3.1)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-bourns-srn6045ta",
+      "label": "Bourns SRN6045TA (6.0x6.0mm H4.5)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-tdk-slf7045",
+      "label": "TDK SLF7045 (7.0x7.0mm H4.5)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-bourns-srp1050wa",
+      "label": "Bourns SRP1050WA (11.0x10.0mm H5.1)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-coilcraft-xal1010-xxx",
+      "label": "Coilcraft XAL1010 (10.5x11.8mm H10.0)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
+    },
+    {
+      "footprint": "openpcb.core.footprint.passive.l-bourns-srr1260",
+      "label": "Bourns SRR1260 (12.5x12.5mm H6.0)",
+      "pinMap": [
+        {
+          "pinNumber": "1",
+          "padNumber": "1"
+        },
+        {
+          "pinNumber": "2",
+          "padNumber": "2"
+        }
+      ]
     }
   ],
   "provenance": {
@@ -81,9 +171,10 @@
     "sourceFileName": "L.kicad_sym",
     "sourceLibrary": "Device",
     "sourceItemName": "Inductor",
-    "sourceHash": "db9e582d92ed45a4c5f3aa6f357f80e79595a0f5f5a1c4075d9f35e1f0bab316",
+    "sourceHash": "18d500aad7e98a2f6a8094474f33ca02a76136689e47396a1ebba8cacece852f",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
-    "convertedAt": "2026-05-21T00:00:00.000Z",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-09-05T02:54:04.575Z",
     "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
   },
   "compatibility": {

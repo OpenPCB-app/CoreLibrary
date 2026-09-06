@@ -17,16 +17,28 @@
     "3-to-8"
   ],
   "aliases": [],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/cd74hc238.pdf",
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/cd74hc238.pdf",
+  "datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT138.pdf",
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT138.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "74HC138D,653"
+      "mpn": "74HC138D,653",
+      "lcsc": "C5602",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC138DR",
+      "lcsc": "C6818",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-16",
+      "role": "alternate"
     }
   ],
   "parameters": {
-    "supply": "2-6V"
+    "supply": "2-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc138",
   "defaultFootprint": "openpcb.core.footprint.package.soic-16-3-9x9-9mm-p1-27mm",

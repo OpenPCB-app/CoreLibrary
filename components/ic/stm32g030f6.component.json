@@ -22,12 +22,16 @@
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "STM32G030F6P6"
+      "mpn": "STM32G030F6P6",
+      "lcsc": "C724040",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TSSOP-20"
     }
   ],
   "parameters": {
     "core": "Cortex-M0+ @64MHz",
-    "flash": "32KB"
+    "flash": "32KB",
+    "type": "mcu"
   },
   "symbol": "openpcb.core.symbol.ic.stm32g030f6",
   "defaultFootprint": "openpcb.core.footprint.package.tssop-20-4-4x6-5mm-p0-65mm",

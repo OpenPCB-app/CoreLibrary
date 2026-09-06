@@ -26,13 +26,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Aerosemi",
-      "mpn": "MT3608"
+      "mpn": "MT3608",
+      "lcsc": "C84817",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-6"
     }
   ],
   "parameters": {
     "vout": "up to 28V (adjustable)",
-    "iout": "2A switch",
-    "topology": "boost"
+    "iout": "2A",
+    "topology": "boost",
+    "type": "boost",
+    "vin_max": "24V"
   },
   "symbol": "openpcb.core.symbol.power.mt3608",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",

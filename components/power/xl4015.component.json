@@ -19,18 +19,24 @@
     "CC-CV"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://www.xlsemi.com/datasheet/XL4015-EN.pdf",
   "datasheetSource": "http://www.xlsemi.net/datasheet/XL4015%20datasheet-English.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "XLSEMI",
-      "mpn": "XL4015E1"
+      "mpn": "XL4015E1",
+      "lcsc": "C51661",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-263-5"
     }
   ],
   "parameters": {
     "vin": "8-36V",
     "iout": "5A",
-    "topology": "buck"
+    "topology": "buck",
+    "type": "buck",
+    "vin_max": "36V",
+    "vout": "1.25V-32V"
   },
   "symbol": "openpcb.core.symbol.power.xl4015",
   "defaultFootprint": "openpcb.core.footprint.package.to-263-5-tabpin3",

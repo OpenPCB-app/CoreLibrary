@@ -2,8 +2,8 @@
   "id": "openpcb.core.ic.lm741",
   "uuid": "067adf48-885d-572b-accf-9ed6c0e04b00",
   "version": "0.3.0",
-  "name": "LM741 Op-Amp",
-  "description": "LM741 single general-purpose operational amplifier.",
+  "name": "uA741 Op-Amp",
+  "description": "uA741 (LM741-class) general-purpose single operational amplifier. In the D (SOIC-8) and P (PDIP-8) packages pins 1, 5 and 8 are NC — offset null is only brought out on the PS package.",
   "category": "ic",
   "subcategory": "opamp",
   "tags": [
@@ -17,17 +17,35 @@
     "amplifier"
   ],
   "aliases": [],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/lm741.pdf",
-  "datasheetSource": "http://www.ti.com/lit/ds/symlink/lm741.pdf",
+  "datasheet": "https://www.ti.com/lit/ds/symlink/ua741.pdf",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/ua741.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "UA741CD"
+      "mpn": "UA741CDR",
+      "lcsc": "C2057458",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "STMicroelectronics",
+      "mpn": "UA741CDT",
+      "lcsc": "C7111",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SO-8",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "UA741CP",
+      "package": "DIP-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "1",
-    "gbw": "1MHz"
+    "gbw": "1MHz",
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.lm741",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

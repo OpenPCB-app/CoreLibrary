@@ -51,7 +51,7 @@
       {
         "originPinKey": "u1:1",
         "number": "1",
-        "name": "",
+        "name": "A1",
         "localPosition": {
           "x": -7.62,
           "y": 0
@@ -62,7 +62,7 @@
       {
         "originPinKey": "u1:2",
         "number": "2",
-        "name": "",
+        "name": "A2",
         "localPosition": {
           "x": 7.62,
           "y": 0
@@ -73,7 +73,7 @@
       {
         "originPinKey": "u1:3",
         "number": "3",
-        "name": "",
+        "name": "K",
         "localPosition": {
           "x": 0,
           "y": -5.08
@@ -359,7 +359,7 @@
       "pins": [
         {
           "id": "u1:1",
-          "name": "",
+          "name": "A1",
           "number": "1",
           "electricalType": "passive",
           "unit": 1,
@@ -375,7 +375,7 @@
         },
         {
           "id": "u1:2",
-          "name": "",
+          "name": "A2",
           "number": "2",
           "electricalType": "passive",
           "unit": 1,
@@ -391,7 +391,7 @@
         },
         {
           "id": "u1:3",
-          "name": "",
+          "name": "K",
           "number": "3",
           "electricalType": "passive",
           "unit": 1,
@@ -408,6 +408,19 @@
       ],
       "labels": [
         {
+          "id": "u1:1:name",
+          "text": "A1",
+          "at": {
+            "x": -3.302,
+            "y": 0
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "left",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:1:number",
           "text": "1",
           "at": {
@@ -421,6 +434,19 @@
           "role": "pin-number"
         },
         {
+          "id": "u1:2:name",
+          "text": "A2",
+          "at": {
+            "x": 3.302,
+            "y": 4.6659043047514155e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
+        },
+        {
           "id": "u1:2:number",
           "text": "2",
           "at": {
@@ -432,6 +458,19 @@
           "anchorX": "center",
           "anchorY": "bottom",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:3:name",
+          "text": "K",
+          "at": {
+            "x": 3.110602869834277e-16,
+            "y": -0.508
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 90,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:3:number",
@@ -487,7 +526,7 @@
     "kicadId": null,
     "pins": [
       {
-        "name": "",
+        "name": "A1",
         "number": "1",
         "electricalType": "passive",
         "direction": "line",
@@ -506,7 +545,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "A2",
         "number": "2",
         "electricalType": "passive",
         "direction": "line",
@@ -525,7 +564,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "K",
         "number": "3",
         "electricalType": "passive",
         "direction": "line",

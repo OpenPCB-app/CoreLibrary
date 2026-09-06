@@ -1,0 +1,908 @@
+{
+  "id": "openpcb.core.footprint.passive.l-bourns-srn6045ta",
+  "uuid": "1d38595b-8c04-5a52-9dac-f7381df6e58f",
+  "version": "1.0.0",
+  "name": "L_Bourns_SRN6045TA",
+  "mountType": "smd",
+  "package": {
+    "imperial": null,
+    "metric": null
+  },
+  "models3d": [
+    "openpcb.core.3d.passive.l-bourns-srn6045ta"
+  ],
+  "provenance": {
+    "source": "kicad-derived",
+    "license": "CC-BY-SA-4.0+KiCad-Libraries-Exception",
+    "attribution": [
+      "Derived from KiCad official libraries."
+    ],
+    "sourceFormat": "kicad-mod",
+    "sourceFileName": "L_Bourns_SRN6045TA.kicad_mod",
+    "sourceLibrary": "Inductor_SMD",
+    "sourceItemName": "L_Bourns_SRN6045TA",
+    "sourceHash": "b90883991ed5e67e2d87cacd451250a173c31c47b583abc241f2f755ee0dfd24",
+    "upstreamUrl": "https://gitlab.com/kicad/libraries",
+    "upstreamCommit": "c7e226a49",
+    "convertedAt": "2026-09-05T02:54:04.575Z",
+    "conversionTool": "CoreLibrary tools/import-kicad-batch.ts"
+  },
+  "parser": {
+    "warnings": []
+  },
+  "normalized": {
+    "id": "fp_3a76a2f8d4e045a9",
+    "fileName": "L_Bourns_SRN6045TA.kicad_mod",
+    "name": "L_Bourns_SRN6045TA",
+    "description": "http://www.bourns.com/docs/product-datasheets/srn6045ta.pdf",
+    "mountType": "smd",
+    "padCount": 2,
+    "packageCode": {
+      "imperial": null,
+      "metric": null
+    },
+    "tags": [
+      "semi-shielded",
+      "power",
+      "inductor",
+      "smd"
+    ],
+    "sourceHash": "b90883991ed5e67e2d87cacd451250a173c31c47b583abc241f2f755ee0dfd24",
+    "warnings": [],
+    "preview": {
+      "kind": "footprint",
+      "units": "mm",
+      "name": "L_Bourns_SRN6045TA",
+      "pads": [
+        {
+          "id": "1:0",
+          "number": "1",
+          "shape": "rect",
+          "centerMm": {
+            "x": -2.075,
+            "y": 0
+          },
+          "widthMm": 2.35,
+          "heightMm": 5.1,
+          "rotationDeg": 0,
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        },
+        {
+          "id": "2:1",
+          "number": "2",
+          "shape": "rect",
+          "centerMm": {
+            "x": 2.075,
+            "y": 0
+          },
+          "widthMm": 2.35,
+          "heightMm": 5.1,
+          "rotationDeg": 0,
+          "layer": "F.Cu",
+          "layers": [
+            "F.Cu",
+            "F.Mask",
+            "F.Paste"
+          ]
+        }
+      ],
+      "graphics": [
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.1,
+            "y": -3.1
+          },
+          "b": {
+            "x": -3.1,
+            "y": -2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.1,
+            "y": -3.1
+          },
+          "b": {
+            "x": 3.1,
+            "y": -3.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.1,
+            "y": 3.1
+          },
+          "b": {
+            "x": -3.1,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.1,
+            "y": -3.1
+          },
+          "b": {
+            "x": 3.1,
+            "y": -2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.1,
+            "y": 3.1
+          },
+          "b": {
+            "x": -3.1,
+            "y": 3.1
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.1,
+            "y": 3.1
+          },
+          "b": {
+            "x": 3.1,
+            "y": 2.65
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.SilkS"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.5,
+            "y": -3.25
+          },
+          "b": {
+            "x": -3.5,
+            "y": 3.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3.5,
+            "y": 3.25
+          },
+          "b": {
+            "x": 3.5,
+            "y": 3.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.5,
+            "y": -3.25
+          },
+          "b": {
+            "x": -3.5,
+            "y": -3.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3.5,
+            "y": 3.25
+          },
+          "b": {
+            "x": 3.5,
+            "y": -3.25
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.CrtYd"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3,
+            "y": -3
+          },
+          "b": {
+            "x": -3,
+            "y": 3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3,
+            "y": -3
+          },
+          "b": {
+            "x": 3,
+            "y": -3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": -3,
+            "y": 3
+          },
+          "b": {
+            "x": 3,
+            "y": 3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        },
+        {
+          "kind": "line",
+          "a": {
+            "x": 3,
+            "y": 3
+          },
+          "b": {
+            "x": 3,
+            "y": -3
+          },
+          "strokeWidthMm": 0.12,
+          "layer": "F.Fab"
+        }
+      ],
+      "labels": [
+        {
+          "id": "fp-text:F.Fab:0:0:${REFERENCE}",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": 0
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 90,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "footprint-text"
+        },
+        {
+          "id": "fp-text:F.SilkS:0:-4.6:REF**",
+          "text": "REF**",
+          "at": {
+            "x": 0,
+            "y": -4.6
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.SilkS",
+          "role": "reference"
+        },
+        {
+          "id": "fp-text:F.Fab:0:4.2:L_Bourns_SRN6045TA",
+          "text": "L_Bourns_SRN6045TA",
+          "at": {
+            "x": 0,
+            "y": 4.2
+          },
+          "fontSizeMm": 1,
+          "rotationDeg": 0,
+          "anchorX": "center",
+          "anchorY": "middle",
+          "layer": "F.Fab",
+          "role": "value"
+        }
+      ],
+      "bounds": {
+        "minX": -3.56,
+        "minY": -3.31,
+        "maxX": 3.56,
+        "maxY": 3.31
+      },
+      "warnings": []
+    }
+  },
+  "raw": {
+    "name": "L_Bourns_SRN6045TA",
+    "description": "http://www.bourns.com/docs/product-datasheets/srn6045ta.pdf",
+    "tags": [
+      "Semi-shielded",
+      "Power",
+      "Inductor"
+    ],
+    "pads": [
+      {
+        "number": "1",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": -2.075,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.35,
+          "height": 5.1
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      },
+      {
+        "number": "2",
+        "type": "smd",
+        "shape": "rect",
+        "position": {
+          "x": 2.075,
+          "y": 0
+        },
+        "rotation": 0,
+        "size": {
+          "width": 2.35,
+          "height": 5.1
+        },
+        "layers": [
+          "F.Cu",
+          "F.Mask",
+          "F.Paste"
+        ]
+      }
+    ],
+    "graphics": [
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.1,
+            -3.1
+          ],
+          "end": [
+            -3.1,
+            -2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "6a1fd857-a184-47a3-a58a-8368dcf8783a"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.1,
+            -3.1
+          ],
+          "end": [
+            3.1,
+            -3.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "e466e7d8-37ca-46e8-a5e2-961f740373a6"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            -3.1,
+            3.1
+          ],
+          "end": [
+            -3.1,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "c53142a7-4f67-400d-a688-4d1d236a0dae"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.1,
+            -3.1
+          ],
+          "end": [
+            3.1,
+            -2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "11a57130-1140-4717-82fd-51f07b6a1792"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.1,
+            3.1
+          ],
+          "end": [
+            -3.1,
+            3.1
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "8a96b866-7fa2-485f-8d51-1c7deeb253dc"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.SilkS",
+        "data": {
+          "start": [
+            3.1,
+            3.1
+          ],
+          "end": [
+            3.1,
+            2.65
+          ],
+          "stroke": [
+            [
+              "width",
+              0.12
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.SilkS",
+          "uuid": "8eecef81-331e-45a5-a572-bde5df11fce0"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.5,
+            -3.25
+          ],
+          "end": [
+            -3.5,
+            3.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "30a64f62-014f-4368-aa2f-1985bac02cea"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            -3.5,
+            3.25
+          ],
+          "end": [
+            3.5,
+            3.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "7501177a-ecb8-4680-bae6-2804bc559644"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.5,
+            -3.25
+          ],
+          "end": [
+            -3.5,
+            -3.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "6ddd54ae-6593-48ec-9af9-d783968c873d"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.CrtYd",
+        "data": {
+          "start": [
+            3.5,
+            3.25
+          ],
+          "end": [
+            3.5,
+            -3.25
+          ],
+          "stroke": [
+            [
+              "width",
+              0.05
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.CrtYd",
+          "uuid": "53a890e9-3335-4147-b044-4c72bb92bad9"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3,
+            -3
+          ],
+          "end": [
+            -3,
+            3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "30f0b620-6900-4679-a063-ff632243155b"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3,
+            -3
+          ],
+          "end": [
+            3,
+            -3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "250e709f-7108-4b69-9a41-a02dfcaf708d"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            -3,
+            3
+          ],
+          "end": [
+            3,
+            3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "8e957d29-b26b-4fbe-8ec8-141c92f79121"
+        }
+      },
+      {
+        "type": "line",
+        "layer": "F.Fab",
+        "data": {
+          "start": [
+            3,
+            3
+          ],
+          "end": [
+            3,
+            -3
+          ],
+          "stroke": [
+            [
+              "width",
+              0.1
+            ],
+            [
+              "type",
+              "solid"
+            ]
+          ],
+          "layer": "F.Fab",
+          "uuid": "eb538c6e-4c28-454a-bf8d-9f66f5887b74"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            0,
+            90
+          ],
+          "layer": "F.Fab",
+          "uuid": "b0ebad69-1e10-43c3-a243-7d2d0945c3b8",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "user",
+            "${REFERENCE}"
+          ]
+        },
+        "text": {
+          "content": "${REFERENCE}",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "rotation": 90,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "user"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.SilkS",
+        "data": {
+          "at": [
+            0,
+            -4.6,
+            0
+          ],
+          "layer": "F.SilkS",
+          "uuid": "095d6c52-4f76-4e86-b3af-7f4eb120d55d",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Reference",
+            "REF**"
+          ]
+        },
+        "text": {
+          "content": "REF**",
+          "position": {
+            "x": 0,
+            "y": -4.6
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "reference"
+        }
+      },
+      {
+        "type": "text",
+        "layer": "F.Fab",
+        "data": {
+          "at": [
+            0,
+            4.2,
+            0
+          ],
+          "layer": "F.Fab",
+          "uuid": "f93b9023-6c0b-45cb-94f4-80bee523926c",
+          "effects": [
+            [
+              "font",
+              [
+                "size",
+                1,
+                1
+              ],
+              [
+                "thickness",
+                0.15
+              ]
+            ]
+          ],
+          "__args": [
+            "Value",
+            "L_Bourns_SRN6045TA"
+          ]
+        },
+        "text": {
+          "content": "L_Bourns_SRN6045TA",
+          "position": {
+            "x": 0,
+            "y": 4.2
+          },
+          "rotation": 0,
+          "fontSizeMm": 1,
+          "justifyH": "center",
+          "justifyV": "middle",
+          "mirrored": false,
+          "hidden": false,
+          "kind": "value"
+        }
+      }
+    ],
+    "model3dRefs": [
+      {
+        "path": "${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRN6045TA.step",
+        "resolvedFileName": "L_Bourns_SRN6045TA.step",
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "rotation": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    ],
+    "attributes": {
+      "type": "smd"
+    },
+    "warnings": [],
+    "rawSource": "(footprint \"L_Bourns_SRN6045TA\"\n\t(version 20260206)\n\t(generator \"pcbnew\")\n\t(generator_version \"10.0\")\n\t(layer \"F.Cu\")\n\t(descr \"http://www.bourns.com/docs/product-datasheets/srn6045ta.pdf\")\n\t(tags \"Semi-shielded Power Inductor\")\n\t(property \"Reference\" \"REF**\"\n\t\t(at 0 -4.6 0)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"095d6c52-4f76-4e86-b3af-7f4eb120d55d\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Value\" \"L_Bourns_SRN6045TA\"\n\t\t(at 0 4.2 0)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"f93b9023-6c0b-45cb-94f4-80bee523926c\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Datasheet\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"988e0eb3-4afc-463c-a615-e5432323c3a3\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(property \"Description\" \"\"\n\t\t(at 0 0 0)\n\t\t(unlocked yes)\n\t\t(layer \"F.Fab\")\n\t\t(hide yes)\n\t\t(uuid \"896df4c2-c4b9-455b-8ecd-269336c531b2\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1.27 1.27)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(attr smd)\n\t(duplicate_pad_numbers_are_jumpers no)\n\t(fp_line\n\t\t(start -3.1 -3.1)\n\t\t(end -3.1 -2.65)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"6a1fd857-a184-47a3-a58a-8368dcf8783a\")\n\t)\n\t(fp_line\n\t\t(start -3.1 -3.1)\n\t\t(end 3.1 -3.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"e466e7d8-37ca-46e8-a5e2-961f740373a6\")\n\t)\n\t(fp_line\n\t\t(start -3.1 3.1)\n\t\t(end -3.1 2.65)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"c53142a7-4f67-400d-a688-4d1d236a0dae\")\n\t)\n\t(fp_line\n\t\t(start 3.1 -3.1)\n\t\t(end 3.1 -2.65)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"11a57130-1140-4717-82fd-51f07b6a1792\")\n\t)\n\t(fp_line\n\t\t(start 3.1 3.1)\n\t\t(end -3.1 3.1)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"8a96b866-7fa2-485f-8d51-1c7deeb253dc\")\n\t)\n\t(fp_line\n\t\t(start 3.1 3.1)\n\t\t(end 3.1 2.65)\n\t\t(stroke\n\t\t\t(width 0.12)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.SilkS\")\n\t\t(uuid \"8eecef81-331e-45a5-a572-bde5df11fce0\")\n\t)\n\t(fp_line\n\t\t(start -3.5 -3.25)\n\t\t(end -3.5 3.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"30a64f62-014f-4368-aa2f-1985bac02cea\")\n\t)\n\t(fp_line\n\t\t(start -3.5 3.25)\n\t\t(end 3.5 3.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"7501177a-ecb8-4680-bae6-2804bc559644\")\n\t)\n\t(fp_line\n\t\t(start 3.5 -3.25)\n\t\t(end -3.5 -3.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"6ddd54ae-6593-48ec-9af9-d783968c873d\")\n\t)\n\t(fp_line\n\t\t(start 3.5 3.25)\n\t\t(end 3.5 -3.25)\n\t\t(stroke\n\t\t\t(width 0.05)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.CrtYd\")\n\t\t(uuid \"53a890e9-3335-4147-b044-4c72bb92bad9\")\n\t)\n\t(fp_line\n\t\t(start -3 -3)\n\t\t(end -3 3)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"30f0b620-6900-4679-a063-ff632243155b\")\n\t)\n\t(fp_line\n\t\t(start -3 -3)\n\t\t(end 3 -3)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"250e709f-7108-4b69-9a41-a02dfcaf708d\")\n\t)\n\t(fp_line\n\t\t(start -3 3)\n\t\t(end 3 3)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"8e957d29-b26b-4fbe-8ec8-141c92f79121\")\n\t)\n\t(fp_line\n\t\t(start 3 3)\n\t\t(end 3 -3)\n\t\t(stroke\n\t\t\t(width 0.1)\n\t\t\t(type solid)\n\t\t)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"eb538c6e-4c28-454a-bf8d-9f66f5887b74\")\n\t)\n\t(fp_text user \"${REFERENCE}\"\n\t\t(at 0 0 90)\n\t\t(layer \"F.Fab\")\n\t\t(uuid \"b0ebad69-1e10-43c3-a243-7d2d0945c3b8\")\n\t\t(effects\n\t\t\t(font\n\t\t\t\t(size 1 1)\n\t\t\t\t(thickness 0.15)\n\t\t\t)\n\t\t)\n\t)\n\t(pad \"1\" smd rect\n\t\t(at -2.075 0)\n\t\t(size 2.35 5.1)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"ee5cf1ed-31e4-4446-bdd3-00b038ebb5e2\")\n\t)\n\t(pad \"2\" smd rect\n\t\t(at 2.075 0)\n\t\t(size 2.35 5.1)\n\t\t(layers \"F.Cu\" \"F.Mask\" \"F.Paste\")\n\t\t(uuid \"f70c9271-f509-461c-97db-c86d35258e33\")\n\t)\n\t(embedded_fonts no)\n\t(model \"${KICAD10_3DMODEL_DIR}/Inductor_SMD.3dshapes/L_Bourns_SRN6045TA.step\"\n\t\t(offset\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t\t(scale\n\t\t\t(xyz 1 1 1)\n\t\t)\n\t\t(rotate\n\t\t\t(xyz 0 0 0)\n\t\t)\n\t)\n)\n"
+  },
+  "sourceFileName": "L_Bourns_SRN6045TA.kicad_mod"
+}

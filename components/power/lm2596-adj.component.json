@@ -28,7 +28,10 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM2596S-ADJ/NOPB"
+      "mpn": "LM2596S-ADJ/NOPB",
+      "lcsc": "C1355333",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-263-5 (KTT)"
     }
   ],
   "parameters": {
@@ -36,7 +39,8 @@
     "iout": "3A",
     "vin_max": "40V",
     "topology": "buck",
-    "switching_freq": "150kHz"
+    "switching_freq": "150kHz",
+    "type": "buck"
   },
   "symbol": "openpcb.core.symbol.power.lm2596-adj",
   "defaultFootprint": "openpcb.core.footprint.package.to-263-5-tabpin3",

@@ -17,17 +17,33 @@
     "isolated"
   ],
   "aliases": [],
-  "datasheet": "https://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en",
-  "datasheetSource": "http://www.allegromicro.com/~/media/Files/Datasheets/ACS712-Datasheet.ashx?la=en",
+  "datasheet": "https://www.allegromicro.com/-/media/files/datasheets/acs712-datasheet.pdf",
+  "datasheetSource": "https://www.allegromicro.com/-/media/files/datasheets/acs712-datasheet.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Allegro MicroSystems",
-      "mpn": "ACS712ELCTR-05B-T"
+      "mpn": "ACS712ELCTR-05B-T",
+      "lcsc": "C44471",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Allegro MicroSystems",
+      "mpn": "ACS712ELCTR-20A-T",
+      "package": "SOIC-8",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Allegro MicroSystems",
+      "mpn": "ACS712ELCTR-30A-T",
+      "package": "SOIC-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "range": "±5/±20/±30A",
-    "output": "analog"
+    "output": "analog",
+    "type": "current-sensor"
   },
   "symbol": "openpcb.core.symbol.ic.acs712",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

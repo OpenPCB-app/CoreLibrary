@@ -95,7 +95,7 @@
       {
         "originPinKey": "u1:5",
         "number": "5",
-        "name": "",
+        "name": "OUT",
         "localPosition": {
           "x": 7.62,
           "y": 0
@@ -236,7 +236,7 @@
         },
         {
           "id": "u1:5",
-          "name": "",
+          "name": "OUT",
           "number": "5",
           "electricalType": "output",
           "unit": 1,
@@ -403,6 +403,19 @@
           "anchorX": "center",
           "anchorY": "middle",
           "role": "pin-number"
+        },
+        {
+          "id": "u1:5:name",
+          "text": "OUT",
+          "at": {
+            "x": 4.572,
+            "y": 3.110602869834277e-16
+          },
+          "fontSizeMm": 1.27,
+          "rotationDeg": 0,
+          "anchorX": "right",
+          "anchorY": "middle",
+          "role": "pin-name"
         },
         {
           "id": "u1:5:number",
@@ -612,7 +625,7 @@
         "numberFontSizeMm": 1.27
       },
       {
-        "name": "",
+        "name": "OUT",
         "number": "5",
         "electricalType": "output",
         "direction": "line",

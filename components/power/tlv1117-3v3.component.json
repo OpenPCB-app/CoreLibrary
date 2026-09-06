@@ -23,13 +23,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "TLV1117-33IDCYR"
+      "mpn": "TLV1117-33IDCYR",
+      "lcsc": "C37359",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-223-4"
     }
   ],
   "parameters": {
     "vout": "3.3V",
     "iout": "800mA",
-    "topology": "linear-ldo"
+    "topology": "linear-ldo",
+    "type": "ldo",
+    "vin_max": "15V"
   },
   "symbol": "openpcb.core.symbol.power.tlv1117-3v3",
   "defaultFootprint": "openpcb.core.footprint.package.sot-223",

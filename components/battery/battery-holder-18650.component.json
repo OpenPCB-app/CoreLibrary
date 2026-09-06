@@ -3,7 +3,7 @@
   "uuid": "5a1abeed-1ac8-5b30-a052-81c8e9fd0a92",
   "version": "0.3.0",
   "name": "18650 Battery Holder",
-  "description": "Single 18650 Li-Ion cell holder, THT (Keystone 1042 style).",
+  "description": "Single 18650 Li-Ion cell holder, SMT (Keystone 1042).",
   "category": "battery",
   "subcategory": "holder",
   "tags": [
@@ -17,13 +17,18 @@
     "cell"
   ],
   "aliases": [],
-  "datasheet": null,
+  "datasheet": "https://www.keyelco.com/userAssets/file/K75p29.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Keystone",
-      "mpn": "1042"
+      "mpn": "1042",
+      "package": "SMT 18650 holder"
     }
   ],
+  "parameters": {
+    "type": "holder",
+    "chemistry": "li-ion"
+  },
   "symbol": "openpcb.core.symbol.battery.battery-cell",
   "defaultFootprint": "openpcb.core.footprint.battery.battery-18650-keystone-1042",
   "footprints": [

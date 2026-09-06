@@ -1,6 +1,6 @@
 # CoreLibrary status
 
-**Last updated: 2026-07-28.**
+**Last updated: 2026-09-05.**
 
 This is the only dated file in the repository. It is **rewritten, never appended** — there are no
 `## 2026-xx-xx update` sections here and none should be added. If you want to know what changed and
@@ -16,56 +16,65 @@ for them.
 
 ## Inventory
 
-231 components · 227 symbols · 149 footprints · 139 3D models. Ten footprints are `no3d`.
+241 components · 237 symbols · 168 footprints · 158 3D models. Ten footprints are `no3d`.
 
-By category: ic 73 · connector 36 · transistor 32 · power 22 · diode 20 · passive 13 ·
-mechanical 9 · opto 7 · sensor 6 · crystal 5 · switch 3 · relay 2 · battery 2 · audio 1.
+By category: ic 75 · connector 42 · transistor 32 · power 23 · diode 20 · passive 13 ·
+mechanical 9 · opto 7 · sensor 7 · crystal 5 · switch 3 · relay 2 · battery 2 · audio 1.
 
-All work is on `master`.
+Work in flight is on branch **`feat/corelib-hardening`**, uncommitted (the hardening pass, see
+below). `master` is unchanged since the docs consolidation.
 
 ## Last verified gate run
 
-Verified green on `master`:
+Verified green on `feat/corelib-hardening` with `bun run shared:status` reporting all eight
+packages **linked** to `../shared` — deliberately, because the pass depends on shared changes that
+are not yet tagged (see "The held release"). CI, which resolves the pinned tags, stays red until
+those tags exist.
 
 | Gate | Result |
 | --- | --- |
 | `bun run typecheck` | clean |
-| `bun test` | 60 pass |
-| `bun tools/validate.ts --release --strict` | OK, 231 components |
-| `bun tools/audit-3d-placement.ts --release` | 139 ok / 0 errors / 0 warnings |
-| `bun tools/audit-components.ts --no-render` | 231 / 0 issues |
-| `bun tools/check-datasheet-links.ts` | structural, 151/151 OK |
-| `bun tools/pack.ts --version=0.0.0-dev` | 10.74 MB full pack |
-| `… --no-step --out=dist/glb-only` | 4.04 MB core pack + 6.69 MB STEP companion zip |
+| `bun test` | 186 pass |
+| `bun tools/validate.ts --release --strict` | OK, 241 components (G1–G12) |
+| `bun tools/audit-3d-placement.ts --release` | 158 ok / 0 errors / 0 warnings |
+| `bun tools/audit-components.ts --no-render` | 241 / 0 issues |
+| `bun tools/check-datasheet-links.ts` | structural, 180/180 OK |
+| `bun tools/pack.ts --version=0.0.0-dev` | builds (full pack) |
+| `… --no-step --out=dist/glb-only` | builds (GLB-only core + STEP companion) |
+| `../shared` kicad-parsers, kicad-import `bun test` | 51 + 52 pass |
 
-A green local run only means what `bun run shared:status` says it means. See
-[CONTRIBUTING.md](CONTRIBUTING.md#quick-start).
+## The hardening pass, in one paragraph
+
+Every component was audited as if it were going into a product: symbol pin order against the
+manufacturer datasheet of the stated MPN in the stated package, package against footprint,
+datasheet against manufacturer, and sourcing. The per-part record, including what could not be
+verified and why, is [docs/audit/2026-09-hardening-findings.md](docs/audit/2026-09-hardening-findings.md).
+Defects fixed: SS8050/SS8550 base–emitter swap in TO-92 (per-footprint pin map, SOT-23 variant
+added), BAV99 pin names, RP2040 on the wrong QFN-56 exposed-pad variant, DS3231 and PCF8574 on the
+narrow SOIC-16 instead of the 7.5 mm body, ATtiny85 on the JEDEC instead of the EIAJ SOIC-8,
+ESP32-WROOM-32E flash pins exposed as signals, LM741 identity, 1N4148/1N5819/SS24/SS34 package
+mismatches, slotted drills and thermal-pad paste dropped by the importer, and ~40 datasheets that
+belonged to another manufacturer. Every function part now carries `parameters`, a verified primary
+MPN with LCSC code where stocked, alternates in the same package, and an official datasheet. Seven
+gates (G6–G12) enforce all of that from now on; CONTRIBUTING.md explains each.
 
 ## The held release
 
-The release is **deliberately held**, pending an explicit go-ahead. It is the top of the queue —
-content work is not the bottleneck, and everything below this section is downstream of it. The
-desktop app currently bundles a seventeen-component pack built on 2026-06-02, so none of the
-content grind has reached a user.
+The release is still **deliberately held**, pending an explicit go-ahead. The desktop app bundles a
+seventeen-component pack built on 2026-06-02; none of the content grind has reached a user.
 
 The unblock sequence, in order:
 
-1. Cut **four** tags in `shared`:
-   - `step-to-glb-v0.1.5` — carries the OCCT WASM module reuse; new to this batch
-   - `kicad-import-v0.2.0`
-   - `rendering-core-v0.1.4`
-   - `contracts-v0.3.1`
-2. Re-pin `CoreLibrary/package.json` (`kicad-import` → 0.2.0, `step-to-glb` → 0.1.5) and
-   `OpenPCB/package.json`. Push.
-3. **Confirm CI green.** Three failures remain today and all three clear with that re-pin: two
-   importer tests fail because the pinned `kicad-import v0.1.2` discards the courtyard geometry G3
-   now requires, and one `pack-shared-compat` test fails because the pinned `step-to-glb v0.1.4`
-   lacks the module reuse.
-4. **Only then** tag `v0.2.0`, and re-pin the app bundle.
-
-`@openpcb/kicad-import` 0.2.0 is a breaking change: multi-unit previews now contain every unit,
-footprint previews contain courtyard/mask/paste, and model bounds grow to the true component
-extent. Consumers must re-import to pick up corrected pin coordinates.
+1. **Commit the uncommitted `../shared` change** on `main`: `kicad-parsers` parses `(drill oval …)`
+   into `drillSlot`; `kicad-import` emits `drillSlotMm`, keeps paste-only sub-pads as
+   `role: "paste"`, and counts only numbered pads in `padCount` (a semantic change consumers of
+   `InspectFootprintItem.padCount` will see). Tests are in both packages.
+2. Cut **four** tags in `shared`: `step-to-glb-v0.1.5`, `kicad-import-v0.2.0` (now also carrying
+   step 1), `rendering-core-v0.1.4`, `contracts-v0.3.1`. The commits for all four are already on
+   `main`; none of the tags exist.
+3. Re-pin `CoreLibrary/package.json` (`kicad-import` → 0.2.0, `step-to-glb` → 0.1.5) and
+   `OpenPCB/package.json`. Push. **Confirm CI green.**
+4. Only then tag `v0.2.0`, and re-pin the app bundle.
 
 ### Signing prerequisites, still outstanding
 
@@ -76,66 +85,57 @@ gh secret set OPCLIB_SIGNING_KEY < keys/openpcb-core.priv.pem
 gh variable set OPCLIB_KEY_ID --body openpcb-core-2026
 ```
 
-Then delete the local `.priv.pem`. Verified locally: a signed 231-component pack verifies under
-`openpcb-core-2026` through both this repo's committed key and the app's trust store, and fails
-under the retired placeholder key. See [keys/README.md](keys/README.md).
+Then delete the local `.priv.pem`. See [keys/README.md](keys/README.md).
 
 ### Release checklist residue
 
 - Verify the signature and `SHA256SUMS` on the published artifacts.
 - Bump the app's bundled library via `OpenPCB/scripts/fetch-core-library.ts` and verify the boot
   import in a **packaged** build, not a dev run.
-- Route the `component_request` issue template to manifest authoring.
-- App smoke test once the pack lands: import the dev pack, place an LM324, confirm four separate
-  op-amps with distinct pins and **no** `OUTPUT_OUTPUT_SHORT`; enable the assembly-view preset and
-  confirm courtyards render.
+- App smoke test once the pack lands: place an LM324 (four separate op-amps, no
+  `OUTPUT_OUTPUT_SHORT`); place SS8050 and check the TO-92 variant lands E/B/C on pads 1/2/3; place
+  the barrel jack and confirm the pads have holes; enable the assembly-view preset and confirm
+  courtyards render.
 
-## Datasheet follow-ups
+## What is still not verified
 
-Twenty-two parts that have an MPN still lack a curated `datasheet` link. The principle that governs
-all of them: **a mirror is not a datasheet.** Their `datasheetSource` provenance is untouched, so
-the pack still falls back to it where one exists.
+Recorded here so nobody re-derives it; details and what was tried are in the audit record.
 
-**Seven need a sourcing decision, not a lookup:**
+- **Pin order behind a WAF:** the six STM32 LQFP parts (st.com unreachable), AD620, ADUM1201,
+  DS1307, DS3231 (analog.com), ULN2803A, the Molex USB-A / micro-B receptacles, the C&K slide
+  switch, the Panasonic tactile switch, the TDK buzzer, both Keystone holders, the Phoenix screw
+  terminals. Pin counts, packages and KiCad provenance all match; nothing suggests a defect.
+- **Bridge rectifier ABS:** neither Diotec nor Diodes numbers the terminals, so which pad is `+`
+  rests on KiCad's convention.
+- **RJ45 jack LED polarity** (LED1A/LED1K…) and the **Sanyou SRD relay pin map** were derived from
+  KiCad symbol wiring, not a numbered manufacturer table.
+- **CH340C pin 8** (NC vs an output) is disputed between WCH's page and vendor symbols.
+- **AMS1117 `vin_max`** is 15 V (Advanced Monolithic absolute maximum) while the new UMW primary
+  specifies 12 V.
 
-| Part | Problem |
-| --- | --- |
-| AMS1117 | `advanced-monolithic.com` serves no working https |
-| CH340C / CH340G | WCH publishes HTML only, no official PDF |
-| TP4056 | no stable official PDF |
-| ME6211 | no stable official PDF |
-| XL4015 | no stable official PDF |
-| SS8550 | HTML only, no official PDF |
-| ULN2803A | gone from TI's `lit/` paths entirely |
-
-**The rest just need a retry** — DigiKey's daily quota cut the lookup short: Keystone 1042 and
-3034, Kingbright KCSC02-105, Aosong DHT11, Hirose DM3AT, Epson SG-8002 and FC-135, Schurter
-0031.8201, DB107, USB-C receptacle.
-
-Also open: a **scheduled** (not per-push) `--network --strict-network` link-rot job. It must stay
-non-blocking for WAF hosts, which is precisely why it is not in `validate.yml`.
+Known, accepted exceptions: MT3608's datasheet is hosted by Olimex (Aerosemi publishes none);
+ME6211 has no manufacturer PDF (an AP2112K alternate carries one); the DB107 bridge datasheet sits
+on the primary entry because MDD's host is not in the G8 table.
 
 ## Content backlog, in value order
 
-Target for v1 is a jellybean set of roughly **250–300 components**. The order below is by how much
-each gap blocks a real design, which is not the same as by size.
+Target for v1 stays a jellybean set of roughly **250–300 components**. Delivered this round: six
+shielded power-inductor packages on the generic inductor, six Hirose FH12 FFC/FPC sizes, VSON-10,
+WSON-8 (two bodies), SSOP-20/28 and MSOP-8 with real consumers (TPS63001, TMP1075, W25Q32,
+ENC28J60, MCP2200, MCP6002). Still open:
 
-1. **SMD power inductors.** The five buck/boost regulators in the library have nowhere to put one.
-   This is the single most blocking gap.
-2. **FFC/FPC connectors.** None exist, so no display or camera design is possible at all.
-3. **DFN/SON and SOP/SSOP packages.**
-4. **0201, 1812, 2010 passive sizes.**
-5. **1.27 mm and 2.00 mm headers.**
-6. **Power electronics:** DPAK / D²PAK / TO-247, gate drivers, magnetics, Kelvin shunts.
-7. **QFN and BGA.**
+1. **0201, 1812, 2010 passive sizes.**
+2. **1.27 mm and 2.00 mm headers.**
+3. **Power electronics:** DPAK / D²PAK / TO-247, gate drivers, Kelvin shunts.
+4. **QFN and BGA.**
+5. **FT232RL and TMP117** were dropped from the DFN/SSOP wave because their KiCad symbols carry no
+   pin for datasheet-NC pads and `--strict` cannot express "intentionally unmapped". See the tools
+   follow-up below.
 
-Constraint on all of it: every new footprint needs a component that references it. `validate.ts`
-flags unreferenced footprints and `--strict` makes that fatal.
+Constraint on all of it: every new footprint needs a component that references it, and every new
+function part must pass G6–G12 before it lands.
 
 ## Wave-2 blockers — still genuinely open
-
-These parts need external or authored assets under the tagged-provenance policy, because the
-vendored KiCad 10.0.4 tree does not have what they need:
 
 | Part | Missing |
 | --- | --- |
@@ -149,39 +149,56 @@ vendored KiCad 10.0.4 tree does not have what they need:
 | MP1584 / MP2307 | no symbol in KiCad 10 stock libraries |
 | EC11 encoder | needs external/authored assets |
 
+## Tools follow-ups
+
+- **`unmappedPads` in manifests:** a way to declare datasheet-NC footprint pads as intentionally
+  unmapped, with a reason, so `--strict` stops forcing NC pads onto live pins (blocked FT232RL,
+  TMP117; the W25Q32 WSON EP is grounded per its datasheet instead).
+- **Provenance refresh:** 12 symbols and 14 components carry a `sourceHash` from an older KiCad
+  checkout and no `upstreamCommit`. Re-importing them against the pinned 10.0.4 tree changes only
+  the stamps, but do it deliberately and diff the geometry.
+- **`topology` vs `type` on power parts:** twelve manifests still emit `topology`; the key is now
+  redundant with G6's `type`. Change manifest and content together.
+- **`check-datasheet-links` does not walk entry-level datasheets** (`manufacturerParts[].datasheet`).
+- **ACS712** uses the plain SOIC-8 land; Allegro recommends widened pads for the current path.
+
 ## Data model
 
-**Typed parameter values** — `{value, unit, min, typ, max}` — are the next data-model step, for real
-parametric filtering. They require a `component.schema.json` change (it is
-`additionalProperties: false`), plus work in `opclib-pack` and the app.
+**Typed parameter values** — `{value, unit, min, typ, max}` — remain the next data-model step, for
+real parametric filtering. They require a `component.schema.json` change plus work in `opclib-pack`
+and the app. `parameters` is now populated and vocabulary-checked (G5, G6) on every function part,
+so the app can start reading it.
 
-The sequencing insight matters more than the schema change: **wire the app to read `parameters`
-first.** `parameters` is packed today and has no consumer, so enriching it before the app displays
-it just produces more data nothing shows. Lifecycle status and distributor part numbers sit behind
-the same reasoning.
+**Sourcing fields do not reach the pack.** `manufacturerParts[]` entries carry `lcsc`,
+`jlcpcbAssemblyType`, `package` and `role` in source; `@openpcb/opclib-pack`'s packed-manifest
+schema admits only `{manufacturer, mpn}`, so `tools/pack.ts` strips the rest. Relaxing that schema
+(and reading `lcsc` into the app's existing `lcscPartNumber` column) is the follow-up that makes the
+sourcing data useful in a BOM.
 
 ## App-side follow-ups
 
 Tracked here because CoreLibrary work created them, though the work itself is in OpenPCB:
 
-- Per-unit placement UX — `U1A` / `U1B` plus physical-part grouping for ERC, PCB and BOM. The
-  multi-unit compose fix makes the twenty-one affected parts correct and usable; it does not make
-  them full-EDA.
-- The `courtyardPolygon` producer in `board-snapshot.ts`, now that footprints carry courtyard.
-- The stale data-model section in `OpenPCB/src/modules/library/AGENTS.md`.
+- Render `drillSlotMm` as a slot (today a 1 × 3 mm slot draws as a 1 mm round hole) and treat
+  `role: "paste"` pads as paste, not copper (`r3f-eda-canvas` `footprint-render-layer.tsx`).
+- Read `manufacturerParts[].lcsc` into `lcscPartNumber` / `supplier`; surface alternates in BOM
+  export; show and search `keywords`, `subcategory`, `parameters`.
+- Per-unit placement UX — `U1A` / `U1B` plus physical-part grouping for ERC, PCB and BOM.
+- The `courtyardPolygon` producer in `board-snapshot.ts`.
 - `opclib-importer.ts`: assert there is no render-ref when `transformBaked` is set.
-- `three-d/transform-helpers.ts`: back-layer and ordering unit tests.
 
 ## Deferred decisions
 
-- Ratify the four connector sidecars' `scaleMm: {y: -1}` via a contact sheet, for consistency with
-  the DIP fix.
-- `shared/step-to-glb`: have the worker and node paths return a post-bake bounding box and an
-  orientation-mismatch warning, so the gate can compare against what was actually baked.
+- Ratify the connector sidecars' `scaleMm: {y: -1}` (pin headers, JST XH, IDC, and now Hirose
+  FH12) via a contact sheet.
+- `shared/step-to-glb`: return a post-bake bounding box and an orientation-mismatch warning so the
+  gate can compare against what was actually baked.
+- Whether `npn-sot-23-ebc` / `pnp-sot-23-ebc` should stay: they encode a pin order no SOT-23 BJT in
+  the library uses; every real SOT-23 BJT here is B-E-C.
 
 ## Git
 
-The 2026-07-12 branch `feat/corelib-npth-pending` was verified fully superseded — its content, its
-importer change and its four components are all on `master`, and its `mountType: "unknown"` schema
-change was abandoned in favour of `deriveMountType`. It is archived as tag
-`archive/corelib-npth-pending` and the branch is deleted. Recorded here so nobody re-derives it.
+`feat/corelib-hardening` carries the whole pass uncommitted. `../shared` has an uncommitted parser
+and importer change on `main` (step 1 of the release sequence). The 2026-07-12 branch
+`feat/corelib-npth-pending` is archived as tag `archive/corelib-npth-pending`; `release/v0.1.0-beta`
+is a stale, unrelated branch that predates the content grind and is not the vehicle for `v0.2.0`.

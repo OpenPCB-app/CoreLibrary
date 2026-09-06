@@ -21,17 +21,20 @@
   ],
   "aliases": [],
   "datasheet": "https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf",
-  "datasheetSource": "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf",
+  "datasheetSource": "https://www.analog.com/media/en/technical-documentation/data-sheets/ds18b20.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Analog Devices",
-      "mpn": "DS18B20+"
+      "mpn": "DS18B20+",
+      "package": "TO-92"
     }
   ],
   "parameters": {
     "measures": "temperature",
     "interface": "1-Wire",
-    "range": "-55C to +125C"
+    "range": "-55C to +125C",
+    "type": "temperature",
+    "supply": "3.0-5.5V"
   },
   "symbol": "openpcb.core.symbol.sensor.ds18b20",
   "defaultFootprint": "openpcb.core.footprint.package.to-92-inline",

@@ -19,16 +19,20 @@
   ],
   "aliases": [],
   "datasheet": "https://docs.wiznet.io/img/products/w5500/W5500_ds_v110e.pdf",
-  "datasheetSource": "http://wizwiki.net/wiki/lib/exe/fetch.php/products:w5500:w5500_ds_v109e.pdf",
+  "datasheetSource": "https://docs.wiznet.io/img/products/w5500/W5500_ds_v110e.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "WIZnet",
-      "mpn": "W5500"
+      "mpn": "W5500",
+      "lcsc": "C32843",
+      "jlcpcbAssemblyType": "extended",
+      "package": "LQFP-48"
     }
   ],
   "parameters": {
     "interface": "SPI",
-    "phy": "10/100"
+    "phy": "10/100",
+    "type": "ethernet"
   },
   "symbol": "openpcb.core.symbol.ic.w5500",
   "defaultFootprint": "openpcb.core.footprint.package.lqfp-48-7x7mm-p0-5mm",

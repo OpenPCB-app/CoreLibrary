@@ -21,13 +21,31 @@
   "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT244.pdf",
   "manufacturerParts": [
     {
+      "manufacturer": "Nexperia",
+      "mpn": "74HC244D,653",
+      "lcsc": "C5622",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-20W"
+    },
+    {
       "manufacturer": "Texas Instruments",
-      "mpn": "SN74HC244DW"
+      "mpn": "SN74HC244DW",
+      "lcsc": "C1548087",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-20W",
+      "role": "alternate"
+    },
+    {
+      "manufacturer": "Nexperia",
+      "mpn": "74HC244PW,118",
+      "package": "TSSOP-20",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "74HC",
-    "function": "octal buffer"
+    "function": "octal buffer",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc244",
   "defaultFootprint": "openpcb.core.footprint.package.soic-20w-7-5x12-8mm-p1-27mm",

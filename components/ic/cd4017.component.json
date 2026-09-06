@@ -19,16 +19,24 @@
   ],
   "aliases": [],
   "datasheet": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf",
-  "datasheetSource": "http://www.intersil.com/content/dam/Intersil/documents/cd40/cd4017bms-22bms.pdf",
+  "datasheetSource": "https://www.ti.com/lit/ds/symlink/cd4017b.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "CD4017BE"
+      "mpn": "CD4017BE",
+      "package": "DIP-16"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "CD4017BM96",
+      "package": "SOIC-16",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "family": "CD4000",
-    "function": "decade counter"
+    "function": "decade counter",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.cd4017",
   "defaultFootprint": "openpcb.core.footprint.package.dip-16-w7-62mm",

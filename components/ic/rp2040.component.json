@@ -24,21 +24,25 @@
   "manufacturerParts": [
     {
       "manufacturer": "Raspberry Pi",
-      "mpn": "RP2040"
+      "mpn": "RP2040",
+      "lcsc": "C2040",
+      "jlcpcbAssemblyType": "extended",
+      "package": "QFN-56"
     }
   ],
   "parameters": {
+    "type": "mcu",
     "core": "dual ARM Cortex-M0+",
     "ram": "264KB",
     "clock": "133MHz",
     "io": "30 GPIO"
   },
   "symbol": "openpcb.core.symbol.ic.rp2040",
-  "defaultFootprint": "openpcb.core.footprint.package.qfn-56-1ep-7x7mm-p0-4mm",
+  "defaultFootprint": "openpcb.core.footprint.package.qfn-56-1ep-7x7mm-p0-4mm-ep3-2x3-2mm",
   "footprints": [
     {
-      "footprint": "openpcb.core.footprint.package.qfn-56-1ep-7x7mm-p0-4mm",
-      "label": "QFN-56-1EP 7x7mm P0.4mm",
+      "footprint": "openpcb.core.footprint.package.qfn-56-1ep-7x7mm-p0-4mm-ep3-2x3-2mm",
+      "label": "QFN-56-1EP 7x7mm P0.4mm EP3.2x3.2mm",
       "pinMap": [
         {
           "pinNumber": "1",
@@ -281,7 +285,7 @@
     "sourceFileName": "RP2040.kicad_sym",
     "sourceLibrary": "MCU_RaspberryPi",
     "sourceItemName": "RP2040",
-    "sourceHash": "e8edefbf07b298c587791b596041b5b86fdb311d20073b06a49ebae9b1f90f26",
+    "sourceHash": "074fcb2b0c48e05891f4873828c204222faec8d6c70598a07bef899c6f180509",
     "upstreamUrl": "https://gitlab.com/kicad/libraries",
     "upstreamCommit": "c7e226a49",
     "convertedAt": "2026-06-23T14:48:35.586Z",

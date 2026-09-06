@@ -17,17 +17,27 @@
     "logic"
   ],
   "aliases": [],
-  "datasheet": "https://www.ti.com/lit/ds/symlink/sn74hc86.pdf",
-  "datasheetSource": "http://www.ti.com/lit/gpn/sn74HC86",
+  "datasheet": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT86.pdf",
+  "datasheetSource": "https://assets.nexperia.com/documents/data-sheet/74HC_HCT86.pdf",
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "74HC86D,653"
+      "mpn": "74HC86D,653",
+      "lcsc": "C5955",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "SN74HC86DR",
+      "package": "SOIC-14",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "gates": "4",
-    "supply": "2-6V"
+    "supply": "2-6V",
+    "type": "logic"
   },
   "symbol": "openpcb.core.symbol.ic.74hc86",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

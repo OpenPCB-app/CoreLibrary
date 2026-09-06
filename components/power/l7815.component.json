@@ -23,13 +23,17 @@
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "L7815CV"
+      "mpn": "L7815CV",
+      "lcsc": "C5676",
+      "jlcpcbAssemblyType": "extended",
+      "package": "TO-220"
     }
   ],
   "parameters": {
     "vout": "15V",
     "iout": "1.5A",
-    "type": "linear"
+    "type": "linear",
+    "vin_max": "35V"
   },
   "symbol": "openpcb.core.symbol.power.l7815",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

@@ -22,13 +22,23 @@
   "datasheetSource": "https://hmsemi.com/downfile/DW01A.PDF",
   "manufacturerParts": [
     {
-      "manufacturer": "Fortune Semiconductor",
-      "mpn": "DW01A"
+      "manufacturer": "HMSemi",
+      "mpn": "DW01A",
+      "package": "SOT-23-6"
+    },
+    {
+      "manufacturer": "PUOLOP",
+      "mpn": "DW01A",
+      "lcsc": "C351410",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23-6",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "cell": "1",
-    "topology": "protection"
+    "topology": "protection",
+    "type": "protection"
   },
   "symbol": "openpcb.core.symbol.power.dw01a",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23-6",

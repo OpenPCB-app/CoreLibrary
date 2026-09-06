@@ -22,12 +22,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Analog Devices",
-      "mpn": "ADUM1201ARZ"
+      "mpn": "ADUM1201ARZ",
+      "lcsc": "C529163",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Analog Devices",
+      "mpn": "ADUM1201BRZ",
+      "package": "SOIC-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "2 (1/1)",
-    "isolation": "2.5kVrms"
+    "isolation": "2.5kVrms",
+    "type": "isolator"
   },
   "symbol": "openpcb.core.symbol.ic.adum1201",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

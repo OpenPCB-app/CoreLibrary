@@ -22,14 +22,18 @@
   "manufacturerParts": [
     {
       "manufacturer": "Microchip",
-      "mpn": "MCP6004-I/SL"
+      "mpn": "MCP6004-I/SL",
+      "lcsc": "C1346056",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-14"
     }
   ],
   "parameters": {
     "channels": "4",
     "gbw": "1MHz",
     "supply": "1.8-6V",
-    "rail_to_rail": "true"
+    "rail_to_rail": "true",
+    "type": "opamp"
   },
   "symbol": "openpcb.core.symbol.ic.mcp6004",
   "defaultFootprint": "openpcb.core.footprint.package.soic-14-3-9x8-7mm-p1-27mm",

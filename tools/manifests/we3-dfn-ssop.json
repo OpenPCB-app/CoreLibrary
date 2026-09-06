@@ -1,0 +1,804 @@
+{
+  "version": "0.4.0",
+  "components": [
+    {
+      "id": "openpcb.core.power.tps63001",
+      "name": "TPS63001 Buck-Boost Converter",
+      "description": "TPS63001 single-inductor synchronous buck-boost converter, 1.8-5.5V in, fixed 3.3V out, up to 1.2A, VSON-10.",
+      "category": "power",
+      "subcategory": "regulator-buck-boost",
+      "tags": [
+        "power",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TPS63001",
+        "TPS6300x",
+        "buck-boost",
+        "DC-DC",
+        "3.3V",
+        "VSON-10",
+        "single inductor"
+      ],
+      "aliases": [],
+      "parameters": {
+        "type": "buck-boost",
+        "vin": "1.8-5.5V",
+        "vin_max": "5.5V",
+        "vout": "3.3V",
+        "iout": "1.2A",
+        "switching_freq": "1.25-1.5MHz"
+      },
+      "manufacturerParts": [
+        {
+          "manufacturer": "Texas Instruments",
+          "mpn": "TPS63001DRCR",
+          "lcsc": "C28060",
+          "jlcpcbAssemblyType": "extended",
+          "package": "VSON-10 (DRC)",
+          "role": "primary"
+        }
+      ],
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tps63000.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.power.tps63001",
+        "path": "kicad-symbols/Regulator_Switching.kicad_symdir/TPS63001.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.vson-10-1ep-3x3mm-p0-5mm-ep1-65x2-4mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.vson-10-1ep-3x3mm-p0-5mm-ep1-65x2-4mm",
+          "path": "kicad-footprints/Package_SON.pretty/VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm.kicad_mod",
+          "label": "VSON-10 3x3mm P0.5mm",
+          "model": {
+            "id": "openpcb.core.3d.package.vson-10-1ep-3x3mm-p0-5mm-ep1-65x2-4mm",
+            "path": "kicad-packages3D/Package_SON.3dshapes/VSON-10-1EP_3x3mm_P0.5mm_EP1.65x2.4mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            }
+          ]
+        }
+      ],
+      "compatibility": {
+        "minOpenPcbVersion": "0.1.0"
+      }
+    },
+    {
+      "id": "openpcb.core.ic.enc28j60",
+      "name": "ENC28J60 Ethernet Controller",
+      "description": "ENC28J60 stand-alone 10BASE-T Ethernet controller with integrated MAC and PHY, SPI host interface, SSOP-28.",
+      "category": "ic",
+      "subcategory": "interface-ethernet",
+      "tags": [
+        "ic",
+        "interface",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "ENC28J60",
+        "ethernet",
+        "10BASE-T",
+        "SPI",
+        "MAC",
+        "PHY",
+        "SSOP-28"
+      ],
+      "aliases": [],
+      "parameters": {
+        "type": "ethernet",
+        "interface": "SPI",
+        "phy": "10BASE-T",
+        "ram": "8KB",
+        "supply": "3.1-3.6V",
+        "clock": "25MHz"
+      },
+      "manufacturerParts": [
+        {
+          "manufacturer": "Microchip",
+          "mpn": "ENC28J60-I/SS",
+          "lcsc": "C411626",
+          "jlcpcbAssemblyType": "extended",
+          "package": "SSOP-28",
+          "role": "primary"
+        }
+      ],
+      "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/39662e.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.enc28j60",
+        "path": "kicad-symbols/Interface_Ethernet.kicad_symdir/ENC28J60x-SS.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.ssop-28-5-3x10-2mm-p0-65mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.ssop-28-5-3x10-2mm-p0-65mm",
+          "path": "kicad-footprints/Package_SO.pretty/SSOP-28_5.3x10.2mm_P0.65mm.kicad_mod",
+          "label": "SSOP-28 5.3x10.2mm P0.65mm",
+          "model": {
+            "id": "openpcb.core.3d.package.ssop-28-5-3x10-2mm-p0-65mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SSOP-28_5.3x10.2mm_P0.65mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            },
+            {
+              "pinNumber": "21",
+              "padNumber": "21"
+            },
+            {
+              "pinNumber": "22",
+              "padNumber": "22"
+            },
+            {
+              "pinNumber": "23",
+              "padNumber": "23"
+            },
+            {
+              "pinNumber": "24",
+              "padNumber": "24"
+            },
+            {
+              "pinNumber": "25",
+              "padNumber": "25"
+            },
+            {
+              "pinNumber": "26",
+              "padNumber": "26"
+            },
+            {
+              "pinNumber": "27",
+              "padNumber": "27"
+            },
+            {
+              "pinNumber": "28",
+              "padNumber": "28"
+            }
+          ]
+        }
+      ],
+      "compatibility": {
+        "minOpenPcbVersion": "0.1.0"
+      }
+    },
+    {
+      "id": "openpcb.core.ic.mcp2200",
+      "name": "MCP2200 USB-UART Bridge",
+      "description": "MCP2200 USB 2.0 full-speed to UART protocol converter with 8 GPIO and 256-byte user EEPROM, SSOP-20.",
+      "category": "ic",
+      "subcategory": "interface",
+      "tags": [
+        "ic",
+        "interface",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "MCP2200",
+        "USB to UART",
+        "USB serial",
+        "CDC",
+        "virtual COM port",
+        "SSOP-20"
+      ],
+      "aliases": [],
+      "parameters": {
+        "type": "usb-bridge",
+        "supply": "3.0-5.5V",
+        "interface": "USB 2.0 FS / UART",
+        "data_rate": "300bps-1Mbps",
+        "io": "8 GPIO",
+        "clock": "12MHz"
+      },
+      "manufacturerParts": [
+        {
+          "manufacturer": "Microchip",
+          "mpn": "MCP2200-I/SS",
+          "lcsc": "C220000",
+          "jlcpcbAssemblyType": "extended",
+          "package": "SSOP-20",
+          "role": "primary"
+        }
+      ],
+      "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/200022228D.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.mcp2200",
+        "path": "kicad-symbols/Interface_USB.kicad_symdir/MCP2200-I-SS.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.ssop-20-5-3x7-2mm-p0-65mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.ssop-20-5-3x7-2mm-p0-65mm",
+          "path": "kicad-footprints/Package_SO.pretty/SSOP-20_5.3x7.2mm_P0.65mm.kicad_mod",
+          "label": "SSOP-20 5.3x7.2mm P0.65mm",
+          "model": {
+            "id": "openpcb.core.3d.package.ssop-20-5-3x7-2mm-p0-65mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/SSOP-20_5.3x7.2mm_P0.65mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            },
+            {
+              "pinNumber": "10",
+              "padNumber": "10"
+            },
+            {
+              "pinNumber": "11",
+              "padNumber": "11"
+            },
+            {
+              "pinNumber": "12",
+              "padNumber": "12"
+            },
+            {
+              "pinNumber": "13",
+              "padNumber": "13"
+            },
+            {
+              "pinNumber": "14",
+              "padNumber": "14"
+            },
+            {
+              "pinNumber": "15",
+              "padNumber": "15"
+            },
+            {
+              "pinNumber": "16",
+              "padNumber": "16"
+            },
+            {
+              "pinNumber": "17",
+              "padNumber": "17"
+            },
+            {
+              "pinNumber": "18",
+              "padNumber": "18"
+            },
+            {
+              "pinNumber": "19",
+              "padNumber": "19"
+            },
+            {
+              "pinNumber": "20",
+              "padNumber": "20"
+            }
+          ]
+        }
+      ],
+      "compatibility": {
+        "minOpenPcbVersion": "0.1.0"
+      }
+    },
+    {
+      "id": "openpcb.core.sensor.tmp1075",
+      "name": "TMP1075 Digital Temperature Sensor",
+      "description": "TMP1075 I2C/SMBus digital temperature sensor, 12-bit, LM75 form factor and pinout, WSON-8 2x2mm.",
+      "category": "sensor",
+      "subcategory": "temperature",
+      "tags": [
+        "sensor",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "TMP1075",
+        "temperature sensor",
+        "I2C",
+        "SMBus",
+        "LM75",
+        "digital thermometer",
+        "WSON-8"
+      ],
+      "aliases": [],
+      "parameters": {
+        "type": "temperature",
+        "measures": "temperature",
+        "interface": "i2c",
+        "supply": "1.7-5.5V",
+        "range": "-55C to +125C",
+        "accuracy": "+/-1C max (-40C to 110C)",
+        "output": "12-bit digital"
+      },
+      "manufacturerParts": [
+        {
+          "manufacturer": "Texas Instruments",
+          "mpn": "TMP1075DSGR",
+          "lcsc": "C2870250",
+          "jlcpcbAssemblyType": "extended",
+          "package": "WSON-8 (DSG)",
+          "role": "primary"
+        }
+      ],
+      "datasheet": "https://www.ti.com/lit/ds/symlink/tmp1075.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.sensor.tmp1075",
+        "path": "kicad-symbols/Sensor_Temperature.kicad_symdir/TMP1075DSG.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.wson-8-1ep-2x2mm-p0-5mm-ep0-9x1-6mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.wson-8-1ep-2x2mm-p0-5mm-ep0-9x1-6mm",
+          "path": "kicad-footprints/Package_SON.pretty/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.kicad_mod",
+          "label": "WSON-8 2x2mm P0.5mm",
+          "model": {
+            "id": "openpcb.core.3d.package.wson-8-1ep-2x2mm-p0-5mm-ep0-9x1-6mm",
+            "path": "kicad-packages3D/Package_SON.3dshapes/WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "9",
+              "padNumber": "9"
+            }
+          ]
+        }
+      ],
+      "compatibility": {
+        "minOpenPcbVersion": "0.1.0"
+      }
+    },
+    {
+      "id": "openpcb.core.ic.w25q32",
+      "name": "W25Q32 SPI Flash",
+      "description": "W25Q32 32-Mbit SPI NOR flash memory, SOIC-8 208-mil and WSON-8 6x5mm.",
+      "category": "ic",
+      "subcategory": "memory",
+      "tags": [
+        "ic",
+        "memory",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "W25Q32",
+        "SPI flash",
+        "NOR flash",
+        "32Mbit",
+        "Winbond",
+        "WSON-8"
+      ],
+      "aliases": [],
+      "parameters": {
+        "type": "memory",
+        "function": "NOR flash",
+        "interface": "SPI",
+        "size": "32Mbit"
+      },
+      "manufacturerParts": [
+        {
+          "manufacturer": "Winbond",
+          "mpn": "W25Q32JVSSIQ",
+          "lcsc": "C179173",
+          "jlcpcbAssemblyType": "extended",
+          "package": "SOIC-8 208-mil",
+          "role": "primary"
+        },
+        {
+          "manufacturer": "Winbond",
+          "mpn": "W25Q32JVZPIQ",
+          "lcsc": "C571260",
+          "jlcpcbAssemblyType": "extended",
+          "package": "WSON-8 6x5mm",
+          "role": "alternate"
+        }
+      ],
+      "datasheet": "https://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf",
+      "datasheetSource": "http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.w25q32",
+        "path": "kicad-symbols/Memory_Flash.kicad_symdir/W25Q32JVSS.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-5-3x5-3mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-5-3x5-3mm-p1-27mm",
+          "label": "SOIC-8 5.3x5.3mm P1.27mm",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.wson-8-1ep-6x5mm-p1-27mm-ep3-4x4-3mm",
+          "path": "kicad-footprints/Package_SON.pretty/WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm.kicad_mod",
+          "label": "WSON-8 6x5mm P1.27mm",
+          "model": {
+            "id": "openpcb.core.3d.package.wson-8-1ep-6x5mm-p1-27mm-ep3-4x4-3mm",
+            "path": "kicad-packages3D/Package_SON.3dshapes/WSON-8-1EP_6x5mm_P1.27mm_EP3.4x4.3mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "9"
+            }
+          ]
+        }
+      ],
+      "compatibility": {
+        "minOpenPcbVersion": "0.1.0"
+      }
+    },
+    {
+      "id": "openpcb.core.ic.mcp6002",
+      "name": "MCP6002 Dual RRIO Op-Amp",
+      "description": "MCP6002 dual rail-to-rail I/O op-amp, 1MHz, low power, SOIC-8 and MSOP-8.",
+      "category": "ic",
+      "subcategory": "opamp",
+      "tags": [
+        "ic",
+        "kicad-derived"
+      ],
+      "keywords": [
+        "MCP6002",
+        "op-amp",
+        "rail-to-rail",
+        "dual",
+        "MSOP-8"
+      ],
+      "aliases": [],
+      "parameters": {
+        "type": "opamp",
+        "channels": "2",
+        "gbw": "1MHz",
+        "supply": "1.8-6V",
+        "rail_to_rail": "true"
+      },
+      "manufacturerParts": [
+        {
+          "manufacturer": "Microchip",
+          "mpn": "MCP6002-I/SN",
+          "lcsc": "C116706",
+          "jlcpcbAssemblyType": "extended",
+          "package": "SOIC-8",
+          "role": "primary"
+        },
+        {
+          "manufacturer": "Microchip",
+          "mpn": "MCP6002T-E/MS",
+          "lcsc": "C627415",
+          "jlcpcbAssemblyType": "extended",
+          "package": "MSOP-8",
+          "role": "alternate"
+        }
+      ],
+      "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf",
+      "datasheetSource": "http://ww1.microchip.com/downloads/en/DeviceDoc/21733j.pdf",
+      "symbol": {
+        "id": "openpcb.core.symbol.ic.mcp6002",
+        "path": "kicad-symbols/Amplifier_Operational.kicad_symdir/MCP6002-xSN.kicad_sym"
+      },
+      "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+      "footprints": [
+        {
+          "id": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",
+          "label": "SOIC-8",
+          "existing": true,
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        },
+        {
+          "id": "openpcb.core.footprint.package.msop-8-3x3mm-p0-65mm",
+          "path": "kicad-footprints/Package_SO.pretty/MSOP-8_3x3mm_P0.65mm.kicad_mod",
+          "label": "MSOP-8 3x3mm P0.65mm",
+          "model": {
+            "id": "openpcb.core.3d.package.msop-8-3x3mm-p0-65mm",
+            "path": "kicad-packages3D/Package_SO.3dshapes/MSOP-8_3x3mm_P0.65mm.step"
+          },
+          "pinMap": [
+            {
+              "pinNumber": "1",
+              "padNumber": "1"
+            },
+            {
+              "pinNumber": "2",
+              "padNumber": "2"
+            },
+            {
+              "pinNumber": "3",
+              "padNumber": "3"
+            },
+            {
+              "pinNumber": "4",
+              "padNumber": "4"
+            },
+            {
+              "pinNumber": "5",
+              "padNumber": "5"
+            },
+            {
+              "pinNumber": "6",
+              "padNumber": "6"
+            },
+            {
+              "pinNumber": "7",
+              "padNumber": "7"
+            },
+            {
+              "pinNumber": "8",
+              "padNumber": "8"
+            }
+          ]
+        }
+      ],
+      "compatibility": {
+        "minOpenPcbVersion": "0.1.0"
+      }
+    }
+  ]
+}

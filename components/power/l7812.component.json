@@ -23,13 +23,15 @@
   "manufacturerParts": [
     {
       "manufacturer": "STMicroelectronics",
-      "mpn": "L7812CV"
+      "mpn": "L7812CV",
+      "package": "TO-220"
     }
   ],
   "parameters": {
     "vout": "12V",
     "iout": "1.5A",
-    "type": "linear"
+    "type": "linear",
+    "vin_max": "35V"
   },
   "symbol": "openpcb.core.symbol.power.l7812",
   "defaultFootprint": "openpcb.core.footprint.package.to-220-3-vertical",

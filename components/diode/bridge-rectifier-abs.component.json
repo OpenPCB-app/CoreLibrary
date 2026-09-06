@@ -17,14 +17,38 @@
     "AC-DC"
   ],
   "aliases": [],
-  "datasheet": "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf",
+  "datasheet": "https://www.diodes.com/assets/Datasheets/ABS10_LS.pdf",
   "datasheetSource": "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf",
   "manufacturerParts": [
     {
+      "manufacturer": "Diodes Incorporated",
+      "mpn": "ABS10_HF",
+      "lcsc": "C23639803",
+      "jlcpcbAssemblyType": "extended",
+      "package": "ABS"
+    },
+    {
+      "manufacturer": "hongjiacheng",
+      "mpn": "ABS10",
+      "lcsc": "C42406051",
+      "jlcpcbAssemblyType": "preferred",
+      "package": "ABS",
+      "role": "alternate"
+    },
+    {
       "manufacturer": "Diotec",
-      "mpn": "ABS10"
+      "mpn": "ABS10",
+      "package": "ABS",
+      "role": "alternate",
+      "datasheet": "https://diotec.com/tl_files/diotec/files/pdf/datasheets/abs2.pdf"
     }
   ],
+  "parameters": {
+    "type": "bridge",
+    "vrrm": "1000V",
+    "if": "0.8A",
+    "vf": "1.1V"
+  },
   "symbol": "openpcb.core.symbol.diode.bridge-rectifier-abs",
   "defaultFootprint": "openpcb.core.footprint.diode.bridge-diotec-abs",
   "footprints": [

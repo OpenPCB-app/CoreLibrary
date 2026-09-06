@@ -23,13 +23,22 @@
   "manufacturerParts": [
     {
       "manufacturer": "Texas Instruments",
-      "mpn": "LM393DR"
+      "mpn": "LM393DR",
+      "lcsc": "C67470",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOIC-8"
+    },
+    {
+      "manufacturer": "Texas Instruments",
+      "mpn": "LM393P",
+      "package": "DIP-8",
+      "role": "alternate"
     }
   ],
   "parameters": {
     "channels": "2",
     "supply": "2V-36V",
-    "type": "open-collector"
+    "type": "comparator"
   },
   "symbol": "openpcb.core.symbol.ic.lm393",
   "defaultFootprint": "openpcb.core.footprint.package.soic-8-3-9x4-9mm-p1-27mm",

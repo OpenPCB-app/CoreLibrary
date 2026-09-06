@@ -3,7 +3,7 @@
   "uuid": "32309fe5-0504-5d7d-8840-3af6c347ba67",
   "version": "0.2.0",
   "name": "BAV99 Dual Switching Diode",
-  "description": "BAV99 dual series switching diode in SOT-23.",
+  "description": "BAV99 dual series diode: pin 1 anode D1, pin 2 cathode D2, pin 3 common (cathode D1 / anode D2), SOT-23.",
   "category": "diode",
   "subcategory": "switching-dual",
   "tags": [
@@ -25,9 +25,26 @@
   "manufacturerParts": [
     {
       "manufacturer": "Nexperia",
-      "mpn": "BAV99,215"
+      "mpn": "BAV99,215",
+      "lcsc": "C2500",
+      "jlcpcbAssemblyType": "basic",
+      "package": "SOT-23"
+    },
+    {
+      "manufacturer": "onsemi",
+      "mpn": "BAV99LT1G",
+      "lcsc": "C82480",
+      "jlcpcbAssemblyType": "extended",
+      "package": "SOT-23",
+      "role": "alternate"
     }
   ],
+  "parameters": {
+    "type": "signal",
+    "vrrm": "100V",
+    "if": "215mA",
+    "vf": "1V"
+  },
   "symbol": "openpcb.core.symbol.diode.bav99",
   "defaultFootprint": "openpcb.core.footprint.package.sot-23",
   "footprints": [
