@@ -145,6 +145,23 @@ a declared transform survives `--allow-overwrite`. Prefer declaring it in the ma
 `audit:3d` afterwards either way — a declared transform that was never actually written is
 indistinguishable from a correct one until the gate looks at the baked bounds.
 
+**`--allow-overwrite` regenerates the component JSON too, and drops hand-added fields that aren't in
+the manifest.** Re-importing doesn't stop at the symbol/footprint/3D triad — it rewrites the
+component file from the manifest, so `manufacturerParts`, `parameters`, `keywords`, `datasheet`, or
+anything else you hand-added straight to the component rather than the manifest, silently
+disappears if the manifest doesn't carry it too. Diff the component after a re-import and restore
+what's missing, or better: put the field in the manifest before you overwrite, so it survives the
+next one as well.
+
+**The importer now derives `mountType: "mixed"`, and keeps slotted drills and paste-only sub-pads —
+don't "fix" any of these by hand.** A KiCad `smd` footprint with a numbered plated hole that no SMD
+pad shares the number of (THT shield tabs on an otherwise-SMD connector) imports as `mixed`, not
+`smd` — that's deliberate, see the G12 gate in [CONTRIBUTING.md](../CONTRIBUTING.md). Likewise, a
+slotted drill (`drillSlotMm`) or a paste-only sub-pad (`role: "paste"`, no copper) surviving the
+round-trip is correct, not a leftover bug — it's real KiCad geometry the footprint DRC gates already
+know how to read. Re-flattening a slot to a round drill, or deleting a paste sub-pad to "simplify"
+the footprint, reintroduces exactly the defect the importer fix closed.
+
 **Prefer all-new asset ids per wave.** Importing without `--allow-overwrite` means nothing gets
 clobbered and nothing needs re-flipping. Reuse a shared id only when the asset genuinely is the
 same KiCad footprint already in the library (`package.sot-23`, `package.to-92-inline`). Note that a

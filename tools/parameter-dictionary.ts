@@ -215,3 +215,121 @@ export function unknownParameterKeys(
     .filter((key) => !allowedSet.has(key))
     .sort();
 }
+
+/**
+ * Headline keys a function-standard component's `parameters` should carry —
+ * consumed by the G6 gate (`tools/gates/parameters-required.ts`). `always` is
+ * required regardless of `type`; `byType` adds keys once `type` narrows the
+ * part (e.g. an NMOS needs `rds_on`, a BJT doesn't). `anyOf` is reserved for a
+ * future "one of these keys" rule — no category needs it yet.
+ */
+export interface RequiredSpec {
+  always: string[];
+  byType?: Record<string, string[]>;
+  anyOf?: string[][];
+}
+
+/** Per-category required headline keys. Categories absent here are unconstrained by G6. */
+export const REQUIRED_PARAMETER_KEYS: Readonly<Record<string, RequiredSpec>> = {
+  transistor: {
+    always: ["type"],
+    byType: {
+      npn: ["vce", "ic"],
+      pnp: ["vce", "ic"],
+      "npn-darlington": ["vce", "ic"],
+      "pnp-darlington": ["vce", "ic"],
+      nmos: ["vds", "id", "rds_on"],
+      pmos: ["vds", "id", "rds_on"],
+    },
+  },
+  diode: {
+    always: ["type"],
+    byType: {
+      signal: ["vrrm", "if"],
+      rectifier: ["vrrm", "if"],
+      schottky: ["vrrm", "if"],
+      zener: ["vz"],
+      tvs: [],
+      bridge: ["vrrm", "if"],
+    },
+  },
+  power: {
+    always: ["type"],
+    byType: {
+      ldo: ["vin_max", "vout", "iout"],
+      linear: ["vin_max", "vout", "iout"],
+      buck: ["vin_max", "vout", "iout"],
+      boost: ["vin_max", "vout", "iout"],
+      "buck-boost": ["vin_max", "vout", "iout"],
+      charger: ["vbat", "ichg"],
+      reference: ["vref"],
+      protection: [],
+    },
+  },
+  ic: { always: ["type"] },
+  sensor: { always: ["type", "measures", "interface", "supply"] },
+  crystal: { always: ["type", "frequency"] },
+  relay: { always: ["type", "coil_voltage", "contacts"] },
+  switch: { always: ["type", "contacts"] },
+  opto: { always: ["type"] },
+  audio: { always: ["type"] },
+  battery: { always: ["type"] },
+};
+
+/**
+ * Allowed `parameters.type` values per category, for the categories where G6
+ * also validates `type` itself (the ones with a `byType` table above). Values
+ * are the union of what the 231-component tree actually uses (derived via
+ * `jq -r '.parameters.type' components/<cat>/*.component.json`, 2026-09) and
+ * the documented part-family vocabulary, normalised lowercase-hyphen.
+ */
+export const PARAMETER_TYPE_VALUES: Readonly<Record<string, readonly string[]>> = {
+  transistor: [
+    "npn",
+    "pnp",
+    "nmos",
+    "pmos",
+    "npn-darlington",
+    "pnp-darlington",
+    "jfet-n",
+    "jfet-p",
+  ],
+  diode: ["signal", "rectifier", "schottky", "zener", "tvs", "bridge"],
+  power: [
+    "ldo",
+    "linear",
+    "buck",
+    "boost",
+    "buck-boost",
+    "charger",
+    "reference",
+    "protection",
+    "supervisor",
+    "shunt",
+  ],
+  ic: [
+    "opamp",
+    "comparator",
+    "logic",
+    "mcu",
+    "memory",
+    "interface",
+    "transceiver",
+    "usb-bridge",
+    "driver",
+    "motor-driver",
+    "adc",
+    "dac",
+    "timer",
+    "rtc",
+    "isolator",
+    "audio-amp",
+    "wireless",
+    "level-shifter",
+    "io-expander",
+    "current-sensor",
+    "power-monitor",
+    "ethernet",
+    "can",
+  ],
+};

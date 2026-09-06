@@ -68,6 +68,12 @@ const WAF_HOSTS = new Set([
   "product.tdk.com",
   "www.infineon.com",
   "www.nxp.com",
+  "cdn.amphenol-cs.com",
+  "www.molex.com",
+  "www.keyelco.com",
+  "www.phoenixcontact.com",
+  "www.littelfuse.com",
+  "www.tdk.com",
   "www.hirose.com",
   "www.kingbright.com",
   "www.phoenixcontact.com",
@@ -84,6 +90,8 @@ const PDF_ENDPOINTS = [
   "www.allegromicro.com/",
   "www.phoenixcontact.com/product/pdf/api/",
   "www.littelfuse.com/assetdocs/",
+  "www.hirose.com/product/document",
+  "www.wch-ic.com/downloads/",
 ];
 
 const argv = process.argv.slice(2);

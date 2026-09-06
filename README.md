@@ -29,8 +29,10 @@ scripts/                                      maintenance scripts behind the `bu
 tests/                                        Bun test suite
 tools/                                        validator, packer, importers, audits
 tools/manifests/                              per-wave KiCad import manifests + TEMPLATE.jsonc
+tools/gates/                                  numbered content gates (G6-G12)
 keys/                                         committed Ed25519 public key + signing docs
 docs/                                         authoring, parameters, 3D placement convention
+docs/audit/                                   adjudication record of the hardening pass
 ```
 
 `library.json` is written by `bun pack`. `dist/*.opclib` is a generated release artifact and is
@@ -69,7 +71,7 @@ more weakly than the change that went into it.
 | --- | --- | --- |
 | Typecheck | `bun run typecheck` | tools and content loaders share types with the shared packages; a drifted signature fails here rather than mid-pack |
 | Tests | `bun test` | schema, pin/pad cross-reference, id and UUID uniqueness, importer round-trips, pack compatibility and the shared-package boundary |
-| Release validation | `bun tools/validate.ts --release --strict` | the content contract — schema, provenance and licence, id form, pin/pad coverage, courtyard, parameters; strict mode makes orphan footprints fatal |
+| Release validation | `bun tools/validate.ts --release --strict` | the content contract — schema, provenance and licence, id form, pin/pad coverage, courtyard, parameters, sourcing, datasheet coherence, symbol ERC, footprint DRC, mount type; strict mode makes orphan footprints (and every `warn`-level gate) fatal |
 | 3D orientation | `bun tools/audit-3d-placement.ts --release` (alias `bun run audit:3d`) | catches models that render through the board, mirrored or at the wrong scale, by checking baked GLB bounds against the footprint |
 | Component audit | `bun tools/audit-components.ts --no-render` | symbol overlap, label geometry and cross-reference sanity that the schema cannot express; `--no-render` keeps it headless |
 | Datasheet links | `bun tools/check-datasheet-links.ts` | structural check that curated datasheet URLs are https, direct PDFs and not distributor mirrors |

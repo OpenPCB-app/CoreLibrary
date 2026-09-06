@@ -103,6 +103,8 @@ interface ManufacturerPart {
   jlcpcbAssemblyType?: string;
   lifecycle?: string;
   rohs?: boolean | null;
+  role?: string;
+  package?: string;
 }
 
 interface ManifestComponent {
@@ -649,11 +651,29 @@ function dedupeSymbolPins(symbol: ParsedKicadSymbol): ParsedKicadSymbol {
  * attr — derive from pad geometry: any drilled pad → through_hole, else smd. */
 function deriveMountType(footprint: ParsedKicadFootprint): string {
   const attr = footprint.attributes.type;
+  if (attr === "smd" && hasStrayThroughHolePad(footprint)) return "mixed";
   if (attr === "smd" || attr === "through_hole") return attr;
   const drilled = footprint.pads.some(
     (pad) => pad.type === "thru_hole" || pad.type === "np_thru_hole",
   );
   return drilled ? "through_hole" : "smd";
+}
+
+/**
+ * A KiCad `smd` footprint with a numbered plated hole whose number is not
+ * also carried by an SMD pad (thermal vias share the EP number) is really a
+ * mixed-technology part — THT shield tabs on an SMD connector, for example.
+ */
+function hasStrayThroughHolePad(footprint: ParsedKicadFootprint): boolean {
+  const smdNumbers = new Set(
+    footprint.pads
+      .filter((pad) => pad.type === "smd")
+      .map((pad) => (pad.number ?? "").trim()),
+  );
+  return footprint.pads.some((pad) => {
+    const number = (pad.number ?? "").trim();
+    return pad.type === "thru_hole" && number !== "" && !smdNumbers.has(number);
+  });
 }
 
 function normalizeFootprint(

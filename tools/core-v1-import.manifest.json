@@ -145,6 +145,7 @@
       "description": "Generic two-pin SMD inductor with common chip package variants.",
       "category": "passive",
       "tags": ["inductor", "passive", "kicad-derived"],
+      "keywords": ["power inductor", "shielded", "buck", "boost"],
       "symbol": { "id": "openpcb.core.symbol.passive.inductor", "path": "kicad-symbols/Device.kicad_symdir/L.kicad_sym" },
       "defaultFootprint": "openpcb.core.footprint.passive.l-0805-2012metric",
       "footprints": [
@@ -174,6 +175,48 @@
           "path": "kicad-footprints/Inductor_SMD.pretty/L_1210_3225Metric.kicad_mod",
           "label": "1210 / 3225 metric",
           "model": { "id": "openpcb.core.3d.passive.l-1210-3225metric", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_1210_3225Metric.step" },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-coilcraft-xal6030-xxx",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_Coilcraft_XAL6030-XXX.kicad_mod",
+          "label": "Coilcraft XAL6030 (6.6x6.8mm H3.1)",
+          "model": { "id": "openpcb.core.3d.passive.l-coilcraft-xal6030-xxx", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_Coilcraft_XAL6030-XXX.step", "offsetMm": { "x": 0, "y": 0, "z": 0 }, "rotationDeg": { "x": 0, "y": 0, "z": 0 }, "scaleMm": { "x": 1, "y": 1, "z": 1 } },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-bourns-srn6045ta",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_Bourns_SRN6045TA.kicad_mod",
+          "label": "Bourns SRN6045TA (6.0x6.0mm H4.5)",
+          "model": { "id": "openpcb.core.3d.passive.l-bourns-srn6045ta", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_Bourns_SRN6045TA.step", "offsetMm": { "x": 0, "y": 0, "z": 0 }, "rotationDeg": { "x": 0, "y": 0, "z": 0 }, "scaleMm": { "x": 1, "y": 1, "z": 1 } },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-tdk-slf7045",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_TDK_SLF7045.kicad_mod",
+          "label": "TDK SLF7045 (7.0x7.0mm H4.5)",
+          "model": { "id": "openpcb.core.3d.passive.l-tdk-slf7045", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_TDK_SLF7045.step", "offsetMm": { "x": 0, "y": 0, "z": 0 }, "rotationDeg": { "x": 0, "y": 0, "z": 0 }, "scaleMm": { "x": 1, "y": 1, "z": 1 } },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-bourns-srp1050wa",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_Bourns_SRP1050WA.kicad_mod",
+          "label": "Bourns SRP1050WA (11.0x10.0mm H5.1)",
+          "model": { "id": "openpcb.core.3d.passive.l-bourns-srp1050wa", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_Bourns_SRP1050WA.step", "offsetMm": { "x": 0, "y": 0, "z": 0 }, "rotationDeg": { "x": 0, "y": 0, "z": 0 }, "scaleMm": { "x": 1, "y": 1, "z": 1 } },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-coilcraft-xal1010-xxx",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_Coilcraft_XAL1010-XXX.kicad_mod",
+          "label": "Coilcraft XAL1010 (10.5x11.8mm H10.0)",
+          "model": { "id": "openpcb.core.3d.passive.l-coilcraft-xal1010-xxx", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_Coilcraft_XAL1010-XXX.step", "offsetMm": { "x": 0, "y": 0, "z": 0 }, "rotationDeg": { "x": 0, "y": 0, "z": 0 }, "scaleMm": { "x": 1, "y": 1, "z": 1 } },
+          "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
+        },
+        {
+          "id": "openpcb.core.footprint.passive.l-bourns-srr1260",
+          "path": "kicad-footprints/Inductor_SMD.pretty/L_Bourns_SRR1260.kicad_mod",
+          "label": "Bourns SRR1260 (12.5x12.5mm H6.0)",
+          "model": { "id": "openpcb.core.3d.passive.l-bourns-srr1260", "path": "kicad-packages3D/Inductor_SMD.3dshapes/L_Bourns_SRR1260.step", "offsetMm": { "x": 0, "y": 0, "z": 0 }, "rotationDeg": { "x": 0, "y": 0, "z": 0 }, "scaleMm": { "x": 1, "y": 1, "z": 1 } },
           "pinMap": [{ "pinNumber": "1", "padNumber": "1" }, { "pinNumber": "2", "padNumber": "2" }]
         }
       ]

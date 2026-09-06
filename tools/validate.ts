@@ -11,6 +11,14 @@ import {
   walkFiles,
 } from "./lib";
 import { unknownParameterKeys } from "./parameter-dictionary";
+import {
+  runComponentGates,
+  runFootprintGates,
+  type GateComponent,
+  type GateFootprint,
+  type GateSymbol,
+} from "./gates/run-gates";
+import type { GateFinding } from "./gates/types";
 
 interface Issue {
   file: string;
@@ -114,9 +122,6 @@ const COMPATIBLE_GENERATED_LICENSES = new Set([
   GENERATED_LICENSE,
   KICAD_LICENSE,
 ]);
-// Categories whose components should carry headline specs + search keywords (advisory only).
-const SPEC_CATEGORIES = new Set(["ic", "power", "sensor"]);
-
 function fail(file: string, message: string) {
   issues.push({ file: displayPath(file), message });
 }
@@ -136,6 +141,17 @@ function warnDisplay(file: string, message: string) {
 // Advisory note: always informational, never escalates to a failure under --strict.
 function note(file: string, message: string) {
   warnings.push({ file: displayPath(file), message });
+}
+
+// G6–G12 live in tools/gates/*; each finding carries its own severity.
+// `fail` is always fatal, `warn` is fatal under --strict, `note` never is.
+function reportFindings(file: string, findings: GateFinding[]): void {
+  for (const f of findings) {
+    const message = `${f.gate}: ${f.message}`;
+    if (f.severity === "fail") fail(file, message);
+    else if (f.severity === "warn") warn(file, message);
+    else note(file, message);
+  }
 }
 
 function isHttpUri(value: string): boolean {
@@ -523,6 +539,7 @@ function rememberName(
 // --- symbols ---
 const symbolIds = new Set<string>();
 const symbolPinsById = new Map<string, Set<string>>();
+const symbolById = new Map<string, GateSymbol>();
 const symbolNames = new Map<string, string>();
 for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
   const data = loadJson<SymbolSource & { name?: string }>(file);
@@ -541,6 +558,7 @@ for (const file of walkFiles(symbolsRoot, ".symbol.json")) {
   checkLabelFontSizes(file, data);
   symbolIds.add(data.id);
   symbolPinsById.set(data.id, symbolPinNumbers(data));
+  symbolById.set(data.id, data as unknown as GateSymbol);
 }
 
 // --- footprints ---
@@ -569,6 +587,7 @@ for (const file of walkFiles(footprintsRoot, ".fp.json")) {
   rememberName(footprintNames, file, data.name, "footprint");
   checkRawIntegrity(file, data.id, data.raw, "footprint");
   checkCourtyard(file, data);
+  reportFindings(file, runFootprintGates(data as unknown as GateFootprint));
   footprintIds.add(data.id);
   footprintPadsById.set(data.id, footprintPadNumbers(data));
   const no3d = data.no3d === true;
@@ -646,27 +665,24 @@ for (const ref of footprintModelRefs) {
 const componentNames = new Map<string, string>();
 const componentAliases = new Map<string, string>();
 const referencedFootprints = new Set<string>();
+const gateCheckedSymbols = new Set<string>();
 for (const file of walkFiles(componentsRoot, ".component.json")) {
-  const data = loadJson<{
-    id: string;
-    uuid: string;
-    name?: string;
-    category?: string;
-    subcategory?: string;
-    tags?: string[];
-    keywords?: string[];
-    aliases?: string[];
-    datasheet?: string | null;
-    datasheetSource?: string;
-    parameters?: Record<string, unknown>;
-    symbol: string;
-    defaultFootprint: string;
-    provenance: Provenance;
-    footprints: Array<{
-      footprint: string;
-      pinMap?: PinMapEntry[];
-    }>;
-  }>(file);
+  const data = loadJson<
+    GateComponent & {
+      uuid: string;
+      name?: string;
+      subcategory?: string;
+      tags?: string[];
+      aliases?: string[];
+      datasheetSource?: string;
+      defaultFootprint: string;
+      provenance: Provenance;
+      footprints: Array<{
+        footprint: string;
+        pinMap?: PinMapEntry[];
+      }>;
+    }
+  >(file);
   if (!validateComponent(data)) {
     for (const err of validateComponent.errors ?? [])
       fail(file, `${err.instancePath} ${err.message}`);
@@ -709,18 +725,12 @@ for (const file of walkFiles(componentsRoot, ".component.json")) {
     }
   }
 
-  if (data.category && SPEC_CATEGORIES.has(data.category)) {
-    if (!data.parameters || Object.keys(data.parameters).length === 0)
-      note(
-        file,
-        `${data.category} component has no parameters (add headline specs)`,
-      );
-    if (!data.keywords || data.keywords.length === 0)
-      note(
-        file,
-        `${data.category} component has no keywords (add search terms)`,
-      );
-  }
+  // G6 (required headline parameters), G7 (sourcing), G8 (datasheet ↔
+  // manufacturer), G9 (symbol ERC on the owning component's symbol).
+  reportFindings(
+    file,
+    runComponentGates(data, symbolById.get(data.symbol), gateCheckedSymbols),
+  );
   const symbolPins = symbolPinsById.get(data.symbol);
   if (!symbolIds.has(data.symbol))
     fail(file, `unknown symbol ref: ${data.symbol}`);

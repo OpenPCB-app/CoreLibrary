@@ -351,7 +351,7 @@ function packedComponentFor(absPath: string): PackedComponent {
     defaultFootprint: json.defaultFootprint,
     footprints: json.footprints,
     parameters: json.parameters,
-    manufacturerParts: json.manufacturerParts,
+    manufacturerParts: packManufacturerParts(json.manufacturerParts),
     provenance: {
       source: json.provenance.source,
       license: json.provenance.license,
@@ -437,4 +437,18 @@ if (noStep) {
   console.log(
     `[pack] wrote ${stepPath}\n       ${stepFiles.length} STEP model(s) + SHA256SUMS`,
   );
+}
+
+/**
+ * The packed manifest schema (`@openpcb/opclib-pack` library.schema.json)
+ * admits only `{manufacturer, mpn}` per entry. Source JSON carries richer
+ * sourcing data (`lcsc`, `jlcpcbAssemblyType`, `package`, `role`); strip it
+ * here rather than bump the pack schema. Order is preserved: entry 0 stays
+ * the primary the desktop app reads.
+ */
+function packManufacturerParts(
+  entries: Array<{ manufacturer: string; mpn: string }> | undefined,
+): Array<{ manufacturer: string; mpn: string }> | undefined {
+  if (!entries) return undefined;
+  return entries.map(({ manufacturer, mpn }) => ({ manufacturer, mpn }));
 }
